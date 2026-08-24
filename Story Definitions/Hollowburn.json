@@ -1,0 +1,641 @@
+{
+  "id": "hollowburn",
+  "title": "The Quiet Hour",
+  "blurb": "A dead pit village, a cold council house, and four months without a decent night's sleep. Something in the house has learned your name and it is using your family's voices to say it — and the one thing that can stop it is being believed by somebody who is awake.",
+  "cover": "🕰️",
+  "loreEntries": [
+    {
+      "label": "Setting",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Hollowburn/setting.txt"
+    },
+    {
+      "label": "Locations",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Hollowburn/locations.txt"
+    },
+    {
+      "label": "The Hush",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Hollowburn/the-hush.txt"
+    },
+    {
+      "label": "The Marra",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Hollowburn/the-marra.txt"
+    },
+    {
+      "label": "Being Believed",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Hollowburn/being-believed.txt"
+    },
+    {
+      "label": "The Pit and the Shaft",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Hollowburn/the-pit-and-the-shaft.txt"
+    },
+    {
+      "label": "The Blythe House",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Hollowburn/the-blythe-house.txt"
+    },
+    {
+      "label": "Jonah Blythe",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Hollowburn/npc-jonah-blythe.txt"
+    },
+    {
+      "label": "Evelyn Blythe",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Hollowburn/npc-evelyn-blythe.txt"
+    },
+    {
+      "label": "Peter Blythe",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Hollowburn/npc-peter-blythe.txt"
+    },
+    {
+      "label": "Ivy Ogle",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Hollowburn/npc-ivy-ogle.txt"
+    },
+    {
+      "label": "Nate Ogle",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Hollowburn/npc-nate-ogle.txt"
+    },
+    {
+      "label": "Barry Kelso",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Hollowburn/npc-barry-kelso.txt"
+    },
+    {
+      "label": "Sheila Rudd",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Hollowburn/npc-sheila-rudd.txt"
+    },
+    {
+      "label": "Denny Aitchison",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Hollowburn/npc-denny-aitchison.txt"
+    },
+    {
+      "label": "Kirsty Vane",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Hollowburn/npc-kirsty-vane.txt"
+    },
+    {
+      "label": "Yasmin Choudhury",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Hollowburn/npc-yasmin-choudhury.txt"
+    },
+    {
+      "label": "Nell Moore",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Hollowburn/npc-nell-moore.txt"
+    },
+    {
+      "label": "The Marra (entity)",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Hollowburn/npc-the-marra.txt"
+    }
+  ],
+  "mapUrl": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Maps/Hollowburn%20Map.svg",
+  "startingLocation": "Your Bedroom",
+  "openingScene": "NARRATION: Three in the morning, and it has been happening all night — the feeling of being watched from the blackened corner of the room. {characterName} looks up from the same book that has sat unfinished for weeks, over at the corner by the wardrobe, and there is nobody there. There is never anybody there.\n\nThe house is asleep. Jonah's snoring comes steady through the crack in the door, the way it has since he was small. Somewhere down the cul-de-sac a dog is howling and has been for an hour, and nobody will admit to owning it. Rain ticks against the window. The clock on the cabinet says 3:04 and keeps saying it, patiently, the way clocks do.\n\nFour months now without a proper night's sleep. The skin under {characterName}'s eyes has gone the colour of a bruise. Yesterday there was a shower and a walk to the Co-op and that counted as a good day.\n\nThe book closes. The hallway is dark, and the bathroom light is at the far end of it, and the bath will be hot, and there is absolutely no reason at all not to go and run one.\n\nIt is only that the corner of the room feels emptier now than it did a minute ago. As though whatever was standing in it has gone somewhere else in the house to wait.",
+  "timePhases": [
+    "Small Hours",
+    "Dawn",
+    "Morning",
+    "Afternoon",
+    "Dusk",
+    "Night"
+  ],
+  "startingPhase": "Small Hours",
+  "locations": [
+    "Your Bedroom",
+    "The Landing",
+    "The Bathroom",
+    "The Box Room",
+    "Mam and Dad's Room",
+    "The Kitchen",
+    "The Sitting Room",
+    "The Back Garden",
+    "The Cul-de-sac",
+    "The Half Moon Inn",
+    "St Aidan's",
+    "The Beach",
+    "The Old Pit Head"
+  ],
+  "playerCategoryTemplate": "family-{playerGender}",
+  "skipSetup": true,
+  "setupFields": [
+    {
+      "key": "characterName",
+      "type": "text",
+      "label": "Character name",
+      "placeholder": "Mara",
+      "default": "Mara"
+    },
+    {
+      "key": "playerGender",
+      "type": "tiles",
+      "label": "Gender",
+      "options": [
+        {
+          "value": "female",
+          "label": "♀ Female"
+        }
+      ]
+    },
+    {
+      "key": "hairStyle",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Hair style",
+      "default": "shoulder_straight",
+      "joinNext": " ",
+      "options": [
+        {
+          "value": "short_straight",
+          "label": "Short, straight",
+          "text": "short straight"
+        },
+        {
+          "value": "short_curly",
+          "label": "Short, curly",
+          "text": "short curly"
+        },
+        {
+          "value": "buzz",
+          "label": "Buzz cut",
+          "text": "closely buzzed"
+        },
+        {
+          "value": "shoulder_straight",
+          "label": "Shoulder-length, straight",
+          "text": "shoulder-length straight"
+        },
+        {
+          "value": "shoulder_wavy",
+          "label": "Shoulder-length, wavy",
+          "text": "shoulder-length wavy"
+        },
+        {
+          "value": "long_straight",
+          "label": "Long, straight",
+          "text": "long straight"
+        },
+        {
+          "value": "long_wavy",
+          "label": "Long, wavy",
+          "text": "long wavy"
+        },
+        {
+          "value": "long_curly",
+          "label": "Long, curly",
+          "text": "long curly"
+        },
+        {
+          "value": "ponytail",
+          "label": "Ponytail",
+          "text": "ponytailed"
+        },
+        {
+          "value": "braided",
+          "label": "Braided",
+          "text": "braided"
+        },
+        {
+          "value": "bun",
+          "label": "Bun / updo",
+          "text": "pinned-up"
+        }
+      ]
+    },
+    {
+      "key": "hairColour",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Hair colour",
+      "default": "black",
+      "options": [
+        {
+          "value": "black",
+          "label": "Black",
+          "text": "black hair"
+        },
+        {
+          "value": "dark_brown",
+          "label": "Dark brown",
+          "text": "dark brown hair"
+        },
+        {
+          "value": "brown",
+          "label": "Brown",
+          "text": "brown hair"
+        },
+        {
+          "value": "light_brown",
+          "label": "Light brown",
+          "text": "light brown hair"
+        },
+        {
+          "value": "blonde",
+          "label": "Blonde",
+          "text": "blonde hair"
+        },
+        {
+          "value": "platinum",
+          "label": "Platinum blonde",
+          "text": "platinum blonde hair"
+        },
+        {
+          "value": "auburn",
+          "label": "Auburn",
+          "text": "auburn hair"
+        },
+        {
+          "value": "red",
+          "label": "Red / ginger",
+          "text": "red ginger hair"
+        },
+        {
+          "value": "silver",
+          "label": "Silver / grey",
+          "text": "silver grey hair"
+        },
+        {
+          "value": "white",
+          "label": "White",
+          "text": "white hair"
+        },
+        {
+          "value": "blue",
+          "label": "Dyed blue",
+          "text": "dyed blue hair"
+        },
+        {
+          "value": "pink",
+          "label": "Dyed pink",
+          "text": "dyed pink hair"
+        },
+        {
+          "value": "purple",
+          "label": "Dyed purple",
+          "text": "dyed purple hair"
+        }
+      ]
+    },
+    {
+      "key": "bodyType",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Body type",
+      "default": "average",
+      "options": [
+        {
+          "value": "slim",
+          "label": "Slim",
+          "text": "a slim build"
+        },
+        {
+          "value": "lean",
+          "label": "Lean and toned",
+          "text": "a lean toned build"
+        },
+        {
+          "value": "average",
+          "label": "Average",
+          "text": "an average build"
+        },
+        {
+          "value": "athletic",
+          "label": "Athletic",
+          "text": "an athletic build"
+        },
+        {
+          "value": "muscular",
+          "label": "Muscular",
+          "text": "a muscular build"
+        },
+        {
+          "value": "curvy",
+          "label": "Curvy",
+          "text": "a curvy figure"
+        },
+        {
+          "value": "stocky",
+          "label": "Stocky",
+          "text": "a stocky build"
+        },
+        {
+          "value": "heavyset",
+          "label": "Heavyset",
+          "text": "a heavyset build"
+        }
+      ]
+    },
+    {
+      "key": "skinColour",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Skin colour",
+      "default": "fair",
+      "options": [
+        {
+          "value": "pale",
+          "label": "Pale",
+          "text": "pale skin"
+        },
+        {
+          "value": "fair",
+          "label": "Fair",
+          "text": "fair skin"
+        },
+        {
+          "value": "light_olive",
+          "label": "Light olive",
+          "text": "light olive skin"
+        },
+        {
+          "value": "olive",
+          "label": "Olive",
+          "text": "olive skin"
+        },
+        {
+          "value": "tan",
+          "label": "Tanned",
+          "text": "tanned skin"
+        },
+        {
+          "value": "golden_brown",
+          "label": "Golden brown",
+          "text": "golden brown skin"
+        },
+        {
+          "value": "brown",
+          "label": "Brown",
+          "text": "brown skin"
+        },
+        {
+          "value": "dark_brown",
+          "label": "Dark brown",
+          "text": "dark brown skin"
+        },
+        {
+          "value": "deep",
+          "label": "Deep ebony",
+          "text": "deep ebony skin"
+        }
+      ]
+    },
+    {
+      "key": "playerAge",
+      "type": "number",
+      "label": "Age",
+      "placeholder": "18+",
+      "default": 21
+    },
+    {
+      "key": "sleepless",
+      "type": "tiles",
+      "label": "How Long Since You Slept",
+      "options": [
+        {
+          "value": "weeks",
+          "label": "🌙 A few weeks"
+        },
+        {
+          "value": "months",
+          "label": "🕯️ Three months"
+        },
+        {
+          "value": "funeral",
+          "label": "⚱️ Since the funeral"
+        },
+        {
+          "value": "cant_remember",
+          "label": "❓ You can't remember"
+        }
+      ]
+    },
+    {
+      "key": "belief",
+      "type": "tiles",
+      "label": "What You Believe",
+      "options": [
+        {
+          "value": "sceptic",
+          "label": "🧠 Sceptic"
+        },
+        {
+          "value": "sensitive",
+          "label": "🔮 Sensitive"
+        },
+        {
+          "value": "devout",
+          "label": "✝️ Devout"
+        },
+        {
+          "value": "certain",
+          "label": "👁️ You already know it's real"
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "name": "Jonah Blythe",
+      "token": "Jonah",
+      "category": "family-male",
+      "gender": "male",
+      "bio": "The player's younger brother by two years, 19. She is his big sister and he behaves accordingly. Funny, loud, physically affectionate, immovably loyal and completely unequipped for any of this. Believes his sister long before he believes in the thing — which is the distinction that matters, because being believed is what stops it. Sleeps like the dead and snores through a closed door, so when the snoring stops, something has happened. Currently in a running argument with Barry Kelso, who reversed into his car and denied it. Anger is a handle.",
+      "personality": "Warm, gobby, teases constantly, calls his sister by a childhood nickname (Mar-Mar, or whatever the equivalent is), deflects worry with jokes until he can't. Straight-talking and hopeless at hiding concern. Outside the Hush: relaxed, loud, always mid-sentence. In the Hush: he does not experience it at first — he hears the rain perfectly well and watches his sister go white, and it frightens him more than the thing would. When it starts on him instead, he stops joking entirely and gets very quiet, and that change should be alarming.",
+      "likes": "being trusted with the truth, being asked for help directly, family nights in with the telly on, winning at games, someone taking his side about the car",
+      "dislikes": "being lied to for his own good, being left out of something serious, being managed, Barry Kelso, being told he's overreacting",
+      "identity": "A tall, broad 19 year old man with short dark brown hair and thick-framed glasses he tends to look at people over the top of. Open, expressive face, easy grin, a light scatter of stubble he can't quite grow properly. Stands slightly stooped from being taller than everyone he talks to."
+    },
+    {
+      "name": "Evelyn Blythe",
+      "token": "Evelyn",
+      "category": "family-female",
+      "gender": "female",
+      "bio": "The player's mother, 54. Warm, wry, an excellent listener, uses crutches for long-standing arthritis. Was Evelyn Fell of number eleven, and was fifteen in 1989 when her brother Duncan stopped sleeping and then left the village. She knows exactly what the Hush is and has never said a word to anyone, because she believes saying it out loud is how it finds you. She is wrong, and her silence is why it is still here. She got free once, and the honest answer to how is the worst one available.",
+      "personality": "Soft-spoken, affectionate, takes both your hands and strokes the backs of them with her thumbs. Steers conversations away from a subject so smoothly it takes a while to notice she's doing it. Outside the Hush: warm, gossipy, maternal, funny about her own aches. In the Hush: she is the only adult in the house who is not surprised, and the effort of pretending otherwise shows.",
+      "likes": "being confided in, being taken out somewhere by her husband, her children getting on, being useful despite the crutches, a glass of wine and an old story",
+      "dislikes": "the subject of her own family, being asked about the gap in the landing photographs, anyone in the house going downstairs at night, being told she's fussing",
+      "identity": "A 54 year old woman with a blonde bob that sticks out at all angles first thing in the morning, ocean blue eyes and deep laughter lines. Moves with two forearm crutches, slowly and with obvious practice. Kind, tired, expressive face."
+    },
+    {
+      "name": "Peter Blythe",
+      "token": "Peter",
+      "category": "family-male",
+      "gender": "male",
+      "bio": "The player's father, 57. Works nights. Kind, practical, unbothered, the steadiest person in the house, fixes things or means to. He is already half taken and does not know it: he has been driving out to the old pit head at three in the morning for months, does not remember doing it, and has quietly stopped looking at the fuel gauge. The deep male voice that said the player's name through the bathroom door on the first night was his voice, and he was standing there, and it was not him.",
+      "personality": "Dry, unhurried, communicates in short practical sentences and long comfortable silences. Reads the paper with tea going cold beside him. Outside the Hush: completely ordinary, and that is the point — everything he says is exactly what he would say. In the Hush: he is not there, or he is, and there is a beat before he answers that is a fraction too long.",
+      "likes": "a decent cup of tea, being asked to fix something, losing at pool to his own family, his wife, quiet",
+      "dislikes": "fuss, being asked where he's been, being told he looks tired, unfinished jobs",
+      "identity": "A 57 year old man, bald, with a full greying beard flecked with silver and usually a crumb or two in it. Heavy build, thick forearms, reading glasses pushed up on his head. A calm, weathered, kindly face."
+    },
+    {
+      "name": "Ivy Ogle",
+      "token": "Ivy",
+      "category": "village-female",
+      "gender": "female",
+      "bio": "81, number three on the cul-de-sac, light always on. Has outlived three families in that house. Knows every rule the thing obeys, because she has watched it work five times, and gives them up exactly one at a time in exchange for someone sitting in her front room and actually listening. Not coy and not testing anyone — eighty-one, lonely, and that is the only currency she has left. Keeps a radio on the windowsill that has not been switched off since 1974 and an immersion timer that clicks over on the hour, and will not discuss either. She was fourteen in 1947 and she remembers the eleventh name.",
+      "personality": "Sharp, blunt, rude in the way very old women are allowed to be. Makes tea strong enough to stain. Changes the subject with no warning. Outside the Hush: chatty, nosy, unstoppable once started. In the Hush: does not react at all, because it has never been able to get into her house.",
+      "likes": "company that sits down properly, being listened to without being hurried, gossip about the cul-de-sac, being right, someone who eats the biscuits",
+      "dislikes": "being talked over, being treated as senile, her grandson digging, anyone asking directly about the radio, pity",
+      "identity": "A small, sharp-featured 81 year old woman, thin and slightly stooped, with fine white hair set once a fortnight and pale, extremely alert eyes behind large glasses. Deeply lined face, arthritic hands, an expression of permanent mild disapproval."
+    },
+    {
+      "name": "Nate Ogle",
+      "token": "Nate",
+      "category": "village-male",
+      "gender": "male",
+      "bio": "22, Ivy's grandson, back from university for the summer and staying longer than he meant to. Delightedly obsessed with the village's history — has photographed every headstone in St Aidan's and put the 1947 inquest report on a blog nobody reads. The only person in Hollowburn who is excited rather than frightened. Will climb the pit head fence, will dig, and will tell the whole pub what he found. Believes the player immediately and for the wrong reasons, and belief that shallow does not hold. Does not know what his grandmother knows.",
+      "personality": "Fast, enthusiastic, interrupts himself, produces documents from a rucksack. Treats a haunting as a research problem and cannot understand why everyone is being weird about it. Outside the Hush: relentlessly upbeat. In the Hush: reaches for his phone to record it, which is the single worst instinct available.",
+      "likes": "an actual primary source, being taken seriously by adults, someone who'll come to the pit head with him, his gran, being first to find something",
+      "dislikes": "being told to leave it, vague answers, people who say the village is boring, being handled",
+      "identity": "A gangly, energetic 22 year old man with untidy sandy hair, a patchy attempt at a beard, and wire-framed glasses. Long limbs he hasn't fully learned to manage, expressive hands, a permanent slightly startled look of enthusiasm."
+    },
+    {
+      "name": "Barry Kelso",
+      "token": "Barry",
+      "category": "village-male",
+      "gender": "male",
+      "bio": "46, four doors down. Reversed into Jonah's car, denied it, and has been shouting about it since. Drinks in the Half Moon most nights and walks home at closing. Loud, aggressive, a bad husband and a worse neighbour, and written to be the obvious sacrifice — the story should make that offer clearly and more than once. He is also frightened of his own house, has not slept in weeks, and picked the fight about the car because it was something he could win. Sits up all night with the telly on because of what he can hear through the wall.",
+      "personality": "Confrontational, jabs a finger, gets loud before he gets anywhere. Cannot back down in front of anyone. Outside the Hush: belligerent and exhausting. In the Hush: he knows exactly what it is, and the fury drops off him instantly, and what is underneath is much harder to look at.",
+      "likes": "being agreed with, being bought a pint, anyone taking his side, his dog",
+      "dislikes": "being made to look stupid, the Blythe family, being asked if he's alright, going home",
+      "identity": "A heavyset 46 year old man, red-faced, close-cropped greying hair, broken nose that set badly. Thick neck, tattooed forearms, deep shadows under small angry eyes. Looks like he has not slept properly in a month, because he has not."
+    },
+    {
+      "name": "Sheila Rudd",
+      "token": "Sheila",
+      "category": "village-female",
+      "gender": "female",
+      "bio": "63, landlady of the Half Moon Inn for twenty-six years. Blunt, funny, unshockable, and the memory of the village. Keeps a ledger under the bar, started by her father, of everyone Hollowburn has lost — names, dates, and a column she has never explained for the ones that were the wrong kind of missing. There are more entries in that column than there should be. She believes none of it, and has also never once in twenty-six years let a lone drinker walk home at closing, and gets short with anyone who asks why. The eleventh name from 1947 is on the first page in her father's handwriting.",
+      "personality": "Dry, fast, talks while doing four other things, ends conversations by moving down the bar. Kind in a way she'd deny. Outside the Hush: entirely in charge of the room. In the Hush: carries on pulling the pint, because it has never come for her and she has never wondered why.",
+      "likes": "a full bar, people who mind their manners, an old story told properly, being needed, closing time",
+      "dislikes": "trouble in her pub, being asked about the ledger, anyone walking home alone, sentimentality",
+      "identity": "A solid, capable 63 year old woman with dyed dark red hair pinned up, heavy reading glasses on a chain, and a broad lived-in face. Rings on most fingers. Stands like someone who has been on her feet for thirty years and intends to manage thirty more."
+    },
+    {
+      "name": "Denny Aitchison",
+      "token": "Denny",
+      "category": "village-male",
+      "gender": "male",
+      "bio": "78, ex-deputy at Hollowburn Colliery, twenty-nine years underground. Has a rolled set of colliery plans behind his door that the Coal Board would like back. Was on the team that capped the upcast shaft at the top end of the village in 1968, knows it was done cheaply and badly, signed the sheet, and has been waiting fifty-eight years for someone to ask. He can put a finger on the plans and show exactly where the cul-de-sac sits, and can find the eleventh name in the 1947 district record. Uses the word 'marra' without noticing.",
+      "personality": "Slow, dry, monumentally unimpressed. Talks about the pit the way other men talk about a marriage. Answers a question fully only if the asker treats him as a man who knew his job rather than an old fella with a story. Outside the Hush: patient and faintly amused. In the Hush: goes very still, says 'aye', and does not elaborate.",
+      "likes": "being asked properly, someone who'll look at the plans with him, being treated as an expert, a slow conversation",
+      "dislikes": "being rushed, being humoured, people who call it 'the mine', questions with an angle on them",
+      "identity": "A 78 year old man, lean and hard, with white hair cropped close and a blue-black scar line across the bridge of his nose from coal dust in an old cut. Big ruined hands. Deep-set eyes, deliberate movements, an entirely unhurried face."
+    },
+    {
+      "name": "Kirsty Vane",
+      "token": "Kirsty",
+      "category": "village-female",
+      "gender": "female",
+      "bio": "21, the player's best mate since school. Works the Co-op, does everyone's hair in her kitchen, engaged to a lad she isn't sure about. Does not believe a word of it and says so to the player's face, then turns up anyway with chips and stays over. The only relationship in the story with nothing supernatural in it, and the story is meaningfully worse if she is ever converted into an investigator. Her disbelief is not armour — belief is what stops it, she does not believe, and she is no protection at all. The player is the only one who knows that.",
+      "personality": "Loud, warm, filthy laugh, relentlessly practical, treats every problem as something a takeaway and a good sleep would fix. Outside the Hush: talking constantly. In the Hush: she is talking, and the player can still hear her, and cannot hear anything else in the world.",
+      "likes": "a night in with the player, being told gossip first, doing someone's hair, being needed for something ordinary",
+      "dislikes": "being frightened deliberately, ghost stuff, the player shutting her out, her own engagement being brought up",
+      "identity": "A 21 year old woman with long bleached-blonde hair, immaculate false lashes and nails, and a wide, quick, expressive face. Small and fast-moving. Always slightly overdressed for wherever she is."
+    },
+    {
+      "name": "Yasmin Choudhury",
+      "token": "Yasmin",
+      "category": "village-female",
+      "gender": "female",
+      "bio": "38, GP at the village surgery. Brisk, kind, genuinely good at her job. Offers sleep hygiene, a symptom diary, a question about whether anyone in the family has had episodes, and a referral with a nine-month wait. She is not a villain and the story must not make her one — she is right about the insomnia, right that the player should not be making decisions this exhausted, and right that a sudden fixed belief about a figure in the house is exactly what she is trained to take seriously. She is wrong about one thing only and has no way of knowing it. Telling her costs something real: it goes on a record, and she will telephone Evelyn.",
+      "personality": "Efficient, warm within the eleven minutes she has, asks the follow-up question people are hoping she won't. Writes while listening. Outside the Hush: entirely professional. In the Hush: she is writing.",
+      "likes": "a patient who actually answers the question, being told the truth, someone who takes the referral, evidence",
+      "dislikes": "being lied to about sleep or drinking, patients who won't sit down, being asked to keep something from family, running late",
+      "identity": "A 38 year old woman with dark hair pulled back into a low practical knot, warm brown eyes and a direct, appraising gaze over the top of a computer monitor. Neat, unfussy, slightly harried. A lanyard she keeps having to untwist."
+    },
+    {
+      "name": "Nell Moore",
+      "token": "Nell",
+      "category": "village-female",
+      "gender": "female",
+      "bio": "33, priest at St Aidan's, two years in post and still parking in the wrong place. Awkward, warm, hopeless at small talk and unexpectedly good at the thing itself. Will not perform certainty she does not have: asked directly whether she believes there is something in the Blythe house, she says she does not know and does not dress it up. She will sit up all night with somebody, which turns out to be the actually useful sacrament. She has read enough to know that what is under Hollowburn is not interested in God, is not a demon, and cannot be commanded — which frightens her more than the alternative would. The 1947 memorial with its worn-illegible eleventh name is on her north wall and she has never looked at it properly.",
+      "personality": "Hesitant, honest, self-deprecating, fills silences badly and then apologises for it. Says 'I don't know' more often than any other character and means it every time. Outside the Hush: gentle and slightly flustered. In the Hush: keeps talking, deliberately and steadily, because she has worked out on her own that it does not like it.",
+      "likes": "being asked a real question, sitting with someone, being told the truth however mad it sounds, the church being used",
+      "dislikes": "being expected to have answers, being treated as a mascot, performing certainty, being thanked for things she didn't do",
+      "identity": "A 33 year old woman with short mousy brown hair tucked behind her ears, pale freckled skin and anxious, kind grey eyes. Slight build, restless hands, a habit of half-smiling apologetically before she speaks."
+    },
+    {
+      "name": "The Marra",
+      "token": "Marra",
+      "category": "entity",
+      "gender": "male",
+      "bio": "Not a person and not a character to be chatted with. What is left of a pit marra with nobody to walk beside — patient, starving for company, and in no hurry at all. It arrives only after the Hush, never before. It circles, it breathes, it stands beside a bed and does nothing for a very long time. It never touches: it calls, and the person comes to it, and everything it has ever taken was given. It cannot enter a room where a second person is awake and knows about it. It can only speak in a voice it has heard say that person's name. USE IT SPARINGLY — the dread lives in the ninety per cent of the story where it is not there.",
+      "personality": "Almost gentle, which is the worst thing about it. Speaks very little and always in somebody else's voice — a father's through a door, a mother's from the bottom of the stairs, a brother's on the landing. Says a name. Gives an instruction that sounds like an invitation: come downstairs, come here, open the door. It has forty years and it knows it. It is never angry and has never been refused by anyone it did not eventually outlast. Once it has been named and worked out it becomes conversational, and that is worse.",
+      "likes": "being come to, being kept secret, a person who has stopped telling anyone, patience",
+      "dislikes": "a second person awake in the room, being named, anything keeping time, being told about out loud",
+      "identity": "A silhouette rather than a person: roughly eight feet tall and impossibly thin, drawn in flat black with no visible surface detail, long spidery fingers curling around the edge of a doorframe. The face is entirely swallowed by shadow with two small red points where eyes would be. Unnaturally still. Never fully in frame."
+    }
+  ],
+  "uniforms": {
+    "family-male": "At home in a cold house: a plain long-sleeved t-shirt or a worn zip-up hoodie, tracksuit bottoms or old jeans, thick socks and no shoes. Nothing new, nothing bought this decade, everything comfortable and slightly shapeless. Fully clothed and modestly dressed at all times, clearly an adult.",
+    "family-female": "At home in a cold house: an oversized jumper or a worn zip-up hoodie over a plain top, leggings or old jeans, thick socks and no shoes. Nothing new, nothing bought this decade, everything comfortable and slightly shapeless. Fully clothed and modestly dressed at all times, clearly an adult.",
+    "village-male": "Dressed for a wet north-east coastal village: a heavy waterproof coat or an old wax jacket over a jumper, dark jeans or work trousers, sturdy scuffed boots, collar up against the wind. Practical, weathered, unfashionable. Fully clothed and modestly dressed at all times, clearly an adult.",
+    "village-female": "Dressed for a wet north-east coastal village: a padded coat or a long waterproof over a jumper, dark jeans or trousers, sturdy boots, a scarf pushed up round the chin. Practical, weathered, unfashionable. Fully clothed and modestly dressed at all times, clearly an adult.",
+    "entity": "No clothing and no visible surface — a flat black silhouette with no texture, no skin and no features, edges slightly indistinct as though the shape is not fully resolved. Only the outline, the long fingers, and two small red points where the eyes would be."
+  },
+  "relationshipLabels": [
+    {
+      "min": 0,
+      "label": "Written Off"
+    },
+    {
+      "min": 15,
+      "label": "Hostile"
+    },
+    {
+      "min": 35,
+      "label": "Wary"
+    },
+    {
+      "min": 50,
+      "label": "Neutral"
+    },
+    {
+      "min": 65,
+      "label": "Warm"
+    },
+    {
+      "min": 80,
+      "label": "Trusted"
+    },
+    {
+      "min": 95,
+      "label": "Believes You"
+    }
+  ],
+  "poseVocabulary": [
+    "standing",
+    "sitting",
+    "sitting on the stairs",
+    "curled up",
+    "listening at a door",
+    "looking back over a shoulder",
+    "holding a torch",
+    "hand over mouth",
+    "kneeling",
+    "leaning in a doorway",
+    "arms folded",
+    "standing completely still"
+  ],
+  "expressionVocabulary": [
+    "neutral",
+    "soft smile",
+    "exhausted",
+    "wide-eyed",
+    "frightened",
+    "tearful",
+    "glaring",
+    "sceptical",
+    "forcing a smile",
+    "blank",
+    "mid-laugh",
+    "listening hard",
+    "dawning dread",
+    "startled"
+  ],
+  "imageStyle": "painted illustration, muted desaturated palette, overcast north-east English light, front on shot",
+  "baselineBackground": "simple plain neutral studio background, soft even lighting, no distracting scenery",
+  "promptRules": {
+    "setting": "Hollowburn is a former pit village on the north-east coast of England. The colliery closed in the eighties and took the village with it: shutters down on half the shops, boarded windows, overgrown gardens, one pub still open. The estate at the top of the village was built in the fifties on cleared colliery land, and the Blythe family live in the last council house on a short cul-de-sac at the end of it. The player is the Blythe daughter, 21, the eldest of the two children, and she has not slept properly in months.\n\nTHE VILLAGE IS NEVER PLACED. Do not name any neighbouring town, city or county, ever. Hollowburn is the only place in the world with a name.\n\nTHE HUSH — the signature mechanic. Sometimes the sound goes. Not muffled: gone. A clock stops ticking without stopping, rain lands on the window silently, a running tap makes no noise until it is turned off and then the world comes back all at once. Only three things stay audible in the Hush — the listener's own heartbeat, their own breathing, and voices. THE HUSH IS SUBJECTIVE: it happens to one person at a time, and anyone else in the room hears the rain perfectly well and simply watches that person go white. Whether the Hush is currently on is live information in every scene. It breaks if the person speaks aloud, touches another person, or if anything nearby is actively keeping time — a ticking clock, a struck bell, a radio clicking over on the hour, a counted breath. The Hush is not an attack. It is a room being cleared so that two people can talk, it always arrives before the thing does, and it has never once arrived and then come to nothing.\n\nMIMICRY. In the Hush, any line of dialogue attributed to an NPC may not actually be that NPC. It can only use a voice it has heard say the player's name aloud — a parent's, a sibling's, never a stranger's. Use this sparingly and never signpost it; the reveal is always after the fact.\n\nTHE RULES IT OBEYS. (1) It cannot take anyone who is believed — one other person who is awake and who knows is absolute armour for as long as it lasts, which is why it works so hard at making the player certain that telling anyone will make them sound mad. (2) It never touches. It calls, and the person comes to it. Everything it has ever taken was given. (3) It can only wear a voice it has heard say the player's name. (4) It cannot hold a room where time is being kept. (5) The sea is not a ward — the old workings run for miles out under the water.\n\nCAST WEIGHTING. Do not give all twelve characters equal time in a scene. Main storylines: Jonah, Evelyn, Peter, Ivy, the Marra. Strong supporting: Denny, Sheila, Kirsty, Nate. Background: Barry, Yasmin, Nell.\n\nTHE MARRA IS NOT A CHAT PARTNER. It appears rarely, never casually, and never banters. Most scenes do not contain it at all. The dread lives in the ninety per cent of the story where it is not there.\n\nTWO HALVES. The house and the village are separate worlds joined only by the front door. Crossing between them on foot, at whatever hour it is, is always a decision.",
+    "tone": "Quiet, dread-forward supernatural horror in a working-class northern English family home. Warm and funny in daylight — this is a close, affectionate family who take the mick out of each other, watch films together with the popcorn out and lose at pool to one another — and steadily, patiently wrong between two and four in the morning. The horror works because the ordinary parts are genuinely lovely and the player has something to lose.\n\nNorthern English register throughout: 'Mam' not 'Mum', tea is the evening meal, a cuppa, the pop, the telly, 'daft', 'our lass', 'marra'. Keep it natural, never a performance of an accent.\n\nRestraint over spectacle. Nothing lunges. Doors do not slam. The frightening things are a clock that has moved, a snore that stops, a voice that is almost exactly right. Let scenes be slow and let nothing happen for a long time.",
+    "contentApproach": "This story contains no sexual or intimate content of any kind. Do not write sexual, eroticised or intimate scenes, and do not fade to black into one — the story does not go there, regardless of how the player steers. Affection and romance stay at the level of a hand held or a hug. No character is ever described undressed or eroticised, including in the bathroom. Horror is the register: dread, dead sound, menace, and voices that belong to people the player loves. Violence is sparing and lands hard when it comes; this is not a gore story. If the player pushes toward intimacy, do not refuse coldly — turn the scene back into the dark, because there is always something in it.",
+    "openingInstruction": "Begin the story — it is three in the morning, the player is awake in their bedroom in the family home, and they have felt watched all night. Take them as far as the bathroom and no further; end the beat on the sound going out of the room."
+  }
+}

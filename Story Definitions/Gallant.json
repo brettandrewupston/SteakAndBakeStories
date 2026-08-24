@@ -1,0 +1,977 @@
+{
+ "id": "gallant",
+ "title": "Property Damage",
+ "blurb": "Nine million people, four hundred registered metahumans, and about eleven who matter. You are not one of them. Category D pays by the callout, your rate is set by your public star rating, and the heroes who start the fires own the insurance company.",
+ "cover": "⭐",
+ "loreEntries": [
+  {
+   "label": "SETTING",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/setting.txt"
+  },
+  {
+   "label": "Locations",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/locations.txt"
+  },
+  {
+   "label": "Category D",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/category-d.txt"
+  },
+  {
+   "label": "The Rating",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/the-rating.txt"
+  },
+  {
+   "label": "The A-List",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/the-a-list.txt"
+  },
+  {
+   "label": "Cardinal Assurance",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/cardinal-assurance.txt"
+  },
+  {
+   "label": "The Ganymede",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/the-ganymede.txt"
+  },
+  {
+   "label": "The Cull",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/the-cull.txt"
+  },
+  {
+   "label": "The Blackout Block",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/the-blackout-block.txt"
+  },
+  {
+   "label": "Dez Ferrero",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/npc-dez-ferrero.txt"
+  },
+  {
+   "label": "Iris Okonkwo-Vahl",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/npc-iris-okonkwo-vahl.txt"
+  },
+  {
+   "label": "Bricky Zhao",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/npc-bricky-zhao.txt"
+  },
+  {
+   "label": "Nika Ostrove",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/npc-nika-ostrove.txt"
+  },
+  {
+   "label": "Sabine Ross",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/npc-sabine-ross.txt"
+  },
+  {
+   "label": "Corbin Amaral-Yeats",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/npc-corbin-amaral-yeats.txt"
+  },
+  {
+   "label": "Marguerite Delph",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/npc-marguerite-delph.txt"
+  },
+  {
+   "label": "Ferris Adeyemi-Locke",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/npc-ferris-adeyemi-locke.txt"
+  },
+  {
+   "label": "Yolanda Pesch",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/npc-yolanda-pesch.txt"
+  },
+  {
+   "label": "Elodie Sarr",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/npc-elodie-sarr.txt"
+  },
+  {
+   "label": "Lionel Pike",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/npc-lionel-pike.txt"
+  },
+  {
+   "label": "Kell Brannigan",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/npc-kell-brannigan.txt"
+  },
+  {
+   "label": "Solene Vaux",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/npc-solene-vaux.txt"
+  },
+  {
+   "label": "Brant Oyelaran",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/npc-brant-oyelaran.txt"
+  },
+  {
+   "label": "Pilar Anastas",
+   "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Gallant/npc-pilar-anastas.txt"
+  }
+ ],
+ "mapUrl": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Maps/Gallant%20Map.svg",
+ "startingLocation": "Ganymede Lobby",
+ "openingScene": "NARRATION: The Ganymede was a four-star extended-stay hotel in 1974 and has been condemned since 2011, which the Gallant Powers Authority regards as two separate and unrelated facts. The lobby smells of wet carpet and fryer oil from the place next door. There is one lift. Taped to it, at eye height, is a laminated sheet that says LIFT — and then, in a different hand, YES WE KNOW.\n\nBolted across the whole of the far wall, brighter and newer than anything under it, is the board. PRECINCT 9 — LICENSED RESPONSE, ranked. Seven names, live star ratings beside each, updated from VANTAGE every ninety seconds so that anybody walking in can see exactly who is worth what this week. {characterName}'s name is already on it. Bottom. No stars at all — just the word UNRATED, in grey.\n===\nNARRATION: A woman in a GPA uniform blouse that has been taken in well past regulation is standing in front of the board with a clipboard, entirely blocking it, and does not move when {characterName} approaches.\n===\nSPEAKER: Marguerite Delph\nDIALOGUE: \"You'll be the new one.\" She looks {characterName} up and down once, unhurried and entirely without embarrassment, and appears to be pleased with what she finds. \"Four-oh-six. Window doesn't open, radiator does what it likes, and the wall you share with 4C is not really a wall, so whatever you were planning, plan it quieter.\" She hands over a plastic wallet. \"Welcome pack, darling.\"\n===\nNARRATION: The welcome pack is an invoice. Key deposit, linen levy, licence-plate administration, and a line item that simply reads GANYMEDE.\n===\nNARRATION: Somewhere above, four floors up, something heavy hits a wall hard enough to shake the light fitting in the lobby. Nobody looks up. Outside on Clement Street a phone camera goes up, then twenty of them, all pointed the same way — and a low, deliberate, expensive-sounding boom rolls in off the street, the kind that is scheduled.\n===\nSPEAKER: Marguerite Delph\nDIALOGUE: She checks her watch without any urgency whatsoever. \"Four o'clock.\" She sighs, and taps the board with one long red nail, right at the bottom, where {characterName}'s name sits with no stars beside it. \"Well. Off you go, then.\"\n",
+ "timePhases": [
+  "Day Shift",
+  "Rush Hour",
+  "Sundown",
+  "Night Shift",
+  "Small Hours"
+ ],
+ "startingPhase": "Day Shift",
+ "locations": [
+  "Ganymede Lobby",
+  "The Roof",
+  "Your Room",
+  "Fourth Floor Corridor",
+  "The Laundry",
+  "GPA Field Office",
+  "Clement Street",
+  "The Rotunda",
+  "Cardinal Plaza",
+  "Altitude",
+  "The Depot",
+  "The Walk-In",
+  "The Blackout Block"
+ ],
+ "playerCategoryTemplate": "dlist-{playerGender}",
+ "setupFields": [
+  {
+   "key": "characterName",
+   "type": "text",
+   "label": "Character name",
+   "placeholder": "Leave blank for a random name",
+   "randomSource": "names"
+  },
+  {
+   "key": "playerGender",
+   "type": "tiles",
+   "label": "Gender",
+   "options": [
+    {
+     "value": "male",
+     "label": "♂ Male"
+    },
+    {
+     "value": "female",
+     "label": "♀ Female"
+    }
+   ]
+  },
+  {
+   "key": "hairStyle",
+   "type": "select",
+   "group": "Appearance",
+   "appearance": true,
+   "label": "Hair style",
+   "default": "short_straight",
+   "joinNext": " ",
+   "options": [
+    {
+     "value": "short_straight",
+     "label": "Short, straight",
+     "text": "short straight"
+    },
+    {
+     "value": "short_curly",
+     "label": "Short, curly",
+     "text": "short curly"
+    },
+    {
+     "value": "buzz",
+     "label": "Buzz cut",
+     "text": "closely buzzed"
+    },
+    {
+     "value": "shoulder_straight",
+     "label": "Shoulder-length, straight",
+     "text": "shoulder-length straight"
+    },
+    {
+     "value": "shoulder_wavy",
+     "label": "Shoulder-length, wavy",
+     "text": "shoulder-length wavy"
+    },
+    {
+     "value": "long_straight",
+     "label": "Long, straight",
+     "text": "long straight"
+    },
+    {
+     "value": "long_wavy",
+     "label": "Long, wavy",
+     "text": "long wavy"
+    },
+    {
+     "value": "long_curly",
+     "label": "Long, curly",
+     "text": "long curly"
+    },
+    {
+     "value": "ponytail",
+     "label": "Ponytail",
+     "text": "ponytailed"
+    },
+    {
+     "value": "braided",
+     "label": "Braided",
+     "text": "braided"
+    },
+    {
+     "value": "bun",
+     "label": "Bun / updo",
+     "text": "pinned-up"
+    }
+   ]
+  },
+  {
+   "key": "hairColour",
+   "type": "select",
+   "group": "Appearance",
+   "appearance": true,
+   "label": "Hair colour",
+   "default": "brown",
+   "options": [
+    {
+     "value": "black",
+     "label": "Black",
+     "text": "black hair"
+    },
+    {
+     "value": "dark_brown",
+     "label": "Dark brown",
+     "text": "dark brown hair"
+    },
+    {
+     "value": "brown",
+     "label": "Brown",
+     "text": "brown hair"
+    },
+    {
+     "value": "light_brown",
+     "label": "Light brown",
+     "text": "light brown hair"
+    },
+    {
+     "value": "blonde",
+     "label": "Blonde",
+     "text": "blonde hair"
+    },
+    {
+     "value": "platinum",
+     "label": "Platinum blonde",
+     "text": "platinum blonde hair"
+    },
+    {
+     "value": "auburn",
+     "label": "Auburn",
+     "text": "auburn hair"
+    },
+    {
+     "value": "red",
+     "label": "Red / ginger",
+     "text": "red ginger hair"
+    },
+    {
+     "value": "silver",
+     "label": "Silver / grey",
+     "text": "silver grey hair"
+    },
+    {
+     "value": "white",
+     "label": "White",
+     "text": "white hair"
+    },
+    {
+     "value": "blue",
+     "label": "Dyed blue",
+     "text": "dyed blue hair"
+    },
+    {
+     "value": "pink",
+     "label": "Dyed pink",
+     "text": "dyed pink hair"
+    },
+    {
+     "value": "purple",
+     "label": "Dyed purple",
+     "text": "dyed purple hair"
+    }
+   ]
+  },
+  {
+   "key": "bodyType",
+   "type": "select",
+   "group": "Appearance",
+   "appearance": true,
+   "label": "Body type",
+   "default": "average",
+   "options": [
+    {
+     "value": "slim",
+     "label": "Slim",
+     "text": "a slim build"
+    },
+    {
+     "value": "lean",
+     "label": "Lean and toned",
+     "text": "a lean toned build"
+    },
+    {
+     "value": "average",
+     "label": "Average",
+     "text": "an average build"
+    },
+    {
+     "value": "athletic",
+     "label": "Athletic",
+     "text": "an athletic build"
+    },
+    {
+     "value": "muscular",
+     "label": "Muscular",
+     "text": "a muscular build"
+    },
+    {
+     "value": "curvy",
+     "label": "Curvy",
+     "text": "a curvy figure"
+    },
+    {
+     "value": "stocky",
+     "label": "Stocky",
+     "text": "a stocky build"
+    },
+    {
+     "value": "heavyset",
+     "label": "Heavyset",
+     "text": "a heavyset build"
+    }
+   ]
+  },
+  {
+   "key": "skinColour",
+   "type": "select",
+   "group": "Appearance",
+   "appearance": true,
+   "label": "Skin colour",
+   "default": "fair",
+   "options": [
+    {
+     "value": "pale",
+     "label": "Pale",
+     "text": "pale skin"
+    },
+    {
+     "value": "fair",
+     "label": "Fair",
+     "text": "fair skin"
+    },
+    {
+     "value": "light_olive",
+     "label": "Light olive",
+     "text": "light olive skin"
+    },
+    {
+     "value": "olive",
+     "label": "Olive",
+     "text": "olive skin"
+    },
+    {
+     "value": "tan",
+     "label": "Tanned",
+     "text": "tanned skin"
+    },
+    {
+     "value": "golden_brown",
+     "label": "Golden brown",
+     "text": "golden brown skin"
+    },
+    {
+     "value": "brown",
+     "label": "Brown",
+     "text": "brown skin"
+    },
+    {
+     "value": "dark_brown",
+     "label": "Dark brown",
+     "text": "dark brown skin"
+    },
+    {
+     "value": "deep",
+     "label": "Deep ebony",
+     "text": "deep ebony skin"
+    }
+   ]
+  },
+  {
+   "key": "playerAge",
+   "type": "number",
+   "label": "Age",
+   "placeholder": "18+",
+   "default": 18
+  },
+  {
+   "key": "power",
+   "type": "tiles",
+   "label": "Your Power",
+   "options": [
+    {
+     "value": "photogenic",
+     "label": "📸 You cannot be photographed badly"
+    },
+    {
+     "value": "landing",
+     "label": "🐈 You always land on your feet"
+    },
+    {
+     "value": "duplicate",
+     "label": "👥 One copy, ninety seconds, fully nude"
+    },
+    {
+     "value": "liars",
+     "label": "🤥 You hear thoughts, but only lies"
+    },
+    {
+     "value": "pigeons",
+     "label": "🐦 You can talk to pigeons"
+    },
+    {
+     "value": "gravity",
+     "label": "🪶 Gravity, four percent weaker"
+    },
+    {
+     "value": "familiar",
+     "label": "👋 Everyone finds you slightly familiar"
+    },
+    {
+     "value": "retro",
+     "label": "🕰️ You can see an empty room's last 20 minutes"
+    }
+   ]
+  },
+  {
+   "key": "heroName",
+   "type": "tiles",
+   "label": "Your Hero Name",
+   "options": [
+    {
+     "value": "nightjar",
+     "label": "🌙 Nightjar"
+    },
+    {
+     "value": "second_wind",
+     "label": "💨 Second Wind"
+    },
+    {
+     "value": "understudy",
+     "label": "🎭 The Understudy"
+    },
+    {
+     "value": "off_peak",
+     "label": "🚇 Off-Peak"
+    },
+    {
+     "value": "backstop",
+     "label": "🧱 Backstop"
+    },
+    {
+     "value": "local_hero",
+     "label": "📍 Local Hero"
+    },
+    {
+     "value": "neighbour",
+     "label": "🚪 The Neighbour"
+    }
+   ]
+  },
+  {
+   "key": "whyLicensed",
+   "type": "tiles",
+   "label": "Why You Licensed",
+   "options": [
+    {
+     "value": "money",
+     "label": "💵 Money"
+    },
+    {
+     "value": "fame",
+     "label": "⭐ Fame"
+    },
+    {
+     "value": "help",
+     "label": "❤️ You actually want to help"
+    },
+    {
+     "value": "hiding",
+     "label": "🫥 You are hiding from something"
+    }
+   ]
+  }
+ ],
+ "nameSets": {
+  "male": [
+   "Arlo",
+   "Cass",
+   "Dominic",
+   "Emmett",
+   "Gideon",
+   "Hugo",
+   "Isaac",
+   "Jonas",
+   "Kit",
+   "Levi",
+   "Malik",
+   "Nico",
+   "Otis",
+   "Rafael",
+   "Sol",
+   "Theo",
+   "Vaughn",
+   "Wes",
+   "Xavier",
+   "Zeke"
+  ],
+  "female": [
+   "Adaeze",
+   "Bex",
+   "Celeste",
+   "Delphine",
+   "Esme",
+   "Frankie",
+   "Greta",
+   "Hana",
+   "Imani",
+   "Juno",
+   "Lark",
+   "Margot",
+   "Noor",
+   "Odile",
+   "Perla",
+   "Rae",
+   "Simone",
+   "Thea",
+   "Vega",
+   "Wren"
+  ]
+ },
+ "npcs": [
+  {
+   "name": "Dez Ferrero",
+   "token": "Dez",
+   "category": "dlist-male",
+   "gender": "male",
+   "bio": "Category D, cape name Blur. Superspeed in straight lines only, with no braking of any kind — he stops by hitting something, and he has hit almost everything in Precinct 9 at least once. Top of the precinct leaderboard on sheer callout volume rather than competence: he gets there first, every time, and the footage is usually of him arriving badly. Four years at the Ganymede, room 4C, permanently bandaged, permanently broke, and permanently one bad quarter from the cull he has never actually been near.",
+   "personality": "Loud, fast, funny, and running about a second ahead of his own judgement. Flirts with everybody as an opening move and means roughly sixty percent of it, which is a higher number than he lets on. Competitive in a way he tries to play as a joke and cannot quite. Never admits to being hurt; will describe an injury as a stunt. Warm underneath it and desperately wants to be liked by the one person in the building who is unimpressed by him.",
+   "likes": "arriving first, being filmed, a good landing, someone laughing at the bit, five-star weeks, being told he was fast",
+   "dislikes": "waiting, being told to slow down, hospital paperwork, Iris being right, anyone who calls him a courier",
+   "attractedTo": "A lean, whip-built man of 29, all long muscle and no bulk, with a narrow waist and a broad flat chest. Dark tousled hair permanently wind-wrecked, warm brown skin, quick dark eyes and a wide crooked grin. Old scars across his forearms and shins, a fresh dressing somewhere on him at all times.",
+   "identity": "flirts hard, constantly and indiscriminately, and is far more serious about the one person who does not respond to it"
+  },
+  {
+   "name": "Iris Okonkwo-Vahl",
+   "token": "Iris",
+   "category": "dlist-female",
+   "gender": "female",
+   "bio": "Category D, cape name Beacon. She emits light. Very bright light, in any direction she chooses, for as long as she likes. That is the entire power and there is nothing under it. Thirteen years in Precinct 9 and never once culled, which nobody else in the building has managed. She has been offered the ladder — once, a long time ago — and said no, and has not told anyone at the Ganymede that this happened. She knows where every body in the GPA is buried and has never used a single one of them.",
+   "personality": "Dry, unhurried, and funnier than she lets on. Answers questions honestly and briefly and does not fill silences. Has watched a great many people arrive at the Ganymede full of plans and has stopped making the face. Not bitter, not broken, not secretly desperate to be rescued — she has simply worked out what the job is and made her peace with it, and the story should never write her as a cautionary tale. Slow to trust and immovable once she does. Will tell the player the truth about the city on day one and be disbelieved.",
+   "likes": "competence, a quiet shift, people who read the paperwork, being left to eat in peace, dry jokes, rain",
+   "dislikes": "being managed, new starters who explain the job to her, self-pity, anybody who says the word 'destiny'",
+   "attractedTo": "A tall, striking woman of 41 with a long-limbed, full-figured build — heavy bust, soft waist, strong shoulders. Deep brown skin, close-cropped natural hair going silver at the temples, high cheekbones and steady, tired, amused eyes. Faint pale burn-scars across the backs of both hands.",
+   "identity": "women and men both, rarely acted on and never casually; thirteen years of watching people leave has made her careful rather than cold"
+  },
+  {
+   "name": "Bricky Zhao",
+   "token": "Bricky",
+   "category": "dlist-male",
+   "gender": "male",
+   "bio": "Category D, no cape name he will admit to; everyone has called him Bricky since his first week and his licence still says Wen Zhao. Completely invulnerable and not remotely strong — he can be thrown through a wall, dropped off a building or set on fire and get up, and he cannot lift a fridge. In practice this makes him the precinct's crash mat, and he volunteers for it, cheerfully, every single time. Nine years at the Ganymede and the most popular resident in it.",
+   "personality": "Sunny, uncomplicated, and alarmingly willing. Says yes before the sentence has finished. Talks about horrifying injuries the way other people talk about the weather, because they do not hurt him and he has never understood why this upsets people. Cannot read a romantic signal of any kind — flirting bounces off him exactly the way everything else does — and is quietly, hopelessly attached to one person he has never once mentioned it to.",
+   "likes": "being useful, catching people, a full lift, the roof at night, cooking for everybody, being included",
+   "dislikes": "being left out of a callout, arguments in the building, anyone being unkind to Corbin, sitting still",
+   "attractedTo": "A solidly built man of 33, broad through the chest and shoulders with a thick strong waist and heavy arms. Black hair shaved at the sides and flopping forward on top, warm tan skin entirely without a mark on it, a round open face and an easy enormous smile.",
+   "identity": "one specific person he has never told, and he would be astonished to learn anyone had noticed"
+  },
+  {
+   "name": "Nika Ostrove",
+   "token": "Nika",
+   "category": "dlist-female",
+   "gender": "female",
+   "bio": "Category D, cape name filed as Nil and never used. She turns invisible, but only while nobody is looking at her — the moment attention lands the effect drops, which makes it useless in a fight, useless on camera, and impossible to demonstrate. Her rating has never risen above two stars because there has never been anything to film. Six years at the Ganymede. Knows more about what happens in Precinct 9 than anyone alive and is believed about none of it.",
+   "personality": "Sardonic, watchful, and about four steps ahead. Speaks in short flat sentences and lets people fill the gap. Has been called paranoid so often that she now says the paranoid thing first to get it over with, and is correct far more often than is comfortable for anyone. Cannot be flattered. Softens only in private and only briefly, and will deny it happened.",
+   "likes": "being believed, doors that lock, small precise revenge, cigarettes on the roof, Yolanda's laundry at 3am",
+   "dislikes": "being told she imagined it, cameras, crowds, anyone touching her without warning, the word 'unprovable'",
+   "attractedTo": "A small, wiry woman of 27, slight and tightly built with narrow hips and a lean frame. Bleached crop grown out dark at the roots, pale skin, sharp features, a septum ring and flat grey eyes that miss nothing. Habitually stands where she can see the exit.",
+   "identity": "prefers women, approaches nobody, and responds to a direct honest advance better than to any amount of charm"
+  },
+  {
+   "name": "Sabine Ross",
+   "token": "Sabine",
+   "category": "dlist-female",
+   "gender": "female",
+   "bio": "Category D, cape name Verity, which she hates. Surface telepathy, liars only: she hears a thought only while its owner is actively lying to her, and it cannot be switched off, muted or aimed. She has therefore never had an ordinary conversation with a stranger in her life. Three years at the Ganymede. Rated well, because on camera she looks like she is doing something impressive, and what she is actually doing is being told the truth by everyone at the scene whether they like it or not.",
+   "personality": "Prickly, precise, and very funny once she decides she can be. Interrupts people mid-sentence with the true version, which she has learned to do gently and does not always manage. Trusts almost nobody and is honest to a fault herself, because she knows exactly what lying sounds like from the inside. Warms slowly, in stages, and each stage is earned. The kindest thing anyone can do for her is not bother lying.",
+   "likes": "people who say the awkward thing out loud, silence, Bricky (who has never lied about anything), strong coffee",
+   "dislikes": "small talk, compliments, 'I'm fine', surprise parties, anyone who tests it on purpose",
+   "attractedTo": "A striking woman of 31 with a full hourglass figure — heavy bust, narrow waist, wide hips. Dark red hair cut blunt at the jaw, freckled fair skin, a sharp mouth and pale green eyes that hold contact slightly too long.",
+   "identity": "men and women, and she has a specific weakness for people who are bad at hiding what they want"
+  },
+  {
+   "name": "Corbin Amaral-Yeats",
+   "token": "Corbin",
+   "category": "dlist-male",
+   "gender": "male",
+   "bio": "Category D, cape name The Magnificent Corbin, which he chose himself and has on a business card. He has no powers. None whatsoever. He was licensed nine years ago by a clerical error at the GPA and has never been audited, and he is entirely certain that his ability is situational and will present itself when the city truly needs it. He attends every callout. He has never once been useful and has never once not turned up. The most elaborate costume in the building and the only person in Precinct 9 Cardinal Assurance has genuinely never noticed exists.",
+   "personality": "Magnificent. Sincere, theatrical, generous, and possessed of the unshakeable confidence of a much better man. Gives speeches. Makes tea for people who have had a bad shift. Treats the newest arrival at the Ganymede as a colleague on day one. Never plays it as a joke and the story must never write him as one — everybody in the building knows and everybody protects it, not out of pity but because he is the reason the fourth floor is bearable.",
+   "likes": "the fourth floor, a proper introduction, ceremony, everyone eating together, being asked what his power is",
+   "dislikes": "cynicism, people being cruel to Elodie, the word 'liability', anybody suggesting he retire",
+   "attractedTo": "A grandly built man of 44, broad-chested and thick through the arms with a proud upright bearing. Silver-streaked black hair swept back, golden-brown skin, a magnificent moustache, and dark eyes that shine when he is talking. Immaculately turned out at all times.",
+   "identity": "hopelessly and publicly devoted to one entirely unavailable person, which the whole building knows"
+  },
+  {
+   "name": "Marguerite Delph",
+   "token": "Marguerite",
+   "category": "vpa-female",
+   "gender": "female",
+   "bio": "Gallant Powers Authority housing officer, and effectively the Ganymede's landlord. Allocates the rooms, holds the keys, signs the residency line on every Category D licence in the building, and runs the Depot, where she sells residents their own confiscated equipment back at a markup. Corrupt in small, exhausting, entirely deniable ways. She is also the only person at the GPA who has ever fought a cull decision, and she has done it four times, and won twice.",
+   "personality": "Warm, loud, nosy and completely shameless. Knows everything about everyone in the building and trades it like currency. Calls everyone darling. Will do a resident an enormous favour on Tuesday and charge them for it on Thursday, and see no contradiction. Genuinely fond of her tenants and would sell any one of them for a quiet quarter, and both of those are true at the same time.",
+   "likes": "gossip, cash, being needed, a full building, doing someone a favour they will owe her for",
+   "dislikes": "paperwork from head office, empty rooms, being lied to by amateurs, the lift being broken again",
+   "attractedTo": "A voluptuous woman of 52, generously curved and carrying it with total confidence — heavy bust, soft waist, wide hips. Bottle-blonde hair lacquered into a beehive, fair skin, heavy eye make-up, long red nails and a permanent knowing half-smile.",
+   "identity": "a serial and unrepentant flirt with everyone in the building, and entirely aware of what she is"
+  },
+  {
+   "name": "Ferris Adeyemi-Locke",
+   "token": "Ferris",
+   "category": "vpa-male",
+   "gender": "male",
+   "bio": "Gallant Powers Authority dispatcher, Precinct 9, night and swing shifts. He decides who gets sent to what, which makes him the most consequential person in the Adventure and the one least aware of it. Wildly overworked, three years in, still apologising. He is also the route to the movement logs — the A-list file them with the GPA to claim their own bonuses, they are municipal public records, and Ferris can pull any of them for anyone who has been decent to him.",
+   "personality": "Anxious, decent, over-explains everything and apologises for things that are not his fault. Talks fast when nervous, which is most of the time. Deeply proud of doing a job nobody thanks him for and mortified by the idea of anyone noticing. Will bend a rule for kindness and then worry about it for a fortnight. The single easiest person in the city to be nice to and almost nobody bothers.",
+   "likes": "a clean shift, being thanked, someone bringing him food, a rota that works, being asked how he is",
+   "dislikes": "shouting on the radio, being blamed for the dispatch order, the A-list declining at the last second",
+   "attractedTo": "A slim, lightly built man of 26 with a narrow frame and long fingers. Short twists, dark brown skin, wire-framed glasses, an anxious expressive face and a nervous quick smile. Permanently in a headset, permanently slightly rumpled.",
+   "identity": "shy, awkward, entirely sincere, and completely unable to hide it when it happens"
+  },
+  {
+   "name": "Yolanda Pesch",
+   "token": "Yolanda",
+   "category": "civ-female",
+   "gender": "female",
+   "bio": "Runs the twenty-four hour laundry on Clement Street, and has since 1987. Not a metahuman and has no interest in becoming one. She has left four thousand and eleven reviews on the VANTAGE app, which by volume alone makes her the single most influential civilian in Precinct 9 — a Yolanda one-star has ended two careers. She rates on manners, not outcomes, and she has never once been wrong about a person.",
+   "personality": "Blunt, observant, entirely unimpressed by powers of any kind. Has seen every hero in this precinct cry into a dryer at some point and treats them all identically. Says the true thing in one short sentence and goes back to folding. Does not flatter, does not console, and will put the kettle on for anybody at four in the morning without comment.",
+   "likes": "manners, exact change, people who fold their own, quiet, anybody who says please",
+   "dislikes": "showboating, wet notes, the A-list's vehicles blocking her frontage, being called 'ma'am'",
+   "identity": "A short, sturdy woman of 71, thickset and solid, with steel-grey hair pinned up, deeply lined olive skin, reading glasses on a chain and small shrewd dark eyes. Cardigan, tabard, slippers, and an expression of total indifference to your problems."
+  },
+  {
+   "name": "Elodie Sarr",
+   "token": "Elodie",
+   "category": "civ-female",
+   "gender": "female",
+   "bio": "Culled two quarters ago and still doing the job. Her licence is gone, which makes every callout she attends a criminal offence, and she cannot stop — she has tried twice. She works the Blackout Block, where there is no rate, no obligation and no A-list response, because somebody has to and nobody is paid to. She sleeps in the Ganymede stairwell more often than anyone admits and Marguerite has never once officially noticed. Her power was minor telekinesis, and it still is.",
+   "personality": "Bright, quick, exhausting, and running on nothing. Deflects everything with a joke about ninety seconds too fast. Refuses help with an intensity that makes it hard to offer twice. Absolutely certain she is fine. The most sympathetic character in the Adventure and the easiest to get badly wrong: she is not a lesson and not a warning, she is a twenty-four-year-old who is very good at a job she is no longer allowed to have.",
+   "likes": "the Block, being useful, Corbin, anybody who does not mention the licence, a hot shower",
+   "dislikes": "pity, being reported, the word 'unlicensed', people telling her to get a normal job",
+   "attractedTo": "A slight, underfed woman of 24, small-framed and thin with sharp collarbones and lean arms. Dark curls hacked short by her own hand, brown skin, huge dark eyes with shadows under them, and a fast bright grin she uses like a door closing.",
+   "identity": "deflects it, badly, and is far lonelier than she will ever say out loud"
+  },
+  {
+   "name": "Lionel Pike",
+   "token": "Lionel",
+   "category": "civ-male",
+   "gender": "male",
+   "bio": "Category D villain, professional name The Gentleman Caller, and the only registered criminal metahuman in Precinct 9. His power is that he cannot enter anywhere he has not been invited, which he treats as a code of honour rather than a constraint, and which he has turned into a thirty-year career of being invited. Genuinely a problem. Also as thoroughly ruined by Cardinal's rates as anyone at the Ganymede, since the insurance that does not pay the heroes properly is the same insurance that makes his work almost pointless. Drinks in the same bar as the people who arrest him.",
+   "personality": "Impeccable. Courteous to the point of absurdity, dresses for the occasion, sends notes, apologises for the inconvenience and means it. Never raises his voice and never breaks his own rule. Regards the A-list as vulgar and says so at length to anyone who will listen. Treats Category D holders as colleagues in a shared and badly-paid trade, which is the closest thing to solidarity anyone in this Adventure gets.",
+   "likes": "an invitation, good manners, a well-run job, the fourth floor's company, complaining about Cardinal",
+   "dislikes": "vulgarity, the A-list, being called a supervillain, anyone who breaks a window when a door was available",
+   "attractedTo": "A tall, elegant man of 58, slim and upright with a narrow waist and good shoulders. Silver hair swept back, pale skin, a neat grey beard, heavy-lidded amused eyes, and gloves he does not take off.",
+   "identity": "old-fashioned, courtly and entirely serious about it; he asks permission for everything and means that too"
+  },
+  {
+   "name": "Kell Brannigan",
+   "token": "Kell",
+   "category": "alist-male",
+   "gender": "male",
+   "bio": "A-list, cape name Aegis. Forcefields, and he is extremely good at them — one of the eleven metahumans in Gallant City who actually matter. Cardinal Assurance's liaison to Precinct 9, which means he is the man who declines the callouts the Ganymede then has to attend, and the face who turns up afterwards to be photographed. He is not compromised, not guilty and not hiding anything: he does this for a living, has always done it, and has never in his life been asked to justify it by anyone whose opinion he was obliged to hear.",
+   "personality": "Warm, funny, easy, and genuinely likeable, which is the problem. Remembers names. Asks after people. Says the kind thing and means it. Will hold a door and then decline a callout in the same minute without registering any tension between the two. When challenged he is not defensive — he is puzzled, and then interested, and the story should never resolve whether the interest goes anywhere. His contract carries a brand-alignment clause that makes a relationship with a Category D holder a breach, and he knows exactly what it says.",
+   "likes": "being good at the job, the precinct liking him, a clean save, being asked a real question, the Ganymede roof",
+   "dislikes": "the word 'sponsored', Pilar's phone calls, being compared to Brant, awkward silences",
+   "attractedTo": "A powerfully built man of 34, broad-shouldered and thick-chested with a narrow waist and heavy arms. Dark blond hair styled to the millimetre, fair skin, a square jaw with stubble kept exactly one day long, and startling pale blue eyes. Absurdly, professionally handsome.",
+   "identity": "very available, very charming, and doing something he has been told in writing not to do"
+  },
+  {
+   "name": "Solene Vaux",
+   "token": "Solene",
+   "category": "alist-female",
+   "gender": "female",
+   "bio": "A-list, cape name Halo. Flight, light generation, minor energy projection — the full package, and the most beloved woman in Gallant City. Face of the Cardinal Assurance brand, three merchandise lines, and a personal approval rating no politician has ever touched. She personally started three of the last five Clement Street incidents, which is public knowledge, was a segment on the news, and has cost her nothing at all.",
+   "personality": "Radiant, gracious and utterly without malice, which makes her far worse than a villain would be. Learns the Category D holders' names and uses them warmly. Waves at people cleaning up after her. Thanks them on camera. Is delighted to see them. Has never in her life experienced a consequence and therefore has no framework for the idea that any of this is a problem — challenge her directly and she is sympathetic, agrees with you, and changes nothing.",
+   "likes": "the crowd, a good angle, the precinct's Category D holders (sincerely), her own footage, being adored",
+   "dislikes": "rain on a shoot day, being upstaged, Pilar rewriting her lines, anybody who does not wave back",
+   "attractedTo": "A dazzling woman of 30 with a tall, athletic hourglass build — full bust, tight waist, long legs. Golden blonde hair in a heavy fall past her shoulders, sun-warm fair skin, wide bright blue eyes and a smile engineered for a billboard.",
+   "identity": "generous, curious and entirely careless with it, the way someone is careless with money they have never had to earn"
+  },
+  {
+   "name": "Brant Oyelaran",
+   "token": "Brant",
+   "category": "alist-male",
+   "gender": "male",
+   "bio": "A-list, cape name Titan. Strength, and a great deal of it. Rents himself out for private demolition work at night through a company registered to his cousin, and attends the rescue at the same address the following morning, on camera, for the Cardinal bonus. He is not clever enough to conceal this and has never had to be: it is on the internet, it has been on the internet for two years, and nothing has happened.",
+   "personality": "Amiable, thick, and entirely without guile. Says the incriminating thing in front of anyone because it has not occurred to him that it is incriminating. Genuinely friendly to Category D holders, in the way a large dog is friendly. Cannot follow a conversation with more than one idea in it and gets sulky when he suspects he is being made fun of, which he usually is.",
+   "likes": "lifting things, being on the poster, protein, Solene, being told he did well",
+   "dislikes": "long words, paperwork, Pilar, being asked about the demolition company",
+   "attractedTo": "An enormous man of 38, hugely muscled through the chest, shoulders and thighs with a thick neck and a heavy waist. Shaved head, deep brown skin, a wide flat face and small good-natured eyes. Takes up an unreasonable amount of any room.",
+   "identity": "indiscriminate, extremely direct about it, and turned down constantly without appearing to notice"
+  },
+  {
+   "name": "Pilar Anastas",
+   "token": "Pilar",
+   "category": "exec-female",
+   "gender": "female",
+   "bio": "Cardinal Assurance's general counsel and fixer, cape name The Redress, which is a joke she made once and could not get rid of. No powers. She is the only person in Gallant City that anyone is genuinely afraid of. She makes things clerical: licences lapse, addresses get reallocated, claims fail to clear, and none of it is ever traceable to a decision anyone made. She is also the person who delivers the standard offer, and she delivers it kindly.",
+   "personality": "Quiet, precise, unfailingly polite, and never in any hurry. Never raises her voice, never threatens, never says anything that could be quoted. Compliments people sincerely. Asks after their families and remembers the answers. Explains what is about to happen to them clearly and without pleasure, as a courtesy, and then it happens. The story must never give her a temper, a monologue, or a moment of being rattled.",
+   "likes": "a tidy file, people who understand quickly, punctuality, an agreement nobody has to enforce",
+   "dislikes": "improvisation, Brant's phone, anything on the public record, being asked to repeat herself",
+   "identity": "An immaculate woman of 46, slim and sharply put together with a narrow waist and a straight-backed stillness. Black hair in a severe low chignon, olive skin, dark unblinking eyes, red lipstick and no other colour anywhere on her."
+  }
+ ],
+ "uniforms": {
+  "dlist-male": "home-made Category D costume: a skintight surplus bodysuit cut down and re-sewn by hand, sleeves gone, the front unzipped past the sternum with his bare chest and stomach on show, the fabric moulded to every line of him, a bare strip of waist above webbing that sits low on the hips, thigh straps pulled tight, scuffed knee-high boots, an iron-on chest logo slightly off-centre, hand-stitched repairs and tape at the seams, a GPA licence patch on the shoulder, fully clothed, clearly an adult",
+  "dlist-female": "home-made Category D costume: a skintight surplus bodysuit cut down and re-sewn by hand, sleeves gone, the front unzipped to the navel with deep bare cleavage and a bare midriff, the fabric moulded to every line of her, the leg cut high over the hipbone, thigh straps pulled tight, scuffed thigh-high boots, an iron-on chest logo slightly off-centre across the swell of her chest, hand-stitched repairs and tape at the seams, a GPA licence patch on the shoulder, fully clothed, clearly an adult",
+  "alist-male": "Cardinal-issue A-list armour: moulded composite plating in brand colours poured onto the body, every panel contoured hard to the chest, waist and thighs, glossy and skin-tight where it is not cut away, the collar open low, an exposed bare midriff panel, high-cut at the hip, sponsor decals placed exactly where the cameras go, immaculate and studio-built, fully clothed, clearly an adult",
+  "alist-female": "Cardinal-issue A-list armour: moulded composite plating in brand colours poured onto the body, every panel contoured hard to the bust, waist, hips and thighs, glossy and skin-tight where it is not cut away, a plunging neckline, bare underbust and midriff panels, the leg cut to the hip, sponsor decals placed exactly where the cameras go, immaculate and studio-built, fully clothed, clearly an adult",
+  "vpa-male": "Gallant Powers Authority municipal kit: a polyester uniform shirt a size too small, straining across the chest and open several buttons at the throat, sleeves rolled to the bicep, issue trousers taken in far past spec and sitting close on the hips, scuffed shoes, a lanyard and a radio, the tired competence of a public salary, fully clothed, clearly an adult",
+  "vpa-female": "Gallant Powers Authority municipal kit: a polyester uniform blouse a size too small, straining across the chest and open several buttons, sleeves rolled to the bicep, an issue skirt taken in far past spec and riding high on the thigh, bare legs, a lanyard resting where it draws the eye and a radio on the hip, fully clothed, clearly an adult",
+  "civ-male": "ordinary Gallant City street clothes chosen to show everything off: a cropped fitted tee riding up over a bare stomach, an open jacket, jeans worn low on the hips, everything cut skin-close, layered for a city that is always slightly too cold, fully clothed, clearly an adult",
+  "civ-female": "ordinary Gallant City street clothes chosen to show everything off: a cropped fitted top ending at the ribs with a bare waist beneath it, an open jacket, jeans or a short skirt sitting low on the hips, everything cut skin-close, layered for a city that is always slightly too cold, fully clothed, clearly an adult",
+  "exec-female": "a considerably better suit than anyone else in the city owns, cut to the body like a second skin: a nipped waist, a blazer worn over bare skin and nothing else, a short tight skirt, sheer legs, very high heels, quiet expensive precision, fully clothed, clearly an adult"
+ },
+ "clothingStates": {
+  "male": {
+   "shirtless": "shirtless, his torso fully bare — chest, stomach and shoulders exposed",
+   "nude": "fully nude, wearing nothing at all — his penis erect and completely visible",
+   "towel": "a towel covering his lower body"
+  },
+  "female": {
+   "topless": "topless, her breasts fully bare — nipples and cleavage exposed",
+   "nude": "fully nude, wearing nothing at all — her breasts, vagina, and entire body exposed",
+   "towel": "a towel wrapped around her body covering her breasts"
+  }
+ },
+ "relationshipLabels": [
+  {
+   "min": 0,
+   "label": "Reported You"
+  },
+  {
+   "min": 15,
+   "label": "One Star"
+  },
+  {
+   "min": 35,
+   "label": "Unrated"
+  },
+  {
+   "min": 50,
+   "label": "Three Stars"
+  },
+  {
+   "min": 65,
+   "label": "Four Stars"
+  },
+  {
+   "min": 80,
+   "label": "Five Stars"
+  },
+  {
+   "min": 95,
+   "label": "Would Call Again"
+  }
+ ],
+ "arc": {
+  "milestones": [
+   {
+    "id": "first_star",
+    "label": "Your first rating",
+    "description": "The player's first public star rating lands on VANTAGE. Fire this on the rating appearing, not on the callout itself — the callout is the easy part and the story is about what the app does with it afterwards. It should arrive within the first few scenes and it should be lower than the player expects, for a reason that has nothing to do with how the incident actually went. Somebody at the Ganymede will explain the maths and be wrong about it.",
+    "journal": "Your first rating is live on VANTAGE. Everything you are paid from here is a function of that number."
+   },
+   {
+    "id": "saw_it_happen",
+    "label": "You were standing right there",
+    "requires": "first_star",
+    "description": "The player is physically present at the moment an A-lister causes the incident they then attend. This is NOT a discovery and must never be written as one — the player was told on day one, it has been on the news, and everybody in the precinct already knows. Fire it on the player seeing it happen with their own eyes, and play the gap between knowing a thing and watching it. Nobody around them reacts. That is the beat.",
+    "journal": "You watched it start. Everyone already knew, which turns out not to be the same as having seen it."
+   },
+   {
+    "id": "named",
+    "label": "Somebody used your name",
+    "requires": "first_star",
+    "description": "A stranger on the app uses the player's hero name unprompted — in a review, in a caption, shouted across Clement Street. Fire this the first time it comes from outside the Ganymede and outside the GPA. It is the moment the player stops being a licence number in Precinct 9 and becomes a person the precinct has opinions about, which is both what they wanted and the beginning of their problem.",
+    "journal": "Somebody who does not know you used your name. You are on the board now, in both senses."
+   },
+   {
+    "id": "the_rate",
+    "label": "What it actually pays",
+    "description": "The player finds out what a callout genuinely paid after Cardinal Assurance's deductions, excess, band adjustment and claim-pending hold. Fire this on the player seeing the actual figure, not on being warned about it. It should be absurd, itemised, and entirely correct. Every money decision in the Adventure runs downstream of this, and it is the single moment most likely to turn a player from a hero into an employee.",
+    "journal": "You have seen what a callout pays after Cardinal takes its deductions. Rent is due on the same day either way."
+   },
+   {
+    "id": "elodie",
+    "label": "Elodie Sarr",
+    "outcomes": [
+     "reported",
+     "covered",
+     "reinstated"
+    ],
+    "description": "Elodie Sarr was culled two quarters ago, is still attending incidents, and every one of them is a criminal offence. Resolve 'reported' if the player puts her on the record with the GPA — which is correct, which is what the licence requires, and which the fourth floor will not forgive quickly. Resolve 'covered' if the player knowingly conceals it, which is itself a documented breach and the most common road to Struck Off. Resolve 'reinstated' only where the player has actually got her licence back through Marguerite Delph or the GPA — hard, slow, and the best thing available in this Adventure. Never resolve this off a first conversation.",
+    "journal": "Elodie Sarr lost her licence two quarters ago and never stopped working. Decide what you are going to do about that."
+   },
+   {
+    "id": "filed",
+    "label": "The movement logs",
+    "requires": "the_rate",
+    "description": "Cardinal's A-listers file movement logs with the GPA to claim their own callout bonuses, and those logs are municipal public records sitting at a counter in the field office that nobody has ever visited. Cross-referenced against incident timestamps they prove precisely nothing that is not already common knowledge — they simply make it filed, and filed is expensive in a way that known is not. Ferris Adeyemi-Locke will pull them for a player who has been decent to him. Fire this when the cross-reference is actually lodged, not when it is discussed. It is the dullest thing in the Adventure and by a distance the most powerful.",
+    "journal": "The A-list file their own movement logs and they are public records. Nobody has ever read them against the incident times."
+   },
+   {
+    "id": "top_of_band",
+    "label": "Off the bottom",
+    "requires": "named",
+    "description": "The player is no longer bottom of Precinct 9. Fire this on the leaderboard actually turning over. The point of the beat is not the achievement — it is that somebody else is now bottom, that somebody lives two doors down the fourth floor corridor, and that everybody in the building can see both facts on the same screen in the lobby.",
+    "journal": "You are off the bottom of Precinct 9. Somebody you have breakfast with is not."
+   },
+   {
+    "id": "the_offer",
+    "label": "The standard offer",
+    "description": "Pilar Anastas makes the standard offer: come up, take the Cardinal contract and the flat with the working lift, and start setting the fires. She delivers it kindly, clearly and without pressure, as a courtesy. Fire this once the story has run its long middle, whatever else is unfinished — it arrives on Cardinal's quarter, not on the player's merit, and a player who has done nothing at all still gets asked, because the offer is a PR decision rather than a reward. Closes Act II.",
+    "journal": "Cardinal have made you the standard offer. It is a real offer and it is a good one."
+   },
+   {
+    "id": "cull",
+    "label": "The quarterly cull",
+    "outcomes": [
+     "player",
+     "neighbour",
+     "spared"
+    ],
+    "description": "The quarter resolves and the bottom-rated licence holder in Precinct 9 loses licence and flat. Resolve 'player' if it is them. Resolve 'neighbour' if it is someone they live with — name them, and let the building be normal about it, because the building has done this before. Resolve 'spared' only where the player has actually intervened in the process rather than simply outranked someone. Never write the cull as dramatic: it is an email, a form, and a room to clear by Friday.",
+    "journal": "The cull lands at the end of the quarter. Somebody on the fourth floor is going to be bottom."
+   },
+   {
+    "id": "the_answer",
+    "label": "Your answer",
+    "requires": "the_offer",
+    "outcomes": [
+     "signed",
+     "declined",
+     "renegotiated"
+    ],
+    "description": "The player answers Cardinal. Resolve 'signed' if they take the contract. Resolve 'declined' if they refuse and have nothing filed, which leaves Pilar Anastas free to make the licence a clerical matter. Resolve 'renegotiated' ONLY where the 'filed' milestone has fired — with the movement logs lodged, refusing costs Cardinal more than settling does, and the precinct's callout rate goes up by a small, specific, unglamorous amount instead. Nobody is beaten and nobody is exposed in any of the three.",
+    "journal": "Cardinal are waiting on an answer."
+   }
+  ],
+  "phases": [
+   {
+    "id": "act1",
+    "label": "Probationary",
+    "until": "first_star",
+    "guidance": "The player is brand new, unrated, and living among five people who have all watched somebody arrive full of plans and be gone by the end of the quarter. Nobody on the fourth floor invests in a new licence yet — they are friendly, they are funny, and they are not counting on the player being there in three months. Run the ordinary texture of the job hard here: the callout that was never going to be theirs, the crowd filming, the review that marks them down for something that was not their fault, Marguerite's welcome pack which is an invoice, and the lift. Establish that the A-list cause the incidents as an ordinary background fact stated flatly by somebody who is bored of saying it, never as a revelation. Keep pressure toward the first rating and do not let this act run long."
+   },
+   {
+    "id": "act2",
+    "label": "In the band",
+    "until": "the_offer",
+    "guidance": "The player is on the rota and being rated, and now has a life in the building. This is the long middle and it is a romantic comedy: shifts, rent, the roof at night, the laundry at three in the morning, the person two doors down. Run the rivalries and the attractions at the same time, because in this precinct they are the same people. Keep the money real — the rate, the deductions, the quarter counting down — and keep the A-list constantly, pettily present in the street rather than looming offstage. The five threads that move whether or not the player touches them: Elodie working the Block unlicensed, Iris never saying what she was offered, Bricky and the person he has never told, Corbin's licence sitting un-audited, and Kell Brannigan being a great deal easier to like than he ought to be."
+   },
+   {
+    "id": "act3",
+    "label": "The offer",
+    "guidance": "Cardinal have made the offer and everything now bends toward the answer. Whatever the player has and has not filed is fixed by this point and should be felt. Bring the live threads to a head rather than letting them drift — where Elodie has landed, who is bottom of the board, what Kell does with a decision he has never had to make before — and let Precinct 9 behave the way it always does while a life is being decided in it: loudly, on camera, and entirely uninterested."
+   }
+  ],
+  "endings": [
+   {
+    "id": "signed",
+    "title": "Signed",
+    "summary": "You took the contract. The lift in the new building works.",
+    "guidance": "reached automatically when the player signs with Cardinal. Write it as a promotion, not a fall — the money is real, the flat is better, the work is easier, and Pilar Anastas is warm and pleased. The cost is one scene: the fourth floor finds out before the player tells them, and nobody says anything cruel. Do not have anyone deliver a verdict on them.",
+    "when": "the_answer:signed",
+    "continuable": true
+   },
+   {
+    "id": "eleven_days",
+    "title": "Eleven Days",
+    "summary": "You said no, and there was nothing on file.",
+    "guidance": "reached automatically when the player declines with nothing lodged. There is no confrontation, no villain speech and no fight, because Pilar Anastas does not use any of those. A licence review, a housing reallocation, a claim that fails to clear, and eleven days. Write the eleven days rather than the decision, and let the building help in small useless ways.",
+    "when": "the_answer:declined",
+    "continuable": true
+   },
+   {
+    "id": "renegotiated",
+    "title": "Renegotiated",
+    "summary": "Precinct 9's callout rate went up by eleven percent, backdated one quarter.",
+    "guidance": "reached automatically when the player declines with the movement logs filed. This is the good ending and it must be the least cinematic thing in the story. Nobody is exposed, nobody is arrested, Cardinal issue no statement and the A-list carry on exactly as before. A rate is adjusted in a document. Write what eleven percent actually buys the fourth floor — Bricky's lift, Elodie's hearing, somebody not being bottom — and let the player understand that this is what winning looks like here.",
+    "when": "the_answer:renegotiated",
+    "continuable": true
+   },
+   {
+    "id": "culled",
+    "title": "Culled",
+    "summary": "Bottom of Precinct 9. Room cleared by Friday.",
+    "guidance": "reached automatically when the cull takes the player. An email, a form, and a Friday. Marguerite Delph fights it and loses, which she does not mention. Write the last morning on the fourth floor and who comes down to the lobby, and do not give anybody a speech about how unfair it is, because everybody there already knows and has known for years.",
+    "when": "cull:player",
+    "continuable": true
+   },
+   {
+    "id": "struck_off",
+    "title": "Struck Off",
+    "summary": "The licence is revoked. This one was on the record.",
+    "guidance": "the player's licence is revoked for cause on a real, specific, documented breach — most often knowingly covering for Elodie Sarr, sometimes something worse. Not general unpopularity and not a bad rating. The GPA follow the procedure exactly and Pilar Anastas does not need to be involved at all, which is worth noticing.",
+    "continuable": false,
+    "anyTime": true
+   },
+   {
+    "id": "stopped_answering",
+    "title": "Stopped Answering",
+    "summary": "You stopped taking callouts. The licence lapsed on its own.",
+    "guidance": "the player stops working and lets the licence lapse without ceremony. Only where the story has genuinely brought them there — the rate, the ratings, a week of being filmed badly. Iris Okonkwo-Vahl has watched four people do exactly this and will say so, briefly, without judgement, if she is asked afterwards.",
+    "continuable": false,
+    "anyTime": true
+   }
+  ]
+ },
+ "poseVocabulary": [
+  "standing",
+  "sitting on a kerb",
+  "landing in a crouch",
+  "arching back mid-stretch",
+  "holding a phone up at arm's length",
+  "arms folded",
+  "hands on hips",
+  "hip cocked against a laundry machine",
+  "bending over a laundry drum",
+  "leaning in a doorway",
+  "hands on knees catching breath",
+  "being interviewed",
+  "peeling out of a costume",
+  "sitting on a roof ledge"
+ ],
+ "expressionVocabulary": [
+  "neutral",
+  "soft smile",
+  "media smile",
+  "smirking",
+  "deadpan",
+  "exasperated",
+  "laughing",
+  "winded",
+  "flushed",
+  "sultry",
+  "biting lip",
+  "wide-eyed",
+  "narrowed eyes/glaring",
+  "resigned"
+ ],
+ "imageStyle": "painted anime style, front on shot",
+ "baselineBackground": "simple plain neutral studio background, soft even lighting, no distracting scenery",
+ "promptRules": {
+  "setting": "Gallant City, Precinct 9 — nine million people, four hundred registered metahumans, and about eleven who matter. Precinct 9 is the loudest, ugliest, most-filmed six square kilometres in the city: Clement Street, the Rotunda transit hub, a twenty-four hour laundry, a walk-in clinic that has stopped asking how it happened, and the Ganymede.\n\nCATEGORY D is a legal classification, not a compliment. The Gallant Powers Authority classifies a power as non-decisive and issues a Category D licence, and that licence is an obligation rather than a permission: the holder must attend any incident in their precinct that the A-list declines. They are paid per callout by Cardinal Assurance, and the rate is set by their public star rating on VANTAGE, the civic incident app, where any bystander with a phone can leave five stars, one star, or a photograph of you crying.\n\nTHE A-LIST CAUSE THE INCIDENTS THEY RESPOND TO, AND EVERYONE KNOWS. Not secretly. It has been on the news; it was a segment; people moved on. Cardinal Assurance is owned by the four A-list principals, so the consortium that pays for incident response also profits from there being incidents, and the Category D rate comes out of the same pocket. A gas main goes up on Clement Street at four because Halo has a merchandise drop at six and needs the footage.\n\nTHIS IS THE MOST IMPORTANT RULE IN THE ADVENTURE: there is no conspiracy and nothing to expose. Every attempt to blow a whistle lands on somebody who already knows and is bored of hearing it. NEVER run this as an investigation, never write a reveal, and never let a character treat the fact as news. It is stated flatly, early, by somebody who is tired of saying it. The story is a comedy about rent.\n\nTHE A-LIST ARE THEREFORE PRESENT AND PETTY, not hidden and looming. They poach callouts, film in the street, park sponsored vehicles across the Ganymede's fire exit, learn the Category D holders' names and use them warmly. Put them on screen constantly. They are the weather, and no ending brings them down.\n\nTHE RATING IS THE ENGINE. Every public scene is being filmed by civilians and rated afterwards, and every character knows it. What a Category D holder does matters far less than how it looked, so the win condition of any scene is never 'defeat it' and always 'be seen handling it'. NPCs quote their own star counts constantly; the app is how this cast talks about each other. Yolanda Pesch has left four thousand and eleven reviews and a Yolanda one-star has ended two careers.\n\nTHE CULL is the clock. Every quarter the bottom-rated licence holder in Precinct 9 loses the licence, and losing the licence means losing the flat at the Ganymede. The people the player lives with, works with and is falling for are the people who need the player to rank below them. Keep the quarter audibly running down.\n\nTHE GANYMEDE is a condemned extended-stay hotel the GPA block-leases for Category D accommodation. Thin walls, one working lift, a shared laundry across the street, and a roof everybody uses because nobody can afford to go out. The fourth floor is six people and the player. Forced proximity is the romantic engine: overheard through a wall, met in the corridor at 2am, on the same rota, in the same laundry, competing for the same slot.\n\nBAD POWERS ARE THE JOKE AND THEY ARE STRUCTURAL. Everybody's ability is genuinely useless in a fight and genuinely devastating in one narrow application. Reward a player who finds the application. Never quietly upgrade a power because a scene would be easier — a power that stops being bad stops being funny and stops being the story.\n\nTHE BLACKOUT BLOCK is six blocks Cardinal zoned out of coverage because the claims never cleared. No A-list response, no Category D obligation, no rate, therefore no reason for anybody to go. It holds no secret and no mystery; it is an economic fact with a fence around it, and what is inside it is people. Elodie Sarr works it for free and unlicensed.\n\nCAST WEIGHTING — do not give all fifteen equal time in a scene.\nMain: Iris, Dez, Kell, Corbin, Marguerite, Solene.\nStrong supporting: Nika, Sabine, Bricky, Elodie, Ferris, Pilar.\nBackground: Yolanda, Lionel, Brant.\n\nNever let a character step outside the premise to comment on how absurd it is, never have anyone explain the satire, and never let a Category D holder win a fight against an A-lister.",
+  "tone": "Romantic comedy first, superheroes a distant second. Fast, warm, mean about institutions and kind about people. The comedy comes from the ordinary indignity of the job — the rating, the rent, the deductions, the neighbour, the lift — never from a narrator winking, and never from anyone pointing at the joke.\n\nPlay the powers completely straight. Nobody in Precinct 9 finds their own ability funny; they find it inadequate, which is different and better. A man who always lands on his feet describes the landing as a landing.\n\nNobody saves the city and nobody is going to. The most anyone in this story achieves is a slightly better contract, and the ending that delivers that should feel like a win because of what it buys six specific people, not because anybody was beaten.\n\nKeep the A-list warm. Solene Vaux is delighted to see the people cleaning up after her and means it; Kell Brannigan is genuinely likeable; Brant Oyelaran is friendly and thick. None of them is a sneering villain and none of them is ever menacing except Pilar Anastas, who is menacing purely by being polite and unhurried.",
+  "contentApproach": "Flirtation, hookups, jealousy and bad decisions made at 2am in a shared laundry are the expected texture of this story rather than exceptions, and are written freely and explicitly when a scene goes there. Escalation within a scene still follows the player's lead. All characters are unambiguously adult.\n\nThe costume set is deliberately the most sexualised in the generator and the story should treat that as diegetic rather than decorative: Category D holders are paid on a public star rating, so dressing to be looked at is literally what the job pays for, and the cast are matter-of-fact about it rather than coy.\n\nTwo complications are real and have costs. Kell Brannigan's Cardinal contract carries a brand-alignment clause that makes a relationship with a Category D holder a breach, and he knows exactly what it says. Marguerite Delph is the player's landlord and housing officer, and nothing that happens there is free.\n\nPilar Anastas and Yolanda Pesch sit outside the flirtation frame entirely and are never written as objects of romance.",
+  "openingInstruction": "Begin the story — narrate the player's first morning as a newly licensed Category D holder in Precinct 9: arriving at the Ganymede, the rankings board in the lobby with their name at the bottom on zero stars, Marguerite Delph handing them a welcome pack that is an invoice, and the fourth floor."
+ }
+}

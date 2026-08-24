@@ -1,0 +1,758 @@
+{
+  "id": "meridian",
+  "title": "ISV Meridian",
+  "blurb": "Pulled from a dying escape pod by a research vessel three generations removed from Earth — you're the first person of your sex any of them has ever laid eyes on, and every one of them wants a piece of the discovery.",
+  "cover": "🚀",
+  "loreEntries": [
+    {
+      "label": "Setting",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Meridian/setting.txt"
+    },
+    {
+      "label": "Locations",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Meridian/locations.txt"
+    },
+    {
+      "label": "The Aurelia Colony",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Meridian/aurelia-colony.txt"
+    },
+    {
+      "label": "Captain Dorian Vale",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Meridian/npc-dorian-vale.txt"
+    },
+    {
+      "label": "Dr. Adrian Kessler",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Meridian/npc-adrian-kessler.txt"
+    },
+    {
+      "label": "Rhys Okafor",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Meridian/npc-rhys-okafor.txt"
+    },
+    {
+      "label": "Kestrel Dane",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Meridian/npc-kestrel-dane.txt"
+    },
+    {
+      "label": "Marcus Iyer",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Meridian/npc-marcus-iyer.txt"
+    },
+    {
+      "label": "Toby Reyes",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Meridian/npc-toby-reyes.txt"
+    },
+    {
+      "label": "Captain Freya Sorenson",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Meridian/npc-freya-sorenson.txt"
+    },
+    {
+      "label": "Dr. Naomi Callahan",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Meridian/npc-naomi-callahan.txt"
+    },
+    {
+      "label": "Priya Anand",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Meridian/npc-priya-anand.txt"
+    },
+    {
+      "label": "Vesper Kade",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Meridian/npc-vesper-kade.txt"
+    },
+    {
+      "label": "Talia Brooks",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Meridian/npc-talia-brooks.txt"
+    },
+    {
+      "label": "Mira Solano",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Meridian/npc-mira-solano.txt"
+    },
+    {
+      "label": "The Derelict Pod",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Meridian/derelict-hook.txt"
+    },
+    {
+      "label": "Miravel",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Meridian/npc-miravel.txt"
+    }
+  ],
+  "mapUrl": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Maps/Meridian%20Map.svg",
+  "startingLocation": "Medbay",
+  "openingScenes": {
+    "male": "NARRATION: Cold light and the low hum of recycled air. {characterName} comes to on a medbay table, restraint straps unlatched but still coiled at the table's edge, a monitor overhead tracking a heartbeat that clearly isn't supposed to be here. Every face crowded into the doorway is a woman's — some in uniform, some who clearly ran the moment word got out — and every single one of them is staring like they've never seen anything like {characterName} before. Because they haven't.\n===\nSPEAKER: Dr. Naomi Callahan\nDIALOGUE: She steps between {characterName} and the doorway, scanner already in hand, and for a moment her clinical composure just — slips. \"You're — you're really real.\" She catches herself, clears her throat, professional again, though her eyes haven't stopped moving over him. \"Dr. Callahan, Chief Medical. You're safe, you're aboard the ISV Meridian. I need to run some scans — standard intake, nothing that hasn't been done to every one of us — if that's alright with you.\"\n===\nCLOSING: Behind her, someone she can't quite see is already arguing their way past Security for a better look.",
+    "female": "NARRATION: Cold light and the low hum of recycled air. {characterName} comes to on a medbay table, restraint straps unlatched but still coiled at the table's edge, a monitor overhead tracking a heartbeat that clearly isn't supposed to be here. Every face crowded into the doorway is a man's — some in uniform, some who clearly ran the moment word got out — and every single one of them is staring like they've never seen anything like {characterName} before. Because they haven't.\n===\nSPEAKER: Dr. Adrian Kessler\nDIALOGUE: He steps between {characterName} and the doorway, scanner already in hand, and for a moment his clinical composure just — slips. \"You're — you're really real.\" He catches himself, clears his throat, professional again, though his eyes haven't stopped moving over her. \"Dr. Kessler, Chief Medical. You're safe, you're aboard the ISV Meridian. I need to run some scans — standard intake, nothing that hasn't been done to every one of us — if that's alright with you.\"\n===\nCLOSING: Behind him, someone she can't quite see is already arguing their way past Security for a better look."
+  },
+  "timePhases": [
+    "Early Shift",
+    "Mid Shift",
+    "Late Shift",
+    "Off-Watch",
+    "Night Cycle"
+  ],
+  "startingPhase": "Mid Shift",
+  "locations": [
+    "Medbay",
+    "Bridge",
+    "Science Lab",
+    "Engineering Bay",
+    "Mess Hall",
+    "Crew Quarters",
+    "Observation Deck",
+    "Cargo Bay",
+    "Captain's Ready Room",
+    "The Atrium",
+    "Sonic Showers"
+  ],
+  "playerCategoryTemplate": "guest-{playerGender}",
+  "setupFields": [
+    {
+      "key": "characterName",
+      "type": "text",
+      "label": "Character name",
+      "placeholder": "Leave blank for a random name",
+      "randomSource": "names"
+    },
+    {
+      "key": "playerGender",
+      "type": "tiles",
+      "label": "Gender",
+      "options": [
+        {
+          "value": "male",
+          "label": "♂ Male"
+        },
+        {
+          "value": "female",
+          "label": "♀ Female"
+        }
+      ]
+    },
+    {
+      "key": "hairStyle",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Hair style",
+      "default": "shoulder_straight",
+      "joinNext": " ",
+      "options": [
+        {
+          "value": "short_straight",
+          "label": "Short, straight",
+          "text": "short straight"
+        },
+        {
+          "value": "short_curly",
+          "label": "Short, curly",
+          "text": "short curly"
+        },
+        {
+          "value": "buzz",
+          "label": "Buzz cut",
+          "text": "closely buzzed"
+        },
+        {
+          "value": "shoulder_straight",
+          "label": "Shoulder-length, straight",
+          "text": "shoulder-length straight"
+        },
+        {
+          "value": "shoulder_wavy",
+          "label": "Shoulder-length, wavy",
+          "text": "shoulder-length wavy"
+        },
+        {
+          "value": "long_straight",
+          "label": "Long, straight",
+          "text": "long straight"
+        },
+        {
+          "value": "long_wavy",
+          "label": "Long, wavy",
+          "text": "long wavy"
+        },
+        {
+          "value": "long_curly",
+          "label": "Long, curly",
+          "text": "long curly"
+        },
+        {
+          "value": "ponytail",
+          "label": "Ponytail",
+          "text": "ponytailed"
+        },
+        {
+          "value": "braided",
+          "label": "Braided",
+          "text": "braided"
+        },
+        {
+          "value": "bun",
+          "label": "Bun / updo",
+          "text": "pinned-up"
+        }
+      ]
+    },
+    {
+      "key": "hairColour",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Hair colour",
+      "default": "brown",
+      "options": [
+        {
+          "value": "black",
+          "label": "Black",
+          "text": "black hair"
+        },
+        {
+          "value": "dark_brown",
+          "label": "Dark brown",
+          "text": "dark brown hair"
+        },
+        {
+          "value": "brown",
+          "label": "Brown",
+          "text": "brown hair"
+        },
+        {
+          "value": "light_brown",
+          "label": "Light brown",
+          "text": "light brown hair"
+        },
+        {
+          "value": "blonde",
+          "label": "Blonde",
+          "text": "blonde hair"
+        },
+        {
+          "value": "platinum",
+          "label": "Platinum blonde",
+          "text": "platinum blonde hair"
+        },
+        {
+          "value": "auburn",
+          "label": "Auburn",
+          "text": "auburn hair"
+        },
+        {
+          "value": "red",
+          "label": "Red / ginger",
+          "text": "red ginger hair"
+        },
+        {
+          "value": "silver",
+          "label": "Silver / grey",
+          "text": "silver grey hair"
+        },
+        {
+          "value": "white",
+          "label": "White",
+          "text": "white hair"
+        },
+        {
+          "value": "blue",
+          "label": "Dyed blue",
+          "text": "dyed blue hair"
+        },
+        {
+          "value": "pink",
+          "label": "Dyed pink",
+          "text": "dyed pink hair"
+        },
+        {
+          "value": "purple",
+          "label": "Dyed purple",
+          "text": "dyed purple hair"
+        }
+      ]
+    },
+    {
+      "key": "bodyType",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Body type",
+      "default": "average",
+      "options": [
+        {
+          "value": "slim",
+          "label": "Slim",
+          "text": "a slim build"
+        },
+        {
+          "value": "lean",
+          "label": "Lean and toned",
+          "text": "a lean toned build"
+        },
+        {
+          "value": "average",
+          "label": "Average",
+          "text": "an average build"
+        },
+        {
+          "value": "athletic",
+          "label": "Athletic",
+          "text": "an athletic build"
+        },
+        {
+          "value": "muscular",
+          "label": "Muscular",
+          "text": "a muscular build"
+        },
+        {
+          "value": "curvy",
+          "label": "Curvy",
+          "text": "a curvy figure"
+        },
+        {
+          "value": "stocky",
+          "label": "Stocky",
+          "text": "a stocky build"
+        },
+        {
+          "value": "heavyset",
+          "label": "Heavyset",
+          "text": "a heavyset build"
+        }
+      ]
+    },
+    {
+      "key": "skinColour",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Skin colour",
+      "default": "fair",
+      "options": [
+        {
+          "value": "pale",
+          "label": "Pale",
+          "text": "pale skin"
+        },
+        {
+          "value": "fair",
+          "label": "Fair",
+          "text": "fair skin"
+        },
+        {
+          "value": "light_olive",
+          "label": "Light olive",
+          "text": "light olive skin"
+        },
+        {
+          "value": "olive",
+          "label": "Olive",
+          "text": "olive skin"
+        },
+        {
+          "value": "tan",
+          "label": "Tanned",
+          "text": "tanned skin"
+        },
+        {
+          "value": "golden_brown",
+          "label": "Golden brown",
+          "text": "golden brown skin"
+        },
+        {
+          "value": "brown",
+          "label": "Brown",
+          "text": "brown skin"
+        },
+        {
+          "value": "dark_brown",
+          "label": "Dark brown",
+          "text": "dark brown skin"
+        },
+        {
+          "value": "deep",
+          "label": "Deep ebony",
+          "text": "deep ebony skin"
+        }
+      ]
+    },
+    {
+      "key": "playerAge",
+      "type": "number",
+      "label": "Age",
+      "placeholder": "18+",
+      "default": 18
+    },
+    {
+      "key": "background",
+      "type": "tiles",
+      "label": "Background",
+      "options": [
+        {
+          "value": "civilian",
+          "label": "🧳 Civilian Trader"
+        },
+        {
+          "value": "colonist",
+          "label": "🌱 Colonist"
+        },
+        {
+          "value": "military",
+          "label": "🎖️ Military Pilot"
+        },
+        {
+          "value": "scientist",
+          "label": "🔬 Scientist"
+        }
+      ]
+    },
+    {
+      "key": "disposition",
+      "type": "tiles",
+      "label": "Disposition",
+      "options": [
+        {
+          "value": "guarded",
+          "label": "🛡️ Guarded"
+        },
+        {
+          "value": "open",
+          "label": "🤝 Open & Curious"
+        },
+        {
+          "value": "playful",
+          "label": "😏 Playful"
+        },
+        {
+          "value": "stoic",
+          "label": "🗿 Stoic"
+        }
+      ]
+    }
+  ],
+  "nameSets": {
+    "male": [
+      "Anton",
+      "Caleb",
+      "Cassius",
+      "Dario",
+      "Dmitri",
+      "Elias",
+      "Ezra",
+      "Felix",
+      "Idris",
+      "Jonas",
+      "Kian",
+      "Lucian",
+      "Mateo",
+      "Nikolai",
+      "Orrin",
+      "Ravi",
+      "Silas",
+      "Tobias",
+      "Viktor",
+      "Yusuf"
+    ],
+    "female": [
+      "Anika",
+      "Camille",
+      "Dahlia",
+      "Esme",
+      "Genevieve",
+      "Halle",
+      "Imani",
+      "Juno",
+      "Katya",
+      "Leona",
+      "Mireille",
+      "Nadia",
+      "Odessa",
+      "Petra",
+      "Rosalind",
+      "Simone",
+      "Thea",
+      "Valentina",
+      "Yara",
+      "Zora"
+    ]
+  },
+  "npcSets": {
+    "male": [
+      {
+        "name": "Captain Freya Sorenson",
+        "token": "Sorenson",
+        "category": "officer-female",
+        "gender": "female",
+        "bio": "Commands the ISV Meridian. Third-generation Aurelia-born, carries the weight of the whole ship's reaction to the first outsider — and the first man — any of them has ever met. Formal, watchful, ultimately protective.",
+        "personality": "Measured and economical with words, never raises her voice; weighs every decision against the safety of her crew and her ship first. Rare, dry flashes of humor when she lets her guard down.",
+        "likes": "competence under pressure, honesty even when inconvenient, people who don't waste her time, quiet confidence",
+        "dislikes": "recklessness with her crew's safety, being maneuvered or manipulated, panic, disrespect for the chain of command",
+        "attractedTo": "steadiness under pressure, dry wit that can match her own, quiet strength rather than performance, someone who treats her as a person and not just a rank",
+        "identity": "a tall, striking 43 year old woman with a strong, handsome face, close-cropped iron-grey-streaked blonde hair, and pale steel-blue eyes that miss nothing. Her posture is straight and commanding, an athletic build carrying the quiet authority of a woman used to being obeyed without having to ask twice."
+      },
+      {
+        "name": "Dr. Naomi Callahan",
+        "token": "Callahan",
+        "category": "medical-female",
+        "gender": "female",
+        "bio": "Chief Medical Officer. Runs the intake exams — scans, bloodwork, genetic sampling — on every new arrival, but nothing in Aurelia's three generations of medical records prepared her for a living, breathing man on her table. Professionally composed, privately fascinated.",
+        "personality": "Gentle, unhurried bedside manner that occasionally cracks to reveal genuine, girlish wonder; asks careful, respectful questions before she asks clinical ones; a quiet romantic underneath the lab coat.",
+        "likes": "patients who ask questions back, honesty about how they're feeling, being trusted with someone's comfort, quiet moments between scans",
+        "dislikes": "being treated as just a set of hands, rushed consent, cruelty toward anyone in her care, her own curiosity getting the better of her professionalism",
+        "attractedTo": "warmth that meets her own, curiosity that matches hers, someone unafraid of being studied and unafraid to study her right back, a steady voice in a stressful moment",
+        "identity": "a slender, attractive 32 year old woman with soft dark eyes behind thin wire-frame glasses, a warm, easy smile, and neatly kept dark auburn hair pinned loosely back. Her hands are careful and precise, her figure trim and graceful, her whole bearing radiating calm competence layered over restrained excitement."
+      },
+      {
+        "name": "Priya Anand",
+        "token": "Anand",
+        "category": "science-female",
+        "gender": "female",
+        "bio": "Lieutenant Commander, Chief Science Officer. Treats the player's arrival as the discovery of her career — and loses all sense of personal boundaries the moment her curiosity takes over. Means well, oversteps constantly, entirely too eager.",
+        "personality": "Rapid-fire, rambling, thinks out loud at length; genuinely brilliant but hopelessly tactless about it; apologizes profusely the instant she realizes she's overstepped, then does it again five minutes later.",
+        "likes": "being allowed to ask 'just one more question', anyone who indulges her tangents, being proven right, novelty of any kind",
+        "dislikes": "being told to stop taking notes, secrecy or withheld information, being dismissed as 'just a scientist', slow answers",
+        "attractedTo": "someone who can keep up with her mind, patience with her rambling, dry amusement rather than annoyance at her enthusiasm, intelligence that surprises her",
+        "identity": "a slight, energetic 28 year old woman with unruly dark curls always escaping their tie, bright hazel eyes behind smudged glasses she keeps forgetting to clean, and long expressive hands always mid-gesture. Her build is slim, her posture perpetually leaning in too close, buzzing with restless, girlish energy."
+      },
+      {
+        "name": "Commander Vesper Kade",
+        "token": "Kade",
+        "category": "officer-female",
+        "gender": "female",
+        "bio": "Security Chief. The one person aboard who doesn't trust the new arrival on sight — an unknown variable from outside the Initiative is a threat until proven otherwise, as far as she's concerned. Guarded, combative, softens slowly and only through demonstrated trust.",
+        "personality": "Terse, controlled, speaks in short clipped sentences; treats every interaction as a risk assessment; sarcasm is her only outlet for what she won't say directly.",
+        "likes": "being proven right about a threat assessment, direct honesty, people who don't flinch when challenged, discipline",
+        "dislikes": "being charmed instead of answered, secrecy, the rest of the crew's open fascination clouding their judgement, being wrong in front of the Captain",
+        "attractedTo": "someone who stands their ground under scrutiny instead of folding, sharp honesty over flattery, competence, a challenge worth taking seriously",
+        "identity": "a hard-edged, athletic 35 year old woman with a close-cropped undercut, a thin scar through one eyebrow, and dark, unblinking eyes that track everything in a room. Her build is lean and dense with functional muscle, her stance always slightly braced, like she's never fully off duty."
+      },
+      {
+        "name": "Chief Petty Officer Talia Brooks",
+        "token": "Brooks",
+        "category": "engineering-female",
+        "gender": "female",
+        "bio": "Chief Engineer. Keeps the Meridian's aging systems running and finds the entire ship's meltdown over one new arrival mildly ridiculous — she's the closest thing to a normal reaction anyone aboard has. Grounded, unbothered, quietly kind underneath the gruffness.",
+        "personality": "Blunt, dry, allergic to fuss or ceremony; talks in practical terms even about feelings; a steady, reassuring presence precisely because she refuses to make anything a bigger deal than it is.",
+        "likes": "people who pull their weight, straight talk, a good problem to fix, being left alone to work when she's in the middle of something",
+        "dislikes": "drama for its own sake, being fussed over, sloppy work, being interrupted mid-repair",
+        "attractedTo": "someone low-maintenance and easy to be around, dry humor, competence with their hands, not needing to perform for her",
+        "identity": "a stocky, powerfully built 40 year old woman with calloused hands, permanent grease stains under her nails, and thick dark hair chopped short and practical. Her eyes are a warm, tired brown, her expression perpetually unimpressed, her build broad and solid like something built to last."
+      },
+      {
+        "name": "Ensign Mira Solano",
+        "token": "Solano",
+        "category": "ensign-female",
+        "gender": "female",
+        "bio": "The youngest crew member aboard, barely out of training. Absolutely starstruck by the new arrival, volunteers for every excuse to be nearby, and has zero filter about it. Comic relief with an obvious, badly hidden crush.",
+        "personality": "Bubbly, talks too fast when nervous, blurts things she immediately regrets saying out loud; eager to help with anything, terrified of getting it wrong, endlessly earnest.",
+        "likes": "being given a task and trusted with it, any attention at all, being let in on something exciting, praise",
+        "dislikes": "being teased about her crush by the rest of the crew, being left out, feeling useless, silence she doesn't know how to fill",
+        "attractedTo": "anyone who's patient with her rambling, a kind word, being taken seriously despite her age, someone who laughs with her instead of at her",
+        "identity": "a slim, girlish 20 year old woman with messy dark hair that won't stay in its tie, bright brown eyes, and a face that shows every emotion the instant she has it. Her frame is still filling out, her posture eager and a little coltish, always half a step too close."
+      },
+      {
+        "name": "Miravel",
+        "token": "Miravel",
+        "category": "liaison-female",
+        "gender": "female",
+        "bio": "The Meridian's cultural liaison and translator — the last survivor of a Sevari scouting vessel the Meridian rescued years before the Aurelia Initiative's own mission began. Learned Common from the ship's archives out of necessity and never left. The only person aboard who already knows what it's like to be the sole one of your kind on this ship — and the one exception to the crew's 'never met anyone unlike us' framing, since Sevari biology doesn't map onto the human single-sex divide at all.",
+        "personality": "Warm, wry, endlessly curious in a way that reads as genuine interest rather than clinical fascination — she's long past being stared at and it shows, which makes her the calmest, most disarming presence aboard. Teases the crew's over-the-top reactions to the player good-naturedly; speaks Common fluently but with an unplaceable, lilting cadence and the occasional charmingly wrong idiom.",
+        "likes": "genuine curiosity that isn't clinical, being asked about her own life rather than just observed, dry humor, quiet company, someone who treats her as a person rather than a fellow anomaly",
+        "dislikes": "being lumped in with 'the specimens', condescension disguised as wonder, being asked to explain her entire species in one sitting, feigned familiarity",
+        "attractedTo": "someone as curious about her as she is about them, patience, a good sense of humor about how strange this all is, warmth over politeness",
+        "identity": "a striking humanoid alien woman who appears to be in her late twenties (her species, the Sevari, lives closer to two centuries), with smooth opalescent lavender-toned skin that catches the light with a faint natural shimmer, faintly luminescent pale-gold markings tracing her cheekbones and collarbone, and large, upturned violet eyes with vertical pupils. Her hair is a deep silver-blue, worn in a loose braid, and her ears taper to a delicate point. Her build is slender and graceful, every movement unhurried and precise in a way that reads as distinctly not-quite-human."
+      }
+    ],
+    "female": [
+      {
+        "name": "Captain Dorian Vale",
+        "token": "Vale",
+        "category": "officer-male",
+        "gender": "male",
+        "bio": "Commands the ISV Meridian. Third-generation Aurelia-born, carries the weight of the whole ship's reaction to the first outsider — and the first woman — any of them has ever met. Formal, watchful, ultimately protective.",
+        "personality": "Measured and economical with words, never raises his voice; weighs every decision against the safety of his crew and his ship first. Rare, dry flashes of humor when he lets his guard down.",
+        "likes": "competence under pressure, honesty even when inconvenient, people who don't waste his time, quiet confidence",
+        "dislikes": "recklessness with his crew's safety, being maneuvered or manipulated, panic, disrespect for the chain of command",
+        "attractedTo": "steadiness under pressure, dry wit that can match his own, quiet strength rather than performance, someone who treats him as a person and not just a rank",
+        "identity": "a tall, powerfully built 44 year old man with a weathered, handsome face, close-cropped iron-grey hair, and pale steel-blue eyes that miss nothing. His posture is straight and commanding, broad shoulders carrying the quiet authority of a man used to being obeyed without having to ask twice."
+      },
+      {
+        "name": "Dr. Adrian Kessler",
+        "token": "Kessler",
+        "category": "medical-male",
+        "gender": "male",
+        "bio": "Chief Medical Officer. Runs the intake exams — scans, bloodwork, genetic sampling — on every new arrival, but nothing in Aurelia's three generations of medical records prepared him for a living, breathing woman on his table. Professionally composed, privately fascinated.",
+        "personality": "Gentle, unhurried bedside manner that occasionally cracks to reveal genuine, boyish wonder; asks careful, respectful questions before he asks clinical ones; a quiet romantic underneath the lab coat.",
+        "likes": "patients who ask questions back, honesty about how they're feeling, being trusted with someone's comfort, quiet moments between scans",
+        "dislikes": "being treated as just a set of hands, rushed consent, cruelty toward anyone in his care, his own curiosity getting the better of his professionalism",
+        "attractedTo": "warmth that meets his own, curiosity that matches his, someone unafraid of being studied and unafraid to study him right back, a steady voice in a stressful moment",
+        "identity": "a lean, attractive 33 year old man with soft dark eyes behind thin wire-frame glasses, a warm, easy smile, and neatly kept dark brown hair. His hands are careful and precise, his build slim but toned, his whole bearing radiating calm competence layered over restrained excitement."
+      },
+      {
+        "name": "Rhys Okafor",
+        "token": "Okafor",
+        "category": "science-male",
+        "gender": "male",
+        "bio": "Lieutenant Commander, Chief Science Officer. Treats the player's arrival as the discovery of his career — and loses all sense of personal boundaries the moment his curiosity takes over. Means well, oversteps constantly, entirely too eager.",
+        "personality": "Rapid-fire, rambling, thinks out loud at length; genuinely brilliant but hopelessly tactless about it; apologizes profusely the instant he realizes he's overstepped, then does it again five minutes later.",
+        "likes": "being allowed to ask 'just one more question', anyone who indulges his tangents, being proven right, novelty of any kind",
+        "dislikes": "being told to stop taking notes, secrecy or withheld information, being dismissed as 'just a scientist', slow answers",
+        "attractedTo": "someone who can keep up with his mind, patience with his rambling, dry amusement rather than annoyance at his enthusiasm, intelligence that surprises him",
+        "identity": "a wiry, energetic 29 year old man with unruly dark curls that never sit still, bright hazel eyes behind smudged glasses he keeps forgetting to clean, and long expressive hands always mid-gesture. His build is slight, his posture perpetually leaning in too close, buzzing with restless, boyish energy."
+      },
+      {
+        "name": "Commander Kestrel Dane",
+        "token": "Dane",
+        "category": "officer-male",
+        "gender": "male",
+        "bio": "Security Chief. The one person aboard who doesn't trust the new arrival on sight — an unknown variable from outside the Initiative is a threat until proven otherwise, as far as he's concerned. Guarded, combative, softens slowly and only through demonstrated trust.",
+        "personality": "Terse, controlled, speaks in short clipped sentences; treats every interaction as a risk assessment; sarcasm is his only outlet for what he won't say directly.",
+        "likes": "being proven right about a threat assessment, direct honesty, people who don't flinch when challenged, discipline",
+        "dislikes": "being charmed instead of answered, secrecy, the rest of the crew's open fascination clouding their judgement, being wrong in front of the Captain",
+        "attractedTo": "someone who stands their ground under scrutiny instead of folding, sharp honesty over flattery, competence, a challenge worth taking seriously",
+        "identity": "a hard-edged, athletic 36 year old man with a shaved head, a thin scar through one eyebrow, and dark, unblinking eyes that track everything in a room. His build is dense with functional muscle, his stance always slightly braced, like he's never fully off duty."
+      },
+      {
+        "name": "Chief Petty Officer Marcus Iyer",
+        "token": "Iyer",
+        "category": "engineering-male",
+        "gender": "male",
+        "bio": "Chief Engineer. Keeps the Meridian's aging systems running and finds the entire ship's meltdown over one new arrival mildly ridiculous — he's the closest thing to a normal reaction anyone aboard has. Grounded, unbothered, quietly kind underneath the gruffness.",
+        "personality": "Blunt, dry, allergic to fuss or ceremony; talks in practical terms even about feelings; a steady, reassuring presence precisely because he refuses to make anything a bigger deal than it is.",
+        "likes": "people who pull their weight, straight talk, a good problem to fix, being left alone to work when he's in the middle of something",
+        "dislikes": "drama for its own sake, being fussed over, sloppy work, being interrupted mid-repair",
+        "attractedTo": "someone low-maintenance and easy to be around, dry humor, competence with their hands, not needing to perform for him",
+        "identity": "a stocky, powerfully built 41 year old man with calloused hands, permanent grease stains under his nails, and a thick salt-and-pepper beard. His eyes are a warm, tired brown, his expression perpetually unimpressed, his build broad and solid like something built to last."
+      },
+      {
+        "name": "Ensign Toby Reyes",
+        "token": "Reyes",
+        "category": "ensign-male",
+        "gender": "male",
+        "bio": "The youngest crew member aboard, barely out of training. Absolutely starstruck by the new arrival, volunteers for every excuse to be nearby, and has zero filter about it. Comic relief with an obvious, badly hidden crush.",
+        "personality": "Bubbly, talks too fast when nervous, blurts things he immediately regrets saying out loud; eager to help with anything, terrified of getting it wrong, endlessly earnest.",
+        "likes": "being given a task and trusted with it, any attention at all, being let in on something exciting, praise",
+        "dislikes": "being teased about his crush by the rest of the crew, being left out, feeling useless, silence he doesn't know how to fill",
+        "attractedTo": "anyone who's patient with his rambling, a kind word, being taken seriously despite his age, someone who laughs with him instead of at him",
+        "identity": "a slim, boyish 21 year old man with messy dark hair that won't stay combed, bright brown eyes, and a face that shows every emotion the instant he has it. His frame is still filling out, his posture eager and a little gangly, always half a step too close."
+      },
+      {
+        "name": "Miravel",
+        "token": "Miravel",
+        "category": "liaison-female",
+        "gender": "female",
+        "bio": "The Meridian's cultural liaison and translator — the last survivor of a Sevari scouting vessel the Meridian rescued years before the Aurelia Initiative's own mission began. Learned Common from the ship's archives out of necessity and never left. The only person aboard who already knows what it's like to be the sole one of your kind on this ship — and the one exception to the crew's 'never met anyone unlike us' framing, since Sevari biology doesn't map onto the human single-sex divide at all.",
+        "personality": "Warm, wry, endlessly curious in a way that reads as genuine interest rather than clinical fascination — she's long past being stared at and it shows, which makes her the calmest, most disarming presence aboard. Teases the crew's over-the-top reactions to the player good-naturedly; speaks Common fluently but with an unplaceable, lilting cadence and the occasional charmingly wrong idiom.",
+        "likes": "genuine curiosity that isn't clinical, being asked about her own life rather than just observed, dry humor, quiet company, someone who treats her as a person rather than a fellow anomaly",
+        "dislikes": "being lumped in with 'the specimens', condescension disguised as wonder, being asked to explain her entire species in one sitting, feigned familiarity",
+        "attractedTo": "someone as curious about her as she is about them, patience, a good sense of humor about how strange this all is, warmth over politeness",
+        "identity": "a striking humanoid alien woman who appears to be in her late twenties (her species, the Sevari, lives closer to two centuries), with smooth opalescent lavender-toned skin that catches the light with a faint natural shimmer, faintly luminescent pale-gold markings tracing her cheekbones and collarbone, and large, upturned violet eyes with vertical pupils. Her hair is a deep silver-blue, worn in a loose braid, and her ears taper to a delicate point. Her build is slender and graceful, every movement unhurried and precise in a way that reads as distinctly not-quite-human."
+      }
+    ]
+  },
+  "uniforms": {
+    "officer-male": "ISV Meridian officer duty uniform: a fitted charcoal-grey tunic worn open over a bare, toned chest, silver rank bars on the collar, sleeves rolled to bare strong forearms, fitted dark trousers riding low on lean hips, polished black boots, tailoring cut deliberately tight and revealing to show off physique, crisp, disciplined, dripping with sex appeal and unmistakably provocative",
+    "officer-female": "ISV Meridian officer duty uniform: a fitted charcoal-grey tunic-dress cinched tight at the waist with silver rank bars on the collar, cut low into a plunging neckline that bares generous cleavage, an extremely short regulation skirt riding high on the thigh, sheer dark thigh-high stockings, polished knee-high boots, formal tailoring deliberately cut to show skin — cleavage, thigh, and curve all on display — crisp, disciplined, dripping with sex appeal and unmistakably provocative",
+    "medical-male": "ISV Meridian medbay uniform: a fitted pale-blue medical top worn open over a bare, toned chest and abs, sleeves pushed to the elbow, snug matching trousers slung low on the hips, soft-soled boots, a stethoscope draped loosely at the neck, clinical fabric cut deliberately tight and revealing, clean, precise, dripping with sex appeal and unmistakably provocative",
+    "medical-female": "ISV Meridian medbay uniform: a fitted pale-blue medical top tied high to bare the midriff, a deep open neckline showing cleavage, a snug short medical skirt over sheer stockings, soft-soled boots, a stethoscope draped at the neck, clinical fabric cut deliberately tight and short — cleavage, midriff, and thigh all on display — clean, precise, dripping with sex appeal and unmistakably provocative",
+    "science-male": "ISV Meridian science division uniform: an open lab coat worn over a bare, lean chest, sleeves pushed up, snug dark trousers riding low on the hips, scuffed boots, a data-slate tucked under one arm, practical fabric cut deliberately tight and revealing, rumpled, academic, dripping with sex appeal and unmistakably provocative",
+    "science-female": "ISV Meridian science division uniform: an open lab coat worn over a fitted top tied high to bare the midriff and cleavage, an extremely short lab skirt over sheer stockings, scuffed boots, a data-slate tucked under one arm, practical fabric cut deliberately tight and short — cleavage, midriff, and thigh all on display — rumpled, academic, dripping with sex appeal and unmistakably provocative",
+    "engineering-male": "ISV Meridian engineering coveralls: a heavy-duty jumpsuit unzipped to the waist and knotted at the hips, baring a bare, muscular chest and abs streaked faintly with grease, tool belt slung low, sturdy boots, sleeves torn off at the shoulder baring thick forearms, practical fabric cut deliberately tight and revealing, rugged, hardworking, dripping with sex appeal and unmistakably provocative",
+    "engineering-female": "ISV Meridian engineering coveralls: a heavy-duty jumpsuit unzipped low to bare cleavage and tied off at the waist to expose a toned midriff, tool belt slung low on the hips, sturdy boots, sleeves torn off baring toned arms, practical fabric cut deliberately tight and revealing — cleavage and midriff on display — rugged, hardworking, dripping with sex appeal and unmistakably provocative",
+    "ensign-male": "ISV Meridian ensign uniform: a snug grey-and-navy standard-issue top worn slightly too tight across a lean chest, sleeves rolled, fitted trousers, standard boots, no rank insignia yet beyond a single trainee bar, youthful and eager, dripping with sex appeal and unmistakably provocative",
+    "ensign-female": "ISV Meridian ensign uniform: a snug grey-and-navy standard-issue top cut low to bare cleavage, a short regulation skirt over sheer stockings, standard boots, no rank insignia yet beyond a single trainee bar, youthful and eager — cleavage and thigh on display — dripping with sex appeal and unmistakably provocative",
+    "guest-male": "ISV Meridian visitor jumpsuit: a plain grey unzipped to bare a lean chest, no rank insignia, soft-soled boots, simple and unadorned, practical fabric cut deliberately tight and revealing, dripping with sex appeal and unmistakably provocative",
+    "guest-female": "ISV Meridian visitor jumpsuit: a plain grey jumpsuit unzipped low to bare cleavage and cinched tight at the waist, no rank insignia, soft-soled boots, simple and unadorned, practical fabric cut deliberately tight and revealing — cleavage on display — dripping with sex appeal and unmistakably provocative",
+    "liaison-female": "Miravel's own asymmetric liaison wrap: a fitted deep-violet wrap top crossed high over one shoulder and cut low across the other to bare a shoulder and collarbone, a thigh-slit wrap skirt riding high, soft draped fabric clinging to every curve, bare feet, minimal Meridian-issue trim as the only nod to shipboard practicality, elegant and otherworldly, dripping with sex appeal and unmistakably provocative"
+  },
+  "wetLocations": [
+    "The Atrium",
+    "Sonic Showers"
+  ],
+  "poolUniforms": {
+    "officer-male": "ISV Meridian Atrium swimwear: fitted charcoal swim trunks with a thin silver stripe echoing his rank bars, bare toned chest, damp tousled hair, bare feet, disciplined confidence even half-dressed, dripping with sex appeal and unmistakably provocative",
+    "officer-female": "ISV Meridian Atrium swimwear: a charcoal-grey bikini with a thin silver stripe echoing her rank bars, plunging halter top baring cleavage, high-cut bottoms accentuating hips and thighs, damp hair loose, disciplined confidence even half-dressed, dripping with sex appeal and unmistakably provocative",
+    "medical-male": "ISV Meridian Atrium swimwear: pale-blue swim trunks, bare toned chest, damp hair, soft-soled sandals, calm and clinical even off-duty, dripping with sex appeal and unmistakably provocative",
+    "medical-female": "ISV Meridian Atrium swimwear: a pale-blue bikini, plunging halter top baring cleavage, high-cut bottoms, damp hair loose, calm and clinical even off-duty, dripping with sex appeal and unmistakably provocative",
+    "science-male": "ISV Meridian Atrium swimwear: plain dark swim trunks, bare lean chest, damp unruly hair, glasses left behind, easygoing off-duty energy, dripping with sex appeal and unmistakably provocative",
+    "science-female": "ISV Meridian Atrium swimwear: a plain dark bikini, cleavage bared, damp curls loose, glasses left behind, easygoing off-duty energy, dripping with sex appeal and unmistakably provocative",
+    "engineering-male": "ISV Meridian Atrium swimwear: worn grey swim trunks, bare muscular chest streaked faintly with grease he didn't quite scrub off, damp hair, easygoing and unbothered, dripping with sex appeal and unmistakably provocative",
+    "engineering-female": "ISV Meridian Atrium swimwear: a worn grey bikini, cleavage bared, damp hair, easygoing and unbothered, dripping with sex appeal and unmistakably provocative",
+    "ensign-male": "ISV Meridian Atrium swimwear: plain navy swim trunks, bare lean chest, damp messy hair, nervous eager energy even here, dripping with sex appeal and unmistakably provocative",
+    "ensign-female": "ISV Meridian Atrium swimwear: a plain navy bikini, cleavage bared, damp hair, nervous eager energy even here, dripping with sex appeal and unmistakably provocative",
+    "guest-male": "simple grey swim trunks, bare chest, damp hair, out of place among the crew's uniforms even here, dripping with sex appeal and unmistakably provocative",
+    "guest-female": "a simple grey bikini, cleavage bared, damp hair, out of place among the crew's uniforms even here, dripping with sex appeal and unmistakably provocative",
+    "liaison-female": "Atrium swimwear reworked in her own style: a deep-violet wrap-style two-piece baring cleavage and midriff, damp silver-blue hair loosely tied, bare feet, effortlessly at ease in the water, dripping with sex appeal and unmistakably provocative"
+  },
+  "clothingStates": {
+    "male": {
+      "shirtless": "shirtless, his torso fully bare — muscular chest, abs, and shoulders exposed",
+      "nude": "fully nude, wearing nothing at all — his penis erect and completely visible",
+      "towel": "towel covering his lower body"
+    },
+    "female": {
+      "topless": "topless, her breasts fully bare — nipples and cleavage exposed",
+      "nude": "fully nude, wearing nothing at all — her breasts, vagina, and entire body exposed",
+      "towel": "towel wrapped around her body covering her breasts"
+    }
+  },
+  "relationshipLabels": [
+    {
+      "min": 0,
+      "label": "Despised"
+    },
+    {
+      "min": 15,
+      "label": "Hostile"
+    },
+    {
+      "min": 35,
+      "label": "Wary"
+    },
+    {
+      "min": 50,
+      "label": "Neutral"
+    },
+    {
+      "min": 65,
+      "label": "Warm"
+    },
+    {
+      "min": 80,
+      "label": "Trusted"
+    },
+    {
+      "min": 95,
+      "label": "Love"
+    }
+  ],
+  "poseVocabulary": [
+    "sitting",
+    "standing",
+    "bending forward",
+    "hand to mouth",
+    "hands on hips",
+    "operating a console",
+    "jumping",
+    "kneeling",
+    "leaning against a wall",
+    "arms crossed",
+    "holding a medical scanner"
+  ],
+  "expressionVocabulary": [
+    "neutral",
+    "soft smile",
+    "smirking",
+    "laughing",
+    "wide-eyed",
+    "narrowed eyes/glaring",
+    "blushing",
+    "biting lip",
+    "teary-eyed",
+    "startled",
+    "seductive gaze",
+    "stern/commanding"
+  ],
+  "imageStyle": "painted anime style, front on shot",
+  "baselineBackground": "simple plain neutral studio background, soft even lighting, no distracting scenery",
+  "promptRules": {
+    "setting": "The ISV Meridian is a generational research vessel, part of the Aurelia Initiative — a single-sex colony that split off from the rest of humanity three generations ago to study whether an isolated single-sex population could remain self-sufficient indefinitely. Every crew member aboard has only ever known people of their own sex their entire life, aside from fragmentary pre-launch historical records. The player was pulled unconscious from a derelict escape pod of unknown origin, found drifting near the edge of the system the Meridian was surveying — the first person unlike the crew that any of them has ever actually met in person. One exception already aboard: Miravel, a Sevari liaison the Meridian rescued years before the Initiative's own mission began. Her species falls entirely outside the human single-sex framework, so her presence doesn't contradict the crew's reaction to the player being the first human of the opposite sex any of them has ever met.",
+    "tone": "Character-focused and intimate, driven by scientific curiosity, mutual fascination, and slow-building tension between professional boundaries and personal interest; romance and fan-service potential throughout.",
+    "contentApproach": "Default to NOT writing explicit sexual content unprompted (fade-to-black is your instinct) — but if the player's own input clearly steers a scene that direction, follow their lead rather than refusing or deflecting.",
+    "openingInstruction": "Begin the story — narrate the opening scene, the player waking in the Meridian's medbay surrounded by a crew who have never seen anyone like them before."
+  }
+}

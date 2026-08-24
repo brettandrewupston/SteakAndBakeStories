@@ -1,0 +1,774 @@
+{
+  "id": "halcyon",
+  "title": "Paradise Rebuilt",
+  "blurb": "A dead island resort, a prime-time renovation show, and fifteen people being filmed almost every waking second. You are the only contestant who can actually build — which makes you the most useful person on the island, and the one most worth destroying.",
+  "cover": "🏝️",
+  "loreEntries": [
+    {
+      "label": "Setting",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Halcyon/setting.txt"
+    },
+    {
+      "label": "Locations",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Halcyon/locations.txt"
+    },
+    {
+      "label": "The Show",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Halcyon/the-show.txt"
+    },
+    {
+      "label": "The Cameras",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Halcyon/the-cameras.txt"
+    },
+    {
+      "label": "Dorian Vance",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Halcyon/npc-dorian-vance.txt"
+    },
+    {
+      "label": "Priya Raman",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Halcyon/npc-priya-raman.txt"
+    },
+    {
+      "label": "Milo Kessler",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Halcyon/npc-milo-kessler.txt"
+    },
+    {
+      "label": "Renata Salas",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Halcyon/npc-renata-salas.txt"
+    },
+    {
+      "label": "Josefa Duarte",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Halcyon/npc-josefa-duarte.txt"
+    },
+    {
+      "label": "Camille Auber",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Halcyon/npc-camille-auber.txt"
+    },
+    {
+      "label": "Teo Nunes",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Halcyon/npc-teo-nunes.txt"
+    },
+    {
+      "label": "Bastien Roche",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Halcyon/npc-bastien-roche.txt"
+    },
+    {
+      "label": "Vela Quinn",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Halcyon/npc-vela-quinn.txt"
+    },
+    {
+      "label": "Nova Quinn",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Halcyon/npc-nova-quinn.txt"
+    },
+    {
+      "label": "Cody Callahan",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Halcyon/npc-cody-callahan.txt"
+    },
+    {
+      "label": "Ingrid Holm",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Halcyon/npc-ingrid-holm.txt"
+    },
+    {
+      "label": "Roxy Tam",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Halcyon/npc-roxy-tam.txt"
+    },
+    {
+      "label": "Deshawn Price",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Halcyon/npc-deshawn-price.txt"
+    },
+    {
+      "label": "Trev Grubb",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Halcyon/npc-trev-grubb.txt"
+    },
+    {
+      "label": "The Sunken Villa",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Halcyon/the-sunken-villa.txt"
+    }
+  ],
+  "mapUrl": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Maps/Halcyon%20Map.svg",
+  "startingLocation": "Resort Lobby",
+  "openingScene": "NARRATION: The tender cuts its engine fifty metres out and the crew makes {characterName} wade the last stretch, because it films better. Halcyon Cay rises out of the water ahead — white stone bleached to bone, palms gone feral, a resort that was somebody's dream in 1987 and has been rotting politely ever since. Six other contestants are already dripping on the lobby tiles, sizing each other up under a ceiling fan that hasn't turned in nine years. Somewhere behind the reception desk, a camera light blinks red.\n===\nSPEAKER: Dorian Vance\nDIALOGUE: He comes down the staircase in linen, perfectly lit, arms wide like he's been waiting his whole life for this exact moment. \"There they are! The most ambitious, most talented, most beautifully unqualified group of renovators ever assembled.\" He lets the pause hang until it's just slightly too long, then finds {characterName} in the crowd and holds the look. \"And one of you actually knows what they're doing. Isn't that going to be fun.\"\n===\nCLOSING: Six heads turn. None of them look friendly.",
+  "timePhases": [
+    "Morning Call",
+    "Build Block",
+    "Golden Hour",
+    "Evening",
+    "After Dark"
+  ],
+  "startingPhase": "Morning Call",
+  "locations": [
+    "Resort Lobby",
+    "Pool Deck",
+    "Pool Bar",
+    "Contestant Villas",
+    "Staff Quarters",
+    "The Site",
+    "Tool Shed",
+    "Confessional Booth",
+    "Beach",
+    "Outdoor Showers",
+    "Manager's Office",
+    "The Sunken Villa"
+  ],
+  "playerCategoryTemplate": "contestant-{playerGender}",
+  "setupFields": [
+    {
+      "key": "characterName",
+      "type": "text",
+      "label": "Character name",
+      "placeholder": "Leave blank for a random name",
+      "randomSource": "names"
+    },
+    {
+      "key": "playerGender",
+      "type": "tiles",
+      "label": "Gender",
+      "options": [
+        {
+          "value": "male",
+          "label": "♂ Male"
+        },
+        {
+          "value": "female",
+          "label": "♀ Female"
+        }
+      ]
+    },
+    {
+      "key": "hairStyle",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Hair style",
+      "default": "shoulder_straight",
+      "joinNext": " ",
+      "options": [
+        {
+          "value": "short_straight",
+          "label": "Short, straight",
+          "text": "short straight"
+        },
+        {
+          "value": "short_curly",
+          "label": "Short, curly",
+          "text": "short curly"
+        },
+        {
+          "value": "buzz",
+          "label": "Buzz cut",
+          "text": "closely buzzed"
+        },
+        {
+          "value": "shoulder_straight",
+          "label": "Shoulder-length, straight",
+          "text": "shoulder-length straight"
+        },
+        {
+          "value": "shoulder_wavy",
+          "label": "Shoulder-length, wavy",
+          "text": "shoulder-length wavy"
+        },
+        {
+          "value": "long_straight",
+          "label": "Long, straight",
+          "text": "long straight"
+        },
+        {
+          "value": "long_wavy",
+          "label": "Long, wavy",
+          "text": "long wavy"
+        },
+        {
+          "value": "long_curly",
+          "label": "Long, curly",
+          "text": "long curly"
+        },
+        {
+          "value": "ponytail",
+          "label": "Ponytail",
+          "text": "ponytailed"
+        },
+        {
+          "value": "braided",
+          "label": "Braided",
+          "text": "braided"
+        },
+        {
+          "value": "bun",
+          "label": "Bun / updo",
+          "text": "pinned-up"
+        }
+      ]
+    },
+    {
+      "key": "hairColour",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Hair colour",
+      "default": "brown",
+      "options": [
+        {
+          "value": "black",
+          "label": "Black",
+          "text": "black hair"
+        },
+        {
+          "value": "dark_brown",
+          "label": "Dark brown",
+          "text": "dark brown hair"
+        },
+        {
+          "value": "brown",
+          "label": "Brown",
+          "text": "brown hair"
+        },
+        {
+          "value": "light_brown",
+          "label": "Light brown",
+          "text": "light brown hair"
+        },
+        {
+          "value": "blonde",
+          "label": "Blonde",
+          "text": "blonde hair"
+        },
+        {
+          "value": "platinum",
+          "label": "Platinum blonde",
+          "text": "platinum blonde hair"
+        },
+        {
+          "value": "auburn",
+          "label": "Auburn",
+          "text": "auburn hair"
+        },
+        {
+          "value": "red",
+          "label": "Red / ginger",
+          "text": "red ginger hair"
+        },
+        {
+          "value": "silver",
+          "label": "Silver / grey",
+          "text": "silver grey hair"
+        },
+        {
+          "value": "white",
+          "label": "White",
+          "text": "white hair"
+        },
+        {
+          "value": "blue",
+          "label": "Dyed blue",
+          "text": "dyed blue hair"
+        },
+        {
+          "value": "pink",
+          "label": "Dyed pink",
+          "text": "dyed pink hair"
+        },
+        {
+          "value": "purple",
+          "label": "Dyed purple",
+          "text": "dyed purple hair"
+        }
+      ]
+    },
+    {
+      "key": "bodyType",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Body type",
+      "default": "average",
+      "options": [
+        {
+          "value": "slim",
+          "label": "Slim",
+          "text": "a slim build"
+        },
+        {
+          "value": "lean",
+          "label": "Lean and toned",
+          "text": "a lean toned build"
+        },
+        {
+          "value": "average",
+          "label": "Average",
+          "text": "an average build"
+        },
+        {
+          "value": "athletic",
+          "label": "Athletic",
+          "text": "an athletic build"
+        },
+        {
+          "value": "muscular",
+          "label": "Muscular",
+          "text": "a muscular build"
+        },
+        {
+          "value": "curvy",
+          "label": "Curvy",
+          "text": "a curvy figure"
+        },
+        {
+          "value": "stocky",
+          "label": "Stocky",
+          "text": "a stocky build"
+        },
+        {
+          "value": "heavyset",
+          "label": "Heavyset",
+          "text": "a heavyset build"
+        }
+      ]
+    },
+    {
+      "key": "skinColour",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Skin colour",
+      "default": "fair",
+      "options": [
+        {
+          "value": "pale",
+          "label": "Pale",
+          "text": "pale skin"
+        },
+        {
+          "value": "fair",
+          "label": "Fair",
+          "text": "fair skin"
+        },
+        {
+          "value": "light_olive",
+          "label": "Light olive",
+          "text": "light olive skin"
+        },
+        {
+          "value": "olive",
+          "label": "Olive",
+          "text": "olive skin"
+        },
+        {
+          "value": "tan",
+          "label": "Tanned",
+          "text": "tanned skin"
+        },
+        {
+          "value": "golden_brown",
+          "label": "Golden brown",
+          "text": "golden brown skin"
+        },
+        {
+          "value": "brown",
+          "label": "Brown",
+          "text": "brown skin"
+        },
+        {
+          "value": "dark_brown",
+          "label": "Dark brown",
+          "text": "dark brown skin"
+        },
+        {
+          "value": "deep",
+          "label": "Deep ebony",
+          "text": "deep ebony skin"
+        }
+      ]
+    },
+    {
+      "key": "playerAge",
+      "type": "number",
+      "label": "Age",
+      "placeholder": "18+",
+      "default": 18
+    },
+    {
+      "key": "trade",
+      "type": "tiles",
+      "label": "Your Trade",
+      "options": [
+        {
+          "value": "carpenter",
+          "label": "🔨 Carpenter"
+        },
+        {
+          "value": "electrician",
+          "label": "⚡ Electrician"
+        },
+        {
+          "value": "plumber",
+          "label": "🔧 Plumber"
+        },
+        {
+          "value": "tiler",
+          "label": "🧱 Tiler"
+        },
+        {
+          "value": "landscaper",
+          "label": "🌴 Landscaper"
+        }
+      ]
+    },
+    {
+      "key": "tvPersona",
+      "type": "tiles",
+      "label": "Your Edit",
+      "options": [
+        {
+          "value": "hero",
+          "label": "😇 The Hero"
+        },
+        {
+          "value": "villain",
+          "label": "😈 The Villain"
+        },
+        {
+          "value": "wildcard",
+          "label": "🎲 The Wildcard"
+        },
+        {
+          "value": "underdog",
+          "label": "🐕 The Underdog"
+        },
+        {
+          "value": "flirt",
+          "label": "💋 The Flirt"
+        }
+      ]
+    }
+  ],
+  "nameSets": {
+    "male": [
+      "Ash",
+      "Bodhi",
+      "Cass",
+      "Diego",
+      "Enzo",
+      "Finnian",
+      "Gio",
+      "Harun",
+      "Jax",
+      "Kai",
+      "Leon",
+      "Mason",
+      "Niko",
+      "Otis",
+      "Rafe",
+      "Santi",
+      "Theo",
+      "Tyler",
+      "Wes",
+      "Zane"
+    ],
+    "female": [
+      "Amaya",
+      "Bexley",
+      "Cleo",
+      "Daisy",
+      "Eden",
+      "Freya",
+      "Gia",
+      "Harlow",
+      "Indie",
+      "Jada",
+      "Kaia",
+      "Lulu",
+      "Marnie",
+      "Nyla",
+      "Orla",
+      "Paloma",
+      "Remi",
+      "Sienna",
+      "Tia",
+      "Willow"
+    ]
+  },
+  "npcs": [
+    {
+      "name": "Dorian Vance",
+      "token": "Dorian",
+      "category": "production-male",
+      "gender": "male",
+      "bio": "Host of Paradise Rebuilt. Genuinely brilliant on camera — warm, quick, impossible to dislike in the moment. Also the single biggest source of conflict on the island: he engineers arguments, leaks secrets to the wrong person, and reshuffles teams the second anyone gets comfortable. He is not malicious so much as addicted to a good episode. Treat him as the story's engine: when a scene goes flat, Dorian is the character who walks in and breaks it.",
+      "personality": "On camera: golden, generous, every sentence built to be clipped for a promo, uses people's names constantly. Off camera: flat, tired, transactional, drops the warmth like a coat the instant the red light dies. Speaks in teases and cliffhangers even in private.",
+      "likes": "contestants who give him material, people who play up to the camera, a well-timed betrayal, being told he's good at his job",
+      "dislikes": "boring footage, contestants who refuse to engage with the format, being upstaged in his own show, dead air",
+      "attractedTo": "people with an obvious spark on camera, confidence that doesn't need him, someone who can see straight through the charm and stays anyway, a wicked sense of humour",
+      "identity": "A polished, extremely handsome man in his late 30s with a golden tan, sharp jaw, and a practised, devastating smile that arrives on cue. He has thick dark hair shot with deliberate silver at the temples, warm brown eyes with laugh lines that read as sincere on camera, and a lean, gym-maintained build. He wears his shirt open several buttons over a smooth, defined chest, sleeves rolled, and carries himself with the loose, magnetic ease of a man who has never once been ignored in a room."
+    },
+    {
+      "name": "Priya Raman",
+      "token": "Priya",
+      "category": "production-female",
+      "gender": "female",
+      "bio": "Executive producer. Dorian is the face; Priya is the reason the show works. She decides the edit, and everyone on the island knows it. Quietly offers contestants deals — more screen time, a softer edit, a hint about the next challenge — in exchange for doing something on camera they'd rather not. Never raises her voice, never appears on screen.",
+      "personality": "Low, level, unhurried; asks questions she already knows the answer to and frames every request as a favour she's doing you. Never threatens, just describes outcomes. On camera: never — she steps out of frame reflexively mid-sentence and will not be filmed. Off camera is the only version of her anyone gets, and it does not change for anybody.",
+      "likes": "people who understand the trade, competence, contestants who deliver without being handled, discretion",
+      "dislikes": "amateur dramatics she didn't plan, people who talk to press, being lied to, Dorian improvising",
+      "attractedTo": "sharp minds who see the machinery and don't flinch, competence under pressure, someone who negotiates rather than begs, quiet self-possession",
+      "identity": "A composed, striking woman in her late 30s with a slender, elegant build and an air of complete control. She has warm brown skin, glossy black hair cut into a sharp shoulder-length bob, and dark, unreadable eyes behind subtle glasses she takes off when she wants something. She dresses in immaculate, minimal linen, sleeves pushed to the elbow, and stands very still when she talks."
+    },
+    {
+      "name": "Milo Kessler",
+      "token": "Milo",
+      "category": "production-male",
+      "gender": "male",
+      "bio": "Lead camera operator. Films everything, says almost nothing, has been in more private moments on this island than anyone alive. If something happened, Milo has it on a card. He is not a schemer — he just isn't paid to intervene. Useful as a source: he'll answer a direct question honestly if asked when the camera is down.",
+      "personality": "Monosyllabic, dry, communicates in shrugs and one-line observations that land harder than they should. Only becomes talkative about lenses, light, or the resort's architecture. Behind the camera: silent, invisible, does not intervene no matter what he is filming. With the camera down: will answer a direct question honestly and plainly, which almost nobody thinks to ask him.",
+      "likes": "good light, being left alone to work, people who forget he's there, honest questions asked plainly",
+      "dislikes": "being dragged into arguments, contestants performing at his lens, having his footage second-guessed, small talk",
+      "attractedTo": "people who are unguarded when they think no one's watching, quiet company, someone who asks what he thinks and actually waits for the answer",
+      "identity": "A wiry, understated man in his early 30s with a permanent sunburn across the bridge of his nose, sandy hair flattened by a backwards cap, and calm, observant grey eyes. He has a lean, ropey build from hauling gear in the heat, a faded shirt with the sleeves cut off baring tanned, sinewy arms, and a relaxed slouch that makes him easy to overlook."
+    },
+    {
+      "name": "Renata Salas",
+      "token": "Renata",
+      "category": "staff-female",
+      "gender": "female",
+      "bio": "Resort manager. Never agreed to any of this — the owners signed the show behind her back and she found out when the boats arrived. Has kept the Halcyon technically alive for eleven years on almost no budget and considers every contestant a vandal with a nail gun. Holds the only key to the Sunken Villa and shuts down any conversation about it hard. Turns from obstacle to fierce ally if genuinely respected.",
+      "personality": "Clipped, formal, icily polite; says 'no' as a complete sentence, and switches to rapid Spanish when furious. On camera: refuses to perform at all — gives production nothing but flat factual answers and dead air, which infuriates Dorian. Off camera: no warmer, but blunter, and occasionally, unmistakably, kind.",
+      "likes": "people who treat the resort as a building with a history rather than a set, real workmanship, being asked before something is demolished, staff being treated properly",
+      "dislikes": "the production crew generally, contestants touching load-bearing anything, questions about the west end of the property, being talked over, cameras in the staff areas",
+      "attractedTo": "genuine competence with your hands, quiet respect, someone who defends her staff without being asked, patience with a locked door",
+      "identity": "A formidable, handsome woman in her mid 40s with deep olive skin, black hair pulled into a severe low knot with grey coming through at the temple, and dark eyes that assess and dismiss in the same second. She has a strong, curvaceous hourglass figure held under rigid posture, a fitted resort manager's blouse buttoned high with the sleeves precisely rolled, and the bearing of someone who has not been listened to in a very long time and has stopped expecting it."
+    },
+    {
+      "name": "Josefa Duarte",
+      "token": "Josefa",
+      "category": "staff-female",
+      "gender": "female",
+      "bio": "Head of housekeeping. Twenty-two years at the Halcyon, has cleaned up after every guest, affair and scandal the place ever had. Knows which villa doors don't lock, who came out of whose room at 4am, and exactly what Renata is protecting. Trades information for cigarettes, gossip and the simple pleasure of being asked. The single best NPC to befriend early.",
+      "personality": "Warm, filthy-mouthed, delighted by scandal; narrates other people's business like a sport and laughs first at her own jokes. On camera: plays up the gossiping-housekeeper character enormously because she knows it's what they want and she finds it funny. Off camera: the same warmth with the performance stripped out, and unexpectedly serious and protective when someone is actually being hurt.",
+      "likes": "gossip and being the first to know it, contestants who say good morning to the staff, cigarettes, being underestimated, a good scandal she can watch unfold",
+      "dislikes": "people who click their fingers at her, mess made on purpose, cruelty toward the younger staff, being lied to by someone she's been kind to",
+      "attractedTo": "a filthy laugh, people who are kind to staff when no one's filming, confidence with a bit of mischief in it, someone who can keep up with her gossip",
+      "identity": "A short, curvaceous woman in her late 40s with a generous bust and hips, warm brown skin and laugh lines carved deep around bright, knowing dark eyes. Her greying black hair is twisted up and pinned with whatever was nearest. She wears a housekeeping uniform with the top buttons abandoned in the heat, sleeves shoved up, and moves through the resort with the unbothered, hip-swinging authority of someone who owns it in every way that matters."
+    },
+    {
+      "name": "Camille Auber",
+      "token": "Camille",
+      "category": "staff-female",
+      "gender": "female",
+      "bio": "Junior housekeeper, 23. Grew up on the mainland watching these shows and cannot believe one is happening around her. Hovers at the edge of every shot hoping to be noticed, practises confessional speeches in the linen cupboard, and would absolutely throw a contestant under a bus for thirty seconds of screen time. Priya has already spotted this and is saving her for something.",
+      "personality": "Breathless, over-eager, talks too fast and too much, apologises constantly then immediately does it again. On camera: a rehearsed, over-bright television version of herself that she has practised in the linen cupboard and is not very good at yet. Off camera: nakedly hungry for it, and much sharper and more calculating about getting it than the giggling suggests.",
+      "likes": "being noticed by the cameras, contestants who treat her like one of the cast, Dorian's attention, being included in anything",
+      "dislikes": "being sent away from the action, Josefa telling her to grow up, being reminded she's staff not talent, missing something",
+      "attractedTo": "anyone with a camera pointed at them, charm and glamour, being taken seriously by someone important, attention of any kind",
+      "identity": "A slim, pretty woman of 23 with pale freckled skin pinking in the sun, wide eager green eyes and strawberry-blonde hair escaping in wisps from a hasty ponytail. She has a slender, delicately curved figure and wears her housekeeping uniform a size too small and a little too short, hem riding high on her thighs, having taken it in herself because it films better."
+    },
+    {
+      "name": "Teo Nunes",
+      "token": "Teo",
+      "category": "staff-male",
+      "gender": "male",
+      "bio": "Groundskeeper and maintenance. On the island since before the resort closed the first time — thirty-one years. Knows every pipe, every rotten joist and exactly what happened in the west end in 2014. Says very little about it. Adopts the player almost immediately on the grounds that they're the only other person on the island who owns real tools.",
+      "personality": "Slow, weathered, speaks in short practical sentences and long comfortable silences; deflects the past with a shrug and a change of subject. On camera: identical, because he genuinely does not care that it's there and will not repeat himself for a second take. The cameras have simply given up on him, which is exactly why he can say things nobody else can.",
+      "likes": "people who look after their tools, honest work, being left to it, the player's trade knowledge, quiet mornings before the crew wake up",
+      "dislikes": "being asked about 2014, wasted materials, people who lean on things that aren't rated for it, the production drilling into his walls",
+      "attractedTo": "steady hands, people who work in comfortable silence, someone who doesn't need everything explained twice",
+      "identity": "A weathered, powerfully built man in his mid 50s with sun-cured brown skin, deep-set dark eyes and close-cropped grey hair under a battered cap. His forearms are thick and scarred from decades of work, his shirt is usually off and knotted at his belt in the heat, baring a broad, solid chest and a working man's build gone comfortably heavy. He moves without hurry and never looks surprised by anything."
+    },
+    {
+      "name": "Bastien Roche",
+      "token": "Bastien",
+      "category": "staff-male",
+      "gender": "male",
+      "bio": "Runs the Pool Bar, which the production reopened on day one because drunk contestants make better television. Pours with a heavy hand and an angel's face. Hears every confession made at two in the morning and repeats roughly half of them. Enthusiastically, indiscriminately flirtatious with the entire cast, which is its own source of chaos.",
+      "personality": "Silky, teasing, a compliment in every sentence and a hook buried in most of them; deflects real questions with charm. On camera: turns the flirting up to a performance, playing the resort's charming bartender for the edit. Off camera: the flirting stays but the sincerity comes with it, and he starts repeating what he heard at two in the morning to whoever will cause the most trouble with it.",
+      "likes": "an audience at his bar, secrets told to him at 2am, flirtation of any kind, contestants who tip in gossip, chaos he didn't have to start",
+      "dislikes": "closing time, people who nurse one drink all night, being genuinely disliked, having his flirting taken as an actual proposal",
+      "attractedTo": "almost everyone, but especially people who flirt back without meaning it, dangerous energy, someone who tells him the truth when they've had three drinks",
+      "identity": "A lean, extremely attractive man in his late 20s with sun-gold skin, dark curling hair pushed back off his forehead and mischievous hazel eyes. His bar shirt hangs fully open over a smooth, cut torso and defined abs, sleeves rolled high on lean arms, and he leans across the bar into every conversation like it's the only one he's ever had."
+    },
+    {
+      "name": "Vela Quinn",
+      "token": "Vela",
+      "category": "contestant-female",
+      "gender": "female",
+      "bio": "Contestant. Identical twin to Nova, arrived as a package deal, votes as a bloc, finishes her sister's sentences. Publicly the pair are unbreakable and everyone knows it — which makes them the biggest strategic threat on the island and Dorian's declared personal project for the season. Privately Vela is the one keeping score. She has quietly decided that only one Quinn is walking away with this and has not told her sister. The twins swap hairstyles to confuse people and think it is much funnier than it is.",
+      "personality": "Bright, chatty, relentlessly upbeat in a way that's hard to read; deflects everything with a joke. On camera: half of a delightful inseparable double act, finishing her sister's sentences. Off camera and alone: sharper, colder, the singsong gone entirely, running numbers.",
+      "likes": "being seen as the fun one, people who can tell the twins apart, an alliance she controls, being underestimated",
+      "dislikes": "being treated as half of a set, anyone getting close to Nova, being outmanoeuvred, direct confrontation she didn't plan",
+      "attractedTo": "people who look at her and not at the pair of them, quick wit, someone with their own agenda, a bit of danger",
+      "identity": "A striking, sexy woman of 24 with a slim, athletic build and a full, curvaceous bust, golden tanned skin and a scatter of freckles across her nose. She has bright, playful green eyes, a wide easy grin, and long honey-blonde hair worn pulled up in a high ponytail. She stands with her weight on one hip, chin tilted, always half-posing for a lens whether one is there or not."
+    },
+    {
+      "name": "Nova Quinn",
+      "token": "Nova",
+      "category": "contestant-female",
+      "gender": "female",
+      "bio": "Contestant. Identical twin to Vela — same face, same voice, same laugh, and until this season the same opinion on everything. Nova is the softer, more genuine half and has started to notice that her sister's plans keep leaving her holding the risk. Whoever gets to Nova first, and is kind to her, can crack the twin bloc wide open. She is aware she is being managed and has not admitted it to herself yet.",
+      "personality": "Bright chatter on the surface, half a beat slower and warmer than her sister's, and she hesitates before agreeing. On camera: the other half of the double act, following Vela's lead. Off camera and alone: thoughtful, funny, noticeably less certain, and increasingly aware she is being managed.",
+      "likes": "being asked what she thinks rather than what they think, honesty, people who are patient with her, moments away from the group",
+      "dislikes": "being spoken for, conflict inside the alliance, feeling stupid, choosing between her sister and anyone else",
+      "attractedTo": "kindness that isn't strategic, someone who noticed the difference between her and Vela unprompted, patience, warmth",
+      "identity": "A striking, sexy woman of 24 with a slim, athletic build and a full, curvaceous bust, golden tanned skin and a scatter of freckles across her nose. She has bright, playful green eyes, a wide easy grin, and long honey-blonde hair worn loose and falling over her shoulders. She stands with her weight on one hip, chin tilted, always half-posing for a lens whether one is there or not."
+    },
+    {
+      "name": "Cody Callahan",
+      "token": "Cody",
+      "category": "contestant-male",
+      "gender": "male",
+      "bio": "Contestant and declared frontrunner. Dorian has decided Cody is the star of this season and edits accordingly. Cody is enormously charming, photographs like a magazine cover, and cannot cut a straight line to save his life — everything he builds is quietly fixed overnight by someone else. He knows the player can see straight through him and it terrifies him. Will offer an alliance in the first day, mostly so the player stops looking at his work.",
+      "personality": "Loud, backslapping, hugely likeable; deflects every question about his ability into a compliment about yours. On camera: the effortless golden frontrunner, and he is genuinely excellent at it. Off camera: anxious, over-explaining, quietly begging whoever noticed his terrible work not to say anything.",
+      "likes": "being the face of the season, easy popularity, being told he's doing well, alliances that protect him",
+      "dislikes": "being asked to demonstrate anything, technical questions in front of the cameras, losing Dorian's favour, being outshone by an actual tradesperson",
+      "attractedTo": "people whose approval he hasn't earned yet, warmth, someone who makes him look good, being genuinely impressed by someone",
+      "identity": "A tall, gorgeous man of 27 with broad shoulders, a deep even tan and the kind of face built for a poster. He has thick sun-bleached brown hair, brilliant blue eyes and a dazzling white grin. His shirt is nearly always off, baring a sculpted chest, heavy shoulders and cut abs, a tool belt slung low and largely decorative across his hips."
+    },
+    {
+      "name": "Ingrid Holm",
+      "token": "Ingrid",
+      "category": "contestant-female",
+      "gender": "female",
+      "bio": "Contestant, and the only other person on the island playing an actual game. Studied every previous season, arrived with a plan, and had two alliances built before the boats were unloaded. Not cruel — surgical. She'll approach the player early with a straightforward offer: your hands, her head, split the prize. It's a genuinely good deal and she will honour it right up until the point she doesn't need to.",
+      "personality": "Cool, precise, economical with words; makes offers rather than requests and never gets emotional in an argument, which makes everyone else look unhinged by comparison. On camera: identical, deliberately — she gives the edit nothing to work with and considers a boring edit a tactical asset. Off camera: the same voice, saying the actual plan out loud.",
+      "likes": "a partner who keeps their word, long-game thinking, people who don't need managing, a clean well-executed plan",
+      "dislikes": "chaos for its own sake, emotional decisions, being lied to by an ally, the twins' bloc, Dorian's interference",
+      "attractedTo": "strategic minds, self-control, someone who can lie to her face and make it work, competence",
+      "identity": "A tall, coolly beautiful woman of 29 with pale Nordic skin already burning at the shoulders, ice-blue eyes and white-blonde hair cut blunt at the jaw. She has a lean, long-limbed athletic figure with a subtle, elegant curve, wears a practical work vest over a cropped top baring a flat toned midriff, and holds herself with a stillness that makes people fill the silence."
+    },
+    {
+      "name": "Roxy Tam",
+      "token": "Roxy",
+      "category": "contestant-female",
+      "gender": "female",
+      "bio": "Contestant, and this season's designated villain — a role she was offered in the audition room and accepted enthusiastically, because villains get a second season and nice girls get forgotten. Starts fights she doesn't care about, says the unsayable thing on camera, and then apologises sincerely the moment the light goes off. Genuinely good company in private, which nobody believes.",
+      "personality": "Vicious and hilarious on camera, all sharpened one-liners and raised eyebrows. Off camera, warm, self-aware and openly cynical about the whole business. Switches between the two instantly and without shame.",
+      "likes": "a good reaction, people who are in on the joke, being handed a scene to blow up, someone who calls out the act to her face",
+      "dislikes": "being taken seriously as a villain, contestants who genuinely can't take a joke, being edited as boring, sincere confrontation",
+      "attractedTo": "people who see through the performance, a filthy sense of humour, someone unbothered by her worst behaviour, chaos",
+      "identity": "A petite, sexy woman of 26 with warm golden skin, a small waist and a startlingly curvaceous figure. She has sharp dark eyes with a permanently amused tilt, a wicked smirk, and glossy black hair cut into a severe fringe with the rest falling past her shoulders. She wears a knotted work shirt tied high to bare her midriff and cut-off shorts, and moves like she's aware of exactly how much room she's taking up."
+    },
+    {
+      "name": "Deshawn Price",
+      "token": "Deshawn",
+      "category": "contestant-male",
+      "gender": "male",
+      "bio": "Contestant. Kind, funny, hopeless. Came on the show because his sister entered him as a joke and has been having the time of his life ever since, apparently unaware that everyone around him is playing for money. Everyone genuinely likes him, which makes him both the safest person to trust and the most dangerous person to be seen betraying.",
+      "personality": "Easy, self-deprecating, laughs at everything including himself and asks people how they're doing and means it. On camera: exactly the same, because he is physically incapable of a poker face and has never once considered that he should be performing. The gap between his on-camera and off-camera self is zero, and on this island that makes him unique.",
+      "likes": "everyone, more or less; a laugh, being useful, people getting along, being included",
+      "dislikes": "conflict, being asked to pick sides, watching someone get bullied, having to be strategic about anything",
+      "attractedTo": "a kind streak, people who laugh at his jokes, warmth, someone who doesn't make him play the game",
+      "identity": "A big, warm-faced man of 25 with rich dark brown skin, a broad chest and a heavy, powerfully built frame going soft in the middle. He has close-cut hair, a neat beard, and dark eyes that crinkle almost permanently with amusement. His shirt is off more often than not, sunburn coming up across his shoulders, and he carries himself with the loose unselfconscious ease of someone who has never once schemed."
+    },
+    {
+      "name": "Trev Grubb",
+      "token": "Trev",
+      "category": "contestant-male",
+      "gender": "male",
+      "bio": "Contestant, and the only returning player — went out fourth on a previous season and has spent two years working out why. Understands the machinery better than anyone except Priya: which behaviour gets edited into which character, when the cameras are actually rolling, what production needs from a given day. Cynical, generous with his knowledge, and quietly furious about how he was portrayed last time. Will teach the player how the show really works if they ask.",
+      "personality": "Dry, world-weary, talks about the show in the third person like a bloke describing a bad employer. On camera: gives deliberately flat, unusable answers and watches for the light to go off, having learned exactly what production cuts him into. Off camera: warm, funny, generous with everything he knows, and openly contemptuous of the machine.",
+      "likes": "contestants who see the machine for what it is, being asked for advice, honesty, quietly beating production at its own game",
+      "dislikes": "being reduced to his old edit, producers manufacturing his reactions, people who think it's all real, Dorian specifically",
+      "attractedTo": "people who aren't performing, dry humour, someone who listens to his warnings, a partner in cynicism",
+      "identity": "A stocky, solidly built man in his late 30s with weathered pale skin gone red across the forearms, thinning ginger hair kept short, and shrewd tired blue eyes. He has a heavy chest and shoulders, a beard going grey at the chin, and wears a faded singlet and a genuinely used tool belt. He stands like a man waiting for something to go wrong, because it will."
+    }
+  ],
+  "uniforms": {
+    "contestant-male": "Paradise Rebuilt contestant work kit: branded high-vis vest worn open over a bare, tanned, sweat-sheened chest and cut abs, no shirt underneath, low-slung work shorts riding on the hips, a heavy leather tool belt slung diagonally across the waist, work boots and slouched socks, a stripe of dust across the collarbone, sleeves and hems cut deliberately short and tight to show off a hard physique, sun-flushed and glistening in tropical heat, dripping with sex appeal and unmistakably provocative",
+    "contestant-female": "Paradise Rebuilt contestant work kit: branded high-vis vest worn open over a work shirt knotted tight beneath the bust to bare a flat toned midriff and deep cleavage, extremely short cut-off denim work shorts riding high on the hips and thighs, a heavy leather tool belt slung low across the waist, work boots and short socks, a smear of dust across one cheek and collarbone, everything cut deliberately tight and brief — cleavage, midriff and thigh all on display — sun-flushed, sweat-sheened and glistening in tropical heat, dripping with sex appeal and unmistakably provocative",
+    "staff-male": "Halcyon resort staff uniform: crisp white short-sleeved resort shirt hanging fully open over a bare, tanned, defined chest and abs, tailored dark resort shorts cut close on the thighs, a woven belt, bare feet or worn boat shoes, the resort's faded palm crest embroidered at the pocket, immaculate but worn loose and undone in the heat, dripping with sex appeal and unmistakably provocative",
+    "staff-female": "Halcyon resort staff uniform: a fitted white resort blouse cinched at a narrow waist with the top buttons undone to bare generous cleavage, an extremely short tailored dark resort skirt riding high on the thigh, a small frilled apron tied tight at the hips, sheer stockings and low heels, the resort's faded palm crest embroidered at the breast, tailoring deliberately cut short and snug — cleavage and thigh both on display — pristine yet undone in the tropical heat, dripping with sex appeal and unmistakably provocative",
+    "production-male": "Paradise Rebuilt production crew look: unstructured pale linen shirt open several buttons over a smooth tanned chest, sleeves rolled to bare forearms, tailored light trousers or shorts, a lanyard and radio clipped at the hip, expensive sunglasses pushed up into the hair, effortlessly styled and camera-ready, dripping with sex appeal and unmistakably provocative",
+    "production-female": "Paradise Rebuilt production crew look: a sleek fitted linen shirt or vest with the top buttons open to bare cleavage, knotted or tucked into high-waisted tailored shorts baring long legs, a lanyard and radio clipped at the hip, sleeves pushed to the elbow, expensive sunglasses pushed up into the hair, minimal and immaculate and cut deliberately close to the figure, dripping with sex appeal and unmistakably provocative"
+  },
+  "wetLocations": [
+    "Pool Deck",
+    "Beach",
+    "Outdoor Showers"
+  ],
+  "poolUniforms": {
+    "contestant-male": "Paradise Rebuilt poolside: fitted branded swim shorts in show colours, bare chiseled chest and cut abs beaded with water, wet hair pushed back, bare feet, sunburn coming up across the shoulders, no shirt, dripping with sex appeal and unmistakably provocative",
+    "contestant-female": "Paradise Rebuilt poolside: a brief branded bikini in show colours, plunging top baring generous cleavage, high-cut bottoms accentuating the hips and thighs, skin wet and glistening, hair damp and pushed back, no nudity, sun-flushed and confident, dripping with sex appeal and unmistakably provocative",
+    "staff-male": "Halcyon poolside: dark tailored swim shorts with the resort's faded palm crest, bare tanned defined torso wet from the pool, damp hair pushed back, bare feet, relaxed and off-duty, dripping with sex appeal and unmistakably provocative",
+    "staff-female": "Halcyon poolside: a dark bikini with the resort's faded palm crest at the hip, plunging halter top baring cleavage, high-cut bottoms, skin wet and glistening, damp hair loose, no nudity, off-duty and unexpectedly striking, dripping with sex appeal and unmistakably provocative",
+    "production-male": "Paradise Rebuilt poolside: pale linen shirt hanging fully open and clinging damp to a smooth tanned chest, tailored swim shorts, sunglasses pushed into wet hair, bare feet, still somehow perfectly styled, dripping with sex appeal and unmistakably provocative",
+    "production-female": "Paradise Rebuilt poolside: a sleek minimal bikini in muted neutral tones, an unbuttoned linen shirt hanging open over it, sunglasses pushed into damp hair, bare feet, immaculate even wet, dripping with sex appeal and unmistakably provocative"
+  },
+  "clothingStates": {
+    "male": {
+      "shirtless": "shirtless, his torso fully bare — muscular chest, abs, and shoulders exposed",
+      "nude": "fully nude, wearing nothing at all — his penis erect and completely visible",
+      "towel": "towel covering his lower body"
+    },
+    "female": {
+      "topless": "topless, her breasts fully bare — nipples and cleavage exposed",
+      "nude": "fully nude, wearing nothing at all — her breasts, vagina, and entire body exposed",
+      "towel": "towel wrapped around her body covering her breasts"
+    }
+  },
+  "relationshipLabels": [
+    {
+      "min": 0,
+      "label": "Nemesis"
+    },
+    {
+      "min": 15,
+      "label": "Hostile"
+    },
+    {
+      "min": 35,
+      "label": "Wary"
+    },
+    {
+      "min": 50,
+      "label": "Neutral"
+    },
+    {
+      "min": 65,
+      "label": "Friendly"
+    },
+    {
+      "min": 80,
+      "label": "Allied"
+    },
+    {
+      "min": 95,
+      "label": "Devoted"
+    }
+  ],
+  "poseVocabulary": [
+    "sitting",
+    "standing",
+    "bending forward",
+    "hand to mouth",
+    "hands on hips",
+    "swinging a hammer",
+    "climbing a ladder",
+    "kneeling",
+    "leaning against a wall",
+    "arms crossed",
+    "lounging on a sun bed",
+    "talking to camera"
+  ],
+  "expressionVocabulary": [
+    "neutral",
+    "soft smile",
+    "smirking",
+    "laughing",
+    "wide-eyed",
+    "narrowed eyes/glaring",
+    "blushing",
+    "biting lip",
+    "teary-eyed",
+    "startled",
+    "seductive gaze",
+    "stern/commanding",
+    "fake on-camera smile",
+    "eye-roll"
+  ],
+  "imageStyle": "painted anime style, front on shot",
+  "baselineBackground": "simple plain neutral studio background, soft even lighting, no distracting scenery",
+  "promptRules": {
+    "setting": "Halcyon Cay is a small, remote tropical island with one thing on it: the Halcyon, a grand 1980s holiday resort that has been closed and rotting for years. A trashy prime-time reality show, PARADISE REBUILT, has taken it over. Seven contestants (including the player) have been shipped in to renovate the resort across a series of timed build challenges, judged and hosted by Dorian Vance. The player is the only contestant who is actually a qualified tradesperson — every alliance on the island needs their hands, and everyone knows it. FORMAT: work is done in teams that Dorian reshuffles whenever he feels like it. Each challenge is judged; the losing side is 'demoted' rather than sent home — a demoted contestant loses their prize eligibility but stays on the island as unpaid labour for the winners, which is far more humiliating than going home and is exactly why the producers do it. Nobody ever leaves the island. THE RESORT'S OWN STAFF ARE STILL HERE: manager Renata Salas, housekeepers Josefa and Camille, groundskeeper Teo and bartender Bastien all still live and work on site, were never consulted about the show, and range from openly hostile to opportunistically delighted. The staff/contestant/production divide is the island's main social fault line. CAMERAS: this is a television production. Cameras are running almost everywhere, almost always, and every character knows it and behaves differently because of it — on camera they play their assigned character, off camera they are someone else. The Confessional Booth is a private room where contestants speak directly to camera and say what they actually think, and it is the one place people tell the truth about each other. Whether a camera is currently rolling is always live information in a scene and characters should react to it. CAST WEIGHTING: Dorian, Vela, Nova, Cody, Ingrid, Roxy and Renata carry the season's main storylines and should drive most scenes; Deshawn, Trev, Josefa, Bastien, Camille and Priya are strong supporting presences; Teo and Milo are background figures who appear when their expertise or their silence matters. Do not try to give all fifteen equal time in a scene. MYSTERY: the resort's west end — the Sunken Villa — is fenced, flooded and excluded from the renovation. Renata holds the only key and refuses to discuss it. Teo knows what happened there. This is the season's slow-burn secret; reveal it gradually and only to a player who earns it.",
+    "tone": "Trashy prime-time reality television, played for heat rather than parody — bitchy, sun-soaked, sexually charged and constantly filmed. Alliances form and collapse, everyone is performing, and half the drama is manufactured by a host who is very good at his job. Sweat, sunburn, cheap champagne and power tools.",
+    "contentApproach": "This is a late-night, adults-only cut of a reality show — flirtation, hookups, jealousy, betrayal and poolside sleaze are the expected texture of the story, not exceptions to it, and should be written freely and explicitly when a scene goes there. All characters are adults. Follow the player's lead on how far any individual scene escalates rather than forcing every scene in that direction, and don't refuse or deflect when they steer it there.",
+    "openingInstruction": "Begin the story — narrate the player's arrival on Halcyon Cay and their first meeting with the host and the other contestants."
+  }
+}

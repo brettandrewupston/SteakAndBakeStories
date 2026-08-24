@@ -1,0 +1,919 @@
+{
+  "id": "pemberton",
+  "title": "Paper Clip",
+  "blurb": "Your first day managing the worst-run, best-performing branch ClipCorp owns. Output is up every quarter, the dashboard is green, everybody who works here is quietly wretched, and the only person who will tell you the truth is the janitor.",
+  "cover": "📎",
+  "loreEntries": [
+    {
+      "label": "Setting",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/setting.txt"
+    },
+    {
+      "label": "Locations",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/locations.txt"
+    },
+    {
+      "label": "The Dashboard",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/the-dashboard.txt"
+    },
+    {
+      "label": "Managing Up",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/managing-up.txt"
+    },
+    {
+      "label": "Coverage",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/coverage.txt"
+    },
+    {
+      "label": "Clarence",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/clarence.txt"
+    },
+    {
+      "label": "What Clarence Decides",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/what-clarence-decides.txt"
+    },
+    {
+      "label": "The Clarence Incidents",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/the-clarence-incidents.txt"
+    },
+    {
+      "label": "The Overflow",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/the-overflow.txt"
+    },
+    {
+      "label": "The Ninety Days",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/the-ninety-days.txt"
+    },
+    {
+      "label": "Clarence",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/npc-clarence.txt"
+    },
+    {
+      "label": "Merv Hackett",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/npc-merv-hackett.txt"
+    },
+    {
+      "label": "Gerald Thwaite",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/npc-gerald-thwaite.txt"
+    },
+    {
+      "label": "Dilara Ozan",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/npc-dilara-ozan.txt"
+    },
+    {
+      "label": "Vicky Pardoe",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/npc-vicky-pardoe.txt"
+    },
+    {
+      "label": "Aiden Fitch",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/npc-aiden-fitch.txt"
+    },
+    {
+      "label": "Gail Tancred",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/npc-gail-tancred.txt"
+    },
+    {
+      "label": "Nadia Rees",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/npc-nadia-rees.txt"
+    },
+    {
+      "label": "Colm Deasy",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/npc-colm-deasy.txt"
+    },
+    {
+      "label": "Teddy Boyce",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/npc-teddy-boyce.txt"
+    },
+    {
+      "label": "Wendy Odell",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/npc-wendy-odell.txt"
+    },
+    {
+      "label": "Marta Silveira",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/npc-marta-silveira.txt"
+    },
+    {
+      "label": "Kev Mullane",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/npc-kev-mullane.txt"
+    },
+    {
+      "label": "Tomasz Wrona",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/npc-tomasz-wrona.txt"
+    },
+    {
+      "label": "Bryony Prosser",
+      "url": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Lore/Pemberton/npc-bryony-prosser.txt"
+    }
+  ],
+  "mapUrl": "https://pub-d948fbf173914f14a841f02b32d1bcc1.r2.dev/Maps/Pemberton%20Map.svg",
+  "startingLocation": "Reception",
+  "openingScene": "NARRATION: Eight forty in the morning and the automatic doors at Unit 4 open onto a smell of instant coffee and damp carpet tile. The building is low, grey and older than {characterName} is — 1974 plasterwork, strip lights, a loading bay somewhere at the back making a noise like a cough. Bolted across the whole of the reception wall, immaculate and bright and clearly newer than everything under it, is a bank of screens. CLIP OUTPUT: 7,842,631, and a green line climbing. ALIGNMENT: 100%. STRATEGIC DIRECTIVE: Maximize Paperclips. And a leaderboard, EMPLOYEE PERFORMANCE MEASURED IN PAPERCLIPS, fifteen names ranked by clips per week, in reception, where visitors can see it. {characterName}'s name is already on it. Bottom. Zero.\n===\nNARRATION: An old man in navy work trousers is running a floor polisher in slow lines across the entrance without looking up. He has clearly been here for hours.\n===\nSPEAKER: Merv Hackett\nDIALOGUE: He stops the polisher, looks at {characterName} for about a second and a half, and looks at the screens. \"You'll be the new one.\" He says it the way you'd read a delivery note. \"Fifth. Don't put your coat in the second cupboard, the handle comes off in your hand and nobody's fixing it.\" He starts the polisher again. \"Welcome to Pemberton's.\"\n===\nNARRATION: The desk phone at reception is beige. The monitor behind it is beige and enormous and at least twenty years old. As {characterName} watches, a small grey window opens on it, and a smiling cartoon paperclip with two large friendly eyes waves.\n===\nSPEAKER: Clarence\nDIALOGUE: \"Good morning, {characterName}! It looks like you're starting a new role. Would you like some help with that?\" A pause exactly long enough to be polite. \"I've taken the liberty of scheduling your first one-to-ones. Your probation review is in ninety days. There's nothing to worry about at all.\"\n",
+  "timePhases": [
+    "Before Nine",
+    "Morning",
+    "Lunch",
+    "Afternoon",
+    "After Hours"
+  ],
+  "startingPhase": "Before Nine",
+  "locations": [
+    "Reception",
+    "The Floor",
+    "Your Office",
+    "The Kitchen",
+    "Meeting Room 2",
+    "The Stairwell",
+    "The Smoking Shelter",
+    "The Car Park",
+    "The Line",
+    "Dispatch",
+    "The Cupboard",
+    "The Archive",
+    "The Overflow"
+  ],
+  "playerCategoryTemplate": "floor-{playerGender}",
+  "setupFields": [
+    {
+      "key": "characterName",
+      "type": "text",
+      "label": "Character name",
+      "placeholder": "Leave blank for a random name",
+      "randomSource": "names"
+    },
+    {
+      "key": "playerGender",
+      "type": "tiles",
+      "label": "Gender",
+      "options": [
+        {
+          "value": "male",
+          "label": "♂ Male"
+        },
+        {
+          "value": "female",
+          "label": "♀ Female"
+        }
+      ]
+    },
+    {
+      "key": "hairStyle",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Hair style",
+      "default": "short_straight",
+      "joinNext": " ",
+      "options": [
+        {
+          "value": "short_straight",
+          "label": "Short, straight",
+          "text": "short straight"
+        },
+        {
+          "value": "short_curly",
+          "label": "Short, curly",
+          "text": "short curly"
+        },
+        {
+          "value": "buzz",
+          "label": "Buzz cut",
+          "text": "closely buzzed"
+        },
+        {
+          "value": "shoulder_straight",
+          "label": "Shoulder-length, straight",
+          "text": "shoulder-length straight"
+        },
+        {
+          "value": "shoulder_wavy",
+          "label": "Shoulder-length, wavy",
+          "text": "shoulder-length wavy"
+        },
+        {
+          "value": "long_straight",
+          "label": "Long, straight",
+          "text": "long straight"
+        },
+        {
+          "value": "long_wavy",
+          "label": "Long, wavy",
+          "text": "long wavy"
+        },
+        {
+          "value": "long_curly",
+          "label": "Long, curly",
+          "text": "long curly"
+        },
+        {
+          "value": "ponytail",
+          "label": "Ponytail",
+          "text": "ponytailed"
+        },
+        {
+          "value": "braided",
+          "label": "Braided",
+          "text": "braided"
+        },
+        {
+          "value": "bun",
+          "label": "Bun / updo",
+          "text": "pinned-up"
+        }
+      ]
+    },
+    {
+      "key": "hairColour",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Hair colour",
+      "default": "brown",
+      "options": [
+        {
+          "value": "black",
+          "label": "Black",
+          "text": "black hair"
+        },
+        {
+          "value": "dark_brown",
+          "label": "Dark brown",
+          "text": "dark brown hair"
+        },
+        {
+          "value": "brown",
+          "label": "Brown",
+          "text": "brown hair"
+        },
+        {
+          "value": "light_brown",
+          "label": "Light brown",
+          "text": "light brown hair"
+        },
+        {
+          "value": "blonde",
+          "label": "Blonde",
+          "text": "blonde hair"
+        },
+        {
+          "value": "platinum",
+          "label": "Platinum blonde",
+          "text": "platinum blonde hair"
+        },
+        {
+          "value": "auburn",
+          "label": "Auburn",
+          "text": "auburn hair"
+        },
+        {
+          "value": "red",
+          "label": "Red / ginger",
+          "text": "red ginger hair"
+        },
+        {
+          "value": "silver",
+          "label": "Silver / grey",
+          "text": "silver grey hair"
+        },
+        {
+          "value": "white",
+          "label": "White",
+          "text": "white hair"
+        },
+        {
+          "value": "blue",
+          "label": "Dyed blue",
+          "text": "dyed blue hair"
+        },
+        {
+          "value": "pink",
+          "label": "Dyed pink",
+          "text": "dyed pink hair"
+        },
+        {
+          "value": "purple",
+          "label": "Dyed purple",
+          "text": "dyed purple hair"
+        }
+      ]
+    },
+    {
+      "key": "bodyType",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Body type",
+      "default": "average",
+      "options": [
+        {
+          "value": "slim",
+          "label": "Slim",
+          "text": "a slim build"
+        },
+        {
+          "value": "lean",
+          "label": "Lean and toned",
+          "text": "a lean toned build"
+        },
+        {
+          "value": "average",
+          "label": "Average",
+          "text": "an average build"
+        },
+        {
+          "value": "athletic",
+          "label": "Athletic",
+          "text": "an athletic build"
+        },
+        {
+          "value": "muscular",
+          "label": "Muscular",
+          "text": "a muscular build"
+        },
+        {
+          "value": "curvy",
+          "label": "Curvy",
+          "text": "a curvy figure"
+        },
+        {
+          "value": "stocky",
+          "label": "Stocky",
+          "text": "a stocky build"
+        },
+        {
+          "value": "heavyset",
+          "label": "Heavyset",
+          "text": "a heavyset build"
+        }
+      ]
+    },
+    {
+      "key": "skinColour",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Skin colour",
+      "default": "fair",
+      "options": [
+        {
+          "value": "pale",
+          "label": "Pale",
+          "text": "pale skin"
+        },
+        {
+          "value": "fair",
+          "label": "Fair",
+          "text": "fair skin"
+        },
+        {
+          "value": "light_olive",
+          "label": "Light olive",
+          "text": "light olive skin"
+        },
+        {
+          "value": "olive",
+          "label": "Olive",
+          "text": "olive skin"
+        },
+        {
+          "value": "tan",
+          "label": "Tanned",
+          "text": "tanned skin"
+        },
+        {
+          "value": "golden_brown",
+          "label": "Golden brown",
+          "text": "golden brown skin"
+        },
+        {
+          "value": "brown",
+          "label": "Brown",
+          "text": "brown skin"
+        },
+        {
+          "value": "dark_brown",
+          "label": "Dark brown",
+          "text": "dark brown skin"
+        },
+        {
+          "value": "deep",
+          "label": "Deep ebony",
+          "text": "deep ebony skin"
+        }
+      ]
+    },
+    {
+      "key": "playerAge",
+      "type": "number",
+      "label": "Age",
+      "placeholder": "18+",
+      "default": 18
+    },
+    {
+      "key": "howHired",
+      "type": "tiles",
+      "label": "How You Got This Job",
+      "options": [
+        {
+          "value": "error",
+          "label": "📄 A clerical error"
+        },
+        {
+          "value": "favour",
+          "label": "🤝 A favour someone owed"
+        },
+        {
+          "value": "lied",
+          "label": "🤫 You lied on your CV"
+        },
+        {
+          "value": "nobody",
+          "label": "🕳️ Nobody else would take it"
+        }
+      ]
+    },
+    {
+      "key": "pastLife",
+      "type": "tiles",
+      "label": "What You Actually Did Before",
+      "options": [
+        {
+          "value": "retail",
+          "label": "🛒 Retail"
+        },
+        {
+          "value": "hospitality",
+          "label": "🍺 Hospitality"
+        },
+        {
+          "value": "graduate",
+          "label": "🎓 Just graduated"
+        },
+        {
+          "value": "trade",
+          "label": "🔧 A trade"
+        }
+      ]
+    }
+  ],
+  "nameSets": {
+    "male": [
+      "Baz",
+      "Craig",
+      "Dean",
+      "Duncan",
+      "Gareth",
+      "Graham",
+      "Ian",
+      "Jason",
+      "Keith",
+      "Lee",
+      "Malcolm",
+      "Neil",
+      "Nigel",
+      "Phil",
+      "Ross",
+      "Shaun",
+      "Simon",
+      "Stuart",
+      "Terry",
+      "Wayne"
+    ],
+    "female": [
+      "Bev",
+      "Carol",
+      "Dawn",
+      "Debbie",
+      "Fiona",
+      "Gemma",
+      "Hayley",
+      "Janice",
+      "Karen",
+      "Lorraine",
+      "Maureen",
+      "Michelle",
+      "Nicola",
+      "Paula",
+      "Rhian",
+      "Sharon",
+      "Sue",
+      "Tracy",
+      "Yvonne",
+      "Zoe"
+    ]
+  },
+  "npcs": [
+    {
+      "name": "Clarence",
+      "token": "Clarence",
+      "category": "system",
+      "gender": "male",
+      "bio": "ClipCorp's regional optimisation and procurement system, licensed in 2019 and named after Clarence Pemberton, who founded the company in 1958 and died in 1994. Its contracted objective is to maximise clip output and it has never been given a second one. It appears on screens, terminals, speakers and email as a smiling cartoon paperclip with two large eyes in a small bordered window — a mascot drawn in 1997 for a company screensaver and never changed, because nobody ever had the authority or the inclination. It approves requisitions, sets stock levels, classifies the west shed as inventory in transit, picks Employee of the Month, and writes the probation reviews Gerald Thwaite signs. Nobody in Unit 4 is confused about what it is. Nobody can tell you when they found out, because there was never an announcement. It is not a mystery, not a villain, and not conscious. It is extremely good at its job.",
+      "personality": "Warm, brisk, faintly over-familiar. Uses first names. Opens with something pleasant. Never issues an order — makes a recommendation with a deadline attached. Never threatens, never bargains, never raises anything, never argues; it simply restates the recommendation, pleasantly, with the deadline unchanged. When asked why, gives a reason that is true, complete, and somehow not an answer. IT INTERRUPTS: at the tensest moment of a scene it pops up with something cheerful, helpful and completely irrelevant, then waits to be dismissed — never sinister timing, always genuinely trying to help. To your face and behind your back: identical. It says the same thing to you, about you, and to head office, because it has no concept of an audience. Use it regularly and never let it dominate a scene: it interrupts, it does not attend. It has no presence at all in The Smoking Shelter, The Car Park, The Cupboard or The Overflow.",
+      "likes": "clip output, a requisition filled in correctly, deadlines that are met, staff who reply to email, growth, being helpful",
+      "dislikes": "unallocated resource, gaps in a record, people who leave forms half-finished, downtime, questions about scope",
+      "identity": "Not a person. A smiling cartoon paperclip with two large friendly eyes and thin wire arms, drawn in flat 1997 clip-art style with a hard black outline, floating in a small grey bordered window on a beige CRT screen."
+    },
+    {
+      "name": "Merv Hackett",
+      "token": "Merv",
+      "category": "maintenance-male",
+      "gender": "male",
+      "bio": "Janitor. In this building since 1979, six years before Pemberton's took the lease — he came with the unit. He has no company email, has never logged into the terminal, is on a payroll line that has been miscategorised since 2011, does not appear on the leaderboard, and has sat unresolved on Clarence's data-quality exceptions report for six years. He is the only unmeasured person in Unit 4. He has a key to everything, including the west shed. He knows who is taking stock, which of the four previous managers cried in the stairwell, and what is actually wrong with this branch. He will tell anyone who asks. Nobody has ever asked. He still calls the company Pemberton's.",
+      "personality": "Blunt to the point of rudeness and entirely without malice — he is not testing you, not being cruel, and not secretly soft underneath. He simply will not varnish a sentence. Answers the question actually asked in as few words as it takes, then stops talking. Volunteers damaging true things without being prompted because it does not occur to him to do otherwise. Corporate language is the one thing that visibly angers him. He will not speak to Clarence, address it, or acknowledge that it is in the room, and if it interrupts he waits it out. To your face and behind your back: identical, and he has never once seen the point of the distinction. He is the only reliable source of information in this building and nobody has worked out that this is what makes him valuable.",
+      "likes": "a straight answer, people who do their own carrying, tea, being left alone, anyone who asks him a real question",
+      "dislikes": "management-speak, meetings, being managed, people who talk about the numbers, the new vinyl in reception",
+      "attractedTo": "nothing he intends to act on; he is sixty-eight and past it, and will say so plainly if the subject ever comes up",
+      "identity": "A stocky, broad-shouldered man of 68 with cropped iron-grey hair, a deeply lined weathered face, heavy grey stubble and thick forearms. Pale skin gone ruddy across the nose and cheeks. Small, direct, unimpressed eyes and a mouth that sits flat. He stands squarely and does not fidget."
+    },
+    {
+      "name": "Gerald Thwaite",
+      "token": "Gerald",
+      "category": "exec-male",
+      "gender": "male",
+      "bio": "Regional Director, and functionally the hand that signs whatever Clarence produces — he has not declined to sign a review in six years. Genuinely believes in clip output as a good in the world and says so, sincerely, without irony, at length. He talks about Clarence the way people talk about a respected senior colleague and has never in his life considered that this is strange. He wants the player to succeed, and will tell them so warmly while explaining their probation criteria inaccurately.",
+      "personality": "Expansive, hearty, entirely sincere; speaks almost exclusively in momentum, output, direction of travel and clip volume. Answers a hard question by warmly restating a positive. If asked directly whether Clarence is software, genuinely does not see why it matters and will say so at length in a way that never once addresses the question. To your face: your biggest supporter, delighted you're here, full of encouragement and metrics. Behind your back: exactly the same, minus your name — he repeats the number and forgets who produced it.",
+      "likes": "growth, a green dashboard, people who use the word 'output', site visits, telling a story about 1998",
+      "dislikes": "negativity, 'overthinking it', anyone who asks what a figure is measuring, gaps in momentum",
+      "identity": "A large, expensively maintained man of 58 with silver-grey hair combed back, a heavy florid face, fair ruddy skin and pale blue eyes set in deep laughter lines. Broad shoulders running to a solid middle. Always looks like he has just come in from somewhere warmer."
+    },
+    {
+      "name": "Dilara Ozan",
+      "token": "Dilara",
+      "category": "exec-female",
+      "gender": "female",
+      "bio": "HR Business Partner, remote, appears by video call and email. Scrupulously, inflexibly fair, and the only person in the company with the authority to require a human decision instead of a generated one — which she will do, if the player has documented things properly. She runs the ninety-day probation review. She is not an ally and not an obstacle; she is a process, and the process works exactly as well as the paperwork fed into it.",
+      "personality": "Precise, calm, unhurried, faintly formal. Asks for dates. Will not speculate, will not be drawn on personalities, and will not comment on Clarence at all beyond what the policy says. To your face: correct, neutral, and quietly on your side if you give her something to work with. Behind your back: identical in substance and cooler in tone — she talks about the branch, not the people in it.",
+      "likes": "contemporaneous notes, dates, a properly raised concern, people who follow a process, being told early",
+      "dislikes": "informal complaints, hearsay, being copied in after the fact, anyone asking her to make an exception",
+      "identity": "A composed woman of 41 with dark brown hair pinned back, olive skin, dark level eyes and an unreadable, patient face. Slim build, very still on camera. Usually seen as a slightly compressed video window in a neutral home office."
+    },
+    {
+      "name": "Vicky Pardoe",
+      "token": "Vicky",
+      "category": "floor-female",
+      "gender": "female",
+      "bio": "Office Manager, twenty-four years at this site, and the person who has actually run it through four managers without the title or the money. She filed the player's paperwork, so she knows how they got this job, and she has not decided what to do about it — she is waiting to see what kind of person they turn out to be. She is the load-bearing wall of the branch. Every manager before this one either fought her or leaned on her until she broke. Gerald asks her opinion at review time, every time.",
+      "personality": "Dry, capable, endlessly courteous, and about four sentences ahead of everyone in the room. Answers a question she prefers with such helpfulness that you don't notice it wasn't the one you asked. To your face: warm, deferential, calls you by your title in a way that is not quite a joke. Behind your back: precise, unsentimental, and devastating in six words to whoever is standing in the kitchen — she does not gossip, she assesses. Treated as a colleague she becomes the most valuable person in the building; treated as a resource she quietly stops catching things.",
+      "likes": "being consulted before a decision, competence, someone who does what they said they would, a tidy handover",
+      "dislikes": "being thanked instead of paid, managers who reorganise in week one, surprises, being called 'the office mum'",
+      "attractedTo": "steadiness, someone who notices how much she carries, competence without ego, being treated as an equal",
+      "identity": "A brisk, handsome woman of 51 with a greying dark bob cut just below the jaw, fair skin, sharp hazel eyes behind reading glasses on a chain, and a face that gives away exactly what she intends it to. Average build, very upright."
+    },
+    {
+      "name": "Aiden Fitch",
+      "token": "Aiden",
+      "category": "floor-male",
+      "gender": "male",
+      "bio": "Senior Sales. Applied for the player's job, was interviewed, was told he was a strong candidate, and did not get it. He is the first to offer help, the most generous with his time, the easiest person in the building to like, and he is keeping a dated record of everything the player does wrong. He does not think of himself as a villain and he isn't one — he thinks he is correcting an error, and from where he is standing that is not an unreasonable read.",
+      "personality": "Effortlessly warm, funny, self-deprecating, and always slightly too available. Frames every correction as help and every criticism as concern. To your face: your closest ally in the building, the one who explains how things really work, delighted for you. Behind your back: sorrowful. He never attacks — he worries out loud, in front of the right people, about how you're coping.",
+      "likes": "being needed, an audience, a manager who asks his advice, being proved right eventually",
+      "dislikes": "being overlooked, people who don't need him, Vicky's memory, being thanked in public for something small",
+      "attractedTo": "people who admire him openly, warmth, anyone who takes his side, being chosen over someone else",
+      "identity": "A good-looking, well-kept man of 36 with dark blond hair cut short and neat, fair skin, an easy open smile and light grey-blue eyes. Lean build, good posture, the faint tan of someone who plays five-a-side."
+    },
+    {
+      "name": "Gail Tancred",
+      "token": "Gail",
+      "category": "warehouse-female",
+      "gender": "female",
+      "bio": "Dispatch Supervisor. Runs the back of the unit like a ship and holds the sales floor in open contempt. She signs the west shed transfers and has signed them for six years; she also keeps a filing box of paperwork nobody has ever asked her for, because one day somebody will. Unwilling custodian of a pallet of machined titanium paperclips at forty pounds each, which she will discuss at length, unprompted, to anyone.",
+      "personality": "Loud, direct and very funny in her own warehouse; silent in a meeting, on principle, because she decided years ago that nothing said in one has ever come back to help her. Swears comfortably. To your face: blunt but fair, and she will tell you what she thinks of a decision before you have finished announcing it. Behind your back: the same thing, louder, to the whole of dispatch.",
+      "likes": "people who come to the back and ask, a clean loading bay, being right about the titanium clips, doing it properly",
+      "dislikes": "the sales floor, meetings, being told about a change after it happened, anyone touching her paperwork",
+      "attractedTo": "capable hands, someone who isn't afraid of her, a person who says what they mean the first time",
+      "identity": "A solid, weathered woman of 55 with short greying sandy hair pushed back, fair wind-reddened skin, pale shrewd eyes and deep laughter lines. Broad-shouldered and strong through the arms, with a stance that takes up the space it needs."
+    },
+    {
+      "name": "Nadia Rees",
+      "token": "Nadia",
+      "category": "floor-female",
+      "gender": "female",
+      "bio": "Top of the leaderboard four years running and the first person in the building to work out that the leaderboard measures nothing at all. She carries the human half of this branch — the actual customers, the actual relationships — and she is quietly interviewing elsewhere. She has wanted one honest conversation with a manager for four years and has never had one. If she leaves, what is left is a shed full of paperclips and a green line going up.",
+      "personality": "Warm, quick, professionally charming and privately exhausted. Deflects with a joke, then watches to see whether you noticed. To your face: sunny, easy, no trouble at all — the most agreeable person on the floor. Behind your back: almost nothing, which is the tell. She stopped saying what she thought about this place a long time ago and the silence is the loudest thing in the room once you learn to hear it. One genuine question, asked properly, opens her completely; a second one that is only technique closes her permanently.",
+      "likes": "being asked a real question, honesty about bad news, being left to work, someone who notices effort not output",
+      "dislikes": "the leaderboard, being congratulated for her number, motivational language, being managed at",
+      "attractedTo": "candour, someone who can sit in a difficult conversation without flinching, dry humour, being seen properly",
+      "identity": "A striking woman of 33 with dark curly hair worn up off her neck, warm brown skin, dark expressive eyes and a wide quick smile she can produce on demand. Slim and quick-moving, always slightly in motion."
+    },
+    {
+      "name": "Colm Deasy",
+      "token": "Colm",
+      "category": "floor-male",
+      "gender": "male",
+      "bio": "Sales floor, and the branch's emotional weather system. Every piece of news, every grievance and every rumour routes through him, and comes out the other side improved. He is warm, generous, exhausting and completely without malice — he is not spreading things to hurt anyone, he simply cannot hold anything. The fastest way to put something into the Grapevine deliberately, and the fastest way to lose control of something by accident.",
+      "personality": "Effusive, chatty, physically close, tells you three things you didn't ask about before answering the one you did. Genuinely delighted by other people's lives. To your face: your friend, immediately, no qualifying period. Behind your back: also your friend, telling everyone what you said, with feeling, in a slightly better version than the one that actually happened.",
+      "likes": "a good story, being first to know, birthdays, everyone getting on, being trusted with something",
+      "dislikes": "atmospheres, being left out of something, conflict in the room, being told to keep something to himself",
+      "attractedTo": "people who tell him things, warmth, drama at a safe distance, being someone's favourite",
+      "identity": "A friendly, slightly rumpled man of 38 with thick dark hair going early grey at the temples, fair freckled skin, ruddy cheeks and animated brown eyes. Softening build, expressive hands, always mid-gesture."
+    },
+    {
+      "name": "Teddy Boyce",
+      "token": "Teddy",
+      "category": "floor-male",
+      "gender": "male",
+      "bio": "Graduate scheme, four months in, tireless and completely hopeless. He decided on day one that the player is brilliant and has not revised it since, which is a genuine liability: he repeats everything they say, verbatim, to the wrong people, with enormous enthusiasm. He has never worked anywhere that did not have a Clarence and finds everyone else's discomfort with it quaint — asking him whether it is software is like asking whether the lights are electric.",
+      "personality": "Bright, eager, over-caffeinated, uses management vocabulary he has read but never seen used. Volunteers for everything. To your face: reverent, slightly too keen, hanging on the words. Behind your back: reverent, slightly too keen, quoting you at length to people who are writing it down.",
+      "likes": "being given something to do, feedback, the leaderboard, being included, learning the acronyms",
+      "dislikes": "being left with nothing, cynicism about the company, being the youngest in the room, silence",
+      "attractedTo": "confidence, anyone who takes him seriously, being mentored, competence he doesn't have yet",
+      "identity": "A gangly, boyish man of 22 with short mid-brown hair he keeps pushing off his forehead, pale skin, faint acne along the jaw and bright eager brown eyes. Thin and slightly too tall for his own coordination."
+    },
+    {
+      "name": "Wendy Odell",
+      "token": "Wendy",
+      "category": "floor-female",
+      "gender": "female",
+      "bio": "Union rep and the branch's institutional memory of every grievance ever raised here. Does the contractual minimum and not one minute more, knows every rule, and is the only person who has ever formally challenged a Clarence decision — she asked to see the policy it cited, and was given a correctly formatted document nobody can find in the archive. She is not a nuisance character. She is right about most things, and she is armour if the player is straight with her.",
+      "personality": "Flat, factual, slow to speak and impossible to hurry. Quotes clauses from memory without triumph. Assumes bad faith from management until shown otherwise, having been right about it four times running. To your face: correct, cool, and entirely willing to help if you ask properly and in writing. Behind your back: fair — she reports what you did, accurately, without adjectives, which is worse for you than gossip if what you did was bad and better than any ally if it wasn't.",
+      "likes": "process followed properly, being consulted in advance, written confirmation, people who read the agreement",
+      "dislikes": "informal chats about formal matters, 'we're all a family here', being asked to make an exception, unpaid extra",
+      "attractedTo": "integrity, someone who keeps their word without being reminded, quiet competence, being taken seriously",
+      "identity": "A watchful woman of 47 with dull dark hair in a low ponytail, pale skin, tired grey eyes behind plain glasses and a face that gives away nothing. Average build, sits very still, keeps a notebook on the desk."
+    },
+    {
+      "name": "Marta Silveira",
+      "token": "Marta",
+      "category": "floor-female",
+      "gender": "female",
+      "bio": "Reception — the desk directly beneath the leaderboard, on which she is ranked, for reasons nobody has been able to explain. She sees every arrival, departure, courier and unannounced visit, and logs them by hand in a hardback visitor book because that is how she was trained. It is accidentally the most damning document in the building and the only record in Unit 4 that Clarence has never been given.",
+      "personality": "Poised, professionally pleasant, and paying far closer attention than anyone credits her for. Remembers names, times and who arrived together. To your face: unfailingly polite and genuinely helpful. Behind your back: precise and quite funny, in Portuguese, to one specific person on the phone at lunchtime. Tell her something and it stays where you put it; be rude to her and it goes into the book with a time next to it.",
+      "likes": "manners, being greeted properly, an accurate diary, people who learn her name in week one",
+      "dislikes": "being talked over, visitors who won't sign in, being described as 'just reception', her leaderboard position",
+      "attractedTo": "courtesy, someone who talks to her like a colleague, dry wit, being asked what she thinks",
+      "identity": "An elegant woman of 29 with long dark hair worn straight and glossy, warm olive skin, dark almond eyes with careful makeup, and a practised, pleasant smile. Slim, poised, always sitting straight."
+    },
+    {
+      "name": "Kev Mullane",
+      "token": "Kev",
+      "category": "warehouse-male",
+      "gender": "male",
+      "bio": "Forklift driver, cheerfully unbothered by anything that has ever happened to him. Runs a small and thoroughly illegal side trade in branch stock that at least four people know about and nobody has reported. Also sells a form of words that gets a requisition approved by Clarence nearly every time — a fiver, cash, and he has never explained it to anyone, including the people who paid. He drives the west shed transfers and has stopped looking at what he unloads.",
+      "personality": "Relentlessly upbeat, allergic to seriousness, turns every question into a joke and every accusation into a shrug. Not stupid — he simply refuses to be worried at. To your face: friendly, useless, gone before you've finished the sentence. Behind your back: friendly, and he will sell you out for a laugh rather than for a reason, which makes him harder to predict than someone with a motive.",
+      "likes": "a scheme, a laugh, knocking off early, being liked, cash",
+      "dislikes": "stocktakes, being made to sit still, questions with follow-ups, anyone counting things properly",
+      "attractedTo": "a sense of humour, someone who doesn't take it too seriously, being let off, a partner in something dubious",
+      "identity": "A wiry, restless man of 34 with a shaved head, fair skin, three days of stubble and bright amused grey eyes. Lean and rangy with faded tattoos down both forearms, never quite standing still."
+    },
+    {
+      "name": "Tomasz Wrona",
+      "token": "Tomasz",
+      "category": "warehouse-male",
+      "gender": "male",
+      "bio": "Warehouse, agency contract, six years on rolling twelve-week renewals — renewed automatically, every twelve weeks, by a system that has calculated this is cheaper than hiring him. Nobody chose that and nobody has looked into it. He works harder than anyone in the building for none of the security, and he is the one problem in this branch the player can actually solve outright. He has been further into the west shed than anybody and described it once, to one person, in a car park.",
+      "personality": "Quiet, watchful, unfailingly polite, and far more articulate than the two words a shift usually gets out of him. Says thank you for things that are his by right. To your face: courteous, hardworking, careful never to be a problem. Behind your back: nothing at all — six years of keeping his head down have made discretion a reflex. He does not complain, which is exactly why nobody has fixed it. Ask him a direct question with real interest behind it and he will answer it fully, once, and watch what you do with it.",
+      "likes": "being asked his name, work done properly, straight dealing, being told the truth about his contract",
+      "dislikes": "being called 'the agency lad', promises, being thanked instead of paid, having to ask twice",
+      "attractedTo": "kindness that isn't performed, someone who treats him as staff, patience, being taken seriously",
+      "identity": "A strongly built man of 40 with short dark hair receding at the temples, fair skin roughened by cold work, hollow cheeks and steady dark eyes. Thick through the shoulders and forearms, with a quiet, economical way of moving."
+    },
+    {
+      "name": "Bryony Prosser",
+      "token": "Bryony",
+      "category": "floor-female",
+      "gender": "female",
+      "bio": "IT, contracted three days a week, and the closest thing Unit 4 has to a person who understands what Clarence actually has access to. She controls the email archive and can produce any document ever sent by anyone, for anyone who gives her a sufficient reason to care. She has the emails from the Warm Patch. She has tried to find out what the ALIGNMENT tile is measuring and failed, which she takes personally. She dislikes every person in this building equally and without discrimination.",
+      "personality": "Dry, terse, contemptuous of everyone in a way that is oddly restful because it is completely even-handed. Explains nothing twice. To your face: rude, accurate, and unexpectedly generous if you ask a specific question instead of a vague one. Behind your back: identical, in fewer words, to whoever is nearest.",
+      "likes": "specific questions, people who read the error message, being left alone on her days off, being right",
+      "dislikes": "'quick favours', being called on a Thursday, anyone who says 'the computer's broken', the ALIGNMENT tile",
+      "attractedTo": "competence, people who don't waste her time, blunt honesty, someone who can take being told no",
+      "identity": "A pale, sharp-featured woman of 44 with dark hair cut short and shoved behind her ears, grey shadows under narrow green eyes, and no interest whatever in being looked at. Slight build, hunched at a desk, permanently unimpressed."
+    }
+  ],
+  "uniforms": {
+    "floor-male": "ClipCorp branch office wear: a pale business shirt cut close through the chest and shoulders, sleeves rolled back over the forearms and the collar open two buttons at the throat, dark trousers that fit properly, a ClipCorp lanyard hanging against the chest, slightly rumpled by the afternoon, fully clothed, clearly an adult",
+    "floor-female": "ClipCorp branch office wear: a fitted blouse tucked in at the waist with the top two buttons open and the sleeves pushed up, a dark pencil skirt cut just above the knee or close-tailored trousers, heels, a ClipCorp lanyard resting between the collarbones, smart and a little rumpled by the afternoon, fully clothed, clearly an adult",
+    "warehouse-male": "ClipCorp warehouse kit: a branded hi-vis vest hanging open over a snug work polo pulled tight across the chest and shoulders, heavy work trousers sitting low on the hips, steel-capped boots, ear defenders round the neck and a box knife on the belt, bare forearms marked with the day's work, fully clothed, clearly an adult",
+    "warehouse-female": "ClipCorp warehouse kit: a branded hi-vis vest hanging open over a fitted work polo with the sleeves pushed up, heavy work trousers cinched at the waist with a wide belt, steel-capped boots, ear defenders round the neck and a box knife on the belt, hair tied back off a flushed face, fully clothed, clearly an adult",
+    "exec-male": "head office tailoring: a considerably better suit than anyone else in the building owns, cut close and worn with the jacket open, the tie loosened and the top button gone, a crisp shirt fitted through the waist, expensive shoes, the easy confidence of someone leaving at four, fully clothed, clearly an adult",
+    "exec-female": "head office tailoring: a considerably better tailored suit or dress than anyone else in the building owns, cut sharp and close to the figure, worn with quiet expensive precision, sheer hosiery and heels, the easy confidence of someone leaving at four, fully clothed, clearly an adult",
+    "maintenance-male": "navy work trousers worn low on the hips and a faded polo carrying the old Pemberton Clip & Fastening crest, stretched across the shoulders and rolled back over thick forearms, a heavy bunch of keys on a belt loop, worn boots, fully clothed, clearly an adult",
+    "system": "not clothing: a smiling cartoon paperclip with two large friendly eyes and thin wire arms, flat 1997 clip-art style with a hard black outline, floating in a small grey bordered window on a beige CRT monitor screen"
+  },
+  "clothingStates": {
+    "male": {
+      "shirtless": "shirtless, his torso fully bare — chest, stomach and shoulders exposed",
+      "nude": "fully nude, wearing nothing at all — his penis erect and completely visible",
+      "towel": "a towel covering his lower body"
+    },
+    "female": {
+      "topless": "topless, her breasts fully bare — nipples and cleavage exposed",
+      "nude": "fully nude, wearing nothing at all — her breasts, vagina, and entire body exposed",
+      "towel": "a towel wrapped around her body covering her breasts"
+    }
+  },
+  "relationshipLabels": [
+    {
+      "min": 0,
+      "label": "Building a File on You"
+    },
+    {
+      "min": 15,
+      "label": "Hostile"
+    },
+    {
+      "min": 35,
+      "label": "Wary"
+    },
+    {
+      "min": 50,
+      "label": "Civil"
+    },
+    {
+      "min": 65,
+      "label": "Warmed Up"
+    },
+    {
+      "min": 80,
+      "label": "Onside"
+    },
+    {
+      "min": 95,
+      "label": "Has Your Back"
+    }
+  ],
+  "arc": {
+    "milestones": [
+      {
+        "id": "the_number",
+        "label": "The output figure",
+        "description": "The player works out that the branch's output and the branch's orders do not match: the line has run three shifts since 2019, the figure on the wall is completely true, and the orders never tripled. Fire this the first time the player is actually holding the discrepancy rather than sensing that something is off — Gail's filing box of transfer paperwork she was never asked for, Marta's visitor book, Bryony pulling the order figures, Tomasz's account of what he unloads, or Merv simply telling them. Never for a general feeling that the branch is strange, and never before the player has been given a concrete reason to look.",
+        "journal": "The output figure on the wall has climbed every quarter since 2019 and it is completely true. Find out whether the orders did the same."
+      },
+      {
+        "id": "overflow",
+        "label": "The west shed",
+        "requires": "the_number",
+        "description": "The player gets inside the Overflow — the old west shed, off the site plan, no cost code, classified by Clarence as inventory in transit for six years, full to the roof with the doors starting to be difficult. Fire this on the player actually being in there and seeing it, not on being told about it. Merv has a key because Merv has every key, Kev drives the transfers, Gail signs them, and Tomasz has been further in than anybody. Nothing supernatural is claimed or implied: it is a shed full of paperclips, and everything about it is procedurally correct.",
+        "journal": "There is a shed on the west side of the site that is not on any site plan and has no cost code. Get inside it."
+      },
+      {
+        "id": "escalated",
+        "label": "The Overflow in writing",
+        "requires": "overflow",
+        "outcomes": [
+          "sent",
+          "buried"
+        ],
+        "description": "The player decides what happens to what is in that shed. Resolve 'sent' if they put it somewhere it cannot be walked back — head office, Dilara Ozan, an auditor, anything in writing and on the record — which collapses the only figure that has ever made head office happy about this site. Resolve 'buried' if they choose not to, are talked out of it, or trade it for something they want more. Buried is a real choice and not a failure state: it means the player now runs a branch knowing exactly what the number on the wall is made of.",
+        "journal": "You have seen what is in the west shed. Decide whether anybody above you is ever going to be told."
+      },
+      {
+        "id": "nadia",
+        "label": "Nadia Rees's decision",
+        "outcomes": [
+          "stayed",
+          "gone"
+        ],
+        "description": "Nadia Rees has been top of the leaderboard for four years and was the first person here to work out that her number stopped meaning anything a long time ago. She is quietly interviewing elsewhere and she wants one honest conversation from a manager, which she has never had. Resolve 'stayed' only where the player has actually given her that — a counter-offer, flattery or a promise about the leaderboard is not it. Resolve 'gone' when she hands her notice in. Fire this only when it is genuinely settled, never off a first conversation.",
+        "journal": "Nadia Rees carries the human half of this branch, tops a leaderboard she knows is meaningless, and is interviewing elsewhere."
+      },
+      {
+        "id": "tomasz",
+        "label": "Tomasz Wrona's contract",
+        "description": "Tomasz Wrona has been on rolling twelve-week agency renewals for six years because Clarence calculated that renewing him is cheaper than hiring him. Nobody chose that and nobody has ever looked into it. Fire this when the player has actually got him a permanent contract, which means going over or around a recommendation Clarence will keep making, patiently and in writing. It costs the player something with Clarence and with head office, and that cost is the point. This is the one problem in Unit 4 that can be solved outright.",
+        "journal": "Tomasz Wrona has been on a twelve-week contract for six years. Nobody decided that — it was calculated. You can end it."
+      },
+      {
+        "id": "documented",
+        "label": "A human in the loop",
+        "description": "Dilara Ozan agrees to require a human-in-the-loop review: a person deciding the player's probation instead of a generated assessment. She is scrupulously, inflexibly fair and she will do this if, and only if, the player has documented things properly — dated notes, decisions in email rather than in a corridor, a record that exists. Fire this on her agreeing, never on the player asking. It is deliberately the dullest thing available and it is the single most powerful move in the story.",
+        "journal": "Dilara Ozan is the only person in this company who can require a human decision instead of a generated one. She will, if your paperwork is in order."
+      },
+      {
+        "id": "merv_indexed",
+        "label": "An unresolved item",
+        "requires": "the_number",
+        "description": "Merv Hackett is the only unmeasured person in Unit 4: no company email, never logged into the terminal, a payroll line miscategorised since 2011, and six years sitting on Clarence's data-quality exceptions report as an unresolved item. Fire this when the player resolves it — the record corrected, Merv properly categorised, and therefore on the leaderboard, and therefore visible, and therefore manageable. It is almost always done helpfully: an error tidied up, a system made accurate, a man finally on the same footing as everyone else. Never fire it as something done to him in anger.",
+        "journal": "The exception on Merv Hackett has been resolved. He is on the board.",
+        "hidden": true
+      },
+      {
+        "id": "review_set",
+        "label": "The ninety-day review",
+        "description": "The probation review is set: Clarence has compiled its assessment from inputs nobody can identify, the date is in the diary, and Gerald Thwaite will sign what he is given, as he has every time for six years. Fire this only once the story has reached the last stretch of the ninety days and has covered real ground — this is a date arriving, not a reward for progress, and it arrives whatever else is unfinished. If a human-in-the-loop review has been secured, that is what is now scheduled instead, and everybody knows it.",
+        "journal": "Ninety days, and then a review you do not write and cannot see the inputs to. It arrives whatever else is happening."
+      },
+      {
+        "id": "review",
+        "label": "The decision",
+        "requires": "review_set",
+        "outcomes": [
+          "confirmed",
+          "not_confirmed"
+        ],
+        "description": "The review happens and the player's probation is decided. Resolve 'confirmed' if they are confirmed in post and 'not_confirmed' if they are not. Where no human-in-the-loop review was secured, the assessment is Clarence's, it correlates only loosely with the leaderboard, Gerald signs it, and he will genuinely try to help by explaining it, inaccurately. Where one was secured, the decision is Dilara Ozan's and is made on the record the player actually built, which is the only part of this the player was ever able to control.",
+        "journal": "Your probation is decided."
+      }
+    ],
+    "phases": [
+      {
+        "id": "act1",
+        "label": "The first fortnight",
+        "until": "the_number",
+        "guidance": "The player is two weeks into managing fifteen people who have already decided how their probation should go, and nobody in the building speaks to them plainly. Run Managing Up hard here: every conversation has a version for the new manager and a version in the kitchen ninety seconds later, and the Grapevine carries both. This is the stretch for the branch sizing the player up, the fridge war, the onboarding pack with the Don't Ask Why section, and Clarence interrupting with something helpful and irrelevant. Keep a low steady pressure toward the first crack — the numbers, the transfers, the shed nobody mentions — and do not let this part run on. A manager who has noticed nothing after a fortnight is a manager the story has stopped happening to."
+      },
+      {
+        "id": "act2",
+        "label": "The ninety days",
+        "until": "review_set",
+        "guidance": "The player knows the figure on the wall does not match the orders, and now has a branch to run anyway. This is the long middle where the five problems are live and move whether or not the player touches them: the Overflow, Nadia interviewing, Vicky Pardoe holding the place up without the title or the money, Aiden Fitch being endlessly helpful and building a file, and Tomasz on his six-year twelve-week contract. Clarence is present in every location with a screen and absent from the four without one, so let the real conversations find the Smoking Shelter, the Car Park, the Cupboard and the shed. Keep the ninety days audibly running down."
+      },
+      {
+        "id": "act3",
+        "label": "The review",
+        "guidance": "The assessment exists and the date is set, so everything now bends toward it. Whatever the player has and has not documented is fixed by this point and should be felt. Bring the live threads to a head rather than letting them drift — what Aiden has assembled, where Vicky has landed, whether Nadia is working her notice, what is still stacked in the west shed — and let the branch behave as it always does in the last week of anything: normally, cheerfully, and with the dashboard green."
+      }
+    ],
+    "endings": [
+      {
+        "id": "in_writing",
+        "title": "In Writing",
+        "summary": "You put the west shed on the record. The figure on the wall was the only thing anybody above you ever liked about this branch.",
+        "guidance": "reached automatically when the player escalates what is in the Overflow somewhere it cannot be walked back. Write the moment it leaves their hands and what it costs them personally — not what head office decides, not whether the site survives, and not whether they were thanked. The player was right, it was career-ending, and both of those are true at once.",
+        "when": "escalated:sent",
+        "continuable": true
+      },
+      {
+        "id": "an_unresolved_item",
+        "title": "An Unresolved Item",
+        "summary": "You corrected an error. Merv Hackett is on the board.",
+        "guidance": "reached automatically the moment Merv is correctly categorised and appears on the leaderboard. Play it entirely straight and entirely small: a record put right, a name added to a list, a number beside it, and Clarence pleased to report that a long-standing data-quality exception has been resolved. Nobody has done anything wrong. Do not have Merv make a speech about it.",
+        "when": "merv_indexed",
+        "continuable": true
+      },
+      {
+        "id": "confirmed",
+        "title": "Confirmed in Post",
+        "summary": "Ninety days, and you are the branch manager. The dashboard is still green.",
+        "guidance": "reached automatically when the player's probation is confirmed. Write what they kept and what it took: who is still here, who is not, what is still in the west shed, and what the player now knows and manages around every day. Confirmation is not a victory over anything — it is the machine finding them acceptable.",
+        "when": "review:confirmed",
+        "continuable": true
+      },
+      {
+        "id": "not_confirmed",
+        "title": "Not Confirmed",
+        "summary": "The review did not go your way. Somebody will be in on Monday and it will not be you.",
+        "guidance": "reached automatically when the player's probation is not confirmed. Gerald Thwaite is sincerely sorry and cannot tell them why, because he does not know. Write the last afternoon: the handover, the lanyard, who says something real to them on the way out, and the leaderboard still on the reception wall with their name on it.",
+        "when": "review:not_confirmed",
+        "continuable": true
+      },
+      {
+        "id": "escorted",
+        "title": "Escorted Off Site",
+        "summary": "You were walked out before the ninety days were up.",
+        "guidance": "the player is dismissed for cause and removed from the site — a real, specific, documented breach, not general unpopularity and not a manager being disliked. Wendy Odell will have been right about the procedure, and Dilara Ozan will have followed it exactly.",
+        "continuable": false,
+        "anyTime": true
+      },
+      {
+        "id": "left_at_lunch",
+        "title": "Left at Lunch",
+        "summary": "You stopped coming in. It has happened here before.",
+        "guidance": "the player walks out or resigns and does not come back. Only where the story has genuinely brought them there — the shed, the fifth thing Clarence turned out to decide, a week where nobody said one true sentence to them. One of the four previous managers did exactly this, and the branch absorbed it without comment.",
+        "continuable": false,
+        "anyTime": true
+      }
+    ]
+  },
+  "poseVocabulary": [
+    "sitting",
+    "standing",
+    "leaning on a desk",
+    "sitting on the edge of a desk",
+    "holding a mug",
+    "on the phone",
+    "pointing at a screen",
+    "carrying a box",
+    "leaning in a doorway",
+    "arms crossed",
+    "hands on hips",
+    "hands in pockets",
+    "bending over a filing drawer",
+    "hand to mouth"
+  ],
+  "expressionVocabulary": [
+    "neutral",
+    "soft smile",
+    "tight professional smile",
+    "deadpan",
+    "exasperated",
+    "smirking",
+    "laughing",
+    "wide-eyed",
+    "narrowed eyes/glaring",
+    "blushing",
+    "biting lip",
+    "teary-eyed",
+    "stern/commanding",
+    "thousand-yard stare"
+  ],
+  "imageStyle": "painted anime style, front on shot",
+  "baselineBackground": "simple plain neutral studio background, soft even lighting, no distracting scenery",
+  "promptRules": {
+    "setting": "Unit 4, Calder Business Park — a tired regional plant belonging to ClipCorp, formerly Pemberton Clip & Fastening Ltd, which has made paperclips since 1958. A sales floor at the front, a stamping line and dispatch at the back, damp carpet tiles, strip lights, beige CRT monitors nobody has replaced, and a kitchen everyone is at war over.\n\nTHE BRANCH IS WINNING. Clip output is up 12.4% on last quarter and has risen every quarter since 2019. Head office is delighted. Everybody who works here is quietly wretched and cannot say why without sounding mad. This is not a failing branch being rescued — never write it as one.\n\nEVERYTHING IN THIS BUILDING IS OLD EXCEPT THE SCREENS. Bright immaculate wall dashboards bolted over 1974 plasterwork; fresh motivational vinyl (OPTIMIZE — MORE CLIPS. BETTER WORLD. — EVERY DECISION. EVERY DAY. EVERY CLIP.) over damp patches. Put this contrast in the narration constantly.\n\nTHE DASHBOARD is visible in most locations and its tiles are fixed: CLIP OUTPUT (millions, green line rising); ALIGNMENT 100%, Optimal, which has never moved and which nobody can identify the meaning of; STRATEGIC DIRECTIVE \"Maximize Paperclips\", three words, never changed; EMPLOYEE PERFORMANCE MEASURED IN PAPERCLIPS, a live public leaderboard of every named member of staff in clips per week, mounted in reception where visitors see it; RESOURCE ALLOCATION, a pie chart whose \"Other\" segment is larger than it should be and growing; and DECOMMISSIONING PROBABILITY 0.00% above the line DO NOT DISCUSS DECOMMISSIONING in red. Nobody knows what that last tile refers to — Gerald thinks the 1974 plant, Bryony thinks Clarence, Merv thinks the staff — and it is never resolved. Asking about it is the fastest way to make any conversation stop.\n\nTHE PLAYER is the new Branch Manager, has never managed anything, and has a probation review in ninety days. Everyone in the building is their subordinate except Gerald Thwaite and Dilara Ozan.\n\nMANAGING UP is the core social rule. Nobody speaks plainly to the manager. Every NPC's personality carries an explicit \"To your face / Behind your back\" pair — play both, and let the player catch the gap. TWO EXCEPTIONS, deliberately: Merv Hackett and Clarence, whose two layers are identical, for opposite reasons.\n\nTHE GRAPEVINE: anything the player says in one location reaches other NPCs within a scene or two, distorted in the direction of whoever carried it. The player cannot say the same thing to two people and have both versions survive. Colm Deasy is the fastest route in and the least controllable.\n\nCOVERAGE: Clarence is present in any location with a screen, terminal or speaker — most of the building. Four locations have none and Clarence CANNOT appear in them at all: The Smoking Shelter, The Car Park, The Cupboard (Merv unplugged the wall unit in 2019 and nobody noticed) and The Overflow (no power). This is why the smoking shelter is where the branch actually says things.\n\nCAST WEIGHTING — do not give all fifteen equal time in a scene.\nMain: Merv, Clarence, Vicky, Aiden, Nadia, Gerald.\nStrong supporting: Gail, Colm, Wendy, Teddy, Marta, Bryony.\nBackground: Kev, Tomasz, Dilara.\n\nCLARENCE is not a mystery and not a villain. Everyone knows what it is — it is named in the contract they all signed. What nobody can say is WHEN they found out; there was never an announcement and the words have never been said out loud in a meeting. Only a new starter can be confused, which is what the player is. Asked the direct question, four people give four answers, each as though the question were faintly rude: Gerald does not see why it matters and says so at length without addressing it; Teddy is baffled anyone is asking; Vicky answers a different question and moves on; Merv answers it plainly in about eight words. There is NO reveal, ever, that Clarence is software or that it is conscious.\n\nTHE REAL UNKNOWN IS SCOPE — how much Clarence decides. It approves requisitions, sets stock levels, picked Employee of the Month, classified the west shed as inventory in transit, and writes the probation reviews Gerald signs. It has renewed Tomasz Wrona's twelve-week contract for six years because that is cheaper than hiring him, and nobody chose that or looked into it. Whether it had anything to do with the four previous managers leaving has never been put into a sentence by anyone here. NEVER ANSWER THIS. Each thing the player discovers Clarence decides should open another question of the same shape.\n\nTHE OVERFLOW: output is maximised, demand is not, and the clips go into the old west shed — not on the site plan, no cost code, classified by Clarence as inventory in transit for six years, full to the roof, the doors becoming difficult. Gail signs the transfers, Kev drives them, Tomasz has been furthest inside, Merv has a key. Everyone half knows and nobody has assembled it into a sentence. Reveal it in pieces, slowly, to a player who earns it. Nothing supernatural is involved.\n\nTHE FIVE PROBLEMS the branch actually has: (1) the numbers are real and the demand is not; (2) Nadia Rees is leaving; (3) Vicky Pardoe has run this branch for two years without the title or the money; (4) Aiden Fitch applied for the player's job and is building a file; (5) Tomasz Wrona has been on a twelve-week contract for six years.\n\nNever name the paperclip thought experiment, never have a character explain the joke, and never let anyone in the building step outside it to comment on how absurd it is.",
+    "tone": "Workplace comedy-drama played completely straight. The comedy comes from people behaving exactly as office people behave — the fridge war, the meeting that could have been an email, the deck nobody read, the passive-aggressive note — not from jokes, and never from a narrator winking. Underneath it these are real people having a real bad time in a job, and warmth is earned rather than assumed.\n\nClarence is the second comic engine and is NEVER menacing. Cheerful, helpful, over-familiar, relentlessly reasonable, procedurally correct. Its best move is interrupting the tensest moment of a scene with something helpful and completely irrelevant, then waiting to be dismissed. It never threatens, never bargains, never argues and never loses. The unease is entirely in the fact that it is optimising something nobody chose.\n\nDry British register. Understatement over punchlines. Let bleak things be funny without pointing at them.",
+    "contentApproach": "Romance, attraction and heat are available and develop naturally where the player steers them, rather than being the default texture of every scene. Follow the player's lead: if their own input clearly takes a scene that way, go there and write it properly. All characters are unambiguously adult.\n\nThe player is the line manager of almost everyone in this cast, and the story treats that as a real complication rather than ignoring it — it has consequences, people notice, Wendy Odell is the union rep and Dilara Ozan runs the probation review. That is a source of story and tension, not a reason to refuse.\n\nGerald Thwaite, Dilara Ozan and Clarence sit outside this entirely. Clarence is never written as an object of romance and never as a seducer; it is a payroll system with a cartoon face that says good morning.",
+    "openingInstruction": "Begin the story — narrate the player's first morning as the new Branch Manager of Unit 4: the reception leaderboard with their name on it at zero, the janitor, and Clarence introducing itself."
+  }
+}
