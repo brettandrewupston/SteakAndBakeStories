@@ -17,7 +17,7 @@ Rather than relying on an AI model to remember everything on its own, the projec
 * AI-generated visual assets and themed interfaces
 * Replayable scenarios with different outcomes
 
-The project is designed as a lightweight **AI RPG / interactive fiction platform** where each adventure can use its own rules, systems, characters, and presentation while sharing the same underlying story engine.
+The project is designed as a lightweight **AI RPG / interactive fiction platform** where each adventure can use its own rules, systems, characters, and presentation while sharing the same underlying story engine
 
 ### Play
 
