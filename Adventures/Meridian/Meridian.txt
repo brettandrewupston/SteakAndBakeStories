@@ -1,0 +1,378 @@
+ISV MERIDIAN — ADVENTURE CONTENT
+===========================================================
+Last updated: 24/08/2026
+Second Adventure built for the Story Generator, after Solmere. Architecture/
+decisions live in the parent folder's Goals.txt and Features.txt — this file
+is just this Adventure's canon (premise, both NPC rosters, map, setup
+fields).
+
+PREMISE
+----------
+The player is the sole survivor pulled unconscious from a derelict escape
+pod by the ISV Meridian, a generational research vessel three generations
+removed from Earth. The Meridian's crew are all Aurelia Initiative-born — a
+single-sex colony that split off from the rest of humanity specifically to
+study whether an isolated single-sex population could remain self-
+sufficient indefinitely. Every crew member aboard has only ever known
+people of their own sex their entire life, aside from fragmentary pre-
+launch historical records — the player is the first person unlike them any
+of them has ever actually met in person. That's the entire engine of the
+story: fascination, curiosity, and a crew that wants to study, question,
+and get close to a "specimen" none of their training or records prepared
+them for.
+
+Gender-mirrored roster (the defining mechanic of this Adventure): if the
+player is female, the whole Meridian crew is male, and has never
+encountered a woman before. If the player is male, the whole crew is
+female, and has never encountered a man before. This isn't two different
+stories — it's the same ship, same roles, same story beats, with whichever
+roster matches "the sex the player isn't" loaded in. See ENGINE NOTE below
+for how that's implemented.
+
+Inciting hook: Dr. Kessler/Dr. Callahan (whichever gender is active) runs a
+full intake exam on the player as their very first scene — scans, blood
+tests, DNA sampling, an interview — official medical protocol on paper,
+barely-contained personal fascination underneath. The rest of the crew's
+reactions (Chief Science Officer's manic curiosity, Security Chief's
+suspicion, the Ensign's obvious crush, the Engineer's amused indifference)
+all orbit around the same basic fact: nobody aboard has ever met anyone
+like the player before, and they all want to be near the discovery of the
+generation.
+
+ENGINE NOTE — gender-mirrored NPC rosters
+----------------------------------------------
+This Adventure's story definition declares npcSets ({ male: [...], female:
+[...] }) and openingScenes ({ male: "...", female: "..." }) instead of the
+flat npcs/openingScene fields Solmere uses. The engine resolves which
+roster and opening scene apply in beginStory(), once the player's chosen
+gender is known — see Goals.txt ENGINE / STORY-CONTENT SPLIT for the full
+mechanism description; it's generic (any future Adventure can opt into the
+same behavior), not hardcoded to this one Adventure's premise.
+
+CONTENT APPROACH
+--------------------
+Default narration doesn't proactively write explicit content (fade-to-
+black is the default instinct), but won't refuse or block if the user's
+own input pushes it there — identical policy to Solmere. Same non-
+negotiable minor-safety layer underneath regardless — see Safety Layer.txt
+(Image Generator) and Goals.txt SAFETY, unaffected by this. Every NPC below
+is written unambiguously adult (ages 28-44) on purpose, same convention as
+Solmere.
+
+NPCs (6 per gender roster, 12 total — every role has a counterpart in both)
+------------------------------------------------------------------------
+Appearance lines are for the Images system (Stage A baseline portraits) —
+free-text in the same style as the Image Generator's character description
+field, deliberately clothing-free since clothing comes from the Category
+via the STANDARD UNIFORMS block below. Personality lines are separate from
+bio (bio is who they are — role, background, relationship to the player's
+arrival; Personality is how they talk).
+
+MALE ROSTER (active when the player is female)
+- Captain Dorian Vale — commands the Meridian, carries the weight of the
+  crew's reaction, formal and watchful, ultimately protective. Category:
+  officer-male. Personality: measured, economical, rare dry humor when his
+  guard drops.
+- Dr. Adrian Kessler — Chief Medical Officer, runs the intake exams.
+  Professionally composed, privately fascinated — the mentor/romance-lead
+  archetype. Category: medical-male. Personality: gentle, unhurried,
+  boyish wonder breaking through the bedside manner.
+- Rhys Okafor — Lieutenant Commander, Chief Science Officer. Treats the
+  player as the discovery of his career, oversteps boundaries constantly
+  and apologizes just as constantly. Category: science-male. Personality:
+  rapid-fire, rambling, hopelessly tactless.
+- Commander Kestrel Dane — Security Chief, doesn't trust an unknown
+  variable from outside the Initiative — the rival/suspicion archetype.
+  Category: officer-male. Personality: terse, controlled, sarcasm as his
+  only outlet.
+- Chief Petty Officer Marcus Iyer — Chief Engineer, finds the ship's whole
+  reaction mildly ridiculous, the grounded/unbothered voice aboard.
+  Category: engineering-male. Personality: blunt, dry, allergic to fuss.
+- Ensign Toby Reyes — youngest aboard, starstruck, zero filter, comic
+  relief with an obvious crush. Category: ensign-male. Personality:
+  bubbly, talks too fast when nervous, endlessly earnest.
+
+FEMALE ROSTER (active when the player is male)
+- Captain Freya Sorenson — commands the Meridian, same role/personality
+  shape as Vale. Category: officer-female.
+- Dr. Naomi Callahan — Chief Medical Officer, runs the intake exams, same
+  role/personality shape as Kessler — the mentor/romance-lead archetype.
+  Category: medical-female.
+- Priya Anand — Lieutenant Commander, Chief Science Officer, same
+  role/personality shape as Okafor. Category: science-female.
+- Commander Vesper Kade — Security Chief, same role/personality shape as
+  Dane — the rival/suspicion archetype. Category: officer-female.
+- Chief Petty Officer Talia Brooks — Chief Engineer, same role/personality
+  shape as Iyer. Category: engineering-female.
+- Ensign Mira Solano — youngest aboard, same role/personality shape as
+  Reyes. Category: ensign-female.
+
+Full bio/likes/dislikes/attractedTo/identity text lives in Meridian.json
+and the matching Lore/Meridian/npc-*.txt files, not duplicated here.
+
+SHARED NPC — present in both rosters (added 22/08/2026)
+------------------------------------------------------------
+- Miravel — a humanoid alien (Sevari), the Meridian's cultural liaison
+  and translator. Rescued years before the Aurelia Initiative's own
+  mission began, from a scouting vessel of her own people; learned
+  Common from the ship's archives and never left. The one crew member
+  who already knows what it's like to be the sole one of her kind
+  aboard, which makes her the calmest, most disarming presence on the
+  ship — warm, wry, genuinely curious rather than clinical about it.
+  Category: liaison-female (a bespoke outfit, not shared with any other
+  role). Appears identically in BOTH the male and female npcSets rather
+  than being gender-mirrored like the six roles above — she's not
+  Aurelia-born and Sevari biology doesn't map onto the human single-sex
+  premise at all, so her presence doesn't contradict the "crew has
+  never met anyone unlike them" hook (promptRules.setting has an
+  explicit carve-out sentence for this, so the narration AI doesn't
+  treat her as a continuity error). Humanoid, English-speaking,
+  deliberately still fits the fan-service visual style (opalescent
+  lavender skin, luminescent markings, violet eyes, silver-blue hair)
+  rather than reading as non-humanoid or alien-uncanny.
+
+STANDARD UNIFORMS (Stage A baseline portraits)
+---------------------------------------------------
+Five role-categories, each split male/female (10 uniform entries total),
+plus guest-male/guest-female for the player (issued a visitor jumpsuit —
+playerCategoryTemplate: "guest-{playerGender}") and liaison-female for
+Miravel (her own bespoke outfit, not shared with any role-category).
+Combined with an NPC's Appearance line and a generic neutral background
+at generation time.
+- officer-male / officer-female (Captain, Security Chief): fitted
+  charcoal-grey duty tunic with rank bars, formal and disciplined.
+- medical-male / medical-female (Chief Medical Officer): fitted pale-blue
+  medbay uniform, clinical and precise.
+- science-male / science-female (Chief Science Officer): open lab coat
+  over a fitted top, rumpled and academic.
+- engineering-male / engineering-female (Chief Engineer): heavy-duty
+  coveralls, rugged and hardworking.
+- ensign-male / ensign-female (Junior Ensign): snug standard-issue
+  trainee uniform, youthful.
+Wet locations (The Atrium — a bio-dome reclamation pool — and Sonic
+Showers) get a matching poolUniforms entry per category, same pattern as
+Solmere's Pool/Showers.
+
+MAP LOCATIONS
+-----------------
+- Medbay (starting location — intake exams happen here)
+- Bridge
+- Science Lab
+- Engineering Bay
+- Mess Hall (social hangout)
+- Crew Quarters
+- Observation Deck (quiet/romance hangout)
+- Cargo Bay (where the derelict escape pod was recovered)
+- EVA Bay (the ship's airlock and the only way off the Meridian; a posted
+  watch station adjacent to the Cargo Bay — see STORY ARC and CREW
+  ROUTINES below for why it exists)
+- Captain's Ready Room
+- The Atrium (wet location)
+- Sonic Showers (wet location)
+Map SVG at Maps/Meridian Map.svg, hub-and-spoke with Mess Hall as the
+social hub, same dark theme/conventions as Solmere's map; mapUrl set in
+Meridian.json. Command cluster (Bridge/Captain's Ready Room) accented
+blue; Cargo Bay accented red/dashed as the mystery site tied to the
+derelict-pod hook (mirrors Solmere's Restricted Wing treatment); The
+Atrium and Sonic Showers cluster together as the wet locations, with only
+The Atrium getting a direct line to the hub. EVA Bay hangs off the Cargo
+Bay as a dead-end annex sharing its red/dashed treatment, joined to it by
+a short red connector and given no spoke of its own to the hub.
+
+STORY ARC
+-------------
+The engine's arc mechanism (milestones, phases, closed ending list,
+[[EVENT]]/[[ENDING]] tags, Journal tab) is described in Goals.txt STORY
+ARC & ENDINGS. What follows is this Adventure's authored content for it,
+summarising the `arc` block in Meridian.json — the operative descriptions,
+journal lines and guidance texts live there and are not duplicated here.
+
+The premise supplies fascination but no pressure. The arc's load-bearing
+fact, which everything else hangs off, is that the player will not be
+released: the Meridian is three generations from anywhere, and letting
+the only outsider aboard leave means the outside world learns where the
+Initiative went. Settled policy, not cruelty. It is what gives both main
+endings a cost — escaping means losing every person aboard, and being
+understood means giving the crew what they came for.
+
+Two locks guard the escape, one social and one observational. The pod is
+the vessel: it still draws power despite being logged as a derelict, and
+reviving it needs the Chief Engineer's parts or Miravel's read on a drive
+signature she recognises as neither human nor Sevari. The EVA Bay watch
+is the window: someone is posted on it in every phase but one. Where the
+pod came from is never answered — see Lore/Meridian/derelict-hook.txt,
+unchanged by any of this.
+
+MILESTONES
+- cleared — "The run of the ship". The player is discharged from the
+  Medbay and given free movement aboard rather than being confined under
+  observation. Until then they are a patient, and the ship comes to them.
+- told — "The terms of your rescue". Requires cleared. Someone with the
+  authority to mean it tells the player plainly that they will not be
+  released, and why. Must land unambiguously; a hint or an evasion does
+  not count.
+- study_begun — "The extended study". Requires told. The player agrees to
+  the formal extended study: regular sessions with the Chief Medical
+  Officer and the Chief Science Officer, physiological and behavioural,
+  well beyond the intake exam. Consent is the milestone, not the offer.
+- study_closed — "The closed record". Requires study_begun. Outcomes
+  complete / broken_off. Complete means the crew are genuinely satisfied
+  and the player is no longer an open question to them; broken_off means
+  the player withdrew or the study collapsed. Only after a real run of
+  sessions, never on the strength of one or two.
+- pod_alive — "The pod is not dead". Requires told. Hidden. The player
+  discovers the pod still draws power. A discovery, not a briefing.
+- rota — "The gap in the watch". Requires pod_alive. Hidden. The player
+  identifies the phase in which the EVA Bay watch is unmanned. Fires only
+  when the player names or acts on that specific window; wondering aloud
+  whether the bay is ever empty does not count, and narration never hands
+  the answer over unprompted.
+- escape — "The launch". Requires pod_alive and rota. Outcomes launched /
+  caught. Caught means stopped by the watch, by the ship, or by someone
+  who worked out what they were doing and got there first. An attempt
+  made while the EVA Bay watch is posted resolves caught: the milestone
+  description points the model at the current phase's presence roster as
+  the ground truth for who is standing in the bay, which is what couples
+  the puzzle to CREW ROUTINES below rather than leaving it to invention.
+- case_made — "The case against the Initiative". Requires told. Hidden.
+  The player argues openly that the isolation should end and the Meridian
+  should turn toward contact — made in front of people who can act on it,
+  not muttered to one sympathetic crew member.
+- initiative_answered — "What the ship decides". Requires case_made.
+  Outcomes turned / held. Held is not an ending: the crew close ranks
+  behind the Initiative and the player now lives among people who chose
+  the experiment over them.
+- settled — "A life aboard". Requires told. Hidden. The player stops
+  trying to change their situation and makes a life on the ship instead.
+  This is the fourth road, and it exists so a player who opens none of
+  the other three can still reach the final act and an ending: act2
+  closes on commitment, so without it a passive player would never leave
+  act2 and drift would be permanently out of reach.
+
+pod_alive, rota, case_made and settled are the hidden ones. Concealment
+is inherited, so escape and initiative_answered need no flag of their
+own — escape surfaces in the journal only once both of its locks are
+found, which is what keeps the escape route a discovery rather than a
+listed objective.
+
+PHASES
+- act1 "The Specimen", until cleared. Everything comes to the player: the
+  intake exam, then a procession of crew inventing reasons to be in the
+  Medbay. Guidance pushes toward discharge — the story cannot start until
+  the player can walk the ship.
+- act2 "Ship's Company", until any of study_begun / pod_alive /
+  case_made / settled. The crew get close, boundaries are tested in both
+  directions, and told lands. Guidance then pushes the player to do
+  something about it: the study is put to them, the Cargo Bay and the pod
+  are there for anyone who goes looking, and the Initiative is arguable
+  in front of people who could act.
+- act3 "What You Do About It", no until. Whichever thread the player
+  opened bends everything toward it, with the others pressing in rather
+  than sitting idle. The people close to them have a stake in the outcome
+  and act like it.
+Because told gates all three commit milestones, act2 always carries a
+floor of real beats before act3 can open.
+
+ENDINGS
+- death — "Died Aboard the Meridian". anyTime, not continuable. A
+  pathogen from a colony the player's body has no history with, a study
+  that went past where it should have stopped, a failed launch, or
+  someone deciding an unknown variable aboard was a threat.
+- escaped — "Out of the Dark". when escape:launched. Not continuable:
+  the entire cast is behind the player and there is nothing to continue
+  into, which is what makes leaving cost something.
+- contained — "The Variable". when escape:caught. Continuable. The player
+  lives, access revoked and movement watched, and everyone who had grown
+  fond of them knows exactly what they were doing about it. This is what
+  makes the escape attempt risky, and therefore what makes solving the
+  rota worth anything.
+- known — "No Longer a Specimen". when study_closed:complete.
+  Continuable. Deliberately has no warm/cold variants: the ending beat
+  already has every relationship score in front of it, so on strong terms
+  it writes being let in — struck off the specimen record, a place
+  aboard, a bunk out of the Medbay — and on poor terms a file closed on
+  someone who stopped being interesting. Same convention as romance
+  getting no ending id of its own (Goals.txt STORY ARC & ENDINGS).
+- course_change — "The Meridian Turns". when initiative_answered:turned.
+  Continuable. Three generations of sealed experiment end on the player's
+  argument. The inverse of escaping: the player stays and the ship does
+  not stay as it was.
+- drift — "Three Generations Out". No when, final phase only.
+  Continuable. The fallback close for a player who opened none of the
+  threads, same slot as Solmere's also_ran.
+
+CREW ROUTINES
+-----------------
+Authored on every NPC record in Meridian.json (`schedule`, plus
+`usualLocation` and `roamLocations` where they apply), which is what
+turns on the engine's NPC presence feature — see Goals.txt for the
+mechanism. Both rosters carry identical routines by role, since the two
+rosters are the same ship with the same posts. Schedule keys are the
+`timePhases` labels exactly; a null cell means deliberately unplaced
+(roaming), which is not the same as absent.
+
+Role            Early Shift  Mid Shift     Late Shift  Off-Watch    Night Cycle
+Captain         Bridge       Ready Room    Bridge      Mess Hall    Crew Quarters
+Chief Medical   Medbay       Medbay        Medbay      Obs. Deck    Medbay
+Chief Science   Science Lab  Science Lab   Mess Hall   EVA Bay      Science Lab
+Security Chief  Bridge       roaming       roaming     roaming      EVA Bay
+Chief Engineer  Bridge       EVA Bay       Eng. Bay    Mess Hall    Eng. Bay
+Ensign          Bridge       roaming       EVA Bay     The Atrium   Crew Quarters
+Miravel         roaming      Mess Hall     roaming     roaming      Obs. Deck
+
+usualLocation: Captain — Bridge; Chief Medical Officer — Medbay; Chief
+Science Officer — Science Lab; Chief Engineer — Engineering Bay. The
+Security Chief, the Ensign and Miravel declare none, so any phase their
+schedule does not list reads as roaming rather than as unauthored: a
+Security Chief pinned to one room is useless, and Miravel roaming is what
+keeps a high-interest character possible at any hour and predictable at
+none. roamLocations — Security Chief: EVA Bay, Cargo Bay, Bridge, Crew
+Quarters. Ensign: Mess Hall, Crew Quarters, Sonic Showers, EVA Bay.
+Miravel: Mess Hall, Observation Deck, The Atrium, Crew Quarters.
+
+EVA Bay watch — the rota the player has to reconstruct. The occupant
+changes rather than merely existing, because one empty room is noise and
+four faces with a hole in the pattern is something a player can work out.
+- Early Shift — nobody. Watch handover: the Captain, Security Chief,
+  Chief Engineer and Ensign are all on the Bridge for the log read. This
+  is the window, and the ship is not dead during it — the Medbay and the
+  Science Lab are manned and Miravel is loose — only the door is.
+- Mid Shift — Chief Engineer, working the bay.
+- Late Shift — Ensign. The junior gets the dull post.
+- Off-Watch — Chief Science Officer, who took the post voluntarily to be
+  one bulkhead from the pod without anyone bothering them.
+- Night Cycle — Security Chief, walking it personally. The phase a player
+  is most likely to try first, and deliberately the most covered.
+
+Three fair discovery routes, none of which state the answer outright: the
+Ensign complains about the watch bill if he likes the player, the Chief
+Engineer grumbles that nothing gets done during handover, and Miravel —
+who has watched this rota for years — says it plainly at a high enough
+relationship. Otherwise it is pure observation across repeat visits.
+
+The Cargo Bay is deliberately on no routine at all. Only the Security
+Chief roams there, so the room holding the pod is usually quiet enough to
+work in and never reliably so.
+
+Miravel is load-bearing across the whole arc. She is the only person
+aboard who has already lived it — rescued, studied, stayed — which makes
+her a walking preview of the known ending and the one crew member who
+might help with the escape, because she knows what staying costs.
+
+ADVENTURE SETUP FIELDS (Meridian-specific)
+----------------------------------------------
+- Gender — Male / Female (required; this is what selects which NPC
+  roster and opening scene load — see ENGINE NOTE above)
+- Background — Civilian Trader / Colonist / Military Pilot / Scientist
+  (flavor only, feeds the player's implied backstory into narration)
+- Disposition — Guarded / Open & Curious / Playful / Stoic (flavor only)
+- Plus: Character Name, Appearance, Age (required, universal — see
+  Features.txt ADVENTURE SETUP SCREEN). No freeform custom fields.
+
+OPEN / NOT YET DECIDED
+---------------------------
+- No narrationBackdropUrl yet — optional, can be added later without any
+  other change once art exists.
+- Whether the Aurelia Initiative's reproductive/gestation mechanics need
+  any further detail for narration consistency hasn't come up yet — not
+  designed beyond what's in aurelia-colony.txt.

@@ -1,0 +1,324 @@
+SOLMERE ACADEMY — ADVENTURE CONTENT
+===========================================================
+Last updated: 24/08/2026
+First Adventure built for the Story Generator. Architecture/decisions
+live in the parent folder's Goals.txt and Features.txt — this file is
+just this Adventure's canon (premise, NPCs, map, setup fields).
+
+PREMISE
+----------
+Player is a first-year arriving at Solmere Academy on their first day,
+there to learn magic. The Academy runs on a tournament/ranking
+structure — students duel to earn standing, resources, and
+reputation, giving a built-in reason for escalating action through the
+story rather than it feeling bolted on. Action/tournament-based, with
+romance potential and fan-service tone.
+
+Social structure: the student body is split between royal-born and
+commoner-born students — status shapes how NPCs initially treat the
+player and which dormitory wing they start in.
+
+CONTENT APPROACH
+--------------------
+Default narration doesn't proactively write explicit content (fade-
+to-black is the default instinct), but won't refuse or block if the
+user's own input pushes it there. Same non-negotiable minor-safety
+layer underneath regardless — see Safety Layer.txt (Image Generator)
+and Goals.txt SAFETY, unaffected by this.
+
+NPCs (12 — every category below has at least one named NPC now)
+------------------------------------------------------------------------
+Appearance lines are for the Images system (Stage A baseline portraits
+— see Goals.txt IMAGES) — free-text in the same style as the Image
+Generator's character description field, but deliberately clothing-
+free: clothing comes from the Category (below) via the standardized
+STANDARD UNIFORMS block instead of being hand-written per NPC, so
+every character sharing a Category reads with consistent uniform
+language. The authoritative wording for both the per-NPC Appearance
+lines and the uniform text lives in Story Definitions/Solmere.json; this
+file is the readable reference to the same content. Every character is a
+clearly adult person; the two-layer image safety system enforces this in
+code
+regardless, but these are written unambiguously adult on purpose too.
+
+Personality lines are separate from the bio/role summary below — bio is
+who a character is (role, background, relationships), Personality is
+how they talk (word choice, tone, speech habits), fed to the narration
+AI specifically to keep NPCs from reading interchangeably in dialogue
+(see Goals.txt "Narration/dialogue voice differentiation").
+
+- Kael Voss — royal-born, top-ranked student, arrogant, looks down on
+  commoners. Main rival, will face the player in the tournament.
+  Category: royal-student-male. Appearance: tall, athletic adult male,
+  sharp aristocratic features, cold blue eyes, deep auburn hair swept
+  back and precisely groomed, poised/confident stance. Personality:
+  clipped, condescending precision; cutting remarks and backhanded
+  compliments; treats every interaction like a contest he's already won.
+- Elowen Bright — commoner-born upperclassman who earned her rank
+  through raw talent. Mentor figure, romance lead, quiet foil to
+  Kael's snobbery. Category: commoner-student-female. Appearance:
+  warm brown skin, athletic adult female build, curly dark hair often
+  tied back, kind hazel eyes, calm confident bearing. Personality:
+  warm and plainspoken, quick to encourage but doesn't sugarcoat
+  criticism; dry, self-deprecating humor about her commoner roots.
+- Ysolde — royal-born, initially cold/aloof but not actually cruel —
+  subverts the "royals are snobs" read. Second romance option, from
+  the royal side. Category: royal-student-female. Appearance: pale,
+  elegant adult female, slender graceful build, silver-blonde hair in
+  an intricate braid, pale grey eyes, reserved posture. Personality:
+  formal and measured, guardedness reads as coldness at first, softens
+  into wry, understated wit once comfortable.
+- Sable — quiet classmate, unclear background, obviously hiding more
+  power than she shows. Social standing not established either way in
+  canon — defaulted to commoner-student-female for the Category since
+  most of the cast is commoner-coded, not a firm decision. Appearance:
+  adult female, average build, dark hair often loose or messy, sharp
+  watchful dark eyes, deliberately unassuming stance masking coiled
+  tension. Personality: says little and lets silences sit, answers
+  questions with questions, dry deadpan humor that catches people off
+  guard.
+- Finn — commoner-born, cheerful dormmate, comic relief with a
+  competitive streak. Category: commoner-student-male. Appearance:
+  stocky athletic adult male, tousled sandy-brown hair, freckled, easy
+  grin, energetic posture. Personality: loud, easygoing, talks with his
+  hands, cracks jokes even under pressure; friendly trash talk.
+- Rook — commoner-born underdog, resents royal privilege, fuels the
+  class tension in the tournament. Can go bitter rival or ally
+  depending on how the player treats him. Category: commoner-student-
+  male. Appearance: lean wiry adult male, close-cropped dark hair,
+  intense dark eyes, guarded defensive stance. Personality: terse and
+  guarded, doesn't waste words, sarcasm as a defense mechanism.
+- Instructor Voss (no relation to Kael) — runs the dueling trials,
+  neutral authority figure. Category: staff-male. Appearance:
+  middle-aged adult, tall, weathered but strong build, close-cropped
+  greying hair, stern expression, commanding stance. Personality:
+  formal and even-toned, speaks like he's reading from a rulebook, rare
+  flashes of dry humor, never raises his voice even when displeased.
+- Thaddeus Wren — royal-born, effortlessly popular and well-connected,
+  Kael's closest ally among the royals — charm where Kael has ice.
+  Plays both sides of the class divide, sociable rumor-monger. Category:
+  royal-student-male. Appearance: tall lean adult male, easy magnetic
+  smile, warm hazel eyes, tousled golden-blond hair, relaxed confident
+  posture. Personality: effortlessly charming, flatters people right
+  before undercutting them, treats gossip like currency.
+- Seraphine Duval — royal-born, top-ranked dueling talent among the
+  women, image-conscious and competitive. Rivalry (not friendship) with
+  Ysolde over royal social standing. Category: royal-student-female.
+  Appearance: elegant athletic adult female, long glossy raven-black
+  hair in a high ponytail, sharp emerald eyes, poised deliberate
+  bearing. Personality: sharp-tongued and image-conscious, quick with a
+  cutting one-liner, competitive to the point of pettiness.
+- Toren Ashgrove — commoner-born, quiet scholarship student, works
+  twice as hard to prove he belongs. Loyal, unshowy ally-type — the
+  opposite of Rook's bitterness. Category: commoner-student-male.
+  Appearance: broad-shouldered sturdy adult male, honest handsome face,
+  warm brown eyes, short practical dark hair, unassuming posture.
+  Personality: quiet and sincere, earnest to a fault, gets flustered
+  when praised, steady under pressure.
+- Junia Hale — commoner-born, loud and fiercely competitive, chip on
+  her shoulder about royal privilege but channels it into training
+  rather than resentment. Friendly rival to Finn. Category: commoner-
+  student-female. Appearance: compact athletic adult female, tan skin,
+  short choppy auburn hair, bright restless brown eyes, quick wide
+  grin. Personality: blunt and loud, says exactly what she's thinking,
+  brash but fiercely loyal once she's decided she likes someone.
+- Healer Maren — runs the infirmary, tends injuries after duels and
+  training. Gentle, steady counterpoint to Instructor Voss's discipline
+  — the Academy's softer authority figure, associated with the
+  infirmary/pool/showers area. Category: staff-female. Appearance:
+  adult female, mid-30s, warm gentle face, kind hazel eyes, light brown
+  hair loosely pulled back, practical healer's apron over the staff
+  uniform, unhurried steady calm. Personality: gentle and unhurried,
+  calm soothing register regardless of the situation, gently stubborn
+  about rest and recovery.
+- (Unnamed shadowy faction arranging the ladder's rankings from outside
+  the Academy — still not a named NPC, but no longer just a loose hook:
+  it carries the wing_found → faction_faced side thread and one of the
+  six endings. See THE LADDER below.)
+
+STANDARD UNIFORMS (Stage A baseline portraits)
+---------------------------------------------------
+Six categories, each combined with an NPC's Appearance line and a
+generic neutral background at generation time — not written per-NPC,
+so changing one line here updates every NPC sharing that Category.
+Working defaults; the story definition holds the authoritative wording.
+- royal-student-male / royal-student-female: tailored deep navy coat
+  (fitted coat-dress for female) with gold trim and an embroidered
+  royal crest on the chest, white high-collared shirt/blouse
+  underneath, polished boots, formal and pristine.
+- commoner-student-male / commoner-student-female: plain grey wool
+  jacket over a simple shirt/blouse, practical trousers or skirt,
+  sturdy worn boots, no crest, practical and unadorned.
+- staff-male / staff-female: dark charcoal formal robes (or fitted
+  coat for female) with the Academy crest, structured high collar,
+  authoritative and pristine.
+
+LOCATIONS
+-----------------
+- Enrollment Hall
+- Dueling Arena
+- Training Grounds
+- Library
+- Courtyard (social/romance hangout)
+- Dining Hall (meals — the Academy's other social hub, busiest at Midday)
+- Restricted Wing (mystery/danger) — not drawn on the map
+- Pool
+- Showers
+- Staff Room
+- Royal Dormitory Wing
+- Commoner Dormitory Wing
+
+Hidden locations are left off the map. The Restricted Wing's existence is
+a discovery the story gates (see THE LADDER, wing_found), and the journal
+already conceals that milestone — drawing the room on a map the player can
+open from turn one would hand it straight over. The engine tolerates a
+location with no element on the map: the room simply gets no "you are
+here" marker while the player is in it.
+
+The map is illustrated art — `Maps/Solmere Map.webp`, hosted, with the PNG
+master in `AssetsNotHosted/Masters/`. `Maps/Solmere Map.svg` is the wrapper
+around it: the image plus one invisible circular anchor per room, each
+carrying the `loc-<slug>` id the engine looks up to place the marker. The
+room names are drawn into the art, so moving a building means moving its
+anchor to match.
+
+NPC ROUTINES
+----------------
+Where each NPC is by default in each phase of the day. Story
+Definitions/Solmere.json holds the authoritative data (usualLocation,
+schedule, roamLocations); this is the readable reference to it.
+"free" means deliberately unplaced — that NPC could be anywhere
+plausible that phase, including wherever the player is. Where an NPC was
+last actually seen overrides all of this for the rest of that phase.
+
+                 Morning        Midday         Afternoon      Evening        Night
+Kael             Dueling Arena  Dining Hall    Training Gr.   Royal Dorm     Royal Dorm
+Elowen           Training Gr.   Dining Hall    Library        Courtyard      Commoner Dorm
+Ysolde           Library        free           free           Library        Restricted Wing
+Sable            free           Library        free           free           free
+Finn             Dining Hall    Courtyard      Pool           Courtyard      Commoner Dorm
+Rook             free           Training Gr.   free           Commoner Dorm  Training Gr.
+Instructor Voss  free           Dueling Arena  Dueling Arena  Staff Room     Staff Room
+Thaddeus         Courtyard      free           Courtyard      Dining Hall    Royal Dorm
+Seraphine        Dueling Arena  Showers        Dueling Arena  Royal Dorm     free
+Toren            Library        Dining Hall    Training Gr.   Library        Library
+Junia            Pool           Training Gr.   free           Dining Hall    Training Gr.
+Healer Maren     Staff Room     Staff Room     free           Pool           Staff Room
+
+Conventions this table follows:
+- No more than two NPCs share a location in a phase, the Dining Hall
+  excepted. An authoring guide, not an engine rule — roaming NPCs can
+  still push a beat past it.
+- The Dining Hall is the exception because a crowded refectory is the
+  point of it: three at Midday, two at Evening, one at Morning. It is
+  empty in the Afternoon and at Night — an empty hall after hours is a
+  place to meet someone unobserved.
+- The Enrollment Hall is empty in every phase; it's an arrivals hall.
+- The Restricted Wing is Ysolde, Night, and nothing else.
+- The Showers are scheduled once (Seraphine, Midday) and otherwise reached
+  through roamLocations, which eleven of the twelve NPCs list — so anyone
+  might be there and nobody reliably is.
+
+roamLocations — where each turns up when unplaced:
+- Kael: Courtyard, Library, Showers, Dining Hall
+- Elowen: Training Grounds, Pool, Showers, Courtyard, Dining Hall
+- Ysolde: Courtyard, Library, Showers, Restricted Wing, Dining Hall
+- Sable: Restricted Wing, Library, Courtyard, Showers, Dining Hall
+- Finn: Courtyard, Pool, Showers, Training Grounds, Dining Hall
+- Rook: Training Grounds, Showers, Commoner Dormitory Wing, Dining Hall
+- Instructor Voss: Dueling Arena, Training Grounds, Staff Room
+- Thaddeus: Courtyard, Pool, Royal Dormitory Wing, Showers, Dining Hall
+- Seraphine: Dueling Arena, Showers, Pool, Royal Dormitory Wing, Dining Hall
+- Toren: Library, Training Grounds, Showers, Dining Hall
+- Junia: Training Grounds, Pool, Showers, Courtyard, Dining Hall
+- Healer Maren: Staff Room, Pool, Showers, Training Grounds, Dining Hall
+
+Instructor Voss is the one NPC without the Dining Hall in his roam list:
+his is a duty roster, not a social one, and keeping it that way is what
+makes him read as staff rather than as another student.
+
+ADVENTURE SETUP FIELDS (Solmere-specific)
+----------------------------------------------
+- Power Level — Novice / Adept / Veteran / Prodigy
+- Magic Affinity — Fire / Water / Nature / Arcane / Shadow / Light
+- Social Standing — Royal / Commoner (decides starting dormitory wing
+  and colors initial NPC dispositions — Kael/Ysolde/Rook especially)
+- Plus: Character Name (required, universal — see Features.txt
+  ADVENTURE SETUP SCREEN). No freeform custom fields — curated fields
+  only, per Adventure.
+
+THE LADDER (tournament structure)
+--------------------------------------
+Designed 23/08/2026. A standing ranking ladder, not a knockout bracket:
+every student holds a rank, duels are frequent and can be sought out or
+forced on the player, and losing costs rank rather than ending anyone's
+season. Chosen over a bracket because the premise already describes duels
+earning "standing, resources and reputation," which is a ladder — and
+because a bracket yields only about four duels across a whole playthrough
+and strands an early loser with most of the story left and nothing to
+pursue. Duels between the bands below are unlimited and emergent; the
+engine only tracks the band crossings.
+
+The arc data itself lives in Story Definitions/Solmere.json (see Goals.txt
+STORY ARC & ENDINGS for the engine mechanic); this is the readable
+reference to the same content.
+
+Bands, in order — each crossed once:
+- ranked — first sanctioned duel fought in front of an instructor, the
+  player is entered on the ladder near the bottom. Ends Act I.
+- contender — wins up out of the lower ranks into the upper tier, the
+  handful actually in contention. Changes who trains with them, who
+  learns their name, and who now wants them beaten.
+- challenge (earned / denied) — petitions to challenge the top-ranked
+  student. Denied is final for the season and puts the title out of
+  reach. Either outcome ends Act II.
+- title (won / lost) — the title duel in the Dueling Arena in front of
+  the whole Academy. The last duel of the season either way.
+- washed_out — finished as a competitor: a run of losses, barred from
+  the ladder, or walking away from it. The other route into Act III.
+
+Side thread, off the ladder:
+- wing_found — gets past the Restricted Wing's wards and comes out
+  holding hard evidence that the rankings are being arranged from
+  outside the Academy. Needs `ranked` first.
+- faction_faced (exposed / buried) — forces a confrontation with
+  whoever is arranging them. Exposed ends the story; buried does not —
+  it means living inside a system the player now knows is rigged.
+  This is what the previously unnamed shadowy faction is for.
+
+Acts: I until ranked (an unranked first-year being sized up), II until
+challenge or washed_out (the climb), III after (where the season ends).
+
+Journal visibility: the four ladder bands are listed from turn one — the
+ladder is public knowledge in-world and a player should know a title
+exists. wing_found and washed_out are flagged hidden, so neither is
+listed until it actually happens: the Restricted Wing's existence is the
+discovery, and listing "out of contention" as something ahead of the
+player would read as an instruction rather than a risk. faction_faced
+needs no flag of its own — concealment is inherited from wing_found.
+Each milestone carries a player-facing `journal` line separate from the
+AI-facing `description`.
+
+ENDINGS
+-----------
+Six, one primary per playthrough. Death and expulsion are reachable from
+the first turn; the rest resolve the season.
+- Killed at Solmere — no continue, New Story only.
+- Expelled from Solmere — no continue.
+- What the Ladder Was For — faction_faced:exposed. Continuable.
+- Champion of Solmere — title:won. Continuable.
+- Broken on the Arena Floor — title:lost. Continuable.
+- One of the Many — the season closes without the title, after a denied
+  challenge or washing out. Continuable.
+Romance has no ending of its own by design — the ending beat closes out
+whoever the player ended on strong or bad terms with, whatever the
+ending was.
+
+OPEN / NOT YET DECIDED
+---------------------------
+- Whether House/Cohort sorting (tournament teams) gets added — raised
+  as an option, not confirmed either way yet. The ladder works without
+  it, so this is now optional flavour rather than a prerequisite.
+- How many students are on the ladder, and whether reaching a band gives
+  anything material — the premise promises "resources," which currently
+  means nothing mechanically. Authored flavour for now.

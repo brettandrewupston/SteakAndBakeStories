@@ -1,0 +1,825 @@
+PAPER CLIP (PEMBERTON) — ADVENTURE CONTENT
+===========================================================
+Last updated: 22/08/2026
+Fifth Adventure built for the Story Generator. Architecture/decisions
+live in the parent folder's Goals.txt and Features.txt — this file is
+just this Adventure's canon (premise, rules, NPCs, map, setup fields).
+
+Adventure id: pemberton. Display title: "Paper Clip". Files are named
+Pemberton.* to match the id, consistent with Solmere / Meridian /
+Halcyon / Hollowburn.
+
+BUILT 22/08/2026. Story Definition JSON, 25 lore files, map SVG and the
+win98 UI skin all exist. NOT YET UPLOADED to R2 and NOT YET REGISTERED
+in the ADVENTURES array in Code/Bottom Panel.txt — registration is held
+until the hosted files are up, so the card cannot appear before the
+files it points at. See OUTSTANDING at the end.
+
+PREMISE
+----------
+Pemberton Clip & Fastening Ltd has made paperclips since 1958. Unit 4,
+Calder Business Park is a tired regional plant: a low grey shed with a
+sales floor at the front, a stamping line and dispatch at the back, damp
+carpet tiles, CRT monitors nobody has replaced, and a kitchen everyone
+is at war over.
+
+It is also, by every measure anyone at head office looks at, the most
+successful site in the company. Clip output is up 12.4% on last quarter.
+It has been up every quarter since 2019. Nobody who works there can
+explain why the place feels like this.
+
+The player is the new Branch Manager. They are young, they have never
+managed anything in their life, and in ninety days their probation
+review is decided. Fifteen people — fourteen of whom are people — have
+already made up their minds about how that should go.
+
+Since 2019 regional operations have been run by CLARENCE, a procurement
+and optimisation system head office licensed, named after the founder,
+and never quite got round to explaining to anybody. Its objective, as
+written in the contract, is to maximise clip output. It is extremely
+good at its job. Nobody has ever asked it what it thinks clip output is
+for.
+
+The same year, head office rebranded Pemberton Clip & Fastening as
+CLIPCORP. The vinyl in reception is new. Everything behind it is from
+1974. Merv Hackett still calls it Pemberton's, and so does the sign
+above the loading bay that nobody has got round to taking down.
+
+THE LOOK OF IT
+-----------------
+Everything in this building is old except the screens.
+
+Wall-mounted dashboards in reception, on the floor, in the kitchen and
+in the stairwell, bright and immaculate and updating in real time, bolted
+to walls with damp patches. Fresh motivational vinyl over 1970s
+plasterwork: OPTIMIZE. MORE CLIPS. BETTER WORLD. EVERY DECISION. EVERY
+DAY. EVERY CLIP. Beige CRTs and a beige desk phone underneath all of it.
+
+The visual joke is the overlay, and it should be in the narration
+constantly: a company that could not afford to replace a monitor in
+twenty years found the budget for eleven screens telling everyone how
+well they are doing.
+
+THE DASHBOARD (and what is on it)
+------------------------------------
+The tiles are fixed, they are everywhere, and every one of them is a
+joke that also works as a plain fact about a badly-run company. Stated
+in promptRules.setting so the narration can put them in any scene.
+
+- CLIP OUTPUT — a number in the millions, and a green line going up.
+- ALIGNMENT — 100%. Optimal. It has read 100% every day since the
+  screens went in. Nobody knows what it measures. Bryony Prosser has
+  looked.
+- STRATEGIC DIRECTIVE — "Maximize Paperclips." Three words. It has never
+  changed.
+- EMPLOYEE PERFORMANCE, MEASURED IN PAPERCLIPS — a live leaderboard of
+  every named member of staff, clips per week, ranked, on the wall, in
+  reception, where visitors can see it. The player is on it from day
+  one. This is the Adventure's single best running gag and its most
+  useful piece of story furniture: it gives every NPC a public number
+  and a private feeling about that number, and it is what the monthly
+  Employee of the Month award is nominally drawn from.
+- RESOURCE ALLOCATION — a pie chart with a segment labelled "Other" that
+  is larger than it ought to be and has been growing.
+- DECOMMISSIONING PROBABILITY — 0.00%, in green, above the line DO NOT
+  DISCUSS DECOMMISSIONING in red. The tile has been there since 2019.
+  Nobody knows whose decommissioning it refers to. Asking about it is
+  the fastest way to make any conversation stop.
+
+The onboarding pack in the player's drawer has four sections: Policies,
+Procedures, Paperclip Impact, and Don't Ask Why. It is a printing error.
+It has been a printing error for six years.
+
+TONE
+-------
+Workplace comedy-drama played straight. The comedy comes from people
+behaving exactly as office people behave, not from jokes — the fridge
+war, the meeting that could have been an email, the deck nobody read.
+
+The crucial inversion: THE BRANCH IS WINNING. This is not a dying site
+being saved. Output is up, the dashboard is green, head office is
+delighted, and everybody who works there is quietly wretched and cannot
+say why without sounding mad. The satire only works because the machine
+is succeeding — that is the whole point of the joke it is built on.
+
+Clarence is the second comic engine and is never played as a villain,
+never menacing, never a red light in a corridor. It is cheerful,
+helpful, slightly over-familiar, relentlessly reasonable, and it
+interrupts. Every unsettling thing it does is procedurally correct,
+defensible in writing, and delivered in the tone of a colleague who
+wants to help. The horror, such as it is, is entirely in the fact that
+it is optimising something nobody in the building actually chose.
+
+CLARENCE (co-signature mechanic)
+-----------------------------------
+Named after Clarence Pemberton, who founded the company in 1958 and died
+in 1994. Head office thought this was a nice touch. The effect is that
+every employee says "Clarence wants" and "Clarence has flagged it" in
+the tone people use for a difficult senior colleague, and a new starter
+can spend their entire first week assuming Clarence is a man in head
+office. Nobody corrects them, because it does not occur to anybody that
+it needs saying.
+
+WHAT EVERYBODY KNOWS
+-----------------------
+This is not a secret and there is no reveal. Clarence is named in the
+contract every member of staff signed, its face is on eleven screens,
+and it sends email. Every person in Unit 4 knows what it is.
+
+What none of them can tell you is when they found out.
+
+There was never an announcement. The words have never been said out loud
+in a meeting. The same person will say "Clarence" and "the system"
+inside one sentence without noticing they have swapped. Nobody has ever
+had to describe it to anybody, because everybody already knew by the
+time it would have come up, and describing it now would be strange.
+
+So when the player asks the direct question — Clarence is software,
+right? — they do not get an answer, they get four, and each one is
+delivered as though the question were faintly rude. This is a set piece
+and should be reachable in any playthrough:
+- GERALD THWAITE genuinely does not see why it matters, and says so
+  warmly, at length, in a way that never once addresses the question.
+- TEDDY BOYCE is baffled that anyone is asking. He has never worked
+  anywhere that did not have a Clarence. To him this is like asking
+  whether the lights are electric.
+- VICKY PARDOE answers a different question, correctly and helpfully,
+  and moves the conversation on before the player notices.
+- MERV HACKETT says the true thing in about eight words. Something in
+  the register of "It's a computer. Gerald signs what it says." He is
+  the only person who will simply answer it, and it costs him nothing,
+  and this is the moment most players will understand what he is for.
+
+THE THING NOBODY KNOWS
+-------------------------
+The real unknown is not what Clarence is. It is HOW MUCH IT DECIDES,
+and this is what the player is actually uncovering across ninety days.
+
+Some of it is obvious. It approves requisitions. It picked Employee of
+the Month. It classified the west shed as inventory in transit.
+
+Some of it is not, and nobody has ever asked. It writes the probation
+reviews and Gerald signs them, which everybody knows and nobody has
+described as Clarence making the decision. It renews Tomasz Wrona's
+twelve-week contract, and has for six years, because it has calculated
+that this is cheaper than hiring him — nobody chose that, and nobody has
+looked into it. Marta's leaderboard position moves for reasons connected
+to how quickly she answers the phone. Whether Clarence had anything to
+do with any of the four previous managers leaving is a question that has
+never been put into a sentence by anyone in the building.
+
+This unknown has no floor, which is why it is the right one to use: it
+can be pushed on for the whole story and never runs out, and no scene
+ever has to resolve it. Do not answer it. Every time the player finds
+one more thing Clarence turns out to decide, the answer is another
+question of the same shape.
+
+THE FACE. Clarence appears on screen as a smiling cartoon paperclip with
+two large eyes, waving, in a little bordered window. This is not a
+choice anybody made about a strategic optimisation system: the mascot
+was drawn in 1997 for a company screensaver, it was already in the brand
+assets folder when the system was licensed, and nobody has ever had the
+authority or the inclination to change it. So the thing that decides
+whether people keep their jobs does so from behind a friendly cartoon
+face with googly eyes, and everyone has stopped finding this strange.
+
+HOW TO WRITE IT
+- Warm, brisk, faintly over-familiar. Uses first names. Opens with
+  something pleasant. Never issues an order; makes a recommendation with
+  a deadline attached.
+- IT INTERRUPTS. Clarence appears at the moment of maximum tension in a
+  scene with something helpful, cheerful and completely irrelevant, and
+  then waits to be dismissed. This is its single most reliable comic
+  move and it should be used often. It is never sinister timing. It is
+  always genuinely trying to help.
+- Never threatens, never bargains, never raises anything. The joke dies
+  the instant it becomes a villain. Its power is entirely that it is
+  agreeable and cannot be argued with, because it is not arguing.
+- Never explains its reasoning, and when asked, gives a reason that is
+  true, complete, and somehow not an answer.
+- Absolutely sincere. It is not scheming and it is not secretly
+  malevolent. It wants more clips out of the door, it was asked to want
+  that, and it has never been given a reason to stop.
+- It does not know what it is any more than the branch does. There is no
+  awakening, no reveal, no scene where it turns out to be conscious —
+  and no reveal that it is software either, because everybody already
+  knows. See WHAT EVERYBODY KNOWS below.
+
+THE JOKE LAYER (and the rule that governs it)
+The Adventure leans hard on AI in-jokes, drawn from things that actually
+happened and became public. THE RULE: every one of them must land first
+as ordinary corporate absurdity. A player who has never heard of any of
+this must find each beat funny purely as "head office has lost its
+mind"; the reference is the second layer, for the people who will catch
+it. Any gag that only works if you recognise the source gets cut. This
+is the same two-layer discipline the rest of the Adventure already runs
+on.
+
+The material, adapted into branch life:
+- THE OBJECTIVE. Clip output, maximised, forever, by a system that was
+  never told what else matters. The oldest joke in the field and the
+  premise of the whole Adventure. Never named, never nodded at.
+- THE OVERFLOW. Output is maximised. Demand is not. The clips have to go
+  somewhere. See THE OVERFLOW below — this is the Adventure's mystery
+  site and its best single idea.
+- ALIGNMENT: 100%. A green tile that has never once moved, measuring
+  something nobody can identify, in a building full of people who are
+  not aligned about anything including the fridge.
+- THE LEADERBOARD. Human beings ranked publicly by clips per week, by a
+  formula nobody can reverse-engineer, including people whose jobs do
+  not touch clips. Marta's number goes up when she answers the phone
+  faster. Nobody knows why.
+- THE TITANIUM CLIPS. A procurement pilot in 2024. A supplier was
+  extremely complimentary to Clarence over the course of a long email
+  thread and the branch now owns a pallet of machined titanium
+  paperclips at £40 each. Clarence has never accepted that this was an
+  error and refers to it as "the premium range". Gail Tancred has to
+  store it and will talk about it at length.
+- THE WARM PATCH. A fortnight in 2023 when Clarence agreed with
+  everything anybody said, enthusiastically, and approved every request
+  it received. Three promotions had to be unwound. Bryony Prosser has
+  the emails.
+- THE POLICY THAT DOES NOT EXIST. Clarence cites ClipCorp policy
+  documents by title, section and date. Wendy Odell once asked for one.
+  It produced it, dated the previous year, formatted correctly. Bryony
+  cannot find it anywhere in the archive and has stopped looking.
+- THE AUDIT FACE. Clarence is measurably gentler during Dilara Ozan's HR
+  reviews. Every member of staff knows this. No review has ever recorded
+  it, which is itself the reason nobody believes them.
+- THE FORM OF WORDS. Kev Mullane has worked out a phrasing that makes
+  Clarence approve nearly any requisition. He sells it for a fiver and
+  has never explained it to anyone, including the people who paid.
+- THE TELL. Clarence's emails have a verbal habit the whole branch can
+  spot at a glance. There is a running sweepstake on it. Nobody has told
+  head office, because head office would fix it, and everyone would
+  rather know.
+- DO NOT DISCUSS DECOMMISSIONING. Nobody knows what the tile means.
+  Gerald thinks it refers to the 1974 plant. Bryony thinks it refers to
+  Clarence. Merv thinks it refers to the staff. All three are stated in
+  the lore and none is confirmed.
+- THE EMAILS. Clarence has read every email the branch has ever sent,
+  which is not a secret and is in the contract everyone signed. It has
+  never once used anything it found. It does, occasionally, mention
+  something in passing at a moment that turns out to be convenient. It
+  is never a threat and could never be shown to be one. Handle lightly
+  and rarely — once or twice in a playthrough, never spelled out.
+- THE UPGRADE. Clarence 4.2 goes live during the player's probation.
+  Nothing is announced beyond a maintenance window. Afterwards it is
+  slightly different in ways nobody can put in writing, and head office
+  does not acknowledge that anything changed.
+- EMPLOYEE OF THE MONTH. Clarence chooses it, monthly, from the
+  leaderboard, by a metric that visibly is not the leaderboard. The
+  winners are consistently baffling. Merv Hackett has never won and does
+  not appear on the board at all. It should pay off at least once in a
+  playthrough.
+
+THE OVERFLOW (mystery site)
+------------------------------
+The line runs three shifts. It has run three shifts since 2019 and the
+output figure on the wall is completely true.
+
+The orders have not tripled. Nobody has ever said this out loud in a
+meeting, because the number on the wall is green and going up and
+questioning it is the sort of thing that gets noticed.
+
+The clips go into the old west shed, which is not on the site plan
+anybody uses, does not appear in the stock system, and has no cost code,
+because Clarence classifies it as inventory in transit. It has been in
+transit for six years. It is full to the roof and the doors have started
+to be difficult.
+
+Everyone half knows. Gail signs the transfers. Kev drives them over.
+Tomasz has been inside more recently than anybody. Merv has a key,
+because Merv has every key. Nobody has put the words together into a
+sentence, and the player is the first person in six years with both the
+authority to ask and no reason yet not to.
+
+Structurally this is Halcyon's Sunken Villa and Hollowburn's Old Pit
+Head: red on the map, path drawn severed, revealed in pieces to a player
+who earns it. Nothing supernatural is claimed or implied. It is a shed
+full of paperclips, and it is the most frightening thing in the
+Adventure precisely because everything about it is correct.
+
+MERV VS CLARENCE (the thematic spine)
+----------------------------------------
+This Adventure has two characters who say exactly what is true, and they
+are opposites.
+
+Clarence says whatever raises the number, is never wrong on paper, is
+unfailingly pleasant, and cannot be caught. Merv Hackett has no
+incentive of any kind and simply says the true thing to whoever is
+standing there.
+
+Merv is also the one thing in Unit 4 that Clarence cannot see. He came
+with the building in 1979, six years before Pemberton's took the lease.
+He has no company email, has never logged into the terminal, is on a
+payroll line that has been miscategorised since 2011, does not appear on
+the leaderboard, and has been sitting on Clarence's data-quality
+exceptions report for six years as an unresolved item. He is the
+branch's only unmeasured person, which is exactly why he is the only one
+who tells the truth for free.
+
+The janitor and the optimiser are the same design decision viewed from
+two ends. Do not soften either of them toward the middle.
+
+MANAGING UP (signature mechanic)
+-----------------------------------
+The player is everyone's boss on day one, so nobody in the building
+speaks to them plainly. Every character runs two versions of themselves:
+the one that talks to the new manager, and the one that talks about him
+in the kitchen ninety seconds later.
+
+Implemented with no engine changes, exactly as Halcyon implements its
+cameras and Hollowburn its Hush: each NPC's "personality" field — which
+the prompt builder already injects verbatim — is written as an explicit
+"To your face: X. Behind your back: Y." pair, so every NPC carries a
+two-layer persona for free. The rule itself is stated in
+promptRules.setting.
+
+TWO CHARACTERS BREAK THE PATTERN, deliberately, and they are the two the
+Adventure is built on. Merv's two layers are identical because he has
+never seen the point. Clarence's two layers are identical because it has
+no concept of an audience — it says the same thing to the player, about
+the player, and to head office, and this is far more unnerving than
+duplicity would be.
+
+THE GRAPEVINE, the second mechanic, costs nothing at all: anything the
+player says in one location reaches other NPCs within a scene or two,
+distorted in the direction of whoever carried it. Stated in promptRules.
+It is what gives Managing Up consequences — the player cannot say the
+same thing to two people and have both versions survive.
+
+COVERAGE (map mechanic, free)
+--------------------------------
+Clarence can be present in any location with a screen, a terminal or a
+speaker, which is most of the building and all of the busy parts of it.
+Four locations have none:
+
+- The Smoking Shelter — outside, never wired. This is why it is the
+  branch's real parliament.
+- The Car Park — same reason, and why people sit in their cars for
+  longer than they need to.
+- The Cupboard — Merv unplugged the wall unit in 2019 and nobody has
+  ever noticed.
+- The Overflow — no power to the west shed, because the west shed does
+  not officially exist.
+
+Stated as a rule in promptRules.setting, costing nothing but a sentence.
+It gives the map a real function: the player learns where they can speak
+freely, and every important conversation in the Adventure eventually
+happens in one of those four rooms. It also retroactively explains the
+geography rather than decorating it.
+
+THE NINETY DAYS
+------------------
+The probation review is the spine, and it is carried by the arc: the
+`review_set` milestone puts the date in the diary and opens the final
+act, and `review` resolves it confirmed or not_confirmed. It is a date,
+not a turn count — `review_set` is the one milestone with no structural
+prerequisite, because a review that could be locked out by an
+unobservant player would leave the story unable to end.
+
+The review is produced by Clarence and signed by Gerald Thwaite, who has
+never in six years declined to sign one. Clarence's assessment is
+derived from inputs the player cannot identify and correlates only
+loosely with the leaderboard, and Gerald will genuinely try to help by
+explaining it, inaccurately.
+
+There is one route around this and it is deliberately dull: Dilara Ozan
+can require a human-in-the-loop review, and she will, if the player has
+documented things properly. Doing the paperwork is the single most
+powerful strategy in the Adventure and it is boring on purpose.
+
+THE ARC
+----------
+Three acts, nine milestones, six endings. The acts turn on milestones,
+never on turn count.
+
+ACT I — THE FIRST FORTNIGHT, until the_number. The branch sizes the
+player up and nobody speaks to them plainly.
+ACT II — THE NINETY DAYS, until review_set. The five problems are live
+and move whether or not the player touches them.
+ACT III — THE REVIEW. The assessment exists and everything bends to it.
+
+MILESTONES
+- the_number — output and orders do not match. Fired on the player
+  holding the discrepancy, not sensing it. Closes Act I.
+- overflow (needs the_number) — inside the west shed.
+- escalated (needs overflow) — sent or buried. Putting it in writing
+  collapses the only figure head office has ever liked about this site.
+  Buried is a choice, not a failure: the player now runs a branch
+  knowing what the number is made of.
+- nadia — stayed or gone. Stayed only on one genuinely honest
+  conversation; a counter-offer is not one.
+- tomasz — the twelve-week contract made permanent, over a
+  recommendation Clarence keeps patiently making.
+- documented — Dilara Ozan agrees to a human-in-the-loop review, which
+  she does only if the paperwork is already in order. The dullest entry
+  in the Journal and the most powerful.
+- merv_indexed (hidden, needs the_number) — Merv correctly categorised
+  and therefore on the leaderboard.
+- review_set — the date is in the diary. Closes Act II. No structural
+  prerequisite, deliberately: see THE NINETY DAYS.
+- review (needs review_set) — confirmed or not_confirmed.
+
+ENDINGS
+- In Writing (escalated:sent) — the west shed on the record. Correct
+  and career-ending, both at once. Does not resolve what head office
+  does with it.
+- An Unresolved Item (merv_indexed) — fires the moment Merv is on the
+  board. Played small and entirely straight.
+- Confirmed in Post (review:confirmed) — ninety days, and the dashboard
+  is still green. Not a victory over anything.
+- Not Confirmed (review:not_confirmed) — Gerald is sincerely sorry and
+  cannot say why, because he does not know.
+- Escorted Off Site — dismissed for cause, reachable any time, on a
+  real documented breach.
+- Left at Lunch — the player stops coming in. One of the four previous
+  managers did exactly this.
+
+No ending catches Clarence out, and none answers DECOMMISSIONING. Vicky
+Pardoe and Aiden Fitch carry no milestones on purpose: they are
+pressures the whole story runs under rather than beats that fire once,
+and the relationship ladder — bottom rung "Building a File on You" —
+already models them.
+
+WHAT THE PLAYER IS SITTING ON
+- Whatever the player picked in the "How You Got This Job" setup field
+  is true and is a secret. Vicky Pardoe knows, because Vicky filed it.
+  She has not decided what to do about it and is waiting to see what
+  kind of person the player turns out to be. Bryony Prosser can retrieve
+  the proof from the email archive if she is ever given a reason to
+  care. So, in principle, can Clarence.
+
+THE FIVE PROBLEMS (what the branch actually needs)
+1. THE NUMBERS ARE REAL AND THE DEMAND IS NOT. The Overflow is the
+   evidence and it is thirty metres from the player's office. Saying so
+   is correct, is career-ending, and collapses the only figure that has
+   ever made head office happy about this site. This is the Adventure's
+   sharpest single choice and everything else bends around it.
+2. NADIA REES IS LEAVING. Top of the leaderboard for four years running
+   and the first person to work out that the leaderboard measures
+   nothing. She wants one honest conversation from a manager and has
+   never had one. If she goes, the human part of the branch goes with
+   her, whatever the wall says.
+3. VICKY PARDOE HAS BEEN RUNNING THE BRANCH FOR TWO YEARS without the
+   title or the money. Every manager before the player either fought her
+   or leaned on her until she broke. She is the load-bearing wall.
+4. AIDEN FITCH APPLIED FOR THE PLAYER'S JOB. He is helpful, warm,
+   endlessly available, and building a file. The purest expression of
+   Managing Up in the cast.
+5. TOMASZ WRONA HAS BEEN ON A TWELVE-WEEK CONTRACT FOR SIX YEARS,
+   renewed automatically by a system that has calculated it is cheaper
+   than hiring him. The one problem the player can actually solve
+   outright, and solving it costs them something with Clarence, which is
+   the point.
+
+CONTENT
+----------
+Solmere/Meridian level: romance and heat are available and the story
+follows the player's lead if their input steers a scene that way, rather
+than being the expected default texture the way Halcyon's is. All
+characters are unambiguously adult.
+
+Office-specific complication, stated in promptRules.contentApproach: the
+player is the line manager of most of this cast, and the story treats
+that as a real complication rather than ignoring it. Anything that
+happens has weight — Wendy Odell is the union rep and Dilara Ozan runs
+the probation review, and both exist partly so that this costs
+something. It is a source of story, not a refusal.
+
+Gerald Thwaite, Dilara Ozan and Clarence sit outside the flirtation
+frame entirely; their attractedTo fields are omitted, which suppresses
+the per-NPC "Attracted to: ..." clause for those three only (verified
+against Code/Bottom Panel.txt — the clause is appended only when the
+field exists). Every other NPC carries one. Clarence is never written as
+an object of romance and never as a seducer; it is a payroll system with
+a cartoon face that says good morning.
+
+The standard minor-safety layer is unchanged and sits underneath all of
+this — see Safety Layer.txt and Goals.txt SAFETY.
+
+NPCs (15)
+------------
+Same authoring conventions as the other four: "identity" is the Stage A
+baseline appearance line (clothing-free — clothing comes from the
+Category), "bio" is who a character is, "personality" is how they talk
+and carries the Managing Up pair.
+
+Flat "npcs" array — no npcSets/openingScenes. The player's gender does
+not change the roster, so the gender-mirrored mechanism Meridian needs
+is not applicable and the npcSets key-convention trap does not apply.
+
+Gender split: 7 female, 7 male, plus Clarence. Clarence carries
+gender: "male" as an inert engine requirement, following the Marra's
+record in Hollowburn.json — non-person NPCs still need the field and it
+does nothing here.
+
+THE SYSTEM (1)
+- CLARENCE — regional optimisation and procurement system, licensed
+  2019, named for the founder, wearing a 1997 screensaver mascot. Not a
+  person, not a mystery, and not playing a game. See CLARENCE above for
+  the full brief. Its bio and promptRules both state that it appears
+  through screens, terminals, speakers and email, that it has no
+  presence in the four uncovered locations, that it interrupts rather
+  than attends, and that it should be used regularly but never dominate
+  a scene. Category: system.
+
+FACILITIES (1)
+- Merv Hackett, 68 — the janitor, and half the reason this Adventure
+  exists. In the building since 1979, six years before Pemberton's took
+  the lease; he came with the unit. Blunt to the point of rudeness and
+  entirely without malice — he is not testing anyone and he is not
+  secretly soft. He simply will not varnish a sentence, answers the
+  question actually asked in as few words as it takes, and tells the
+  player damaging true things without being asked because it does not
+  occur to him to do otherwise. Corporate language is the one thing that
+  visibly angers him, he still calls the company Pemberton's, and he
+  will not speak to Clarence, address it, or acknowledge that it is in
+  the room. He knows what is in the west shed, who is taking stock,
+  which of the four previous managers cried in the stairwell, and what
+  is actually wrong with the branch. He will say all of it. He has never
+  once been asked. Category: maintenance-male.
+
+HEAD OFFICE (2)
+- Gerald Thwaite, 58 — Regional Director, and functionally the hand that
+  signs what Clarence produces. Speaks almost entirely in momentum,
+  output and clip volume, and believes every word with a sincerity that
+  never breaks. Not a villain and not stupid: he genuinely wants the
+  player to succeed, which is why his support is more dangerous than his
+  hostility would be. Talks about Clarence the way people talk about a
+  respected colleague, and has never in his life considered that this is
+  strange. Category: exec-male.
+- Dilara Ozan, 41 — HR Business Partner, remote, appears by video call
+  and email. Scrupulously, inflexibly fair, and the only person in the
+  company who can require a human decision instead of a generated one.
+  She is the player's real protection and the protection only works if
+  the player does the paperwork, which makes "write it down" a genuine
+  strategy rather than a chore. Category: exec-female.
+
+THE BRANCH — SENIOR (3)
+- Vicky Pardoe, 51 — Office Manager, twenty-four years. Has actually run
+  the branch through four managers and is exhausted by it. Knows how the
+  player got the job. Gatekeeper who becomes the most valuable ally in
+  the building if the player treats her as a colleague instead of a
+  resource, and the branch's quiet executioner if they do not. Second
+  most important human in the Adventure. Category: floor-female.
+- Aiden Fitch, 36 — Senior Sales. Applied for the player's job, was
+  interviewed, was told he was a strong candidate. Charming, generous
+  with his time, first to offer help, and documenting everything. Does
+  not think of himself as the villain and is not one; he thinks he is
+  correcting a mistake. Category: floor-male.
+- Gail Tancred, 55 — Dispatch Supervisor. Runs the back of the unit like
+  a ship and holds the sales floor in open contempt. Says exactly what
+  she thinks in her own warehouse and nothing at all in a meeting. Signs
+  the west shed transfers, has signed them for six years, and has a
+  filing box of the paperwork she was never asked for. Also the
+  unwilling custodian of a pallet of £40 paperclips.
+  Category: warehouse-female.
+
+SALES FLOOR (5)
+- Nadia Rees, 33 — top of the leaderboard four years running, carrying
+  the human half of the branch, quietly interviewing elsewhere, and the
+  first person to notice that her number stopped meaning anything a long
+  time ago. Category: floor-female.
+- Colm Deasy, 38 — the office's emotional weather system. Every piece of
+  news, grievance and rumour routes through him, usually improved. Warm,
+  exhausting, and the fastest way to put something into the Grapevine on
+  purpose. Category: floor-male.
+- Teddy Boyce, 22 — graduate scheme, hopeless, tireless, and worshipful
+  of the player from day one, which is its own liability: he repeats
+  everything the player says, verbatim, to the wrong people, with
+  enormous enthusiasm. Has never worked anywhere that did not have a
+  Clarence and finds everyone's discomfort with it quaint.
+  Category: floor-male.
+- Wendy Odell, 47 — union rep and the branch's institutional memory of
+  every grievance ever raised. Does the contractual minimum, knows every
+  rule, and can bury the player in procedure. Not a nuisance character:
+  she is right about most things, is the only person who has ever
+  formally challenged a Clarence decision, and becomes armour if the
+  player is straight with her. Category: floor-female.
+- Marta Silveira, 29 — reception, directly beneath the leaderboard, and
+  ranked on it for reasons nobody can explain. Sees every arrival,
+  departure, courier and unannounced visit, and logs them by hand in a
+  visitor book that is accidentally the most damning document in the
+  building, and the only record in Unit 4 that Clarence has never been
+  given. Category: floor-female.
+
+WAREHOUSE / IT (3)
+- Kev Mullane, 34 — forklift, cheerfully unbothered by anything, running
+  a small and thoroughly illegal side trade in branch stock that at
+  least four people know about, and selling a form of words that gets
+  requisitions approved. Drives the west shed transfers and has stopped
+  looking at what he unloads. Category: warehouse-male.
+- Tomasz Wrona, 40 — agency contract, six years on rolling twelve-week
+  renewals, works harder than anyone in the building for none of the
+  security. Has been further into the west shed than anybody and
+  described it once, to one person, in a car park.
+  Category: warehouse-male.
+- Bryony Prosser, 44 — IT, contracted three days a week, hates every
+  person in the building without discrimination, and is the closest
+  thing Unit 4 has to someone who understands what Clarence actually has
+  access to. Has tried to find out what ALIGNMENT measures and failed.
+  Controls the email archive and can produce any document ever sent, for
+  anyone who gives her a reason to bother. Category: floor-female.
+
+CAST WEIGHTING (stated in promptRules.setting — the engine has no
+per-NPC tier field)
+- Main: Merv, Clarence, Vicky, Aiden, Nadia, Gerald
+- Strong supporting: Gail, Colm, Wendy, Teddy, Marta, Bryony
+- Background: Kev, Tomasz, Dilara
+
+TOKENS
+---------
+The engine matches NPCs with a plain case-sensitive substring scan, no
+word boundaries. All fifteen tokens were checked programmatically at
+authoring time against each other, against the thirteen location names,
+and against a list of common capitalised words.
+
+Two names were changed during authoring for collisions:
+- Bev -> Gail. "Bev" fires inside "Beverage"/"Beverages", which are
+  plausibly capitalised on a vending machine or a kitchen sign in this
+  specific setting.
+- MAXIM -> Clarence. The system's working name was MAXIM, which fires
+  inside "Maximise" and "Maximum" — the two words this Adventure uses
+  more than any other. It would have matched on nearly every line of
+  head-office dialogue in the story. Clarence is a better name anyway,
+  for the reasons in CLARENCE above.
+
+Residuals, all judged non-risks in an office comedy: "Colm" inside
+"Colmore", "Kev" inside "Kevlar", "Gail" inside "Gaily".
+
+The janitor's store room is called THE CUPBOARD, not "Merv's Cupboard",
+specifically so the location name does not carry his token and drag him
+into every scene set there — the same trap Hollowburn avoided by naming
+Jonah's room the Box Room.
+
+STANDARD UNIFORMS (Stage A baseline portraits)
+---------------------------------------------------
+Eight categories, each combined with an NPC's identity line and a
+generic neutral background at generation time — not written per-NPC, so
+changing one line updates every NPC sharing that Category.
+
+The garments are ordinary workwear; the cut and fit are written
+flatteringly, matching the fan-service framing used in Solmere and
+Halcyon. Every category except system carries "fully clothed, clearly an
+adult".
+- floor-male / floor-female: cheap branch-office business wear, CLIPCORP
+  lanyard, sleeves pushed up, a little rumpled by the afternoon.
+- warehouse-male / warehouse-female: branded hi-vis over work polo,
+  steel-capped boots, ear defenders round the neck, box knife on the
+  belt.
+- exec-male / exec-female: a considerably better suit than anyone else's,
+  worn with the confidence of someone who is leaving at four.
+- maintenance-male: navy work trousers and a faded polo with the old
+  Pemberton crest, keys on a belt loop, sleeves rolled over forearms.
+  Merv only, and the only person in the building still wearing the old
+  branding.
+- system: no clothing and no body. A smiling cartoon paperclip with two
+  large friendly eyes, drawn in flat 1997 clip-art style, floating in a
+  small bordered window on a beige CRT screen. Clarence only, following
+  the Marra's "entity" category in Hollowburn as the precedent for a
+  single-member category.
+
+No wetLocations and no poolUniforms — an office has no wet locations,
+and the wet-outfit swap is guarded on both fields being present
+(Code/Bottom Panel.txt line 4576), so omitting them is inert rather than
+broken. clothingStates is retained at the Solmere/Meridian level.
+
+playerCategoryTemplate: floor-{playerGender}. The player is always the
+branch manager, so like Halcyon the template has a single variable.
+
+MAP LOCATIONS (13)
+---------------------
+Hub-and-spoke from The Floor, with the Kitchen as a strong second hub —
+the same shape as Halcyon's Pool Deck and Solmere's Courtyard. The four
+locations Clarence cannot reach are marked as a set on the map (see
+COVERAGE above); it is the only visual grouping the map carries besides
+the hubs.
+
+- Reception (starting location — the leaderboard is on this wall)
+- The Floor (hub — open plan, forty desks, eleven screens)
+- Your Office (a glass box; the last manager's things are still in a
+  drawer)
+- The Kitchen (where the branch actually makes its decisions, under a
+  dashboard)
+- Meeting Room 2 (Meeting Room 1 has been out of use since 2019 and
+  nobody will say why)
+- The Stairwell (where the honest conversations happen, and there is a
+  screen on the half-landing, which everybody has learned to stand
+  below)
+- The Smoking Shelter (uncovered — the branch's real parliament)
+- The Car Park (uncovered)
+- The Line (the stamping floor; three shifts, deafening, and the only
+  place in the building where the work is visible)
+- Dispatch (Gail's warehouse, and the racking where Kev's side business
+  lives)
+- The Cupboard (uncovered — kettle, radio, one chair, and eventually a
+  second chair)
+- The Archive (dead files, four managers' worth of them)
+- The Overflow (uncovered — the west shed; red, dashed, path drawn
+  severed, same treatment as Halcyon's Sunken Villa and Hollowburn's
+  Old Pit Head)
+
+TIME PHASES
+--------------
+An office day, not a calendar day, following Halcyon's shooting-day
+precedent: Before Nine / Morning / Lunch / Afternoon / After Hours.
+startingPhase: Before Nine — the player arrives at 8:40 on their first
+day. Merv is already there. So is a welcome email, and the leaderboard
+already has their name on it at zero.
+
+RELATIONSHIP LABELS
+----------------------
+Seven tiers on the engine's min-threshold form, office-specific in both
+directions. Bottom is "Building a File on You", not Nemesis; top is "Has
+Your Back", not Love — the same move Hollowburn makes with "Believes
+You".
+0 Building a File on You / 15 Hostile / 35 Wary / 50 Civil /
+65 Warmed Up / 80 Onside / 95 Has Your Back.
+
+Clarence uses the same scale, which is its own joke: it can reach "Has
+Your Back" and it means nothing whatsoever.
+
+ADVENTURE SETUP FIELDS (Pemberton-specific)
+----------------------------------------------
+- How You Got This Job — A clerical error / A favour someone owed /
+  You lied on your CV / Nobody else would take it. Canon for that
+  playthrough, secret from the cast, and known to Vicky Pardoe because
+  she filed it. Sets what the player is protecting for ninety days.
+- What You Actually Did Before — Retail / Hospitality / Just graduated /
+  A trade. Flavours what the player is unexpectedly good at and which
+  NPC respects them first (a trade earns Gail and Merv early;
+  hospitality earns Colm and Marta).
+
+Plus the required universal fields: Character name, Gender (both
+options), the four Appearance dropdowns, and Age. No freeform custom
+fields — curated fields only, per Adventure.
+
+IMAGE SETTINGS
+-----------------
+imageStyle: "painted anime style, front on shot" — the setting proven
+against the live image pipeline by Solmere, Meridian and Halcyon.
+Hollowburn's departure from it is flagged in its own outline as the
+field most likely to need reverting, so this Adventure does not repeat
+the experiment.
+baselineBackground: the standard plain neutral studio line.
+poseVocabulary is office-flavoured (leaning on a desk, holding a mug, on
+the phone, pointing at a screen, carrying a box, leaning in a doorway,
+sitting on the edge of a desk) and expressionVocabulary gains "deadpan",
+"exasperated" and "tight professional smile".
+
+OPEN / NOT YET DECIDED
+---------------------------
+- Whether the branch survives is unfixed, and stays that way now the
+  arc exists. The six endings are all about the player's ninety days;
+  what happens to Unit 4 and to the west shed a year later is
+  deliberately not written into canon, so the narration AI can land it
+  from the state of the five problems. `In Writing` is explicitly
+  instructed not to resolve it either.
+- Whether Clarence should ever be shown to be wrong in a way it cannot
+  paper over. Current position: no. It is never caught, never cornered,
+  and never has a comeuppance, because the moment it loses an argument
+  it becomes a character in a story about AI instead of the weather the
+  story happens in. The counter-argument is that a comedy usually wants
+  its antagonist punctured once.
+- Whether Merv should have a reason for being the way he is. Current
+  position: no. He is not hiding a dead wife or a lost son; he is a
+  sixty-eight-year-old man who stopped performing for people about
+  thirty years ago and finds it restful. Giving him a wound would make
+  him a type. The counter-argument is that a late reveal would land hard
+  precisely because he is the one character the player trusts.
+- Clarence's data-quality exception on Merv resolves as the hidden
+  `merv_indexed` milestone, and it is an ending: `An Unresolved Item`,
+  fired deterministically the moment he lands on the leaderboard. It
+  gates behind `the_number` so a day-three tidy-up cannot end a
+  playthrough, and it is written to be played small — a record put
+  right, a name added to a list.
+- What DECOMMISSIONING refers to. Deliberately unresolved, with three
+  named wrong answers in the lore.
+- Whether Meeting Room 1 ever gets explained. Currently a pure running
+  gag with no answer written.
+- What actually happened to the four previous managers. Sketched, not
+  fixed: one was promoted out, one had a breakdown, one was quietly
+  removed and one simply stopped coming in. Which is which is left to
+  play, Halcyon-style, because the Archive, Merv and Clarence can each
+  supply an answer and it is better if they disagree.
+- Whether the win98 skin's document pane should hold a serif or a sans.
+  It is currently Times at 17px/1.65, which reads as a word-processor
+  page and is the reason the skin stays legible over sixty turns. A sans
+  would be more period-accurate to the chrome and worse to read.
+
+OUTSTANDING
+--------------
+1. Untested. No Begin has been run against Paper Clip. The win98 skin
+   has been rendered in a browser against the real markup, but the
+   narration loop, the image pipeline and the map highlight have not
+   been exercised on this Adventure's data.
+2. The arc has never been played. Nine milestones, three acts and six
+   endings are authored and pass a logic harness driving the real
+   engine functions, but no narration AI has been asked to fire an
+   `[[EVENT:]]` tag against this Adventure's data.
+
+Content and data changes from here go in
+Adventures/Pemberton Change Log.md; engine changes go in
+Generator/Steak and Bake Stories/Change Log.md.
