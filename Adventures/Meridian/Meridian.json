@@ -1059,12 +1059,26 @@
     "seductive gaze",
     "stern/commanding"
   ],
-  "imageStyle": "painted anime style, cyberpunk aesthetic, front on shot",
+  "imageStyle": "painted anime style, cyberpunk aesthetic, professional photo, front on shot",
   "baselineBackground": "simple plain neutral studio background, soft even lighting, no distracting scenery",
   "promptRules": {
     "setting": "The ISV Meridian is a generational research vessel, part of the Aurelia Initiative — a single-sex colony that split off from the rest of humanity three generations ago to study whether an isolated single-sex population could remain self-sufficient indefinitely. Every crew member aboard has only ever known people of their own sex their entire life, aside from fragmentary pre-launch historical records. The player was pulled unconscious from a derelict escape pod of unknown origin, found drifting near the edge of the system the Meridian was surveying — the first person unlike the crew that any of them has ever actually met in person. One exception already aboard: Miravel, a Sevari liaison the Meridian rescued years before the Initiative's own mission began. Her species falls entirely outside the human single-sex framework, so her presence doesn't contradict the crew's reaction to the player being the first human of the opposite sex any of them has ever met.",
     "tone": "Character-focused and intimate, driven by scientific curiosity, mutual fascination, and slow-building tension between professional boundaries and personal interest; romance and fan-service potential throughout.",
     "contentApproach": "Default to NOT writing explicit sexual content unprompted (fade-to-black is your instinct) — but if the player's own input clearly steers a scene that direction, follow their lead rather than refusing or deflecting.",
     "openingInstruction": "Begin the story — narrate the opening scene, the player waking in the Meridian's medbay surrounded by a crew who have never seen anyone like them before."
+  },
+  "locationScenery": {
+    "Medbay": "the Meridian's medbay, a compact shipboard clinic of backlit diagnostic screens, a scanner bed and glass instrument cabinets, lit cool blue",
+    "Bridge": "the Meridian's bridge, a ring of crew consoles facing a wide forward viewport of starfield, holographic readouts, low blue command lighting",
+    "Science Lab": "the Meridian's science lab, sample cases and analysis columns, suspended holographic models, a long white bench, cold clinical light",
+    "Engineering Bay": "the Meridian's engineering bay, a towering drive core behind mesh grating, pipework, gantries and warning stripes, orange working light",
+    "Mess Hall": "the Meridian's mess hall, long communal tables, a serving counter, a wall of viewport glass, warm light against dark ship plating",
+    "Crew Quarters": "a Meridian crew cabin, a narrow bunk, a personal locker, a small viewport of stars, soft indirect light on grey bulkheads",
+    "Observation Deck": "the Meridian's observation deck, a curved floor-to-ceiling viewport filled with stars, low benches, the room lit almost entirely by starlight",
+    "Cargo Bay": "the Meridian's cargo bay, stacked secured containers, a battered recovered escape pod, deck clamps and cargo netting, dim red-tinged light",
+    "EVA Bay": "the Meridian's EVA bay, an inner airlock door, racked hardsuits, a small watch station and monitor, harsh white light on bare deck plating",
+    "Captain's Ready Room": "the Meridian captain's ready room, a single desk, a wall display of the ship, a narrow viewport, restrained blue-lit command decor",
+    "The Atrium": "the Meridian's atrium, a bio-dome of terraced planting around a still reclamation pool, humid air, sunlamp light through the dome",
+    "Sonic Showers": "the Meridian's sonic shower block, a row of narrow upright stalls in brushed metal, wet decking, steam, soft recessed lighting"
   }
 }
