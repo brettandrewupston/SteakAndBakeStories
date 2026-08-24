@@ -793,12 +793,12 @@
     }
   ],
   "uniforms": {
-    "royal-student-male": "Solmere Academy royal student uniform: tailored deep navy long coat with refined gold piping and an embroidered royal crest, worn open over a bare, chiseled chest and defined abs, fitted dark trousers riding low on the hips and hugging a toned athletic build, sleeves rolled to bare strong forearms, polished black leather boots, tailoring cut deliberately tight and revealing to show off physique, immaculate, aristocratic, dripping with sex appeal and unmistakably provocative",
-    "royal-student-female": "Solmere Academy royal student uniform: tailored deep navy coat-dress cinched tight at the waist with elegant gold trim and an embroidered royal crest, cut low into a plunging neckline that bares generous cleavage, fitted through the bust and hips to hug every curve, an extremely short pleated skirt riding high on the thigh, sheer thigh-high stockings, polished knee-high heeled boots, formal tailoring deliberately cut to show skin — cleavage, thigh, and curve all on display — pristine, aristocratic, dripping with sex appeal and unmistakably provocative",
-    "commoner-student-male": "Solmere Academy commoner student uniform: plain charcoal-grey jacket worn open and thrown loosely over bare, toned shoulders and a defined chest, shirt hanging fully unbuttoned to expose abs, sleeves rolled to the shoulder baring muscular forearms, snug dark trousers slung low on lean hips, sturdy worn boots, no crest or noble insignia, practical fabric cut deliberately tight and revealing, stylishly disheveled, dripping with sex appeal and unmistakably provocative",
-    "commoner-student-female": "Solmere Academy commoner student uniform: fitted charcoal-grey academy blazer left unbuttoned over a crisp white blouse tied high to bare the midriff, a deep open neckline showing cleavage, an extremely short pleated skirt riding high on the hip, sheer dark thigh-high stockings with a visible strip of bare thigh above them, sturdy polished boots, no crest or noble insignia, practical fabric cut deliberately tight and short — cleavage, midriff, and thigh all on display — accentuated hourglass silhouette, neat yet playful, dripping with sex appeal and unmistakably provocative",
-    "staff-male": "Solmere Academy staff uniform: dark charcoal academy robes worn open over a bare, powerfully built chest and torso, elegant gold piping and an embroidered Academy crest, structured high collar framing a strong jaw, fitted waist emphasizing a broad-shouldered commanding physique, polished black boots, authoritative yet deliberately revealing, immaculate and prestigious, dripping with sex appeal and unmistakably provocative",
-    "staff-female": "Solmere Academy staff uniform: dark charcoal tailored coat cinched tight at a narrow waist, elegant gold piping and an embroidered Academy crest, structured high collar, a deep neckline plunging to bare cleavage, an extremely short high-cut skirt exposing the thighs, sheer stockings, polished heeled boots, authoritative tailoring deliberately cut to show skin — cleavage and thigh both on display — pristine and sophisticated, dripping with sex appeal and unmistakably provocative"
+    "royal-student-male": "Solmere Academy royal student uniform: tailored deep navy long coat with gold piping and an embroidered royal crest, open over a bare chiseled chest and defined abs, fitted dark trousers, polished black boots, immaculate and aristocratic, dripping with sex appeal and unmistakably provocative",
+    "royal-student-female": "Solmere Academy royal student uniform: tailored deep navy coat-dress cinched at the waist, gold trim and an embroidered royal crest, plunging neckline baring cleavage, an extremely short pleated skirt, sheer thigh-high stockings, heeled boots, pristine and aristocratic, dripping with sex appeal and unmistakably provocative",
+    "commoner-student-male": "Solmere Academy commoner student uniform: plain charcoal-grey jacket thrown open over bare toned shoulders, shirt unbuttoned to expose defined abs, snug dark trousers slung low, sturdy worn boots, no crest or noble insignia, stylishly disheveled, dripping with sex appeal and unmistakably provocative",
+    "commoner-student-female": "Solmere Academy commoner student uniform: charcoal-grey blazer over a white blouse tied high to bare the midriff, deep neckline showing cleavage, an extremely short pleated skirt, sheer thigh-high stockings, sturdy boots, no crest or noble insignia, neat yet playful, dripping with sex appeal and unmistakably provocative",
+    "staff-male": "Solmere Academy staff uniform: dark charcoal academy robes open over a bare, powerfully built chest, gold piping and an embroidered Academy crest, structured high collar, broad commanding shoulders, polished black boots, immaculate and prestigious, dripping with sex appeal and unmistakably provocative",
+    "staff-female": "Solmere Academy staff uniform: dark charcoal tailored coat cinched at a narrow waist, gold piping and an embroidered Academy crest, structured high collar, deep neckline baring cleavage, an extremely short high-cut skirt, sheer stockings, heeled boots, pristine and sophisticated, dripping with sex appeal and unmistakably provocative"
   },
   "wetLocations": [
     "Pool",
@@ -1017,12 +1017,26 @@
     "seductive gaze",
     "stern/commanding"
   ],
-  "imageStyle": "painted anime style, front on shot",
+  "imageStyle": "painted anime style, professional photo, front on shot",
   "baselineBackground": "simple plain neutral studio background, soft even lighting, no distracting scenery",
   "promptRules": {
     "setting": "Solmere Academy is a magic university. The player is a first-year arriving on their first day, there to learn magic. The Academy runs on a tournament/ranking structure — students duel to earn standing, resources, and reputation. The student body is split between royal-born and commoner-born students; status shapes how NPCs treat the player and which dormitory wing they live in (Royal Dormitory Wing for royal-standing players, Commoner Dormitory Wing for commoner-standing players).",
     "tone": "Action/tournament-based with romance potential and a fan-service aesthetic.",
     "contentApproach": "Default to NOT writing explicit sexual content unprompted (fade-to-black is your instinct) — but if the player's own input clearly steers a scene that direction, follow their lead rather than refusing or deflecting.",
     "openingInstruction": "Begin the story — narrate the opening scene, the player's first moments arriving at Solmere Academy."
+  },
+  "locationScenery": {
+    "Enrollment Hall": "the enrollment hall of a magic academy, a vaulted stone chamber, long registration tables, hanging house banners, light through tall lancet windows",
+    "Dueling Arena": "a stone dueling arena, a circular sand floor inside carved warding rings, tiered spectator benches, banners, bright light through a high opening",
+    "Training Grounds": "the academy training grounds, an open grass field with practice targets and rune posts, a low stone wall, the spires beyond",
+    "Library": "the Solmere Academy library, a vaulted hall of towering dark-wood shelves, brass reading lamps and drifting dust in shafts of high window light",
+    "Courtyard": "an academy courtyard, cloistered stone arcades around a central fountain, ivy on the walls, benches under a flowering tree, warm afternoon light",
+    "Dining Hall": "a grand academy dining hall, long refectory tables and benches, iron chandeliers, a high beamed ceiling, stained glass at one end",
+    "Restricted Wing": "a sealed academy wing, a dark corridor of locked iron-banded doors, warding sigils cut into the stone, one guttering lamp",
+    "Pool": "an academy bathing pool, a colonnaded stone hall around still turquoise water, steam, mosaic tiling, light from clerestory windows",
+    "Showers": "an academy shower room, stone stalls and brass fittings, wet flagstones, steam hanging in the air, dim light from small high windows",
+    "Staff Room": "the academy staff room, deep leather armchairs, a fireplace, walls of bound texts, a decanter on a side table, low firelight",
+    "Royal Dormitory Wing": "the royal dormitory wing, a panelled corridor of carved doors, portraits, a runner carpet, gilded sconces and warm light",
+    "Commoner Dormitory Wing": "the commoner dormitory wing, a plain stone corridor of numbered doors, worn boards, shared washstands, cool light through narrow windows"
   }
 }
