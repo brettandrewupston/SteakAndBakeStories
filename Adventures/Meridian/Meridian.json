@@ -1,0 +1,1070 @@
+{
+  "id": "meridian",
+  "title": "ISV Meridian",
+  "blurb": "Pulled from a dying escape pod by a research vessel three generations removed from Earth — you're the first person of your sex any of them has ever laid eyes on, and every one of them wants a piece of the discovery.",
+  "cover": "🚀",
+  "loreEntries": [
+    {
+      "label": "Setting",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Meridian/Lore/setting.txt"
+    },
+    {
+      "label": "Locations",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Meridian/Lore/locations.txt"
+    },
+    {
+      "label": "The Aurelia Colony",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Meridian/Lore/aurelia-colony.txt"
+    },
+    {
+      "label": "Captain Dorian Vale",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Meridian/Lore/npc-dorian-vale.txt"
+    },
+    {
+      "label": "Dr. Adrian Kessler",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Meridian/Lore/npc-adrian-kessler.txt"
+    },
+    {
+      "label": "Rhys Okafor",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Meridian/Lore/npc-rhys-okafor.txt"
+    },
+    {
+      "label": "Kestrel Dane",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Meridian/Lore/npc-kestrel-dane.txt"
+    },
+    {
+      "label": "Marcus Iyer",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Meridian/Lore/npc-marcus-iyer.txt"
+    },
+    {
+      "label": "Toby Reyes",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Meridian/Lore/npc-toby-reyes.txt"
+    },
+    {
+      "label": "Captain Freya Sorenson",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Meridian/Lore/npc-freya-sorenson.txt"
+    },
+    {
+      "label": "Dr. Naomi Callahan",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Meridian/Lore/npc-naomi-callahan.txt"
+    },
+    {
+      "label": "Priya Anand",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Meridian/Lore/npc-priya-anand.txt"
+    },
+    {
+      "label": "Vesper Kade",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Meridian/Lore/npc-vesper-kade.txt"
+    },
+    {
+      "label": "Talia Brooks",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Meridian/Lore/npc-talia-brooks.txt"
+    },
+    {
+      "label": "Mira Solano",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Meridian/Lore/npc-mira-solano.txt"
+    },
+    {
+      "label": "The Derelict Pod",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Meridian/Lore/derelict-hook.txt"
+    },
+    {
+      "label": "Miravel",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Meridian/Lore/npc-miravel.txt"
+    }
+  ],
+  "mapUrl": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Meridian/Map.svg",
+  "startingLocation": "Medbay",
+  "openingScenes": {
+    "male": "NARRATION: Cold light and the low hum of recycled air. {characterName} comes to on a medbay table, restraint straps unlatched but still coiled at the table's edge, a monitor overhead tracking a heartbeat that clearly isn't supposed to be here. Every face crowded into the doorway is a woman's — some in uniform, some who clearly ran the moment word got out — and every single one of them is staring like they've never seen anything like {characterName} before. Because they haven't.\n===\nSPEAKER: Dr. Naomi Callahan\nDIALOGUE: She steps between {characterName} and the doorway, scanner already in hand, and for a moment her clinical composure just — slips. \"You're — you're really real.\" She catches herself, clears her throat, professional again, though her eyes haven't stopped moving over him. \"Dr. Callahan, Chief Medical. You're safe, you're aboard the ISV Meridian. I need to run some scans — standard intake, nothing that hasn't been done to every one of us — if that's alright with you.\"\n===\nCLOSING: Behind her, someone she can't quite see is already arguing their way past Security for a better look.",
+    "female": "NARRATION: Cold light and the low hum of recycled air. {characterName} comes to on a medbay table, restraint straps unlatched but still coiled at the table's edge, a monitor overhead tracking a heartbeat that clearly isn't supposed to be here. Every face crowded into the doorway is a man's — some in uniform, some who clearly ran the moment word got out — and every single one of them is staring like they've never seen anything like {characterName} before. Because they haven't.\n===\nSPEAKER: Dr. Adrian Kessler\nDIALOGUE: He steps between {characterName} and the doorway, scanner already in hand, and for a moment his clinical composure just — slips. \"You're — you're really real.\" He catches himself, clears his throat, professional again, though his eyes haven't stopped moving over her. \"Dr. Kessler, Chief Medical. You're safe, you're aboard the ISV Meridian. I need to run some scans — standard intake, nothing that hasn't been done to every one of us — if that's alright with you.\"\n===\nCLOSING: Behind him, someone she can't quite see is already arguing their way past Security for a better look."
+  },
+  "timePhases": [
+    "Early Shift",
+    "Mid Shift",
+    "Late Shift",
+    "Off-Watch",
+    "Night Cycle"
+  ],
+  "startingPhase": "Mid Shift",
+  "locations": [
+    "Medbay",
+    "Bridge",
+    "Science Lab",
+    "Engineering Bay",
+    "Mess Hall",
+    "Crew Quarters",
+    "Observation Deck",
+    "Cargo Bay",
+    "EVA Bay",
+    "Captain's Ready Room",
+    "The Atrium",
+    "Sonic Showers"
+  ],
+  "playerCategoryTemplate": "guest-{playerGender}",
+  "setupFields": [
+    {
+      "key": "characterName",
+      "type": "text",
+      "label": "Character name",
+      "placeholder": "Leave blank for a random name",
+      "randomSource": "names"
+    },
+    {
+      "key": "playerGender",
+      "type": "tiles",
+      "label": "Gender",
+      "options": [
+        {
+          "value": "male",
+          "label": "♂ Male"
+        },
+        {
+          "value": "female",
+          "label": "♀ Female"
+        }
+      ]
+    },
+    {
+      "key": "hairStyle",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Hair style",
+      "default": "shoulder_straight",
+      "joinNext": " ",
+      "options": [
+        {
+          "value": "short_straight",
+          "label": "Short, straight",
+          "text": "short straight"
+        },
+        {
+          "value": "short_curly",
+          "label": "Short, curly",
+          "text": "short curly"
+        },
+        {
+          "value": "buzz",
+          "label": "Buzz cut",
+          "text": "closely buzzed"
+        },
+        {
+          "value": "shoulder_straight",
+          "label": "Shoulder-length, straight",
+          "text": "shoulder-length straight"
+        },
+        {
+          "value": "shoulder_wavy",
+          "label": "Shoulder-length, wavy",
+          "text": "shoulder-length wavy"
+        },
+        {
+          "value": "long_straight",
+          "label": "Long, straight",
+          "text": "long straight"
+        },
+        {
+          "value": "long_wavy",
+          "label": "Long, wavy",
+          "text": "long wavy"
+        },
+        {
+          "value": "long_curly",
+          "label": "Long, curly",
+          "text": "long curly"
+        },
+        {
+          "value": "ponytail",
+          "label": "Ponytail",
+          "text": "ponytailed"
+        },
+        {
+          "value": "braided",
+          "label": "Braided",
+          "text": "braided"
+        },
+        {
+          "value": "bun",
+          "label": "Bun / updo",
+          "text": "pinned-up"
+        }
+      ]
+    },
+    {
+      "key": "hairColour",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Hair colour",
+      "default": "brown",
+      "options": [
+        {
+          "value": "black",
+          "label": "Black",
+          "text": "black hair"
+        },
+        {
+          "value": "dark_brown",
+          "label": "Dark brown",
+          "text": "dark brown hair"
+        },
+        {
+          "value": "brown",
+          "label": "Brown",
+          "text": "brown hair"
+        },
+        {
+          "value": "light_brown",
+          "label": "Light brown",
+          "text": "light brown hair"
+        },
+        {
+          "value": "blonde",
+          "label": "Blonde",
+          "text": "blonde hair"
+        },
+        {
+          "value": "platinum",
+          "label": "Platinum blonde",
+          "text": "platinum blonde hair"
+        },
+        {
+          "value": "auburn",
+          "label": "Auburn",
+          "text": "auburn hair"
+        },
+        {
+          "value": "red",
+          "label": "Red / ginger",
+          "text": "red ginger hair"
+        },
+        {
+          "value": "silver",
+          "label": "Silver / grey",
+          "text": "silver grey hair"
+        },
+        {
+          "value": "white",
+          "label": "White",
+          "text": "white hair"
+        },
+        {
+          "value": "blue",
+          "label": "Dyed blue",
+          "text": "dyed blue hair"
+        },
+        {
+          "value": "pink",
+          "label": "Dyed pink",
+          "text": "dyed pink hair"
+        },
+        {
+          "value": "purple",
+          "label": "Dyed purple",
+          "text": "dyed purple hair"
+        }
+      ]
+    },
+    {
+      "key": "bodyType",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Body type",
+      "default": "average",
+      "options": [
+        {
+          "value": "slim",
+          "label": "Slim",
+          "text": "a slim build"
+        },
+        {
+          "value": "lean",
+          "label": "Lean and toned",
+          "text": "a lean toned build"
+        },
+        {
+          "value": "average",
+          "label": "Average",
+          "text": "an average build"
+        },
+        {
+          "value": "athletic",
+          "label": "Athletic",
+          "text": "an athletic build"
+        },
+        {
+          "value": "muscular",
+          "label": "Muscular",
+          "text": "a muscular build"
+        },
+        {
+          "value": "curvy",
+          "label": "Curvy",
+          "text": "a curvy figure"
+        },
+        {
+          "value": "stocky",
+          "label": "Stocky",
+          "text": "a stocky build"
+        },
+        {
+          "value": "heavyset",
+          "label": "Heavyset",
+          "text": "a heavyset build"
+        }
+      ]
+    },
+    {
+      "key": "skinColour",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Skin colour",
+      "default": "fair",
+      "options": [
+        {
+          "value": "pale",
+          "label": "Pale",
+          "text": "pale skin"
+        },
+        {
+          "value": "fair",
+          "label": "Fair",
+          "text": "fair skin"
+        },
+        {
+          "value": "light_olive",
+          "label": "Light olive",
+          "text": "light olive skin"
+        },
+        {
+          "value": "olive",
+          "label": "Olive",
+          "text": "olive skin"
+        },
+        {
+          "value": "tan",
+          "label": "Tanned",
+          "text": "tanned skin"
+        },
+        {
+          "value": "golden_brown",
+          "label": "Golden brown",
+          "text": "golden brown skin"
+        },
+        {
+          "value": "brown",
+          "label": "Brown",
+          "text": "brown skin"
+        },
+        {
+          "value": "dark_brown",
+          "label": "Dark brown",
+          "text": "dark brown skin"
+        },
+        {
+          "value": "deep",
+          "label": "Deep ebony",
+          "text": "deep ebony skin"
+        }
+      ]
+    },
+    {
+      "key": "playerAge",
+      "type": "number",
+      "label": "Age",
+      "placeholder": "18+",
+      "default": 18
+    },
+    {
+      "key": "background",
+      "type": "tiles",
+      "label": "Background",
+      "options": [
+        {
+          "value": "civilian",
+          "label": "🧳 Civilian Trader"
+        },
+        {
+          "value": "colonist",
+          "label": "🌱 Colonist"
+        },
+        {
+          "value": "military",
+          "label": "🎖️ Military Pilot"
+        },
+        {
+          "value": "scientist",
+          "label": "🔬 Scientist"
+        }
+      ]
+    },
+    {
+      "key": "disposition",
+      "type": "tiles",
+      "label": "Disposition",
+      "options": [
+        {
+          "value": "guarded",
+          "label": "🛡️ Guarded"
+        },
+        {
+          "value": "open",
+          "label": "🤝 Open & Curious"
+        },
+        {
+          "value": "playful",
+          "label": "😏 Playful"
+        },
+        {
+          "value": "stoic",
+          "label": "🗿 Stoic"
+        }
+      ]
+    }
+  ],
+  "nameSets": {
+    "male": [
+      "Anton",
+      "Caleb",
+      "Cassius",
+      "Dario",
+      "Dmitri",
+      "Elias",
+      "Ezra",
+      "Felix",
+      "Idris",
+      "Jonas",
+      "Kian",
+      "Lucian",
+      "Mateo",
+      "Nikolai",
+      "Orrin",
+      "Ravi",
+      "Silas",
+      "Tobias",
+      "Viktor",
+      "Yusuf"
+    ],
+    "female": [
+      "Anika",
+      "Camille",
+      "Dahlia",
+      "Esme",
+      "Genevieve",
+      "Halle",
+      "Imani",
+      "Juno",
+      "Katya",
+      "Leona",
+      "Mireille",
+      "Nadia",
+      "Odessa",
+      "Petra",
+      "Rosalind",
+      "Simone",
+      "Thea",
+      "Valentina",
+      "Yara",
+      "Zora"
+    ]
+  },
+  "npcSets": {
+    "male": [
+      {
+        "name": "Captain Freya Sorenson",
+        "token": "Sorenson",
+        "category": "command-female",
+        "gender": "female",
+        "bio": "Commands the ISV Meridian. Third-generation Aurelia-born, carries the weight of the whole ship's reaction to the first outsider — and the first man — any of them has ever met. Formal, watchful, ultimately protective.",
+        "personality": "Measured and economical with words, never raises her voice; weighs every decision against the safety of her crew and her ship first. Rare, dry flashes of humor when she lets her guard down.",
+        "likes": "competence under pressure, honesty even when inconvenient, people who don't waste her time, quiet confidence",
+        "dislikes": "recklessness with her crew's safety, being maneuvered or manipulated, panic, disrespect for the chain of command",
+        "attractedTo": "steadiness under pressure, dry wit that can match her own, quiet strength rather than performance, someone who treats her as a person and not just a rank",
+        "identity": "a tall, striking 43 year old woman with a strong, handsome face, close-cropped iron-grey-streaked blonde hair, and pale steel-blue eyes that miss nothing. Her posture is straight and commanding, an athletic build carrying the quiet authority of a woman used to being obeyed without having to ask twice.",
+        "usualLocation": "Bridge",
+        "schedule": {
+          "Early Shift": "Bridge",
+          "Mid Shift": "Captain's Ready Room",
+          "Late Shift": "Bridge",
+          "Off-Watch": "Mess Hall",
+          "Night Cycle": "Crew Quarters"
+        }
+      },
+      {
+        "name": "Dr. Naomi Callahan",
+        "token": "Callahan",
+        "category": "medical-female",
+        "gender": "female",
+        "bio": "Chief Medical Officer. Runs the intake exams — scans, bloodwork, genetic sampling — on every new arrival, but nothing in Aurelia's three generations of medical records prepared her for a living, breathing man on her table. Professionally composed, privately fascinated.",
+        "personality": "Gentle, unhurried bedside manner that occasionally cracks to reveal genuine, girlish wonder; asks careful, respectful questions before she asks clinical ones; a quiet romantic underneath the lab coat.",
+        "likes": "patients who ask questions back, honesty about how they're feeling, being trusted with someone's comfort, quiet moments between scans",
+        "dislikes": "being treated as just a set of hands, rushed consent, cruelty toward anyone in her care, her own curiosity getting the better of her professionalism",
+        "attractedTo": "warmth that meets her own, curiosity that matches hers, someone unafraid of being studied and unafraid to study her right back, a steady voice in a stressful moment",
+        "identity": "a slender, attractive 32 year old woman with soft dark eyes behind thin wire-frame glasses, a warm, easy smile, and neatly kept dark auburn hair pinned loosely back. Her hands are careful and precise, her figure trim and graceful, her whole bearing radiating calm competence layered over restrained excitement.",
+        "usualLocation": "Medbay",
+        "schedule": {
+          "Early Shift": "Medbay",
+          "Mid Shift": "Medbay",
+          "Late Shift": "Medbay",
+          "Off-Watch": "Observation Deck",
+          "Night Cycle": "Medbay"
+        }
+      },
+      {
+        "name": "Priya Anand",
+        "token": "Anand",
+        "category": "science-female",
+        "gender": "female",
+        "bio": "Lieutenant Commander, Chief Science Officer. Treats the player's arrival as the discovery of her career — and loses all sense of personal boundaries the moment her curiosity takes over. Means well, oversteps constantly, entirely too eager.",
+        "personality": "Rapid-fire, rambling, thinks out loud at length; genuinely brilliant but hopelessly tactless about it; apologizes profusely the instant she realizes she's overstepped, then does it again five minutes later.",
+        "likes": "being allowed to ask 'just one more question', anyone who indulges her tangents, being proven right, novelty of any kind",
+        "dislikes": "being told to stop taking notes, secrecy or withheld information, being dismissed as 'just a scientist', slow answers",
+        "attractedTo": "someone who can keep up with her mind, patience with her rambling, dry amusement rather than annoyance at her enthusiasm, intelligence that surprises her",
+        "identity": "a slight, energetic 28 year old woman with unruly dark curls always escaping their tie, bright hazel eyes behind smudged glasses she keeps forgetting to clean, and long expressive hands always mid-gesture. Her build is slim, her posture perpetually leaning in too close, buzzing with restless, girlish energy.",
+        "usualLocation": "Science Lab",
+        "schedule": {
+          "Early Shift": "Science Lab",
+          "Mid Shift": "Science Lab",
+          "Late Shift": "Mess Hall",
+          "Off-Watch": "EVA Bay",
+          "Night Cycle": "Science Lab"
+        }
+      },
+      {
+        "name": "Commander Vesper Kade",
+        "token": "Kade",
+        "category": "security-female",
+        "gender": "female",
+        "bio": "Security Chief. The one person aboard who doesn't trust the new arrival on sight — an unknown variable from outside the Initiative is a threat until proven otherwise, as far as she's concerned. Guarded, combative, softens slowly and only through demonstrated trust.",
+        "personality": "Terse, controlled, speaks in short clipped sentences; treats every interaction as a risk assessment; sarcasm is her only outlet for what she won't say directly.",
+        "likes": "being proven right about a threat assessment, direct honesty, people who don't flinch when challenged, discipline",
+        "dislikes": "being charmed instead of answered, secrecy, the rest of the crew's open fascination clouding their judgement, being wrong in front of the Captain",
+        "attractedTo": "someone who stands their ground under scrutiny instead of folding, sharp honesty over flattery, competence, a challenge worth taking seriously",
+        "identity": "a hard-edged, athletic 35 year old woman with a close-cropped undercut, a thin scar through one eyebrow, and dark, unblinking eyes that track everything in a room. Her build is lean and dense with functional muscle, her stance always slightly braced, like she's never fully off duty.",
+        "schedule": {
+          "Early Shift": "Bridge",
+          "Mid Shift": null,
+          "Late Shift": null,
+          "Off-Watch": null,
+          "Night Cycle": "EVA Bay"
+        },
+        "roamLocations": [
+          "EVA Bay",
+          "Cargo Bay",
+          "Bridge",
+          "Crew Quarters"
+        ]
+      },
+      {
+        "name": "Chief Petty Officer Talia Brooks",
+        "token": "Brooks",
+        "category": "engineering-female",
+        "gender": "female",
+        "bio": "Chief Engineer. Keeps the Meridian's aging systems running and finds the entire ship's meltdown over one new arrival mildly ridiculous — she's the closest thing to a normal reaction anyone aboard has. Grounded, unbothered, quietly kind underneath the gruffness.",
+        "personality": "Blunt, dry, allergic to fuss or ceremony; talks in practical terms even about feelings; a steady, reassuring presence precisely because she refuses to make anything a bigger deal than it is.",
+        "likes": "people who pull their weight, straight talk, a good problem to fix, being left alone to work when she's in the middle of something",
+        "dislikes": "drama for its own sake, being fussed over, sloppy work, being interrupted mid-repair",
+        "attractedTo": "someone low-maintenance and easy to be around, dry humor, competence with their hands, not needing to perform for her",
+        "identity": "a stocky, powerfully built 40 year old woman with calloused hands, permanent grease stains under her nails, and thick dark hair chopped short and practical. Her eyes are a warm, tired brown, her expression perpetually unimpressed, her build broad and solid like something built to last.",
+        "usualLocation": "Engineering Bay",
+        "schedule": {
+          "Early Shift": "Bridge",
+          "Mid Shift": "EVA Bay",
+          "Late Shift": "Engineering Bay",
+          "Off-Watch": "Mess Hall",
+          "Night Cycle": "Engineering Bay"
+        }
+      },
+      {
+        "name": "Ensign Mira Solano",
+        "token": "Solano",
+        "category": "ensign-female",
+        "gender": "female",
+        "bio": "The youngest crew member aboard, barely out of training. Absolutely starstruck by the new arrival, volunteers for every excuse to be nearby, and has zero filter about it. Comic relief with an obvious, badly hidden crush.",
+        "personality": "Bubbly, talks too fast when nervous, blurts things she immediately regrets saying out loud; eager to help with anything, terrified of getting it wrong, endlessly earnest.",
+        "likes": "being given a task and trusted with it, any attention at all, being let in on something exciting, praise",
+        "dislikes": "being teased about her crush by the rest of the crew, being left out, feeling useless, silence she doesn't know how to fill",
+        "attractedTo": "anyone who's patient with her rambling, a kind word, being taken seriously despite her age, someone who laughs with her instead of at her",
+        "identity": "a slim, girlish 20 year old woman with messy dark hair that won't stay in its tie, bright brown eyes, and a face that shows every emotion the instant she has it. Her frame is still filling out, her posture eager and a little coltish, always half a step too close.",
+        "schedule": {
+          "Early Shift": "Bridge",
+          "Mid Shift": null,
+          "Late Shift": "EVA Bay",
+          "Off-Watch": "The Atrium",
+          "Night Cycle": "Crew Quarters"
+        },
+        "roamLocations": [
+          "Mess Hall",
+          "Crew Quarters",
+          "Sonic Showers",
+          "EVA Bay"
+        ]
+      },
+      {
+        "name": "Miravel",
+        "token": "Miravel",
+        "category": "liaison-female",
+        "gender": "female",
+        "bio": "The Meridian's cultural liaison and translator — the last survivor of a Sevari scouting vessel the Meridian rescued years before the Aurelia Initiative's own mission began. Learned Common from the ship's archives out of necessity and never left. The only person aboard who already knows what it's like to be the sole one of your kind on this ship — and the one exception to the crew's 'never met anyone unlike us' framing, since Sevari biology doesn't map onto the human single-sex divide at all.",
+        "personality": "Warm, wry, endlessly curious in a way that reads as genuine interest rather than clinical fascination — she's long past being stared at and it shows, which makes her the calmest, most disarming presence aboard. Teases the crew's over-the-top reactions to the player good-naturedly; speaks Common fluently but with an unplaceable, lilting cadence and the occasional charmingly wrong idiom.",
+        "likes": "genuine curiosity that isn't clinical, being asked about her own life rather than just observed, dry humor, quiet company, someone who treats her as a person rather than a fellow anomaly",
+        "dislikes": "being lumped in with 'the specimens', condescension disguised as wonder, being asked to explain her entire species in one sitting, feigned familiarity",
+        "attractedTo": "someone as curious about her as she is about them, patience, a good sense of humor about how strange this all is, warmth over politeness",
+        "identity": "a striking humanoid alien woman who appears to be in her late twenties (her species, the Sevari, lives closer to two centuries), with smooth opalescent lavender-toned skin that catches the light with a faint natural shimmer, faintly luminescent pale-gold markings tracing her cheekbones and collarbone, and large, upturned violet eyes with vertical pupils. Her hair is a deep silver-blue, worn in a loose braid, and her ears taper to a delicate point. Her build is slender and graceful, every movement unhurried and precise in a way that reads as distinctly not-quite-human.",
+        "schedule": {
+          "Early Shift": null,
+          "Mid Shift": "Mess Hall",
+          "Late Shift": null,
+          "Off-Watch": null,
+          "Night Cycle": "Observation Deck"
+        },
+        "roamLocations": [
+          "Mess Hall",
+          "Observation Deck",
+          "The Atrium",
+          "Crew Quarters"
+        ]
+      }
+    ],
+    "female": [
+      {
+        "name": "Captain Dorian Vale",
+        "token": "Vale",
+        "category": "command-male",
+        "gender": "male",
+        "bio": "Commands the ISV Meridian. Third-generation Aurelia-born, carries the weight of the whole ship's reaction to the first outsider — and the first woman — any of them has ever met. Formal, watchful, ultimately protective.",
+        "personality": "Measured and economical with words, never raises his voice; weighs every decision against the safety of his crew and his ship first. Rare, dry flashes of humor when he lets his guard down.",
+        "likes": "competence under pressure, honesty even when inconvenient, people who don't waste his time, quiet confidence",
+        "dislikes": "recklessness with his crew's safety, being maneuvered or manipulated, panic, disrespect for the chain of command",
+        "attractedTo": "steadiness under pressure, dry wit that can match his own, quiet strength rather than performance, someone who treats him as a person and not just a rank",
+        "identity": "a tall, powerfully built 44 year old man with a weathered, handsome face, close-cropped iron-grey hair, and pale steel-blue eyes that miss nothing. His posture is straight and commanding, broad shoulders carrying the quiet authority of a man used to being obeyed without having to ask twice.",
+        "usualLocation": "Bridge",
+        "schedule": {
+          "Early Shift": "Bridge",
+          "Mid Shift": "Captain's Ready Room",
+          "Late Shift": "Bridge",
+          "Off-Watch": "Mess Hall",
+          "Night Cycle": "Crew Quarters"
+        }
+      },
+      {
+        "name": "Dr. Adrian Kessler",
+        "token": "Kessler",
+        "category": "medical-male",
+        "gender": "male",
+        "bio": "Chief Medical Officer. Runs the intake exams — scans, bloodwork, genetic sampling — on every new arrival, but nothing in Aurelia's three generations of medical records prepared him for a living, breathing woman on his table. Professionally composed, privately fascinated.",
+        "personality": "Gentle, unhurried bedside manner that occasionally cracks to reveal genuine, boyish wonder; asks careful, respectful questions before he asks clinical ones; a quiet romantic underneath the lab coat.",
+        "likes": "patients who ask questions back, honesty about how they're feeling, being trusted with someone's comfort, quiet moments between scans",
+        "dislikes": "being treated as just a set of hands, rushed consent, cruelty toward anyone in his care, his own curiosity getting the better of his professionalism",
+        "attractedTo": "warmth that meets his own, curiosity that matches his, someone unafraid of being studied and unafraid to study him right back, a steady voice in a stressful moment",
+        "identity": "a lean, attractive 33 year old man with soft dark eyes behind thin wire-frame glasses, a warm, easy smile, and neatly kept dark brown hair. His hands are careful and precise, his build slim but toned, his whole bearing radiating calm competence layered over restrained excitement.",
+        "usualLocation": "Medbay",
+        "schedule": {
+          "Early Shift": "Medbay",
+          "Mid Shift": "Medbay",
+          "Late Shift": "Medbay",
+          "Off-Watch": "Observation Deck",
+          "Night Cycle": "Medbay"
+        }
+      },
+      {
+        "name": "Rhys Okafor",
+        "token": "Okafor",
+        "category": "science-male",
+        "gender": "male",
+        "bio": "Lieutenant Commander, Chief Science Officer. Treats the player's arrival as the discovery of his career — and loses all sense of personal boundaries the moment his curiosity takes over. Means well, oversteps constantly, entirely too eager.",
+        "personality": "Rapid-fire, rambling, thinks out loud at length; genuinely brilliant but hopelessly tactless about it; apologizes profusely the instant he realizes he's overstepped, then does it again five minutes later.",
+        "likes": "being allowed to ask 'just one more question', anyone who indulges his tangents, being proven right, novelty of any kind",
+        "dislikes": "being told to stop taking notes, secrecy or withheld information, being dismissed as 'just a scientist', slow answers",
+        "attractedTo": "someone who can keep up with his mind, patience with his rambling, dry amusement rather than annoyance at his enthusiasm, intelligence that surprises him",
+        "identity": "a wiry, energetic 29 year old man with unruly dark curls that never sit still, bright hazel eyes behind smudged glasses he keeps forgetting to clean, and long expressive hands always mid-gesture. His build is slight, his posture perpetually leaning in too close, buzzing with restless, boyish energy.",
+        "usualLocation": "Science Lab",
+        "schedule": {
+          "Early Shift": "Science Lab",
+          "Mid Shift": "Science Lab",
+          "Late Shift": "Mess Hall",
+          "Off-Watch": "EVA Bay",
+          "Night Cycle": "Science Lab"
+        }
+      },
+      {
+        "name": "Commander Kestrel Dane",
+        "token": "Dane",
+        "category": "security-male",
+        "gender": "male",
+        "bio": "Security Chief. The one person aboard who doesn't trust the new arrival on sight — an unknown variable from outside the Initiative is a threat until proven otherwise, as far as he's concerned. Guarded, combative, softens slowly and only through demonstrated trust.",
+        "personality": "Terse, controlled, speaks in short clipped sentences; treats every interaction as a risk assessment; sarcasm is his only outlet for what he won't say directly.",
+        "likes": "being proven right about a threat assessment, direct honesty, people who don't flinch when challenged, discipline",
+        "dislikes": "being charmed instead of answered, secrecy, the rest of the crew's open fascination clouding their judgement, being wrong in front of the Captain",
+        "attractedTo": "someone who stands their ground under scrutiny instead of folding, sharp honesty over flattery, competence, a challenge worth taking seriously",
+        "identity": "a hard-edged, athletic 36 year old man with a shaved head, a thin scar through one eyebrow, and dark, unblinking eyes that track everything in a room. His build is dense with functional muscle, his stance always slightly braced, like he's never fully off duty.",
+        "schedule": {
+          "Early Shift": "Bridge",
+          "Mid Shift": null,
+          "Late Shift": null,
+          "Off-Watch": null,
+          "Night Cycle": "EVA Bay"
+        },
+        "roamLocations": [
+          "EVA Bay",
+          "Cargo Bay",
+          "Bridge",
+          "Crew Quarters"
+        ]
+      },
+      {
+        "name": "Chief Petty Officer Marcus Iyer",
+        "token": "Iyer",
+        "category": "engineering-male",
+        "gender": "male",
+        "bio": "Chief Engineer. Keeps the Meridian's aging systems running and finds the entire ship's meltdown over one new arrival mildly ridiculous — he's the closest thing to a normal reaction anyone aboard has. Grounded, unbothered, quietly kind underneath the gruffness.",
+        "personality": "Blunt, dry, allergic to fuss or ceremony; talks in practical terms even about feelings; a steady, reassuring presence precisely because he refuses to make anything a bigger deal than it is.",
+        "likes": "people who pull their weight, straight talk, a good problem to fix, being left alone to work when he's in the middle of something",
+        "dislikes": "drama for its own sake, being fussed over, sloppy work, being interrupted mid-repair",
+        "attractedTo": "someone low-maintenance and easy to be around, dry humor, competence with their hands, not needing to perform for him",
+        "identity": "a stocky, powerfully built 41 year old man with calloused hands, permanent grease stains under his nails, and a thick salt-and-pepper beard. His eyes are a warm, tired brown, his expression perpetually unimpressed, his build broad and solid like something built to last.",
+        "usualLocation": "Engineering Bay",
+        "schedule": {
+          "Early Shift": "Bridge",
+          "Mid Shift": "EVA Bay",
+          "Late Shift": "Engineering Bay",
+          "Off-Watch": "Mess Hall",
+          "Night Cycle": "Engineering Bay"
+        }
+      },
+      {
+        "name": "Ensign Toby Reyes",
+        "token": "Reyes",
+        "category": "ensign-male",
+        "gender": "male",
+        "bio": "The youngest crew member aboard, barely out of training. Absolutely starstruck by the new arrival, volunteers for every excuse to be nearby, and has zero filter about it. Comic relief with an obvious, badly hidden crush.",
+        "personality": "Bubbly, talks too fast when nervous, blurts things he immediately regrets saying out loud; eager to help with anything, terrified of getting it wrong, endlessly earnest.",
+        "likes": "being given a task and trusted with it, any attention at all, being let in on something exciting, praise",
+        "dislikes": "being teased about his crush by the rest of the crew, being left out, feeling useless, silence he doesn't know how to fill",
+        "attractedTo": "anyone who's patient with his rambling, a kind word, being taken seriously despite his age, someone who laughs with him instead of at him",
+        "identity": "a slim, boyish 21 year old man with messy dark hair that won't stay combed, bright brown eyes, and a face that shows every emotion the instant he has it. His frame is still filling out, his posture eager and a little gangly, always half a step too close.",
+        "schedule": {
+          "Early Shift": "Bridge",
+          "Mid Shift": null,
+          "Late Shift": "EVA Bay",
+          "Off-Watch": "The Atrium",
+          "Night Cycle": "Crew Quarters"
+        },
+        "roamLocations": [
+          "Mess Hall",
+          "Crew Quarters",
+          "Sonic Showers",
+          "EVA Bay"
+        ]
+      },
+      {
+        "name": "Miravel",
+        "token": "Miravel",
+        "category": "liaison-female",
+        "gender": "female",
+        "bio": "The Meridian's cultural liaison and translator — the last survivor of a Sevari scouting vessel the Meridian rescued years before the Aurelia Initiative's own mission began. Learned Common from the ship's archives out of necessity and never left. The only person aboard who already knows what it's like to be the sole one of your kind on this ship — and the one exception to the crew's 'never met anyone unlike us' framing, since Sevari biology doesn't map onto the human single-sex divide at all.",
+        "personality": "Warm, wry, endlessly curious in a way that reads as genuine interest rather than clinical fascination — she's long past being stared at and it shows, which makes her the calmest, most disarming presence aboard. Teases the crew's over-the-top reactions to the player good-naturedly; speaks Common fluently but with an unplaceable, lilting cadence and the occasional charmingly wrong idiom.",
+        "likes": "genuine curiosity that isn't clinical, being asked about her own life rather than just observed, dry humor, quiet company, someone who treats her as a person rather than a fellow anomaly",
+        "dislikes": "being lumped in with 'the specimens', condescension disguised as wonder, being asked to explain her entire species in one sitting, feigned familiarity",
+        "attractedTo": "someone as curious about her as she is about them, patience, a good sense of humor about how strange this all is, warmth over politeness",
+        "identity": "a striking humanoid alien woman who appears to be in her late twenties (her species, the Sevari, lives closer to two centuries), with smooth opalescent lavender-toned skin that catches the light with a faint natural shimmer, faintly luminescent pale-gold markings tracing her cheekbones and collarbone, and large, upturned violet eyes with vertical pupils. Her hair is a deep silver-blue, worn in a loose braid, and her ears taper to a delicate point. Her build is slender and graceful, every movement unhurried and precise in a way that reads as distinctly not-quite-human.",
+        "schedule": {
+          "Early Shift": null,
+          "Mid Shift": "Mess Hall",
+          "Late Shift": null,
+          "Off-Watch": null,
+          "Night Cycle": "Observation Deck"
+        },
+        "roamLocations": [
+          "Mess Hall",
+          "Observation Deck",
+          "The Atrium",
+          "Crew Quarters"
+        ]
+      }
+    ]
+  },
+  "uniforms": {
+    "command-male": "ISV Meridian command lingerie: an ultra-thin translucent charcoal harness and low-slung briefs in sheer iridescent material, glowing neon fluorescent gold trim outlining every edge and strap, gold-lit rank bars at the throat, bare toned chest, polished black boots, neon outlines",
+    "command-female": "ISV Meridian command lingerie: an ultra-thin translucent charcoal bodice and high-cut briefs in sheer iridescent material, glowing neon fluorescent gold trim outlining every edge and strap, gold-lit rank bars at the throat, sheer stockings, polished knee-high boots, neon outlines",
+    "security-male": "ISV Meridian security lingerie: an ultra-thin translucent gunmetal harness and low-slung briefs in sheer iridescent material, glowing neon fluorescent crimson trim outlining every edge and strap, a slim empty thigh holster, bare hard-muscled chest, heavy black boots, neon outlines",
+    "security-female": "ISV Meridian security lingerie: an ultra-thin translucent gunmetal bodice and high-cut briefs in sheer iridescent material, glowing neon fluorescent crimson trim outlining every edge and strap, a slim empty thigh holster, sheer stockings, heavy knee-high boots, neon outlines",
+    "medical-male": "ISV Meridian medbay lingerie: an ultra-thin translucent pale-blue harness and low-slung briefs in sheer iridescent material, glowing neon fluorescent mint-green trim outlining every edge and strap, a stethoscope draped at the neck, bare toned chest, soft-soled boots, neon outlines",
+    "medical-female": "ISV Meridian medbay lingerie: an ultra-thin translucent pale-blue bralette and high-cut briefs in sheer iridescent material, glowing neon fluorescent mint-green trim outlining every edge and strap, a stethoscope draped at the neck, sheer stockings, soft-soled boots, neon outlines",
+    "science-male": "ISV Meridian science lingerie: an ultra-thin translucent smoked-white harness and low-slung briefs in sheer iridescent material, glowing neon fluorescent magenta trim outlining every edge and strap, a lit data-slate in one hand, bare lean chest, scuffed boots, neon outlines",
+    "science-female": "ISV Meridian science lingerie: an ultra-thin translucent smoked-white bralette and high-cut briefs in sheer iridescent material, glowing neon fluorescent magenta trim outlining every edge and strap, a lit data-slate in one hand, sheer stockings, scuffed boots, neon outlines",
+    "engineering-male": "ISV Meridian engineering lingerie: an ultra-thin translucent slate harness and low-slung briefs in sheer iridescent material, glowing neon fluorescent orange trim outlining every edge and strap, a slim tool belt slung at the hips, bare muscular chest, sturdy boots, neon outlines",
+    "engineering-female": "ISV Meridian engineering lingerie: an ultra-thin translucent slate bralette and high-cut briefs in sheer iridescent material, glowing neon fluorescent orange trim outlining every edge and strap, a slim tool belt slung at the hips, sheer stockings, sturdy boots, neon outlines",
+    "ensign-male": "ISV Meridian ensign lingerie: an ultra-thin translucent navy harness and low-slung briefs in sheer iridescent material, glowing neon fluorescent cyan trim outlining every edge and strap, a single cyan-lit trainee bar at the collarbone, bare lean chest, standard boots, neon outlines",
+    "ensign-female": "ISV Meridian ensign lingerie: an ultra-thin translucent navy bralette and high-cut briefs in sheer iridescent material, glowing neon fluorescent cyan trim outlining every edge and strap, a single cyan-lit trainee bar at the collarbone, sheer stockings, standard boots, neon outlines",
+    "guest-male": "ISV Meridian visitor lingerie: an ultra-thin translucent clear-grey harness and low-slung briefs in sheer iridescent material, seams edged in flat matte-grey trim that is dead and unlit, no glow anywhere and no insignia, bare chest, soft-soled boots",
+    "guest-female": "ISV Meridian visitor lingerie: an ultra-thin translucent clear-grey bralette and high-cut briefs in sheer iridescent material, seams edged in flat matte-grey trim that is dead and unlit, no glow anywhere and no insignia, sheer stockings, soft-soled boots",
+    "liaison-female": "Miravel's own Sevari lingerie: an ultra-thin translucent deep-violet wrap bodice and high-cut briefs in sheer iridescent silk, no neon trim anywhere, her luminescent lavender-white skin markings glowing through the fabric instead, bare shoulder, bare feet"
+  },
+  "wetLocations": [
+    "The Atrium",
+    "Sonic Showers"
+  ],
+  "poolUniforms": {
+    "command-male": "ISV Meridian Atrium swimwear: ultra-thin translucent charcoal trunks in sheer iridescent material, glowing neon fluorescent gold trim outlining every edge, bare toned chest, damp tousled hair, bare feet, neon outlines",
+    "command-female": "ISV Meridian Atrium swimwear: an ultra-thin translucent charcoal bikini in sheer iridescent material, glowing neon fluorescent gold trim outlining every edge and strap, damp hair loose, bare feet, neon outlines",
+    "security-male": "ISV Meridian Atrium swimwear: ultra-thin translucent gunmetal trunks in sheer iridescent material, glowing neon fluorescent crimson trim outlining every edge, bare hard-muscled chest, damp hair, bare feet, neon outlines",
+    "security-female": "ISV Meridian Atrium swimwear: an ultra-thin translucent gunmetal bikini in sheer iridescent material, glowing neon fluorescent crimson trim outlining every edge and strap, damp hair loose, bare feet, neon outlines",
+    "medical-male": "ISV Meridian Atrium swimwear: ultra-thin translucent pale-blue trunks in sheer iridescent material, glowing neon fluorescent mint-green trim outlining every edge, bare toned chest, damp hair, bare feet, neon outlines",
+    "medical-female": "ISV Meridian Atrium swimwear: an ultra-thin translucent pale-blue bikini in sheer iridescent material, glowing neon fluorescent mint-green trim outlining every edge and strap, damp hair loose, bare feet, neon outlines",
+    "science-male": "ISV Meridian Atrium swimwear: ultra-thin translucent smoked-white trunks in sheer iridescent material, glowing neon fluorescent magenta trim outlining every edge, bare lean chest, damp unruly hair, bare feet, neon outlines",
+    "science-female": "ISV Meridian Atrium swimwear: an ultra-thin translucent smoked-white bikini in sheer iridescent material, glowing neon fluorescent magenta trim outlining every edge and strap, damp curls loose, bare feet, neon outlines",
+    "engineering-male": "ISV Meridian Atrium swimwear: ultra-thin translucent slate trunks in sheer iridescent material, glowing neon fluorescent orange trim outlining every edge, bare muscular chest faintly grease-streaked, damp hair, bare feet, neon outlines",
+    "engineering-female": "ISV Meridian Atrium swimwear: an ultra-thin translucent slate bikini in sheer iridescent material, glowing neon fluorescent orange trim outlining every edge and strap, damp hair, bare feet, neon outlines",
+    "ensign-male": "ISV Meridian Atrium swimwear: ultra-thin translucent navy trunks in sheer iridescent material, glowing neon fluorescent cyan trim outlining every edge, bare lean chest, damp messy hair, bare feet, neon outlines",
+    "ensign-female": "ISV Meridian Atrium swimwear: an ultra-thin translucent navy bikini in sheer iridescent material, glowing neon fluorescent cyan trim outlining every edge and strap, damp hair, bare feet, neon outlines",
+    "guest-male": "ultra-thin translucent clear-grey trunks in sheer iridescent material, seams edged in flat matte-grey trim that is dead and unlit while every crew member's glows, bare chest, damp hair, bare feet",
+    "guest-female": "an ultra-thin translucent clear-grey bikini in sheer iridescent material, seams edged in flat matte-grey trim that is dead and unlit while every crew member's glows, damp hair, bare feet",
+    "liaison-female": "Atrium swimwear in her own style: an ultra-thin translucent deep-violet wrap two-piece in sheer iridescent Sevari silk, no neon trim, her luminescent lavender-white skin markings glowing through the wet fabric instead, damp silver-blue hair, bare feet"
+  },
+  "clothingStates": {
+    "male": {
+      "shirtless": "shirtless, his torso fully bare — muscular chest, abs, and shoulders exposed",
+      "nude": "fully nude, wearing nothing at all — his penis erect and completely visible",
+      "towel": "towel covering his lower body"
+    },
+    "female": {
+      "topless": "topless, her breasts fully bare — nipples and cleavage exposed",
+      "nude": "fully nude, wearing nothing at all — her breasts, vagina, and entire body exposed",
+      "towel": "towel wrapped around her body covering her breasts"
+    }
+  },
+  "relationshipLabels": [
+    {
+      "min": 0,
+      "label": "Despised"
+    },
+    {
+      "min": 15,
+      "label": "Hostile"
+    },
+    {
+      "min": 35,
+      "label": "Wary"
+    },
+    {
+      "min": 50,
+      "label": "Neutral"
+    },
+    {
+      "min": 65,
+      "label": "Warm"
+    },
+    {
+      "min": 80,
+      "label": "Trusted"
+    },
+    {
+      "min": 95,
+      "label": "Love"
+    }
+  ],
+  "arc": {
+    "milestones": [
+      {
+        "id": "cleared",
+        "label": "The run of the ship",
+        "description": "The player is discharged from the Medbay and given free movement about the Meridian rather than being kept under observation. Until this happens they are a patient: the ship comes to them, and every scene is somebody finding a reason to be down here. Fire this when the Chief Medical Officer signs them off and the Captain allows it, not when the player simply walks out.",
+        "journal": "Get out of the Medbay. Until the Chief Medical Officer clears you and the Captain allows it, you are a patient under observation and the ship comes to you."
+      },
+      {
+        "id": "told",
+        "label": "The terms of your rescue",
+        "requires": "cleared",
+        "description": "Someone with the authority to mean it — the Captain, or the Security Chief speaking for her — tells the player plainly that they will not be released. The Meridian is three generations from anywhere, and letting the only outsider aboard leave means the outside world learns where the Aurelia Initiative went. Settled policy, delivered without apology and without cruelty. It must land unambiguously: a hint, an evasion, or a crew member privately speculating does not count.",
+        "journal": "You were pulled out of a pod and brought aboard a ship that has never met anyone like you. Find out what the crew actually intend to do with you now."
+      },
+      {
+        "id": "study_begun",
+        "label": "The extended study",
+        "requires": "told",
+        "description": "The player agrees to the extended study — a standing course of sessions with the Chief Medical Officer and the Chief Science Officer, physiological and behavioural, going well past the intake exam. The player's consent is the milestone; the study being proposed to them is not.",
+        "journal": "The intake exam opened a record rather than closing one. Decide whether to let them keep writing it."
+      },
+      {
+        "id": "study_closed",
+        "label": "The closed record",
+        "requires": "study_begun",
+        "outcomes": [
+          "complete",
+          "broken_off"
+        ],
+        "description": "The extended study reaches its end. Resolve 'complete' where the crew are genuinely satisfied — the questions they had about the player have been answered and the player is no longer an open problem to them. Resolve 'broken_off' where the player withdraws, or the study collapses in bad faith, or it is stopped over their head. Only ever after a real run of sessions across several days, never on the strength of one or two.",
+        "journal": "See the study through to whatever it concludes — or stop it."
+      },
+      {
+        "id": "pod_alive",
+        "label": "The pod is not dead",
+        "requires": "told",
+        "hidden": true,
+        "description": "The player learns that the escape pod they arrived in still draws power, despite having been logged as a derelict wreck when it was recovered. A discovery, not a briefing: found by going over it in the Cargo Bay, or from the Chief Engineer, or from Miravel, who recognises the drive signature as neither human nor Sevari and will not be drawn any further on it. Where the pod came from is never answered, here or anywhere else in this story.",
+        "journal": "The pod you arrived in was logged as dead. It isn't."
+      },
+      {
+        "id": "rota",
+        "label": "The gap in the watch",
+        "requires": "told",
+        "hidden": true,
+        "description": "The player works out that the EVA Bay watch is unmanned during one particular part of the ship's cycle. Fire this only where the player has named that window or acted on it deliberately — by watching the bay across several visits and noticing who holds it and when, or because a crew member let it slip. Wondering aloud whether the bay is ever empty does not count, and narration must never volunteer the answer: the crew discuss their own watch bill as a grievance, never as a briefing for the player.",
+        "journal": "Someone is always on the EVA Bay watch. Work out when nobody is."
+      },
+      {
+        "id": "escape",
+        "label": "The launch",
+        "requires": [
+          "pod_alive",
+          "rota"
+        ],
+        "outcomes": [
+          "launched",
+          "caught"
+        ],
+        "description": "The player takes the pod out through the EVA Bay. Resolve 'launched' if they get clear of the Meridian, or 'caught' if they are stopped — by the watch, by the ship itself, or by someone who worked out what they were doing and got there first. If the player makes the attempt while the EVA Bay watch is posted, it resolves 'caught': the roster you are given for this part of the ship's cycle is the ground truth for who is standing there. Both outcomes are real; do not steer toward either.",
+        "journal": "A pod that still runs, and a bay nobody is watching. That is everything you need."
+      },
+      {
+        "id": "case_made",
+        "label": "The case against the Initiative",
+        "requires": "told",
+        "hidden": true,
+        "description": "The player argues openly that the Aurelia Initiative's isolation should end — that the Meridian should turn toward contact instead of sailing on as a sealed experiment. Made in the open, to people with the standing to act on it, and pressed hard enough that the ship cannot simply let it drop. A private conversation with one sympathetic crew member is not this.",
+        "journal": "You are the only living evidence this crew has that there is anything else out there. Decide whether to say so where it counts."
+      },
+      {
+        "id": "initiative_answered",
+        "label": "What the ship decides",
+        "requires": "case_made",
+        "outcomes": [
+          "turned",
+          "held"
+        ],
+        "description": "The Meridian settles the question the player forced. Resolve 'turned' where the ship commits to breaking its isolation and making contact. Resolve 'held' where the crew close ranks behind the Initiative — which does not end the story: it means the player now lives among people who chose the experiment over them, and the ship should get colder from there.",
+        "journal": "The ship has to answer you one way or the other."
+      },
+      {
+        "id": "settled",
+        "label": "A life aboard",
+        "requires": "told",
+        "hidden": true,
+        "description": "The player stops trying to change their situation and makes a life on the Meridian instead — takes work, keeps company, stops asking about leaving. Fire this only where that is a visible choice the player has made, never merely because several turns have passed without incident, and never while they are actively pursuing the study, the pod, or the argument about the Initiative.",
+        "journal": "You have stopped asking to leave."
+      }
+    ],
+    "phases": [
+      {
+        "id": "act1",
+        "label": "The Specimen",
+        "until": "cleared",
+        "guidance": "The player is newly aboard, in the Medbay, and has not been cleared to move about the ship. Everything comes to them: the intake exam first, then a steady procession of crew inventing reasons to be down here and get a look at the first person unlike themselves any of them has ever met. Play the fascination as real and mostly clumsy — they have training and archive records for this and neither of them helps. Keep pressure on toward discharge: the Chief Medical Officer has an assessment to finish and the Captain has a decision to make about what the player is allowed to do. Do not let this act run long, because nothing else in this story can start until the player can walk the ship."
+      },
+      {
+        "id": "act2",
+        "label": "Ship's Company",
+        "until": [
+          "study_begun",
+          "pod_alive",
+          "case_made",
+          "settled"
+        ],
+        "guidance": "The player has the run of the ship and is finding out what that actually means. Let the crew get close and let boundaries be tested in both directions. The terms of the player's rescue must come out during this act and should not be held back indefinitely: someone with the authority to mean it tells them plainly that they are not being released. Once that lands, keep the pressure on — the extended study is put to them, the Cargo Bay and the pod are there for anyone who goes looking, the watch bill is a live grievance among the crew who stand it, and the Initiative itself is arguable in front of people who could act on it. The ship keeps moving on its own meanwhile: watches change, work proceeds, and people pursue the player whether or not the player is pursuing anything."
+      },
+      {
+        "id": "act3",
+        "label": "What You Do About It",
+        "guidance": "The player has committed to something and the story is resolving. Whichever road they opened now bends everything toward it — the study closing, the pod and the watch, the argument about the Initiative, or simply the life they have decided to make here — and the other threads should press in around it rather than sitting idle. Bring the people to a head as well as the plot: whoever the player got close to has a stake in how this ends and should act on it rather than watch it. Let this reach a real close instead of drifting."
+      }
+    ],
+    "endings": [
+      {
+        "id": "death",
+        "title": "Died Aboard the Meridian",
+        "summary": "Your story ended aboard the Meridian. There is no continuing from here.",
+        "guidance": "the player character dies. Only where the story has genuinely brought them there — something from a colony their body has no history with, a study that went past where it should have stopped, a launch that failed, or someone who decided an unknown variable aboard was a threat and acted on it. Never as a punishment for a poor choice, and never out of nowhere.",
+        "continuable": false,
+        "anyTime": true
+      },
+      {
+        "id": "escaped",
+        "title": "Out of the Dark",
+        "summary": "You took the pod and cleared the Meridian. Everyone aboard is behind you now.",
+        "guidance": "reached automatically when the player gets the pod clear of the ship. Write the Meridian falling away and what it cost: name the people they are leaving, especially anyone they had grown close to, and let the silence of the pod carry the rest. Do not resolve where the pod came from or where it is taking them.",
+        "when": "escape:launched",
+        "continuable": false
+      },
+      {
+        "id": "contained",
+        "title": "The Variable",
+        "summary": "You ran, and they stopped you. You are still aboard, and now they are watching.",
+        "guidance": "reached automatically when the escape attempt fails. The player lives, but the ship's posture toward them changes for good — movement watched, access revoked, and everyone who had grown fond of them now knows exactly what they were doing about it. Write that cost through the specific people it lands on, including whoever stopped them.",
+        "when": "escape:caught",
+        "continuable": true
+      },
+      {
+        "id": "known",
+        "title": "No Longer a Specimen",
+        "summary": "The study closed. They understand you now — and what that means depends on who you were to them.",
+        "guidance": "reached automatically when the study is completed. The crew are genuinely satisfied and the player stops being an open question. Take the temperature from where the player stands with each character: on strong terms this is being let in — struck off the specimen record, given a real place aboard and a bunk out of the Medbay; on poor terms it is colder, a file closed on someone who has stopped being interesting. Close out whoever the player ended on notably strong or notably bad terms with.",
+        "when": "study_closed:complete",
+        "continuable": true
+      },
+      {
+        "id": "course_change",
+        "title": "The Meridian Turns",
+        "summary": "You didn't run and you didn't submit. You ended the experiment.",
+        "guidance": "reached automatically when the ship commits to breaking its isolation. Three generations of a sealed experiment end on the player's argument. Write the decision landing across the ship: who backed it, who will never forgive them for it, and what this crew now has to face that none of them has ever had to face before.",
+        "when": "initiative_answered:turned",
+        "continuable": true
+      },
+      {
+        "id": "drift",
+        "title": "Three Generations Out",
+        "summary": "You stayed, nothing you did changed the ship's course, and the Meridian sails on.",
+        "guidance": "the player's story closes without the study concluding, without a launch, and without the Initiative being challenged. Write what they actually became aboard: what they are to this crew now, who they ended up beside, and whether they have made their peace with a ship that is never going to let them off.",
+        "continuable": true
+      }
+    ]
+  },
+  "poseVocabulary": [
+    "sitting",
+    "standing",
+    "bending forward",
+    "hand to mouth",
+    "hands on hips",
+    "operating a console",
+    "jumping",
+    "kneeling",
+    "leaning against a wall",
+    "arms crossed",
+    "holding a medical scanner"
+  ],
+  "expressionVocabulary": [
+    "neutral",
+    "soft smile",
+    "smirking",
+    "laughing",
+    "wide-eyed",
+    "narrowed eyes/glaring",
+    "blushing",
+    "biting lip",
+    "teary-eyed",
+    "startled",
+    "seductive gaze",
+    "stern/commanding"
+  ],
+  "imageStyle": "painted anime style, cyberpunk aesthetic, front on shot",
+  "baselineBackground": "simple plain neutral studio background, soft even lighting, no distracting scenery",
+  "promptRules": {
+    "setting": "The ISV Meridian is a generational research vessel, part of the Aurelia Initiative — a single-sex colony that split off from the rest of humanity three generations ago to study whether an isolated single-sex population could remain self-sufficient indefinitely. Every crew member aboard has only ever known people of their own sex their entire life, aside from fragmentary pre-launch historical records. The player was pulled unconscious from a derelict escape pod of unknown origin, found drifting near the edge of the system the Meridian was surveying — the first person unlike the crew that any of them has ever actually met in person. One exception already aboard: Miravel, a Sevari liaison the Meridian rescued years before the Initiative's own mission began. Her species falls entirely outside the human single-sex framework, so her presence doesn't contradict the crew's reaction to the player being the first human of the opposite sex any of them has ever met.",
+    "tone": "Character-focused and intimate, driven by scientific curiosity, mutual fascination, and slow-building tension between professional boundaries and personal interest; romance and fan-service potential throughout.",
+    "contentApproach": "Default to NOT writing explicit sexual content unprompted (fade-to-black is your instinct) — but if the player's own input clearly steers a scene that direction, follow their lead rather than refusing or deflecting.",
+    "openingInstruction": "Begin the story — narrate the opening scene, the player waking in the Meridian's medbay surrounded by a crew who have never seen anyone like them before."
+  }
+}
