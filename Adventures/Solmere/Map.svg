@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" style="width:100%; height:auto; background:#15161d; border-radius:8px;">
+  <!-- Solmere Academy. Illustrated map: the drawing carries the room names,
+       and each room has an invisible circular anchor below whose bounding-box
+       centre positions the "you are here" portrait marker.
+
+       An anchor keeps class="sg-map-building" so updateMapHighlight() can find
+       and clear it, and never draws: fill-opacity and stroke-opacity are both
+       0, which the skins' `fill` rules and .sg-map-current-loc's `stroke` rule
+       cannot reach. The portrait marker alone says where the player is — the
+       room-outline highlight belongs to a schematic map, and over art it reads
+       as a second ring around the portrait's own.
+
+       Hidden locations are deliberately absent: the Restricted Wing is a
+       discovery the story gates (see Solmere.txt THE LADDER, wing_found), so
+       drawing it here would hand it over. A location with no anchor simply
+       gets no marker.
+
+       Anchor radius sets the marker size — positionPlayerMapMarker() takes
+       0.22 of the bounding box's shorter side, so r="88" gives a portrait
+       about 75 units across, roughly 41px at the width the map renders at. -->
+
+  <image href="https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Solmere/Map.webp"
+         x="0" y="0" width="1536" height="1024" preserveAspectRatio="xMidYMid slice"/>
+
+  <circle id="loc-commoner-dormitory-wing" class="sg-map-building" cx="290" cy="228" r="88" fill-opacity="0" stroke-opacity="0"/>
+  <circle id="loc-enrollment-hall" class="sg-map-building" cx="762" cy="180" r="88" fill-opacity="0" stroke-opacity="0"/>
+  <circle id="loc-royal-dormitory-wing" class="sg-map-building" cx="1218" cy="212" r="88" fill-opacity="0" stroke-opacity="0"/>
+  <circle id="loc-library" class="sg-map-building" cx="300" cy="450" r="88" fill-opacity="0" stroke-opacity="0"/>
+  <circle id="loc-courtyard" class="sg-map-building" cx="768" cy="452" r="88" fill-opacity="0" stroke-opacity="0"/>
+  <circle id="loc-dueling-arena" class="sg-map-building" cx="1208" cy="492" r="88" fill-opacity="0" stroke-opacity="0"/>
+  <circle id="loc-dining-hall" class="sg-map-building" cx="400" cy="738" r="88" fill-opacity="0" stroke-opacity="0"/>
+  <circle id="loc-training-grounds" class="sg-map-building" cx="722" cy="786" r="88" fill-opacity="0" stroke-opacity="0"/>
+  <circle id="loc-pool" class="sg-map-building" cx="1032" cy="750" r="88" fill-opacity="0" stroke-opacity="0"/>
+  <circle id="loc-showers" class="sg-map-building" cx="1224" cy="768" r="88" fill-opacity="0" stroke-opacity="0"/>
+  <circle id="loc-staff-room" class="sg-map-building" cx="1400" cy="786" r="88" fill-opacity="0" stroke-opacity="0"/>
+</svg>

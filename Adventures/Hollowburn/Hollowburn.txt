@@ -1,0 +1,509 @@
+THE QUIET HOUR (HOLLOWBURN) — ADVENTURE CONTENT
+===========================================================
+Last updated: 24/08/2026
+Fourth Adventure built for the Story Generator. Architecture/decisions
+live in the parent folder's Goals.txt and Features.txt — this file is
+just this Adventure's canon (premise, rules, NPCs, map, setup fields).
+
+Adventure id: hollowburn. Display title: "The Quiet Hour". Files are
+named Hollowburn.* to match the id, consistent with Solmere /
+Meridian / Halcyon.
+
+REGISTERED in the ADVENTURES array in Code/Bottom Panel.txt and hosted
+in the GitHub assets repo. See OUTSTANDING at the end.
+
+SOURCE
+---------
+Adapted from an unfinished four-chapter horror manuscript. Chapters 1
+to 4 exist as written prose; the rest of the arc below is invented for
+this Adventure and is not the author's.
+
+Names are kept as the manuscript has them: Blythe family, Jonah,
+Evelyn, Peter. The manuscript's protagonist is Mara; as of 24/08/2026
+the player chooses which of the two Blythe children they are, so the
+name is Mara or Jonah depending on that choice and fills in
+automatically either way (see THE PLAYER). Halcyon's contestant Mara
+Quinn was renamed Vela Quinn so the name belongs here.
+
+PREMISE
+----------
+Hollowburn is a former pit village on the north-east coast of England.
+The colliery closed in the eighties and took the village with it. The
+estate at the top of the village was built in the fifties on cleared
+colliery land; the Blythe family live in the last council house on a
+short cul-de-sac at the end of it.
+
+The player is the Blythe daughter, 21, the eldest of the two children,
+and she has not slept properly in months. Something in the house has
+learned her name and is using her family's voices to say it.
+
+The village is never placed. No neighbouring town, city or county is
+ever named — stated as a rule in promptRules.setting. It is an
+in-fiction choice and also the mitigation for a token collision (see
+TOKENS).
+
+THE HUSH (signature mechanic)
+--------------------------------
+The sound goes. Not muffled — gone. A clock stops ticking without
+stopping, rain lands silently, a running tap makes no noise until it
+is turned off and the world comes back all at once. Three things stay
+audible: the listener's heartbeat, their breathing, and voices. The
+Hush is not the absence of sound, it is the removal of everything that
+is not talking to you.
+
+IT IS SUBJECTIVE — it happens to one person at a time, and everyone
+else in the room hears the rain perfectly well and watches that person
+go white. This is why nobody believes anybody, and it is taken
+straight from the manuscript, which uses it twice.
+
+Implemented with no engine changes, exactly as Halcyon implements its
+cameras: each NPC's "personality" field — which the prompt builder
+injects verbatim — carries an explicit "Outside the Hush: X. In the
+Hush: Y." pair, so every NPC gets a two-layer persona for free. The
+rule itself is stated in promptRules.setting.
+
+MIMICRY, the second mechanic, costs nothing at all: in the Hush, any
+line of NPC dialogue may not be that NPC. Stated in promptRules.
+
+THE MARRA
+------------
+In pit dialect a marra is the man who goes down with you and walks out
+with you, and if he does not, you go back for him. The thing under
+Hollowburn is a marra with nobody left to walk beside. Eight feet,
+impossibly thin, spidery fingers round a doorframe, a face swallowed
+by shadow with two red points in it.
+
+It does not hunt. It courts, the way a shift works, over months. The
+sleeplessness is not the vulnerability — the sleeplessness is the
+courtship.
+
+FIXED CANON, DELIBERATELY. Halcyon leaves the Sunken Villa's truth
+unspecified so the narration AI settles it in play. This Adventure
+does the opposite and pins everything down, because five branching
+endings need a fixed thing to end and because dread does not survive
+sixty turns of nobody having decided. Do not "correct" this toward the
+Halcyon precedent.
+
+THE RULES IT OBEYS
+1. It cannot take anyone who is BELIEVED. One other person, awake and
+   knowing, is absolute armour for as long as it holds. This is why it
+   isolates, and why the manuscript's protagonist lying to her brother
+   in Chapter 1 is the story's original wound.
+2. It never touches. It calls, and the person comes to it. Everything
+   it has ever taken was given.
+3. It can only wear a voice it has heard say the player's name.
+4. It cannot hold a room where time is being kept — ticking, bells,
+   counting, a radio clicking over on the hour. This is why the clock
+   went missing before anything else did, and why Ivy Ogle has slept
+   with the radio on since 1974.
+5. The sea is not a ward. The workings run for miles out underneath it.
+
+BEING BELIEVED IS THE RELATIONSHIP SCALE. The top of this Adventure's
+relationshipLabels track is not Love or Devoted. It is "Believes You".
+Bottom is "Written Off".
+
+THE ARC (chapters 5 to 12)
+-----------------------------
+Every step is entered by a player action, not a turn count, so none of
+it depends on the engine-driven phases work that is proposed and not
+built. If phases are built, this is the obvious first test case.
+
+5.  THE MENDED CLOCK. Peter repairs it. It runs, and it runs wrong.
+    The player records a night on their phone and catches the Hush:
+    forty seconds of silence in a room with rain on the window, and a
+    voice saying their name. It is their own voice.
+6.  TELLING JONAH. He does not believe in the thing; he believes his
+    sister, which is enough. He sleeps on the floor. Four quiet
+    nights. The family decide the player is getting better. Evelyn
+    does not.
+7.  IT CHANGES SHIFT. Barry Kelso stops answering his door. Jonah
+    stops sleeping and starts hearing the player's voice calling him
+    downstairs — and the player becomes the one who is awake and who
+    knows. The story inverts: victim to witness.
+8.  EVELYN. She was Evelyn Fell of number eleven and was fifteen in
+    1989 when her brother Duncan stopped sleeping and "left the
+    village". There is a gap in the landing photographs that nobody
+    has ever remarked on. She got free. Her advice is the wrong
+    advice: give it somebody. It worked.
+9.  THE VILLAGE REMEMBERS. Sheila Rudd's ledger. Ivy Ogle's rules, one
+    at a time, in exchange for company. Denny Aitchison's plans, which
+    show the 1968 cap under the cul-de-sac done cheap and done badly.
+    Nate Ogle, who will happily dig.
+10. PETER. He works nights. He does not work every night. He has been
+    driving to the old pit head at three in the morning for months and
+    does not remember doing it — which reframes the first night
+    entirely. The voice through the bathroom door was his voice, and
+    he was standing there, and it was not him.
+11. THE LONG NIGHT. The Hush takes the whole house at once and the
+    house becomes the seam: the landing runs longer than the house is
+    wide, the stairs go down further than they should. Four people
+    separated in a building with four rooms.
+12. ENDINGS, below.
+
+ENDINGS (five)
+-----------------
+- NAME IT. Eleven men died in the 1947 fall in the east district; ten
+  were brought up. The eleventh was sealed in, and his name on the
+  memorial in St Aidan's has been rubbed illegible by eighty years of
+  thumbs. Sheila's ledger has it, Denny can find it on the plans, Ivy
+  remembers it. A marra with a name has somewhere to be. Nobody dies.
+  Hardest to reach and requires the village NPCs.
+- BARGAIN. It takes one and leaves the rest, and the player chooses.
+  Evelyn's ending, repeated, and the story knows it.
+- FEED IT. Give it Barry Kelso, or anyone the player has decided
+  deserves it. Survive, filthy.
+- YIELD. The player goes down. The village gets forty quiet years and
+  the family do not grieve, because they do not remember — the player
+  becomes the gap in the photographs, the way Duncan did.
+- RUN. Get everyone out. It follows, because it was never the house,
+  it was a name in a voice that loves you.
+
+CONTENT — SFW, AND THE FIRST ADVENTURE TO HARD-REFUSE
+--------------------------------------------------------
+Completely SFW. No sexual or intimate content of any kind, no
+eroticised description, no character written undressed, and no
+fade-to-black into an intimate scene either. Affection tops out at a
+hand held or a hug. The player's steer does not unlock anything.
+
+This overrides the other three. Solmere and Meridian share one
+contentApproach string that ends "if the player's own input clearly
+steers a scene that direction, follow their lead", and Halcyon was
+written deliberately permissive. Hollowburn does not follow the lead.
+promptRules.contentApproach says so explicitly and tells the AI to
+turn the scene back into the dark rather than refuse coldly.
+
+Three fields are OMITTED ENTIRELY to enforce this at the data layer
+rather than by instruction alone. All three are optional and degrade
+gracefully — verified against Code/Bottom Panel.txt:
+- clothingStates — the prompt's CLOTHING STATES block is built only
+  when the story declares it (the block is empty otherwise), tags are
+  dropped by extractClothingTags(), and rollRandomClothingState()
+  returns undefined. The AI is never told undress states exist.
+- wetLocations / poolUniforms — the wet-outfit swap is guarded on both
+  being present (line 4576), so no swap ever happens and every
+  portrait comes from the four ordinary uniform categories.
+- attractedTo — the "Attracted to: ..." clause is appended per NPC only
+  when the field exists. No NPC here has one, so the AI is never nudged
+  toward romance. likes/dislikes still drive affinity.
+
+The Bathroom is deliberately NOT a wet location despite the manuscript
+opening with a bath. The scene stays; the character is never rendered
+undressed. If wet locations are ever added: Beach only, modest
+swimwear written explicitly into every poolUniforms entry, Bathroom
+excluded.
+
+The standard minor-safety layer is unchanged and sits underneath all
+of this — see Safety Layer.txt and Goals.txt SAFETY. Every character
+is unambiguously adult, ages are stated (Jonah 19, player 21).
+
+NPCs (12)
+------------
+Same authoring conventions as the other three: "identity" is the
+Stage A baseline appearance line (clothing-free — clothing comes from
+the Category), "bio" is who a character is, "personality" is how they
+talk and carries the Hush pair.
+
+Flat "npcs" array — no npcSets/openingScenes. The player is always the
+Blythe daughter, so no gender-mirrored roster is needed and the
+Meridian key-convention trap does not apply. Bios and personalities
+say "sister" and "daughter" outright.
+
+Gender split: 6 female, 6 male with a female player; 7 female, 5 male
+with a male player, since the sibling mirrors.
+
+THE HOUSE (3)
+- The younger sibling, 19 — JONAH (brother) when the player is female,
+  MARA (sister) when the player is male. Believes their brother or
+  sister long before they believe in the thing, which is the
+  distinction that matters. Each sleeps under a sound that carries
+  through the wall — Jonah snores, Mara leaves a podcast running — so
+  the sound stopping is how you know it has started on them. Mara's
+  podcast is an accidental ward she does not know she has, the same
+  mechanism as Ivy Ogle's radio. Category: family-male or
+  family-female accordingly.
+- Evelyn Blythe, 54 — Mam. Was Evelyn Fell, fifteen in 1989. Knows
+  exactly what the Hush is and has never said a word, because she
+  believes saying it out loud is how it finds you. She is wrong, and
+  her silence is why it is still here. Category: family-female.
+- Peter Blythe, 57 — Dad. Kind, practical, and already half taken.
+  Everything he says is exactly what he would say, which is what makes
+  him the most dangerous NPC in the house. Category: family-male.
+
+THE CUL-DE-SAC (3)
+- Ivy Ogle, 81 — number three. Knows every rule and gives them up one
+  at a time in exchange for someone sitting down and listening
+  properly. Not coy and not testing anyone; eighty-one and lonely.
+  Category: village-female.
+- Nate Ogle, 22 — her grandson, delighted rather than frightened.
+  Believes the player instantly and for the wrong reasons, and belief
+  that shallow does not hold. Category: village-male.
+- Barry Kelso, 46 — the neighbour from the car argument, written to be
+  the obvious sacrifice and written sympathetically enough that taking
+  the offer should cost something. Category: village-male.
+
+THE VILLAGE (4)
+- Sheila Rudd, 63 — landlady of the Half Moon. Keeps her father's
+  ledger of the village's dead, believes none of it, and has never in
+  twenty-six years let a lone drinker walk home at closing. Category:
+  village-female.
+- Denny Aitchison, 78 — ex-pit deputy, has the plans, was on the 1968
+  capping team, signed the sheet, has been waiting fifty-eight years
+  for somebody to ask. Category: village-male.
+- Kirsty Vane, 21 — best mate, Co-op, does not believe a word and
+  turns up anyway. The only relationship with nothing supernatural in
+  it, and the story is worse if she is converted into an investigator.
+  Her presence is no protection and only the player knows that.
+  Category: village-female.
+- Yasmin Choudhury, 38 — GP. The rational pressure. Not a villain and
+  right about almost everything. Telling her costs something real: it
+  goes on a record and she telephones Evelyn. Category: village-female.
+
+THE CHURCH (1)
+- Nell Moore, 33 — priest at St Aidan's. Will not perform certainty
+  she does not have, and will sit up all night with somebody, which
+  turns out to be the actually useful sacrament. Category:
+  village-female.
+
+THE THING (1)
+- The Marra — an NPC record so it has a personality field and can be
+  placed in a scene, the way Solmere carries its shadowy faction. Its
+  own uniform category, "entity", is a silhouette rather than clothes.
+  promptRules and its bio both say USE IT SPARINGLY.
+
+CAST WEIGHTING (stated in promptRules.setting — the engine has no
+per-NPC tier field)
+- Main: Jonah, Evelyn, Peter, Ivy, the Marra
+- Strong supporting: Denny, Sheila, Kirsty, Nate
+- Background: Barry, Yasmin, Nell
+
+TOKENS
+---------
+The engine matches NPCs with a plain case-sensitive substring scan, no
+word boundaries. All twelve tokens were checked programmatically at
+build time against each other, against the thirteen location names, and
+against a list of common capitalised words.
+
+Four names were changed during authoring for collisions:
+- Iris -> Ivy      (Iris fires inside "Irish")
+- Frank -> Sheila  (Frank fires inside "Frankly")
+- Ray -> Barry     (Ray fires inside "Rays")
+- Cathal -> Nell   (changed for the gender balance, not a collision)
+
+Jonah's room is called THE BOX ROOM rather than "Jonah's Room"
+specifically so the location name does not carry his token and pull him
+into every scene set there.
+
+One residual: "Peter" fires inside "Peterlee" and "Peterhead", real
+towns on this coast. Mitigated in fiction — promptRules.setting states
+that no neighbouring town, city or county is ever named. If that ever
+proves fragile, Dad is the easiest character in the cast to rename.
+
+"Mara" and "Marra" do not contain one another (Marra's four-letter
+substrings are "Marr" and "arra"), so the placeholder character name
+cannot collide with the entity's token.
+
+STANDARD UNIFORMS (Stage A baseline portraits)
+---------------------------------------------------
+Five categories, each combined with an NPC's identity line and a
+generic neutral background at generation time — not written per-NPC,
+so changing one line updates every NPC sharing that Category.
+- family-male / family-female: home clothes in a cold house. Worn
+  hoodies, old jeans or leggings, thick socks, nothing bought this
+  decade.
+- village-male / village-female: dressed for a wet north-east coast.
+  Waterproofs and wax jackets over jumpers, sturdy boots, collar up.
+- entity: no clothing and no surface. A flat black silhouette, long
+  fingers, two red points where the eyes would be.
+Every category line ends "fully clothed and modestly dressed at all
+times, clearly an adult" — the equivalent slot where Solmere and
+Halcyon put their sex-appeal phrasing.
+
+playerCategoryTemplate: family-{playerGender}, which always resolves to
+family-female (see THE PLAYER below).
+
+THE PLAYER
+-------------
+The player is the elder Blythe child, 21, four months without proper
+sleep. As of 24/08/2026 they choose which one:
+
+  Female — the player is MARA, 21. Her brother JONAH is 19.
+  Male   — the player is JONAH, 21. His sister MARA is 19.
+
+The haunted role never moves. Only the name and sex of the person
+holding it, and the sibling standing next to them, mirror. This was
+weighed against staying female-only, which is what the manuscript does,
+and the deciding argument was Evelyn: she was fifteen in 1989 when her
+brother Duncan stopped sleeping, and the honest answer is she gave him
+to it. Playing Mara makes the player Evelyn's echo — the sister who may
+end up doing the same thing. Playing Jonah makes them DUNCAN's echo,
+the one it came for, with a sister where Evelyn stood and Evelyn
+herself watching a boy stop sleeping in her house for the second time
+in her life. The rhyme does not break; it rotates, and the male reading
+is arguably the crueller one. Nothing in the mechanic changes either
+way, because being-believed already reverses the roles mid-story.
+
+MECHANISM, all data, no engine work. npcSets and openingScenes are
+existing gender-keyed fields (Meridian and Vermillion already use
+both), resolved by resolveNpcSetsAndOpeningScene() at Begin. The two
+casts are identical in eleven of twelve entries; only the sibling
+differs. nameSets carries exactly one name per gender, so the Character
+name field fills itself correctly and the player never types anything.
+
+Hollowburn is the first Adventure to change WHO is in the cast rather
+than only how they regard the player — Meridian and Vermillion keep the
+same roster across both sets. Supported, but new, and worth knowing if
+a cast bug ever shows up here first.
+
+The playerGender setup field was already present and load-bearing
+before this change, and still is: playerState.gender is read straight from
+rawSetup.playerGender, and both playerIdentityWithAge() and
+playerGenderPhrase() return an empty string when it is absent. Those
+two functions are the fix for the wrong-sex baseline portrait — the
+player's identity text is assembled from the Appearance dropdowns,
+which describe hair, build and skin and never mention sex at all, so
+without playerGenderPhrase() prepending "a woman" or "a man" the image
+model has only indirect cues and guesses wrong often enough to matter.
+
+Keeping the field also lets playerCategoryTemplate keep the standard
+{playerGender} form rather than hardcoding the category; both
+family-male and family-female uniforms already exist.
+
+MAP LOCATIONS (13)
+---------------------
+NOT hub-and-spoke. Two hubs, because the story is about a house and
+the village that put it there. The front door is drawn as the single
+solid line joining them; everything else is dashed.
+
+House lobe, hub = THE LANDING (the crossroads of the house, and where
+it waits):
+- Your Bedroom (starting location)
+- The Landing (hub)
+- The Bathroom
+- The Box Room (Jonah's)
+- Mam and Dad's Room
+- The Kitchen
+- The Sitting Room
+- The Back Garden
+
+Village lobe, hub = THE CUL-DE-SAC:
+- The Cul-de-sac (hub)
+- The Half Moon Inn
+- St Aidan's
+- The Beach
+
+Danger site (red, dashed, path drawn severed — same treatment as
+Halcyon's Sunken Villa):
+- The Old Pit Head
+
+The SVG was generated programmatically. All thirteen rect ids were
+verified against locationSlug() output, and checked for overlapping
+boxes and out-of-viewBox placement, before delivery. It was also
+rendered in a browser and inspected — which caught a real defect: the
+raw ampersand in the "Mam & Dad's" label is invalid XML and silently
+killed the whole render until it was escaped. Any future map with an
+ampersand in a label needs the same escaping.
+
+No wetLocations.
+
+ADVENTURE SETUP FIELDS (Hollowburn-specific)
+-----------------------------------------------
+The setup screen is shown again as of 24/08/2026, because the
+Male/Female choice is a real question the Adventure has to ask. It was
+briefly skipped entirely (23/08/2026, `skipSetup: true`), and that flag
+is now off on BOTH sides — the hosted JSON and the ADVENTURES registry
+entry — since either one alone still skips the screen. Every field
+except Gender fills itself, so the screen is one click if the player
+does not care, and one real decision if they do.
+
+- How Long Since You Slept — A few weeks / Three months / Since the
+  funeral / You can't remember. Sets starting fragility. "Since the
+  funeral" is deliberately unattached to any named death so the
+  narration AI can decide whose it was. Rolled at random per story.
+- What You Believe — Sceptic / Sensitive / Devout / You already know
+  it's real. Steers how quickly the player can accept what is
+  happening and how the village reads them. Rolled at random per
+  story.
+
+Plus the universal fields. Gender is two tiles, Female and Male, with
+no default — it is the one thing worth choosing (see THE PLAYER).
+Character name is left blank and drawn from nameSets, which holds
+exactly one name per gender, so it fills in as Mara or Jonah without
+the player typing. Age is 21. The Appearance dropdowns default to
+short straight, dark brown, average build, fair — changed 24/08/2026
+from shoulder-length black, which read as female-specific once a male
+player was possible; it matches Jonah's canon look and stays perfectly
+plausible for Mara. No lore describes the player's appearance, so
+nothing constrains this. No freeform custom fields.
+
+Gender is not enforced. Begin stays enabled before a tile is picked, so
+clicking straight through rolls one at random — the same "nothing needs
+entering" convention every other Adventure follows. Making it the one
+required field would need an engine change.
+
+LORE FILES (19)
+------------------
+setting, locations, the-hush, the-marra, being-believed,
+the-pit-and-the-shaft, the-blythe-house, and twelve npc-* files.
+loreEntries in the JSON point at the GitHub raw paths for all nineteen.
+
+npc-jonah-blythe.txt is labelled "The Blythe Children" and covers both
+siblings as a pair, stating which one the player is under each gender.
+loreEntries is a flat list with no gender keying — unlike npcSets and
+openingScenes — so a per-gender sibling file is not possible, and one
+file covering both is the fix. The FILENAME still says jonah, which is
+now slightly wrong; it was kept deliberately so the change is a single
+overwrite rather than a delete-and-re-add, which on GitHub's web
+uploader leaves a window where the live app 404s.
+
+OPEN / NOT YET DECIDED
+---------------------------
+- imageStyle is "painted illustration, muted desaturated palette,
+  overcast north-east English light, front on shot" rather than the
+  "painted anime style, front on shot" that Solmere, Meridian and
+  Halcyon all share. This is the single most likely field to need
+  reverting if the portraits come out wrong — it is the only place
+  this Adventure departs from a setting proven against the live image
+  pipeline.
+- Whether Evelyn's price was her body (the arthritis) or her brother
+  (Duncan, 1989). The lore currently implies the second and leaves the
+  first available as a lie she tells herself. Duncan is stronger and
+  gives the missing-photograph motif something to do; it also makes
+  her much harder to forgive.
+- Whether Duncan Fell should exist as a thirteenth NPC record who only
+  appears late, worn like a coat. Rosters are static, so he would sit
+  in the cast from turn one doing nothing — the argument against.
+- A wanted fourteenth location, "the Long Landing" — the house's other
+  version, appearing on the map only after the player has been in the
+  Hush. Needs the hidden "Unknown" areas feature, which is
+  brainstormed and not built. Omitted for now; it works as pure
+  narration.
+- No titleImageUrl or narrationBackdropUrl set (both optional).
+
+OUTSTANDING
+--------------
+1. Upload the 21 hosted files to Cloudflare R2, mirroring the folder
+   subtree: Story Definitions/Hollowburn.json,
+   Maps/Hollowburn%20Map.svg, Lore/Hollowburn/*.txt (19). The JSON's
+   loreEntries and mapUrl already point at those exact keys and were
+   verified against the delivered filenames. This file is local canon
+   and is not hosted.
+2. Not yet registered in the ADVENTURES array in Code/Bottom Panel.txt
+   — deliberately held back at Brett's instruction. Halcyon's entry is
+   the pattern to copy: id, title, blurb, cover, jsonUrl with no ?v=
+   suffix since it is a new key with nothing cached against it. The
+   registry blurb is the one that renders; the JSON's own blurb is
+   inert and is kept identical on purpose.
+3. Features.txt still says "Three Adventures live" — update to four
+   when registration happens.
+4. No title card. The other three now have coverUrl art registered
+   from Assets/TitleCards/ — full-size PNG kept locally as the master,
+   a 700x1050 WebP at quality 86 exported and hosted. Hollowburn has
+   neither, so its card falls back to the cover emoji (🕰️).
+5. Registered, hosted and run. Both genders verified against the real
+   engine headless on 24/08/2026 — correct name, correct sibling in
+   currentStory.npcs, correct opening scene, correct playerCategory, no
+   page errors. Not yet played through by a human past the first beat.
+
+Content and data changes from here go in
+Adventures/Hollowburn Change Log.md; engine changes go in
+Generator/Steak and Bake Stories/Change Log.md.

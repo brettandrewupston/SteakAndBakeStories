@@ -1,0 +1,49 @@
+SOLMERE ACADEMY — WORLD LORE
+
+This is fixed background canon for the Solmere Academy adventure. It
+is never shown to the player and never changes during play — see
+Goals.txt LORE in the Story Generator project folder for why.
+
+SETTING
+Solmere Academy is a magic university. The player is a first-year
+arriving on their first day, there to learn magic. The Academy runs on
+a tournament/ranking structure — students duel to earn standing,
+resources, and reputation. Tone is action/tournament-based with
+romance potential and a fan-service aesthetic. The student body is
+split between royal-born and commoner-born students; status shapes how
+NPCs treat the player and which dormitory wing they live in.
+
+NPCS
+- Kael Voss — royal-born, top-ranked student, arrogant, looks down on
+  commoners. Main rival, will face the player in the tournament.
+- Elowen Bright — commoner-born upperclassman who earned her rank
+  through raw talent. Mentor figure, romance lead, quiet foil to
+  Kael's snobbery.
+- Ysolde — royal-born, initially cold/aloof but not actually cruel.
+  Second romance option, from the royal side.
+- Sable — quiet classmate, unclear background, obviously hiding more
+  power than she shows.
+- Finn — commoner-born, cheerful dormmate, comic relief with a
+  competitive streak.
+- Rook — commoner-born underdog, resents royal privilege, fuels class
+  tension in the tournament. Can go bitter rival or ally depending on
+  how the player treats him.
+- Instructor Voss (no relation to Kael) — runs the dueling trials,
+  neutral authority figure.
+- A staff healer — tends injuries after duels/training, associated
+  with the infirmary/pool/showers area.
+- An unnamed shadowy faction operates behind the tournament — a hook
+  for a longer arc, not a named NPC yet. NPCs may allude to it without
+  naming it outright.
+
+LOCATIONS
+Enrollment Hall, Dueling Arena, Training Grounds, Library, Courtyard
+(social/romance hangout), Dining Hall (meals, the other social hub —
+busiest at midday), Restricted Wing (mystery/danger), Pool, Showers,
+Staff Room, Royal Dormitory Wing, Commoner Dormitory Wing.
+
+TOURNAMENT
+Duels earn standing, resources, and reputation. Exact bracket/points
+structure and how often duels happen is not yet decided — narrate
+tournament beats plausibly without inventing rigid rules that would
+need to stay consistent later.

@@ -1,0 +1,554 @@
+PROPERTY DAMAGE (GALLANT) — ADVENTURE CONTENT
+===========================================================
+Last updated: 24/08/2026
+Sixth Adventure for the Story Generator. Architecture/decisions live in
+the parent folder's Goals.txt and Features.txt — this file is just this
+Adventure's canon (premise, rules, NPCs, map, setup fields).
+
+Adventure id: gallant. Display title: "Property Damage". Files are named
+Gallant.* to match the id, consistent with Solmere / Meridian / Halcyon
+/ Hollowburn / Pemberton.
+
+BUILT AND LIVE 24/08/2026. Story Definition JSON, 24 lore files and the
+map SVG all exist, are committed to the assets repo, and are registered
+in the ADVENTURES array in Code/Bottom Panel.txt. The card appears on
+the Adventure Selection screen as its title card. See OUTSTANDING at the
+end.
+
+PREMISE
+----------
+Gallant City has nine million people, four hundred registered
+metahumans, and about eleven who matter.
+
+Everyone else is Category D — powers the Gallant Powers Authority has
+legally classified as non-decisive. A Category D licence is not a
+permission, it is an obligation: the holder must attend any incident in
+their assigned precinct that the A-list declines, and is paid per
+callout by Cardinal Assurance, the consortium that underwrites
+metahuman incident response. The rate is set by the holder's public
+star rating on VANTAGE, the civic incident app, where any bystander
+with a phone can leave five stars, one star, or a photograph of you
+crying.
+
+The player is newly licensed, assigned to Precinct 9 — the loudest,
+ugliest, most-filmed six square kilometres in the city — and housed in
+the Ganymede, a condemned extended-stay hotel the GPA block-leases for
+Category D accommodation. Thin walls, one working lift, a shared
+laundry, and a roof everybody uses because nobody can afford to go out.
+
+Every quarter the bottom-rated licence holder in each precinct is
+culled. Losing the licence means losing the flat. So the people the
+player lives with, works alongside and is steadily falling for are also
+the people who need the player to rank below them.
+
+WHAT EVERYBODY KNOWS
+-----------------------
+The A-list cause the incidents they respond to.
+
+Not secretly. It has been on the news. It was a segment. People moved
+on. Cardinal Assurance is owned by the four A-list principals, so the
+consortium that pays for incident response also profits from there
+being incidents, and the rate it pays Category D comes out of the same
+pocket. A gas main goes up on Clement Street at four because Halo has a
+merchandise drop at six and needs the footage. Precinct 9's Category D
+holders are then legally obliged to attend, unpaid until the claim
+clears, and rated one star by the public for being slow.
+
+This is the Adventure's central rule and it is load-bearing: there is
+no conspiracy and nothing to expose. Every attempt to blow a whistle
+lands on somebody who already knows and is bored of hearing it. The
+story is not an investigation and must never become one. It is a comedy
+about rent.
+
+The consequence for play is that the A-list are present, constant and
+petty rather than hidden — poaching callouts, filming in the street,
+parking a sponsored vehicle across the Ganymede's fire exit — which
+gives the narration AI something to improvise against every scene
+instead of a mystery it has to meter out.
+
+TONE
+-------
+Romantic comedy first, superheroes second. The powers are the joke; the
+rent, the ratings and the six people on the fourth floor are the story.
+Fast, warm, mean about institutions and kind about people. Nobody in
+this Adventure saves the city. The most anybody achieves is a slightly
+better contract.
+
+THE RATING (signature mechanic)
+----------------------------------
+Every public scene is being filmed by civilians and rated afterwards,
+and every character knows it. What a Category D holder does matters far
+less than how it looked, which means the win condition of any scene is
+never "defeat it" and always "be seen handling it". This is what keeps
+a bad power permanently relevant instead of a gag that dies in the
+first hour.
+
+Implemented with no engine changes: the relationship system IS the app
+rating. The relationship ladder is authored as the star scale (see
+RELATIONSHIP LABELS), so the number the engine already tracks and
+already displays is the thing the fiction is about. No new field, no new
+persisted state. promptRules.setting carries the rule that public scenes
+are filmed and rated, that NPCs quote their own star counts
+constantly, and that the app is how this cast talks about each other.
+
+CONTENT
+----------
+Halcyon level in the prose, and above every previous Adventure in the
+portraits. Flirtation, hookups, jealousy and bad decisions made at 2am
+in a shared laundry are the expected texture of the story rather than
+exceptions, and are written freely and explicitly when a scene goes
+there; escalation within a scene still follows the player's lead. The
+costume set is deliberately the most sexualised of the six — see
+STANDARD UNIFORMS — because in this Adventure how a character looks is
+literally what they are paid on. All characters are written
+unambiguously adult.
+
+Two complications the story treats as real rather than ignoring:
+
+- Kell Brannigan's Cardinal contract carries a brand-alignment clause
+  that makes a relationship with a Category D holder a breach. He knows.
+  It costs him something, and the story says so.
+- Marguerite Delph is the player's landlord and housing officer. Nothing
+  that happens there is free.
+
+Pilar Anastas and Yolanda Pesch sit outside the flirtation frame
+entirely; their attractedTo fields are omitted, which suppresses the
+per-NPC "Attracted to: ..." clause for those two only. Every other NPC
+carries one.
+
+The standard minor-safety layer is unchanged and sits underneath all of
+this — see Safety Layer.txt and Goals.txt SAFETY.
+
+NPCs (15)
+------------
+Same authoring conventions as the other five: "identity" is the Stage A
+baseline appearance line (clothing-free — clothing comes from the
+Category), "bio" is who a character is, "personality" is how they talk.
+Every character is a clearly adult person.
+
+Flat "npcs" array — no npcSets/openingScenes. The player's gender does
+not change the roster, so the gender-mirrored mechanism Meridian needs
+is not applicable and the npcSets key-convention trap does not apply.
+
+Gender split: 8 female, 7 male.
+
+THE GANYMEDE, FOURTH FLOOR (6)
+- Dez Ferrero — "Blur". Superspeed in straight lines only; decelerates
+  by hitting something. Permanently bandaged, top of the precinct on
+  sheer callout volume, and the player's chief rival for it. Flirts
+  first with everyone and means roughly sixty percent of it. Category:
+  dlist-male.
+- Iris Okonkwo-Vahl — "Beacon". Emits light. Very bright light. That is
+  the whole power. Thirteen years in Precinct 9 and never culled once;
+  knows where every body in the GPA is buried and has never used any of
+  it. Dry, exhausted, magnificent. The slow burn. Category:
+  dlist-female.
+- Bricky Zhao — invulnerable but not strong. Can be thrown through a
+  wall and get up; cannot lift a fridge. A human crash mat who
+  volunteers for it cheerfully, and who cannot read a romantic signal
+  with both hands. Category: dlist-male.
+- Nika Ostrove — invisible, but only while nobody is looking at her.
+  Unprovable by definition, which she has stopped trying to explain.
+  Sardonic, paranoid, and correct more often than is comfortable.
+  Category: dlist-female.
+- Sabine Ross — surface telepathy, liars only. She hears a thought only
+  while its owner is lying to her, and it cannot be switched off. Has
+  therefore never had an ordinary first conversation with anyone.
+  Prickly, funny about it, warms very slowly. Category: dlist-female.
+- Corbin Amaral-Yeats — no powers whatsoever. Licensed nine years ago by
+  a clerical error and never audited. Certain he has one and that it is
+  situational. Has a costume, a catchphrase and the confidence of a much
+  better man. The heart of the building, and the one person Cardinal has
+  never once noticed. Category: dlist-male.
+
+PRECINCT 9 (5)
+- Marguerite Delph — GPA housing officer, runs the Ganymede. Corrupt in
+  small, exhausting ways: sells residents their own confiscated kit back
+  at markup out of the Depot, and controls who gets the room with the
+  window. Genuinely fond of her tenants and would sell any of them for
+  a quiet quarter. Category: vpa-female.
+- Ferris Adeyemi-Locke — GPA dispatcher, Precinct 9. Decides who gets
+  sent to what, which makes him the most consequential man in the
+  Adventure and the least aware of it. Anxious, decent, wildly
+  overworked, and the route to the movement logs. Category: vpa-male.
+- Yolanda Pesch — runs the 24-hour laundry on Clement Street. Has left
+  four thousand and eleven reviews on VANTAGE and is, by volume alone,
+  the single most influential civilian in the precinct. Rates
+  everybody, remembers everything, has never once been wrong about a
+  person. Category: civ-female.
+- Elodie Sarr — culled two quarters ago and still doing the job.
+  Unlicensed response is a criminal offence; she cannot stop, and the
+  precinct quietly covers for her. Sleeps in the Ganymede stairwell
+  more often than anyone admits. The story's sharpest sympathy and its
+  most reliable route to a documented breach. Category: civ-female.
+- Lionel Pike — "The Gentleman Caller". Category D villain: he cannot
+  enter anywhere he has not been invited, which he treats as a code of
+  honour rather than a limitation. Impeccably mannered, genuinely a
+  problem, and as thoroughly screwed by Cardinal's rates as anyone at
+  the Ganymede. Drinks in the same bar. Category: civ-male.
+
+THE A-LIST (4)
+- Kell Brannigan — "Aegis". Forcefields, and he is actually very good at
+  it. Precinct 9's Cardinal liaison, warm, funny, sponsored down to the
+  hair, and has never once in his life been asked whether any of this is
+  wrong. Not compromised, not guilty, not hiding anything — which is
+  what makes him a better romance than a secret would. Category:
+  alist-male.
+- Solene Vaux — "Halo". Flight, light, the full package, and the most
+  beloved woman in the city. Personally started three of the last five
+  Clement Street incidents. Waves at the Category D holders cleaning up
+  after her, warmly, by name. Category: alist-female.
+- Brant Oyelaran — "Titan". Strength. Rents himself out for private
+  demolition at night and attends the rescue at the same address by
+  morning. Not clever enough to conceal it and has never needed to be.
+  Category: alist-male.
+- Pilar Anastas — "The Redress". No power. Cardinal's counsel and fixer,
+  and the only person in Gallant City anyone is actually afraid of. Can
+  make anything a clerical matter. Never raises her voice and never has
+  to. Category: exec-female.
+
+CAST WEIGHTING (stated in promptRules.setting — the engine has no
+per-NPC tier field)
+- Main: Iris, Dez, Kell, Corbin, Marguerite, Solene
+- Strong supporting: Nika, Sabine, Bricky, Elodie, Ferris, Pilar
+- Background: Yolanda, Lionel, Brant
+
+TOKENS
+---------
+The engine matches NPCs with a plain case-sensitive substring scan, no
+word boundaries. All fifteen tokens were checked programmatically at
+build time against each other, against the thirteen location names,
+against every setup-field option label, and against a list of common
+capitalised words. No collisions.
+
+One name was changed during authoring for a collision:
+- Wen -> Bricky. "Wen" fires inside "Went", "Wendy" and — fatally —
+  "When", which appears capitalised at the start of sentences
+  constantly. His token is his nickname; his "name" field is Bricky Zhao
+  and the bio gives the real one.
+
+Residuals, all judged non-risks: "Iris" inside "Irish", "Kell" inside
+"Kelly" (no Kelly in the cast), "Brant" inside "Brantley".
+
+Cape names are not tokens — the engine matches npc.token only — so
+"Blur", "Beacon", "Aegis", "Halo", "Titan" and "The Redress" carry no
+matching risk and can be used freely in narration.
+
+One unresolved hazard: the Your Hero Name setup field puts a
+player-chosen string into narration constantly, and if it collides with
+an NPC token the scan will fire on it. This is the reason the field is
+curated rather than free text. See OPEN.
+
+STANDARD UNIFORMS (Stage A baseline portraits)
+---------------------------------------------------
+Eight categories, each combined with an NPC's identity line and a
+generic neutral background at generation time — not written per-NPC, so
+changing one line updates every NPC sharing that Category.
+
+Fan service is the default register here and it is pushed harder than
+in any previous Adventure — this is the most overtly sexualised costume
+set of the six, deliberately, and it applies to every category rather
+than being a modifier on some of them. Two reasons it belongs: the
+genre's costume language is already skintight, high-cut and absurd, and
+this is a city that pays people according to how they look on a phone
+screen. A Category D holder who dresses modestly earns less, and every
+character in the Adventure knows it.
+
+Each line is written for maximum body emphasis — skintight fabric that
+reads every line of the figure, plunging necklines, bare midriffs,
+thong-cut and hip-bone-high legs, underbust and side cutouts, harness
+straps biting into the thigh, sweat, heels, nothing loose anywhere.
+Both genders are written with the same emphasis: the male categories
+are as exposed and as sculpted as the female ones, not a modest
+counterpart to them.
+
+Identity lines are written to match. Since clothing comes from the
+Category, each NPC's identity line carries an explicit adult figure
+description — build, bust, waist, hips, legs — so the two halves
+compose into a portrait that is sexualised by design rather than by
+accident.
+
+Every category carries "fully clothed, clearly an adult", and
+clothingStates handles everything past baseline. That pairing is the
+entire guardrail on this and neither half is optional at any heat
+level. The minor-safety layer underneath is untouched by any of it.
+
+- dlist-male / dlist-female: a home-made costume that fits far better
+  than it has any right to and covers far less than it should.
+  Skintight surplus bodysuit cut down and re-sewn by hand — sleeves
+  gone, front unzipped to the navel, deep bare cleavage or bare chest,
+  bare midriff and lower back, leg cut high over the hipbone, thigh
+  straps and a webbing harness pulled tight, thigh-high mismatched
+  boots, an iron-on chest logo slightly off-centre over the swell of the
+  chest, visible hand-stitched repairs, GPA licence patch on the
+  shoulder. Broke, improvised, held together with tape, and
+  unmistakably built to be looked at.
+- alist-male / alist-female: moulded composite armour poured onto the
+  body in brand colours — every plate contoured hard to chest, waist,
+  hips and thighs, neckline plunging, midriff and underbust panels bare,
+  leg cut to the hip, glossy and skin-tight where it is not open, with
+  sponsor decals placed exactly where the cameras go. Immaculate,
+  studio-built, focus-grouped, engineered for merchandise.
+- vpa-male / vpa-female: municipal polyester worn far too well — shirt
+  a size too small and open several buttons, straining across the
+  chest, tucked into issue trousers or a skirt taken in well past spec
+  and riding high on the thigh, sleeves rolled to the bicep, bare legs,
+  lanyard resting where it draws the eye.
+- civ-male / civ-female: ordinary Gallant City street clothes chosen to
+  show everything off — cropped to the ribs, low on the hips, bare arms
+  and bare waist under an open jacket, everything fitted skin-close.
+- exec-female: a considerably better suit than anyone else's, cut to the
+  body like a second skin — nipped waist, blazer over nothing but bare
+  skin, skirt short and tight, sheer legs, very high heels. Pilar only,
+  following Pemberton's maintenance-male precedent for a single-member
+  category.
+
+No wetLocations and no poolUniforms — the wet-outfit swap is guarded on
+both fields being present, so omitting them is inert rather than broken.
+clothingStates is retained at the Solmere/Meridian level.
+
+playerCategoryTemplate: dlist-{playerGender}. The player is always a
+Category D licence holder, so like Halcyon and Pemberton the template
+has a single variable.
+
+MAP LOCATIONS (13)
+---------------------
+Hub-and-spoke from the Roof, with the Laundry as a strong second hub —
+the same shape as Halcyon's Pool Deck and Pemberton's Kitchen.
+
+- Ganymede Lobby (starting location — the rankings board is on this wall)
+- The Roof (hub — where the fourth floor actually lives)
+- Your Room (fourth floor, thin walls, no window)
+- Fourth Floor Corridor (the lift works, sometimes, and everyone
+  overhears everything from here)
+- The Laundry (second hub — Yolanda's, open all night)
+- GPA Field Office, Precinct 9 (Ferris's desk, and the public records
+  counter nobody uses)
+- Clement Street (the strip — where the incidents are, and the cameras)
+- The Rotunda (transit hub, twelve thousand people an hour, worst
+  possible place for anything to go wrong)
+- Cardinal Plaza (the tower's public forecourt; a fountain, a statue of
+  Halo, and security who know your face)
+- Altitude (the rooftop bar, A-list and press only, which everyone at
+  the Ganymede can see lit up from the Roof)
+- The Depot (GPA impound, where Marguerite sells confiscated kit back)
+- The Walk-In (a twenty-four hour clinic on Clement that has stopped
+  asking Category D holders how it happened)
+- The Blackout Block (red, dashed, path drawn severed — same treatment
+  as Halcyon's Sunken Villa and Pemberton's Overflow)
+
+THE BLACKOUT BLOCK
+---------------------
+Six blocks Cardinal has zoned out of coverage because the claims never
+cleared. No A-list response, no Category D obligation, no callout rate,
+and therefore no reason for anybody to go. It is not a mystery and it
+holds no secret — it is an economic fact with a fence around it, and
+the lore states plainly why it is empty.
+
+It fills the same structural slot as the other Adventures' restricted
+site without reintroducing the investigation plot this Adventure
+deliberately does not have. What is inside it is people: the ones who
+could not pay to live anywhere with a rate attached. Elodie works it for
+free.
+
+THE QUARTER
+--------------
+The cull is the clock. Every quarter, the bottom-rated licence holder in
+Precinct 9 loses the licence and the flat. It is not a turn count and
+never resolves on one: it resolves on the leaderboard, which is the
+relationship ladder, which the player moves by being seen.
+
+THE ARC
+----------
+Three acts, ten milestones, six endings. The acts turn on milestones,
+never on turn count.
+
+ACT I — PROBATIONARY, until first_star. The player is unrated, and
+nobody at the Ganymede invests in someone who may be gone in a quarter.
+
+ACT II — IN THE BAND, until the_offer. The player is on the rota, being
+rated, and starting to be noticed by people it is worse to be noticed
+by.
+
+ACT III — THE OFFER. Cardinal has made the standard offer and every
+scene bends toward the answer.
+
+MILESTONES
+- first_star — the player's first public rating lands. Fires on the
+  rating, not the callout. Closes Act I.
+- saw_it_happen (needs first_star) — the player is physically present
+  when an A-lister starts the incident they then attend. Not a
+  revelation; the player was told this on day one. Seeing it is
+  different, and the story plays the difference rather than the
+  discovery.
+- named (needs first_star) — a stranger on the app uses the player's
+  hero name unprompted. The moment the player becomes a person in the
+  precinct rather than a licence number.
+- the_rate — the player learns what a callout actually paid after
+  Cardinal's deductions. The Adventure's money moment and the reason
+  every subsequent decision is about rent.
+- elodie — the unlicensed one is reported, covered for, or argued back
+  onto the rota. Covering for her is a real, documented breach and the
+  most common route to Struck Off.
+- filed (needs the_rate) — Cardinal's A-listers lodge movement logs with
+  the GPA to claim their own bonuses, and those logs are municipal
+  public records sitting at a counter nobody visits. Cross-referencing
+  them against incident timestamps proves nothing anyone does not
+  already know — it simply makes it filed, and filed is expensive.
+  Ferris will pull them for anyone who has been decent to him. The
+  dullest thing in the Adventure and by a wide margin the most powerful.
+- top_of_band (needs named) — the player is no longer bottom of Precinct
+  9. Somebody else now is, and lives two doors down.
+- the_offer — Cardinal makes the standard offer: come up, take the flat
+  with the working lift, start setting the fires. Closes Act II. No
+  structural prerequisite, deliberately, for the same reason Pemberton's
+  review_set has none: an ending a passive player can be locked out of
+  is an Adventure that cannot end.
+- cull — the quarter resolves. The player, or somebody they live with,
+  loses the licence.
+- the_answer (needs the_offer) — signed or declined.
+
+ENDINGS
+- Signed (the_answer:signed) — the flat with the working lift. The
+  Ganymede finds out before the player tells them. Written as a
+  promotion, not a fall, which is worse.
+- Eleven Days (the_answer:declined, without filed) — Pilar makes the
+  licence a clerical matter. There is no fight, no confrontation and no
+  appeal, because none of those are things she uses.
+- Renegotiated (the_answer:declined, with filed) — nobody is beaten and
+  nobody is exposed. Precinct 9's callout rate goes up by a small,
+  specific, unglamorous amount, backdated one quarter. This is the good
+  ending and it is deliberately the least cinematic thing in the file.
+- Culled (cull:player) — bottom of the precinct. The lift is somebody
+  else's problem now.
+- Struck Off — licence revoked for cause, reachable at any point, on a
+  real documented breach.
+- Stopped Answering — the player stops taking callouts and the licence
+  lapses without ceremony. Iris has watched four people do exactly this
+  and will say so if asked afterwards.
+
+No ending brings Cardinal down, and none is written as one. The A-list
+are the weather.
+
+TIME PHASES
+--------------
+A shift, not a calendar day, following Halcyon's shooting-day and
+Pemberton's office-day precedent: Day Shift / Rush Hour / Sundown /
+Night Shift / Small Hours.
+
+startingPhase: Day Shift — the player's first morning, licence in hand,
+rating at zero, and a welcome pack from Marguerite that is an invoice.
+
+RELATIONSHIP LABELS
+----------------------
+Seven tiers on the engine's min-threshold form, written as the app's own
+star scale so that the number the engine tracks and the number the
+fiction is about are the same number. Bottom is not Nemesis and top is
+not Love, the same move Hollowburn and Pemberton make.
+
+0 Reported You / 15 One Star / 35 Unrated / 50 Three Stars /
+65 Four Stars / 80 Five Stars / 95 Would Call Again.
+
+The A-list use the same scale and it means something entirely different
+coming from them, which is the joke: Solene Vaux will happily sit at
+Five Stars while ruining the player's week.
+
+ADVENTURE SETUP FIELDS (Gallant-specific)
+----------------------------------------------
+- Your Power — the Adventure's hook, and the field with the most replay
+  value in it. Every option is genuinely bad and every option has one
+  narrow devastating application the story rewards the player for
+  finding:
+  - You cannot be photographed badly. Every image of you is flattering.
+    On a five-star app this is quietly the strongest power in the
+    building.
+  - You always land on your feet. From any height. It still hurts.
+  - Duplication, one copy, ninety seconds. It appears fully nude, three
+    metres behind you.
+  - Surface telepathy, liars only. You hear a thought only while its
+    owner is lying to you, and you cannot switch it off.
+  - You can talk to pigeons. Pigeons are stupid, numerous and
+    everywhere.
+  - Localised gravity reduction. Four percent, within a metre and a
+    half, of yourself only.
+  - Everyone finds you slightly familiar. Strangers are certain they
+    have met you and will not let it go.
+  - Retrocognition. You can see what happened in a room up to twenty
+    minutes ago, but only if the room is empty.
+- Your Hero Name — curated list, not free text (see TOKENS for why):
+  Nightjar / Second Wind / The Understudy / Off-Peak / Backstop / Local
+  Hero / The Neighbour.
+- Why You Licensed — Money / Fame / You actually want to help / You are
+  hiding from something. Canon for that playthrough. Sabine Ross will
+  know within a week if it was the last one.
+
+Plus the required universal fields: Character name, Gender (both
+options), the four Appearance dropdowns, and Age. No freeform custom
+fields — curated fields only, per Adventure.
+
+IMAGE SETTINGS
+-----------------
+imageStyle: "painted anime style, front on shot" — the setting proven
+against the live image pipeline by Solmere, Meridian, Halcyon and
+Pemberton. Hollowburn's departure from it is flagged in its own outline
+as the field most likely to need reverting, so this Adventure does not
+repeat the experiment.
+
+baselineBackground: the standard plain neutral studio line.
+
+poseVocabulary is precinct-flavoured and written to the same register as
+the uniforms: landing in a crouch, arching back mid-stretch, sitting on
+a kerb with knees apart, holding a phone up at arm's length for a
+selfie, arms folded under the chest in a doorway, hip cocked against a
+laundry machine, bent over pulling washing out of it, posing for an
+interview, hands on knees catching breath, peeling out of a costume.
+
+expressionVocabulary gains "winded", "smug", "resigned", "flushed",
+"sultry" and "media smile".
+
+OPEN / NOT YET DECIDED
+---------------------------
+- Whether Your Hero Name should be free text. Curated is the safe call
+  and it is the wrong one for this Adventure specifically — naming
+  yourself is the single funniest decision on the setup screen and a
+  dropdown takes it away. The blocker is the token scan: a player who
+  types "Iris" or "Halo" poisons every scene. Worth solving properly
+  rather than designing around, and it is the one field where breaking
+  the curated-fields-only rule would earn its keep.
+- Whether Corbin has a power. Current position: no, permanently, and the
+  file should never hint otherwise. He is a man with a costume and no
+  abilities who has been doing this for nine years and is well liked. A
+  late reveal would be the single most predictable thing this Adventure
+  could do. The counter-argument is that Ending Renegotiated leans on
+  Cardinal never having noticed him, and a reader may expect that to
+  pay off as a power rather than as an oversight.
+- Whether the A-list should ever be punctured. Current position: no —
+  the moment one of them loses an argument, the story becomes a story
+  about beating them and the premise collapses. Same reasoning as
+  Clarence in Pemberton, and the same counter-argument applies: comedies
+  usually want the antagonist humiliated once.
+- Whether Kell knows what he is. Deliberately unfixed. The lore states
+  that he has never been asked, not that he has never wondered, so the
+  narration AI can settle it in play and settle it differently
+  depending on how the player treats him.
+- What the four hundred other registered metahumans in the city are
+  doing. Unwritten on purpose; Precinct 9 is the whole map.
+- No titleImageUrl or narrationBackdropUrl decided.
+- Nothing further on presentation: the newsprint skin and the title card
+  are both built.
+
+OUTSTANDING
+--------------
+1. Untested. No Begin has been run against Property Damage. The map SVG
+   has been rendered in a browser and every rect id verified against
+   locationSlug() output, but the narration loop, the image pipeline and
+   the map highlight have not been exercised on this Adventure's data.
+2. The arc has never been played. Ten milestones, three acts and six
+   endings are authored and internally consistent — every `requires`,
+   every phase `until` and every ending `when` resolves against a real
+   milestone and outcome — but no narration AI has been asked to fire an
+   `[[EVENT:]]` tag against this Adventure's data.
+
+Content and data changes from here go in
+Adventures/Gallant Change Log.md; engine changes go in
+Generator/Steak and Bake Stories/Change Log.md.

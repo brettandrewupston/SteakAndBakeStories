@@ -1,0 +1,260 @@
+PARADISE REBUILT (HALCYON CAY) — ADVENTURE CONTENT
+===========================================================
+Last updated: 22/08/2026
+Third Adventure built for the Story Generator. Architecture/decisions
+live in the parent folder's Goals.txt and Features.txt — this file is
+just this Adventure's canon (premise, format, NPCs, map, setup fields).
+
+Adventure id: halcyon. Display title: "Paradise Rebuilt". Files are
+named Halcyon.* to match the id, consistent with Solmere/Meridian.
+
+PREMISE
+----------
+Halcyon Cay is a small, remote tropical island with one building on it:
+the Halcyon, a grand 1980s holiday resort closed and rotting for years.
+A trashy prime-time reality show, PARADISE REBUILT, has taken it over.
+Eight contestants — one of them the player — renovate the resort across
+a series of timed build challenges, hosted and judged by Dorian Vance.
+
+The player is the only contestant who is a qualified tradesperson. Every
+alliance on the island needs their hands and everyone knows it, which is
+the player's leverage and also what makes them a target.
+
+The resort's original staff never left, were never consulted about the
+show, and still live and work on site. The staff / contestant /
+production divide is the island's main social fault line.
+
+SHOW FORMAT
+--------------
+Contestants work in teams that Dorian reshuffles whenever the dynamic
+gets comfortable. Each renovation phase is a timed, judged challenge
+(pool bar, guest bungalows, spa, lobby). Renata Salas is dragged in as a
+reluctant technical judge she never agreed to be.
+
+The losing side is DEMOTED, not eliminated — a demoted contestant
+forfeits their claim on the prize but stays on the island as unpaid
+labour for the winners. Nobody ever leaves before the finale.
+
+This is a deliberate design choice, not a softened elimination: it keeps
+the cast at a constant fifteen NPCs, so the engine's static
+currentStory.npcs roster needs no per-Adventure changes (no "eliminated"
+flag, no shrinking roster, no resume-time reconciliation), while still
+carrying real stakes and escalating resentment.
+
+Executive producer Priya Raman controls the edit and trades screen time,
+framing and challenge hints for on-camera behaviour contestants would
+rather avoid.
+
+THE CAMERAS (signature mechanic)
+-----------------------------------
+Cameras run almost everywhere, almost always, and every character knows
+it. On camera they play their cast character; off camera they are
+someone else. Whether a camera is currently rolling is live information
+in every scene and characters react to it.
+
+Implemented with no engine changes: each NPC's "personality" field —
+which the prompt builder already injects verbatim — is written as an
+explicit "On camera: X. Off camera: Y." pair, so every NPC carries a
+two-layer persona for free. The rule itself is stated in
+promptRules.setting under CAMERAS.
+
+The Confessional Booth is a location: a converted linen store with one
+locked-off camera where contestants speak alone and tell the truth about
+each other.
+
+CONTENT APPROACH
+--------------------
+Deliberately more permissive than Solmere/Meridian. Flirtation, hookups,
+jealousy, betrayal and poolside sleaze are the expected texture of the
+story rather than exceptions, and are written freely and explicitly when
+a scene goes there; escalation within a scene still follows the player's
+lead. All characters are written unambiguously adult. Same
+non-negotiable minor-safety layer underneath regardless — see Safety
+Layer.txt (Image Generator) and Goals.txt SAFETY, unaffected by this.
+
+NPCs (15)
+------------
+Same authoring conventions as Solmere/Meridian: "identity" is the Stage
+A baseline appearance line (clothing-free — clothing comes from the
+Category via STANDARD UNIFORMS below), "bio" is who a character is,
+"personality" is how they talk. Every character is a clearly adult
+person.
+
+Flat "npcs" array — this Adventure does NOT use npcSets/openingScenes.
+The cast is mixed-gender by design and the player's gender does not
+change the roster, so the gender-mirrored mechanism Meridian needs is
+not applicable here, and the npcSets key-convention trap does not apply.
+
+TOKENS: the engine matches NPCs by a plain case-sensitive substring scan
+(text.includes(npc.token) / lastIndexOf, no word boundaries). Three
+first names were changed at authoring time because their tokens would
+have false-positived on ordinary capitalised words: Beau -> Cody
+("Beautiful"), Wes -> Trev ("West"), Jo -> Josefa (any capitalised Jo*
+word). All fifteen tokens were checked against each other, against the
+twelve location names, and against a list of common sentence-initial
+words before shipping.
+
+PRODUCTION (3)
+- Dorian Vance — host. Brilliant on camera, hollow off it; deliberately
+  engineers arguments, leaks secrets, reshuffles teams. The story's
+  drama engine: when a scene goes flat, Dorian is the character who
+  walks in and breaks it. Has decided Cody is the season's star, that
+  breaking the Quinn twins is his personal project, and that the Sunken
+  Villa is his finale. Category: production-male.
+- Priya Raman — executive producer. Controls the edit, never appears on
+  screen, trades screen time and challenge hints for on-camera
+  behaviour. Knows more about the Sunken Villa than Dorian does.
+  Category: production-female.
+- Milo Kessler — lead camera operator. Silent witness with a hard
+  drive; answers a direct question honestly when the camera is down.
+  Background-weight NPC. Category: production-male.
+
+RESORT STAFF (5)
+- Renata Salas — resort manager, eleven years. The owners signed the
+  show behind her back. Holds the only key to the Sunken Villa and
+  refuses to discuss it. Turns from the season's hardest obstacle into
+  its most formidable ally if genuinely respected. Category:
+  staff-female.
+- Josefa Duarte — head of housekeeping, twenty-two years. Knows which
+  doors don't lock and roughly half of what Renata is protecting.
+  Trades information for gossip and basic courtesy. Best NPC to
+  befriend early. Category: staff-female.
+- Camille Auber — junior housekeeper, 23, desperate to be discovered by
+  the cameras. Would throw a contestant under a bus for screen time.
+  Priya has already spotted this. Category: staff-female.
+- Teo Nunes — groundskeeper, thirty-one years on the island. Adopts the
+  player as the only other person there with real tools. Was present in
+  2014 and knows what happened at the west end. Category: staff-male.
+- Bastien Roche — Pool Bar. Pours heavily, hears every 2am confession,
+  repeats about half of them. Flirts with everyone. Category:
+  staff-male.
+
+CONTESTANTS (7 NPCs + the player)
+- Vela Quinn — twin. The one keeping score; has privately decided only
+  one Quinn wins and has not told her sister. Category:
+  contestant-female.
+- Nova Quinn — twin. Warmer, more genuine, starting to notice her
+  sister's plans leave her holding the risk. Cracking her open breaks
+  the twin bloc. Category: contestant-female.
+- Cody Callahan — declared frontrunner by Dorian's edit. Enormously
+  charming, cannot build anything; his work is quietly fixed overnight
+  by other people. Terrified the player can tell. Category:
+  contestant-male.
+- Ingrid Holm — the only other real strategist. Offers the player a
+  clean, honest hands-for-head alliance early and will honour it exactly
+  as long as she needs to. Category: contestant-female.
+- Roxy Tam — the designated villain, a role she accepted knowingly in
+  the audition room. Vicious on camera, warm and self-aware off it.
+  Category: contestant-female.
+- Deshawn Price — kind, funny, hopeless; entered as a joke by his
+  sister. Safest person to trust, most dangerous person to be caught
+  betraying. Category: contestant-male.
+- Trev Grubb — the only returning player, out fourth on an earlier
+  season. Understands the machinery better than anyone except Priya and
+  will teach the player how the show really works. Loathes Dorian.
+  Category: contestant-male.
+
+Gender split across the roster: 8 female, 7 male.
+
+THE TWINS
+------------
+Vela and Nova Quinn share an identical "identity" line except for one
+deliberate tell: Vela wears her hair in a high ponytail, Nova wears hers
+loose. Same face, same build, same colouring — so their Stage A
+portraits read as genuinely identical twins — with a single reliable
+visual difference the player can learn, and which the twins swap on
+purpose when it suits them.
+
+Identical portraits via a shared locked seed is NOT possible at
+authoring time: baseline seeds are assigned as
+Math.floor(Math.random() * 999999) per NPC on first encounter
+(generateNpcBaseline()), not derived from the NPC's name, so there is no
+story-definition field that could pin two NPCs to the same seed. The
+matching identity text achieves the same effect without engine changes,
+and the one-detail tell is better for play than true indistinguishability.
+
+CAST WEIGHTING
+-----------------
+Fifteen NPCs is above Solmere's twelve, and the prompt builder already
+scopes off-screen NPCs down to a single name line, so context size is
+not the constraint — flattening is. promptRules.setting therefore states
+an explicit weighting, since the engine has no per-NPC tier field:
+- Main storylines: Dorian, Vela, Nova, Cody, Ingrid, Roxy, Renata
+- Strong supporting: Deshawn, Trev, Josefa, Bastien, Camille, Priya
+- Background: Teo, Milo
+with an instruction not to give all fifteen equal time in a scene.
+
+STANDARD UNIFORMS (Stage A baseline portraits)
+---------------------------------------------------
+Six categories, each combined with an NPC's identity line and a generic
+neutral background at generation time — not written per-NPC, so changing
+one line updates every NPC sharing that Category. A matching
+poolUniforms set covers the three wet locations.
+- contestant-male / contestant-female: branded high-vis work kit, tool
+  belt, work boots, dust and sweat, cut short and tight.
+- staff-male / staff-female: Halcyon resort uniform, faded palm crest,
+  crisp but undone in the tropical heat.
+- production-male / production-female: pale linen, lanyard and radio,
+  sunglasses pushed into the hair, camera-ready.
+
+MAP LOCATIONS (12)
+---------------------
+Hub-and-spoke from the Pool Deck (the social hub, as Solmere's Courtyard
+and Meridian's Mess Hall).
+- Resort Lobby (starting location)
+- Pool Deck (hub, wet)
+- Pool Bar
+- Contestant Villas
+- Staff Quarters
+- The Site (the half-gutted wing under renovation)
+- Tool Shed
+- Confessional Booth (gold accent — signature mechanic)
+- Beach (wet)
+- Outdoor Showers (wet)
+- Manager's Office
+- The Sunken Villa (mystery/danger — red, dashed, and its path from the
+  hub is drawn severed rather than solid)
+
+wetLocations: Pool Deck, Beach, Outdoor Showers.
+
+The SVG was generated programmatically and every rect id was verified to
+match locationSlug() output for all twelve locations entries before
+delivery, along with checks for overlapping boxes and out-of-viewBox
+placement.
+
+MYSTERY SITE
+---------------
+The Sunken Villa — the resort's flooded west end, fenced, excluded from
+the renovation, and barred from filming by the show's contract with the
+owners. Renata holds the only key and refuses to discuss it. Teo was
+there in 2014. Josefa knows about half. Dorian wants it on camera by the
+finale. Season-long slow burn, revealed in pieces and only to a player
+who earns the staff's trust. Fills the same structural role as Solmere's
+Restricted Wing and Meridian's Cargo Bay.
+
+ADVENTURE SETUP FIELDS (Halcyon-specific)
+----------------------------------------------
+- Your Trade — Carpenter / Electrician / Plumber / Tiler / Landscaper
+  (flavours the player's expertise; does not change uniform category)
+- Your Edit — The Hero / The Villain / The Wildcard / The Underdog /
+  The Flirt (how production has cast the player; steers narration tone
+  and how NPCs initially read them)
+- Plus: Character Name, Gender, Appearance, Age (required, universal —
+  see Features.txt ADVENTURE SETUP SCREEN). No freeform custom fields —
+  curated fields only, per Adventure.
+
+playerCategoryTemplate: contestant-{playerGender}. The player is always
+a contestant, so unlike Solmere's {socialStanding}-student-{playerGender}
+the template has a single variable.
+
+OPEN / NOT YET DECIDED
+---------------------------
+- What actually happened at the Sunken Villa in 2014 is deliberately
+  unspecified — the lore states that Teo knows, Josefa knows half and
+  Priya knows more than she admits, without fixing the event, so the
+  narration AI can settle it in play. Pinning it down in canon is
+  available if a fixed answer is wanted.
+- No titleImageUrl or narrationBackdropUrl set yet (both optional).
+- Whether Demotion should have any mechanical effect beyond narration
+  (it is currently purely a story state the AI tracks, with no engine
+  support and no persisted field).
