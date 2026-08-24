@@ -1,0 +1,713 @@
+NOBODY CALLS THE POLICE (VERMILLION) — ADVENTURE CONTENT
+===========================================================
+Last updated: 23/08/2026
+Eighth Adventure for the Story Generator. Architecture/decisions live in
+the parent folder's Goals.txt and Features.txt — this file is just this
+Adventure's canon (premise, the mystery design, NPCs, map, setup fields).
+
+Adventure id: vermillion. Display title: "Nobody Calls the Police". Files
+are named Vermillion.* to match the id, consistent with Solmere /
+Meridian / Halcyon / Hollowburn / Pemberton / Gallant / Perpetua.
+
+Built 23/08/2026: canon, Story Definition JSON, seventeen lore files and
+the map SVG. All of it is hosted and live in the GitHub assets repo. The
+UI skin was built and wired in on 24/08/2026, and the Adventure was
+registered in the ADVENTURES array the same day. It is playable and
+untested. See OUTSTANDING at the end.
+
+PREMISE
+----------
+Calder Bay, 31 December 1949. The war made the Carrow Family rich and the
+peace made them respectable, and they spent both on the Vermillion.
+
+Six storeys of it. A neon marquee legible from the water. A casino floor
+under a mirrored ceiling, a supper club with a twenty-girl chorus line, an
+indoor pool called the Grotto lit turquoise from below, and a count room
+in the basement where four men do nothing all night but weigh money. This
+is not a back room behind a liquor store. It is a palace, and the Family
+built it to be photographed.
+
+At 11:47pm, while the band counts down and eight hundred people in silk
+scream at the ceiling, Don Ottavio Carrow — the Cardinal — is shot once in
+his own office on the sixth floor. The door is bolted from the inside. The
+gun is his own, out of his own desk drawer, wiped and left on the blotter.
+His safe is open and his book is gone.
+
+The Family cannot call the police, because half the police are downstairs
+in rented tuxedos. So they call the player: the Sparrow, the detective the
+Families use when they cannot use cops. Paid in cash, protected by
+reputation, and famously never armed.
+
+Three days until the funeral. Name a killer by then, or Handsome Sal names
+one, and Calder Bay burns.
+
+THE ROTATING SOLUTION (signature mechanic)
+---------------------------------------------
+The killer is a different person on every playthrough. So is the person
+who opened the safe, and so is the way out of a bolted room. The Adventure
+is authored once and answers differently every time it is played.
+
+Three values are fixed at Begin and are the ground truth every other piece
+of content is written against:
+
+- Culprit — which of the nine fired the shot.
+- Safecracker — who opened the safe after the body was cold and took the
+  book. Rolled independently, so it is usually somebody else and
+  occasionally the same person, which is a legitimate variant rather than
+  a bug: sometimes one person did all of it.
+- The Way Out — which of the three routes out of a bolted room was used.
+
+Nine times nine times three. The engine picks all three and the AI is told
+what they are.
+
+WHY TWO SECRETS AND NOT ONE
+-------------------------------
+The safecracker is the load-bearing half of the design, not decoration.
+
+A rotating whodunnit has one structural problem: an innocent suspect with
+a real physical trace in the crime scene is a contradiction, so a
+single-secret version has to keep all eight innocents out of that room,
+and then the only person with evidence against them is the killer. The
+mystery solves itself on the first piece of evidence found.
+
+Two people in the room fixes it completely. Traces in the office are
+genuinely ambiguous, being caught in the office is not proof of murder,
+and the player gets a mid-game victory that feels like the answer and
+isn't. Catching the safecracker is the trap the whole Adventure is built
+around.
+
+SYMMETRIC CLUES
+------------------
+Every one of the nine carries the same four things on every playthrough,
+guilty or not:
+
+- Lie — something they state that is checkably false.
+- Gap — minutes between 11:30 and midnight they cannot account for.
+- Trace — a physical thing of theirs in or near that office.
+- Motive — a reason the Cardinal was worth killing.
+
+All nine always look guilty. The guilty one additionally carries a Tell:
+one fact that only holds together if they did it. Each innocent carries an
+authored true explanation for their Lie, Gap and Trace, released only when
+that specific thread is pressed properly.
+
+The player is not hunting the person who looks guilty. They are hunting
+the one whose four lies all point at the same half hour.
+
+Every suspect's lore file carries all six pieces — Lie, Gap, Trace, Motive,
+the innocent explanation, and the Tell — because the retrieval pass has to
+be able to serve either version depending on which name came up. A lore
+file that named the killer would be wrong on eight runs out of nine.
+
+THE LOCKED ROOM
+------------------
+Three ways out of a bolted room on the sixth floor. All three are real,
+all three are discoverable, and exactly one was used:
+
+- The service dumbwaiter, kitchen galley to the office pantry. Only
+  somebody slight fits.
+- The old freight stair behind the count room, welded shut in '46, except
+  it was cut open again and one key exists.
+- The powder-room door, papered over on the office side, which opens if
+  you know where to press.
+
+Each suspect can plausibly use one or two of the three, so the route
+narrows the field without naming anybody. A returning player who already
+knows all three routes still cannot shortcut the who, and the how is not
+burned after one run either.
+
+FIXED TRUTHS
+---------------
+These never rotate, in any configuration, and the narration must never
+contradict them:
+
+- Time of death 11:47pm. The countdown covered the shot; nobody in the
+  building heard it.
+- The weapon is the Cardinal's own pistol, out of his own desk drawer,
+  wiped. Nobody brought a gun to that room. Whoever did it decided while
+  standing in it, which is why this is not a planned murder and why the
+  killer is not calm afterwards.
+- The safe was opened after death, by somebody who knew the combination.
+- The book is gone. It is the ledger of who owes what and who told what to
+  whom, and it is worth more than the club. It drives days two and three.
+- The Cardinal was expecting somebody. Two glasses, one poured and
+  untouched.
+
+THE VERDICT IS ENGINE-OWNED
+-------------------------------
+Deliberately the opposite call to Solmere's duel outcomes, and the reason
+is specific rather than a matter of taste. A duel the AI lets you win is
+the power fantasy the Adventure is for. A murder the AI lets you solve is
+not a mystery — it is a mirror. A narration model asked "was it Moretti?"
+will agree with whoever the player names, every time, and the genre dies
+in that sentence.
+
+So the ending is fired by the engine, deterministically, off what the
+player did rather than off the model's opinion of it. The accused milestone
+declares all nine tokens as outcomes; the model reports which name the
+player put on the table, which is the one fact about the accusation it
+cannot get wrong because the player just said it out loud. Nine endings
+carry `when: "accused:<token>"` and fire the moment that outcome lands.
+
+Whether the accusation was correct is then not a judgement call either:
+each of those nine endings is authored in three branches — right and
+provable, right and unprovable, and wrong — and the model has the Culprit
+value in front of it. It is reading a variable, not forming a view.
+
+No engine change is required for any of it. This is the entire point of
+the build — see THE ZERO-CHANGE BUILD below.
+
+THE ZERO-CHANGE BUILD
+------------------------
+Nothing in this Adventure needs new engine capability. The rotating
+solution rides on a behaviour that already exists: a setupFields entry of
+type "tiles" that the player leaves untouched is rolled at random at
+Begin (Goals.txt ENGINE / STORY-CONTENT SPLIT, setupFields).
+
+So Culprit, Safecracker and The Way Out are three ordinary tiles fields.
+Untouched, the engine rolls each one. Touched, the player has pinned the
+answer on purpose, which is the replay feature and the only sane way to
+test a specific configuration without rerolling.
+
+Three consequences worth stating plainly:
+
+- The three values travel in the save and therefore in the export, so a
+  tester reporting "the mystery made no sense" is reporting it with the
+  answer attached. This is the whole reason the diagnostic is in the data
+  rather than in a console log.
+- The fields are visible on the setup screen. A player who clicks one has
+  chosen to know, and the labels say so. There is no way to hide a field
+  from the setup screen and no reason to add one.
+- promptRules.setting carries the secrecy rule, because the AI is told the
+  answer on turn one and has to sit on it for three in-fiction days. This
+  is the Adventure's single largest risk and it is a prompt problem, not
+  an engine problem. See OPEN.
+
+WHAT WOULD MAKE IT AIRTIGHT LATER
+------------------------------------
+Not built, not needed for v1, and worth writing down so it is not
+rediscovered from scratch: a small engine hook that rolls the three values
+itself, keeps them out of setupFields entirely, and resolves the
+accusation by comparison rather than by authored fork. That buys three
+things — the setup screen stops advertising the mechanism, the model is
+never handed a value it has to withhold, and the right/wrong branch stops
+depending on the model reading a variable correctly.
+
+It is the difference between a mystery that works and a mystery that
+cannot fail. v1 is the former. Do not build the latter until v1 has been
+played and the leak rate is known, because the prompt-secrecy problem is
+the thing to measure and the hook would hide it rather than fix it.
+
+TONE
+-------
+Noir with the lights on. Not rain-soaked and not miserable — this is the
+most glamorous room in the state and the Adventure should look like money
+the entire time. Silk, smoke, ice in a glass, a band that never quite
+stops. Everybody is charming, everybody is lying, and the difference
+between an interrogation and a seduction is that one of them has a chair.
+
+Funny where it wants to be. These are not tortured people; they are people
+who have solved their problems this way before and are annoyed at how
+badly it went this time.
+
+The player is the only person in the building who is not afraid of anybody
+in it, and the story should behave accordingly. The Sparrow is not
+hard-boiled. The Sparrow is the calmest person in every room and it is
+extremely irritating to everybody else.
+
+CONTENT
+----------
+Above Halcyon in the prose and above Gallant in the portraits — this is
+now the most sexualised of the eight Adventures and the costume set is
+where that is spent. Flirtation, propositions, arrangements made at four
+in the morning and bad decisions made in a dressing room are the expected
+texture rather than exceptions, written freely and explicitly when a scene
+goes there; escalation within a scene still follows the player's lead. All
+characters are written unambiguously adult (31–46).
+
+The fan service is diegetic and load-bearing rather than applied. In a
+building where nobody can call the police, charm is the only interrogation
+technique anybody has, and it runs in both directions: every suspect has a
+reason to work the detective rather than answer them. A bribe, a threat, a
+hand on a lapel, an offer of a room upstairs. The player is the one person
+in Calder Bay whose good opinion is worth buying, and nine people spend
+three days trying to buy it. That is the Adventure.
+
+Two complications the story treats as real rather than ignoring:
+
+- Sleeping with a suspect is not free. It buys access and costs
+  credibility, everybody finds out, and the Family will use it. The
+  narration should let it work and then let it cost.
+- One of the nine did it. Whichever configuration is live, the player is
+  being charmed by a murderer at some point during those three days, and
+  the story is better when it plays that straight rather than signalling
+  it.
+
+Marco Vasile sits outside the flirtation frame; his attractedTo is
+omitted, which suppresses the per-NPC "Attracted to: ..." clause for him
+only. Every other NPC carries one.
+
+The standard minor-safety layer is unchanged and sits underneath all of
+this — see Safety Layer.txt and Goals.txt SAFETY.
+
+NPCs (9)
+-----------
+Same authoring conventions as the other seven: "identity" is the Stage A
+baseline appearance line (clothing-free — clothing comes from the
+Category), "bio" is who a character is, "personality" is how they talk.
+Identity lines carry an explicit adult figure description so they compose
+with the costume set rather than fighting it.
+
+Every one of the nine is eligible as Culprit and as Safecracker, the
+player's own partner included. Nobody is safe and nobody is cleared, which
+is why the roster is small: nine suspects who are all genuinely in play
+beats fifteen where four are obviously furniture.
+
+npcSets/openingScenes are used, Meridian-style, for one NPC only — the
+partner is gender-mirrored to the player and the other eight are identical
+in both rosters. The key convention is exact: "male"/"female", matching
+the playerGender tiles values.
+
+Gender split: 5 female, 4 male (plus the mirrored partner).
+
+THE FAMILY (4)
+- Vivienne Carrow — the widow, 41. Came up through this same chorus line
+  twenty years ago and married the man who owned it, and she is still the
+  best entrance in the room. The only person in the building who was never
+  once afraid of him. Category: family-female.
+- Salvatore "Handsome Sal" Moretti — underboss, 38. Runs the room the
+  second the Cardinal leaves it. Charm like a switchblade and the
+  attention span of a man who has never had to finish a sentence.
+  Category: family-male.
+- Arturo Fein — consigliere, 46. Lawyer, immaculate, the Family's memory.
+  The only man on the floor in plain black and the most expensive thing in
+  the building. Category: family-male.
+- Marco "the Deacon" Vasile — enforcer, 40. Quiet, devout, gentle-handed,
+  and the most frightening man in a room of eight hundred. Category:
+  muscle-male.
+
+THE HOUSE (2)
+- Delphine "Del" Rosetti — the Vermillion's headliner, 31. Her name is the
+  neon. Twenty girls behind her, a spotlight that follows her to her
+  table, and six years as the Cardinal's mistress. Category: stage-female.
+- Josephine "Joey" Marsh — mistress of the casino floor, 35. Runs the pit,
+  holds every key in the building, and knows every debt in Calder Bay to
+  the dollar. Category: floor-female.
+
+FROM OUTSIDE (2)
+- Serafina Bellandi — heir to the rival Bellandi Family, 33. At the gala
+  under a one-night truce, in white, because she knew what it would do to
+  the room. Category: rival-female.
+- Det. Lt. Roy Kilbane — Calder Bay PD, 44, on the pad since he made
+  sergeant. At the party in a tuxedo he did not pay for. Category:
+  police-male.
+
+THE PARTNER (gender-mirrored, 1)
+- Ruth "Ruthie" Kaminski / Reuben "Rube" Kaminski — 34, ex-Army medic,
+  drives the car, throws the punches the Sparrow will not, keeps the
+  notebook. Category: partner-female / partner-male.
+
+Full bio / likes / dislikes / attractedTo / identity text lives in
+Vermillion.json and the matching Lore/Vermillion/npc-*.txt files, not
+duplicated here.
+
+CAST WEIGHTING (stated in promptRules.setting — the engine has no per-NPC
+tier field)
+- Every one of the nine is a lead. There is no supporting tier and no
+  background tier, because a suspect the narration treats as background is
+  a suspect the player will not consider, and a suspect the player will
+  not consider is a rotation slot that plays badly one time in nine.
+- The Cardinal is present throughout as a subject and never as a
+  character. He does not appear in flashback and does not speak.
+
+TOKENS
+---------
+The engine matches NPCs with a plain case-sensitive substring scan, no
+word boundaries, so tokens are chosen for scan safety rather than for how
+the cast is usually addressed. In a Family story the narration reaches for
+surnames constantly, which makes surnames the safer default here.
+
+Four names were rejected at build for collisions and the reasoning is kept
+because the same traps recur:
+
+- "Sal" fires inside "Saloon", which this building has. Token is Moretti.
+- "Fein" fires inside "Feint" and "Feinted", which a story with a fight in
+  it will produce. Token is Arturo.
+- "Del" fires inside "Delivery", "Delicate" and "Deliberately" at the
+  start of a sentence. Token is Rosetti.
+- "Marsh" fires inside "Marshal" and "Marshalled". Token is Joey.
+
+Final tokens: Vivienne, Moretti, Arturo, Rosetti, Vasile, Serafina, Joey,
+Kilbane, Kaminski. Kaminski is the token in both rosters, so the partner
+scan is roster-independent.
+
+The sweep was run programmatically at build rather than read: all nine
+tokens checked against each other, against all fourteen location names,
+against the uniform, pose and expression strings, and against a list of
+roughly three hundred common capitalised words including the specific
+traps above. No collisions. The only hits anywhere are Moretti and Vasile
+inside the arc phase guidance, which is prompt text and is not scanned.
+
+One location was renamed at build for two reasons: the funeral home is
+Carbone and Sons rather than Rossi & Sons, because "Rossi" reads as a
+near-miss against "Rosetti" for anyone maintaining this later even though
+the scan itself is clean, and because an ampersand in a location name
+slugs to a run of hyphens for the map's loc-<slug> id convention. No
+location name in this Adventure contains punctuation other than the
+apostrophe in The Cardinal's Office, which slugs the same way Halcyon's
+Manager's Office and Meridian's Captain's Ready Room already do.
+
+Nicknames are not tokens — the engine matches npc.token only — so "the
+Cardinal", "Handsome Sal", "the Deacon", "the Sparrow" and "Del" carry no
+matching risk and can be used freely in narration.
+
+The player's character name remains free text and can still collide, which
+is the known hazard shared with every other Adventure and is not solved
+here.
+
+STANDARD UNIFORMS (Stage A baseline portraits)
+---------------------------------------------------
+Eleven categories, each combined with an NPC's identity line and a generic
+neutral background at generation time — not written per-NPC, so changing
+one line updates every NPC sharing that Category.
+
+This is the most overtly sexualised costume set of the eight, above
+Gallant, and it is applied to every category and to both genders equally
+rather than to the female categories alone. The male categories are as
+exposed and as sculpted as the female ones.
+
+Two things make it belong here rather than being applied on top. The
+Adventure opens on the single most dressed-up night of the year in a room
+built to be looked at, so gala black tie is not a costume choice, it is
+what everybody in the building is actually wearing. And this is a house
+that sells looking: the chorus line, the floor, the room itself. Every
+character in it is dressed by somebody whose job is to make them worth
+staring at, and the Cardinal signed off on the budget.
+
+The register is 1949 formalwear taken to its limit rather than modern
+clothes in period trim — bias-cut silk, boning, gloves to the bicep,
+seamed stockings, garter straps, satin, fur, a great deal of bare back.
+Where a modern costume set would cut a hole, this one uses drape, and it
+should read as more explicit for it: silk that is opaque and still tells
+you everything.
+
+Every category carries "fully clothed, clearly an adult", and
+clothingStates handles everything past baseline. That pairing is the
+entire guardrail and neither half is optional at any heat level. The
+minor-safety layer underneath is untouched by any of it.
+
+- family-female: Vermillion gala black tie. A floor-length bias-cut silk
+  gown poured onto the body and clinging to every line of it, plunging
+  halter neckline baring deep cleavage and the full inner curve of the
+  bust, the back cut away to the base of the spine, a slit opening to the
+  hip and baring the whole length of one leg with every step, nothing
+  breaking the line of the silk anywhere beneath it, elbow-length opera
+  gloves, diamonds at a bare throat, seamed stockings and very high satin
+  heels.
+- family-male: Vermillion gala black tie. A dinner jacket cut close enough
+  to read the shoulders and the taper of the waist, worn open over a dress
+  shirt undone to the middle of a bare hard chest, bow tie hanging loose
+  at an open collar, high-waisted trousers tailored tight over the thighs,
+  a silk cummerbund pulled snug around a flat stomach, sleeves pushed back
+  over the forearms, gold at the wrist.
+- stage-female: the Vermillion's headline costume. A beaded showgirl
+  leotard cut brutally high over the hipbone and open to the navel, boned
+  to lift and bare the bust, sheer beaded mesh over the ribs and the small
+  of the back, a spill of red ostrich feathers at the tail, fishnets to
+  the top of the thigh with garter straps biting into them, gloves to the
+  bicep, a rhinestone collar and a tall feathered headdress, six inches of
+  heel.
+- floor-female: a man's tuxedo tailored onto a woman. The jacket worn over
+  nothing but bare skin, fastened at the waist and open the whole way down
+  to bare the inner curve of the chest and a flat bare stomach, no shirt
+  and no tie, satin-striped trousers cut high and close over the hips or a
+  pencil skirt slit to the thigh, sleeves pushed to the elbow, a bow tie
+  hanging undone around a bare neck.
+- floor-male: house floor dress. A short white mess jacket cut tight and
+  worn open over a bare chest, high-waisted black trousers with a satin
+  stripe sitting on the hips, a wide sash pulled in at a flat waist,
+  sleeves pushed up over the forearms, a bow tie undone at a bare throat.
+  No named NPC uses this category — it exists for the waiters, dealers
+  and floor staff the narration invents, so an improvised house character
+  has somewhere to land rather than defaulting to a Family look.
+- muscle-male: black tie worn as a working uniform. Jacket gone, dress
+  shirt soaked through and clinging to a heavy chest and thick arms,
+  sleeves rolled past the elbow, collar open three buttons over a bare
+  throat and a saint's medal on a chain, braces pulled taut over the
+  shoulders and framing the chest, trousers cut close over heavy thighs,
+  an empty shoulder holster strapped tight across the back and ribs.
+- rival-female: a white column gown cut like a provocation. One shoulder
+  bare to the ribs, silk cut close enough to read every line of the body,
+  the sides cut away from underbust to hip to bare skin the whole way
+  down, a slit to the top of the thigh, the back open to the tailbone,
+  white satin gloves, pearls at the throat, and white fur left to slide
+  off the shoulders.
+- police-male: a rented dinner jacket a size too small, straining across
+  the shoulders and worn open, dress shirt pulled tight over a broad chest
+  and undone at the throat with the tie in a pocket, trousers riding low
+  on the hips, sleeves shoved back, a shoulder holster he has not bothered
+  to hide, collar damp.
+- partner-female / partner-male: black tie worn for work rather than for
+  the room. Jacket over a chairback somewhere, dress shirt undone several
+  buttons and pulled tight, sleeves rolled to the elbow, braces framing
+  the chest, trousers cut close, a shoulder holster over the shirt, sturdy
+  shoes.
+- detective-female / detective-male: the Sparrow. A beautifully cut dark
+  suit worn with nothing under the jacket, fastened at the waist and open
+  above and below it, no tie, sleeves pushed back, trousers tailored close
+  or a narrow skirt slit high, everything expensive and nothing armed.
+
+wetLocations and poolUniforms are both declared — The Grotto and The
+Ambrosia Baths — so the swap is live rather than inert. Period swimwear
+and bathhouse towels, written to the same register. clothingStates is
+retained at the Halcyon/Pemberton level.
+
+playerCategoryTemplate: detective-{playerGender}. The player is always the
+Sparrow, so like Halcyon, Pemberton and Gallant the template has a single
+variable.
+
+MAP LOCATIONS (14)
+---------------------
+Two hubs. The Supper Club Floor is the night-one hub, and the Alley is
+where anything honest gets said. Same shape as Halcyon's Pool Deck and
+Gallant's Roof.
+
+Night one is sealed: the first six locations only, nobody in or out. The
+lockdown lifts at dawn and the rest of the map opens. The engine does not
+gate locations, so this is authored in promptRules.setting and in the
+phase guidance rather than enforced in code.
+
+- The Supper Club Floor (starting location, hub — where the body has not
+  been announced yet)
+- The Cardinal's Office (crime scene — red, dashed, path drawn severed,
+  the same treatment as Halcyon's Sunken Villa, Pemberton's Overflow and
+  Gallant's Blackout Block)
+- The Casino Floor (mirrored ceiling, Joey's pit)
+- The Chorus Room (backstage, twenty girls and one long mirror)
+- The Galley (the dumbwaiter)
+- The Count Room (the freight stair)
+- The Grotto (the club's indoor pool, turquoise from below, open all
+  night — wet location)
+- The Private Booths (quiet, and where the Cardinal did business)
+- The Alley (second hub — the only place in the building nobody has
+  bought)
+- Carrow House (opens day two)
+- The Ambrosia Baths (opens day two — where the Family talks business,
+  because you cannot wear a wire in a towel — wet location)
+- Carbone and Sons (funeral home and de facto morgue, opens day two)
+- The Bellandi Social Club (opens day three)
+- The Precinct (opens day three)
+
+THE CARDINAL'S OFFICE
+------------------------
+The restricted-site slot, and unlike Gallant's Blackout Block it does hold
+the secret, because this is the Adventure where that is the point.
+
+It is not sealed by anybody's authority — the Family has no authority over
+the Sparrow and the police are not coming. It is sealed because Vasile is
+standing outside it and has been told nobody goes in, and how the player
+gets past that on the first night is the Adventure's first real scene.
+
+THE CLOCK
+------------
+Three days to the funeral. It is not a turn count and does not resolve on
+one — it resolves on the arc, and the arc resolves on the player putting a
+name on the table. The day/phase counter runs underneath it and the
+narration is expected to say out loud how much of it is left.
+
+THE ARC
+----------
+Three acts, ten milestones, twelve endings. The acts turn on milestones,
+never on turn count.
+
+ACT I — THE SEALED NIGHT, until the_room. Eight hundred people downstairs
+who have not been told, nine people upstairs who have, and a door with the
+Deacon in front of it.
+
+ACT II — THREE DAYS, until the_offer. The lockdown lifts, the suspects
+scatter across Calder Bay, and everybody in the city starts looking for
+the book.
+
+ACT III — THE FUNERAL. The box is open at Carbone and Sons and every scene
+bends toward the name the player is going to say over it.
+
+MILESTONES
+- the_room — the player gets past Vasile and works the crime scene
+  properly. Fires on being in there and reading it, not on being told
+  about it. Closes Act I.
+- the_trick — the player works out which of the three routes was used, and
+  therefore that the bolt was never the puzzle. Requires the_room.
+- the_book — the player learns the safe was opened after death: two people
+  were in that room. The Adventure's hinge. Requires the_room.
+- first_crack — the first suspect's Lie comes apart and they hand over the
+  true explanation. Requires the_room.
+- the_hour — the player has the whole 11:30-to-midnight timeline
+  reconstructed and can say where all nine were. Requires first_crack.
+- the_safecracker — the player correctly identifies who opened the safe.
+  Requires the_book. Fires only on the name in the Safecracker setup
+  value; a confident wrong guess is not this milestone and must not fire
+  it.
+- pressure — the player pushes a suspect past what that suspect will take.
+  Outcomes: backed_off, made_an_enemy.
+- the_offer — the Family offers the player a name to take and money to
+  take it with. Outcomes: refused, took_it. No structural prerequisite,
+  deliberately, for the same reason Pemberton's review_set and Gallant's
+  the_offer have none: an ending a passive player can be locked out of is
+  an Adventure that cannot end. Closes Act II.
+- the_funeral — day three, the box is open, and the Family is waiting.
+- accused — the player names somebody. Outcomes: the nine tokens. This is
+  the milestone the endings hang on and the reason the outcome list is
+  names rather than right/wrong. Requires the_room.
+
+ENDINGS (12)
+- Nine accusation endings, one per suspect, each `when: "accused:<token>"`
+  and each authored in three branches. The model has the Culprit value in
+  front of it and is reading it, not judging it.
+  - Right, and provable: the Family handles it, and how depends entirely
+    on who it was. Vasile's ending is not Vivienne's ending.
+  - Right, unprovable: they walk. The player knows. They know the player
+    knows. That is the whole of it.
+  - Wrong: the accused is dead before the funeral is over and the real one
+    buys the Sparrow a drink at it. This is the ending that makes the
+    mystery a mystery, and it must be written without mercy or the whole
+    mechanism is decorative.
+- Took It (`when: "the_offer:took_it"`) — the player takes the money and
+  the name the Family picked. Written as a job completed, not as a fall,
+  which is worse.
+- No Name (final phase, model-fired) — the funeral ends with nobody named.
+  Sal picks one, and Calder Bay burns.
+- Nobody Calls the Police (anyTime, not continuable) — the player pushed
+  the wrong person on the wrong night. Death, so no Continue, per the
+  standing rule in Goals.txt STORY ARC & ENDINGS.
+
+No ending brings the Family down and none is written as one. The Sparrow
+does not clean up Calder Bay. The Sparrow is paid.
+
+TIME PHASES
+--------------
+A club's night rather than a calendar day: Evening / The Countdown / Small
+Hours / Dawn / Afternoon. Five phases, following Halcyon's shooting-day
+and Gallant's shift precedent.
+
+startingPhase: The Countdown — the Adventure opens at 11:52pm, five
+minutes after the shot, with the player already in the building because
+Joey Marsh telephoned before she called anybody else.
+
+RELATIONSHIP LABELS
+----------------------
+Seven tiers on the engine's min-threshold form, written as what a suspect
+is currently prepared to do about the detective. Bottom is not Nemesis and
+top is not Love, the same move Hollowburn, Pemberton and Gallant make.
+
+0 Wants You Gone / 15 Stonewalling / 35 Careful / 50 Civil / 65 Talking /
+80 Telling You Things / 95 On Your Side.
+
+"Telling You Things" is deliberately one tier below the top: a suspect
+warm enough to talk is not yet a suspect who has decided the player is
+worth protecting, and the gap between those two is where most of the
+Adventure's evidence lives.
+
+ADVENTURE SETUP FIELDS (Vermillion-specific)
+------------------------------------------------
+- Culprit — nine tiles, one per suspect. Leave it alone and the engine
+  rolls it. Touch it and the answer is pinned.
+- Safecracker — nine tiles. Same. Rolled independently, so it can land on
+  the same person as the Culprit, which is a real variant.
+- The Way Out — three tiles: the dumbwaiter, the freight stair, the powder
+  room.
+- How You Got The Call — Old Debt / Reputation / You Were Already In The
+  Building / The Widow Asked For You By Name. Flavour, and it changes who
+  starts out prepared to talk to the player.
+- What You Won't Do — Carry A Gun / Take Family Money / Lie To A Client /
+  Nothing, For The Right Number. Canon for that playthrough, and the
+  Adventure will test it.
+
+Plus the required universal fields: Character name, Gender (both options),
+the four Appearance dropdowns, and Age. No freeform custom fields.
+
+nameSets are period first names for both genders, since a generated player
+name lands in narration beside an authored 1949 cast.
+
+IMAGE SETTINGS
+-----------------
+imageStyle: "painted anime style, front on shot" — the setting proven
+against the live image pipeline by Solmere, Meridian, Halcyon, Pemberton
+and Gallant. Hollowburn's departure from it is flagged in its own outline
+as the field most likely to need reverting, so this Adventure does not
+repeat the experiment.
+
+baselineBackground: the standard plain neutral studio line.
+
+poseVocabulary is written to the room and to the same register as the
+uniforms: leaning back against a bar, sitting on a table edge with legs
+crossed, lighting a cigarette, mid-step in a doorway, arms folded under
+the chest, one hand on a hip and the weight on one leg, sitting on a
+dressing-room stool half turned away, bent over a roulette table, arching
+back mid-stretch, sprawled in an armchair with a glass, hands raised in a
+spotlight, wrapped in a towel.
+
+expressionVocabulary gains "amused", "unbothered", "caught", "flushed",
+"sultry", "reading you", "afraid and hiding it" and "cold".
+
+OPEN / NOT YET DECIDED
+---------------------------
+- The secrecy risk. The AI is handed the answer on turn one and has to
+  hold it for a whole playthrough, and models leak. promptRules.setting
+  carries the rule, the lore files carry both versions of every clue so
+  retrieval cannot force a leak, and the fixed truths give the model plenty
+  of true things to say instead. That is everything design can do. What is
+  left is measurement: play it and count. This is the single most likely
+  reason this Adventure fails and it should be the first thing tested.
+- Whether the Safecracker should be prevented from landing on the Culprit.
+  Current position: no. One person doing both is a legitimate and
+  occasionally excellent configuration, and the constraint would need
+  engine support to enforce. The counter-argument is that it collapses the
+  Adventure's best structural idea one run in nine.
+- Whether nine accusation endings is too many. They are nine genuinely
+  different scenes and the mechanism needs them to be separate to stay
+  deterministic, but it is by a distance the longest endings list of the
+  eight and the first place to cut if the arc block gets unwieldy.
+- Whether the player should be able to accuse more than once. Current
+  position: no — the milestone fires once and the ending fires with it,
+  and a mystery you can brute-force is not one. The counter-argument is
+  that a player who names somebody flippantly on turn six has ended their
+  game, which is either the point or a bug depending on temperament.
+- Whether the Cardinal should ever appear. Current position: never, in any
+  form. He is more useful as a shape everybody describes differently.
+- No titleImageUrl, coverUrl or narrationBackdropUrl decided. The skin
+  needs none of them — its backdrop is pure CSS — but an Adventure card
+  wants a coverUrl, so that is an asset pass still to do.
+
+UI SKIN
+----------
+Built and wired in 24/08/2026 — the seventh skin, `vermillion`, gated on
+currentStory.id. Oxblood lacquer and brass with deco geometry, and one
+saturated marquee red reserved for what the building switches on for
+itself: the bulb row along the top edge of the narration log, Send, the
+selected setup tile, and the current location on the map. CSS only, no art
+assets. Limelight for display, Lora for reading, Barlow Condensed for
+chrome.
+
+It is an engine change, so it is written up in full in the engine log at
+Generator/Steak and Bake Stories/Change Log.md (24/08/2026) rather than
+here — including where the CSS block has to sit and why, and what the
+render and baseline-diff verification found.
+
+The Cardinal's Office deliberately keeps no special colour on the map: its
+red dashed stroke is flattened to brass with every other room so the
+current-location highlight stays the only thing that stands out, the same
+treatment Halcyon's Sunken Villa and Pemberton's Overflow get.
+
+OUTSTANDING
+--------------
+1. UNTESTED. No Begin has been run against Nobody Calls the Police. Two
+   things to watch on the first playthrough, in this order: whether the
+   narration holds the answer (the secrecy risk in OPEN above, and the most
+   likely way this Adventure fails), and whether the three tiles fields
+   actually roll when left untouched — that behaviour was read out of
+   Goals.txt rather than observed, and the whole rotating solution rests
+   on it.
+
+Content and data changes from here go in
+Adventures/Vermillion Change Log.md; engine changes go in
+Generator/Steak and Bake Stories/Change Log.md.

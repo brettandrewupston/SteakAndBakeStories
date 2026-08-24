@@ -1,0 +1,578 @@
+THE ARTICLES (PERPETUA) — ADVENTURE CONTENT
+===========================================================
+Last updated: 23/08/2026
+Seventh Adventure for the Story Generator. Architecture/decisions live in
+the parent folder's Goals.txt and Features.txt — this file is just this
+Adventure's canon (premise, rules, NPCs, map, setup fields).
+
+Adventure id: perpetua. Display title: "The Articles". Files are named
+Perpetua.* to match the id, consistent with Solmere / Meridian / Halcyon
+/ Hollowburn / Pemberton / Gallant.
+
+CANON ONLY as of 23/08/2026. No Story Definition JSON, no lore files, no
+map SVG, no UI skin, nothing uploaded to R2, and NOT REGISTERED in the
+ADVENTURES array in Code/Bottom Panel.txt. This file is the brief the
+data will be built from. See OUTSTANDING at the end.
+
+PREMISE
+----------
+The Perpetua is a two-hundred-ton pirate sloop working the Tallows, a
+chain of low green islands nobody's king can hold and everybody's king
+claims.
+
+She is not commanded. She is constituted. The Articles are nailed to the
+mast and signed by every hand aboard, and they say what everything is
+worth: a share of the take, a hundred pieces for a lost hand, one vote
+each. The Captain commands in chase and in battle and at no other time.
+The Quartermaster divides the plunder, hears every dispute and carries
+out every punishment, and can overrule the Captain anywhere except a
+chase. Everything else — the course, the prize, the punishment, and who
+is Captain by the end of the month — is put to the company and counted.
+
+The player is a new hand who has just signed. One vote, same as
+everybody. No rank to inherit and none to be given.
+
+No real nation, sea or year is ever named. The King is only ever the
+King, and the Tallows are the only place on the map with a name.
+
+WHAT EVERYBODY KNOWS
+-----------------------
+There is no secret aboard the Perpetua and no plot to uncover.
+
+Every crew in the Tallows knows the Perpetua is one bad season from
+voting Thomasin Creed out, because everybody says so, at the capstan, to
+her face, and she says it back. A mutiny here is not a betrayal. It is
+the constitution working as designed, out loud, in front of the person
+it is about.
+
+This is the Adventure's central rule and it is load-bearing: nothing
+here is done behind anyone's back, because the machinery for doing it in
+front of them already exists and is faster. Every scene that tries to
+become a conspiracy resolves in one line — somebody calls a vote and it
+is counted. The story is not an intrigue and must never become one. It
+is an argument about how to run a ship, held by people who cannot get
+off it.
+
+The consequence for play is that the pressure is always present and
+always speakable. There is always a vote pending or one just resolved,
+which gives the narration AI a concrete thing every scene can bend
+toward instead of a secret it has to withhold.
+
+TONE
+-------
+Loud, filthy, funny, and physically dangerous. Rope burn, salt sores,
+bad water, and a fight roughly once a month that some of these people
+will not walk away from. Warm about the company and unsentimental about
+what it is doing for a living.
+
+Romance runs the length of it and it is romance in a place with no
+privacy at all: eighty people, one deck to sleep on, and everybody
+already knows.
+
+THE VOTE (signature mechanic)
+--------------------------------
+Nothing aboard is decided by rank. Every question of consequence is put
+to the company, which means the player can never order anyone to do
+anything and can only ever get them on side, and it means every scene is
+worth something later. A favour done on the gun deck in Act I is a hand
+in the air in Act III.
+
+Implemented with no engine changes: the relationship system IS the vote.
+The relationship ladder is authored as the Articles' own language (see
+RELATIONSHIP LABELS), so the number the engine already tracks and
+already displays is a count of who would back the player. A vote
+resolves by reading the room the engine is already modelling — no new
+field, no new persisted state, no tally to maintain.
+
+promptRules.setting carries the rule that any hand may call a vote at
+the capstan, that a vote is counted rather than argued to a conclusion,
+that the Captain's authority ends when the chase does, and that the
+narrator counts the standing relationship tiers when a vote is called
+rather than inventing a result.
+
+CONTENT
+----------
+Halcyon level in the prose. Deliberately below Gallant in the portraits:
+the register here is bare, salt-stained and worked-in rather than
+engineered, and it is diegetic — this is the tropics, there is no fresh
+water to spare for washing, clothing comes off dead men and is cut down
+to fit, and nobody aboard has been alone since they signed.
+
+Flirtation, jealousy, and decisions made in a hammock four feet from
+someone else's are ordinary texture rather than exceptions, and are
+written freely and explicitly when a scene goes there; escalation within
+a scene still follows the player's lead. All characters are written
+unambiguously adult.
+
+Three complications the story treats as real rather than ignoring:
+
+- Adaeze Nwoye administers punishment. If the player is ever punished
+  under the Articles, she is the one who does it, and the story does not
+  arrange for her to be elsewhere that day.
+- Rasmus Kyd signed on the same day as the player and is competing for
+  the same votes. The story does not resolve this by making him a
+  villain.
+- Isaac Pell deserted the King's service. Anyone aboard could sell him
+  for a pardon at Kingsreach, and he has been aboard four years without
+  it happening, which is not the same as being safe.
+
+Perrine Vaudray and Obadiah Finch sit outside the flirtation frame
+entirely; their attractedTo fields are omitted, which suppresses the
+per-NPC "Attracted to: ..." clause for those two only. Every other NPC
+carries one.
+
+The standard minor-safety layer is unchanged and sits underneath all of
+this — see Safety Layer.txt and Goals.txt SAFETY.
+
+NPCs (15)
+------------
+Same authoring conventions as the other six: "identity" is the Stage A
+baseline appearance line (clothing-free — clothing comes from the
+Category), "bio" is who a character is, "personality" is how they talk.
+Every character is a clearly adult person.
+
+Flat "npcs" array — no npcSets/openingScenes. The player's gender does
+not change the roster, so the gender-mirrored mechanism Meridian needs
+is not applicable and the npcSets key-convention trap does not apply.
+
+Gender split: 8 female, 7 male.
+
+ELECTED (4)
+- Thomasin Creed — Captain. Elected two years ago on the back of one
+  enormous prize and has taken nothing worth having since. Commands in
+  chase and battle and is a passenger with a better cabin the rest of
+  the time. Theatrical, brave, generous, genuinely brilliant for the
+  ninety minutes a month it matters, and running out of arithmetic.
+  Category: captain-female.
+- Adaeze Nwoye — Quartermaster. Divides every share, hears every
+  dispute, carries out every punishment, and can overrule the Captain
+  anywhere but a chase. Exactly fair, which the crew have learned is not
+  the same thing as kind. The slow burn. Category: officer-female.
+- Ilse Halvorsen — Boatswain. Runs the deck, the work and the rota, and
+  gives the player every foul job aboard for the first month on
+  principle rather than malice. Loud, enormous fun, obscene, and the
+  first person to defend the player to anyone who is not present.
+  Category: officer-female.
+- Yusuf Baraka — Sailing Master. The only person aboard who can
+  navigate, which makes him the one man no vote can touch and which
+  frightens him more than it comforts him. Precise, teetotal, keeps a
+  private journal. Category: officer-male.
+
+BEFORE THE MAST (6)
+- Mina Roux — master gunner. Half-deaf from her own guns, obsessive
+  about them, the best shot in the Tallows, and the reason the Perpetua
+  wins fights she should lose. Wants the Captaincy and says so at the
+  capstan, because saying so at the capstan is how it is done here.
+  Category: crew-female.
+- Fenwick Cray — carpenter. Keeps a rotten hull afloat with no materials
+  and no complaint. Vast, gentle, slow to anger and then not, and
+  catastrophically in love with someone he will not name. Category:
+  crew-male.
+- Ambrose Lambe — surgeon. A barber with ambitions, one anatomy book and
+  a genuinely good hand. Cheerful about amputation in a way that is
+  either steadying or appalling depending on the day. Category:
+  crew-male.
+- Isaac Pell — topman, deserted from the King's service four years ago.
+  The only person aboard who has been on the other side of this, which
+  the company has never entirely finished deciding about. Quiet,
+  capable, watchful, and the best judge of a fight on the ship.
+  Category: crew-male.
+- Odalys Ferrer — cook, and by long custom the ship's memory. Four
+  captains sailed with, three buried. Feeds everybody and reads
+  everybody, and is the person to ask what the company actually thinks
+  before spending a vote finding out. Category: crew-female.
+- Rasmus Kyd — signed the Articles the same hour as the player. Charming,
+  quick, cheerfully self-interested, and the direct rival: every vote he
+  wins is one the player did not. Not a villain and never written as
+  one — just faster, and often right. Category: crew-male.
+
+THE TALLOWS (5)
+- Perrine Vaudray — runs the market at Cutwater Bay. Buys anything, sets
+  the price, and is therefore the person who decides what a prize was
+  actually worth. Not a pirate, and richer than every pirate in the
+  chain. Category: shore-female.
+- Hetty Bramble — keeps the Ropewalk, where crews are made and unmade
+  and where half the Perpetua's company was recruited drunk. Knows every
+  hand in the Tallows and whose Articles they are on. Category:
+  shore-female.
+- Obadiah Finch — the Tallows' only lawyer. Writes Articles for a fee,
+  and will read the player's own back to them word for word on the day
+  they break them. Dry, delighted by all of it, entirely uninterested in
+  whether anybody hangs. Category: shore-male.
+- Loveday Ashe — Captain of the Kestrel, and the Adventure's standing
+  argument against its own premise. Runs her ship as an autocracy,
+  appoints instead of electing, and takes more, faster, with fewer
+  people killed. Charming, direct, and openly recruiting. Category:
+  captain-female.
+- Aurelian Stack — Commodore, the King's man in these waters. Patient,
+  competent, personally decent, and will hang every named person in this
+  file and be sorry about it afterwards. Not a monster and must never be
+  written as one. Category: king-male.
+
+CAST WEIGHTING (stated in promptRules.setting — the engine has no
+per-NPC tier field)
+- Main: Adaeze, Thomasin, Rasmus, Mina, Odalys, Loveday
+- Strong supporting: Ilse, Yusuf, Isaac, Fenwick, Perrine, Aurelian
+- Background: Ambrose, Hetty, Obadiah
+
+TOKENS
+---------
+The engine matches NPCs with a plain case-sensitive substring scan, no
+word boundaries. All fifteen tokens are to be checked programmatically
+at build time against each other, against the thirteen location names,
+and against a list of common capitalised words, as with Pemberton and
+Gallant.
+
+This Adventure carries a hazard the others do not: ordinary shipboard
+vocabulary is capitalised at the start of a sentence constantly — Watch,
+Deck, Mast, Sail, Port, Bell, Shot, Hold — so no token may be a working
+noun, and the location names have to be swept against narration as well
+as against the cast.
+
+One name is already changed at brief stage for a collision:
+- Will -> Fenwick. "Will" fires inside "William" and, fatally, opens a
+  sentence every few paragraphs ("Will you...", "Will he..."). His token
+  is Fenwick; the bio may still call him Will in dialogue, because
+  dialogue is not scanned for tokens, only npc.token is matched.
+
+Residuals to confirm at build, all judged low risk: "Mina" inside
+"Wilhelmina" (the full name is not used anywhere), "Isaac" (no common
+host word found), "Stack" is not a token — Aurelian Stack's token is
+"Aurelian" precisely because "Stack" opens sentences about cargo.
+
+Ship names are not tokens — the engine matches npc.token only — so
+"Perpetua", "Kestrel" and "Absalom" carry no matching risk and can be
+used freely in narration.
+
+STANDARD UNIFORMS (Stage A baseline portraits)
+---------------------------------------------------
+Eight categories, each combined with an NPC's identity line and a
+generic neutral background at generation time — not written per-NPC, so
+changing one line updates every NPC sharing that Category.
+
+The register is heat, salt and hard physical work rather than
+engineered display: sleeves gone, shirts open or off, everything cut
+down from clothes taken off somebody else, sun on skin, sweat, bare
+feet on tar. Both genders are written with the same emphasis — the male
+categories are as exposed and as worked as the female ones, not a
+modest counterpart to them. It sits below Gallant's costume set
+deliberately; the fan service here comes from the climate and the total
+absence of privacy, not from a costume designed to be photographed.
+
+Identity lines are written to match. Since clothing comes from the
+Category, each NPC's identity line carries an explicit adult figure
+description — build, bust, waist, hips, legs — plus the marks of the
+work: rope scars, powder burns, sun lines, old breaks badly set.
+
+Every category carries "fully clothed, clearly an adult", and
+clothingStates handles everything past baseline. That pairing is the
+entire guardrail and neither half is optional at any heat level. The
+minor-safety layer underneath is untouched by any of it.
+
+- crew-male / crew-female: prize clothes cut down to fit. A linen shirt
+  with the sleeves hacked off, open to the waist or knotted under the
+  chest, bare midriff and bare arms, sailcloth slops cut short and
+  belted low on the hips with a length of rope, bare legs, bare feet,
+  a knife on a lanyard, sun-bleached and salt-stiff and worn to
+  transparency in places, everything fitted close because it has been
+  re-sewn by hand to fit a body it was not made for.
+- officer-male / officer-female: the same clothes with one good coat
+  over them, taken off a prize and kept for the look of the thing —
+  worn open over bare skin, sleeves turned back, nothing underneath
+  buttoned, a sash at the waist pulled tight, boots instead of bare
+  feet. Better than everybody else's by exactly one garment, which is
+  the entire point of an elected office aboard this ship.
+- captain-female: a genuinely fine coat, tailored, and nothing under it
+  that a tailor would recognise — shirt open to the sash, waist drawn
+  in, cut high on the thigh over long boots, a hat that cost more than
+  the coat. Theatre, deliberately, because a captain in the Tallows is
+  a performance of confidence and both women in this category know it.
+- shore-male / shore-female: Tallows town clothes, thin and light for
+  the heat — a shift or shirt worn off the shoulder, laced loose,
+  skirts kirtled up out of the mud or breeches rolled to the knee, bare
+  arms, bare feet, a great deal of gold worn where it can be seen.
+- king-male: the King's uniform, immaculate and entirely wrong for this
+  climate — full coat, full facings, gorget, everything buttoned,
+  sweating through it and refusing to acknowledge it. Aurelian only,
+  following Pemberton's maintenance-male and Gallant's exec-female
+  precedent for a single-member category.
+
+wetLocations and poolUniforms are BOTH present — the first use outside
+Halcyon. Careening Beach and The Bone Shoals are the wet locations, and
+the swap is the working state: stripped to a shift or breeches, soaked,
+hove down in the shallows with the ship on her side. The swap is
+guarded on both fields being present, so this is a deliberate opt-in
+rather than the inert omission Gallant chose.
+
+clothingStates is retained at the Solmere/Meridian level.
+
+playerCategoryTemplate: crew-{playerGender}. The player is always a hand
+before the mast, so like Halcyon, Pemberton and Gallant the template has
+a single variable — and it stays crew-* in the Elected ending, because
+the Articles do not issue the Captain a different shirt.
+
+MAP LOCATIONS (13)
+---------------------
+Hub-and-spoke from The Waist, with the Ropewalk as the strong second hub
+ashore — the same shape as Halcyon's Pool Deck, Pemberton's Kitchen and
+Gallant's Roof.
+
+- The Capstan (starting location — where the Articles are signed and
+  every vote is counted)
+- The Waist (hub — the open main deck, where the whole company ends up)
+- The Berth Deck (hammocks touching, no privacy, everybody hears
+  everything and mentions it in the morning)
+- The Great Cabin (the Captain's, and by the Articles not hers alone —
+  any hand may enter it, which is the single line of the Articles that
+  most annoys every captain who has ever held it)
+- The Gun Deck (Mina's, warm, and the only part of the ship anybody
+  maintains properly)
+- The Hold (the shares, the water, the rats, the dark)
+- The Tops (aloft — the only place on the ship where two people can be
+  alone, which everybody below understands perfectly)
+- The Galley (Odalys's, and the ship's real parliament — every vote is
+  decided here and merely counted at the capstan)
+- Cutwater Bay (the market — Perrine's, and where a prize becomes money)
+- The Ropewalk (second hub — Hetty's, where crews are made and unmade)
+- Careening Beach (where the ship is hove down on her side for a week at
+  a time: no guns, no escape, no prizes, and nothing to do but argue)
+- Kingsreach (the King's port — the assizes, the gallows, and the only
+  place in the chain to buy powder legally)
+- The Bone Shoals (red, dashed, path drawn severed — same treatment as
+  Halcyon's Sunken Villa, Pemberton's Overflow and Gallant's Blackout
+  Block)
+
+THE BONE SHOALS
+------------------
+A shoal that eats ships. It is charted, it is marked, and every hand in
+the Tallows knows exactly what is there, which is: the Absalom, and
+forty-one people, and a prize on the far side that is still there
+because the far side is what nobody reaches.
+
+It holds no secret and the lore states plainly what happened. The
+Absalom's company voted to try it. The vote was properly called and
+properly counted and the majority were wrong, and there is no clause in
+any set of Articles anywhere against being wrong.
+
+It fills the same structural slot as the other Adventures' restricted
+site without reintroducing the investigation plot this Adventure
+deliberately does not have. What is at the Bone Shoals is not a mystery.
+It is the price of the premise, sitting on the map, in red.
+
+THE CAREEN
+-------------
+The clock. A hull in these waters fouls in about ten weeks, and a fouled
+hull cannot catch anything, which means the Perpetua must be hove down
+and scraped or she stops being a pirate ship and becomes eighty people
+on a slow boat. Careening costs a week beached and defenceless, no
+prizes, no shares, and a company with nothing to do but count what they
+have not earned.
+
+It is not a turn count and never resolves on one. It resolves on
+milestones, and its function is pressure: every argument aboard gets
+worse as the hull gets worse, and everybody can see the weed on the
+waterline.
+
+THE ARC
+----------
+Three acts, ten milestones, six endings. The acts turn on milestones,
+never on turn count.
+
+ACT I — NEW HAND, until first_prize. The player has signed but has not
+yet stood in a fight, and nobody in the Tallows spends a vote on someone
+who has not.
+
+ACT II — FULL SHARE, until the_question. The player has a share and a
+voice, and both are now worth courting — by Rasmus, by Mina, and
+eventually by people with worse ideas.
+
+ACT III — THE QUESTION. A vote has been called that nobody aboard can
+abstain from, and every scene bends toward the count.
+
+MILESTONES
+- first_prize — the player is aboard for a prize taken and divided.
+  Fires on the division, not the fight, because the division is where
+  this Adventure's fights actually happen. Closes Act I.
+- spoke_first (needs first_prize) — the player speaks at the capstan and
+  is heard out rather than shouted down. The moment they become a vote
+  somebody has to win rather than a hand somebody counts.
+- the_punishment — a member of the company is punished under the
+  Articles by vote, and the player voted. The first time the
+  constitution costs somebody something in front of them, carried out
+  by Adaeze, in daylight, in front of everyone.
+- the_share — the player learns what a share is actually worth after
+  Perrine's price, the surgeon's fund and the compensation clauses come
+  out of it. The Adventure's money moment and the reason every later
+  decision is about a number.
+- the_kestrel — the Perpetua meets Loveday Ashe. An autocracy
+  outperforms the vote in front of the whole company and there is no
+  good answer to it, and the story does not supply one.
+- the_chart (needs the_share) — the player learns to navigate, from
+  Yusuf or from his charts without asking. It is the only thing aboard
+  that makes a person unvotable, everybody notices them doing it, and
+  what it costs is Yusuf.
+- careened — the ship is hove down. A week ashore with no guns, no
+  income and every unresolved argument in the same three hundred yards
+  of sand.
+- called (needs spoke_first) — the player calls a vote themselves. Not
+  necessarily wins it; calling one and losing it is a distinct and
+  survivable outcome that the story treats as ordinary.
+- the_question — the vote to put Thomasin out is called, and the player's
+  name is one of the alternatives. Closes Act II. No structural
+  prerequisite, deliberately, for the same reason Pemberton's review_set
+  and Gallant's the_offer have none: an ending a passive player can be
+  locked out of is an Adventure that cannot end.
+- the_count (needs the_question) — the vote is counted at the capstan.
+
+ENDINGS
+- Elected (the_count:player) — the player is Captain. Command in chase
+  and battle and nothing else, the person who held it last week is still
+  aboard and still has a vote, and everyone remembers exactly whose hand
+  went up. Written as a job, not a triumph.
+- Confirmed (the_count:thomasin) — the vote fails and Thomasin keeps it.
+  Nobody is exiled, nothing is forgiven quickly, and the player goes
+  back to a berth deck where half the hammocks voted the other way.
+- The Kestrel — the player leaves for Loveday's ship. Better food,
+  better prizes, more money, no vote. Written as a genuine improvement,
+  which is the entire reason it hurts.
+- Marooned — the Articles' own punishment, reachable at any point, on a
+  real breach properly voted by the company. A key, a pistol, one shot,
+  and Adaeze rowing back.
+- Kingsreach — taken and tried. The King's pardon is real, it is
+  available, and it costs exactly one list of names.
+- The Shoals — the company votes to try the Bone Shoals. The player
+  votes with them, or votes against and goes anyway, because that is
+  what signing meant. A real death ending, and reachable by a majority
+  the player argued for.
+
+No ending abolishes the Articles and none is written as one. Whoever is
+Captain at the end, the paper on the mast outlasts them.
+
+TIME PHASES
+--------------
+A watch, not a calendar day, following Halcyon's shooting-day,
+Pemberton's office-day and Gallant's shift precedent: Morning Watch /
+Forenoon / Dog Watch / First Watch / Middle Watch.
+
+The Dog Watch is the ship's social hour by long custom — short, shared,
+everyone on deck — and is where most of the Adventure's group scenes
+belong.
+
+startingPhase: Forenoon — the player signs at the capstan with the
+company watching, and is at work ten minutes later.
+
+RELATIONSHIP LABELS
+----------------------
+Seven tiers on the engine's min-threshold form, written as the vote, so
+that the number the engine tracks and the number the fiction turns on
+are the same number. Bottom is not Nemesis and top is not Love, the same
+move Hollowburn, Pemberton and Gallant make.
+
+0 Would See You Marooned / 15 Votes Against You / 35 Signed The Same
+Paper / 50 Hears You Out / 65 Votes With You / 80 Speaks For You /
+95 Would Hang Beside You.
+
+Aurelian Stack uses the same scale and it means something entirely
+different coming from him: a Commodore who would speak for the player is
+a Commodore who will say something kind at the trial.
+
+ADVENTURE SETUP FIELDS (Perpetua-specific)
+----------------------------------------------
+- What You Were Before — canon for that playthrough, and the thing the
+  company will bring up whenever it is inconvenient:
+  - The King's service, and you left it without permission.
+  - A merchant's clerk. You can read, write and add, which is rarer
+    aboard than courage.
+  - A fisherman. You are the only person here who understands the sea
+    as weather rather than as a road.
+  - Taken off a prize six months ago and given the choice. You took it.
+  - A plantation, and you are not going back.
+  - Born to it. Your mother signed Articles and so did hers.
+- Your Trade — what the company voted you aboard for: Gun crew /
+  Topman / Carpenter's mate / Surgeon's mate / Powder and stores /
+  Nothing in particular, they were short of hands.
+- What You Signed For — The share / A pardon you intend to earn /
+  Somebody already aboard / You had nowhere else to be. Odalys Ferrer
+  will have worked out which within a fortnight and will not say so
+  until it matters.
+
+Plus the required universal fields: Character name, Gender (both
+options), the four Appearance dropdowns, and Age. No freeform custom
+fields — curated fields only, per Adventure. Gallant's open question
+about free-text naming does not arise here: nothing on this setup screen
+puts a player-authored string into narration.
+
+IMAGE SETTINGS
+-----------------
+imageStyle: "painted anime style, front on shot" — the setting proven
+against the live image pipeline by Solmere, Meridian, Halcyon and
+Pemberton, and kept by Gallant. Hollowburn's departure from it is
+flagged in its own outline as the field most likely to need reverting,
+so this Adventure does not repeat the experiment.
+
+baselineBackground: the standard plain neutral studio line.
+
+poseVocabulary is shipboard and written to the same register as the
+uniforms: hauling on a line with the whole body, straddling a gun,
+sitting in the rigging with legs hanging, leaning back against the mast
+with arms up, kneeling on wet planking scrubbing, drinking straight from
+the jug with the head back, stripped to the waist working in the sun,
+hove down in the shallows soaked through, standing at the capstan
+addressing the company, holding a hand up for a vote.
+
+expressionVocabulary gains "salt-burned", "wary", "delighted",
+"seasick", "flushed", "counting the room".
+
+OPEN / NOT YET DECIDED
+---------------------------
+- Whether the vote tally should appear in the story export. The mechanic
+  is entirely narrator-side, which means a tester who thinks a vote
+  resolved wrongly has nothing to look at and nothing to send back.
+  Putting the count and the per-NPC tiers the narrator used into the
+  export at the moment a vote resolves is the cheapest way to make this
+  Adventure's signature mechanic falsifiable, and it is the one thing in
+  this brief that may need engine support.
+- Whether Loveday Ashe's autocracy should ever visibly fail. Current
+  position: no. The moment the vote is proved right by outcome, the
+  Adventure becomes propaganda for its own premise and stops being an
+  argument. Same reasoning as Clarence in Pemberton and the A-list in
+  Gallant, and the same counter-argument applies: a rival who is never
+  humbled reads to some players as an unfinished thread.
+- Whether the player can actually become Captain. Current position: yes,
+  and Elected is written as a job rather than a reward, because the
+  alternative — a player who can only ever be kingmaker — makes the
+  central mechanic something that happens to other people.
+- Whether Yusuf Baraka is genuinely irreplaceable. Current position: yes
+  for the whole Adventure unless the player takes the_chart, and the
+  file should not hint at a second navigator. The cost of the_chart is
+  what it does to him, not a plot obstacle it removes.
+- Whether the player's own Articles breach should ever be forgiven
+  without a vote. Current position: no. Adaeze does not have that power
+  and inventing it for a sympathetic moment would cost the Adventure the
+  only rule it has.
+- What is on the other side of the Bone Shoals. Unwritten on purpose.
+  The Tallows chain is the whole map.
+- No titleImageUrl, coverUrl or narrationBackdropUrl decided.
+- No UI skin designed. The obvious direction is the Articles themselves
+  — a nailed-up sheet, ruled columns, signatures and marks against
+  numbered clauses, tarred rope, sailcloth and iron. It would be the
+  seventh skin and the first one that is a document rather than a place
+  or a piece of software.
+
+OUTSTANDING
+--------------
+1. Canon only. No Story Definition JSON, no lore files, no map SVG and
+   no skin exist. Nothing has been uploaded to R2 and nothing is
+   registered in the ADVENTURES array in Code/Bottom Panel.txt.
+2. Token collision sweep not yet run programmatically. The Will ->
+   Fenwick change and the residuals above are a reading, not a check,
+   and the shipboard-vocabulary hazard makes the location sweep
+   mandatory rather than optional here.
+3. wetLocations/poolUniforms is the first use of the wet-outfit swap
+   outside Halcyon and has not been exercised against this Adventure's
+   categories.
+4. Untested. No Begin has been run against The Articles.
+
+Content and data changes from here go in
+Adventures/Perpetua Change Log.md; engine changes go in
+Generator/Steak and Bake Stories/Change Log.md.
