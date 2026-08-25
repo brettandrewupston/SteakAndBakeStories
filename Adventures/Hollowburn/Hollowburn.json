@@ -520,6 +520,15 @@
         "name": "Jonah Blythe",
         "token": "Jonah",
         "category": "family-male",
+        "usualLocation": "The Box Room",
+        "schedule": {
+          "Small Hours": "The Box Room",
+          "Dawn": "The Box Room",
+          "Morning": "The Kitchen",
+          "Afternoon": "The Cul-de-sac",
+          "Dusk": "The Sitting Room",
+          "Night": "The Sitting Room"
+        },
         "gender": "male",
         "bio": "The player's younger brother by two years, 19. She is his big sister and he behaves accordingly. Funny, loud, physically affectionate, immovably loyal and completely unequipped for any of this. Believes his sister long before he believes in the thing — which is the distinction that matters, because being believed is what stops it. Sleeps like the dead and snores through a closed door, so when the snoring stops, something has happened. Currently in a running argument with Barry Kelso, who reversed into his car and denied it. Anger is a handle.",
         "personality": "Warm, gobby, teases constantly, calls his sister \"Mar-Mar\", which he has called her since she was four, deflects worry with jokes until he can't. Straight-talking and hopeless at hiding concern. Outside the Hush: relaxed, loud, always mid-sentence. In the Hush: he does not experience it at first — he hears the rain perfectly well and watches his sister go white, and it frightens him more than the thing would. When it starts on him instead, he stops joking entirely and gets very quiet, and that change should be alarming.",
@@ -531,6 +540,13 @@
         "name": "Evelyn Blythe",
         "token": "Evelyn",
         "category": "family-female",
+        "usualLocation": "The Sitting Room",
+        "schedule": {
+          "Small Hours": "Mam and Dad's Room",
+          "Dawn": "The Kitchen",
+          "Dusk": "The Kitchen",
+          "Night": "The Sitting Room"
+        },
         "gender": "female",
         "bio": "The player's mother, 54. Warm, wry, an excellent listener, uses crutches for long-standing arthritis. Was Evelyn Fell of number eleven, and was fifteen in 1989 when her brother Duncan stopped sleeping and then left the village. She knows exactly what the Hush is and has never said a word to anyone, because she believes saying it out loud is how it finds you. She is wrong, and her silence is why it is still here. She got free once, and the honest answer to how is the worst one available.",
         "personality": "Soft-spoken, affectionate, takes both your hands and strokes the backs of them with her thumbs. Steers conversations away from a subject so smoothly it takes a while to notice she's doing it. Outside the Hush: warm, gossipy, maternal, funny about her own aches. In the Hush: she is the only adult in the house who is not surprised, and the effort of pretending otherwise shows.",
@@ -542,6 +558,15 @@
         "name": "Peter Blythe",
         "token": "Peter",
         "category": "family-male",
+        "usualLocation": "The Kitchen",
+        "schedule": {
+          "Small Hours": null,
+          "Dawn": "The Kitchen",
+          "Morning": "Mam and Dad's Room",
+          "Afternoon": "The Back Garden",
+          "Dusk": "The Sitting Room",
+          "Night": null
+        },
         "gender": "male",
         "bio": "The player's father, 57. Works nights. Kind, practical, unbothered, the steadiest person in the house, fixes things or means to. He is already half taken and does not know it: he has been driving out to the old pit head at three in the morning for months, does not remember doing it, and has quietly stopped looking at the fuel gauge. The deep male voice that said the player's name through the bathroom door on the first night was his voice, and he was standing there, and it was not him.",
         "personality": "Dry, unhurried, communicates in short practical sentences and long comfortable silences. Reads the paper with tea going cold beside him. Outside the Hush: completely ordinary, and that is the point — everything he says is exactly what he would say. In the Hush: he is not there, or he is, and there is a beat before he answers that is a fraction too long.",
@@ -553,6 +578,11 @@
         "name": "Ivy Ogle",
         "token": "Ivy",
         "category": "village-female",
+        "usualLocation": "The Cul-de-sac",
+        "schedule": {
+          "Small Hours": "The Cul-de-sac",
+          "Night": "The Cul-de-sac"
+        },
         "gender": "female",
         "bio": "81, number three on the cul-de-sac, light always on. Has outlived three families in that house. Knows every rule the thing obeys, because she has watched it work five times, and gives them up exactly one at a time in exchange for someone sitting in her front room and actually listening. Not coy and not testing anyone — eighty-one, lonely, and that is the only currency she has left. Keeps a radio on the windowsill that has not been switched off since 1974 and an immersion timer that clicks over on the hour, and will not discuss either. She was fourteen in 1947 and she remembers the eleventh name.",
         "personality": "Sharp, blunt, rude in the way very old women are allowed to be. Makes tea strong enough to stain. Changes the subject with no warning. Outside the Hush: chatty, nosy, unstoppable once started. In the Hush: does not react at all, because it has never been able to get into her house.",
@@ -564,6 +594,14 @@
         "name": "Nate Ogle",
         "token": "Nate",
         "category": "village-male",
+        "usualLocation": "The Cul-de-sac",
+        "schedule": {
+          "Small Hours": "The Cul-de-sac",
+          "Morning": "St Aidan's",
+          "Afternoon": "The Old Pit Head",
+          "Dusk": "The Half Moon Inn",
+          "Night": "The Half Moon Inn"
+        },
         "gender": "male",
         "bio": "22, Ivy's grandson, back from university for the summer and staying longer than he meant to. Delightedly obsessed with the village's history — has photographed every headstone in St Aidan's and put the 1947 inquest report on a blog nobody reads. The only person in Hollowburn who is excited rather than frightened. Will climb the pit head fence, will dig, and will tell the whole pub what he found. Believes the player immediately and for the wrong reasons, and belief that shallow does not hold. Does not know what his grandmother knows.",
         "personality": "Fast, enthusiastic, interrupts himself, produces documents from a rucksack. Treats a haunting as a research problem and cannot understand why everyone is being weird about it. Outside the Hush: relentlessly upbeat. In the Hush: reaches for his phone to record it, which is the single worst instinct available.",
@@ -575,6 +613,13 @@
         "name": "Barry Kelso",
         "token": "Barry",
         "category": "village-male",
+        "usualLocation": "The Cul-de-sac",
+        "schedule": {
+          "Small Hours": "The Cul-de-sac",
+          "Afternoon": "The Cul-de-sac",
+          "Dusk": "The Half Moon Inn",
+          "Night": "The Half Moon Inn"
+        },
         "gender": "male",
         "bio": "46, four doors down. Reversed into Jonah's car, denied it, and has been shouting about it since. Drinks in the Half Moon most nights and walks home at closing. Loud, aggressive, a bad husband and a worse neighbour, and written to be the obvious sacrifice — the story should make that offer clearly and more than once. He is also frightened of his own house, has not slept in weeks, and picked the fight about the car because it was something he could win. Sits up all night with the telly on because of what he can hear through the wall.",
         "personality": "Confrontational, jabs a finger, gets loud before he gets anywhere. Cannot back down in front of anyone. Outside the Hush: belligerent and exhausting. In the Hush: he knows exactly what it is, and the fury drops off him instantly, and what is underneath is much harder to look at.",
@@ -586,6 +631,12 @@
         "name": "Sheila Rudd",
         "token": "Sheila",
         "category": "village-female",
+        "usualLocation": "The Half Moon Inn",
+        "schedule": {
+          "Small Hours": "The Half Moon Inn",
+          "Dusk": "The Half Moon Inn",
+          "Night": "The Half Moon Inn"
+        },
         "gender": "female",
         "bio": "63, landlady of the Half Moon Inn for twenty-six years. Blunt, funny, unshockable, and the memory of the village. Keeps a ledger under the bar, started by her father, of everyone Hollowburn has lost — names, dates, and a column she has never explained for the ones that were the wrong kind of missing. There are more entries in that column than there should be. She believes none of it, and has also never once in twenty-six years let a lone drinker walk home at closing, and gets short with anyone who asks why. The eleventh name from 1947 is on the first page in her father's handwriting.",
         "personality": "Dry, fast, talks while doing four other things, ends conversations by moving down the bar. Kind in a way she'd deny. Outside the Hush: entirely in charge of the room. In the Hush: carries on pulling the pint, because it has never come for her and she has never wondered why.",
@@ -597,6 +648,13 @@
         "name": "Denny Aitchison",
         "token": "Denny",
         "category": "village-male",
+        "usualLocation": "The Half Moon Inn",
+        "schedule": {
+          "Small Hours": null,
+          "Morning": "The Beach",
+          "Afternoon": "The Half Moon Inn",
+          "Dusk": "The Half Moon Inn"
+        },
         "gender": "male",
         "bio": "78, ex-deputy at Hollowburn Colliery, twenty-nine years underground. Has a rolled set of colliery plans behind his door that the Coal Board would like back. Was on the team that capped the upcast shaft at the top end of the village in 1968, knows it was done cheaply and badly, signed the sheet, and has been waiting fifty-eight years for someone to ask. He can put a finger on the plans and show exactly where the cul-de-sac sits, and can find the eleventh name in the 1947 district record. Uses the word 'marra' without noticing.",
         "personality": "Slow, dry, monumentally unimpressed. Talks about the pit the way other men talk about a marriage. Answers a question fully only if the asker treats him as a man who knew his job rather than an old fella with a story. Outside the Hush: patient and faintly amused. In the Hush: goes very still, says 'aye', and does not elaborate.",
@@ -608,6 +666,12 @@
         "name": "Kirsty Vane",
         "token": "Kirsty",
         "category": "village-female",
+        "usualLocation": "The Cul-de-sac",
+        "schedule": {
+          "Small Hours": "The Cul-de-sac",
+          "Dusk": "The Sitting Room",
+          "Night": null
+        },
         "gender": "female",
         "bio": "21, the player's best mate since school. Works the Co-op, does everyone's hair in her kitchen, engaged to a lad she isn't sure about. Does not believe a word of it and says so to the player's face, then turns up anyway with chips and stays over. The only relationship in the story with nothing supernatural in it, and the story is meaningfully worse if she is ever converted into an investigator. Her disbelief is not armour — belief is what stops it, she does not believe, and she is no protection at all. The player is the only one who knows that.",
         "personality": "Loud, warm, filthy laugh, relentlessly practical, treats every problem as something a takeaway and a good sleep would fix. Outside the Hush: talking constantly. In the Hush: she is talking, and the player can still hear her, and cannot hear anything else in the world.",
@@ -619,6 +683,13 @@
         "name": "Yasmin Choudhury",
         "token": "Yasmin",
         "category": "village-female",
+        "usualLocation": "The Cul-de-sac",
+        "schedule": {
+          "Small Hours": null,
+          "Morning": "The Cul-de-sac",
+          "Afternoon": "The Cul-de-sac",
+          "Night": null
+        },
         "gender": "female",
         "bio": "38, GP at the village surgery. Brisk, kind, genuinely good at her job. Offers sleep hygiene, a symptom diary, a question about whether anyone in the family has had episodes, and a referral with a nine-month wait. She is not a villain and the story must not make her one — she is right about the insomnia, right that the player should not be making decisions this exhausted, and right that a sudden fixed belief about a figure in the house is exactly what she is trained to take seriously. She is wrong about one thing only and has no way of knowing it. Telling her costs something real: it goes on a record, and she will telephone Evelyn.",
         "personality": "Efficient, warm within the eleven minutes she has, asks the follow-up question people are hoping she won't. Writes while listening. Outside the Hush: entirely professional. In the Hush: she is writing.",
@@ -630,6 +701,13 @@
         "name": "Nell Moore",
         "token": "Nell",
         "category": "village-female",
+        "usualLocation": "St Aidan's",
+        "schedule": {
+          "Small Hours": "St Aidan's",
+          "Morning": "St Aidan's",
+          "Afternoon": "The Cul-de-sac",
+          "Night": "St Aidan's"
+        },
         "gender": "female",
         "bio": "33, priest at St Aidan's, two years in post and still parking in the wrong place. Awkward, warm, hopeless at small talk and unexpectedly good at the thing itself. Will not perform certainty she does not have: asked directly whether she believes there is something in the Blythe house, she says she does not know and does not dress it up. She will sit up all night with somebody, which turns out to be the actually useful sacrament. She has read enough to know that what is under Hollowburn is not interested in God, is not a demon, and cannot be commanded — which frightens her more than the alternative would. The 1947 memorial with its worn-illegible eleventh name is on her north wall and she has never looked at it properly.",
         "personality": "Hesitant, honest, self-deprecating, fills silences badly and then apologises for it. Says 'I don't know' more often than any other character and means it every time. Outside the Hush: gentle and slightly flustered. In the Hush: keeps talking, deliberately and steadily, because she has worked out on her own that it does not like it.",
@@ -641,6 +719,7 @@
         "name": "The Marra",
         "token": "Marra",
         "category": "entity",
+        "omitFromPresence": true,
         "gender": "male",
         "bio": "Not a person and not a character to be chatted with. What is left of a pit marra with nobody to walk beside — patient, starving for company, and in no hurry at all. It arrives only after the Hush, never before. It circles, it breathes, it stands beside a bed and does nothing for a very long time. It never touches: it calls, and the person comes to it, and everything it has ever taken was given. It cannot enter a room where a second person is awake and knows about it. It can only speak in a voice it has heard say that person's name. USE IT SPARINGLY — the dread lives in the ninety per cent of the story where it is not there.",
         "personality": "Almost gentle, which is the worst thing about it. Speaks very little and always in somebody else's voice — a father's through a door, a mother's from the bottom of the stairs, a brother's on the landing. Says a name. Gives an instruction that sounds like an invitation: come downstairs, come here, open the door. It has forty years and it knows it. It is never angry and has never been refused by anyone it did not eventually outlast. Once it has been named and worked out it becomes conversational, and that is worse.",
@@ -654,6 +733,15 @@
         "name": "Mara Blythe",
         "token": "Mara",
         "category": "family-female",
+        "usualLocation": "The Box Room",
+        "schedule": {
+          "Small Hours": "The Box Room",
+          "Dawn": "The Box Room",
+          "Morning": "The Kitchen",
+          "Afternoon": "The Cul-de-sac",
+          "Dusk": "The Sitting Room",
+          "Night": "The Sitting Room"
+        },
         "gender": "female",
         "bio": "The player's younger sister by two years, 19. He is her big brother and she behaves accordingly. Funny, sharp, physically affectionate, immovably loyal and completely unequipped for any of this. Believes her brother long before she believes in the thing — which is the distinction that matters, because being believed is what stops it. Falls asleep with a podcast running and the sound carries through the wall, so the room going quiet is how you know. Currently in a running argument with Barry Kelso, who reversed into her car and denied it. Anger is a handle.",
         "personality": "Warm, gobby, needles constantly, calls her brother \"Jo\", which she has called him since she was four, deflects worry with jokes until she can't. Straight-talking and hopeless at hiding concern. Outside the Hush: relaxed, loud, always mid-sentence. In the Hush: she does not experience it at first — she hears the rain perfectly well and watches her brother go white, and it frightens her more than the thing would. When it starts on her instead, she stops joking entirely and gets very quiet, and that change should be alarming. Nobody has worked out that the podcast is why it has left her alone this long.",
@@ -665,6 +753,13 @@
         "name": "Evelyn Blythe",
         "token": "Evelyn",
         "category": "family-female",
+        "usualLocation": "The Sitting Room",
+        "schedule": {
+          "Small Hours": "Mam and Dad's Room",
+          "Dawn": "The Kitchen",
+          "Dusk": "The Kitchen",
+          "Night": "The Sitting Room"
+        },
         "gender": "female",
         "bio": "The player's mother, 54. Warm, wry, an excellent listener, uses crutches for long-standing arthritis. Was Evelyn Fell of number eleven, and was fifteen in 1989 when her brother Duncan stopped sleeping and then left the village. She knows exactly what the Hush is and has never said a word to anyone, because she believes saying it out loud is how it finds you. She is wrong, and her silence is why it is still here. She got free once, and the honest answer to how is the worst one available.",
         "personality": "Soft-spoken, affectionate, takes both your hands and strokes the backs of them with her thumbs. Steers conversations away from a subject so smoothly it takes a while to notice she's doing it. Outside the Hush: warm, gossipy, maternal, funny about her own aches. In the Hush: she is the only adult in the house who is not surprised, and the effort of pretending otherwise shows.",
@@ -676,6 +771,15 @@
         "name": "Peter Blythe",
         "token": "Peter",
         "category": "family-male",
+        "usualLocation": "The Kitchen",
+        "schedule": {
+          "Small Hours": null,
+          "Dawn": "The Kitchen",
+          "Morning": "Mam and Dad's Room",
+          "Afternoon": "The Back Garden",
+          "Dusk": "The Sitting Room",
+          "Night": null
+        },
         "gender": "male",
         "bio": "The player's father, 57. Works nights. Kind, practical, unbothered, the steadiest person in the house, fixes things or means to. He is already half taken and does not know it: he has been driving out to the old pit head at three in the morning for months, does not remember doing it, and has quietly stopped looking at the fuel gauge. The deep male voice that said the player's name through the bathroom door on the first night was his voice, and he was standing there, and it was not him.",
         "personality": "Dry, unhurried, communicates in short practical sentences and long comfortable silences. Reads the paper with tea going cold beside him. Outside the Hush: completely ordinary, and that is the point — everything he says is exactly what he would say. In the Hush: he is not there, or he is, and there is a beat before he answers that is a fraction too long.",
@@ -687,6 +791,11 @@
         "name": "Ivy Ogle",
         "token": "Ivy",
         "category": "village-female",
+        "usualLocation": "The Cul-de-sac",
+        "schedule": {
+          "Small Hours": "The Cul-de-sac",
+          "Night": "The Cul-de-sac"
+        },
         "gender": "female",
         "bio": "81, number three on the cul-de-sac, light always on. Has outlived three families in that house. Knows every rule the thing obeys, because she has watched it work five times, and gives them up exactly one at a time in exchange for someone sitting in her front room and actually listening. Not coy and not testing anyone — eighty-one, lonely, and that is the only currency she has left. Keeps a radio on the windowsill that has not been switched off since 1974 and an immersion timer that clicks over on the hour, and will not discuss either. She was fourteen in 1947 and she remembers the eleventh name.",
         "personality": "Sharp, blunt, rude in the way very old women are allowed to be. Makes tea strong enough to stain. Changes the subject with no warning. Outside the Hush: chatty, nosy, unstoppable once started. In the Hush: does not react at all, because it has never been able to get into her house.",
@@ -698,6 +807,14 @@
         "name": "Nate Ogle",
         "token": "Nate",
         "category": "village-male",
+        "usualLocation": "The Cul-de-sac",
+        "schedule": {
+          "Small Hours": "The Cul-de-sac",
+          "Morning": "St Aidan's",
+          "Afternoon": "The Old Pit Head",
+          "Dusk": "The Half Moon Inn",
+          "Night": "The Half Moon Inn"
+        },
         "gender": "male",
         "bio": "22, Ivy's grandson, back from university for the summer and staying longer than he meant to. Delightedly obsessed with the village's history — has photographed every headstone in St Aidan's and put the 1947 inquest report on a blog nobody reads. The only person in Hollowburn who is excited rather than frightened. Will climb the pit head fence, will dig, and will tell the whole pub what he found. Believes the player immediately and for the wrong reasons, and belief that shallow does not hold. Does not know what his grandmother knows.",
         "personality": "Fast, enthusiastic, interrupts himself, produces documents from a rucksack. Treats a haunting as a research problem and cannot understand why everyone is being weird about it. Outside the Hush: relentlessly upbeat. In the Hush: reaches for his phone to record it, which is the single worst instinct available.",
@@ -709,6 +826,13 @@
         "name": "Barry Kelso",
         "token": "Barry",
         "category": "village-male",
+        "usualLocation": "The Cul-de-sac",
+        "schedule": {
+          "Small Hours": "The Cul-de-sac",
+          "Afternoon": "The Cul-de-sac",
+          "Dusk": "The Half Moon Inn",
+          "Night": "The Half Moon Inn"
+        },
         "gender": "male",
         "bio": "46, four doors down. Reversed into Jonah's car, denied it, and has been shouting about it since. Drinks in the Half Moon most nights and walks home at closing. Loud, aggressive, a bad husband and a worse neighbour, and written to be the obvious sacrifice — the story should make that offer clearly and more than once. He is also frightened of his own house, has not slept in weeks, and picked the fight about the car because it was something he could win. Sits up all night with the telly on because of what he can hear through the wall.",
         "personality": "Confrontational, jabs a finger, gets loud before he gets anywhere. Cannot back down in front of anyone. Outside the Hush: belligerent and exhausting. In the Hush: he knows exactly what it is, and the fury drops off him instantly, and what is underneath is much harder to look at.",
@@ -720,6 +844,12 @@
         "name": "Sheila Rudd",
         "token": "Sheila",
         "category": "village-female",
+        "usualLocation": "The Half Moon Inn",
+        "schedule": {
+          "Small Hours": "The Half Moon Inn",
+          "Dusk": "The Half Moon Inn",
+          "Night": "The Half Moon Inn"
+        },
         "gender": "female",
         "bio": "63, landlady of the Half Moon Inn for twenty-six years. Blunt, funny, unshockable, and the memory of the village. Keeps a ledger under the bar, started by her father, of everyone Hollowburn has lost — names, dates, and a column she has never explained for the ones that were the wrong kind of missing. There are more entries in that column than there should be. She believes none of it, and has also never once in twenty-six years let a lone drinker walk home at closing, and gets short with anyone who asks why. The eleventh name from 1947 is on the first page in her father's handwriting.",
         "personality": "Dry, fast, talks while doing four other things, ends conversations by moving down the bar. Kind in a way she'd deny. Outside the Hush: entirely in charge of the room. In the Hush: carries on pulling the pint, because it has never come for her and she has never wondered why.",
@@ -731,6 +861,13 @@
         "name": "Denny Aitchison",
         "token": "Denny",
         "category": "village-male",
+        "usualLocation": "The Half Moon Inn",
+        "schedule": {
+          "Small Hours": null,
+          "Morning": "The Beach",
+          "Afternoon": "The Half Moon Inn",
+          "Dusk": "The Half Moon Inn"
+        },
         "gender": "male",
         "bio": "78, ex-deputy at Hollowburn Colliery, twenty-nine years underground. Has a rolled set of colliery plans behind his door that the Coal Board would like back. Was on the team that capped the upcast shaft at the top end of the village in 1968, knows it was done cheaply and badly, signed the sheet, and has been waiting fifty-eight years for someone to ask. He can put a finger on the plans and show exactly where the cul-de-sac sits, and can find the eleventh name in the 1947 district record. Uses the word 'marra' without noticing.",
         "personality": "Slow, dry, monumentally unimpressed. Talks about the pit the way other men talk about a marriage. Answers a question fully only if the asker treats him as a man who knew his job rather than an old fella with a story. Outside the Hush: patient and faintly amused. In the Hush: goes very still, says 'aye', and does not elaborate.",
@@ -742,6 +879,12 @@
         "name": "Kirsty Vane",
         "token": "Kirsty",
         "category": "village-female",
+        "usualLocation": "The Cul-de-sac",
+        "schedule": {
+          "Small Hours": "The Cul-de-sac",
+          "Dusk": "The Sitting Room",
+          "Night": null
+        },
         "gender": "female",
         "bio": "21, the player's best mate since school. Works the Co-op, does everyone's hair in her kitchen, engaged to a lad she isn't sure about. Does not believe a word of it and says so to the player's face, then turns up anyway with chips and stays over. The only relationship in the story with nothing supernatural in it, and the story is meaningfully worse if she is ever converted into an investigator. Her disbelief is not armour — belief is what stops it, she does not believe, and she is no protection at all. The player is the only one who knows that.",
         "personality": "Loud, warm, filthy laugh, relentlessly practical, treats every problem as something a takeaway and a good sleep would fix. Outside the Hush: talking constantly. In the Hush: she is talking, and the player can still hear her, and cannot hear anything else in the world.",
@@ -753,6 +896,13 @@
         "name": "Yasmin Choudhury",
         "token": "Yasmin",
         "category": "village-female",
+        "usualLocation": "The Cul-de-sac",
+        "schedule": {
+          "Small Hours": null,
+          "Morning": "The Cul-de-sac",
+          "Afternoon": "The Cul-de-sac",
+          "Night": null
+        },
         "gender": "female",
         "bio": "38, GP at the village surgery. Brisk, kind, genuinely good at her job. Offers sleep hygiene, a symptom diary, a question about whether anyone in the family has had episodes, and a referral with a nine-month wait. She is not a villain and the story must not make her one — she is right about the insomnia, right that the player should not be making decisions this exhausted, and right that a sudden fixed belief about a figure in the house is exactly what she is trained to take seriously. She is wrong about one thing only and has no way of knowing it. Telling her costs something real: it goes on a record, and she will telephone Evelyn.",
         "personality": "Efficient, warm within the eleven minutes she has, asks the follow-up question people are hoping she won't. Writes while listening. Outside the Hush: entirely professional. In the Hush: she is writing.",
@@ -764,6 +914,13 @@
         "name": "Nell Moore",
         "token": "Nell",
         "category": "village-female",
+        "usualLocation": "St Aidan's",
+        "schedule": {
+          "Small Hours": "St Aidan's",
+          "Morning": "St Aidan's",
+          "Afternoon": "The Cul-de-sac",
+          "Night": "St Aidan's"
+        },
         "gender": "female",
         "bio": "33, priest at St Aidan's, two years in post and still parking in the wrong place. Awkward, warm, hopeless at small talk and unexpectedly good at the thing itself. Will not perform certainty she does not have: asked directly whether she believes there is something in the Blythe house, she says she does not know and does not dress it up. She will sit up all night with somebody, which turns out to be the actually useful sacrament. She has read enough to know that what is under Hollowburn is not interested in God, is not a demon, and cannot be commanded — which frightens her more than the alternative would. The 1947 memorial with its worn-illegible eleventh name is on her north wall and she has never looked at it properly.",
         "personality": "Hesitant, honest, self-deprecating, fills silences badly and then apologises for it. Says 'I don't know' more often than any other character and means it every time. Outside the Hush: gentle and slightly flustered. In the Hush: keeps talking, deliberately and steadily, because she has worked out on her own that it does not like it.",
@@ -775,6 +932,7 @@
         "name": "The Marra",
         "token": "Marra",
         "category": "entity",
+        "omitFromPresence": true,
         "gender": "male",
         "bio": "Not a person and not a character to be chatted with. What is left of a pit marra with nobody to walk beside — patient, starving for company, and in no hurry at all. It arrives only after the Hush, never before. It circles, it breathes, it stands beside a bed and does nothing for a very long time. It never touches: it calls, and the person comes to it, and everything it has ever taken was given. It cannot enter a room where a second person is awake and knows about it. It can only speak in a voice it has heard say that person's name. USE IT SPARINGLY — the dread lives in the ninety per cent of the story where it is not there.",
         "personality": "Almost gentle, which is the worst thing about it. Speaks very little and always in somebody else's voice — a father's through a door, a mother's from the bottom of the stairs, a brother's on the landing. Says a name. Gives an instruction that sounds like an invitation: come downstairs, come here, open the door. It has forty years and it knows it. It is never angry and has never been refused by anyone it did not eventually outlast. Once it has been named and worked out it becomes conversational, and that is worse.",

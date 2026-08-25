@@ -15,8 +15,22 @@ in the engine log and referenced here in one line. Never write it out twice.
 Entries from 16/08/2026 to 22/08/2026 predate this split and are in the
 project-root `Change Log Archive.md`.
 
+## 25/08/2026
+
+- `Hollowburn.json` — NPC schedules. Every NPC now carries `usualLocation` and a per-phase `schedule`, so the engine's WHO IS WHERE block runs on this Adventure (it emitted nothing before — no NPC had a routine, so the model placed people by feel). Location names verified against the JSON's `locations` list; presence block rendered headless from the starting location. Needs a push to go live. Same routine on both rosters (Jonah/Mara). Calls: Peter is null at Small Hours and Night — he works nights but not every night, and where he is at three a.m. is the mystery; Kirsty, Yasmin and Denny take nulls where they'd otherwise be wrongly placed at the cul-de-sac or the pub overnight (no home locations exist for them). **The Marra has no schedule and `omitFromPresence: true`** — engine flag added the same day (engine log), because an NPC with no routine is otherwise listed every turn as "may be anywhere, including right where the player is", which is the opposite of "appears rarely, never casually".
+
 ## 24/08/2026
 
+- `locationScenery` authored for all 13 locations, ~20 words each — the room,
+  two or three fixed physical features and its light. These now carry the
+  image prompt's setting line, which until today was the bare location name.
+  The engine mechanism is generic and is written up in full in the engine log
+  at `Generator/Steak and Bake Stories/Change Log.md`.
+- `imageStyle` gained `professional photo`, placed with the other style
+  tokens and ahead of the framing instruction:
+  `painted illustration, muted desaturated palette, overcast north-east English light, professional photo, front on shot`
+  A photographic quality token paired with a painted style token lifts
+  detail, lighting and coherence without the render losing the style.
 - THE PLAYER CHOOSES WHICH BLYTHE CHILD THEY ARE. Female puts them in Mara at
   21 with Jonah as the 19-year-old brother; male puts them in Jonah at 21 with
   Mara as the 19-year-old sister. The haunted role never moves — only the name

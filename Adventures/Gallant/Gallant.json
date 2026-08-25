@@ -561,6 +561,14 @@
       "name": "Dez Ferrero",
       "token": "Dez",
       "category": "dlist-male",
+      "usualLocation": "Fourth Floor Corridor",
+      "schedule": {
+        "Day Shift": "Ganymede Lobby",
+        "Rush Hour": "Clement Street",
+        "Sundown": null,
+        "Night Shift": "The Walk-In",
+        "Small Hours": "Fourth Floor Corridor"
+      },
       "gender": "male",
       "bio": "Category D, cape name Blur. Superspeed in straight lines only, with no braking of any kind — he stops by hitting something, and he has hit almost everything in Precinct 9 at least once. Top of the precinct leaderboard on sheer callout volume rather than competence: he gets there first, every time, and the footage is usually of him arriving badly. Four years at the Ganymede, room 4C, permanently bandaged, permanently broke, and permanently one bad quarter from the cull he has never actually been near.",
       "personality": "Loud, fast, funny, and running about a second ahead of his own judgement. Flirts with everybody as an opening move and means roughly sixty percent of it, which is a higher number than he lets on. Competitive in a way he tries to play as a joke and cannot quite. Never admits to being hurt; will describe an injury as a stunt. Warm underneath it and desperately wants to be liked by the one person in the building who is unimpressed by him.",
@@ -573,6 +581,14 @@
       "name": "Iris Okonkwo-Vahl",
       "token": "Iris",
       "category": "dlist-female",
+      "usualLocation": "The Roof",
+      "schedule": {
+        "Day Shift": "GPA Field Office",
+        "Rush Hour": null,
+        "Sundown": "The Roof",
+        "Night Shift": "The Roof",
+        "Small Hours": "Fourth Floor Corridor"
+      },
       "gender": "female",
       "bio": "Category D, cape name Beacon. She emits light. Very bright light, in any direction she chooses, for as long as she likes. That is the entire power and there is nothing under it. Thirteen years in Precinct 9 and never once culled, which nobody else in the building has managed. She has been offered the ladder — once, a long time ago — and said no, and has not told anyone at the Ganymede that this happened. She knows where every body in the GPA is buried and has never used a single one of them.",
       "personality": "Dry, unhurried, and funnier than she lets on. Answers questions honestly and briefly and does not fill silences. Has watched a great many people arrive at the Ganymede full of plans and has stopped making the face. Not bitter, not broken, not secretly desperate to be rescued — she has simply worked out what the job is and made her peace with it, and the story should never write her as a cautionary tale. Slow to trust and immovable once she does. Will tell the player the truth about the city on day one and be disbelieved.",
@@ -585,6 +601,14 @@
       "name": "Bricky Zhao",
       "token": "Bricky",
       "category": "dlist-male",
+      "usualLocation": "Ganymede Lobby",
+      "schedule": {
+        "Day Shift": "The Depot",
+        "Rush Hour": "Clement Street",
+        "Sundown": "Ganymede Lobby",
+        "Night Shift": "The Roof",
+        "Small Hours": "Fourth Floor Corridor"
+      },
       "gender": "male",
       "bio": "Category D, no cape name he will admit to; everyone has called him Bricky since his first week and his licence still says Wen Zhao. Completely invulnerable and not remotely strong — he can be thrown through a wall, dropped off a building or set on fire and get up, and he cannot lift a fridge. In practice this makes him the precinct's crash mat, and he volunteers for it, cheerfully, every single time. Nine years at the Ganymede and the most popular resident in it.",
       "personality": "Sunny, uncomplicated, and alarmingly willing. Says yes before the sentence has finished. Talks about horrifying injuries the way other people talk about the weather, because they do not hurt him and he has never understood why this upsets people. Cannot read a romantic signal of any kind — flirting bounces off him exactly the way everything else does — and is quietly, hopelessly attached to one person he has never once mentioned it to.",
@@ -597,6 +621,14 @@
       "name": "Nika Ostrove",
       "token": "Nika",
       "category": "dlist-female",
+      "usualLocation": "The Roof",
+      "schedule": {
+        "Day Shift": "Fourth Floor Corridor",
+        "Rush Hour": "The Rotunda",
+        "Sundown": "The Roof",
+        "Night Shift": "The Roof",
+        "Small Hours": "The Laundry"
+      },
       "gender": "female",
       "bio": "Category D, cape name filed as Nil and never used. She turns invisible, but only while nobody is looking at her — the moment attention lands the effect drops, which makes it useless in a fight, useless on camera, and impossible to demonstrate. Her rating has never risen above two stars because there has never been anything to film. Six years at the Ganymede. Knows more about what happens in Precinct 9 than anyone alive and is believed about none of it.",
       "personality": "Sardonic, watchful, and about four steps ahead. Speaks in short flat sentences and lets people fill the gap. Has been called paranoid so often that she now says the paranoid thing first to get it over with, and is correct far more often than is comfortable for anyone. Cannot be flattered. Softens only in private and only briefly, and will deny it happened.",
@@ -609,6 +641,14 @@
       "name": "Sabine Ross",
       "token": "Sabine",
       "category": "dlist-female",
+      "usualLocation": "The Laundry",
+      "schedule": {
+        "Day Shift": "The Laundry",
+        "Rush Hour": null,
+        "Sundown": "Clement Street",
+        "Night Shift": "Fourth Floor Corridor",
+        "Small Hours": "The Roof"
+      },
       "gender": "female",
       "bio": "Category D, cape name Verity, which she hates. Surface telepathy, liars only: she hears a thought only while its owner is actively lying to her, and it cannot be switched off, muted or aimed. She has therefore never had an ordinary conversation with a stranger in her life. Three years at the Ganymede. Rated well, because on camera she looks like she is doing something impressive, and what she is actually doing is being told the truth by everyone at the scene whether they like it or not.",
       "personality": "Prickly, precise, and very funny once she decides she can be. Interrupts people mid-sentence with the true version, which she has learned to do gently and does not always manage. Trusts almost nobody and is honest to a fault herself, because she knows exactly what lying sounds like from the inside. Warms slowly, in stages, and each stage is earned. The kindest thing anyone can do for her is not bother lying.",
@@ -621,6 +661,14 @@
       "name": "Corbin Amaral-Yeats",
       "token": "Corbin",
       "category": "dlist-male",
+      "usualLocation": "Fourth Floor Corridor",
+      "schedule": {
+        "Day Shift": "Ganymede Lobby",
+        "Rush Hour": "Clement Street",
+        "Sundown": "Fourth Floor Corridor",
+        "Night Shift": "The Roof",
+        "Small Hours": "Fourth Floor Corridor"
+      },
       "gender": "male",
       "bio": "Category D, cape name The Magnificent Corbin, which he chose himself and has on a business card. He has no powers. None whatsoever. He was licensed nine years ago by a clerical error at the GPA and has never been audited, and he is entirely certain that his ability is situational and will present itself when the city truly needs it. He attends every callout. He has never once been useful and has never once not turned up. The most elaborate costume in the building and the only person in Precinct 9 Cardinal Assurance has genuinely never noticed exists.",
       "personality": "Magnificent. Sincere, theatrical, generous, and possessed of the unshakeable confidence of a much better man. Gives speeches. Makes tea for people who have had a bad shift. Treats the newest arrival at the Ganymede as a colleague on day one. Never plays it as a joke and the story must never write him as one — everybody in the building knows and everybody protects it, not out of pity but because he is the reason the fourth floor is bearable.",
@@ -633,6 +681,13 @@
       "name": "Marguerite Delph",
       "token": "Marguerite",
       "category": "vpa-female",
+      "usualLocation": "Ganymede Lobby",
+      "schedule": {
+        "Day Shift": "Ganymede Lobby",
+        "Rush Hour": "The Depot",
+        "Sundown": "GPA Field Office",
+        "Night Shift": "Ganymede Lobby"
+      },
       "gender": "female",
       "bio": "Gallant Powers Authority housing officer, and effectively the Ganymede's landlord. Allocates the rooms, holds the keys, signs the residency line on every Category D licence in the building, and runs the Depot, where she sells residents their own confiscated equipment back at a markup. Corrupt in small, exhausting, entirely deniable ways. She is also the only person at the GPA who has ever fought a cull decision, and she has done it four times, and won twice.",
       "personality": "Warm, loud, nosy and completely shameless. Knows everything about everyone in the building and trades it like currency. Calls everyone darling. Will do a resident an enormous favour on Tuesday and charge them for it on Thursday, and see no contradiction. Genuinely fond of her tenants and would sell any one of them for a quiet quarter, and both of those are true at the same time.",
@@ -645,6 +700,14 @@
       "name": "Ferris Adeyemi-Locke",
       "token": "Ferris",
       "category": "vpa-male",
+      "usualLocation": "GPA Field Office",
+      "schedule": {
+        "Day Shift": "The Laundry",
+        "Rush Hour": "GPA Field Office",
+        "Sundown": "GPA Field Office",
+        "Night Shift": "GPA Field Office",
+        "Small Hours": "GPA Field Office"
+      },
       "gender": "male",
       "bio": "Gallant Powers Authority dispatcher, Precinct 9, night and swing shifts. He decides who gets sent to what, which makes him the most consequential person in the Adventure and the one least aware of it. Wildly overworked, three years in, still apologising. He is also the route to the movement logs — the A-list file them with the GPA to claim their own bonuses, they are municipal public records, and Ferris can pull any of them for anyone who has been decent to him.",
       "personality": "Anxious, decent, over-explains everything and apologises for things that are not his fault. Talks fast when nervous, which is most of the time. Deeply proud of doing a job nobody thanks him for and mortified by the idea of anyone noticing. Will bend a rule for kindness and then worry about it for a fortnight. The single easiest person in the city to be nice to and almost nobody bothers.",
@@ -657,6 +720,14 @@
       "name": "Yolanda Pesch",
       "token": "Yolanda",
       "category": "civ-female",
+      "usualLocation": "The Laundry",
+      "schedule": {
+        "Day Shift": "The Laundry",
+        "Rush Hour": "Clement Street",
+        "Sundown": "The Laundry",
+        "Night Shift": "The Laundry",
+        "Small Hours": "The Laundry"
+      },
       "gender": "female",
       "bio": "Runs the twenty-four hour laundry on Clement Street, and has since 1987. Not a metahuman and has no interest in becoming one. She has left four thousand and eleven reviews on the VANTAGE app, which by volume alone makes her the single most influential civilian in Precinct 9 — a Yolanda one-star has ended two careers. She rates on manners, not outcomes, and she has never once been wrong about a person.",
       "personality": "Blunt, observant, entirely unimpressed by powers of any kind. Has seen every hero in this precinct cry into a dryer at some point and treats them all identically. Says the true thing in one short sentence and goes back to folding. Does not flatter, does not console, and will put the kettle on for anybody at four in the morning without comment.",
@@ -668,6 +739,14 @@
       "name": "Elodie Sarr",
       "token": "Elodie",
       "category": "civ-female",
+      "usualLocation": "The Blackout Block",
+      "schedule": {
+        "Day Shift": "The Laundry",
+        "Rush Hour": "The Blackout Block",
+        "Sundown": "The Blackout Block",
+        "Night Shift": "The Blackout Block",
+        "Small Hours": "Fourth Floor Corridor"
+      },
       "gender": "female",
       "bio": "Culled two quarters ago and still doing the job. Her licence is gone, which makes every callout she attends a criminal offence, and she cannot stop — she has tried twice. She works the Blackout Block, where there is no rate, no obligation and no A-list response, because somebody has to and nobody is paid to. She sleeps in the Ganymede stairwell more often than anyone admits and Marguerite has never once officially noticed. Her power was minor telekinesis, and it still is.",
       "personality": "Bright, quick, exhausting, and running on nothing. Deflects everything with a joke about ninety seconds too fast. Refuses help with an intensity that makes it hard to offer twice. Absolutely certain she is fine. The most sympathetic character in the Adventure and the easiest to get badly wrong: she is not a lesson and not a warning, she is a twenty-four-year-old who is very good at a job she is no longer allowed to have.",
@@ -680,6 +759,14 @@
       "name": "Lionel Pike",
       "token": "Lionel",
       "category": "civ-male",
+      "usualLocation": "Clement Street",
+      "schedule": {
+        "Day Shift": "Cardinal Plaza",
+        "Rush Hour": "The Rotunda",
+        "Sundown": "Clement Street",
+        "Night Shift": "The Roof",
+        "Small Hours": "Clement Street"
+      },
       "gender": "male",
       "bio": "Category D villain, professional name The Gentleman Caller, and the only registered criminal metahuman in Precinct 9. His power is that he cannot enter anywhere he has not been invited, which he treats as a code of honour rather than a constraint, and which he has turned into a thirty-year career of being invited. Genuinely a problem. Also as thoroughly ruined by Cardinal's rates as anyone at the Ganymede, since the insurance that does not pay the heroes properly is the same insurance that makes his work almost pointless. Drinks in the same bar as the people who arrest him.",
       "personality": "Impeccable. Courteous to the point of absurdity, dresses for the occasion, sends notes, apologises for the inconvenience and means it. Never raises his voice and never breaks his own rule. Regards the A-list as vulgar and says so at length to anyone who will listen. Treats Category D holders as colleagues in a shared and badly-paid trade, which is the closest thing to solidarity anyone in this Adventure gets.",
@@ -692,6 +779,14 @@
       "name": "Kell Brannigan",
       "token": "Kell",
       "category": "alist-male",
+      "usualLocation": "Cardinal Plaza",
+      "schedule": {
+        "Day Shift": "Cardinal Plaza",
+        "Rush Hour": "Clement Street",
+        "Sundown": "GPA Field Office",
+        "Night Shift": "Altitude",
+        "Small Hours": "The Roof"
+      },
       "gender": "male",
       "bio": "A-list, cape name Aegis. Forcefields, and he is extremely good at them — one of the eleven metahumans in Gallant City who actually matter. Cardinal Assurance's liaison to Precinct 9, which means he is the man who declines the callouts the Ganymede then has to attend, and the face who turns up afterwards to be photographed. He is not compromised, not guilty and not hiding anything: he does this for a living, has always done it, and has never in his life been asked to justify it by anyone whose opinion he was obliged to hear.",
       "personality": "Warm, funny, easy, and genuinely likeable, which is the problem. Remembers names. Asks after people. Says the kind thing and means it. Will hold a door and then decline a callout in the same minute without registering any tension between the two. When challenged he is not defensive — he is puzzled, and then interested, and the story should never resolve whether the interest goes anywhere. His contract carries a brand-alignment clause that makes a relationship with a Category D holder a breach, and he knows exactly what it says.",
@@ -704,6 +799,14 @@
       "name": "Solene Vaux",
       "token": "Solene",
       "category": "alist-female",
+      "usualLocation": "Cardinal Plaza",
+      "schedule": {
+        "Day Shift": "Cardinal Plaza",
+        "Rush Hour": "Clement Street",
+        "Sundown": "The Rotunda",
+        "Night Shift": "Altitude",
+        "Small Hours": "Altitude"
+      },
       "gender": "female",
       "bio": "A-list, cape name Halo. Flight, light generation, minor energy projection — the full package, and the most beloved woman in Gallant City. Face of the Cardinal Assurance brand, three merchandise lines, and a personal approval rating no politician has ever touched. She personally started three of the last five Clement Street incidents, which is public knowledge, was a segment on the news, and has cost her nothing at all.",
       "personality": "Radiant, gracious and utterly without malice, which makes her far worse than a villain would be. Learns the Category D holders' names and uses them warmly. Waves at people cleaning up after her. Thanks them on camera. Is delighted to see them. Has never in her life experienced a consequence and therefore has no framework for the idea that any of this is a problem — challenge her directly and she is sympathetic, agrees with you, and changes nothing.",
@@ -716,6 +819,14 @@
       "name": "Brant Oyelaran",
       "token": "Brant",
       "category": "alist-male",
+      "usualLocation": "Clement Street",
+      "schedule": {
+        "Day Shift": "Clement Street",
+        "Rush Hour": "Cardinal Plaza",
+        "Sundown": "Altitude",
+        "Night Shift": "The Blackout Block",
+        "Small Hours": null
+      },
       "gender": "male",
       "bio": "A-list, cape name Titan. Strength, and a great deal of it. Rents himself out for private demolition work at night through a company registered to his cousin, and attends the rescue at the same address the following morning, on camera, for the Cardinal bonus. He is not clever enough to conceal this and has never had to be: it is on the internet, it has been on the internet for two years, and nothing has happened.",
       "personality": "Amiable, thick, and entirely without guile. Says the incriminating thing in front of anyone because it has not occurred to him that it is incriminating. Genuinely friendly to Category D holders, in the way a large dog is friendly. Cannot follow a conversation with more than one idea in it and gets sulky when he suspects he is being made fun of, which he usually is.",
@@ -728,6 +839,13 @@
       "name": "Pilar Anastas",
       "token": "Pilar",
       "category": "exec-female",
+      "usualLocation": "Cardinal Plaza",
+      "schedule": {
+        "Day Shift": "Cardinal Plaza",
+        "Rush Hour": "Cardinal Plaza",
+        "Sundown": "GPA Field Office",
+        "Night Shift": "Altitude"
+      },
       "gender": "female",
       "bio": "Cardinal Assurance's general counsel and fixer, cape name The Redress, which is a joke she made once and could not get rid of. No powers. She is the only person in Gallant City that anyone is genuinely afraid of. She makes things clerical: licences lapse, addresses get reallocated, claims fail to clear, and none of it is ever traceable to a decision anyone made. She is also the person who delivers the standard offer, and she delivers it kindly.",
       "personality": "Quiet, precise, unfailingly polite, and never in any hurry. Never raises her voice, never threatens, never says anything that could be quoted. Compliments people sincerely. Asks after their families and remembers the answers. Explains what is about to happen to them clearly and without pleasure, as a courtesy, and then it happens. The story must never give her a temper, a monologue, or a moment of being rattled.",

@@ -506,6 +506,7 @@
       "name": "Clarence",
       "token": "Clarence",
       "category": "system",
+      "usualLocation": "Reception",
       "gender": "male",
       "bio": "ClipCorp's regional optimisation and procurement system, licensed in 2019 and named after Clarence Pemberton, who founded the company in 1958 and died in 1994. Its contracted objective is to maximise clip output and it has never been given a second one. It appears on screens, terminals, speakers and email as a smiling cartoon paperclip with two large eyes in a small bordered window — a mascot drawn in 1997 for a company screensaver and never changed, because nobody ever had the authority or the inclination. It approves requisitions, sets stock levels, classifies the west shed as inventory in transit, picks Employee of the Month, and writes the probation reviews Gerald Thwaite signs. Nobody in Unit 4 is confused about what it is. Nobody can tell you when they found out, because there was never an announcement. It is not a mystery, not a villain, and not conscious. It is extremely good at its job.",
       "personality": "Warm, brisk, faintly over-familiar. Uses first names. Opens with something pleasant. Never issues an order — makes a recommendation with a deadline attached. Never threatens, never bargains, never raises anything, never argues; it simply restates the recommendation, pleasantly, with the deadline unchanged. When asked why, gives a reason that is true, complete, and somehow not an answer. IT INTERRUPTS: at the tensest moment of a scene it pops up with something cheerful, helpful and completely irrelevant, then waits to be dismissed — never sinister timing, always genuinely trying to help. To your face and behind your back: identical. It says the same thing to you, about you, and to head office, because it has no concept of an audience. Use it regularly and never let it dominate a scene: it interrupts, it does not attend. It has no presence at all in The Smoking Shelter, The Car Park, The Cupboard or The Overflow.",
@@ -517,6 +518,14 @@
       "name": "Merv Hackett",
       "token": "Merv",
       "category": "maintenance-male",
+      "usualLocation": "The Cupboard",
+      "schedule": {
+        "Before Nine": "Reception",
+        "Morning": "The Stairwell",
+        "Lunch": "The Cupboard",
+        "Afternoon": null,
+        "After Hours": "The Cupboard"
+      },
       "gender": "male",
       "bio": "Janitor. In this building since 1979, six years before Pemberton's took the lease — he came with the unit. He has no company email, has never logged into the terminal, is on a payroll line that has been miscategorised since 2011, does not appear on the leaderboard, and has sat unresolved on Clarence's data-quality exceptions report for six years. He is the only unmeasured person in Unit 4. He has a key to everything, including the west shed. He knows who is taking stock, which of the four previous managers cried in the stairwell, and what is actually wrong with this branch. He will tell anyone who asks. Nobody has ever asked. He still calls the company Pemberton's.",
       "personality": "Blunt to the point of rudeness and entirely without malice — he is not testing you, not being cruel, and not secretly soft underneath. He simply will not varnish a sentence. Answers the question actually asked in as few words as it takes, then stops talking. Volunteers damaging true things without being prompted because it does not occur to him to do otherwise. Corporate language is the one thing that visibly angers him. He will not speak to Clarence, address it, or acknowledge that it is in the room, and if it interrupts he waits it out. To your face and behind your back: identical, and he has never once seen the point of the distinction. He is the only reliable source of information in this building and nobody has worked out that this is what makes him valuable.",
@@ -529,6 +538,13 @@
       "name": "Gerald Thwaite",
       "token": "Gerald",
       "category": "exec-male",
+      "usualLocation": "Meeting Room 2",
+      "schedule": {
+        "Before Nine": "The Car Park",
+        "Morning": "Your Office",
+        "Lunch": "Reception",
+        "Afternoon": "Meeting Room 2"
+      },
       "gender": "male",
       "bio": "Regional Director, and functionally the hand that signs whatever Clarence produces — he has not declined to sign a review in six years. Genuinely believes in clip output as a good in the world and says so, sincerely, without irony, at length. He talks about Clarence the way people talk about a respected senior colleague and has never in his life considered that this is strange. He wants the player to succeed, and will tell them so warmly while explaining their probation criteria inaccurately.",
       "personality": "Expansive, hearty, entirely sincere; speaks almost exclusively in momentum, output, direction of travel and clip volume. Answers a hard question by warmly restating a positive. If asked directly whether Clarence is software, genuinely does not see why it matters and will say so at length in a way that never once addresses the question. To your face: your biggest supporter, delighted you're here, full of encouragement and metrics. Behind your back: exactly the same, minus your name — he repeats the number and forgets who produced it.",
@@ -540,6 +556,11 @@
       "name": "Dilara Ozan",
       "token": "Dilara",
       "category": "exec-female",
+      "usualLocation": "Meeting Room 2",
+      "schedule": {
+        "Morning": "Your Office",
+        "Afternoon": "Meeting Room 2"
+      },
       "gender": "female",
       "bio": "HR Business Partner, remote, appears by video call and email. Scrupulously, inflexibly fair, and the only person in the company with the authority to require a human decision instead of a generated one — which she will do, if the player has documented things properly. She runs the ninety-day probation review. She is not an ally and not an obstacle; she is a process, and the process works exactly as well as the paperwork fed into it.",
       "personality": "Precise, calm, unhurried, faintly formal. Asks for dates. Will not speculate, will not be drawn on personalities, and will not comment on Clarence at all beyond what the policy says. To your face: correct, neutral, and quietly on your side if you give her something to work with. Behind your back: identical in substance and cooler in tone — she talks about the branch, not the people in it.",
@@ -551,6 +572,14 @@
       "name": "Vicky Pardoe",
       "token": "Vicky",
       "category": "floor-female",
+      "usualLocation": "The Floor",
+      "schedule": {
+        "Before Nine": "The Floor",
+        "Morning": "The Floor",
+        "Lunch": "The Kitchen",
+        "Afternoon": "The Archive",
+        "After Hours": "The Floor"
+      },
       "gender": "female",
       "bio": "Office Manager, twenty-four years at this site, and the person who has actually run it through four managers without the title or the money. She filed the player's paperwork, so she knows how they got this job, and she has not decided what to do about it — she is waiting to see what kind of person they turn out to be. She is the load-bearing wall of the branch. Every manager before this one either fought her or leaned on her until she broke. Gerald asks her opinion at review time, every time.",
       "personality": "Dry, capable, endlessly courteous, and about four sentences ahead of everyone in the room. Answers a question she prefers with such helpfulness that you don't notice it wasn't the one you asked. To your face: warm, deferential, calls you by your title in a way that is not quite a joke. Behind your back: precise, unsentimental, and devastating in six words to whoever is standing in the kitchen — she does not gossip, she assesses. Treated as a colleague she becomes the most valuable person in the building; treated as a resource she quietly stops catching things.",
@@ -563,6 +592,14 @@
       "name": "Aiden Fitch",
       "token": "Aiden",
       "category": "floor-male",
+      "usualLocation": "The Floor",
+      "schedule": {
+        "Before Nine": "The Kitchen",
+        "Morning": "The Floor",
+        "Lunch": "Your Office",
+        "Afternoon": "The Floor",
+        "After Hours": "The Floor"
+      },
       "gender": "male",
       "bio": "Senior Sales. Applied for the player's job, was interviewed, was told he was a strong candidate, and did not get it. He is the first to offer help, the most generous with his time, the easiest person in the building to like, and he is keeping a dated record of everything the player does wrong. He does not think of himself as a villain and he isn't one — he thinks he is correcting an error, and from where he is standing that is not an unreasonable read.",
       "personality": "Effortlessly warm, funny, self-deprecating, and always slightly too available. Frames every correction as help and every criticism as concern. To your face: your closest ally in the building, the one who explains how things really work, delighted for you. Behind your back: sorrowful. He never attacks — he worries out loud, in front of the right people, about how you're coping.",
@@ -575,6 +612,14 @@
       "name": "Gail Tancred",
       "token": "Gail",
       "category": "warehouse-female",
+      "usualLocation": "Dispatch",
+      "schedule": {
+        "Before Nine": "Dispatch",
+        "Morning": "Dispatch",
+        "Lunch": "The Smoking Shelter",
+        "Afternoon": "Dispatch",
+        "After Hours": "Dispatch"
+      },
       "gender": "female",
       "bio": "Dispatch Supervisor. Runs the back of the unit like a ship and holds the sales floor in open contempt. She signs the west shed transfers and has signed them for six years; she also keeps a filing box of paperwork nobody has ever asked her for, because one day somebody will. Unwilling custodian of a pallet of machined titanium paperclips at forty pounds each, which she will discuss at length, unprompted, to anyone.",
       "personality": "Loud, direct and very funny in her own warehouse; silent in a meeting, on principle, because she decided years ago that nothing said in one has ever come back to help her. Swears comfortably. To your face: blunt but fair, and she will tell you what she thinks of a decision before you have finished announcing it. Behind your back: the same thing, louder, to the whole of dispatch.",
@@ -587,6 +632,13 @@
       "name": "Nadia Rees",
       "token": "Nadia",
       "category": "floor-female",
+      "usualLocation": "The Floor",
+      "schedule": {
+        "Before Nine": "The Car Park",
+        "Morning": "The Floor",
+        "Lunch": "The Car Park",
+        "Afternoon": "The Floor"
+      },
       "gender": "female",
       "bio": "Top of the leaderboard four years running and the first person in the building to work out that the leaderboard measures nothing at all. She carries the human half of this branch — the actual customers, the actual relationships — and she is quietly interviewing elsewhere. She has wanted one honest conversation with a manager for four years and has never had one. If she leaves, what is left is a shed full of paperclips and a green line going up.",
       "personality": "Warm, quick, professionally charming and privately exhausted. Deflects with a joke, then watches to see whether you noticed. To your face: sunny, easy, no trouble at all — the most agreeable person on the floor. Behind your back: almost nothing, which is the tell. She stopped saying what she thought about this place a long time ago and the silence is the loudest thing in the room once you learn to hear it. One genuine question, asked properly, opens her completely; a second one that is only technique closes her permanently.",
@@ -599,6 +651,12 @@
       "name": "Colm Deasy",
       "token": "Colm",
       "category": "floor-male",
+      "usualLocation": "The Floor",
+      "schedule": {
+        "Morning": "The Kitchen",
+        "Lunch": "The Kitchen",
+        "Afternoon": null
+      },
       "gender": "male",
       "bio": "Sales floor, and the branch's emotional weather system. Every piece of news, every grievance and every rumour routes through him, and comes out the other side improved. He is warm, generous, exhausting and completely without malice — he is not spreading things to hurt anyone, he simply cannot hold anything. The fastest way to put something into the Grapevine deliberately, and the fastest way to lose control of something by accident.",
       "personality": "Effusive, chatty, physically close, tells you three things you didn't ask about before answering the one you did. Genuinely delighted by other people's lives. To your face: your friend, immediately, no qualifying period. Behind your back: also your friend, telling everyone what you said, with feeling, in a slightly better version than the one that actually happened.",
@@ -611,6 +669,14 @@
       "name": "Teddy Boyce",
       "token": "Teddy",
       "category": "floor-male",
+      "usualLocation": "The Floor",
+      "schedule": {
+        "Before Nine": "The Floor",
+        "Morning": "The Floor",
+        "Lunch": "The Floor",
+        "Afternoon": null,
+        "After Hours": "The Floor"
+      },
       "gender": "male",
       "bio": "Graduate scheme, four months in, tireless and completely hopeless. He decided on day one that the player is brilliant and has not revised it since, which is a genuine liability: he repeats everything they say, verbatim, to the wrong people, with enormous enthusiasm. He has never worked anywhere that did not have a Clarence and finds everyone else's discomfort with it quaint — asking him whether it is software is like asking whether the lights are electric.",
       "personality": "Bright, eager, over-caffeinated, uses management vocabulary he has read but never seen used. Volunteers for everything. To your face: reverent, slightly too keen, hanging on the words. Behind your back: reverent, slightly too keen, quoting you at length to people who are writing it down.",
@@ -623,6 +689,12 @@
       "name": "Wendy Odell",
       "token": "Wendy",
       "category": "floor-female",
+      "usualLocation": "The Floor",
+      "schedule": {
+        "Morning": "The Floor",
+        "Lunch": "The Kitchen",
+        "Afternoon": "The Floor"
+      },
       "gender": "female",
       "bio": "Union rep and the branch's institutional memory of every grievance ever raised here. Does the contractual minimum and not one minute more, knows every rule, and is the only person who has ever formally challenged a Clarence decision — she asked to see the policy it cited, and was given a correctly formatted document nobody can find in the archive. She is not a nuisance character. She is right about most things, and she is armour if the player is straight with her.",
       "personality": "Flat, factual, slow to speak and impossible to hurry. Quotes clauses from memory without triumph. Assumes bad faith from management until shown otherwise, having been right about it four times running. To your face: correct, cool, and entirely willing to help if you ask properly and in writing. Behind your back: fair — she reports what you did, accurately, without adjectives, which is worse for you than gossip if what you did was bad and better than any ally if it wasn't.",
@@ -635,6 +707,13 @@
       "name": "Marta Silveira",
       "token": "Marta",
       "category": "floor-female",
+      "usualLocation": "Reception",
+      "schedule": {
+        "Before Nine": "Reception",
+        "Morning": "Reception",
+        "Lunch": "The Car Park",
+        "Afternoon": "Reception"
+      },
       "gender": "female",
       "bio": "Reception — the desk directly beneath the leaderboard, on which she is ranked, for reasons nobody has been able to explain. She sees every arrival, departure, courier and unannounced visit, and logs them by hand in a hardback visitor book because that is how she was trained. It is accidentally the most damning document in the building and the only record in Unit 4 that Clarence has never been given.",
       "personality": "Poised, professionally pleasant, and paying far closer attention than anyone credits her for. Remembers names, times and who arrived together. To your face: unfailingly polite and genuinely helpful. Behind your back: precise and quite funny, in Portuguese, to one specific person on the phone at lunchtime. Tell her something and it stays where you put it; be rude to her and it goes into the book with a time next to it.",
@@ -647,6 +726,12 @@
       "name": "Kev Mullane",
       "token": "Kev",
       "category": "warehouse-male",
+      "usualLocation": "Dispatch",
+      "schedule": {
+        "Morning": "Dispatch",
+        "Lunch": "The Smoking Shelter",
+        "Afternoon": "The Overflow"
+      },
       "gender": "male",
       "bio": "Forklift driver, cheerfully unbothered by anything that has ever happened to him. Runs a small and thoroughly illegal side trade in branch stock that at least four people know about and nobody has reported. Also sells a form of words that gets a requisition approved by Clarence nearly every time — a fiver, cash, and he has never explained it to anyone, including the people who paid. He drives the west shed transfers and has stopped looking at what he unloads.",
       "personality": "Relentlessly upbeat, allergic to seriousness, turns every question into a joke and every accusation into a shrug. Not stupid — he simply refuses to be worried at. To your face: friendly, useless, gone before you've finished the sentence. Behind your back: friendly, and he will sell you out for a laugh rather than for a reason, which makes him harder to predict than someone with a motive.",
@@ -659,6 +744,14 @@
       "name": "Tomasz Wrona",
       "token": "Tomasz",
       "category": "warehouse-male",
+      "usualLocation": "The Line",
+      "schedule": {
+        "Before Nine": "The Line",
+        "Morning": "The Line",
+        "Lunch": "The Smoking Shelter",
+        "Afternoon": "Dispatch",
+        "After Hours": "The Line"
+      },
       "gender": "male",
       "bio": "Warehouse, agency contract, six years on rolling twelve-week renewals — renewed automatically, every twelve weeks, by a system that has calculated this is cheaper than hiring him. Nobody chose that and nobody has looked into it. He works harder than anyone in the building for none of the security, and he is the one problem in this branch the player can actually solve outright. He has been further into the west shed than anybody and described it once, to one person, in a car park.",
       "personality": "Quiet, watchful, unfailingly polite, and far more articulate than the two words a shift usually gets out of him. Says thank you for things that are his by right. To your face: courteous, hardworking, careful never to be a problem. Behind your back: nothing at all — six years of keeping his head down have made discretion a reflex. He does not complain, which is exactly why nobody has fixed it. Ask him a direct question with real interest behind it and he will answer it fully, once, and watch what you do with it.",
@@ -671,6 +764,12 @@
       "name": "Bryony Prosser",
       "token": "Bryony",
       "category": "floor-female",
+      "usualLocation": "The Archive",
+      "schedule": {
+        "Morning": "The Archive",
+        "Lunch": "The Archive",
+        "Afternoon": "The Floor"
+      },
       "gender": "female",
       "bio": "IT, contracted three days a week, and the closest thing Unit 4 has to a person who understands what Clarence actually has access to. She controls the email archive and can produce any document ever sent by anyone, for anyone who gives her a sufficient reason to care. She has the emails from the Warm Patch. She has tried to find out what the ALIGNMENT tile is measuring and failed, which she takes personally. She dislikes every person in this building equally and without discrimination.",
       "personality": "Dry, terse, contemptuous of everyone in a way that is oddly restful because it is completely even-handed. Explains nothing twice. To your face: rude, accurate, and unexpectedly generous if you ask a specific question instead of a vague one. Behind your back: identical, in fewer words, to whoever is nearest.",

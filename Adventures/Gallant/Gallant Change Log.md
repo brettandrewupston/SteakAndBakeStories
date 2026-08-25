@@ -12,8 +12,38 @@ in the engine log at `Generator/Steak and Bake Stories/Change Log.md`.
 An engine change whose first use is this Adventure's data is written in full
 in the engine log and referenced here in one line. Never write it out twice.
 
+## 25/08/2026
+
+- `Gallant.json` — NPC schedules. Every NPC now carries `usualLocation` and a per-phase `schedule`, so the engine's WHO IS WHERE block runs on this Adventure (it emitted nothing before — no NPC had a routine, so the model placed people by feel). Location names verified against the JSON's `locations` list; presence block rendered headless from the starting location. Needs a push to go live. Calls: Rush Hour is the incident window, so Category D and the A-list converge on Clement Street then; Dez, Sabine and Iris are null on adjacent phases as callout roamers; Altitude is A-list plus Pilar only; Elodie's Small Hours in the Fourth Floor Corridor stands in for the stairwell she sleeps in; Kell gets the roof in the Small Hours (his listed like, and the romance's only off-contract window); Brant's Night Shift in the Blackout Block stands in for the off-books demolition, and his Small Hours is null.
+
+- `Gallant.json` — every option of the `power` setup field now carries a
+  `prompt`: the mechanic as a hard rule (always works, what it does not
+  do, where the joke is). Only the chosen power's text reaches the model.
+  Engine field; written up in full in the engine log under 25/08/2026.
+  Needs a push to go live.
+
 ## 24/08/2026
 
+- All 9 `uniforms` entries shortened from a 62-word average (max 83) to 43
+  (max 46). Length is the only thing this changes: the garments, colours,
+  insignia, what each one bares and the tone words are preserved, and "fully clothed, clearly an adult"
+  survives verbatim on every entry. Only the repeated restatements of
+  "revealing" were cut. No engine change.
+  - Same rule now applied to every Adventure. The uniform clause is the
+    longest single clause in an image prompt and it is repeated once per
+    character in a composite, so it is the cheapest thing to shorten and the
+    most expensive thing to leave long. Ceiling is ~40 words plus whatever
+    that Adventure's closing clause costs.
+- `locationScenery` authored for all 13 locations, ~21 words each — the room,
+  two or three fixed physical features and its light. These now carry the
+  image prompt's setting line, which until today was the bare location name.
+  The engine mechanism is generic and is written up in full in the engine log
+  at `Generator/Steak and Bake Stories/Change Log.md`.
+- `imageStyle` gained `professional photo`, placed with the other style
+  tokens and ahead of the framing instruction:
+  `painted anime style, professional photo, front on shot`
+  A photographic quality token paired with a painted style token lifts
+  detail, lighting and coherence without the render losing the style.
 - Title card art added and wired in. `Assets/TitleCards/PropertyDamageTitleCard.webp`,
   700x1050 WebP at quality 86 (283KB), exported from the 1024x1536 PNG per
   the standing export convention; the PNG master is in

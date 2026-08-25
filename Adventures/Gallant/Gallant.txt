@@ -337,6 +337,13 @@ the same shape as Halcyon's Pool Deck and Pemberton's Kitchen.
 - The Blackout Block (red, dashed, path drawn severed — same treatment
   as Halcyon's Sunken Villa and Pemberton's Overflow)
 
+Entries are capped at roughly 40 words plus this Adventure's closing
+clause; currently 43 on average, 46 at most. The uniform clause is the
+longest single clause in an image prompt and a composite repeats it once
+per character, so detail past that point costs the room, the pose and the
+expression the weight they need. Cross-project rule — see the root
+`Change Log.md`, 24/08/2026.
+
 THE BLACKOUT BLOCK
 ---------------------
 Six blocks Cardinal has zoned out of coverage because the claims never
@@ -552,3 +559,14 @@ OUTSTANDING
 Content and data changes from here go in
 Adventures/Gallant Change Log.md; engine changes go in
 Generator/Steak and Bake Stories/Change Log.md.
+
+LOCATION SCENERY (image prompts)
+-----------------
+Every location in the list above has a `locationScenery` entry in
+Gallant.json — the room, two or three fixed physical features and its light,
+around 21 words. That text replaces the bare location name in the image
+prompt's setting line, on inline, on-demand and composite images alike.
+Keep entries short: the line appears in every prompt for that room, and a
+composite repeats everything else once per character, so scenery is what
+pushes a group prompt past the length this backend truncates at.
+Image style for this Adventure: painted anime style, professional photo, front on shot

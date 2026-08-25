@@ -11,6 +11,32 @@ in the engine log at `Generator/Steak and Bake Stories/Change Log.md`.
 An engine change whose first use is this Adventure's data is written in full
 in the engine log and referenced here in one line. Never write it out twice.
 
+## 25/08/2026
+
+- `Pemberton.json` — NPC schedules. Every NPC now carries `usualLocation` and a per-phase `schedule`, so the engine's WHO IS WHERE block runs on this Adventure (it emitted nothing before — no NPC had a routine, so the model placed people by feel). Location names verified against the JSON's `locations` list; presence block rendered headless from the starting location. Needs a push to go live. Calls: Clarence is anchored to Reception (the screens) with no schedule; Kev's Afternoon in The Overflow is the one gated placement (he drives the transfers), Tomasz kept out of it since his visits are exceptional; Dilara is remote so her placements are where her video window appears, with no Before Nine or After Hours; Gerald's Before Nine in The Car Park is the Regional Director's car arriving. After Hours: Merv in the Cupboard, Aiden still on the Floor, Gail in Dispatch, Tomasz on the third shift.
+
+## 24/08/2026
+
+- All 8 `uniforms` entries shortened from a 50-word average (max 56) to 42
+  (max 46). Length is the only thing this changes: the garments, colours,
+  insignia, what each one bares and the tone words are preserved, and "fully clothed, clearly an adult"
+  survives verbatim on every entry. Only the repeated restatements of
+  "revealing" were cut. No engine change.
+  - Same rule now applied to every Adventure. The uniform clause is the
+    longest single clause in an image prompt and it is repeated once per
+    character in a composite, so it is the cheapest thing to shorten and the
+    most expensive thing to leave long. Ceiling is ~40 words plus whatever
+    that Adventure's closing clause costs.
+- `locationScenery` authored for all 13 locations, ~20 words each — the room,
+  two or three fixed physical features and its light. These now carry the
+  image prompt's setting line, which until today was the bare location name.
+  The engine mechanism is generic and is written up in full in the engine log
+  at `Generator/Steak and Bake Stories/Change Log.md`.
+- `imageStyle` gained `professional photo`, placed with the other style
+  tokens and ahead of the framing instruction:
+  `painted anime style, professional photo, front on shot`
+  A photographic quality token paired with a painted style token lifts
+  detail, lighting and coherence without the render losing the style.
 ## 23/08/2026
 
 - Setup fields gained `nameSets` (male and female first-name pools) and
