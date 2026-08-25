@@ -851,6 +851,176 @@
       "label": "Devoted"
     }
   ],
+  "arc": {
+    "milestones": [
+      {
+        "id": "pool_bar_verdict",
+        "label": "The pool bar verdict",
+        "outcomes": [
+          "won",
+          "demoted"
+        ],
+        "description": "The first timed challenge — the Pool Bar — is judged and the player's team is on one side of the line or the other. Resolve 'won' if the player's team takes it and 'demoted' if they lose and the player is now unpaid labour for the winners, still the only person on the island who can read a spirit level. Fire this on Dorian actually delivering the verdict with Renata dragged up beside him giving flat technical answers she never agreed to give, never on the challenge being announced, half-built, or merely discussed at the bar. Before it fires the story is the island sizing the player up: Cody's day-one alliance offer, Ingrid's clean terms, Josefa noticing who says good morning, Dorian finding the player's trade in the crowd and holding the look. A demoted player is not a failed player — a demoted tradesperson is the most in-demand person on the island and everybody knows it, which is exactly why Dorian built the format this way.",
+        "journal": "The first challenge is the Pool Bar, it is timed, and you are the only person on the island who can actually build it. Find out what that is worth before Dorian tells you."
+      },
+      {
+        "id": "hands_spoken_for",
+        "label": "A pair of hands spoken for",
+        "outcomes": [
+          "ingrid",
+          "cody",
+          "unaligned"
+        ],
+        "description": "The player settles whose alliance their hands belong to, and it holds through at least one reshuffle. Resolve 'ingrid' if they take Ingrid Holm's hands-for-head deal on her exact terms and keep it. Resolve 'cody' if they cover for Cody Callahan — fixing his work overnight, saying nothing about the straight line he cannot cut — in exchange for Dorian's favour and the frontrunner's shadow. Resolve 'unaligned' only where the player has been asked, plainly, by both and has plainly declined both and is running alone or with Deshawn and Trev, which is a real strategy and not an absence of one. Never fire off the first day's offers — Cody offers on day one and Ingrid before the boats are unloaded, and neither of those is a settled thing. Fire it when Dorian reshuffles the teams and the player's choice survives the reshuffle, or when the player is seen on camera acting on it in a way that cannot be walked back. Vela Quinn will try to buy the same hands and is not one of the outcomes; the twins are a bloc, not an alliance the player can join.",
+        "journal": "Ingrid wants your hands and will honour the deal exactly as long as she needs to. Cody wants you to stop looking at his work. Decide whose you are before Dorian decides for you."
+      },
+      {
+        "id": "quinn_split",
+        "label": "The Quinn arithmetic",
+        "requires": "pool_bar_verdict",
+        "outcomes": [
+          "broken",
+          "held"
+        ],
+        "description": "Nova Quinn learns that her sister has privately decided only one Quinn is walking away with this. Resolve 'broken' if Nova, knowing it, acts against the bloc — votes, builds, or speaks apart from Vela on camera, or comes to the player alone with a plan that is hers. Resolve 'held' if Nova knows and closes ranks anyway, which she may well do, and the player is then the person who told her. Fire this only when Nova actually holds the fact, from the player, from Bastien repeating a 2am confession, from Dorian leaking it because breaking the twins is his personal project for the season, or from Vela's own mouth — never on the player merely suspecting it, never on a general sense that the twins are not as tight as they look, and never off a first kind conversation with Nova on the beach. The tell is the hair: Vela in a high ponytail, Nova loose, and they swap it when it suits them, so be sure which twin is in the scene before this fires.",
+        "journal": "Vela is keeping score and has not told her sister. Nova has started to notice she is the one holding the risk. Whoever gets to her first, and is kind, breaks the bloc."
+      },
+      {
+        "id": "staff_question",
+        "label": "The staff on the record",
+        "requires": "pool_bar_verdict",
+        "outcomes": [
+          "backed",
+          "sold"
+        ],
+        "description": "The staff never left and were never asked, and the player does something about it that cannot be undone. Resolve 'backed' if the player puts the staff's position somewhere it sticks — refuses to demolish something without Renata's say-so on camera, gets Josefa and Teo credited or paid or simply out of a shot they did not consent to, or tells Priya to her face what the show is doing to five people who live here. It costs the player screen time and Dorian's warmth, and that cost is the point. Resolve 'sold' if the player trades the staff for the show: hands Priya Camille as the season's breakout, uses Josefa's gossip about Renata for a challenge hint, or lets Dorian film the Staff Quarters on their word. Fire this only on the act, not on the player having feelings about the divide and not on Josefa complaining at the Pool Bar, which she does nightly. Priya will have described the outcome to the player beforehand, quietly and accurately, as a favour she is doing them.",
+        "journal": "Renata, Josefa, Camille, Teo and Bastien live here. Nobody asked them. Priya will trade you a softer edit for any one of them. Decide what the staff are worth to you and do it where it counts."
+      },
+      {
+        "id": "west_end_key",
+        "label": "The west end key",
+        "requires": "pool_bar_verdict",
+        "description": "Renata Salas lets the player into the Sunken Villa. Fire this on the player actually standing in the flooded west end — floor dropped into standing water, green light through the roof — with Renata's knowledge and her key, never on being told about it, never on climbing the fence, and never on Josefa mentioning which doors do not lock, because the Villa's does. Renata gives up that key to a player who has treated the Halcyon as a building with a history rather than a set, defended her staff without being asked, and been patient with a locked door; she does not give it up for a challenge, for Dorian, or for anyone who has touched anything load-bearing. She goes there after dark herself. If the player finds her there, it is because she allowed it. No camera is in the room — filming the west end is barred by the show's contract with the owners, and Milo will confirm that if asked plainly.",
+        "journal": "The west end is fenced, flooded and off the show. Renata holds the only key and will not discuss it. Earn it."
+      },
+      {
+        "id": "what_happened_in_2014",
+        "label": "The west end in 2014",
+        "requires": "west_end_key",
+        "hidden": true,
+        "description": "Teo Nunes tells the player what happened in the west end in 2014 — plainly, once, and never for a second take. Fire this on Teo actually saying it, in the Tool Shed or the Staff Quarters or standing in the water, to a player who has been inside with Renata's consent and has not asked him about it on camera. Never off Josefa, who knows about half and will say so, and never off Priya, who knows more than Dorian and has her own reasons for the player not hearing it from her. The event itself is not fixed in canon: settle it in play, keep it human-sized and specific to this building, and make it the reason Renata has kept the Halcyon technically alive for eleven years on no budget. Once told, Renata knows he has told it.",
+        "journal": "Teo was there in 2014. He has never said what he saw."
+      },
+      {
+        "id": "villa_on_camera",
+        "label": "Dorian's finale",
+        "requires": "what_happened_in_2014",
+        "outcomes": [
+          "aired",
+          "kept"
+        ],
+        "description": "Dorian wants the Sunken Villa on camera for the finale and the player is the only person who can get him inside. Resolve 'aired' if the player gives it to the show — hands over the key, walks Milo's lens through the fence, tells Dorian what Teo said where the light is red, or lets Priya trade them the finale for it. It is the season's best footage, it breaks the owners' contract, and it is the single thing Renata will not forgive. Resolve 'kept' if the player is asked directly, with the finale in the balance, and refuses, and the finale is the Lobby instead. Fire this only once the player knows what happened there and only on Dorian or Priya making the actual ask with a real price attached; never on Dorian musing about the west end over cheap champagne, which he does from episode one.",
+        "journal": "Dorian has decided the Sunken Villa is his finale. You know what is in there. He will ask you, and there will be a price either way."
+      },
+      {
+        "id": "the_long_shift",
+        "label": "The long shift",
+        "hidden": true,
+        "requires": "pool_bar_verdict",
+        "description": "Passive-player fallback. Fire this only when the middle of the season has run its full length and the player has done the work and nothing else — built what they were told, taken the reshuffles, declined or ignored every alliance, the twins, the staff, the west end — and the island has stopped waiting for them: Ingrid has found other hands, Vela has done her arithmetic without an audience, Priya has filed the player under background. This is the story noting that it has moved on without them, not a punishment; a tradesperson who just does the work is exactly what the show expected and has no use for. Never fire it while any live thread still has the player's attention, and never as a substitute for a slow scene. It exists so the finale arrives for everyone.",
+        "journal": "The season has run without you."
+      },
+      {
+        "id": "finale_called",
+        "label": "The finale call sheet",
+        "requires": "pool_bar_verdict",
+        "description": "Priya circulates the finale: the last timed challenge, the date, the teams as Dorian has finally fixed them, and — if the Villa was given up — the Sunken Villa on the sheet with a line about the owners that nobody will read aloud. Fire this only once the season has covered real ground through the bungalows, the spa and the lobby and the middle has run its length; this is a date arriving, not a reward, and it arrives whatever is unfinished. The demoted are on the sheet as labour. Everyone who has been demoted is on the island still, watching, and has been since the Pool Bar.",
+        "journal": "The finale is called. One last timed build, teams fixed, everyone still on the island. Whatever you have not settled is settled now."
+      },
+      {
+        "id": "the_finale",
+        "label": "The finale verdict",
+        "requires": "finale_called",
+        "outcomes": [
+          "won",
+          "demoted"
+        ],
+        "description": "The last challenge is built and judged, and the player either wins Paradise Rebuilt or is demoted in front of everyone who has been demoted before them. Resolve 'won' or 'demoted' on Dorian's verdict, delivered in his best light, with Renata beside him giving the technical judgement she never agreed to give — and if the player earned her, giving it honestly, which is the only part of this the player was ever able to control. Fire on the verdict itself, never on the build finishing, and never before finale_called. The build is the Sunken Villa if the player gave it to Dorian and the Lobby if they did not. Whoever the player's hands were spoken for is standing next to them or across from them, and Ingrid honours the deal exactly as far as she needs to.",
+        "journal": "Build it. Dorian judges. Renata judges honestly."
+      }
+    ],
+    "phases": [
+      {
+        "id": "act1",
+        "label": "Wading in",
+        "until": "pool_bar_verdict",
+        "guidance": "The player has just waded ashore because it films better, and six contestants and a host have already worked out that the only qualified tradesperson on the island is either the most useful person here or the one most worth destroying. Run the Cameras hard: every scene has a red-light version and an off-camera version ninety seconds later, and Bastien carries both to the Pool Bar. This is the stretch for Cody's day-one alliance offer and the thing he cannot cut straight, Ingrid's terms laid out like a contract, the twins swapping hairstyles to see who notices, Josefa clocking who says good morning to staff, Teo handing the player a real tool without a word, and Renata saying no as a complete sentence. Keep the Pool Bar challenge audibly counting down and do not let this act run on — Dorian will not allow a flat episode and neither should the narration. A player who has not been offered something, threatened with something and pointed at the west end fence by the end of the first challenge has been left out of their own show."
+      },
+      {
+        "id": "act2",
+        "label": "The season",
+        "until": [
+          "finale_called",
+          "the_long_shift"
+        ],
+        "guidance": "The Pool Bar is judged, somebody is unpaid labour, and the player now has a season to get through. This is the long middle — bungalows, spa, lobby — where the live threads move whether or not the player touches them: Ingrid keeping her word to the day she does not need to, Cody's work fixed overnight by hands that are not his, Vela's arithmetic and Nova half a beat slower to agree, Priya trading edits for on-camera behaviour, Roxy blowing up scenes she does not care about and apologising when the light dies, Trev explaining the machine to anyone who asks, Camille being saved by Priya for something. Dorian reshuffles teams the moment anything gets comfortable; use him when a scene goes flat. The staff question and the west end are live here and only for a player who goes to the Staff Quarters, the Tool Shed and the Manager's Office, where the cameras are not — let the real conversations find those rooms and the Confessional Booth. Keep the demoted on screen, watching. Keep the finale audibly coming."
+      },
+      {
+        "id": "act3",
+        "label": "The finale",
+        "guidance": "The call sheet exists and everything bends toward the last build. Whatever the player has and has not settled is fixed now and should be felt: whose hands they are, whether the twins are two people, what Priya has on them, whether Renata will look at them, and whether the Sunken Villa is on the sheet. Bring the threads to a head rather than letting them drift — Ingrid deciding whether she still needs the deal, Nova alone on the beach after dark, Cody terrified of a technical question in front of the lens, Roxy dropping the act for one honest sentence, the demoted contestants doing the labour and keeping score. Play the last build as television: timed, lit, Dorian golden, Milo silent, Renata judging honestly if she was earned and flatly if she was not. Nobody leaves the island until the tender comes, and it comes after the verdict."
+      }
+    ],
+    "endings": [
+      {
+        "id": "west_end_prime_time",
+        "title": "The West End, Prime Time",
+        "summary": "You gave Dorian the Sunken Villa. It is the best footage of the season and Renata will not look at you.",
+        "guidance": "reached automatically when the player gives the Sunken Villa to the show. Write the moment the red light comes on inside the flooded room — Dorian perfectly lit against the hole in the roof, Milo not intervening, Priya out of frame — and what it costs the player with Renata, with Teo, and with Josefa, who was kind to them. The owners' contract is broken and that is production's problem. Do not write the broadcast; write the key changing hands and the staff finding out.",
+        "when": "villa_on_camera:aired",
+        "continuable": true
+      },
+      {
+        "id": "paradise_rebuilt",
+        "title": "Paradise Rebuilt",
+        "summary": "Dorian said your name. The resort is standing and you built most of it.",
+        "guidance": "reached automatically when the player wins the finale. Write the verdict as television and the hour afterwards as the island: who is standing beside them, who is across from them as labour, whether Ingrid's deal made it to the end, whether the twins are two people, and whether Renata, in her flat factual judging voice, said something true about the work. Winning is the show finding the player useful to the last frame. Give the player one off-camera moment with someone who meant it.",
+        "when": "the_finale:won",
+        "continuable": true
+      },
+      {
+        "id": "unpaid_labour",
+        "title": "Unpaid Labour",
+        "summary": "You lost the finale. Everyone you fixed things for is on the tender ahead of you.",
+        "guidance": "reached automatically when the player is demoted at the finale. Dorian is generous about it on camera and flat about it off. Write the last afternoon on Halcyon Cay — the demoted doing the winner's clean-up, Deshawn still asking how everyone is, Trev unsurprised, Renata's resort standing there anyway with the player's work in every wall of it — and who says something real to them before the boat. The show got what it needed from their hands; that was always the arrangement.",
+        "when": "the_finale:demoted",
+        "continuable": true
+      },
+      {
+        "id": "background_artist",
+        "title": "Background Artist",
+        "summary": "You did the work. The edit did not need you for anything else.",
+        "guidance": "final-phase fallback for the player who built what they were told and engaged with nothing — no alliance settled, no twin cracked, no staff backed or sold, no key. Write the finale happening around them: Dorian's speeches going to Cody, Ingrid winning with somebody else's hands, Priya cutting the player to a montage of a saw. Play it small and accurate rather than cruel. The resort is standing because of them and the show has no use for that.",
+        "continuable": true
+      },
+      {
+        "id": "off_the_island",
+        "title": "Off the Island",
+        "summary": "Nobody leaves before the finale. You did.",
+        "guidance": "the player is removed from Halcyon Cay by production — a real, specific breach: a serious injury on The Site, a contestant genuinely hurt, a camera or a crew member assaulted, the owners' contract broken in a way Priya cannot edit around. Priya will have described the outcome to them beforehand, accurately. The tender comes for one person, in daylight, and the cameras film the wade out because it films better. Not for unpopularity, not for a bad edit, and never because Dorian is bored.",
+        "continuable": false,
+        "anyTime": true
+      },
+      {
+        "id": "stopped_performing",
+        "title": "Stopped Performing",
+        "summary": "You walked off set. There is nowhere to walk to.",
+        "guidance": "the player quits the show — refuses to build, refuses the Confessional, refuses to speak with a red light on — and the format has no answer for it because nobody leaves the island. Only where the story has genuinely brought them there: the west end, the fifth reshuffle, a week where nobody said one true sentence to them on camera. Priya keeps filming a person who has stopped playing, because that is also television. Write the player walking to the Staff Quarters or the Tool Shed and the staff making room, and the show continuing at the Pool Deck without them.",
+        "continuable": false,
+        "anyTime": true
+      }
+    ]
+  },
   "poseVocabulary": [
     "sitting",
     "standing",
