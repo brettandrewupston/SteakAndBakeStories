@@ -92,6 +92,14 @@
     "Night"
   ],
   "startingPhase": "Small Hours",
+  "events": [
+    {"day": 1, "phase": "Morning", "instruction": "Peter Blythe comes in off the night shift and goes up to bed. Mam has the kitchen radio on for the ten o'clock news, and the pips keep time through the whole house."},
+    {"day": 2, "phase": "Afternoon", "instruction": "Kirsty Vane turns up at the front door with a bag of chips and no intention of leaving before dark."},
+    {"day": 3, "phase": "Dusk", "instruction": "Quiz night at the Half Moon Inn — half the village is in, Sheila Rudd behind the bar, Nate Ogle and Barry Kelso at their table. It is the one night of the week the pub is full.", "known": "Quiz night, Half Moon Inn"},
+    {"day": 4, "phase": "Morning", "instruction": "Sunday. The bell at St Aidan's rings for the ten o'clock service and Nell Moore is at the church door. The memorial with its rubbed-out line is in the porch that everyone walks past.", "known": "Sunday service, St Aidan's"},
+    {"day": 5, "phase": "Small Hours", "instruction": "Peter Blythe's car starts in the cul-de-sac at a quarter to three and pulls away. The engine is audible from every bedroom in the house, and he is not due at work tonight."},
+    {"day": 6, "phase": "Night", "instruction": "The power goes off across the whole estate for about an hour. No clocks, no radio, no television — every house on the cul-de-sac is dark and silent at once."}
+  ],
   "locations": [
     "Your Bedroom",
     "The Landing",
