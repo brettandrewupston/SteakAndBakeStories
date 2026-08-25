@@ -468,6 +468,166 @@
       "label": "Believes You"
     }
   ],
+  "arc": {
+    "milestones": [
+      {
+        "id": "the_recording",
+        "label": "The forty seconds",
+        "description": "The player captures the Hush. Peter has mended the clock and it runs, and it runs wrong; the player leaves their phone recording overnight and on playback there is rain on the window, then forty seconds of nothing at all, then a voice saying their name. The voice is their own. Fire this on the player actually playing the file back and hearing it — never on deciding to record, never on the clock alone, and never as the narrator handing them a spooky noise. It is the first thing in four months that is not inside their head, and the first thing they could play to somebody else. The Marra is not in this scene; a voice on a phone is all it needs to be.",
+        "journal": "The clock is mended and it keeps the wrong time. Leave the phone recording tonight and listen to what the room does while you are asleep."
+      },
+      {
+        "id": "telling_the_sibling",
+        "label": "The other Blythe child",
+        "requires": "the_recording",
+        "outcomes": [
+          "told",
+          "spared"
+        ],
+        "description": "The player decides whether their brother or sister is told the truth. Resolve 'told' when the player actually plays them the recording or says the whole thing plainly and the sibling takes it — they do not have to believe in the thing, they only have to believe the player, and that is enough: they sleep on the floor, and the house gets four quiet nights. Resolve 'spared' when the player lies to them for their own good, softens it to a bad night, or lets the sibling talk them out of it — this is the manuscript's original wound, repeated, and it should feel like kindness while it happens. Fire only when it is genuinely settled, never off a first conversation on the landing, and never resolve 'told' for a joke or a half-hint that the sibling laughs off. Evelyn, wherever she is in the house, will have heard.",
+        "journal": "You have the recording. Your brother or sister is asleep through the wall. Decide whether they get to know."
+      },
+      {
+        "id": "the_shift_change",
+        "label": "The change of shift",
+        "requires": "telling_the_sibling",
+        "description": "It moves. Barry Kelso stops answering his door. Then the sound that carries through the wall from your sibling's room stops — the snoring, or the podcast — and your sibling begins hearing the player's voice calling them downstairs at night. The player is now the one who is awake and who knows, and the story inverts from victim to witness. Fire this on the player finding the wall silent and the sibling changed: very quiet, not joking, standing at the top of the stairs with a look that is not theirs. Never fire it as a single bad dream, and never before the four quiet nights (or, in the 'spared' branch, the equivalent lull) have actually been felt. The Marra does not need to be seen for this; a silence through a wall is the whole event.",
+        "journal": "The house has gone quiet for once. Find out why Barry Kelso is not answering his door, and listen to what is no longer coming through your sibling's wall."
+      },
+      {
+        "id": "evelyn",
+        "label": "Mam and the landing photographs",
+        "requires": "the_shift_change",
+        "outcomes": [
+          "admitted",
+          "steered"
+        ],
+        "description": "Evelyn is confronted about what she knows. She was Evelyn Fell of number eleven, she was fifteen in 1989 when her brother Duncan stopped sleeping and 'left the village', and there is a gap in the landing photographs nobody has ever remarked on. Resolve 'admitted' only when she says it — Duncan's name, what happened to him, and that she got free by giving it somebody — and gives the player her advice, which is the wrong advice and which worked. Resolve 'steered' when the player asks and she does what she has done for thirty-seven years: takes both their hands, strokes the backs of them, and moves the subject somewhere safe, and the player lets her. Fire this only when the player has actually put the gap in the photographs or Duncan's name to her directly — never on a hint, never on a look across the kitchen, and never before the shift has changed, because it is her second child not sleeping that breaks her, not her first.",
+        "journal": "Mam has never once been surprised by any of this. There is a gap in the photographs on the landing. Ask her who was in it."
+      },
+      {
+        "id": "dads_mileage",
+        "label": "The fuel gauge",
+        "requires": "the_shift_change",
+        "hidden": true,
+        "description": "The player finds out where Peter goes. He works nights, he does not work every night, and the car has been doing thirty-odd miles on nights he says he was at work — the fuel gauge he has stopped looking at, a wage slip with the wrong shifts on it, a neighbour who saw the car go up the lane at three, or the pit-head mud in the wheel arches. Fire this on the player holding a concrete piece of it, not on a feeling that Dad looks tired. Do not have Peter confess; he does not remember, and everything he says about it is exactly what he would say. Nothing about the Marra needs to appear here.",
+        "journal": "Dad's car has been doing miles on nights he says he was at work."
+      },
+      {
+        "id": "the_pit_head_at_three",
+        "label": "Dad at the pit head",
+        "requires": "dads_mileage",
+        "description": "The player follows Peter, or waits up for him, and is at the old pit head at three in the morning when he arrives and stands there. Fire this on the player being physically present at the pit head with him — not on watching the car leave, not on finding it empty in the morning. This is the beat that reframes the first night: the voice through the bathroom door was his voice, and he was standing there, and it was not him. Bring him home if the player manages it; he will not know why he is cold. The Marra may be present here, once, at the edge of the winding tower and no closer — this is one of the very few scenes that has earned it, and it still does not speak unless it has a voice to use.",
+        "journal": "Dad drives to the old pit head at three in the morning and does not remember doing it. Be there when he arrives."
+      },
+      {
+        "id": "the_eleventh_name",
+        "label": "The eleventh name",
+        "requires": "the_shift_change",
+        "description": "The player recovers the name of the man sealed into the east district in the 1947 fall — the one of eleven who was not brought up, whose line on the St Aidan's memorial has been rubbed illegible by eighty years of thumbs. It lives in three places: the first page of Sheila Rudd's father's ledger, the 1947 district record Denny can find on the plans, and Ivy Ogle's memory, which she gives up one rule at a time in exchange for company. Fire this only when the player has the actual name, from at least two of those sources, and has recognised what it is for — never on being told the story of the fall, never on Nate's blog, and never on the player simply asking someone. This is the hardest thing in the story to get and it should cost afternoons in the Half Moon and evenings in Ivy's front room with the radio on.",
+        "journal": "Eleven men died in the east district in 1947 and ten were brought up. The eleventh name is on the memorial, worn smooth. Sheila's ledger, Denny's plans and Ivy Ogle each have it."
+      },
+      {
+        "id": "stopped_telling",
+        "label": "The quiet hour",
+        "requires": "the_shift_change",
+        "hidden": true,
+        "description": "The player has stopped telling anyone. Fire this only when it is plainly true over a real stretch of the story: the player has had chances to speak — to Mam, to the sibling, to Kirsty on the settee, to Nell or Yasmin — and has taken none of them, has stopped playing the recording to people, has been managing the house rather than saying anything to it. This is exactly what the thing wants and it is the point at which it stops needing to wait. Never fire it as a punishment for one quiet scene, never in the first stretch after the shift change, and never if the player has told even one person in the last several beats. When it fires, the family's voices should get warmer, not colder.",
+        "journal": "Nobody has been told anything for a while now. The house is very calm."
+      },
+      {
+        "id": "the_long_night",
+        "label": "The long night",
+        "requires": "the_shift_change",
+        "description": "The Hush takes the whole house at once and the house becomes the seam: the landing runs longer than the house is wide, the stairs go down further than they should, and four people are separated in a building with four rooms. Fire this only once the story has covered real ground since the shift changed — Evelyn confronted or dodged, the village asked or not, Dad followed or not — and it arrives whatever is unfinished; it is a night falling, not a reward. Do not fire it as a bad scare in one room: it is every room, and every voice on the landing is somebody the player loves, and some of them are. The Marra is allowed here more than anywhere and should still be seen twice at most across the whole night.",
+        "journal": "It has stopped taking the house one room at a time."
+      },
+      {
+        "id": "the_seam",
+        "label": "What is given",
+        "requires": "the_long_night",
+        "outcomes": [
+          "named",
+          "bargained",
+          "fed",
+          "ran"
+        ],
+        "description": "The player decides how the long night ends. Resolve 'named' only if the eleventh name has actually been recovered and the player says it to the thing, aloud, on the landing or at the bottom of the stairs — a marra with a name has somewhere to be, and nobody dies; if the name was never found this outcome is not available and the player should feel the absence of it. Resolve 'bargained' when the player gives it one of their own to keep the rest — Mam's ending, repeated, and the story knows it; the player chooses who and it takes what it is given. Resolve 'fed' when the player gives it somebody outside the family they have decided deserves it, Barry Kelso being the offer the story has made more than once. Resolve 'ran' when the player gets everyone out of the house and across the front door into the village or the car and does not go back. Fire this only on the act itself, never on the player weighing it up, and never let it happen before the long night has been walked. Do not resolve this if the player goes down themselves — that is not a bargain, it is the Yield ending and it is fired separately.",
+        "journal": "Four people, four rooms, and a landing that goes on longer than the house. Decide what it gets."
+      }
+    ],
+    "phases": [
+      {
+        "id": "act1",
+        "label": "Four months awake",
+        "until": "the_shift_change",
+        "guidance": "The player has not slept properly in four months and the house has learned their name. This is the manuscript's ground: the bath, the voice through the bathroom door, the mended clock that runs wrong, a family who are genuinely lovely in daylight and who have quietly decided the player is getting better. Run the Hush subjectively and rarely — once every few nights, one person at a time, everyone else hearing the rain — and keep the Marra almost entirely out of frame: a corner that feels emptier, fingers round a doorframe once, nothing that lunges. The pressure is being believed: the recording is the first thing the player could show somebody, and the whole phase bends toward whether they show it to their brother or sister. Evelyn steers; Peter is ordinary; Kirsty turns up with chips and does not believe a word. Do not let this run on — a player who has told nobody after a fortnight of nights is a player the thing is already winning against, and the shift change should come for the sibling whether the player has spoken or not."
+      },
+      {
+        "id": "act2",
+        "label": "The witness",
+        "until": [
+          "the_long_night",
+          "stopped_telling"
+        ],
+        "guidance": "The story has inverted. The other Blythe child is the one not sleeping and the player is the one awake and who knows, which is armour for as long as the player keeps it on. This is the long middle and it has two halves joined by the front door: the house, where Mam has a photograph missing and Dad's car has mud on it; and the village, where Sheila has a ledger, Denny has the plans, Ivy has the rules and the radio, and Nate will dig. Crossing between them at any hour is a decision. Let the threads move whether or not the player touches them — Barry's door stays shut, Peter's mileage climbs, the sibling gets quieter — and keep the Marra to a handful of appearances across the whole phase; the dread is in the sibling standing at the top of the stairs, not in the thing that put them there. Watch for the player going quiet: a player who has stopped telling anyone is the fallback, and the house should get warmer and calmer as it closes in."
+      },
+      {
+        "id": "act3",
+        "label": "The seam",
+        "guidance": "The house is the seam now, or is about to be. Whatever the player has and has not done is fixed and should be felt: whether Mam admitted Duncan, whether the eleventh name was found, whether Dad was brought back from the pit head, whether the sibling was told the truth or spared it. Bring the long night to its choice rather than letting it drift — the landing that runs too far, the stairs that go down, four voices and not all of them belonging to the people they sound like — and make every option cost what canon says it costs. The Marra is at its most present here and should still be mostly heard rather than seen; once it has been named and worked out it becomes conversational, and that is worse than any lunge. If the player is passive, let the house settle, because that is what it does."
+      }
+    ],
+    "endings": [
+      {
+        "id": "name_it",
+        "title": "Marra",
+        "summary": "You said his name. Nobody went down.",
+        "guidance": "reached automatically when the player says the eleventh name aloud to the thing. Write it small and exact: the name said on the landing, the stairs the right length again, the clock ticking, and something eight feet tall that has waited since 1947 for somebody to walk out with it, finally going. Nobody dies. Let Ivy Ogle turn her radio off in the morning for the first time since 1974, and let that be the whole celebration. Do not have it thank anyone.",
+        "when": "the_seam:named",
+        "continuable": true
+      },
+      {
+        "id": "bargain",
+        "title": "One and the Rest",
+        "summary": "It took one and left the rest, and you chose which.",
+        "guidance": "reached automatically when the player gives it one of the family to keep the others. This is Evelyn's ending repeated, and the story knows it; whether or not she admitted Duncan, she recognises it in the morning. Write the choosing, the silence afterwards, and the first day of three people not mentioning a fourth — and one photograph on the landing that has already begun to be the gap. The player survives and the house is quiet, and that is not the same as safe.",
+        "when": "the_seam:bargained",
+        "continuable": true
+      },
+      {
+        "id": "feed_it",
+        "title": "Four Doors Down",
+        "summary": "You gave it somebody who was not yours. The house is quiet. You know what you did.",
+        "guidance": "reached automatically when the player gives it someone outside the family, most likely Barry Kelso. Play Barry straight: the fury drops off him the moment he understands, and what is under it is a frightened man with a dog who has not slept in weeks. The Blythes get their sleep back and the player gets to keep all of them. Write the morning after — the car argument nobody will ever finish, the telly still on in his front room — and do not let anybody say it was justified.",
+        "when": "the_seam:fed",
+        "continuable": true
+      },
+      {
+        "id": "run",
+        "title": "The Front Door",
+        "summary": "You got everyone out. It was never the house.",
+        "guidance": "reached automatically when the player gets the whole family out of the house and does not go back. Write the leaving — Mam on her crutches on the cul-de-sac, Dad not asking why, the sibling in a coat over pyjamas — and then the first night somewhere else, wherever it is, unnamed, when the rain on the window stops making a sound and a voice the player loves says their name. It follows, because it was never the house: it was a name in a voice that loves you. The family are together and awake and that still counts for something.",
+        "when": "the_seam:ran",
+        "continuable": true
+      },
+      {
+        "id": "four_quiet_nights",
+        "title": "Getting Better",
+        "summary": "Everyone agrees you are sleeping much better now.",
+        "guidance": "the final-phase fallback for the player who did not choose: nothing was named, nobody was given, nobody left. The house settles, because that is what it does. Write a warm, ordinary morning — the popcorn, the telly, the sibling losing at pool, Mam stroking the backs of the player's hands — in which the family have decided the player is better, the clock keeps roughly the right time, and Ivy Ogle's light is still on across the cul-de-sac. The Marra does not appear and does not need to. It has forty years and it knows it.",
+        "continuable": true
+      },
+      {
+        "id": "yield",
+        "title": "The Gap in the Photographs",
+        "summary": "You went downstairs.",
+        "guidance": "the player goes down. Only where the story has genuinely brought them there — a voice they cannot refuse, a night with nobody believing them, or a decision made in full knowledge. It never touches: they walk. Write the stairs going down further than they should, the voice that is exactly right, and then the morning: three people at breakfast, a village that gets forty quiet years, and nobody grieving, because nobody remembers. The player becomes the gap in the landing photographs, the way Duncan did. Restart only.",
+        "continuable": false,
+        "anyTime": true
+      }
+    ]
+  },
   "poseVocabulary": [
     "standing",
     "sitting",
