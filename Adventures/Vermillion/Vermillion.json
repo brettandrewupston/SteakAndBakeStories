@@ -87,6 +87,15 @@
     "Afternoon"
   ],
   "startingPhase": "The Countdown",
+  "events": [
+    {"day": 1, "phase": "Small Hours", "instruction": "The band finishes its last set at two and the floor is finally told the club is sealed for a private matter. Eight hundred guests are kept in with free champagne, and the mood in the room turns."},
+    {"day": 1, "phase": "Dawn", "instruction": "The lockdown lifts. The Cardinal's body goes out through the Alley to Carbone and Sons before the street is awake, and the nine begin to leave the building.", "known": "The lockdown lifts"},
+    {"day": 1, "phase": "Afternoon", "instruction": "New Year's Day, and the word is on the street. The Bellandi Social Club sends flowers to Carrow House — too many, and too early."},
+    {"day": 2, "phase": "Evening", "instruction": "The Vermillion reopens for business on Family orders, as if nothing had happened. The chorus line goes on, the casino floor fills, and everybody who works there is watching everybody else.", "known": "The Vermillion reopens"},
+    {"day": 2, "phase": "Small Hours", "instruction": "Somebody goes through the Sparrow's coat and car looking for the book while the Sparrow is elsewhere. It is done carefully, and not carefully enough."},
+    {"day": 2, "phase": "Afternoon", "instruction": "Every fence and bookmaker in Calder Bay has heard the book is loose, and a price is being quoted for it on the street."},
+    {"day": 3, "phase": "Afternoon", "instruction": "The funeral. The box is open at Carbone and Sons and both Families are in the same room. Sal Moretti wants a name before it closes, and everybody is waiting to hear what the Sparrow has.", "known": "The funeral, Carbone and Sons"}
+  ],
   "locations": [
     "The Supper Club Floor",
     "The Cardinal's Office",
