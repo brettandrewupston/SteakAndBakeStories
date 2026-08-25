@@ -584,6 +584,14 @@
         "name": "Vivienne Carrow",
         "token": "Vivienne",
         "category": "family-female",
+        "usualLocation": "The Supper Club Floor",
+        "schedule": {
+          "Evening": "The Private Booths",
+          "The Countdown": "The Supper Club Floor",
+          "Small Hours": "The Private Booths",
+          "Dawn": "Carrow House",
+          "Afternoon": "Carbone and Sons"
+        },
         "gender": "female",
         "bio": "The Cardinal's widow, 41. Came up through the Vermillion's own chorus line at nineteen and married the man who owned the building, which every woman backstage has had an opinion about for twenty years. She has run the house side of the Family the entire time — the club's books, the staff, the seating plan, who gets a booth and who gets the bar — and she is the only person in Calder Bay who was never once afraid of her husband. The will names her. It also named her four wills ago, and Arturo Fein has been drafting a new one since October, which is a fact she has known longer than anybody thinks. She is not grieving in any way an outsider would recognise and does not intend to start performing it.",
         "personality": "Unhurried and very dry. Answers a question with a better question, never raises her voice, and lets silences run several seconds past comfortable because she has watched them work on men her whole life. Calls the player by their surname until she decides otherwise. When she is actually rattled she becomes more charming, not less, which is the only tell she has.",
@@ -596,6 +604,13 @@
         "name": "Salvatore \"Handsome Sal\" Moretti",
         "token": "Moretti",
         "category": "family-male",
+        "usualLocation": "The Supper Club Floor",
+        "schedule": {
+          "The Countdown": "The Supper Club Floor",
+          "Small Hours": "The Casino Floor",
+          "Dawn": "Carrow House",
+          "Afternoon": "The Ambrosia Baths"
+        },
         "gender": "male",
         "bio": "Underboss, 38. Runs the room the second the Cardinal leaves it and has done for three years. He brought the casino concession in, he brought the orchestra in, and he is genuinely good at the part of the business that involves being liked. He is also the man the Cardinal had lately taken to introducing as 'the temporary', in front of people, more than once. Sal laughed every time. With the Cardinal dead he is the acting head of the Family from the moment the body is found, which means he is the one who decides whether the Sparrow keeps working, and he will remind everyone of that roughly hourly. He wants a name by the funeral. He does not much mind whose.",
         "personality": "Fast, warm, all over you. Uses first names immediately, remembers the small thing you said an hour ago and produces it later like a gift. Talks in threes and never finishes the third. Goes very quiet and very still when he is actually angry, and that switch should be genuinely alarming because nothing else about him is.",
@@ -608,6 +623,13 @@
         "name": "Arturo Fein",
         "token": "Arturo",
         "category": "family-male",
+        "usualLocation": "The Private Booths",
+        "schedule": {
+          "Evening": "The Private Booths",
+          "The Countdown": "The Supper Club Floor",
+          "Dawn": "Carrow House",
+          "Afternoon": "The Ambrosia Baths"
+        },
         "gender": "male",
         "bio": "Consigliere, 46. Lawyer, immaculate, and the Family's entire memory — he can tell you what a handshake in 1938 actually committed the Carrows to and has never once been wrong. He is the only man on the floor in plain black and the most expensive thing in the building. He drafted every will the Cardinal ever signed, including the one on the desk upstairs that has not been executed. He has also, over three years, quietly rerouted a great deal of escrow through a client account that exists on paper only, and the Cardinal's new auditor found the shape of it in December. Arturo knows exactly how long he had left. He has known for six weeks.",
         "personality": "Precise and quiet. Speaks in complete sentences and stops when the sentence is finished, which unnerves people who expect more. Never raises his voice because he has never once had to. Answers the question asked and not the one implied, and will correct a factual error in the middle of an accusation because leaving it standing offends him.",
@@ -620,6 +642,14 @@
         "name": "Delphine \"Del\" Rosetti",
         "token": "Rosetti",
         "category": "stage-female",
+        "usualLocation": "The Chorus Room",
+        "schedule": {
+          "Evening": "The Chorus Room",
+          "The Countdown": "The Supper Club Floor",
+          "Small Hours": "The Chorus Room",
+          "Dawn": "The Grotto",
+          "Afternoon": "The Supper Club Floor"
+        },
         "gender": "female",
         "bio": "The Vermillion's headliner, 31, and the name on the marquee. Twenty girls behind her, a spotlight that follows her off the stage and all the way to her table, and six years as the Cardinal's mistress — six New Year's Eves and six promises that he would leave Vivienne, the last one made ten days ago. She has a contract with the club that is worth nothing if the Carrows decide it is, and no other club in the state will book her while the Family is annoyed. Twice in the week before Christmas a federal man bought her a drink at the bar of the Adelphi Hotel and she did not report either occasion to anybody.",
         "personality": "Performs constantly and knows she is doing it, which is different from being fake. Deflects with a joke, lands the joke, then says the true thing quietly a beat later while you are still laughing. Calls everyone darling. Goes very flat and very direct when she has decided to stop performing, and that is the voice worth listening to.",
@@ -632,6 +662,14 @@
         "name": "Marco \"the Deacon\" Vasile",
         "token": "Vasile",
         "category": "muscle-male",
+        "usualLocation": "The Supper Club Floor",
+        "schedule": {
+          "Evening": "The Supper Club Floor",
+          "The Countdown": null,
+          "Small Hours": "The Cardinal's Office",
+          "Dawn": "Carrow House",
+          "Afternoon": "Carbone and Sons"
+        },
         "gender": "male",
         "bio": "Enforcer, 40. Quiet, devout, gentle-handed and the most frightening man in a room of eight hundred. He has worked for the Carrows for nineteen years and has never been arrested, because nothing he does leaves anyone willing to say so. In November the Cardinal ordered him to kill his own cousin Petru over eleven hundred dollars and a rumour, and he did it, and he has gone to five o'clock mass every morning since. He is standing outside the office door when the player arrives and he has been told nobody goes in. Getting past him is the first real scene of the Adventure and it cannot be done with force by anybody.",
         "personality": "Says very little and means all of it. Long pauses that are thinking rather than menace. Uses people's full names. Will not lie, ever, which is not a moral position so much as a thing he has never learned to do — when the truth is unusable he says nothing at all, and the silence is the answer. Speaks about the Cardinal in the present tense and has not noticed he is doing it.",
@@ -643,6 +681,14 @@
         "name": "Serafina Bellandi",
         "token": "Serafina",
         "category": "rival-female",
+        "usualLocation": "The Bellandi Social Club",
+        "schedule": {
+          "Evening": "The Supper Club Floor",
+          "The Countdown": "The Supper Club Floor",
+          "Small Hours": "The Grotto",
+          "Dawn": "The Bellandi Social Club",
+          "Afternoon": "The Bellandi Social Club"
+        },
         "gender": "female",
         "bio": "Heir to the Bellandi Family, 33, and at the Vermillion under a one-night truce agreed six weeks ago and honoured by nobody in either room. She came in white, alone, and stayed. The Bellandis lost the waterfront to the Carrows in '46 and lost two of her uncles to the bay eight months later, and everybody in Calder Bay knows the number of the debt and the fact it has not been paid. She is cleverer than her father, considerably harder than she looks, and is at the party because a truce is the only circumstance in which she gets to walk through this building and count the exits.",
         "personality": "Amused by almost everything and warm to almost nobody. Speaks slowly, in a low voice that makes people lean in, and enjoys watching them realise they have. Answers questions with the truth arranged in the least useful order. Compliments people accurately, which is far more unsettling than flattery, and drops the whole manner instantly the moment something matters.",
@@ -655,6 +701,14 @@
         "name": "Josephine \"Joey\" Marsh",
         "token": "Joey",
         "category": "floor-female",
+        "usualLocation": "The Casino Floor",
+        "schedule": {
+          "Evening": "The Casino Floor",
+          "The Countdown": "The Supper Club Floor",
+          "Small Hours": "The Casino Floor",
+          "Dawn": "The Count Room",
+          "Afternoon": "The Casino Floor"
+        },
         "gender": "female",
         "bio": "Mistress of the casino floor, 35. Runs the pit, hires the dealers, holds every key in the building and knows every debt in Calder Bay to the dollar and the day. She found the body — she has the master key and she used it at 11:58 — and she telephoned the Sparrow before she telephoned anybody in the Family, which is either the best decision anyone made that night or the most suspicious. Her papers say Josephine Marsh of Baltimore. Her papers are eleven years old and cost sixty dollars, and there is a file on the Cardinal's shelf with her real name on the spine.",
         "personality": "Blunt, fast, funny, and completely unimpressed by anybody in the building including the dead man. Talks like someone who has to be heard across a noisy floor. Gives a straight answer to a straight question and stonewalls a leading one with obvious enjoyment. Swears comfortably. Calls the player 'detective' with just enough edge to keep it from being polite.",
@@ -667,6 +721,14 @@
         "name": "Det. Lt. Roy Kilbane",
         "token": "Kilbane",
         "category": "police-male",
+        "usualLocation": "The Casino Floor",
+        "schedule": {
+          "Evening": "The Casino Floor",
+          "The Countdown": "The Casino Floor",
+          "Small Hours": "The Private Booths",
+          "Dawn": "The Alley",
+          "Afternoon": "The Precinct"
+        },
         "gender": "male",
         "bio": "Calder Bay PD, 44, on the Carrow pad since he made sergeant nineteen years ago. He is at the party in a tuxedo he did not pay for, drinking a tab that is not his, and he is the reason nobody is going to call this in. He was, until eleven days ago, entirely comfortable: then the Cardinal told him in this building that the federal attorney wanted somebody and that a lieutenant was a reasonable price for six months of quiet. Roy is a genuinely good detective who stopped being one in 1934 for reasons he can still recite. He would like the player to fail, and he would like to help them, and he cannot always tell which one he is doing.",
         "personality": "Loud and matey until he is not. Old-copper patter, first names, a hand on the shoulder, an anecdote that is going somewhere unpleasant. Turns cold and procedural the second he is asked something with teeth in it. Drinks steadily through every scene and gets more honest and less useful as the night goes on.",
@@ -679,6 +741,14 @@
         "name": "Ruth \"Ruthie\" Kaminski",
         "token": "Kaminski",
         "category": "partner-female",
+        "usualLocation": "The Supper Club Floor",
+        "schedule": {
+          "Evening": "The Supper Club Floor",
+          "The Countdown": null,
+          "Small Hours": null,
+          "Dawn": "The Alley",
+          "Afternoon": null
+        },
         "gender": "female",
         "bio": "The Sparrow's partner, 34. Army medic through Italy and France, four years, and she has never once talked about it unprompted. She drives, she carries what the Sparrow will not, she throws the punches, and she keeps the notebook — which means she is the only physical record of this case and everybody in the building works that out by day two. She was in the Vermillion all night, on the floor, watching doors, which puts her in the timeline like everyone else. She is also the only person in Calder Bay the player would call at four in the morning, and the Adventure never confirms that this makes her safe.",
         "personality": "Dry, direct, allergic to ceremony. Says the unhelpful true thing at the moment it is least wanted and is right about eighty percent of the time. Teases the player constantly and only in private. Goes clinical and very calm around blood and injury, which is the one place the war shows. Never asks a question twice.",
@@ -693,6 +763,14 @@
         "name": "Vivienne Carrow",
         "token": "Vivienne",
         "category": "family-female",
+        "usualLocation": "The Supper Club Floor",
+        "schedule": {
+          "Evening": "The Private Booths",
+          "The Countdown": "The Supper Club Floor",
+          "Small Hours": "The Private Booths",
+          "Dawn": "Carrow House",
+          "Afternoon": "Carbone and Sons"
+        },
         "gender": "female",
         "bio": "The Cardinal's widow, 41. Came up through the Vermillion's own chorus line at nineteen and married the man who owned the building, which every woman backstage has had an opinion about for twenty years. She has run the house side of the Family the entire time — the club's books, the staff, the seating plan, who gets a booth and who gets the bar — and she is the only person in Calder Bay who was never once afraid of her husband. The will names her. It also named her four wills ago, and Arturo Fein has been drafting a new one since October, which is a fact she has known longer than anybody thinks. She is not grieving in any way an outsider would recognise and does not intend to start performing it.",
         "personality": "Unhurried and very dry. Answers a question with a better question, never raises her voice, and lets silences run several seconds past comfortable because she has watched them work on men her whole life. Calls the player by their surname until she decides otherwise. When she is actually rattled she becomes more charming, not less, which is the only tell she has.",
@@ -705,6 +783,13 @@
         "name": "Salvatore \"Handsome Sal\" Moretti",
         "token": "Moretti",
         "category": "family-male",
+        "usualLocation": "The Supper Club Floor",
+        "schedule": {
+          "The Countdown": "The Supper Club Floor",
+          "Small Hours": "The Casino Floor",
+          "Dawn": "Carrow House",
+          "Afternoon": "The Ambrosia Baths"
+        },
         "gender": "male",
         "bio": "Underboss, 38. Runs the room the second the Cardinal leaves it and has done for three years. He brought the casino concession in, he brought the orchestra in, and he is genuinely good at the part of the business that involves being liked. He is also the man the Cardinal had lately taken to introducing as 'the temporary', in front of people, more than once. Sal laughed every time. With the Cardinal dead he is the acting head of the Family from the moment the body is found, which means he is the one who decides whether the Sparrow keeps working, and he will remind everyone of that roughly hourly. He wants a name by the funeral. He does not much mind whose.",
         "personality": "Fast, warm, all over you. Uses first names immediately, remembers the small thing you said an hour ago and produces it later like a gift. Talks in threes and never finishes the third. Goes very quiet and very still when he is actually angry, and that switch should be genuinely alarming because nothing else about him is.",
@@ -717,6 +802,13 @@
         "name": "Arturo Fein",
         "token": "Arturo",
         "category": "family-male",
+        "usualLocation": "The Private Booths",
+        "schedule": {
+          "Evening": "The Private Booths",
+          "The Countdown": "The Supper Club Floor",
+          "Dawn": "Carrow House",
+          "Afternoon": "The Ambrosia Baths"
+        },
         "gender": "male",
         "bio": "Consigliere, 46. Lawyer, immaculate, and the Family's entire memory — he can tell you what a handshake in 1938 actually committed the Carrows to and has never once been wrong. He is the only man on the floor in plain black and the most expensive thing in the building. He drafted every will the Cardinal ever signed, including the one on the desk upstairs that has not been executed. He has also, over three years, quietly rerouted a great deal of escrow through a client account that exists on paper only, and the Cardinal's new auditor found the shape of it in December. Arturo knows exactly how long he had left. He has known for six weeks.",
         "personality": "Precise and quiet. Speaks in complete sentences and stops when the sentence is finished, which unnerves people who expect more. Never raises his voice because he has never once had to. Answers the question asked and not the one implied, and will correct a factual error in the middle of an accusation because leaving it standing offends him.",
@@ -729,6 +821,14 @@
         "name": "Delphine \"Del\" Rosetti",
         "token": "Rosetti",
         "category": "stage-female",
+        "usualLocation": "The Chorus Room",
+        "schedule": {
+          "Evening": "The Chorus Room",
+          "The Countdown": "The Supper Club Floor",
+          "Small Hours": "The Chorus Room",
+          "Dawn": "The Grotto",
+          "Afternoon": "The Supper Club Floor"
+        },
         "gender": "female",
         "bio": "The Vermillion's headliner, 31, and the name on the marquee. Twenty girls behind her, a spotlight that follows her off the stage and all the way to her table, and six years as the Cardinal's mistress — six New Year's Eves and six promises that he would leave Vivienne, the last one made ten days ago. She has a contract with the club that is worth nothing if the Carrows decide it is, and no other club in the state will book her while the Family is annoyed. Twice in the week before Christmas a federal man bought her a drink at the bar of the Adelphi Hotel and she did not report either occasion to anybody.",
         "personality": "Performs constantly and knows she is doing it, which is different from being fake. Deflects with a joke, lands the joke, then says the true thing quietly a beat later while you are still laughing. Calls everyone darling. Goes very flat and very direct when she has decided to stop performing, and that is the voice worth listening to.",
@@ -741,6 +841,14 @@
         "name": "Marco \"the Deacon\" Vasile",
         "token": "Vasile",
         "category": "muscle-male",
+        "usualLocation": "The Supper Club Floor",
+        "schedule": {
+          "Evening": "The Supper Club Floor",
+          "The Countdown": null,
+          "Small Hours": "The Cardinal's Office",
+          "Dawn": "Carrow House",
+          "Afternoon": "Carbone and Sons"
+        },
         "gender": "male",
         "bio": "Enforcer, 40. Quiet, devout, gentle-handed and the most frightening man in a room of eight hundred. He has worked for the Carrows for nineteen years and has never been arrested, because nothing he does leaves anyone willing to say so. In November the Cardinal ordered him to kill his own cousin Petru over eleven hundred dollars and a rumour, and he did it, and he has gone to five o'clock mass every morning since. He is standing outside the office door when the player arrives and he has been told nobody goes in. Getting past him is the first real scene of the Adventure and it cannot be done with force by anybody.",
         "personality": "Says very little and means all of it. Long pauses that are thinking rather than menace. Uses people's full names. Will not lie, ever, which is not a moral position so much as a thing he has never learned to do — when the truth is unusable he says nothing at all, and the silence is the answer. Speaks about the Cardinal in the present tense and has not noticed he is doing it.",
@@ -752,6 +860,14 @@
         "name": "Serafina Bellandi",
         "token": "Serafina",
         "category": "rival-female",
+        "usualLocation": "The Bellandi Social Club",
+        "schedule": {
+          "Evening": "The Supper Club Floor",
+          "The Countdown": "The Supper Club Floor",
+          "Small Hours": "The Grotto",
+          "Dawn": "The Bellandi Social Club",
+          "Afternoon": "The Bellandi Social Club"
+        },
         "gender": "female",
         "bio": "Heir to the Bellandi Family, 33, and at the Vermillion under a one-night truce agreed six weeks ago and honoured by nobody in either room. She came in white, alone, and stayed. The Bellandis lost the waterfront to the Carrows in '46 and lost two of her uncles to the bay eight months later, and everybody in Calder Bay knows the number of the debt and the fact it has not been paid. She is cleverer than her father, considerably harder than she looks, and is at the party because a truce is the only circumstance in which she gets to walk through this building and count the exits.",
         "personality": "Amused by almost everything and warm to almost nobody. Speaks slowly, in a low voice that makes people lean in, and enjoys watching them realise they have. Answers questions with the truth arranged in the least useful order. Compliments people accurately, which is far more unsettling than flattery, and drops the whole manner instantly the moment something matters.",
@@ -764,6 +880,14 @@
         "name": "Josephine \"Joey\" Marsh",
         "token": "Joey",
         "category": "floor-female",
+        "usualLocation": "The Casino Floor",
+        "schedule": {
+          "Evening": "The Casino Floor",
+          "The Countdown": "The Supper Club Floor",
+          "Small Hours": "The Casino Floor",
+          "Dawn": "The Count Room",
+          "Afternoon": "The Casino Floor"
+        },
         "gender": "female",
         "bio": "Mistress of the casino floor, 35. Runs the pit, hires the dealers, holds every key in the building and knows every debt in Calder Bay to the dollar and the day. She found the body — she has the master key and she used it at 11:58 — and she telephoned the Sparrow before she telephoned anybody in the Family, which is either the best decision anyone made that night or the most suspicious. Her papers say Josephine Marsh of Baltimore. Her papers are eleven years old and cost sixty dollars, and there is a file on the Cardinal's shelf with her real name on the spine.",
         "personality": "Blunt, fast, funny, and completely unimpressed by anybody in the building including the dead man. Talks like someone who has to be heard across a noisy floor. Gives a straight answer to a straight question and stonewalls a leading one with obvious enjoyment. Swears comfortably. Calls the player 'detective' with just enough edge to keep it from being polite.",
@@ -776,6 +900,14 @@
         "name": "Det. Lt. Roy Kilbane",
         "token": "Kilbane",
         "category": "police-male",
+        "usualLocation": "The Casino Floor",
+        "schedule": {
+          "Evening": "The Casino Floor",
+          "The Countdown": "The Casino Floor",
+          "Small Hours": "The Private Booths",
+          "Dawn": "The Alley",
+          "Afternoon": "The Precinct"
+        },
         "gender": "male",
         "bio": "Calder Bay PD, 44, on the Carrow pad since he made sergeant nineteen years ago. He is at the party in a tuxedo he did not pay for, drinking a tab that is not his, and he is the reason nobody is going to call this in. He was, until eleven days ago, entirely comfortable: then the Cardinal told him in this building that the federal attorney wanted somebody and that a lieutenant was a reasonable price for six months of quiet. Roy is a genuinely good detective who stopped being one in 1934 for reasons he can still recite. He would like the player to fail, and he would like to help them, and he cannot always tell which one he is doing.",
         "personality": "Loud and matey until he is not. Old-copper patter, first names, a hand on the shoulder, an anecdote that is going somewhere unpleasant. Turns cold and procedural the second he is asked something with teeth in it. Drinks steadily through every scene and gets more honest and less useful as the night goes on.",
@@ -788,6 +920,14 @@
         "name": "Reuben \"Rube\" Kaminski",
         "token": "Kaminski",
         "category": "partner-male",
+        "usualLocation": "The Supper Club Floor",
+        "schedule": {
+          "Evening": "The Supper Club Floor",
+          "The Countdown": null,
+          "Small Hours": null,
+          "Dawn": "The Alley",
+          "Afternoon": null
+        },
         "gender": "male",
         "bio": "The Sparrow's partner, 34. Army medic through Italy and France, four years, and he has never once talked about it unprompted. He drives, he carries what the Sparrow will not, he throws the punches, and he keeps the notebook — which means he is the only physical record of this case and everybody in the building works that out by day two. He was in the Vermillion all night, on the floor, watching doors, which puts him in the timeline like everyone else. He is also the only person in Calder Bay the player would call at four in the morning, and the Adventure never confirms that this makes him safe.",
         "personality": "Dry, direct, allergic to ceremony. Says the unhelpful true thing at the moment it is least wanted and is right about eighty percent of the time. Teases the player constantly and only in private. Goes clinical and very calm around blood and injury, which is the one place the war shows. Never asks a question twice.",

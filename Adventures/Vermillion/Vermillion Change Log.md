@@ -11,8 +11,35 @@ in the engine log at `Generator/Steak and Bake Stories/Change Log.md`.
 An engine change whose first use is this Adventure's data is written in full
 in the engine log and referenced here in one line. Never write it out twice.
 
+## 25/08/2026
+
+- `Vermillion.json` — NPC schedules. Every NPC now carries `usualLocation` and a per-phase `schedule`, so the engine's WHO IS WHERE block runs on this Adventure (it emitted nothing before — no NPC had a routine, so the model placed people by feel). Location names verified against the JSON's `locations` list; presence block rendered headless from the starting location. Needs a push to go live. Both partner rosters covered (Ruth/Reuben, three nulls each — the partner shadows the player). Because the culprit is rolled per playthrough, no schedule encodes the solution: every Countdown placement is a crowd hub (Supper Club or Casino floor), nobody is scheduled into The Cardinal's Office during the shot, and no suspect gets a unique alibi. Vasile reaches the office only in the Small Hours (guarding the door); Joey is the only person scheduled into The Count Room (Dawn, the float); Kilbane reaches The Precinct only in the Afternoon.
+
 ## 24/08/2026
 
+- All 12 `uniforms` entries shortened from a 78-word average (max 98) to 50
+  (max 50). Length is the only thing this changes: the garments, colours,
+  insignia, what each one bares and the tone words are preserved, and both closing clauses, in order
+  survives verbatim on every entry. Only the repeated restatements of
+  "revealing" were cut. No engine change.
+  - Same rule now applied to every Adventure. The uniform clause is the
+    longest single clause in an image prompt and it is repeated once per
+    character in a composite, so it is the cheapest thing to shorten and the
+    most expensive thing to leave long. Ceiling is ~40 words plus whatever
+    that Adventure's closing clause costs.
+  - `poolUniforms.family-female` was the one pool entry over its ceiling at
+    59 words and was trimmed to 47 on the same rule. Every other pool entry
+    was already inside and was left as authored.
+- `locationScenery` authored for all 14 locations, ~20 words each — the room,
+  two or three fixed physical features and its light. These now carry the
+  image prompt's setting line, which until today was the bare location name.
+  The engine mechanism is generic and is written up in full in the engine log
+  at `Generator/Steak and Bake Stories/Change Log.md`.
+- `imageStyle` gained `professional photo`, placed with the other style
+  tokens and ahead of the framing instruction:
+  `painted anime style, professional photo, front on shot`
+  A photographic quality token paired with a painted style token lifts
+  detail, lighting and coherence without the render losing the style.
 - Title card art added and wired in. `Assets/TitleCards/VermillionTitleCard.webp`,
   700x1050 WebP at quality 86 (199KB), exported from the 1023x1537 PNG per
   the standing export convention; the PNG master is in
