@@ -411,35 +411,43 @@
       "options": [
         {
           "value": "photogenic",
-          "label": "📸 You cannot be photographed badly"
+          "label": "📸 You cannot be photographed badly",
+          "prompt": "Absolute and involuntary. Every photograph, frame of footage or screenshot of this character comes out flattering, whatever they were doing when it was taken — a faceplant reads as a dive, a crying face as pensive, a bad angle does not exist. They cannot switch it off or make it fail. It does nothing for how they look in person, and anyone who was there remembers what actually happened."
         },
         {
           "value": "landing",
-          "label": "🐈 You always land on your feet"
+          "label": "🐈 You always land on your feet",
+          "prompt": "Absolute and involuntary. From any fall, drop or throw, this character arrives upright on both feet — every time, no exceptions. It does nothing for the fall itself: the impact still hurts, a long enough drop still injures, and the landing makes no difference to whatever they fell into."
         },
         {
           "value": "duplicate",
-          "label": "👥 One copy, ninety seconds, fully nude"
+          "label": "👥 One copy, ninety seconds, fully nude",
+          "prompt": "On command, one exact copy of this character appears beside them, stark naked, and exists for exactly ninety seconds before vanishing along with anything it was holding. The copy is fully them — same mind, same skills, same memory up to the split — and the original keeps nothing the copy learned. Once a day at most, and the copy can never be dressed in time to matter."
         },
         {
           "value": "liars",
-          "label": "🤥 You hear thoughts, but only lies"
+          "label": "🤥 You hear thoughts, but only lies",
+          "prompt": "Always on and uncontrollable. Whenever anyone within earshot thinks something they know to be false, this character hears it in that person's own voice. Truthful thoughts are silent; so is anything the thinker sincerely believes, however wrong. It cannot be aimed, turned off, or used on anyone who is not currently lying to themselves or someone else."
         },
         {
           "value": "pigeons",
-          "label": "🐦 You can talk to pigeons"
+          "label": "🐦 You can talk to pigeons",
+          "prompt": "This character and pigeons understand each other perfectly, in plain speech. Pigeons are not clever, not brave and not reliable, but there are thousands of them, they see everything, and they remember faces. No other bird, and no other animal."
         },
         {
           "value": "gravity",
-          "label": "🪶 Gravity, four percent weaker"
+          "label": "🪶 Gravity, four percent weaker",
+          "prompt": "Within about two metres of this character, gravity is permanently four percent weaker. It cannot be increased, aimed or switched off. Nothing floats; things fall slightly slower, jumps land slightly further, and a person standing next to them for long enough feels faintly off-balance without knowing why."
         },
         {
           "value": "familiar",
-          "label": "👋 Everyone finds you slightly familiar"
+          "label": "👋 Everyone finds you slightly familiar",
+          "prompt": "Passive and permanent. Everyone this character meets is sure they have met them before and cannot place where. It buys a moment of warmth, a door held open and a name half-remembered wrong; it never survives a second look, does not make anyone trust them, and works on nobody who has actually met them before."
         },
         {
           "value": "retro",
-          "label": "🕰️ You can see an empty room's last 20 minutes"
+          "label": "🕰️ You can see an empty room's last 20 minutes",
+          "prompt": "When this character stands in a room with no one else in it, they can watch the last twenty minutes of what happened there, silent and slightly transparent, played back once at normal speed. A single other person present — awake, asleep or hiding — and nothing plays. It shows what a camera would have seen, no more."
         }
       ]
     },
