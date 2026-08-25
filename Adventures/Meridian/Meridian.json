@@ -87,6 +87,14 @@
     "Night Cycle"
   ],
   "startingPhase": "Mid Shift",
+  "events": [
+    {"day": 1, "phase": "Late Shift", "instruction": "The Captain makes a ship-wide announcement: a survivor has been recovered from a derelict pod and is under medical observation, and the Medbay is off-limits without the Chief Medical Officer's clearance. Every crew member now knows, and the announcement says nothing about what the survivor is."},
+    {"day": 2, "phase": "Early Shift", "instruction": "The Chief Medical Officer's intake assessment is on the agenda at the Captain's shift briefing in the Ready Room. Whatever state it is in, the question of what the survivor is to be allowed to do gets put to the Captain this morning.", "known": "Captain's shift briefing — your assessment"},
+    {"day": 3, "phase": "Off-Watch", "instruction": "A full off-watch mess in the Mess Hall, as the Meridian holds every ten days — the whole crew not on station eats together. There is one topic of conversation, and anyone absent from the table is noticed.", "known": "Full off-watch mess, Mess Hall"},
+    {"day": 4, "phase": "Night Cycle", "instruction": "A scheduled hull survey pulls the EVA Bay watch out onto the hull for the whole cycle. The bay is worked from outside; inside, it stands empty until the survey team cycles back in."},
+    {"day": 5, "phase": "Mid Shift", "instruction": "Engineering logs an unexplained draw on the Cargo Bay's power circuit and schedules an inspection of everything stowed there for the next shift. The log entry is routine and nobody has connected it to anything yet."},
+    {"day": 6, "phase": "Early Shift", "instruction": "The next cycle's watch bill is posted. The crew who stand the EVA Bay watch complain openly in the Mess Hall about how the standing rota is shared out, and who is never on it.", "known": "Watch bill posted"}
+  ],
   "locations": [
     "Medbay",
     "Bridge",
