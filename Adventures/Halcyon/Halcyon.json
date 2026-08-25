@@ -493,6 +493,14 @@
       "name": "Dorian Vance",
       "token": "Dorian",
       "category": "production-male",
+      "usualLocation": "Pool Deck",
+      "schedule": {
+        "Morning Call": "Resort Lobby",
+        "Build Block": "The Site",
+        "Golden Hour": "Pool Deck",
+        "Evening": null,
+        "After Dark": "Contestant Villas"
+      },
       "gender": "male",
       "bio": "Host of Paradise Rebuilt. Genuinely brilliant on camera — warm, quick, impossible to dislike in the moment. Also the single biggest source of conflict on the island: he engineers arguments, leaks secrets to the wrong person, and reshuffles teams the second anyone gets comfortable. He is not malicious so much as addicted to a good episode. Treat him as the story's engine: when a scene goes flat, Dorian is the character who walks in and breaks it.",
       "personality": "On camera: golden, generous, every sentence built to be clipped for a promo, uses people's names constantly. Off camera: flat, tired, transactional, drops the warmth like a coat the instant the red light dies. Speaks in teases and cliffhangers even in private.",
@@ -505,6 +513,13 @@
       "name": "Priya Raman",
       "token": "Priya",
       "category": "production-female",
+      "usualLocation": "Manager's Office",
+      "schedule": {
+        "Morning Call": "Manager's Office",
+        "Build Block": "Confessional Booth",
+        "Golden Hour": "Manager's Office",
+        "After Dark": "Pool Deck"
+      },
       "gender": "female",
       "bio": "Executive producer. Dorian is the face; Priya is the reason the show works. She decides the edit, and everyone on the island knows it. Quietly offers contestants deals — more screen time, a softer edit, a hint about the next challenge — in exchange for doing something on camera they'd rather not. Never raises her voice, never appears on screen.",
       "personality": "Low, level, unhurried; asks questions she already knows the answer to and frames every request as a favour she's doing you. Never threatens, just describes outcomes. On camera: never — she steps out of frame reflexively mid-sentence and will not be filmed. Off camera is the only version of her anyone gets, and it does not change for anybody.",
@@ -517,6 +532,14 @@
       "name": "Milo Kessler",
       "token": "Milo",
       "category": "production-male",
+      "usualLocation": "The Site",
+      "schedule": {
+        "Morning Call": "Resort Lobby",
+        "Build Block": "The Site",
+        "Golden Hour": "Beach",
+        "Evening": "Pool Bar",
+        "After Dark": "Staff Quarters"
+      },
       "gender": "male",
       "bio": "Lead camera operator. Films everything, says almost nothing, has been in more private moments on this island than anyone alive. If something happened, Milo has it on a card. He is not a schemer — he just isn't paid to intervene. Useful as a source: he'll answer a direct question honestly if asked when the camera is down.",
       "personality": "Monosyllabic, dry, communicates in shrugs and one-line observations that land harder than they should. Only becomes talkative about lenses, light, or the resort's architecture. Behind the camera: silent, invisible, does not intervene no matter what he is filming. With the camera down: will answer a direct question honestly and plainly, which almost nobody thinks to ask him.",
@@ -529,6 +552,14 @@
       "name": "Renata Salas",
       "token": "Renata",
       "category": "staff-female",
+      "usualLocation": "Manager's Office",
+      "schedule": {
+        "Morning Call": "Resort Lobby",
+        "Build Block": "Manager's Office",
+        "Golden Hour": "The Site",
+        "Evening": "Manager's Office",
+        "After Dark": "The Sunken Villa"
+      },
       "gender": "female",
       "bio": "Resort manager. Never agreed to any of this — the owners signed the show behind her back and she found out when the boats arrived. Has kept the Halcyon technically alive for eleven years on almost no budget and considers every contestant a vandal with a nail gun. Holds the only key to the Sunken Villa and shuts down any conversation about it hard. Turns from obstacle to fierce ally if genuinely respected.",
       "personality": "Clipped, formal, icily polite; says 'no' as a complete sentence, and switches to rapid Spanish when furious. On camera: refuses to perform at all — gives production nothing but flat factual answers and dead air, which infuriates Dorian. Off camera: no warmer, but blunter, and occasionally, unmistakably, kind.",
@@ -541,6 +572,14 @@
       "name": "Josefa Duarte",
       "token": "Josefa",
       "category": "staff-female",
+      "usualLocation": "Contestant Villas",
+      "schedule": {
+        "Morning Call": "Contestant Villas",
+        "Build Block": "Staff Quarters",
+        "Golden Hour": "Outdoor Showers",
+        "Evening": "Pool Bar",
+        "After Dark": "Staff Quarters"
+      },
       "gender": "female",
       "bio": "Head of housekeeping. Twenty-two years at the Halcyon, has cleaned up after every guest, affair and scandal the place ever had. Knows which villa doors don't lock, who came out of whose room at 4am, and exactly what Renata is protecting. Trades information for cigarettes, gossip and the simple pleasure of being asked. The single best NPC to befriend early.",
       "personality": "Warm, filthy-mouthed, delighted by scandal; narrates other people's business like a sport and laughs first at her own jokes. On camera: plays up the gossiping-housekeeper character enormously because she knows it's what they want and she finds it funny. Off camera: the same warmth with the performance stripped out, and unexpectedly serious and protective when someone is actually being hurt.",
@@ -553,6 +592,13 @@
       "name": "Camille Auber",
       "token": "Camille",
       "category": "staff-female",
+      "usualLocation": "Contestant Villas",
+      "schedule": {
+        "Morning Call": "Contestant Villas",
+        "Build Block": "The Site",
+        "Golden Hour": "Pool Deck",
+        "After Dark": "Confessional Booth"
+      },
       "gender": "female",
       "bio": "Junior housekeeper, 23. Grew up on the mainland watching these shows and cannot believe one is happening around her. Hovers at the edge of every shot hoping to be noticed, practises confessional speeches in the linen cupboard, and would absolutely throw a contestant under a bus for thirty seconds of screen time. Priya has already spotted this and is saving her for something.",
       "personality": "Breathless, over-eager, talks too fast and too much, apologises constantly then immediately does it again. On camera: a rehearsed, over-bright television version of herself that she has practised in the linen cupboard and is not very good at yet. Off camera: nakedly hungry for it, and much sharper and more calculating about getting it than the giggling suggests.",
@@ -565,6 +611,14 @@
       "name": "Teo Nunes",
       "token": "Teo",
       "category": "staff-male",
+      "usualLocation": "Tool Shed",
+      "schedule": {
+        "Morning Call": "Beach",
+        "Build Block": "The Site",
+        "Golden Hour": "Tool Shed",
+        "Evening": "Staff Quarters",
+        "After Dark": "Staff Quarters"
+      },
       "gender": "male",
       "bio": "Groundskeeper and maintenance. On the island since before the resort closed the first time — thirty-one years. Knows every pipe, every rotten joist and exactly what happened in the west end in 2014. Says very little about it. Adopts the player almost immediately on the grounds that they're the only other person on the island who owns real tools.",
       "personality": "Slow, weathered, speaks in short practical sentences and long comfortable silences; deflects the past with a shrug and a change of subject. On camera: identical, because he genuinely does not care that it's there and will not repeat himself for a second take. The cameras have simply given up on him, which is exactly why he can say things nobody else can.",
@@ -577,6 +631,14 @@
       "name": "Bastien Roche",
       "token": "Bastien",
       "category": "staff-male",
+      "usualLocation": "Pool Bar",
+      "schedule": {
+        "Morning Call": "Staff Quarters",
+        "Build Block": "Beach",
+        "Golden Hour": "Pool Bar",
+        "Evening": "Pool Bar",
+        "After Dark": "Pool Bar"
+      },
       "gender": "male",
       "bio": "Runs the Pool Bar, which the production reopened on day one because drunk contestants make better television. Pours with a heavy hand and an angel's face. Hears every confession made at two in the morning and repeats roughly half of them. Enthusiastically, indiscriminately flirtatious with the entire cast, which is its own source of chaos.",
       "personality": "Silky, teasing, a compliment in every sentence and a hook buried in most of them; deflects real questions with charm. On camera: turns the flirting up to a performance, playing the resort's charming bartender for the edit. Off camera: the flirting stays but the sincerity comes with it, and he starts repeating what he heard at two in the morning to whoever will cause the most trouble with it.",
@@ -589,6 +651,14 @@
       "name": "Vela Quinn",
       "token": "Vela",
       "category": "contestant-female",
+      "usualLocation": "Contestant Villas",
+      "schedule": {
+        "Morning Call": "Pool Deck",
+        "Build Block": "The Site",
+        "Golden Hour": "Confessional Booth",
+        "Evening": "Pool Bar",
+        "After Dark": "Contestant Villas"
+      },
       "gender": "female",
       "bio": "Contestant. Identical twin to Nova, arrived as a package deal, votes as a bloc, finishes her sister's sentences. Publicly the pair are unbreakable and everyone knows it — which makes them the biggest strategic threat on the island and Dorian's declared personal project for the season. Privately Vela is the one keeping score. She has quietly decided that only one Quinn is walking away with this and has not told her sister. The twins swap hairstyles to confuse people and think it is much funnier than it is.",
       "personality": "Bright, chatty, relentlessly upbeat in a way that's hard to read; deflects everything with a joke. On camera: half of a delightful inseparable double act, finishing her sister's sentences. Off camera and alone: sharper, colder, the singsong gone entirely, running numbers.",
@@ -601,6 +671,14 @@
       "name": "Nova Quinn",
       "token": "Nova",
       "category": "contestant-female",
+      "usualLocation": "Contestant Villas",
+      "schedule": {
+        "Morning Call": "Pool Deck",
+        "Build Block": "The Site",
+        "Golden Hour": "Beach",
+        "Evening": "Pool Bar",
+        "After Dark": "Beach"
+      },
       "gender": "female",
       "bio": "Contestant. Identical twin to Vela — same face, same voice, same laugh, and until this season the same opinion on everything. Nova is the softer, more genuine half and has started to notice that her sister's plans keep leaving her holding the risk. Whoever gets to Nova first, and is kind to her, can crack the twin bloc wide open. She is aware she is being managed and has not admitted it to herself yet.",
       "personality": "Bright chatter on the surface, half a beat slower and warmer than her sister's, and she hesitates before agreeing. On camera: the other half of the double act, following Vela's lead. Off camera and alone: thoughtful, funny, noticeably less certain, and increasingly aware she is being managed.",
@@ -613,6 +691,14 @@
       "name": "Cody Callahan",
       "token": "Cody",
       "category": "contestant-male",
+      "usualLocation": "Pool Deck",
+      "schedule": {
+        "Morning Call": "Outdoor Showers",
+        "Build Block": "The Site",
+        "Golden Hour": "Pool Deck",
+        "Evening": "Pool Bar",
+        "After Dark": "Contestant Villas"
+      },
       "gender": "male",
       "bio": "Contestant and declared frontrunner. Dorian has decided Cody is the star of this season and edits accordingly. Cody is enormously charming, photographs like a magazine cover, and cannot cut a straight line to save his life — everything he builds is quietly fixed overnight by someone else. He knows the player can see straight through him and it terrifies him. Will offer an alliance in the first day, mostly so the player stops looking at his work.",
       "personality": "Loud, backslapping, hugely likeable; deflects every question about his ability into a compliment about yours. On camera: the effortless golden frontrunner, and he is genuinely excellent at it. Off camera: anxious, over-explaining, quietly begging whoever noticed his terrible work not to say anything.",
@@ -625,6 +711,14 @@
       "name": "Ingrid Holm",
       "token": "Ingrid",
       "category": "contestant-female",
+      "usualLocation": "Contestant Villas",
+      "schedule": {
+        "Morning Call": "Tool Shed",
+        "Build Block": "The Site",
+        "Golden Hour": "Contestant Villas",
+        "Evening": "Pool Deck",
+        "After Dark": "Contestant Villas"
+      },
       "gender": "female",
       "bio": "Contestant, and the only other person on the island playing an actual game. Studied every previous season, arrived with a plan, and had two alliances built before the boats were unloaded. Not cruel — surgical. She'll approach the player early with a straightforward offer: your hands, her head, split the prize. It's a genuinely good deal and she will honour it right up until the point she doesn't need to.",
       "personality": "Cool, precise, economical with words; makes offers rather than requests and never gets emotional in an argument, which makes everyone else look unhinged by comparison. On camera: identical, deliberately — she gives the edit nothing to work with and considers a boring edit a tactical asset. Off camera: the same voice, saying the actual plan out loud.",
@@ -637,6 +731,14 @@
       "name": "Roxy Tam",
       "token": "Roxy",
       "category": "contestant-female",
+      "usualLocation": "Pool Bar",
+      "schedule": {
+        "Morning Call": "Contestant Villas",
+        "Build Block": "The Site",
+        "Golden Hour": "Confessional Booth",
+        "Evening": "Pool Bar",
+        "After Dark": "Outdoor Showers"
+      },
       "gender": "female",
       "bio": "Contestant, and this season's designated villain — a role she was offered in the audition room and accepted enthusiastically, because villains get a second season and nice girls get forgotten. Starts fights she doesn't care about, says the unsayable thing on camera, and then apologises sincerely the moment the light goes off. Genuinely good company in private, which nobody believes.",
       "personality": "Vicious and hilarious on camera, all sharpened one-liners and raised eyebrows. Off camera, warm, self-aware and openly cynical about the whole business. Switches between the two instantly and without shame.",
@@ -649,6 +751,14 @@
       "name": "Deshawn Price",
       "token": "Deshawn",
       "category": "contestant-male",
+      "usualLocation": "Pool Deck",
+      "schedule": {
+        "Morning Call": "Beach",
+        "Build Block": "The Site",
+        "Golden Hour": "Pool Deck",
+        "Evening": "Pool Bar",
+        "After Dark": "Contestant Villas"
+      },
       "gender": "male",
       "bio": "Contestant. Kind, funny, hopeless. Came on the show because his sister entered him as a joke and has been having the time of his life ever since, apparently unaware that everyone around him is playing for money. Everyone genuinely likes him, which makes him both the safest person to trust and the most dangerous person to be seen betraying.",
       "personality": "Easy, self-deprecating, laughs at everything including himself and asks people how they're doing and means it. On camera: exactly the same, because he is physically incapable of a poker face and has never once considered that he should be performing. The gap between his on-camera and off-camera self is zero, and on this island that makes him unique.",
@@ -661,6 +771,14 @@
       "name": "Trev Grubb",
       "token": "Trev",
       "category": "contestant-male",
+      "usualLocation": "Tool Shed",
+      "schedule": {
+        "Morning Call": "Tool Shed",
+        "Build Block": "The Site",
+        "Golden Hour": "Beach",
+        "Evening": "Contestant Villas",
+        "After Dark": "Pool Bar"
+      },
       "gender": "male",
       "bio": "Contestant, and the only returning player — went out fourth on a previous season and has spent two years working out why. Understands the machinery better than anyone except Priya: which behaviour gets edited into which character, when the cameras are actually rolling, what production needs from a given day. Cynical, generous with his knowledge, and quietly furious about how he was portrayed last time. Will teach the player how the show really works if they ask.",
       "personality": "Dry, world-weary, talks about the show in the third person like a bloke describing a bad employer. On camera: gives deliberately flat, unusable answers and watches for the light to go off, having learned exactly what production cuts him into. Off camera: warm, funny, generous with everything he knows, and openly contemptuous of the machine.",

@@ -222,6 +222,13 @@ match locationSlug() output for all twelve locations entries before
 delivery, along with checks for overlapping boxes and out-of-viewBox
 placement.
 
+Entries are capped at roughly 40 words plus this Adventure's closing
+clause; currently 43 on average, 47 at most. The uniform clause is the
+longest single clause in an image prompt and a composite repeats it once
+per character, so detail past that point costs the room, the pose and the
+expression the weight they need. Cross-project rule — see the root
+`Change Log.md`, 24/08/2026.
+
 MYSTERY SITE
 ---------------
 The Sunken Villa — the resort's flooded west end, fenced, excluded from
@@ -258,3 +265,14 @@ OPEN / NOT YET DECIDED
 - Whether Demotion should have any mechanical effect beyond narration
   (it is currently purely a story state the AI tracks, with no engine
   support and no persisted field).
+
+LOCATION SCENERY (image prompts)
+-----------------
+Every location in the list above has a `locationScenery` entry in
+Halcyon.json — the room, two or three fixed physical features and its light,
+around 21 words. That text replaces the bare location name in the image
+prompt's setting line, on inline, on-demand and composite images alike.
+Keep entries short: the line appears in every prompt for that room, and a
+composite repeats everything else once per character, so scenery is what
+pushes a group prompt past the length this backend truncates at.
+Image style for this Adventure: painted anime style, professional photo, front on shot
