@@ -96,6 +96,14 @@
     "After Dark"
   ],
   "startingPhase": "Morning Call",
+  "events": [
+    {"day": 1, "phase": "Golden Hour", "instruction": "Dorian Vance announces the first timed challenge on camera from the Pool Deck: the Pool Bar, teams as he names them now, judged at golden hour in two days' time. The clock starts the moment he stops talking.", "known": "Dorian announces the first challenge"},
+    {"day": 2, "phase": "After Dark", "instruction": "Priya Raman calls the first Confessional round — every contestant is required to sit for the Confessional Booth camera before morning call, alone, and say what they think of the others.", "known": "Confessional round"},
+    {"day": 3, "phase": "Golden Hour", "instruction": "The Pool Bar is judged. Dorian delivers the verdict on camera whether or not the build is finished, and the losing team is demoted in front of everyone.", "known": "The Pool Bar is judged"},
+    {"day": 4, "phase": "Morning Call", "instruction": "Dorian reshuffles the teams for the bungalows challenge, splitting whichever pairing has become comfortable, and announces it as though it were a kindness."},
+    {"day": 5, "phase": "Evening", "instruction": "The supply tender arrives and production offloads materials onto the beach, along with a case of something for the Pool Bar. Bastien pours, and for one evening staff, contestants and crew are in the same place with no camera running."},
+    {"day": 7, "phase": "Build Block", "instruction": "Milo Kessler films a full walkthrough of the site for the network — every build inspected on camera, every contestant asked one technical question about their own work.", "known": "Network walkthrough with Milo"}
+  ],
   "locations": [
     "Resort Lobby",
     "Pool Deck",
