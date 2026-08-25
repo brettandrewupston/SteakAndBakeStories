@@ -998,6 +998,13 @@
       }
     ]
   },
+  "record": {
+    "title": "Duelist Log",
+    "noun": "duel",
+    "description": "a sanctioned duel between the player and one NPC, fought under an instructor's eye or by formal challenge, that counts on the Academy ladder. Training bouts, sparring, scuffles and brawls are not duels and are never recorded",
+    "outcomes": ["win", "loss", "draw"],
+    "empty": "Every sanctioned duel you have fought at Solmere, and how it went. Training bouts and brawls don't count."
+  },
   "poseVocabulary": [
     "sitting",
     "standing",
