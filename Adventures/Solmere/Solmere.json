@@ -82,6 +82,13 @@
     "Night"
   ],
   "startingPhase": "Morning",
+  "events": [
+    { "day": 1, "phase": "Midday", "instruction": "The first-years' names go up on the tournament draw board in the Dining Hall, with the opening trials set for tomorrow morning in the Dueling Arena. Kael Voss reads the list aloud for the room's benefit, pausing on the commoner names." },
+    { "day": 1, "phase": "Night", "instruction": "The lights-out bell sounds across both dormitory wings and a prefect walks the corridors. Anyone found outside their own wing after it has to explain themselves, and the royal wing's prefect is less forgiving than the commoner wing's." },
+    { "day": 2, "phase": "Morning", "instruction": "Instructor Voss runs the first-years' opening trials in the Dueling Arena. Every first-year is expected on the roster and an absence is marked against them; the upper years drift in to watch and pick out who is worth worrying about." },
+    { "day": 3, "phase": "Afternoon", "instruction": "The first ladder standings of the season are posted outside the Enrollment Hall. Whoever is near the top is suddenly being talked about; whoever is at the bottom is suddenly being laughed at, and both of those reach the Dining Hall within the hour." },
+    { "day": 5, "phase": "Morning", "instruction": "Second-round pairings are posted, and for the first time a royal-born student has drawn a commoner they cannot avoid. The pairing is the only thing anyone is talking about at breakfast." }
+  ],
   "locations": [
     "Enrollment Hall",
     "Dueling Arena",
