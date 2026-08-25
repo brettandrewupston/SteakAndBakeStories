@@ -112,6 +112,15 @@
     "Small Hours"
   ],
   "startingPhase": "Day Shift",
+  "events": [
+    {"day": 1, "phase": "Rush Hour", "instruction": "A gas main goes up on Clement Street at four. Halo has a merchandise drop at six and the A-list are already in the street with the cameras up. The callout is declined to Category D at the last minute, once the footage is in the can."},
+    {"day": 1, "phase": "Night Shift", "instruction": "The fourth floor is on the roof, as it is most nights. A Yolanda Pesch one-star lands on somebody's phone and gets read aloud to the whole roof."},
+    {"day": 2, "phase": "Day Shift", "instruction": "Marguerite Delph delivers the player's welcome pack, which is an invoice, and the week's rota. The player's first callout slot is on it."},
+    {"day": 3, "phase": "Small Hours", "instruction": "The laundry's only working dryer dies at three in the morning with half the fourth floor's clothes inside it."},
+    {"day": 4, "phase": "Rush Hour", "instruction": "Kell Brannigan parks a sponsored vehicle across the Ganymede's fire exit for a street shoot. The GPA's building inspection is due the same afternoon.", "known": "GPA building inspection"},
+    {"day": 6, "phase": "Sundown", "instruction": "The VANTAGE mid-quarter leaderboard goes up on the lobby screen. The bottom three licence holders in Precinct 9 are named, and everybody in the building checks where they stand.", "known": "Mid-quarter leaderboard posted"},
+    {"day": 8, "phase": "Sundown", "instruction": "Something is burning in the Blackout Block. No response is sent, no callout is issued, and the smoke is visible from the roof."}
+  ],
   "locations": [
     "Ganymede Lobby",
     "The Roof",
