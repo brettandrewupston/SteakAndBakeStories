@@ -116,6 +116,15 @@
     "After Hours"
   ],
   "startingPhase": "Before Nine",
+  "events": [
+    {"day": 1, "phase": "Morning", "instruction": "Monday stand-up in Meeting Room 2. Gerald Thwaite reads the dashboard figures aloud and Clarence puts Employee of the Month on the screen behind him.", "known": "Monday stand-up, Meeting Room 2"},
+    {"day": 2, "phase": "Lunch", "instruction": "The kitchen fridge has been cleared. Everything in it is in a black bin bag in the Car Park, and an unsigned laminated note on the fridge door explains the new policy."},
+    {"day": 3, "phase": "Afternoon", "instruction": "Gail Tancred's weekly transfer sign-off. Kev Mullane takes a fully loaded van out of Dispatch, round to the west side of the site, and is back within twenty minutes with it empty."},
+    {"day": 4, "phase": "Before Nine", "instruction": "Nadia Rees is late for the first time in four years, and arrives dressed for an interview."},
+    {"day": 5, "phase": "After Hours", "instruction": "Friday. Most of the branch drifts to the Smoking Shelter after five, where there is no screen and no speaker. Colm Deasy is there and things get said that would not be said inside.", "known": "Friday, the Smoking Shelter"},
+    {"day": 7, "phase": "Morning", "instruction": "Tomasz Wrona's twelve-week agency renewal goes through and appears as a single line item on the dashboard's resource tile. Nobody reacts."},
+    {"day": 10, "phase": "Morning", "instruction": "A circular from head office congratulates Unit 4 on the quarter and books a photographer for next week. Gerald pins it in Reception under the leaderboard."}
+  ],
   "locations": [
     "Reception",
     "The Floor",
