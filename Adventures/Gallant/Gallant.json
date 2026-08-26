@@ -874,6 +874,17 @@
     "civ-female": "ordinary Gallant City street clothes chosen to show everything off: a cropped fitted top ending at the ribs over a bare waist, an open jacket, a short skirt low on the hips, everything cut skin-close, fully clothed, clearly an adult",
     "exec-female": "a considerably better suit than anyone in the city owns, cut like a second skin: a nipped waist, a blazer worn over bare skin and nothing else, a short tight skirt, sheer legs, very high heels, fully clothed, clearly an adult"
   },
+  "uniformsModest": {
+    "dlist-male": "home-made Category D costume: a surplus bodysuit, hand-re-sewn, zipped to the throat, sleeves gone over thick arms, webbing at the waist, thigh straps, scuffed knee-high boots, an off-centre iron-on logo, a GPA licence patch, a tall muscular man, fully clothed, clearly an adult",
+    "dlist-female": "home-made Category D costume: a surplus bodysuit, hand-re-sewn, zipped to the throat over large breasts, long sleeves, webbing at the waist, thigh straps, scuffed knee-high boots, an off-centre iron-on logo, a GPA licence patch, fully clothed, clearly an adult",
+    "alist-male": "Cardinal-issue A-list armour: full moulded composite plating in brand colours, chest, waist and thighs covered, a high sealed collar, sponsor decals placed for the cameras, immaculate and studio-built, a tall muscular man, fully clothed, clearly an adult",
+    "alist-female": "Cardinal-issue A-list armour: full moulded composite plating in brand colours, a sealed high collar, a chestplate shaped over large breasts, waist, hips and legs covered, sponsor decals placed for the cameras, immaculate and studio-built, fully clothed, clearly an adult",
+    "vpa-male": "Gallant Powers Authority municipal kit: a polyester uniform shirt buttoned to the collar, sleeves rolled to the elbow, issue trousers, scuffed shoes, a lanyard and radio, a tall muscular man, fully clothed, clearly an adult",
+    "vpa-female": "Gallant Powers Authority municipal kit: a polyester uniform blouse buttoned to the collar over large breasts, sleeves rolled to the elbow, an issue knee-length skirt, dark tights, flat shoes, a lanyard and radio, fully clothed, clearly an adult",
+    "civ-male": "ordinary Gallant City street clothes: a fitted tee, an open jacket, jeans, trainers, a tall muscular man, fully clothed, clearly an adult",
+    "civ-female": "ordinary Gallant City street clothes: a fitted top over large breasts, an open jacket, jeans, trainers, fully clothed, clearly an adult",
+    "exec-female": "a considerably better suit than anyone in the city owns: a tailored blazer buttoned over a silk blouse and large breasts, a knee-length pencil skirt, dark hosiery, heels, fully clothed, clearly an adult"
+  },
   "clothingStates": {
     "male": {
       "shirtless": "shirtless, his torso fully bare — chest, stomach and shoulders exposed",
