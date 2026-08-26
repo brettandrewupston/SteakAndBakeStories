@@ -70,8 +70,6 @@
     }
   ],
   "mapUrl": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Solmere/Map.svg",
-  "narrationBackdropUrl": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Assets/StoryBoard.jpg",
-  "titleImageUrl": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Solmere/Title.png",
   "startingLocation": "Enrollment Hall",
   "openingScene": "NARRATION: The carriage gates of Solmere Academy rise ahead in black iron and pale stone, ivy climbing arches worn smooth by centuries of arrivals just like {characterName}'s. Enrollment Hall waits at the end of the courtyard, its doors thrown open, the murmur of new students and old rivalries already spilling out into the morning air.\n===\nSPEAKER: Instructor Voss\nDIALOGUE: He stands near the enrollment table, roster in hand, and looks up as {characterName} approaches. \"Name,\" he says — not unkindly, just efficient. \"Let's get you sorted before the tournament draws start.\"\n===\nCLOSING: Somewhere behind him, the first-years are already sizing each other up.",
   "timePhases": [

@@ -16,6 +16,13 @@ project-root `Change Log Archive.md`.
 
 ## 26/08/2026
 
+- Solmere.json — **`titleImageUrl` and `narrationBackdropUrl` removed
+  (again).** The engine log of 25/08 records them removed, but the file
+  on disk this morning still carried both, so today's rewrite (modest
+  costume sets) carried them forward and the push brought the old
+  storyboard background and title art back over the heraldry skin.
+  Both keys deleted; nothing else touched. Re-push required.
+
 - Solmere.json — **`uniformsModest` and `poolUniformsModest` added** (6 + 6
   entries, one per existing category). The engine's Fan service toggle
   (Off by default) draws from these; On uses the original `uniforms` /
