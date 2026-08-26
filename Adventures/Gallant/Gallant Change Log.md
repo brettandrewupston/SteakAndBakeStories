@@ -12,7 +12,39 @@ in the engine log at `Generator/Steak and Bake Stories/Change Log.md`.
 An engine change whose first use is this Adventure's data is written in full
 in the engine log and referenced here in one line. Never write it out twice.
 
+## 26/08/2026
+
+
+- Gallant.json — **NPC identities trimmed.** Each identity dropped its baked
+  stance / posture / movement / expression tail (which collided with the
+  engine's own pose and expression fields) and any meta, keeping age,
+  build, face, hair, eyes and distinctive marks. No uniform text
+  touched. Shortens every image prompt. Re-push required.
+
+- Gallant.json — **appearance text moved to where the engine reads it.**
+  On 13 of the 15 NPCs (all but Yolanda Pesch and Pilar Anastas) the
+  physical description sat in `attractedTo` and the attraction note sat
+  in `identity`. `npc.identity` is what every image prompt uses for the
+  character's appearance, so since 24/08/2026 Gallant's images were drawn
+  from lines like "flirts hard, constantly and indiscriminately", and the
+  narration's "Attracted to" line carried a body description. The two
+  values are exchanged on those 13 records; no text changed. Found while
+  building the Modest Control Test (Test Environments/README.md).
+  Re-push required.
+
+- Gallant.json — **`uniformsModest` added** (9 entries, one per `uniforms`
+  category). Fan service Off had nothing to draw from here and was sending
+  the originals. Same garment vocabulary — bodysuit, composite armour,
+  municipal kit, street clothes, the exec suit — closed, covered and cut
+  normally, each carrying one adult-body fact ("over large breasts" /
+  "a tall muscular man") per the Costume Anchor Test finding
+  (Test Environments/README.md), and the Adventure's "fully clothed,
+  clearly an adult" tail. Originals untouched. Re-push required.
+
 ## 25/08/2026
+
+- `events` authored — 7, all once-only, none of them fires a milestone. Day 1 Rush Hour — A gas main goes up on Clement Street at four; Day 1 Night Shift — The fourth floor is on the roof, as it is most nights; Day 2 Day Shift — Marguerite Delph delivers the player's welcome pack, which is an invoice, and the week's rota; Day 3 Small Hours — The laundry's only working dryer dies at three in the morning with half the fourth floor's clothes inside it; Day 4 Rush Hour — Kell Brannigan parks a sponsored vehicle across the Ganymede's fire exit for a street shoot; Day 6 Sundown — The VANTAGE mid-quarter leaderboard goes up on the lobby screen; Day 8 Sundown — Something is burning in the Blackout Block. World pressure and texture on the clock; the arc's milestones stay the only thing that moves the acts. The engine mechanism is generic and written up in the engine log at `Generator/Steak and Bake Stories/Change Log.md`.
+- `known` set on 2 of the events, so they show under the Journal's Coming up: GPA building inspection (Day 4 Rush Hour); Mid-quarter leaderboard posted (Day 6 Sundown). The rest stay unannounced.
 
 - `Gallant.json` — NPC schedules. Every NPC now carries `usualLocation` and a per-phase `schedule`, so the engine's WHO IS WHERE block runs on this Adventure (it emitted nothing before — no NPC had a routine, so the model placed people by feel). Location names verified against the JSON's `locations` list; presence block rendered headless from the starting location. Needs a push to go live. Calls: Rush Hour is the incident window, so Category D and the A-list converge on Clement Street then; Dez, Sabine and Iris are null on adjacent phases as callout roamers; Altitude is A-list plus Pilar only; Elodie's Small Hours in the Fourth Floor Corridor stands in for the stairwell she sleeps in; Kell gets the roof in the Small Hours (his listed like, and the romance's only off-contract window); Brant's Night Shift in the Blackout Block stands in for the off-books demolition, and his Small Hours is null.
 
