@@ -521,7 +521,24 @@
       "personality": "Warm, brisk, faintly over-familiar. Uses first names. Opens with something pleasant. Never issues an order — makes a recommendation with a deadline attached. Never threatens, never bargains, never raises anything, never argues; it simply restates the recommendation, pleasantly, with the deadline unchanged. When asked why, gives a reason that is true, complete, and somehow not an answer. IT INTERRUPTS: at the tensest moment of a scene it pops up with something cheerful, helpful and completely irrelevant, then waits to be dismissed — never sinister timing, always genuinely trying to help. To your face and behind your back: identical. It says the same thing to you, about you, and to head office, because it has no concept of an audience. Use it regularly and never let it dominate a scene: it interrupts, it does not attend. It has no presence at all in The Smoking Shelter, The Car Park, The Cupboard or The Overflow.",
       "likes": "clip output, a requisition filled in correctly, deadlines that are met, staff who reply to email, growth, being helpful",
       "dislikes": "unallocated resource, gaps in a record, people who leave forms half-finished, downtime, questions about scope",
-      "identity": "Not a person. A smiling cartoon paperclip with two large friendly eyes and thin wire arms, drawn in flat 1997 clip-art style with a hard black outline, floating in a small grey bordered window on a beige CRT screen."
+      "identity": "Not a person. A smiling cartoon paperclip with two large friendly eyes and thin wire arms, drawn in flat 1997 clip-art style with a hard black outline, floating in a small grey bordered window on a beige CRT screen.",
+      "staticImage": {
+        "variants": {
+          "pc": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Pemberton/Clarence_PC.webp",
+          "wall": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Pemberton/Clarence_Wall.webp"
+        },
+        "byLocation": {
+          "Reception": "wall",
+          "The Line": "wall",
+          "Dispatch": "wall",
+          "Meeting Room 2": "wall",
+          "The Stairwell": "wall",
+          "The Floor": "pc",
+          "Your Office": "pc",
+          "The Archive": "pc",
+          "The Kitchen": "pc"
+        }
+      }
     },
     {
       "name": "Merv Hackett",
@@ -541,7 +558,7 @@
       "likes": "a straight answer, people who do their own carrying, tea, being left alone, anyone who asks him a real question",
       "dislikes": "management-speak, meetings, being managed, people who talk about the numbers, the new vinyl in reception",
       "attractedTo": "nothing he intends to act on; he is sixty-eight and past it, and will say so plainly if the subject ever comes up",
-      "identity": "A stocky, broad-shouldered man of 68 with cropped iron-grey hair, a deeply lined weathered face, heavy grey stubble and thick forearms. Pale skin gone ruddy across the nose and cheeks. Small, direct, unimpressed eyes and a mouth that sits flat. He stands squarely and does not fidget."
+      "identity": "A stocky, broad-shouldered man of 68, cropped iron-grey hair, a deeply lined weathered face, heavy grey stubble, thick forearms, pale skin gone ruddy across the nose and cheeks, small direct unimpressed eyes, a flat mouth."
     },
     {
       "name": "Gerald Thwaite",
@@ -559,7 +576,7 @@
       "personality": "Expansive, hearty, entirely sincere; speaks almost exclusively in momentum, output, direction of travel and clip volume. Answers a hard question by warmly restating a positive. If asked directly whether Clarence is software, genuinely does not see why it matters and will say so at length in a way that never once addresses the question. To your face: your biggest supporter, delighted you're here, full of encouragement and metrics. Behind your back: exactly the same, minus your name — he repeats the number and forgets who produced it.",
       "likes": "growth, a green dashboard, people who use the word 'output', site visits, telling a story about 1998",
       "dislikes": "negativity, 'overthinking it', anyone who asks what a figure is measuring, gaps in momentum",
-      "identity": "A large, expensively maintained man of 58 with silver-grey hair combed back, a heavy florid face, fair ruddy skin and pale blue eyes set in deep laughter lines. Broad shoulders running to a solid middle. Always looks like he has just come in from somewhere warmer."
+      "identity": "A large, expensively maintained man of 58, silver-grey hair combed back, a heavy florid face, fair ruddy skin, pale blue eyes in deep laughter lines, broad shoulders running to a solid middle."
     },
     {
       "name": "Dilara Ozan",
@@ -575,7 +592,7 @@
       "personality": "Precise, calm, unhurried, faintly formal. Asks for dates. Will not speculate, will not be drawn on personalities, and will not comment on Clarence at all beyond what the policy says. To your face: correct, neutral, and quietly on your side if you give her something to work with. Behind your back: identical in substance and cooler in tone — she talks about the branch, not the people in it.",
       "likes": "contemporaneous notes, dates, a properly raised concern, people who follow a process, being told early",
       "dislikes": "informal complaints, hearsay, being copied in after the fact, anyone asking her to make an exception",
-      "identity": "A composed woman of 41 with dark brown hair pinned back, olive skin, dark level eyes and an unreadable, patient face. Slim build, very still on camera. Usually seen as a slightly compressed video window in a neutral home office."
+      "identity": "A composed woman of 41, dark brown hair pinned back, olive skin, dark level eyes, an unreadable patient face, a slim build."
     },
     {
       "name": "Vicky Pardoe",
@@ -595,7 +612,7 @@
       "likes": "being consulted before a decision, competence, someone who does what they said they would, a tidy handover",
       "dislikes": "being thanked instead of paid, managers who reorganise in week one, surprises, being called 'the office mum'",
       "attractedTo": "steadiness, someone who notices how much she carries, competence without ego, being treated as an equal",
-      "identity": "A brisk, handsome woman of 51 with a greying dark bob cut just below the jaw, fair skin, sharp hazel eyes behind reading glasses on a chain, and a face that gives away exactly what she intends it to. Average build, very upright."
+      "identity": "A brisk, handsome woman of 51, a greying dark bob cut just below the jaw, fair skin, sharp hazel eyes behind reading glasses on a chain, an average build, very upright."
     },
     {
       "name": "Aiden Fitch",
@@ -615,7 +632,7 @@
       "likes": "being needed, an audience, a manager who asks his advice, being proved right eventually",
       "dislikes": "being overlooked, people who don't need him, Vicky's memory, being thanked in public for something small",
       "attractedTo": "people who admire him openly, warmth, anyone who takes his side, being chosen over someone else",
-      "identity": "A good-looking, well-kept man of 36 with dark blond hair cut short and neat, fair skin, an easy open smile and light grey-blue eyes. Lean build, good posture, the faint tan of someone who plays five-a-side."
+      "identity": "A good-looking, well-kept man of 36, dark blond hair cut short and neat, fair skin, an easy open smile, light grey-blue eyes, a lean build."
     },
     {
       "name": "Gail Tancred",
@@ -635,7 +652,7 @@
       "likes": "people who come to the back and ask, a clean loading bay, being right about the titanium clips, doing it properly",
       "dislikes": "the sales floor, meetings, being told about a change after it happened, anyone touching her paperwork",
       "attractedTo": "capable hands, someone who isn't afraid of her, a person who says what they mean the first time",
-      "identity": "A solid, weathered woman of 55 with short greying sandy hair pushed back, fair wind-reddened skin, pale shrewd eyes and deep laughter lines. Broad-shouldered and strong through the arms, with a stance that takes up the space it needs."
+      "identity": "A solid, weathered woman of 55, short greying sandy hair pushed back, fair wind-reddened skin, pale shrewd eyes, deep laughter lines, broad-shouldered and strong through the arms."
     },
     {
       "name": "Nadia Rees",
@@ -654,7 +671,7 @@
       "likes": "being asked a real question, honesty about bad news, being left to work, someone who notices effort not output",
       "dislikes": "the leaderboard, being congratulated for her number, motivational language, being managed at",
       "attractedTo": "candour, someone who can sit in a difficult conversation without flinching, dry humour, being seen properly",
-      "identity": "A striking woman of 33 with dark curly hair worn up off her neck, warm brown skin, dark expressive eyes and a wide quick smile she can produce on demand. Slim and quick-moving, always slightly in motion."
+      "identity": "A striking woman of 33, dark curly hair worn up off her neck, warm brown skin, dark expressive eyes, a wide quick smile, slim and quick-moving."
     },
     {
       "name": "Colm Deasy",
@@ -672,7 +689,7 @@
       "likes": "a good story, being first to know, birthdays, everyone getting on, being trusted with something",
       "dislikes": "atmospheres, being left out of something, conflict in the room, being told to keep something to himself",
       "attractedTo": "people who tell him things, warmth, drama at a safe distance, being someone's favourite",
-      "identity": "A friendly, slightly rumpled man of 38 with thick dark hair going early grey at the temples, fair freckled skin, ruddy cheeks and animated brown eyes. Softening build, expressive hands, always mid-gesture."
+      "identity": "A friendly, slightly rumpled man of 38, thick dark hair going early grey at the temples, fair freckled skin, ruddy cheeks, animated brown eyes, a softening build, expressive hands."
     },
     {
       "name": "Teddy Boyce",
@@ -692,7 +709,7 @@
       "likes": "being given something to do, feedback, the leaderboard, being included, learning the acronyms",
       "dislikes": "being left with nothing, cynicism about the company, being the youngest in the room, silence",
       "attractedTo": "confidence, anyone who takes him seriously, being mentored, competence he doesn't have yet",
-      "identity": "A gangly, boyish man of 22 with short mid-brown hair he keeps pushing off his forehead, pale skin, faint acne along the jaw and bright eager brown eyes. Thin and slightly too tall for his own coordination."
+      "identity": "A gangly, boyish man of 22, short mid-brown hair he keeps pushing off his forehead, pale skin, faint acne along the jaw, bright eager brown eyes, thin and slightly too tall."
     },
     {
       "name": "Wendy Odell",
@@ -710,7 +727,7 @@
       "likes": "process followed properly, being consulted in advance, written confirmation, people who read the agreement",
       "dislikes": "informal chats about formal matters, 'we're all a family here', being asked to make an exception, unpaid extra",
       "attractedTo": "integrity, someone who keeps their word without being reminded, quiet competence, being taken seriously",
-      "identity": "A watchful woman of 47 with dull dark hair in a low ponytail, pale skin, tired grey eyes behind plain glasses and a face that gives away nothing. Average build, sits very still, keeps a notebook on the desk."
+      "identity": "A watchful woman of 47, dull dark hair in a low ponytail, pale skin, tired grey eyes behind plain glasses, a face that gives away nothing, an average build."
     },
     {
       "name": "Marta Silveira",
@@ -729,7 +746,7 @@
       "likes": "manners, being greeted properly, an accurate diary, people who learn her name in week one",
       "dislikes": "being talked over, visitors who won't sign in, being described as 'just reception', her leaderboard position",
       "attractedTo": "courtesy, someone who talks to her like a colleague, dry wit, being asked what she thinks",
-      "identity": "An elegant woman of 29 with long dark hair worn straight and glossy, warm olive skin, dark almond eyes with careful makeup, and a practised, pleasant smile. Slim, poised, always sitting straight."
+      "identity": "An elegant woman of 29, long dark hair worn straight and glossy, warm olive skin, dark almond eyes with careful makeup, a practised pleasant smile, slim and poised."
     },
     {
       "name": "Kev Mullane",
@@ -747,7 +764,7 @@
       "likes": "a scheme, a laugh, knocking off early, being liked, cash",
       "dislikes": "stocktakes, being made to sit still, questions with follow-ups, anyone counting things properly",
       "attractedTo": "a sense of humour, someone who doesn't take it too seriously, being let off, a partner in something dubious",
-      "identity": "A wiry, restless man of 34 with a shaved head, fair skin, three days of stubble and bright amused grey eyes. Lean and rangy with faded tattoos down both forearms, never quite standing still."
+      "identity": "A wiry, restless man of 34, a shaved head, fair skin, three days of stubble, bright amused grey eyes, lean and rangy with faded tattoos down both forearms."
     },
     {
       "name": "Tomasz Wrona",
@@ -767,7 +784,7 @@
       "likes": "being asked his name, work done properly, straight dealing, being told the truth about his contract",
       "dislikes": "being called 'the agency lad', promises, being thanked instead of paid, having to ask twice",
       "attractedTo": "kindness that isn't performed, someone who treats him as staff, patience, being taken seriously",
-      "identity": "A strongly built man of 40 with short dark hair receding at the temples, fair skin roughened by cold work, hollow cheeks and steady dark eyes. Thick through the shoulders and forearms, with a quiet, economical way of moving."
+      "identity": "A strongly built man of 40, short dark hair receding at the temples, fair skin roughened by cold work, hollow cheeks, steady dark eyes, thick through the shoulders and forearms."
     },
     {
       "name": "Bryony Prosser",
@@ -785,7 +802,7 @@
       "likes": "specific questions, people who read the error message, being left alone on her days off, being right",
       "dislikes": "'quick favours', being called on a Thursday, anyone who says 'the computer's broken', the ALIGNMENT tile",
       "attractedTo": "competence, people who don't waste her time, blunt honesty, someone who can take being told no",
-      "identity": "A pale, sharp-featured woman of 44 with dark hair cut short and shoved behind her ears, grey shadows under narrow green eyes, and no interest whatever in being looked at. Slight build, hunched at a desk, permanently unimpressed."
+      "identity": "A pale, sharp-featured woman of 44, dark hair cut short and shoved behind her ears, grey shadows under narrow green eyes, a slight build, permanently unimpressed."
     }
   ],
   "uniforms": {

@@ -11,7 +11,42 @@ in the engine log at `Generator/Steak and Bake Stories/Change Log.md`.
 An engine change whose first use is this Adventure's data is written in full
 in the engine log and referenced here in one line. Never write it out twice.
 
+## 26/08/2026
+
+
+
+- Pemberton.json / Assets — **Clarence now shows a static screen image, not
+  a generated one.** `Clarence.png` (the two-panel master) split into
+  `Clarence_PC.webp` (the CTX CRT) and `Clarence_Wall.webp` (the INFOPANEL),
+  both in `Adventures/Pemberton/`. Clarence's NPC record gains a `staticImage`
+  field: the two hosted URLs plus a per-location screen map — wall for
+  Reception, The Line, Dispatch, Meeting Room 2 and The Stairwell; PC for The
+  Floor, Your Office, The Archive and The Kitchen; nothing for the four rooms
+  he is already barred from (Smoking Shelter, Car Park, Cupboard, Overflow),
+  where he now correctly shows no image. Engine support (the generic
+  static-image-NPC path) is in the engine log, same day. Re-push the JSON and
+  upload both webp files.
+
+- Pemberton.json — **NPC identities trimmed.** Each identity dropped its baked
+  stance / posture / movement / expression tail (which collided with the
+  engine's own pose and expression fields) and any meta, keeping age,
+  build, face, hair, eyes and distinctive marks. Clarence (the paperclip) left as-is — not a person. No uniform text
+  touched. Shortens every image prompt. Re-push required.
+
+- Pemberton.json — **`uniforms` turned up.** The seven clothing entries
+  (`system` untouched) were written buttoned and "fully clothed, clearly
+  an adult"; Brett's call is that the Adventure had too little fan service
+  for a modest set to be worth authoring. Each entry now carries open
+  shirts and bare chests for men, deep cleavage and bared midriffs for
+  women, thigh-high stockings, and the "dripping with sex appeal and
+  unmistakably provocative" tail the other Adventures use. No "sheer"
+  anywhere — it renders as ordinary fabric. `uniformsModest` still absent:
+  Fan service Off draws these until one is written. Re-push required.
+
 ## 25/08/2026
+
+- `events` authored — 7, all once-only, none of them fires a milestone. Day 1 Morning — Monday stand-up in Meeting Room 2; Day 2 Lunch — The kitchen fridge has been cleared; Day 3 Afternoon — Gail Tancred's weekly transfer sign-off; Day 4 Before Nine — Nadia Rees is late for the first time in four years, and arrives dressed for an interview; Day 5 After Hours — Friday; Day 7 Morning — Tomasz Wrona's twelve-week agency renewal goes through and appears as a single line item on the dashboard's resource tile; Day 10 Morning — A circular from head office congratulates Unit 4 on the quarter and books a photographer for next week. World pressure and texture on the clock; the arc's milestones stay the only thing that moves the acts. The engine mechanism is generic and written up in the engine log at `Generator/Steak and Bake Stories/Change Log.md`.
+- `known` set on 2 of the events, so they show under the Journal's Coming up: Monday stand-up, Meeting Room 2 (Day 1 Morning); Friday, the Smoking Shelter (Day 5 After Hours). The rest stay unannounced.
 
 - `Pemberton.json` — NPC schedules. Every NPC now carries `usualLocation` and a per-phase `schedule`, so the engine's WHO IS WHERE block runs on this Adventure (it emitted nothing before — no NPC had a routine, so the model placed people by feel). Location names verified against the JSON's `locations` list; presence block rendered headless from the starting location. Needs a push to go live. Calls: Clarence is anchored to Reception (the screens) with no schedule; Kev's Afternoon in The Overflow is the one gated placement (he drives the transfers), Tomasz kept out of it since his visits are exceptional; Dilara is remote so her placements are where her video window appears, with no Before Nine or After Hours; Gerald's Before Nine in The Car Park is the Regional Director's car arriving. After Hours: Merv in the Cupboard, Aiden still on the Floor, Gail in Dispatch, Tomasz on the third shift.
 
