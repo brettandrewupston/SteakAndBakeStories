@@ -13,6 +13,13 @@ in the engine log and referenced here in one line. Never write it out twice.
 
 ## 26/08/2026
 
+
+- Vermillion.json — **NPC identities trimmed.** Each identity dropped its baked
+  stance / posture / movement / expression tail (which collided with the
+  engine's own pose and expression fields) and any meta, keeping age,
+  build, face, hair, eyes and distinctive marks.No uniform text
+  touched. Shortens every image prompt. Re-push required.
+
 - Vermillion.json — **`uniformsModest` and `poolUniformsModest` added** (12 + 12
   entries, one per existing category). The engine's Fan service toggle
   (Off by default) draws from these; On uses the original `uniforms` /
