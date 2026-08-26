@@ -16,6 +16,28 @@ project-root `Change Log Archive.md`.
 
 ## 26/08/2026
 
+- Meridian.json — **`altUniforms` and `altPoolUniforms` added: the ISV
+  Meridian duty uniform.** A second complete wardrobe, 15 entries in each
+  set, selected by the engine's new Alternate outfits row (written in full
+  in the engine log, 26/08/2026). A fitted tunic in the role's body colour
+  with an asymmetric front seam and an open collar, the role's own colour as
+  plain piping along that seam, and the same body colour, trim colour and
+  single prop per role as the standard set — so the cast is identifiable by
+  colour in either wardrobe. Nothing in this set glows: no neon, no
+  fluorescent trim, no neon outlines. That vocabulary stays with the
+  standard set, and the only light in the alternate wardrobe is Miravel's
+  own skin. Female cut: short pleated skirt in the body colour,
+  bare thighs, knee-high boots. Male cut: sleeves to the elbow, fitted dark
+  trousers, boots. Guest entries are flat matte-grey with no insignia.
+  Miravel's alternate is her Sevari wrap dress in opaque violet, markings
+  glowing at the seams. `altPoolUniforms` is the Atrium equivalent —
+  trunks and an open-back one-piece, role trim colour carried through.
+  Well inside the cap: 34 words on average, 36 at most (29 at most for the
+  pool set). `uniforms`, `poolUniforms` and `clothingStates` are untouched;
+  undressed states are shared between the two wardrobes. Needs a re-push.
+
+- Meridian.json — **`uniformsModest` and `poolUniformsModest` removed** with the engine's Fan service toggle (see the engine log, 26/08/2026); `uniforms` / `poolUniforms` untouched. Needs a re-push.
+
 
 - Meridian.json — **NPC identities trimmed.** Each identity dropped its baked
   stance / posture / movement / expression tail (which collided with the

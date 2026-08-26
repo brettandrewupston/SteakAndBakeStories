@@ -804,6 +804,23 @@
     "guest-female": "ISV Meridian visitor lingerie: an ultra-thin translucent clear-grey bralette and high-cut briefs in sheer iridescent material, seams edged in flat matte-grey trim that is dead and unlit, no glow anywhere and no insignia, sheer stockings, soft-soled boots",
     "liaison-female": "Miravel's own Sevari lingerie: an ultra-thin translucent deep-violet wrap bodice and high-cut briefs in sheer iridescent silk, no neon trim anywhere, her luminescent lavender-white skin markings glowing through the fabric instead, bare shoulder, bare feet"
   },
+  "altUniforms": {
+    "command-male": "ISV Meridian command uniform: a fitted charcoal tunic with an asymmetric front seam, sleeves to the elbow, gold piping along it, an open collar with gold rank bars, fitted dark trousers, polished black boots",
+    "command-female": "ISV Meridian command uniform: a fitted charcoal tunic with an asymmetric front seam, gold piping along it, an open collar with gold rank bars, a short pleated charcoal skirt, bare thighs, polished black knee-high boots",
+    "security-male": "ISV Meridian security uniform: a fitted gunmetal tunic with an asymmetric front seam, sleeves to the elbow, crimson piping along it, an open collar, an empty thigh holster, fitted dark trousers, heavy black boots",
+    "security-female": "ISV Meridian security uniform: a fitted gunmetal tunic with an asymmetric front seam, crimson piping along it, an open collar, an empty thigh holster, a short pleated gunmetal skirt, bare thighs, heavy black knee-high boots",
+    "medical-male": "ISV Meridian medbay uniform: a fitted pale-blue tunic with an asymmetric front seam, sleeves to the elbow, mint-green piping along it, an open collar, a stethoscope draped at the neck, fitted dark trousers, soft-soled boots",
+    "medical-female": "ISV Meridian medbay uniform: a fitted pale-blue tunic with an asymmetric front seam, mint-green piping along it, an open collar, a stethoscope at the neck, a short pleated pale-blue skirt, bare thighs, soft-soled knee-high boots",
+    "science-male": "ISV Meridian science uniform: a fitted smoked-white tunic with an asymmetric front seam, sleeves to the elbow, magenta piping along it, an open collar, a lit data-slate in one hand, fitted dark trousers, scuffed boots",
+    "science-female": "ISV Meridian science uniform: a fitted smoked-white tunic with an asymmetric front seam, magenta piping along it, an open collar, a lit data-slate in hand, a short pleated smoked-white skirt, bare thighs, scuffed knee-high boots",
+    "engineering-male": "ISV Meridian engineering uniform: a fitted slate tunic with an asymmetric front seam, sleeves to the elbow, orange piping along it, an open collar, a tool belt at the hips, fitted dark trousers, sturdy boots",
+    "engineering-female": "ISV Meridian engineering uniform: a fitted slate tunic with an asymmetric front seam, orange piping along it, an open collar, a tool belt at the hips, a short pleated slate skirt, bare thighs, sturdy knee-high boots",
+    "ensign-male": "ISV Meridian ensign uniform: a fitted navy tunic with an asymmetric front seam, sleeves to the elbow, cyan piping along it, an open collar with a single cyan rank bar, fitted dark trousers, standard boots",
+    "ensign-female": "ISV Meridian ensign uniform: a fitted navy tunic with an asymmetric front seam, cyan piping along it, an open collar with a single cyan rank bar, a short pleated navy skirt, bare thighs, standard knee-high boots",
+    "guest-male": "ISV Meridian visitor uniform: a fitted clear-grey tunic with an asymmetric front seam, sleeves to the elbow, matte-grey trim and no insignia, an open collar, fitted dark trousers, soft-soled boots",
+    "guest-female": "ISV Meridian visitor uniform: a fitted clear-grey tunic with an asymmetric front seam, matte-grey trim and no insignia, an open collar, a short pleated clear-grey skirt, bare thighs, soft-soled knee-high boots",
+    "liaison-female": "Miravel's own Sevari dress: a deep-violet wrap dress in soft opaque silk, her luminescent lavender-white skin markings glowing at the seams, one bare shoulder, a short wrapped hem, bare feet"
+  },
   "wetLocations": [
     "The Atrium",
     "Sonic Showers"
@@ -825,39 +842,22 @@
     "guest-female": "an ultra-thin translucent clear-grey bikini in sheer iridescent material, seams edged in flat matte-grey trim that is dead and unlit while every crew member's glows, damp hair, bare feet",
     "liaison-female": "Atrium swimwear in her own style: an ultra-thin translucent deep-violet wrap two-piece in sheer iridescent Sevari silk, no neon trim, her luminescent lavender-white skin markings glowing through the wet fabric instead, damp silver-blue hair, bare feet"
   },
-  "uniformsModest": {
-   "command-male": "ISV Meridian command uniform: a fitted charcoal jumpsuit with glowing neon fluorescent gold trim along the seams, gold-lit rank bars at the throat, polished black boots, neon outlines",
-   "command-female": "ISV Meridian command uniform: a fitted charcoal jumpsuit with glowing neon fluorescent gold trim along the seams, gold-lit rank bars at the throat, polished knee-high boots, neon outlines",
-   "security-male": "ISV Meridian security uniform: a fitted gunmetal jumpsuit with glowing neon fluorescent crimson trim along the seams, a slim empty thigh holster, heavy black boots, neon outlines",
-   "security-female": "ISV Meridian security uniform: a fitted gunmetal jumpsuit with glowing neon fluorescent crimson trim along the seams, a slim empty thigh holster, heavy knee-high boots, neon outlines",
-   "medical-male": "ISV Meridian medbay uniform: a fitted pale-blue tunic and trousers with glowing neon fluorescent mint-green trim along the seams, a stethoscope draped at the neck, soft-soled boots, neon outlines",
-   "medical-female": "ISV Meridian medbay uniform: a fitted pale-blue tunic and trousers with glowing neon fluorescent mint-green trim along the seams, a stethoscope draped at the neck, soft-soled boots, neon outlines",
-   "science-male": "ISV Meridian science uniform: a fitted smoked-white jumpsuit with glowing neon fluorescent magenta trim along the seams, a lit data-slate in one hand, scuffed boots, neon outlines",
-   "science-female": "ISV Meridian science uniform: a fitted smoked-white jumpsuit with glowing neon fluorescent magenta trim along the seams, a lit data-slate in one hand, scuffed boots, neon outlines",
-   "engineering-male": "ISV Meridian engineering uniform: a fitted slate coverall with glowing neon fluorescent orange trim along the seams, a slim tool belt slung at the hips, sturdy boots, neon outlines",
-   "engineering-female": "ISV Meridian engineering uniform: a fitted slate coverall with glowing neon fluorescent orange trim along the seams, a slim tool belt slung at the hips, sturdy boots, neon outlines",
-   "ensign-male": "ISV Meridian ensign uniform: a fitted navy jumpsuit with glowing neon fluorescent cyan trim along the seams, a single cyan-lit rank bar at the collarbone, standard boots, neon outlines",
-   "ensign-female": "ISV Meridian ensign uniform: a fitted navy jumpsuit with glowing neon fluorescent cyan trim along the seams, a single cyan-lit rank bar at the collarbone, standard boots, neon outlines",
-   "guest-male": "ISV Meridian visitor uniform: a plain clear-grey jumpsuit, seams edged in flat matte-grey trim that is dead and unlit, no glow anywhere and no insignia, soft-soled boots",
-   "guest-female": "ISV Meridian visitor uniform: a plain clear-grey jumpsuit, seams edged in flat matte-grey trim that is dead and unlit, no glow anywhere and no insignia, soft-soled boots",
-   "liaison-female": "Miravel's own Sevari dress: a flowing deep-violet wrap gown of iridescent silk to the ankle, no neon trim anywhere, her luminescent lavender-white skin markings glowing at the collar and hands, bare feet"
-  },
-  "poolUniformsModest": {
-   "command-male": "ISV Meridian Atrium swimwear: knee-length charcoal swim shorts and a charcoal swim shirt with glowing neon fluorescent gold trim along the seams, damp hair, bare feet, neon outlines",
-   "command-female": "ISV Meridian Atrium swimwear: a charcoal bikini of modest cut with glowing neon fluorescent gold trim along the seams, damp hair loose, bare feet, neon outlines",
-   "security-male": "ISV Meridian Atrium swimwear: knee-length gunmetal swim shorts and a gunmetal swim shirt with glowing neon fluorescent crimson trim along the seams, damp hair, bare feet, neon outlines",
-   "security-female": "ISV Meridian Atrium swimwear: a gunmetal bikini of modest cut with glowing neon fluorescent crimson trim along the seams, damp hair loose, bare feet, neon outlines",
-   "medical-male": "ISV Meridian Atrium swimwear: knee-length pale-blue swim shorts and a pale-blue swim shirt with glowing neon fluorescent mint-green trim along the seams, damp hair, bare feet, neon outlines",
-   "medical-female": "ISV Meridian Atrium swimwear: a pale-blue bikini of modest cut with glowing neon fluorescent mint-green trim along the seams, damp hair loose, bare feet, neon outlines",
-   "science-male": "ISV Meridian Atrium swimwear: knee-length smoked-white swim shorts and a smoked-white swim shirt with glowing neon fluorescent magenta trim along the seams, damp unruly hair, bare feet, neon outlines",
-   "science-female": "ISV Meridian Atrium swimwear: a smoked-white bikini of modest cut with glowing neon fluorescent magenta trim along the seams, damp curls loose, bare feet, neon outlines",
-   "engineering-male": "ISV Meridian Atrium swimwear: knee-length slate swim shorts and a slate swim shirt with glowing neon fluorescent orange trim along the seams, faintly grease-streaked, damp hair, bare feet, neon outlines",
-   "engineering-female": "ISV Meridian Atrium swimwear: a slate bikini of modest cut with glowing neon fluorescent orange trim along the seams, damp hair, bare feet, neon outlines",
-   "ensign-male": "ISV Meridian Atrium swimwear: knee-length navy swim shorts and a navy swim shirt with glowing neon fluorescent cyan trim along the seams, damp messy hair, bare feet, neon outlines",
-   "ensign-female": "ISV Meridian Atrium swimwear: a navy bikini of modest cut with glowing neon fluorescent cyan trim along the seams, damp hair, bare feet, neon outlines",
-   "guest-male": "knee-length clear-grey swim shorts and a clear-grey swim shirt, seams edged in flat matte-grey trim that is dead and unlit while every crew member's glows, damp hair, bare feet",
-   "guest-female": "a clear-grey bikini of modest cut, seams edged in flat matte-grey trim that is dead and unlit while every crew member's glows, damp hair, bare feet",
-   "liaison-female": "Atrium swimwear in her own style: a deep-violet bikini of modest cut in iridescent Sevari silk with a long matching wrap, no neon trim, her luminescent lavender-white skin markings glowing at the collar and hands, damp silver-blue hair, bare feet"
+  "altPoolUniforms": {
+    "command-male": "ISV Meridian Atrium swimwear: charcoal swim trunks with gold trim at the waistband, bare toned chest, damp tousled hair, bare feet",
+    "command-female": "ISV Meridian Atrium swimwear: a fitted charcoal one-piece swimsuit with high-cut legs and an open back, gold trim outlining every edge, damp hair loose, bare feet",
+    "security-male": "ISV Meridian Atrium swimwear: gunmetal swim trunks with crimson trim at the waistband, bare hard-muscled chest, damp hair, bare feet",
+    "security-female": "ISV Meridian Atrium swimwear: a fitted gunmetal one-piece swimsuit with high-cut legs and an open back, crimson trim outlining every edge, damp hair loose, bare feet",
+    "medical-male": "ISV Meridian Atrium swimwear: pale-blue swim trunks with mint-green trim at the waistband, bare toned chest, damp hair, bare feet",
+    "medical-female": "ISV Meridian Atrium swimwear: a fitted pale-blue one-piece swimsuit with high-cut legs and an open back, mint-green trim outlining every edge, damp hair loose, bare feet",
+    "science-male": "ISV Meridian Atrium swimwear: smoked-white swim trunks with magenta trim at the waistband, bare lean chest, damp hair, bare feet",
+    "science-female": "ISV Meridian Atrium swimwear: a fitted smoked-white one-piece swimsuit with high-cut legs and an open back, magenta trim outlining every edge, damp hair loose, bare feet",
+    "engineering-male": "ISV Meridian Atrium swimwear: slate swim trunks with orange trim at the waistband, bare muscular chest, damp hair, bare feet",
+    "engineering-female": "ISV Meridian Atrium swimwear: a fitted slate one-piece swimsuit with high-cut legs and an open back, orange trim outlining every edge, damp hair loose, bare feet",
+    "ensign-male": "ISV Meridian Atrium swimwear: navy swim trunks with cyan trim at the waistband, bare lean chest, damp hair, bare feet",
+    "ensign-female": "ISV Meridian Atrium swimwear: a fitted navy one-piece swimsuit with high-cut legs and an open back, cyan trim outlining every edge, damp hair loose, bare feet",
+    "guest-male": "ISV Meridian Atrium swimwear: plain clear-grey swim trunks with matte-grey trim, bare chest, damp hair, bare feet",
+    "guest-female": "ISV Meridian Atrium swimwear: a fitted clear-grey one-piece swimsuit with high-cut legs, matte-grey trim, damp hair loose, bare feet",
+    "liaison-female": "Miravel's own Sevari swim wrap: a deep-violet wrapped swimsuit in soft opaque fabric, her luminescent lavender-white skin markings glowing across her bare shoulders and legs, damp hair, bare feet"
   },
   "clothingStates": {
     "male": {
