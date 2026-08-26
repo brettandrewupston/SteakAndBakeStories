@@ -16,6 +16,27 @@ project-root `Change Log Archive.md`.
 
 ## 26/08/2026
 
+- Meridian.json + Lore + Meridian.txt — **the Ensign is no longer written or
+  drawn young.** Live: the narration read "Ensign" as a young cast member,
+  which is the rank's connotation in the sci-fi the text model was trained
+  on. The authored data was pushing the same way harder than the rank was.
+  Both Ensigns carried "slim, girlish" / "slim, boyish", "her/his frame is
+  still filling out" and "a little coltish" / "gangly" in `identity` —
+  which is image-prompt text — and "the youngest crew member aboard, barely
+  out of training" in `bio` and in their Lore files.
+  Mira Solano is now 26 and Toby Reyes 27; ensign is a commissioning rank,
+  not an age. The still-developing wording is replaced with a "lean,
+  athletic" / "lean, rangy" build, and their eagerness is now justified by
+  being the newest aboard on a first posting rather than the youngest.
+  Two more image-prompt signals went with it: Priya Anand's and Rhys
+  Okafor's "restless, girlish energy" / "boyish energy" (they are 28 and 29)
+  reads "irrepressible energy", and all four ensign uniform strings say
+  "rank bar" where they said "trainee bar".
+  Role, crush, comic-relief function and speaking voice are unchanged.
+  `personality`'s "girlish/boyish wonder" on the two doctors is deliberately
+  left as-is: it reaches the text model only and never the image prompt.
+  Live on the next push; the local and hosted copies are otherwise in sync.
+
 - Meridian.json — **`uniformsModest` and `poolUniformsModest` added** (15 + 15
   entries, one per existing category). The engine's Fan service toggle
   (Off by default) draws from these; On uses the original `uniforms` /
