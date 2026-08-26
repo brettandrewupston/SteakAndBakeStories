@@ -70,6 +70,8 @@
     }
   ],
   "mapUrl": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Solmere/Map.svg",
+  "narrationBackdropUrl": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Assets/StoryBoard.jpg",
+  "titleImageUrl": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Solmere/Title.png",
   "startingLocation": "Enrollment Hall",
   "openingScene": "NARRATION: The carriage gates of Solmere Academy rise ahead in black iron and pale stone, ivy climbing arches worn smooth by centuries of arrivals just like {characterName}'s. Enrollment Hall waits at the end of the courtyard, its doors thrown open, the murmur of new students and old rivalries already spilling out into the morning air.\n===\nSPEAKER: Instructor Voss\nDIALOGUE: He stands near the enrollment table, roster in hand, and looks up as {characterName} approaches. \"Name,\" he says — not unkindly, just efficient. \"Let's get you sorted before the tournament draws start.\"\n===\nCLOSING: Somewhere behind him, the first-years are already sizing each other up.",
   "timePhases": [
@@ -80,13 +82,6 @@
     "Night"
   ],
   "startingPhase": "Morning",
-  "events": [
-    { "day": 1, "phase": "Midday", "instruction": "The first-years' names go up on the tournament draw board in the Dining Hall, with the opening trials set for tomorrow morning in the Dueling Arena. Kael Voss reads the list aloud for the room's benefit, pausing on the commoner names.", "known": "Tournament draw posted, Dining Hall" },
-    { "day": 1, "phase": "Night", "instruction": "The lights-out bell sounds across both dormitory wings and a prefect walks the corridors. Anyone found outside their own wing after it has to explain themselves, and the royal wing's prefect is less forgiving than the commoner wing's." },
-    { "day": 2, "phase": "Morning", "instruction": "Instructor Voss runs the first-years' opening trials in the Dueling Arena. Every first-year is expected on the roster and an absence is marked against them; the upper years drift in to watch and pick out who is worth worrying about.", "known": "Opening trials, Dueling Arena" },
-    { "day": 3, "phase": "Afternoon", "instruction": "The first ladder standings of the season are posted outside the Enrollment Hall. Whoever is near the top is suddenly being talked about; whoever is at the bottom is suddenly being laughed at, and both of those reach the Dining Hall within the hour.", "known": "First ladder standings posted" },
-    { "day": 5, "phase": "Morning", "instruction": "Second-round pairings are posted, and for the first time a royal-born student has drawn a commoner they cannot avoid. The pairing is the only thing anyone is talking about at breakfast.", "known": "Second-round pairings posted" }
-  ],
   "locations": [
     "Enrollment Hall",
     "Dueling Arena",
@@ -817,6 +812,22 @@
     "staff-male": "Solmere Academy staff poolside swimwear: fitted dark swim trunks with gold piping echoing the Academy crest, bare powerfully built chest and torso, damp close-cropped hair, authoritative even half-dressed, dripping with sex appeal and unmistakably provocative",
     "staff-female": "Solmere Academy staff poolside swimwear: a dark charcoal bikini with gold trim echoing the Academy crest, plunging halter top baring cleavage, high-cut bottoms, damp hair, authoritative yet elegant even half-dressed, dripping with sex appeal and unmistakably provocative"
   },
+  "uniformsModest": {
+   "royal-student-male": "Solmere Academy royal student uniform: tailored deep navy long coat with gold piping and an embroidered royal crest, buttoned over a white shirt and navy waistcoat, fitted dark trousers, polished black boots, immaculate and aristocratic",
+   "royal-student-female": "Solmere Academy royal student uniform: tailored deep navy coat-dress with gold trim and an embroidered royal crest, high collar, knee-length pleated skirt, dark stockings, heeled boots, pristine and aristocratic",
+   "commoner-student-male": "Solmere Academy commoner student uniform: plain charcoal-grey jacket over a white shirt, dark trousers, sturdy worn boots, no crest or noble insignia, a little rumpled",
+   "commoner-student-female": "Solmere Academy commoner student uniform: charcoal-grey blazer over a white blouse, knee-length pleated skirt, dark stockings, sturdy boots, no crest or noble insignia, neat and practical",
+   "staff-male": "Solmere Academy staff uniform: dark charcoal academy robes closed over a high-collared shirt, gold piping and an embroidered Academy crest, structured high collar, polished black boots, immaculate and prestigious",
+   "staff-female": "Solmere Academy staff uniform: dark charcoal tailored coat with gold piping and an embroidered Academy crest, structured high collar, long straight skirt, heeled boots, pristine and sophisticated"
+  },
+  "poolUniformsModest": {
+   "royal-student-male": "Solmere Academy poolside swimwear: knee-length navy swim shorts with subtle gold piping echoing the royal crest, a loose white linen shirt worn open, damp hair, bare feet, aristocratic and relaxed",
+   "royal-student-female": "Solmere Academy poolside swimwear: a deep navy bikini with delicate gold trim echoing the royal crest, a modest halter top and mid-rise bottoms, damp hair braided, no nudity, aristocratic and composed",
+   "commoner-student-male": "Solmere Academy poolside swimwear: plain charcoal-grey knee-length swim shorts, a grey towel over one shoulder, no crest or insignia, damp hair, easygoing",
+   "commoner-student-female": "Solmere Academy poolside swimwear: a charcoal-grey bikini with simple trim, modest top and mid-rise bottoms, no crest or noble insignia, damp hair, no nudity, cheerful and unbothered",
+   "staff-male": "Solmere Academy staff poolside swimwear: dark knee-length swim shorts with gold piping echoing the Academy crest, a dark short-sleeved swim shirt, damp close-cropped hair, authoritative even off duty",
+   "staff-female": "Solmere Academy staff poolside swimwear: a dark charcoal bikini with gold trim echoing the Academy crest, modest halter top and mid-rise bottoms, a long dark wrap at the waist, damp hair pinned up, authoritative and elegant"
+  },
   "clothingStates": {
     "male": {
       "shirtless": "shirtless, his torso fully bare — muscular chest, abs, and shoulders exposed",
@@ -995,13 +1006,6 @@
         "continuable": true
       }
     ]
-  },
-  "record": {
-    "title": "Duelist Log",
-    "noun": "duel",
-    "description": "a sanctioned duel between the player and one NPC, fought under an instructor's eye or by formal challenge, that counts on the Academy ladder. Training bouts, sparring, scuffles and brawls are not duels and are never recorded",
-    "outcomes": ["win", "loss", "draw"],
-    "empty": "Every sanctioned duel you have fought at Solmere, and how it went. Training bouts and brawls don't count."
   },
   "poseVocabulary": [
     "sitting",

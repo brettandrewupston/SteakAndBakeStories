@@ -14,7 +14,33 @@ in the engine log and referenced here in one line. Never write it out twice.
 Entries from 16/08/2026 to 22/08/2026 predate this split and are in the
 project-root `Change Log Archive.md`.
 
+## 26/08/2026
+
+- Halcyon.json — **`uniformsModest` and `poolUniformsModest` added** (6 + 6
+  entries, one per existing category). The engine's Fan service toggle
+  (Off by default) draws from these; On uses the original `uniforms` /
+  `poolUniforms`, which are unchanged. Same garments worn normally —
+  buttoned, knee-length, one-piece, no innuendo — style anchors kept.
+  Engine change in Code/Bottom Panel.txt, same day.
+
 ## 25/08/2026
+
+- `Halcyon.json` — **story arc.** The Adventure can now end. Three acts on
+  milestones: *Wading in* (until the Pool Bar verdict), *The season*
+  (until the finale call sheet, or the hidden passive-player fallback
+  `the_long_shift`), *The finale*. Ten milestones: `pool_bar_verdict`
+  (won/demoted), `hands_spoken_for` (ingrid/cody/unaligned),
+  `quinn_split` (broken/held), `staff_question` (backed/sold),
+  `west_end_key` → hidden `what_happened_in_2014` → `villa_on_camera`
+  (aired/kept), `the_long_shift` (hidden fallback), `finale_called`,
+  `the_finale` (won/demoted). Six endings: three `when` (the Villa
+  aired, finale won, finale demoted), *Background Artist* as the
+  final-act fallback, and two restart-only `anyTime` exits (removed by
+  production, walked off set). Renata remains the only route into the
+  Sunken Villa. Driven through the real engine arc functions in a
+  harness (70 assertions, 0 failures: reachability, prerequisite
+  rejection, each `when` by its own route, no re-fire after continuing,
+  both routes into act 3, fallback offered only there). Needs a push.
 
 - `Halcyon.json` — NPC schedules. Every NPC now carries `usualLocation` and a per-phase `schedule`, so the engine's WHO IS WHERE block runs on this Adventure (it emitted nothing before — no NPC had a routine, so the model placed people by feel). Location names verified against the JSON's `locations` list; presence block rendered headless from the starting location. Needs a push to go live. Calls: every contestant is at The Site for Build Block by format; Dorian is the one roaming (null) Evening slot, since his role is walking in on a flat scene; Renata is the only person scheduled into The Sunken Villa (After Dark — she holds the key); Cody's After Dark went to the villas, not The Site, so the overnight-fixing mystery isn't given away by a timetable.
 

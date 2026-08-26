@@ -14,8 +14,68 @@ in the engine log and referenced here in one line. Never write it out twice.
 Entries from 16/08/2026 to 22/08/2026 predate this split and are in the
 project-root `Change Log Archive.md`.
 
+## 26/08/2026
+
+- Solmere.json — **`uniformsModest` and `poolUniformsModest` added** (6 + 6
+  entries, one per existing category). The engine's Fan service toggle
+  (Off by default) draws from these; On uses the original `uniforms` /
+  `poolUniforms`, which are unchanged. Same garments worn normally —
+  buttoned, knee-length, one-piece, no innuendo — style anchors kept.
+  Engine change in Code/Bottom Panel.txt, same day.
+
 ## 24/08/2026
 
+- Ysolde's `identity` opened `"a attractive"`, and `asSentence()` capitalises
+  the first character of every fragment it is handed, so every image prompt
+  she appeared in began the sentence "A attractive and sexy sophisticated 21
+  year old female". Corrected to `"an attractive"`. The article is the only
+  thing changed — no other NPC record differs.
+- `locationScenery` authored for all 12 locations, ~21 words each — the room,
+  two or three fixed physical features and its light. These now carry the
+  image prompt's setting line, which until today was the bare location name.
+  The engine mechanism is generic and is written up in full in the engine log
+  at `Generator/Steak and Bake Stories/Change Log.md`.
+- `imageStyle` gained `professional photo`, placed with the other style
+  tokens and ahead of the framing instruction:
+  `painted anime style, professional photo, front on shot`
+  A photographic quality token paired with a painted style token lifts
+  detail, lighting and coherence without the render losing the style.
+- All six `uniforms` entries shortened from a 73-word average (max 88) to
+  43 (max 46). **Length is the only thing this pass changes.** The
+  garments, colours, crests, what each one bares, the tone adjectives and
+  the closing "dripping with sex appeal..." clause are all preserved word
+  for word; `imageStyle`, `poolUniforms`, `clothingStates` and every NPC
+  `identity` are untouched. Only the two or three redundant restatements
+  of "revealing" per entry were cut. No engine change.
+  - It is deliberately a controlled change. Meridian's outfits were
+    rewritten the same day and came back visibly better across the whole
+    image, not just the clothing — but three things changed there at once
+    (length, a new `imageStyle` anchor, and the closer being dropped), so
+    the cause was not isolated. Solmere-before and Solmere-after differ in
+    nothing but uniform length, so comparing renders actually tests it.
+    Verified by asserting every non-`uniforms` field is byte-identical to
+    the previous file before writing.
+  - **A two-character composite was running past the point where the
+    backend truncates.** `IMAGE_PROMPT_WARN_CHARS` is 1700; Ysolde and
+    Kael in the Courtyard built a 1975-char prompt, so the tail — the
+    second character's outfit, pose and expression — was being dropped.
+    The same prompt is now 1556. This is the mechanical reason multi-
+    character images were worse than solo ones, and it is fixed for two.
+  - **Three or more characters is still over and cannot be fixed by
+    trimming.** The same trio now builds 2559 chars, and capping every
+    `identity` at 40 words as well only reaches 2095. The composite
+    builder repeats the character's name as the subject of four separate
+    clauses by design (it is the documented mitigation for attribute
+    bleed), so the floor is structural. Getting 3+ under the threshold
+    needs a change to the composite builder in `Code/Bottom Panel.txt`,
+    not more editing here — engine work, so it belongs in the engine log
+    if it happens.
+  - Word budget recorded in `Solmere.txt` STANDARD UNIFORMS. If it holds
+    up across Adventures it is a cross-project rule and moves to the root
+    `Change Log.md`; it is written here for now because only Meridian and
+    Solmere have been trimmed.
+  - `Solmere.json` needs re-uploading to the GitHub assets repo before
+    any of this is live.
 - **Dining Hall** added as Solmere's twelfth location — the Academy's
   second social hub, sitting alongside the Courtyard. Added to
   `Solmere.json` `locations`, to both lore files, to `Solmere.txt`, and

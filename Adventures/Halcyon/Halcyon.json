@@ -96,14 +96,6 @@
     "After Dark"
   ],
   "startingPhase": "Morning Call",
-  "events": [
-    {"day": 1, "phase": "Golden Hour", "instruction": "Dorian Vance announces the first timed challenge on camera from the Pool Deck: the Pool Bar, teams as he names them now, judged at golden hour in two days' time. The clock starts the moment he stops talking.", "known": "Dorian announces the first challenge"},
-    {"day": 2, "phase": "After Dark", "instruction": "Priya Raman calls the first Confessional round — every contestant is required to sit for the Confessional Booth camera before morning call, alone, and say what they think of the others.", "known": "Confessional round"},
-    {"day": 3, "phase": "Golden Hour", "instruction": "The Pool Bar is judged. Dorian delivers the verdict on camera whether or not the build is finished, and the losing team is demoted in front of everyone.", "known": "The Pool Bar is judged"},
-    {"day": 4, "phase": "Morning Call", "instruction": "Dorian reshuffles the teams for the bungalows challenge, splitting whichever pairing has become comfortable, and announces it as though it were a kindness."},
-    {"day": 5, "phase": "Evening", "instruction": "The supply tender arrives and production offloads materials onto the beach, along with a case of something for the Pool Bar. Bastien pours, and for one evening staff, contestants and crew are in the same place with no camera running."},
-    {"day": 7, "phase": "Build Block", "instruction": "Milo Kessler films a full walkthrough of the site for the network — every build inspected on camera, every contestant asked one technical question about their own work.", "known": "Network walkthrough with Milo"}
-  ],
   "locations": [
     "Resort Lobby",
     "Pool Deck",
@@ -816,6 +808,22 @@
     "staff-female": "Halcyon poolside: a dark bikini with the resort's faded palm crest at the hip, plunging halter top baring cleavage, high-cut bottoms, skin wet and glistening, damp hair loose, no nudity, off-duty and unexpectedly striking, dripping with sex appeal and unmistakably provocative",
     "production-male": "Paradise Rebuilt poolside: pale linen shirt hanging fully open and clinging damp to a smooth tanned chest, tailored swim shorts, sunglasses pushed into wet hair, bare feet, still somehow perfectly styled, dripping with sex appeal and unmistakably provocative",
     "production-female": "Paradise Rebuilt poolside: a sleek minimal bikini in muted neutral tones, an unbuttoned linen shirt hanging open over it, sunglasses pushed into damp hair, bare feet, immaculate even wet, dripping with sex appeal and unmistakably provocative"
+  },
+  "uniformsModest": {
+   "contestant-male": "Paradise Rebuilt contestant work kit: a branded high-vis vest over a fitted grey work t-shirt, durable work shorts to the knee, a heavy leather tool belt, work boots, dust across the shoulders",
+   "contestant-female": "Paradise Rebuilt contestant work kit: a branded high-vis vest over a fitted grey work t-shirt, durable work shorts to the knee, a leather tool belt, work boots, hair tied back, a smear of dust on one cheek",
+   "staff-male": "Halcyon resort staff uniform: a crisp white short-sleeved resort shirt buttoned to the collar, tailored dark resort trousers, a woven belt, canvas shoes, the faded palm crest at the pocket",
+   "staff-female": "Halcyon resort staff uniform: a fitted white resort blouse buttoned to the collar, a tailored knee-length dark skirt, a small apron, flat shoes, the palm crest at the breast",
+   "production-male": "Paradise Rebuilt production crew look: an unstructured pale linen shirt buttoned, sleeves rolled, tailored light trousers, a lanyard and radio at the hip, sunglasses pushed into the hair",
+   "production-female": "Paradise Rebuilt production crew look: a sleek fitted linen shirt tucked into high-waisted tailored trousers, a lanyard and radio at the hip, sunglasses pushed into the hair"
+  },
+  "poolUniformsModest": {
+   "contestant-male": "Paradise Rebuilt poolside: knee-length branded swim shorts in show colours, a branded rash vest, wet hair pushed back, bare feet, sunburn coming up across the shoulders",
+   "contestant-female": "Paradise Rebuilt poolside: a branded bikini in show colours, modest top and mid-rise bottoms, hair damp and pushed back, no nudity, sun-flushed and cheerful",
+   "staff-male": "Halcyon poolside: dark knee-length swim shorts with the resort's faded palm crest, a loose white resort shirt worn open over a swim top, damp hair pushed back, bare feet, relaxed and off-duty",
+   "staff-female": "Halcyon poolside: a dark bikini with the resort's faded palm crest at the hip, modest halter top and mid-rise bottoms, a wrap at the waist, damp hair loose, no nudity, off-duty and composed",
+   "production-male": "Paradise Rebuilt poolside: pale linen shirt buttoned and clinging damp, tailored knee-length swim shorts, sunglasses pushed into wet hair, bare feet, still somehow perfectly styled",
+   "production-female": "Paradise Rebuilt poolside: a sleek bikini in muted neutral tones, modest cut, a buttoned linen shirt worn open over it, sunglasses pushed into damp hair, bare feet, immaculate even wet"
   },
   "clothingStates": {
     "male": {

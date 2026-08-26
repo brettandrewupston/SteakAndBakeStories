@@ -11,6 +11,15 @@ in the engine log at `Generator/Steak and Bake Stories/Change Log.md`.
 An engine change whose first use is this Adventure's data is written in full
 in the engine log and referenced here in one line. Never write it out twice.
 
+## 26/08/2026
+
+- Vermillion.json — **`uniformsModest` and `poolUniformsModest` added** (12 + 12
+  entries, one per existing category). The engine's Fan service toggle
+  (Off by default) draws from these; On uses the original `uniforms` /
+  `poolUniforms`, which are unchanged. Same garments worn normally —
+  buttoned, knee-length, one-piece, no innuendo — style anchors kept.
+  Engine change in Code/Bottom Panel.txt, same day.
+
 ## 25/08/2026
 
 - `Vermillion.json` — NPC schedules. Every NPC now carries `usualLocation` and a per-phase `schedule`, so the engine's WHO IS WHERE block runs on this Adventure (it emitted nothing before — no NPC had a routine, so the model placed people by feel). Location names verified against the JSON's `locations` list; presence block rendered headless from the starting location. Needs a push to go live. Both partner rosters covered (Ruth/Reuben, three nulls each — the partner shadows the player). Because the culprit is rolled per playthrough, no schedule encodes the solution: every Countdown placement is a crowd hub (Supper Club or Casino floor), nobody is scheduled into The Cardinal's Office during the shot, and no suspect gets a unique alibi. Vasile reaches the office only in the Small Hours (guarding the door); Joey is the only person scheduled into The Count Room (Dawn, the float); Kilbane reaches The Precinct only in the Afternoon.

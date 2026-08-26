@@ -87,15 +87,6 @@
     "Afternoon"
   ],
   "startingPhase": "The Countdown",
-  "events": [
-    {"day": 1, "phase": "Small Hours", "instruction": "The band finishes its last set at two and the floor is finally told the club is sealed for a private matter. Eight hundred guests are kept in with free champagne, and the mood in the room turns."},
-    {"day": 1, "phase": "Dawn", "instruction": "The lockdown lifts. The Cardinal's body goes out through the Alley to Carbone and Sons before the street is awake, and the nine begin to leave the building.", "known": "The lockdown lifts"},
-    {"day": 1, "phase": "Afternoon", "instruction": "New Year's Day, and the word is on the street. The Bellandi Social Club sends flowers to Carrow House — too many, and too early."},
-    {"day": 2, "phase": "Evening", "instruction": "The Vermillion reopens for business on Family orders, as if nothing had happened. The chorus line goes on, the casino floor fills, and everybody who works there is watching everybody else.", "known": "The Vermillion reopens"},
-    {"day": 2, "phase": "Small Hours", "instruction": "Somebody goes through the Sparrow's coat and car looking for the book while the Sparrow is elsewhere. It is done carefully, and not carefully enough."},
-    {"day": 2, "phase": "Afternoon", "instruction": "Every fence and bookmaker in Calder Bay has heard the book is loose, and a price is being quoted for it on the street."},
-    {"day": 3, "phase": "Afternoon", "instruction": "The funeral. The box is open at Carbone and Sons and both Families are in the same room. Sal Moretti wants a name before it closes, and everybody is waiting to hear what the Sparrow has.", "known": "The funeral, Carbone and Sons"}
-  ],
   "locations": [
     "The Supper Club Floor",
     "The Cardinal's Office",
@@ -978,6 +969,34 @@
     "partner-male": "the Grotto: plain dark swim trunks, bare wet chest and shoulders, hair scraped back, an old scar on the ribs on show, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
     "detective-female": "the Grotto: a sleek dark two-piece, high-waisted and cut close, wet skin lit turquoise from below, hair slicked back off the face, entirely unhurried and entirely unarmed, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
     "detective-male": "the Grotto: sleek dark swim trunks, bare wet chest and stomach lit turquoise from below, hair slicked back off the face, entirely unhurried and entirely unarmed, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative"
+  },
+  "uniformsModest": {
+   "family-female": "Vermillion gala black tie: a floor-length silk gown with a high neckline and long sleeves, a modest slit at the hem, opera gloves, diamonds, fully clothed, clearly an adult, elegant and composed",
+   "family-male": "Vermillion gala black tie: a dinner jacket cut close and buttoned over a crisp dress shirt and bow tie, high-waisted trousers, a silk cummerbund, patent shoes, fully clothed, clearly an adult, immaculate",
+   "stage-female": "the Vermillion's headline costume: a beaded floor-length showgirl gown with a sweetheart neckline and long fringed sleeves, red ostrich feathers at the tail, a tall feathered headdress, fully clothed, clearly an adult, dazzling",
+   "floor-female": "a man's tuxedo tailored onto a woman: jacket buttoned over a white dress shirt and black bow tie, satin-striped trousers, a pit boss's chips, fully clothed, clearly an adult, sharp and unhurried",
+   "floor-male": "Vermillion house floor dress: a short white mess jacket buttoned over a white shirt and black bow tie, high-waisted black trousers with a satin stripe, a wide sash, a folded napkin, fully clothed, clearly an adult",
+   "muscle-male": "black tie as a working uniform: jacket gone, dress shirt buttoned with sleeves rolled past the elbow, a saint's medal on a chain, braces, an empty shoulder holster, fully clothed, clearly an adult, broad and watchful",
+   "rival-female": "a white column gown cut to intimidate: high-necked and long-sleeved, floor-length and severe, white satin gloves, pearls, fully clothed, clearly an adult, poised and cold",
+   "police-male": "a rented dinner jacket a size too small, straining across the shoulders, buttoned dress shirt and crooked bow tie, trousers slightly short, a shoulder holster he has not hidden, fully clothed, clearly an adult",
+   "partner-female": "black tie worn for work: jacket left on a chairback, dress shirt buttoned with sleeves rolled, braces, a knee-length skirt, a shoulder holster, flat shoes for running, fully clothed, clearly an adult, capable",
+   "partner-male": "black tie worn for work: jacket left on a chairback, dress shirt buttoned with sleeves rolled, braces, trousers, a shoulder holster, shoes for running, fully clothed, clearly an adult, capable",
+   "detective-female": "the Sparrow: a beautifully cut dark suit over a white shirt, no tie, a knee-length skirt, dark stockings, a hat carried, no weapon anywhere, fully clothed, clearly an adult, unhurried",
+   "detective-male": "the Sparrow: a beautifully cut dark suit over a white shirt, no tie, sleeves pushed back, trousers tailored close, a hat carried, no weapon anywhere, fully clothed, clearly an adult, unhurried"
+  },
+  "poolUniformsModest": {
+   "family-female": "the Grotto: a high-waisted satin bikini in gala colours, modest halter top and mid-rise bottoms, skin lit turquoise from below, hair coming loose, diamonds still on, fully clothed, clearly an adult",
+   "family-male": "the Grotto: high-waisted knee-length swim trunks, a dress shirt worn open over a swim top, hair pushed back, a glass balanced on the tiles, fully clothed, clearly an adult",
+   "stage-female": "the Grotto: a sequinned bikini from the costume room worn as swimwear, modest cut, feathers abandoned, wet skin catching the underwater light, hair slicked back, still wearing the rhinestone collar, fully clothed, clearly an adult",
+   "floor-female": "the Grotto: a plain dark bikini, modest cut, the tuxedo jacket thrown over the shoulders and soaking through, wet hair raked back, bow tie still hanging undone, fully clothed, clearly an adult",
+   "floor-male": "the Grotto: dark knee-length swim trunks and a dark swim shirt, mess jacket abandoned, hair pushed back, sash used as a towel, fully clothed, clearly an adult",
+   "muscle-male": "the Ambrosia Baths: a white bathrobe belted at the waist, steam and sweat at the collar, saint's medal on a chain, forearms and knuckles marked, fully clothed, clearly an adult",
+   "rival-female": "the Ambrosia Baths: a long white bathrobe belted and closed to the throat, skin flushed pink from the steam, hair up and dripping at the nape, pearls left on, fully clothed, clearly an adult",
+   "police-male": "the Ambrosia Baths: a white bathrobe belted over a body that used to be an athlete's, steam-flushed, shoulder holster hung on a peg where he can see it, fully clothed, clearly an adult",
+   "partner-female": "the Grotto: a practical dark bikini, modest cut, wet and unglamorous and better looking for it, hair scraped back, fully clothed, clearly an adult",
+   "partner-male": "the Grotto: plain dark knee-length swim trunks and a dark swim shirt, hair scraped back, fully clothed, clearly an adult",
+   "detective-female": "the Grotto: a sleek dark bikini, modest cut, skin lit turquoise from below, hair slicked back off the face, entirely unhurried and entirely unarmed, fully clothed, clearly an adult",
+   "detective-male": "the Grotto: sleek dark knee-length swim trunks and a dark swim shirt, lit turquoise from below, hair slicked back off the face, entirely unhurried and entirely unarmed, fully clothed, clearly an adult"
   },
   "clothingStates": {
     "male": {
