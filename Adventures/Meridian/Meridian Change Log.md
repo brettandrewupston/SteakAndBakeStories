@@ -14,8 +14,27 @@ in the engine log and referenced here in one line. Never write it out twice.
 Entries from 16/08/2026 to 22/08/2026 predate this split and are in the
 project-root `Change Log Archive.md`.
 
+## 26/08/2026
+
+- Meridian.json — **`uniformsModest` and `poolUniformsModest` added** (15 + 15
+  entries, one per existing category). The engine's Fan service toggle
+  (Off by default) draws from these; On uses the original `uniforms` /
+  `poolUniforms`, which are unchanged. Same garments worn normally —
+  buttoned, knee-length, one-piece, no innuendo — style anchors kept.
+  Engine change in Code/Bottom Panel.txt, same day.
+
 ## 24/08/2026
 
+- `locationScenery` authored for all 12 locations, ~20 words each — the room,
+  two or three fixed physical features and its light. These now carry the
+  image prompt's setting line, which until today was the bare location name.
+  The engine mechanism is generic and is written up in full in the engine log
+  at `Generator/Steak and Bake Stories/Change Log.md`.
+- `imageStyle` gained `professional photo`, placed with the other style
+  tokens and ahead of the framing instruction:
+  `painted anime style, cyberpunk aesthetic, professional photo, front on shot`
+  A photographic quality token paired with a painted style token lifts
+  detail, lighting and coherence without the render losing the style.
 - Story arc authored into `Story Definitions/Meridian.json`: ten
   milestones, three phases, six endings, using the engine arc mechanism
   built 23/08/2026. No engine change. Meridian is the third Adventure
