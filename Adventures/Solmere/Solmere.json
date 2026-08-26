@@ -811,20 +811,20 @@
     "staff-female": "Solmere Academy staff poolside swimwear: a dark charcoal bikini with gold trim echoing the Academy crest, plunging halter top baring cleavage, high-cut bottoms, damp hair, authoritative yet elegant even half-dressed, dripping with sex appeal and unmistakably provocative"
   },
   "uniformsModest": {
-   "royal-student-male": "Solmere Academy royal student uniform: tailored deep navy long coat with gold piping and an embroidered royal crest, buttoned over a white shirt and navy waistcoat, fitted dark trousers, polished black boots, immaculate and aristocratic",
-   "royal-student-female": "Solmere Academy royal student uniform: tailored deep navy coat-dress with gold trim and an embroidered royal crest, high collar, knee-length pleated skirt, dark stockings, heeled boots, pristine and aristocratic",
-   "commoner-student-male": "Solmere Academy commoner student uniform: plain charcoal-grey jacket over a white shirt, dark trousers, sturdy worn boots, no crest or noble insignia, a little rumpled",
-   "commoner-student-female": "Solmere Academy commoner student uniform: charcoal-grey blazer over a white blouse, knee-length pleated skirt, dark stockings, sturdy boots, no crest or noble insignia, neat and practical",
-   "staff-male": "Solmere Academy staff uniform: dark charcoal academy robes closed over a high-collared shirt, gold piping and an embroidered Academy crest, structured high collar, polished black boots, immaculate and prestigious",
-   "staff-female": "Solmere Academy staff uniform: dark charcoal tailored coat with gold piping and an embroidered Academy crest, structured high collar, long straight skirt, heeled boots, pristine and sophisticated"
+   "royal-student-male": "Solmere Academy royal robes: a floor-length deep navy robe with gold sigil embroidery and an embroidered royal crest at the breast, closed with a wide gold-worked sash, a heavy navy mantle across broad shoulders, long sleeves, polished black boots, a tall muscular man, immaculate and aristocratic",
+   "royal-student-female": "Solmere Academy royal robes: a floor-length deep navy robe with gold sigil embroidery and an embroidered royal crest, a fitted high-necked bodice over large breasts, a wide gold-worked sash at the waist, a heavy navy mantle over the shoulders, long sleeves, heeled boots, pristine and aristocratic",
+   "commoner-student-male": "Solmere Academy commoner robes: a floor-length charcoal-grey robe, plain, closed with a worn leather sash, a short grey mantle across broad shoulders, long sleeves, sturdy worn boots, no crest or noble insignia, a tall muscular man, a little rumpled",
+   "commoner-student-female": "Solmere Academy commoner robes: a floor-length charcoal-grey robe, plain, a fitted high-necked bodice over large breasts, a worn leather sash at the waist, a short grey mantle over the shoulders, long sleeves, sturdy boots, no crest or noble insignia, neat and practical",
+   "staff-male": "Solmere Academy staff robes: floor-length dark charcoal formal robes with gold piping and an embroidered Academy crest, a structured high collar, closed with a broad black sash, a heavy black mantle across broad shoulders, polished black boots, a staff at his side, a tall muscular man, commanding and severe",
+   "staff-female": "Solmere Academy staff robes: floor-length dark charcoal formal robes with gold piping and an embroidered Academy crest, a structured high collar, a fitted high-necked bodice over large breasts, a broad black sash at the waist, a heavy black mantle over the shoulders, heeled boots, a staff at her side, composed and commanding"
   },
   "poolUniformsModest": {
-   "royal-student-male": "Solmere Academy poolside swimwear: knee-length navy swim shorts with subtle gold piping echoing the royal crest, a loose white linen shirt worn open, damp hair, bare feet, aristocratic and relaxed",
-   "royal-student-female": "Solmere Academy poolside swimwear: a deep navy bikini with delicate gold trim echoing the royal crest, a modest halter top and mid-rise bottoms, damp hair braided, no nudity, aristocratic and composed",
-   "commoner-student-male": "Solmere Academy poolside swimwear: plain charcoal-grey knee-length swim shorts, a grey towel over one shoulder, no crest or insignia, damp hair, easygoing",
-   "commoner-student-female": "Solmere Academy poolside swimwear: a charcoal-grey bikini with simple trim, modest top and mid-rise bottoms, no crest or noble insignia, damp hair, no nudity, cheerful and unbothered",
-   "staff-male": "Solmere Academy staff poolside swimwear: dark knee-length swim shorts with gold piping echoing the Academy crest, a dark short-sleeved swim shirt, damp close-cropped hair, authoritative even off duty",
-   "staff-female": "Solmere Academy staff poolside swimwear: a dark charcoal bikini with gold trim echoing the Academy crest, modest halter top and mid-rise bottoms, a long dark wrap at the waist, damp hair pinned up, authoritative and elegant"
+   "royal-student-male": "Solmere Academy poolside swimwear: knee-length navy swim shorts with subtle gold piping echoing the royal crest, a loose white linen shirt worn open, damp hair, bare feet, a tall muscular man, aristocratic and relaxed",
+   "royal-student-female": "Solmere Academy poolside swimwear: a deep navy bikini with delicate gold trim echoing the royal crest, a modest halter top over large breasts and mid-rise bottoms, damp hair braided, no nudity, aristocratic and composed",
+   "commoner-student-male": "Solmere Academy poolside swimwear: plain charcoal-grey knee-length swim shorts, a grey towel over one shoulder, no crest or insignia, damp hair, a tall muscular man, easygoing",
+   "commoner-student-female": "Solmere Academy poolside swimwear: a charcoal-grey bikini with simple trim, a modest top over large breasts and mid-rise bottoms, no crest or noble insignia, damp hair, no nudity, cheerful and unbothered",
+   "staff-male": "Solmere Academy staff poolside swimwear: dark knee-length swim shorts with gold piping echoing the Academy crest, a dark short-sleeved swim shirt, damp close-cropped hair, a tall muscular man, authoritative even off duty",
+   "staff-female": "Solmere Academy staff poolside swimwear: a dark charcoal bikini with gold trim echoing the Academy crest, a modest halter top over large breasts and mid-rise bottoms, a long dark wrap at the waist, damp hair pinned up, authoritative and elegant"
   },
   "clothingStates": {
     "male": {
