@@ -16,6 +16,33 @@ project-root `Change Log Archive.md`.
 
 ## 26/08/2026
 
+
+- Solmere.json — **NPC identities and locationScenery trimmed.** Each
+  identity dropped its baked stance/expression/posture clause (which now
+  collides with the engine's own pose and expression fields) and its
+  redundant adjectives and meta, keeping age, build, face, hair and eyes;
+  each scenery string dropped the "the X of a magic academy" lead where the
+  description already carries the place. No garment or uniform text touched.
+  Shortens every image prompt; the 3-character composite drops well under
+  the truncation limit. Re-push required.
+
+- Solmere.json — **`uniformsModest` and `poolUniformsModest` rewritten as
+  academy robes with one adult-body fact per gender.** The Costume Anchor
+  Test (Test Environments/README.md) measured the previous modest set —
+  blazer, white blouse, knee-length pleated skirt, dark stockings,
+  waistcoat — putting a child in 7-8 of 8 composite images once identity
+  text carried no body description, and still failing with a body fact
+  bolted on; floor-length robes with the fact went to 0/8. Every modest
+  entry is now a floor-length robe distinguished by cut and trim: royal
+  navy with gold sigil embroidery, crest and a heavy mantle; commoner
+  charcoal-grey, plain, leather sash, short mantle, no crest; staff dark
+  charcoal formal robes, gold piping, structured collar, black mantle,
+  a staff. Women: "a fitted high-necked bodice over large breasts"; men:
+  "a tall muscular man". Labels read "royal robes" / "commoner robes" /
+  "staff robes" — no "student". Pool set keeps its garments and gains the
+  same fact per entry. 39-52 words each. Originals untouched. Re-push
+  required.
+
 - Solmere.json — **`titleImageUrl` and `narrationBackdropUrl` removed
   (again).** The engine log of 25/08 records them removed, but the file
   on disk this morning still carried both, so today's rewrite (modest
