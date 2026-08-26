@@ -15,7 +15,34 @@ in the engine log and referenced here in one line. Never write it out twice.
 Entries from 16/08/2026 to 22/08/2026 predate this split and are in the
 project-root `Change Log Archive.md`.
 
+## 26/08/2026
+
+- Hollowburn.json — **NPC identities trimmed.** Each identity dropped its baked
+  stance / posture / movement / expression tail (which collided with the
+  engine's own pose and expression fields) and any meta, keeping age,
+  build, face, hair, eyes and distinctive marks. The Marra (the shadow entity) left as-is — not a person; Evelyn's forearm crutches kept. No uniform text
+  touched. Shortens every image prompt. Re-push required.
+
 ## 25/08/2026
+
+- `events` authored — 6, all once-only, none of them fires a milestone. Day 1 Morning — Peter Blythe comes in off the night shift and goes up to bed; Day 2 Afternoon — Kirsty Vane turns up at the front door with a bag of chips and no intention of leaving before dark; Day 3 Dusk — Quiz night at the Half Moon Inn — half the village is in, Sheila Rudd behind the bar, Nate Ogle and Barry Kelso at their table; Day 4 Morning — Sunday; Day 5 Small Hours — Peter Blythe's car starts in the cul-de-sac at a quarter to three and pulls away; Day 6 Night — The power goes off across the whole estate for about an hour. World pressure and texture on the clock; the arc's milestones stay the only thing that moves the acts. The engine mechanism is generic and written up in the engine log at `Generator/Steak and Bake Stories/Change Log.md`.
+- `known` set on 2 of the events, so they show under the Journal's Coming up: Quiz night, Half Moon Inn (Day 3 Dusk); Sunday service, St Aidan's (Day 4 Morning). The rest stay unannounced.
+
+- `Hollowburn.json` — **story arc.** The Adventure can now end. Renders
+  the canon's own arc into the contract rather than inventing one. Three
+  acts: *Four months awake* (until the shift change), *The witness*
+  (until the long night, or the hidden passive-player fallback
+  `stopped_telling`), *The seam*. Ten milestones: `the_recording`,
+  `telling_the_sibling` (told/spared), `the_shift_change`, `evelyn`
+  (admitted/steered), hidden `dads_mileage` → `the_pit_head_at_three`,
+  `the_eleventh_name`, `stopped_telling` (hidden), `the_long_night`,
+  `the_seam` (named/bargained/fed/ran). Written sibling-neutral so both
+  rosters read correctly. Six endings: four `when` off the seam (*Marra*,
+  *One and the Rest*, *Four Doors Down*, *The Front Door*), *Getting
+  Better* as the final-act fallback, and *The Gap in the Photographs*
+  (going down) restart-only and `anyTime`. Every milestone description
+  states how little of the Marra the beat is allowed. Harness: 75
+  assertions, 0 failures (same scenario set as Halcyon). Needs a push.
 
 - `Hollowburn.json` — NPC schedules. Every NPC now carries `usualLocation` and a per-phase `schedule`, so the engine's WHO IS WHERE block runs on this Adventure (it emitted nothing before — no NPC had a routine, so the model placed people by feel). Location names verified against the JSON's `locations` list; presence block rendered headless from the starting location. Needs a push to go live. Same routine on both rosters (Jonah/Mara). Calls: Peter is null at Small Hours and Night — he works nights but not every night, and where he is at three a.m. is the mystery; Kirsty, Yasmin and Denny take nulls where they'd otherwise be wrongly placed at the cul-de-sac or the pub overnight (no home locations exist for them). **The Marra has no schedule and `omitFromPresence: true`** — engine flag added the same day (engine log), because an NPC with no routine is otherwise listed every turn as "may be anywhere, including right where the player is", which is the opposite of "appears rarely, never casually".
 
