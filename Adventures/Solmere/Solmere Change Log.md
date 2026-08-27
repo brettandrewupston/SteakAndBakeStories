@@ -14,7 +14,32 @@ in the engine log and referenced here in one line. Never write it out twice.
 Entries from 16/08/2026 to 22/08/2026 predate this split and are in the
 project-root `Change Log Archive.md`.
 
+## 27/08/2026
+
+- Solmere.json — **`altUniforms` and `altPoolUniforms` added: tournament
+  duelling kit.** A second complete wardrobe over the same six categories,
+  selected by the engine's Alternate outfits row (written in full in the
+  engine log, 26/08/2026). Fitted leather harnesses and laced bodices,
+  pauldrons, bracers, greaves and boots — navy with the gold royal crest,
+  scuffed mismatched charcoal for commoners, a sleeveless marshal's coat
+  for staff — so crest and colour still say royal, commoner or staff at a
+  glance. Same register as the standard set: closing clause verbatim, one
+  adult-body fact per entry. Deliberately not a tidied school uniform;
+  blazer, blouse, pleated skirt and stockings are the garments that pull
+  the image model toward children, and duelling kit avoids them entirely.
+  `altPoolUniforms` is tournament swimwear in house colours. 42 words on
+  average, 44 at most, against a standard set at 44/46. `uniforms`,
+  `poolUniforms` and `clothingStates` untouched. Needs a re-push.
+
+- Solmere.txt — **the `uniformsModest` / "Fan service Off" paragraph
+  removed.** It described a set that was stripped from the JSON on
+  26/08/2026 with the engine toggle, and the section it sat in also
+  carried two different word caps (40-52 and ~40). The stale paragraph and
+  the superseded cap are gone; the current cap paragraph stands alone.
+
 ## 26/08/2026
+
+- Solmere.json — **`uniformsModest` and `poolUniformsModest` removed** with the engine's Fan service toggle (see the engine log, 26/08/2026); `uniforms` / `poolUniforms` untouched. Needs a re-push.
 
 
 - Solmere.json — **NPC identities and locationScenery trimmed.** Each
