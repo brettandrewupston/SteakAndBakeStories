@@ -12,7 +12,25 @@ in the engine log at `Generator/Steak and Bake Stories/Change Log.md`.
 An engine change whose first use is this Adventure's data is written in full
 in the engine log and referenced here in one line. Never write it out twice.
 
+## 27/08/2026
+
+- Gallant.json — **`altUniforms` added: press night.** A second complete
+  wardrobe over the same nine categories, selected by the engine's
+  Alternate outfits row (written in full in the engine log, 26/08/2026).
+  Hired jackets over costume tops for Category D, a dress version of the
+  Cardinal plating with a short cape and gold sponsor decals for the
+  A-list, GPA dress uniform with service ribbons a size too small,
+  going-out clothes for civilians, couture for the exec — star tier still
+  reads instantly, which is what this Adventure's costume language is for.
+  `fully clothed, clearly an adult` carried verbatim on every entry, one
+  adult-body fact per entry. No `altPoolUniforms` — no wet locations, same
+  as the standard set. 40 words on average, 45 at most, against a standard
+  set at 43/46. `uniforms` and `clothingStates` untouched. Needs a
+  re-push.
+
 ## 26/08/2026
+
+- Gallant.json — **`uniformsModest` removed** with the engine's Fan service toggle (see the engine log, 26/08/2026); `uniforms` untouched. Needs a re-push.
 
 
 - Gallant.json — **NPC identities trimmed.** Each identity dropped its baked

@@ -113,13 +113,43 @@
   ],
   "startingPhase": "Day Shift",
   "events": [
-    {"day": 1, "phase": "Rush Hour", "instruction": "A gas main goes up on Clement Street at four. Halo has a merchandise drop at six and the A-list are already in the street with the cameras up. The callout is declined to Category D at the last minute, once the footage is in the can."},
-    {"day": 1, "phase": "Night Shift", "instruction": "The fourth floor is on the roof, as it is most nights. A Yolanda Pesch one-star lands on somebody's phone and gets read aloud to the whole roof."},
-    {"day": 2, "phase": "Day Shift", "instruction": "Marguerite Delph delivers the player's welcome pack, which is an invoice, and the week's rota. The player's first callout slot is on it."},
-    {"day": 3, "phase": "Small Hours", "instruction": "The laundry's only working dryer dies at three in the morning with half the fourth floor's clothes inside it."},
-    {"day": 4, "phase": "Rush Hour", "instruction": "Kell Brannigan parks a sponsored vehicle across the Ganymede's fire exit for a street shoot. The GPA's building inspection is due the same afternoon.", "known": "GPA building inspection"},
-    {"day": 6, "phase": "Sundown", "instruction": "The VANTAGE mid-quarter leaderboard goes up on the lobby screen. The bottom three licence holders in Precinct 9 are named, and everybody in the building checks where they stand.", "known": "Mid-quarter leaderboard posted"},
-    {"day": 8, "phase": "Sundown", "instruction": "Something is burning in the Blackout Block. No response is sent, no callout is issued, and the smoke is visible from the roof."}
+    {
+      "day": 1,
+      "phase": "Rush Hour",
+      "instruction": "A gas main goes up on Clement Street at four. Halo has a merchandise drop at six and the A-list are already in the street with the cameras up. The callout is declined to Category D at the last minute, once the footage is in the can."
+    },
+    {
+      "day": 1,
+      "phase": "Night Shift",
+      "instruction": "The fourth floor is on the roof, as it is most nights. A Yolanda Pesch one-star lands on somebody's phone and gets read aloud to the whole roof."
+    },
+    {
+      "day": 2,
+      "phase": "Day Shift",
+      "instruction": "Marguerite Delph delivers the player's welcome pack, which is an invoice, and the week's rota. The player's first callout slot is on it."
+    },
+    {
+      "day": 3,
+      "phase": "Small Hours",
+      "instruction": "The laundry's only working dryer dies at three in the morning with half the fourth floor's clothes inside it."
+    },
+    {
+      "day": 4,
+      "phase": "Rush Hour",
+      "instruction": "Kell Brannigan parks a sponsored vehicle across the Ganymede's fire exit for a street shoot. The GPA's building inspection is due the same afternoon.",
+      "known": "GPA building inspection"
+    },
+    {
+      "day": 6,
+      "phase": "Sundown",
+      "instruction": "The VANTAGE mid-quarter leaderboard goes up on the lobby screen. The bottom three licence holders in Precinct 9 are named, and everybody in the building checks where they stand.",
+      "known": "Mid-quarter leaderboard posted"
+    },
+    {
+      "day": 8,
+      "phase": "Sundown",
+      "instruction": "Something is burning in the Blackout Block. No response is sent, no callout is issued, and the smoke is visible from the roof."
+    }
   ],
   "locations": [
     "Ganymede Lobby",
@@ -874,16 +904,16 @@
     "civ-female": "ordinary Gallant City street clothes chosen to show everything off: a cropped fitted top ending at the ribs over a bare waist, an open jacket, a short skirt low on the hips, everything cut skin-close, fully clothed, clearly an adult",
     "exec-female": "a considerably better suit than anyone in the city owns, cut like a second skin: a nipped waist, a blazer worn over bare skin and nothing else, a short tight skirt, sheer legs, very high heels, fully clothed, clearly an adult"
   },
-  "uniformsModest": {
-    "dlist-male": "home-made Category D costume: a surplus bodysuit, hand-re-sewn, zipped to the throat, sleeves gone over thick arms, webbing at the waist, thigh straps, scuffed knee-high boots, an off-centre iron-on logo, a GPA licence patch, a tall muscular man, fully clothed, clearly an adult",
-    "dlist-female": "home-made Category D costume: a surplus bodysuit, hand-re-sewn, zipped to the throat over large breasts, long sleeves, webbing at the waist, thigh straps, scuffed knee-high boots, an off-centre iron-on logo, a GPA licence patch, fully clothed, clearly an adult",
-    "alist-male": "Cardinal-issue A-list armour: full moulded composite plating in brand colours, chest, waist and thighs covered, a high sealed collar, sponsor decals placed for the cameras, immaculate and studio-built, a tall muscular man, fully clothed, clearly an adult",
-    "alist-female": "Cardinal-issue A-list armour: full moulded composite plating in brand colours, a sealed high collar, a chestplate shaped over large breasts, waist, hips and legs covered, sponsor decals placed for the cameras, immaculate and studio-built, fully clothed, clearly an adult",
-    "vpa-male": "Gallant Powers Authority municipal kit: a polyester uniform shirt buttoned to the collar, sleeves rolled to the elbow, issue trousers, scuffed shoes, a lanyard and radio, a tall muscular man, fully clothed, clearly an adult",
-    "vpa-female": "Gallant Powers Authority municipal kit: a polyester uniform blouse buttoned to the collar over large breasts, sleeves rolled to the elbow, an issue knee-length skirt, dark tights, flat shoes, a lanyard and radio, fully clothed, clearly an adult",
-    "civ-male": "ordinary Gallant City street clothes: a fitted tee, an open jacket, jeans, trainers, a tall muscular man, fully clothed, clearly an adult",
-    "civ-female": "ordinary Gallant City street clothes: a fitted top over large breasts, an open jacket, jeans, trainers, fully clothed, clearly an adult",
-    "exec-female": "a considerably better suit than anyone in the city owns: a tailored blazer buttoned over a silk blouse and large breasts, a knee-length pencil skirt, dark hosiery, heels, fully clothed, clearly an adult"
+  "altUniforms": {
+    "dlist-male": "Category D on the press line: a hired dinner jacket worn over the costume's zip-front top, unzipped past the sternum over a bare chest, borrowed trousers a size out, the same scuffed boots, GPA licence patch pinned to the lapel, fully clothed, clearly an adult",
+    "dlist-female": "Category D on the press line: a hired jacket over the costume's zip-front top, unzipped to the navel over deep cleavage and a bare midriff, a borrowed short skirt, the same scuffed thigh-high boots, GPA licence patch at the lapel, fully clothed, clearly an adult",
+    "alist-male": "Cardinal-issue awards armour: a dress version of the brand plating, glossy and skin-tight, contoured to the chest and thighs, the collar cut open low over bare skin, a short cape at one shoulder, sponsor decals in gold, studio-built, fully clothed, clearly an adult",
+    "alist-female": "Cardinal-issue awards armour: a dress version of the brand plating, glossy and skin-tight, contoured to the bust and hips, plunging to the navel, the leg cut to the hip, a short cape, sponsor decals in gold, studio-built, fully clothed, clearly an adult",
+    "vpa-male": "Gallant Powers Authority dress uniform: a formal tunic a size too small, straining across the chest, collar open at the throat, sleeves tight over the biceps, service ribbons, issue trousers taken in past spec, polished shoes, fully clothed, clearly an adult",
+    "vpa-female": "Gallant Powers Authority dress uniform: a formal tunic a size too small, straining across the chest, collar open, sleeves tight over the biceps, service ribbons, an issue skirt taken in past spec and riding high, bare legs, fully clothed, clearly an adult",
+    "civ-male": "ordinary Gallant City going-out clothes chosen to show everything off: a shirt worn open over a bare stomach, jeans low on the hips, everything cut skin-close, a press-line wristband, fully clothed, clearly an adult",
+    "civ-female": "ordinary Gallant City going-out clothes chosen to show everything off: a short slip dress cut low over cleavage and high over the thigh, everything skin-close, a press-line wristband, fully clothed, clearly an adult",
+    "exec-female": "couture built for the cameras: a black column gown cut like a second skin, plunging to the navel, a nipped waist, the slit taken to the hip, sheer legs, very high heels, fully clothed, clearly an adult"
   },
   "clothingStates": {
     "male": {
