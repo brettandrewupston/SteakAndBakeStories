@@ -13,6 +13,15 @@ in the engine log and referenced here in one line. Never write it out twice.
 
 ## 27/08/2026
 
+- Vermillion.json, Vermillion.txt — **Roy Kilbane's rank moved out of his
+  name.** The roster name is `Roy Kilbane`; the rank opens his `bio`
+  ("Detective Lieutenant, Calder Bay PD, 44..."), which is AI context rather
+  than image-prompt text. `Det. Lt. Roy Kilbane` matched nothing the model
+  wrote — his own setup tile calls him Roy Kilbane — and titles are
+  deliberately not stripped by the resolver, since an Adventure may author
+  one into a name (Solmere's "Instructor Voss"). `token` is unchanged. The
+  outline's cast list follows. Needs a re-push.
+
 - Vermillion.json — both opening scenes name her exactly as the roster does,
   `SPEAKER: Josephine "Joey" Marsh`. The engine resolves the short form
   either way now (written in full in the engine log, 27/08/2026). Needs a
