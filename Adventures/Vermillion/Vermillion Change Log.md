@@ -11,7 +11,30 @@ in the engine log at `Generator/Steak and Bake Stories/Change Log.md`.
 An engine change whose first use is this Adventure's data is written in full
 in the engine log and referenced here in one line. Never write it out twice.
 
+## 27/08/2026
+
+- Vermillion.json — both opening scenes name her exactly as the roster does,
+  `SPEAKER: Josephine "Joey" Marsh`. The engine resolves the short form
+  either way now (written in full in the engine log, 27/08/2026). Needs a
+  re-push.
+
+- Vermillion.json — **`altUniforms` and `altPoolUniforms` added: the cast
+  out in the city.** A second complete wardrobe over the same twelve
+  categories, selected by the engine's Alternate outfits row (written in
+  full in the engine log, 26/08/2026). Overcoats and belted trenches, day
+  dresses and knitwear, hats, gloves and seamed stockings, holsters worn
+  where they show, the Sparrow's suit under a beautifully cut coat — drape
+  rather than cut-outs, the way the standard set does it.
+  `altPoolUniforms` is the Grotto and the Ambrosia Baths at noon rather
+  than midnight: high-waisted retro maillots, silk and towelling robes worn
+  open, the jewellery still on. Both closing clauses verbatim in the
+  standard set's order, one adult-body fact per entry. 44 words on average,
+  47 at most, against a standard set at 50/50. `uniforms`, `poolUniforms`
+  and `clothingStates` untouched. Needs a re-push.
+
 ## 26/08/2026
+
+- Vermillion.json — **`uniformsModest` and `poolUniformsModest` removed** with the engine's Fan service toggle (see the engine log, 26/08/2026); `uniforms` / `poolUniforms` untouched. Needs a re-push.
 
 
 - Vermillion.json — **NPC identities trimmed.** Each identity dropped its baked
