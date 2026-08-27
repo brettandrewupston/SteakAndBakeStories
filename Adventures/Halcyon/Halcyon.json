@@ -796,6 +796,14 @@
     "production-male": "Paradise Rebuilt production crew look: an unstructured pale linen shirt open several buttons over a smooth tanned chest, sleeves rolled, tailored light shorts, a lanyard and radio at the hip, sunglasses pushed into the hair, dripping with sex appeal and unmistakably provocative",
     "production-female": "Paradise Rebuilt production crew look: a sleek fitted linen vest open to bare cleavage, tucked into high-waisted tailored shorts baring long legs, a lanyard and radio at the hip, sunglasses pushed into the hair, dripping with sex appeal and unmistakably provocative"
   },
+  "altUniforms": {
+    "contestant-male": "Paradise Rebuilt reveal-night look: a crisp white shirt hanging open to the waist over a bare tanned chest and cut abs, sleeves rolled, tailored linen trousers, a good belt, barefoot on warm stone, dripping with sex appeal and unmistakably provocative",
+    "contestant-female": "Paradise Rebuilt reveal-night look: a slip dress in show colours cut very short, thin straps, plunging neckline baring deep cleavage, a slit high over the thigh, gold sandals, hair styled out for camera, dripping with sex appeal and unmistakably provocative",
+    "staff-male": "Halcyon reveal-night staff dress: a fitted dark resort jacket worn over a bare tanned chest with no shirt, tailored trousers cut close, the faded palm crest at the lapel, bare feet, dripping with sex appeal and unmistakably provocative",
+    "staff-female": "Halcyon reveal-night staff dress: a fitted dark cocktail dress cut extremely short, halter neckline baring cleavage, the palm crest pinned at the hip, sheer stockings, low heels, hair pinned up, dripping with sex appeal and unmistakably provocative",
+    "production-male": "Paradise Rebuilt reveal-night crew look: a pale linen suit worn over bare skin, jacket open across a smooth tanned chest, sleeves pushed back, sunglasses in the hair, a radio still clipped at the hip, dripping with sex appeal and unmistakably provocative",
+    "production-female": "Paradise Rebuilt reveal-night crew look: a satin jumpsuit unzipped low to bare cleavage, cut close over the waist and hips, a lanyard swapped for gold, sunglasses pushed into styled hair, heels, dripping with sex appeal and unmistakably provocative"
+  },
   "wetLocations": [
     "Pool Deck",
     "Beach",
@@ -809,21 +817,13 @@
     "production-male": "Paradise Rebuilt poolside: pale linen shirt hanging fully open and clinging damp to a smooth tanned chest, tailored swim shorts, sunglasses pushed into wet hair, bare feet, still somehow perfectly styled, dripping with sex appeal and unmistakably provocative",
     "production-female": "Paradise Rebuilt poolside: a sleek minimal bikini in muted neutral tones, an unbuttoned linen shirt hanging open over it, sunglasses pushed into damp hair, bare feet, immaculate even wet, dripping with sex appeal and unmistakably provocative"
   },
-  "uniformsModest": {
-   "contestant-male": "Paradise Rebuilt contestant work kit: a branded high-vis vest over a fitted grey work t-shirt, durable work shorts to the knee, a heavy leather tool belt, work boots, dust across the shoulders",
-   "contestant-female": "Paradise Rebuilt contestant work kit: a branded high-vis vest over a fitted grey work t-shirt, durable work shorts to the knee, a leather tool belt, work boots, hair tied back, a smear of dust on one cheek",
-   "staff-male": "Halcyon resort staff uniform: a crisp white short-sleeved resort shirt buttoned to the collar, tailored dark resort trousers, a woven belt, canvas shoes, the faded palm crest at the pocket",
-   "staff-female": "Halcyon resort staff uniform: a fitted white resort blouse buttoned to the collar, a tailored knee-length dark skirt, a small apron, flat shoes, the palm crest at the breast",
-   "production-male": "Paradise Rebuilt production crew look: an unstructured pale linen shirt buttoned, sleeves rolled, tailored light trousers, a lanyard and radio at the hip, sunglasses pushed into the hair",
-   "production-female": "Paradise Rebuilt production crew look: a sleek fitted linen shirt tucked into high-waisted tailored trousers, a lanyard and radio at the hip, sunglasses pushed into the hair"
-  },
-  "poolUniformsModest": {
-   "contestant-male": "Paradise Rebuilt poolside: knee-length branded swim shorts in show colours, a branded rash vest, wet hair pushed back, bare feet, sunburn coming up across the shoulders",
-   "contestant-female": "Paradise Rebuilt poolside: a branded bikini in show colours, modest top and mid-rise bottoms, hair damp and pushed back, no nudity, sun-flushed and cheerful",
-   "staff-male": "Halcyon poolside: dark knee-length swim shorts with the resort's faded palm crest, a loose white resort shirt worn open over a swim top, damp hair pushed back, bare feet, relaxed and off-duty",
-   "staff-female": "Halcyon poolside: a dark bikini with the resort's faded palm crest at the hip, modest halter top and mid-rise bottoms, a wrap at the waist, damp hair loose, no nudity, off-duty and composed",
-   "production-male": "Paradise Rebuilt poolside: pale linen shirt buttoned and clinging damp, tailored knee-length swim shorts, sunglasses pushed into wet hair, bare feet, still somehow perfectly styled",
-   "production-female": "Paradise Rebuilt poolside: a sleek bikini in muted neutral tones, modest cut, a buttoned linen shirt worn open over it, sunglasses pushed into damp hair, bare feet, immaculate even wet"
+  "altPoolUniforms": {
+    "contestant-male": "Paradise Rebuilt reveal-night poolside: gold-trimmed swim shorts in show colours, bare chiseled chest and cut abs oiled for camera, wet hair pushed back, bare feet, sun-flushed shoulders, no shirt, dripping with sex appeal and unmistakably provocative",
+    "contestant-female": "Paradise Rebuilt reveal-night poolside: a gold string bikini in show colours, plunging top baring generous cleavage, bottoms cut high over the hips and thighs, oiled skin, hair styled out, no nudity, sun-flushed and confident, dripping with sex appeal and unmistakably provocative",
+    "staff-male": "Halcyon reveal-night poolside: dark tailored swim shorts with the resort's palm crest, bare tanned defined torso wet from the pool, damp hair pushed back, bare feet, relaxed and off-duty, dripping with sex appeal and unmistakably provocative",
+    "staff-female": "Halcyon reveal-night poolside: a dark satin bikini with the resort's palm crest at the hip, halter top baring cleavage, bottoms cut high, skin wet and glistening, damp hair loose, no nudity, off-duty and striking, dripping with sex appeal and unmistakably provocative",
+    "production-male": "Paradise Rebuilt reveal-night poolside: an open linen shirt clinging damp to a smooth tanned chest, tailored swim shorts, sunglasses pushed into wet hair, bare feet, still somehow perfectly styled, dripping with sex appeal and unmistakably provocative",
+    "production-female": "Paradise Rebuilt reveal-night poolside: a satin bikini in muted gold, cut close over the hips, a linen shirt hanging open across bared cleavage, sunglasses pushed into damp hair, bare feet, immaculate even wet, dripping with sex appeal and unmistakably provocative"
   },
   "clothingStates": {
     "male": {

@@ -14,7 +14,23 @@ in the engine log and referenced here in one line. Never write it out twice.
 Entries from 16/08/2026 to 22/08/2026 predate this split and are in the
 project-root `Change Log Archive.md`.
 
+## 27/08/2026
+
+- Halcyon.json — **`altUniforms` and `altPoolUniforms` added: reveal-night
+  glamour.** A second complete wardrobe over the same six categories,
+  selected by the engine's Alternate outfits row (written in full in the
+  engine log, 26/08/2026). Open white shirts and pale linen suits, slip
+  dresses and satin jumpsuits, sandals and low heels, the faded palm crest
+  moved to a lapel or a hip — the cast dressed for the cameras that pay for
+  the island rather than for the build. `altPoolUniforms` is the same night
+  at the pool, styled for broadcast. Closing clause verbatim and one
+  adult-body fact per entry, same as the standard set. 39 words on average,
+  41 at most, against a standard set at 43/47. `uniforms`, `poolUniforms`
+  and `clothingStates` untouched. Needs a re-push.
+
 ## 26/08/2026
+
+- Halcyon.json — **`uniformsModest` and `poolUniformsModest` removed** with the engine's Fan service toggle (see the engine log, 26/08/2026); `uniforms` / `poolUniforms` untouched. Needs a re-push.
 
 
 - Halcyon.json — **NPC identities trimmed.** Each identity dropped its baked
