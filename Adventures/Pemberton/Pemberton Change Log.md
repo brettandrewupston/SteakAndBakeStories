@@ -11,6 +11,22 @@ in the engine log at `Generator/Steak and Bake Stories/Change Log.md`.
 An engine change whose first use is this Adventure's data is written in full
 in the engine log and referenced here in one line. Never write it out twice.
 
+## 27/08/2026
+
+- Pemberton.json — **`altUniforms` added: the ClipCorp rebrand uniform.**
+  A second complete wardrobe over the same eight categories, selected by
+  the engine's Alternate outfits row (written in full in the engine log,
+  26/08/2026). Branded stretch polos and zip jackets, navy chinos, pencil
+  skirts, cargo trousers, a ClipCorp pin on the exec tailoring, branded
+  coveralls for maintenance — new, cheap and resented, which is the branch
+  in a sentence, and department still reads at a glance. `system` is
+  carried across verbatim: the paperclip mascot is not clothing. No
+  `altPoolUniforms` — no wet locations, same as the standard set. Closing
+  clause verbatim and one adult-body fact per clothing entry. 43 words on
+  average, 46 at most (that maximum is the mascot entry), against a
+  standard set at 44/52. `uniforms` and `clothingStates` untouched. Needs a
+  re-push.
+
 ## 26/08/2026
 
 

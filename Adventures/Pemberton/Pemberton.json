@@ -117,13 +117,43 @@
   ],
   "startingPhase": "Before Nine",
   "events": [
-    {"day": 1, "phase": "Morning", "instruction": "Monday stand-up in Meeting Room 2. Gerald Thwaite reads the dashboard figures aloud and Clarence puts Employee of the Month on the screen behind him.", "known": "Monday stand-up, Meeting Room 2"},
-    {"day": 2, "phase": "Lunch", "instruction": "The kitchen fridge has been cleared. Everything in it is in a black bin bag in the Car Park, and an unsigned laminated note on the fridge door explains the new policy."},
-    {"day": 3, "phase": "Afternoon", "instruction": "Gail Tancred's weekly transfer sign-off. Kev Mullane takes a fully loaded van out of Dispatch, round to the west side of the site, and is back within twenty minutes with it empty."},
-    {"day": 4, "phase": "Before Nine", "instruction": "Nadia Rees is late for the first time in four years, and arrives dressed for an interview."},
-    {"day": 5, "phase": "After Hours", "instruction": "Friday. Most of the branch drifts to the Smoking Shelter after five, where there is no screen and no speaker. Colm Deasy is there and things get said that would not be said inside.", "known": "Friday, the Smoking Shelter"},
-    {"day": 7, "phase": "Morning", "instruction": "Tomasz Wrona's twelve-week agency renewal goes through and appears as a single line item on the dashboard's resource tile. Nobody reacts."},
-    {"day": 10, "phase": "Morning", "instruction": "A circular from head office congratulates Unit 4 on the quarter and books a photographer for next week. Gerald pins it in Reception under the leaderboard."}
+    {
+      "day": 1,
+      "phase": "Morning",
+      "instruction": "Monday stand-up in Meeting Room 2. Gerald Thwaite reads the dashboard figures aloud and Clarence puts Employee of the Month on the screen behind him.",
+      "known": "Monday stand-up, Meeting Room 2"
+    },
+    {
+      "day": 2,
+      "phase": "Lunch",
+      "instruction": "The kitchen fridge has been cleared. Everything in it is in a black bin bag in the Car Park, and an unsigned laminated note on the fridge door explains the new policy."
+    },
+    {
+      "day": 3,
+      "phase": "Afternoon",
+      "instruction": "Gail Tancred's weekly transfer sign-off. Kev Mullane takes a fully loaded van out of Dispatch, round to the west side of the site, and is back within twenty minutes with it empty."
+    },
+    {
+      "day": 4,
+      "phase": "Before Nine",
+      "instruction": "Nadia Rees is late for the first time in four years, and arrives dressed for an interview."
+    },
+    {
+      "day": 5,
+      "phase": "After Hours",
+      "instruction": "Friday. Most of the branch drifts to the Smoking Shelter after five, where there is no screen and no speaker. Colm Deasy is there and things get said that would not be said inside.",
+      "known": "Friday, the Smoking Shelter"
+    },
+    {
+      "day": 7,
+      "phase": "Morning",
+      "instruction": "Tomasz Wrona's twelve-week agency renewal goes through and appears as a single line item on the dashboard's resource tile. Nobody reacts."
+    },
+    {
+      "day": 10,
+      "phase": "Morning",
+      "instruction": "A circular from head office congratulates Unit 4 on the quarter and books a photographer for next week. Gerald pins it in Reception under the leaderboard."
+    }
   ],
   "locations": [
     "Reception",
@@ -813,6 +843,16 @@
     "exec-male": "head office tailoring: a considerably better suit than anyone in the building owns, jacket open, shirt unbuttoned to the waist over a hard, chiseled chest, tie hanging loose, trousers cut close, expensive shoes, dripping with sex appeal and unmistakably provocative",
     "exec-female": "head office tailoring: a considerably better suit than anyone in the building owns, the blazer open over a cropped low-cut camisole baring deep cleavage and a bare midriff, a very short tight skirt, thigh-high stockings, high heels, the easy confidence of someone leaving at four, dripping with sex appeal and unmistakably provocative",
     "maintenance-male": "navy work trousers slung low on the hips, a faded Pemberton Clip & Fastening polo torn off at the sleeves and open over a bare, powerfully built chest, a heavy bunch of keys on a belt loop, worn boots, dripping with sex appeal and unmistakably provocative",
+    "system": "not clothing: a smiling cartoon paperclip with two large friendly eyes and thin wire arms, flat 1997 clip-art style with a hard black outline, floating in a small grey bordered window on a beige CRT monitor screen"
+  },
+  "altUniforms": {
+    "floor-male": "ClipCorp rebrand uniform, mandated from head office: a branded stretch polo a size too small over a bare, chiseled chest, zip open at the throat, sleeves straining over thick forearms, slim navy chinos, a ClipCorp lanyard, new and hated, dripping with sex appeal and unmistakably provocative",
+    "floor-female": "ClipCorp rebrand uniform, mandated from head office: a branded stretch polo cut tight over a generous bust, zip open low over deep cleavage, a navy pencil skirt cut short and tight, thigh-high stockings, high heels, a ClipCorp lanyard, dripping with sex appeal and unmistakably provocative",
+    "warehouse-male": "ClipCorp rebrand warehouse kit: a branded zip jacket open over a bare, muscular chest and defined abs, cargo trousers slung low on the hips, steel-capped boots, ear defenders round the neck, a new scanner on the belt, dripping with sex appeal and unmistakably provocative",
+    "warehouse-female": "ClipCorp rebrand warehouse kit: a branded zip jacket open over a cropped tank tied high beneath a generous bust, bare midriff, cargo trousers cut low and cinched with a wide belt, steel-capped boots, hair tied back, dripping with sex appeal and unmistakably provocative",
+    "exec-male": "head office rebrand tailoring: a branded charcoal suit nobody else was issued, jacket open, shirt unbuttoned to the waist over a hard, chiseled chest, a ClipCorp pin at the lapel, trousers cut close, expensive shoes, dripping with sex appeal and unmistakably provocative",
+    "exec-female": "head office rebrand tailoring: a branded charcoal skirt suit nobody else was issued, blazer open over a low-cut camisole baring deep cleavage, a very short tight skirt, thigh-high stockings, high heels, a ClipCorp pin at the lapel, dripping with sex appeal and unmistakably provocative",
+    "maintenance-male": "branded navy ClipCorp coveralls unzipped to the waist and tied off at the hips over a bare, powerfully built chest, a heavy bunch of keys on a belt loop, worn boots, the new logo already scuffed, dripping with sex appeal and unmistakably provocative",
     "system": "not clothing: a smiling cartoon paperclip with two large friendly eyes and thin wire arms, flat 1997 clip-art style with a hard black outline, floating in a small grey bordered window on a beige CRT monitor screen"
   },
   "clothingStates": {
