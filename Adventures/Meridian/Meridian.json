@@ -613,7 +613,7 @@
         "likes": "genuine curiosity that isn't clinical, being asked about her own life rather than just observed, dry humor, quiet company, someone who treats her as a person rather than a fellow anomaly",
         "dislikes": "being lumped in with 'the specimens', condescension disguised as wonder, being asked to explain her entire species in one sitting, feigned familiarity",
         "attractedTo": "someone as curious about her as she is about them, patience, a good sense of humor about how strange this all is, warmth over politeness",
-        "identity": "a striking humanoid Sevari alien woman appearing in her late twenties, smooth opalescent lavender-toned skin with a faint natural shimmer, faintly luminescent pale-gold markings across her cheekbones and collarbone, large upturned violet eyes with vertical pupils, deep silver-blue hair in a loose braid, delicately pointed ears, a slender graceful build.",
+        "identity": "a striking humanoid Sevari alien woman appearing in her late twenties, smooth opalescent lavender-toned skin with a faint shimmer, luminescent pale-gold markings across her cheekbones and collarbone, large upturned violet eyes with vertical pupils, deep silver-blue hair in a loose braid, pointed ears, a slender graceful build.",
         "schedule": {
           "Early Shift": null,
           "Mid Shift": "Mess Hall",
@@ -770,7 +770,7 @@
         "likes": "genuine curiosity that isn't clinical, being asked about her own life rather than just observed, dry humor, quiet company, someone who treats her as a person rather than a fellow anomaly",
         "dislikes": "being lumped in with 'the specimens', condescension disguised as wonder, being asked to explain her entire species in one sitting, feigned familiarity",
         "attractedTo": "someone as curious about her as she is about them, patience, a good sense of humor about how strange this all is, warmth over politeness",
-        "identity": "a striking humanoid Sevari alien woman appearing in her late twenties, smooth opalescent lavender-toned skin with a faint natural shimmer, faintly luminescent pale-gold markings across her cheekbones and collarbone, large upturned violet eyes with vertical pupils, deep silver-blue hair in a loose braid, delicately pointed ears, a slender graceful build.",
+        "identity": "a striking humanoid Sevari alien woman appearing in her late twenties, smooth opalescent lavender-toned skin with a faint shimmer, luminescent pale-gold markings across her cheekbones and collarbone, large upturned violet eyes with vertical pupils, deep silver-blue hair in a loose braid, pointed ears, a slender graceful build.",
         "schedule": {
           "Early Shift": null,
           "Mid Shift": "Mess Hall",
@@ -1066,19 +1066,6 @@
       }
     ]
   },
-  "poseVocabulary": [
-    "sitting",
-    "standing",
-    "bending forward",
-    "hand to mouth",
-    "hands on hips",
-    "operating a console",
-    "jumping",
-    "kneeling",
-    "leaning against a wall",
-    "arms crossed",
-    "holding a medical scanner"
-  ],
   "expressionVocabulary": [
     "neutral",
     "soft smile",

@@ -14,6 +14,33 @@ in the engine log and referenced here in one line. Never write it out twice.
 Entries from 16/08/2026 to 22/08/2026 predate this split and are in the
 project-root `Change Log Archive.md`.
 
+## 28/08/2026
+
+- Meridian.json — `poseVocabulary` removed: the engine never read it (written
+  in full in the engine log, 28/08/2026). Needs a re-push.
+
+## 27/08/2026
+
+- Meridian.json — **identity text trimmed for the two-character composite
+  budget; uniforms untouched.** Two characters is the composite headcount
+  the Scene Image supports, and its prompt was close enough to this
+  backend's truncation point that a wordy pose pushed the second character's
+  outfit, pose and expression off the end. The rule applied throughout:
+  **identity describes the body and face, the uniform describes the
+  clothes** — where an identity restated clothing, the uniform clause in the
+  same prompt already carried it, so it went; where an attribute was stated
+  several ways, one statement stayed. Nothing was trimmed from a uniform
+  here, and no scar, hair, skin tone or age was dropped from any character.
+  Miravel's identity only. Meridian's `uniforms` are deliberately left
+  alone: they carry the tested lingerie vocabulary — `ultra-thin
+  translucent`, `sheer iridescent material`, `glowing neon fluorescent
+  trim`, `neon outlines` — that was measured to render as clothing rather
+  than as a bare figure, and it is not worth disturbing for the few
+  characters it holds. Measured with a one-off composite budget
+  harness, not retained (engine log, 27/08/2026), as the pose length at
+  which this Adventure's worst pair crosses the line: **137 to 151 chars**. Needs a
+  re-push.
+
 ## 26/08/2026
 
 - Meridian.json — **`altUniforms` and `altPoolUniforms` added: the ISV
@@ -36,8 +63,9 @@ project-root `Change Log Archive.md`.
   pool set). `uniforms`, `poolUniforms` and `clothingStates` are untouched;
   undressed states are shared between the two wardrobes. Needs a re-push.
 
-- Meridian.json — **`uniformsModest` and `poolUniformsModest` removed** with the engine's Fan service toggle (see the engine log, 26/08/2026); `uniforms` / `poolUniforms` untouched. Needs a re-push.
-
+- Meridian.json — **`uniformsModest` and `poolUniformsModest` removed** with
+  the engine's Fan service toggle (see the engine log, 26/08/2026);
+  `uniforms` / `poolUniforms` untouched. Needs a re-push.
 
 - Meridian.json — **NPC identities trimmed.** Each identity dropped its baked
   stance / posture / movement / expression tail (which collided with the
@@ -80,39 +108,46 @@ project-root `Change Log Archive.md`.
   image prompt's setting line, which until today was the bare location name.
   The engine mechanism is generic and is written up in full in the engine log
   at `Generator/Steak and Bake Stories/Change Log.md`.
+
 - `imageStyle` gained `professional photo`, placed with the other style
   tokens and ahead of the framing instruction:
   `painted anime style, cyberpunk aesthetic, professional photo, front on shot`
   A photographic quality token paired with a painted style token lifts
   detail, lighting and coherence without the render losing the style.
+
 - Story arc authored into `Story Definitions/Meridian.json`: ten
   milestones, three phases, six endings, using the engine arc mechanism
   built 23/08/2026. No engine change. Meridian is the third Adventure
   with an arc, after Solmere and Pemberton. Summary in `Meridian.txt`
   STORY ARC; the operative descriptions, journal lines and phase guidance
   live in the JSON and are not duplicated.
+
 - `settled` ("A life aboard") added to the design as a tenth milestone
   and a fourth `until` on act2. Act2 closes on commitment, so a player who
   opens none of the three roads would never leave it and `drift` — the
   final-phase fallback ending written for exactly that player — would be
   permanently unreachable. Hidden, so accepting your situation is never
   listed as an objective.
+
 - `rota` requires `told` rather than `pod_alive`, so the two locks on the
   escape can be found in either order; `escape` still requires both. A
   player can plausibly notice the watch pattern before they care about
   the pod, and gating it the other way would have made a puzzle into a
   sequence. `rota` therefore carries its own `hidden` flag rather than
   inheriting concealment.
+
 - Hidden flags sit on `pod_alive`, `rota`, `case_made` and `settled`
   only. Concealment is inherited, so `escape` surfaces in the Journal
   exactly when both its locks are found and `initiative_answered` when
   the case has been made — the escape route stays a discovery instead of
   a listed objective, without either milestone needing a flag.
+
 - `escape`'s description points the model at the current phase's NPC
   presence roster as the ground truth for who is standing in the EVA Bay,
   and states that an attempt made while the watch is posted resolves
   `caught`. This is what couples the arc to the routines authored earlier
   today rather than leaving the window to invention.
+
 - Verified with a simulated-playthrough harness (117 assertions, all
   passing) rather than by reading: the real arc functions are extracted
   by name from `Code/Bottom Panel.txt`, `currentStory`/`storyHistory` are
@@ -125,36 +160,42 @@ project-root `Change Log Archive.md`.
   route, every ending reachable by its own route and only its own,
   dead-end outcomes not ending the story, and undo rolling the phase
   back.
+
 - The arc's load-bearing premise addition: the player will not be
   released. The Meridian is three generations from anywhere and letting
   the only outsider aboard leave means the outside world learns where the
   Initiative went. Settled policy, not cruelty. Without it the Adventure
   has fascination but no pressure, and neither main ending costs
   anything.
+
 - Two endings requested by Brett — `escaped` (`when escape:launched`) and
   `known` (`when study_closed:complete`). `escaped` is not continuable:
   the whole cast is behind the player, so continuing would cost leaving
   its weight. `known` deliberately has no warm/cold variants — the ending
   beat already holds every relationship score, same convention as romance
   getting no ending id of its own.
+
 - Four further endings: `contained` (`when escape:caught`), which is what
   makes the escape attempt risky and therefore makes solving the rota
   worth anything; `course_change` (`when initiative_answered:turned`),
   the inverse of escaping — the player stays and the ship does not stay
   as it was; `death` (anyTime, not continuable, house convention); and
   `drift`, the final-phase fallback in Solmere's `also_ran` slot.
+
 - Escape gated on two locks rather than one, on the grounds that a
   single-lock puzzle is thin: the pod still draws power despite being
   logged derelict and needs the Chief Engineer or Miravel to revive
   (social), and the EVA Bay watch has one unmanned phase (observational).
-  The pod's origin stays unanswered — `Lore/Meridian/derelict-hook.txt`
+  The pod's origin stays unanswered — `Adventures/Meridian/Lore/derelict-hook.txt`
   unchanged.
+
 - New location **EVA Bay**, the airlock and the only way off the ship, a
   posted watch station off the Cargo Bay. Chosen over putting the rota on
   the Cargo Bay itself: a large room people legitimately pass through
   makes "someone is always here" read as coincidence, where a one-person
   watch station reads as deliberate. Not yet on `Maps/Meridian Map.svg`
   or in `Meridian.json` locations.
+
 - The watch window is **Early Shift** — handover, both watches on the
   Bridge for the log read. Chosen against Night Cycle, which is the first
   phase every player tries and is therefore authored as the most covered.
@@ -162,11 +203,13 @@ project-root `Change Log Archive.md`.
   Officer / Security Chief) rather than merely being occupied: one empty
   room is noise, four faces with a hole in the pattern is
   reconstructable.
+
 - Three fair discovery routes authored so the window is findable without
   narration ever stating it: the Ensign complaining about the watch bill,
   the Chief Engineer grumbling about handover, and Miravel at high
   relationship. The `rota` milestone fires only on the player naming or
   acting on the specific window, never on wondering aloud.
+
 - Crew routines authored into `Meridian.json` — `schedule` on all 14 NPC
   records across both rosters and all five phases, `usualLocation` on the
   four post-holding roles, `roamLocations` on the three that deliberately
@@ -186,13 +229,15 @@ project-root `Change Log Archive.md`.
   - Verified against a mirror of `npcScheduledLocation()`: every resolved
     cell and every roam entry is a real `locations` name, and Early Shift
     is the only phase with nobody at the EVA Bay.
+
 - `EVA Bay` added to `locations` in `Meridian.json` (after `Cargo Bay`),
-  to `Maps/Meridian Map.svg`, and to `Lore/Meridian/locations.txt`. On
+  to `Maps/Meridian Map.svg`, and to `Adventures/Meridian/Lore/locations.txt`. On
   the map it is a dead-end annex off the Cargo Bay sharing its red/dashed
   treatment, joined by a short red connector, with no spoke to the hub.
   All 12 `locations` were checked programmatically against the SVG's rect
   ids via `locationSlug()` — exact match both ways, none missing, none
   spare.
+
 - All 15 `uniforms` and all 15 `poolUniforms` entries rewritten. Every
   Meridian outfit is now lingerie rather than a duty uniform: ultra-thin
   translucent harnesses, bralettes and briefs in sheer iridescent
@@ -259,8 +304,9 @@ project-root `Change Log Archive.md`.
     carries the full material vocabulary, each role's text names exactly
     one trim colour and only its own, no entry repeats the imageStyle
     anchor, and every entry is inside its word budget.
+
 - `Story Definitions/Meridian.json`, `Maps/Meridian Map.svg` and
-  `Lore/Meridian/locations.txt` all need re-uploading to the GitHub
+  `Adventures/Meridian/Lore/locations.txt` all need re-uploading to the GitHub
   assets repo before any of this is live. `Code/Bottom Panel.txt` needed
   no change for the arc, the schedules, the new location or the uniform
   rewrite.
@@ -274,21 +320,26 @@ project-root `Change Log Archive.md`.
   `Generator/Steak and Bake Stories/Change Log.md`.
 
 ## 22/08/2026
+
 - Time phases authored: `timePhases` `Early Shift / Mid Shift / Late Shift /
   Off-Watch / Night Cycle`, `startingPhase` `Mid Shift` — a generation ship
   keeps watch rotations, not daylight. Engine mechanic in the engine log,
   22/08/2026.
-- Gained title-card art on the Adventure Selection screen. `Assets/TitleCards/ISVCard.webp`
-  is the hosted copy registered as this Adventure's `coverUrl`; the
-  full-size PNG beside it is the local master (see the project-root
-  `Change Log.md` for the export convention). Engine feature, written
-  up in full in `Generator/Steak and Bake Stories/Change Log.md`.
+
+- Gained title-card art on the Adventure Selection screen.
+  `Adventures/Meridian/Card.webp` is the hosted copy registered as this
+  Adventure's `coverUrl`; the full-size PNG beside it is the local master
+  (see the project-root `Change Log.md` for the export convention). Engine
+  feature, written up in full in `Generator/Steak and Bake Stories/Change
+  Log.md`.
+
 - The free-text **Appearance** box in `setupFields` is replaced by four
   grouped dropdowns — Hair style, Hair colour, Body type, Skin colour —
   each with a default and with per-option image-prompt phrasing. Engine
   feature (`select` field type, field grouping, composed player
   appearance), written up in full in
   `Generator/Steak and Bake Stories/Change Log.md`. Needs re-uploading to R2.
+
 - Removed the stale half of the OPEN item claiming no mapUrl exists —
   Maps/Meridian Map.svg is built and mapUrl is set in Meridian.json. Only
   narrationBackdropUrl is still outstanding.

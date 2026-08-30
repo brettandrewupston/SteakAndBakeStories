@@ -1005,18 +1005,6 @@
       }
     ]
   },
-  "poseVocabulary": [
-    "sitting",
-    "standing",
-    "bending forward",
-    "hand to mouth",
-    "hands on hips",
-    "casting a spell",
-    "jumping",
-    "kneeling",
-    "leaning against a wall",
-    "arms crossed"
-  ],
   "expressionVocabulary": [
     "neutral",
     "soft smile",

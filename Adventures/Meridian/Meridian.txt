@@ -1,6 +1,6 @@
 ISV MERIDIAN — ADVENTURE CONTENT
 ===========================================================
-Last updated: 24/08/2026
+Last updated: 28/08/2026
 Second Adventure built for the Story Generator, after Solmere. Architecture/
 decisions live in the parent folder's Goals.txt and Features.txt — this file
 is just this Adventure's canon (premise, both NPC rosters, map, setup
@@ -88,7 +88,7 @@ MALE ROSTER (active when the player is female)
 - Chief Petty Officer Marcus Iyer — Chief Engineer, finds the ship's whole
   reaction mildly ridiculous, the grounded/unbothered voice aboard.
   Category: engineering-male. Personality: blunt, dry, allergic to fuss.
-- Ensign Toby Reyes — youngest aboard, starstruck, zero filter, comic
+- Ensign Toby Reyes — newest aboard, starstruck, zero filter, comic
   relief with an obvious crush. Category: ensign-male. Personality:
   bubbly, talks too fast when nervous, endlessly earnest.
 
@@ -104,11 +104,11 @@ FEMALE ROSTER (active when the player is male)
   Dane — the rival/suspicion archetype. Category: security-female.
 - Chief Petty Officer Talia Brooks — Chief Engineer, same role/personality
   shape as Iyer. Category: engineering-female.
-- Ensign Mira Solano — youngest aboard, same role/personality shape as
+- Ensign Mira Solano — newest aboard, same role/personality shape as
   Reyes. Category: ensign-female.
 
 Full bio/likes/dislikes/attractedTo/identity text lives in Meridian.json
-and the matching Lore/Meridian/npc-*.txt files, not duplicated here.
+and the matching Adventures/Meridian/Lore/npc-*.txt files, not duplicated here.
 
 SHARED NPC — present in both rosters (added 22/08/2026)
 ------------------------------------------------------------
@@ -139,12 +139,13 @@ plus guest-male/guest-female for the player (playerCategoryTemplate:
 outfit, not shared with any role-category). Combined with an NPC's
 Appearance line and a generic neutral background at generation time.
 
-Every Meridian outfit is lingerie, not a duty uniform: ultra-thin
-translucent harnesses, bralettes and briefs in sheer iridescent material,
-neon outlines. The material vocabulary — ultra-thin, translucent, sheer,
+The standard set is lingerie, not a duty uniform: ultra-thin translucent
+harnesses, bralettes and briefs in sheer iridescent material, neon
+outlines. The material vocabulary — ultra-thin, translucent, sheer,
 iridescent, glowing neon fluorescent trim, neon outlines — is fixed and
-appears in all 30 entries; it is what the image plugin actually renders
-from, and it renders suggestive rather than explicit.
+appears in all 30 entries of this set; it is what the image plugin
+actually renders from, and it renders suggestive rather than explicit.
+The alternate set below is the other wardrobe aboard.
 
 Entries are held to roughly 40 words (26-40 for poolUniforms). The
 uniform clause is the longest single clause in an image prompt, and
@@ -172,7 +173,7 @@ prop, which is the only other thing distinguishing the outfits.
 - engineering-male / engineering-female (Chief Engineer): slate. Trim:
   neon orange. Prop: a slim tool belt slung at the hips.
 - ensign-male / ensign-female (Junior Ensign): navy. Trim: neon cyan.
-  Prop: a single cyan-lit trainee bar at the collarbone.
+  Prop: a single cyan-lit rank bar at the collarbone.
 - guest-male / guest-female (the player): clear-grey, same construction,
   seams edged in flat matte-grey that is dead and unlit, and no insignia.
   The one outfit aboard that doesn't glow — the player reads as not-crew
@@ -197,6 +198,43 @@ longest single clause in an image prompt and a composite repeats it once
 per character, so detail past that point costs the room, the pose and the
 expression the weight they need. Cross-project rule — see the root
 `Change Log.md`, 24/08/2026.
+
+ALTERNATE UNIFORMS (altUniforms / altPoolUniforms)
+---------------------------------------------------
+A second complete wardrobe, same 15 categories in each of the two sets,
+reached from the Options row "Alternate outfits" (engine feature, see
+Goals.txt). The standard set stays the default; this one is the ship in
+uniform rather than the ship in lingerie.
+
+The garment is a fitted tunic in the role's own body colour with an
+asymmetric front seam running shoulder to hip, an open collar, and the
+role's own colour as plain piping along that seam. Nothing in this set
+glows: no neon, no fluorescent trim, no neon outlines — that vocabulary
+belongs to the standard set alone, and colour on its own carries the
+role here. Body colours, trim colours and props are otherwise the same
+per role as the standard set, so the cast reads identically in either
+wardrobe and a group image is still legible by colour alone. Female cut:
+a short pleated skirt in the body colour, bare thighs, knee-high boots.
+Male cut: sleeves to the elbow, fitted dark trousers, boots. The
+asymmetric seam and the paired body/trim colours are the design's own —
+the silhouette deliberately does not copy any existing crew uniform.
+
+The player's guest entries carry the same construction in flat
+matte-grey with no insignia, so not-crew still reads at a glance.
+Miravel keeps her Sevari look, opaque here rather than sheer: a
+deep-violet wrap dress with her markings glowing at the seams — her own
+bioluminescence, the one light source in this wardrobe.
+
+altPoolUniforms covers the same wet locations: trunks for the male cut,
+a one-piece with an open back for the female, both carrying the role's
+trim colour, and plain grey for the player.
+
+clothingStates are shared, not duplicated — they replace the outfit text
+outright, so undressed states are identical whichever wardrobe is on.
+
+Comfortably inside the ~40-word cap: 34 on average and 36 at most for
+altUniforms, 29 at most for altPoolUniforms — dropping the neon
+vocabulary took roughly six words off every entry.
 
 MAP LOCATIONS
 -----------------
@@ -256,7 +294,7 @@ the vessel: it still draws power despite being logged as a derelict, and
 reviving it needs the Chief Engineer's parts or Miravel's read on a drive
 signature she recognises as neither human nor Sevari. The EVA Bay watch
 is the window: someone is posted on it in every phase but one. Where the
-pod came from is never answered — see Lore/Meridian/derelict-hook.txt,
+pod came from is never answered — see Adventures/Meridian/Lore/derelict-hook.txt,
 unchanged by any of this.
 
 MILESTONES

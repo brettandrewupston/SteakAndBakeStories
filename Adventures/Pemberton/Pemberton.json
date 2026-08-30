@@ -1041,22 +1041,6 @@
       }
     ]
   },
-  "poseVocabulary": [
-    "sitting",
-    "standing",
-    "leaning on a desk",
-    "sitting on the edge of a desk",
-    "holding a mug",
-    "on the phone",
-    "pointing at a screen",
-    "carrying a box",
-    "leaning in a doorway",
-    "arms crossed",
-    "hands on hips",
-    "hands in pockets",
-    "bending over a filing drawer",
-    "hand to mouth"
-  ],
   "expressionVocabulary": [
     "neutral",
     "soft smile",

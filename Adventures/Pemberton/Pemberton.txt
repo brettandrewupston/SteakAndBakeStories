@@ -1,6 +1,6 @@
 PAPER CLIP (PEMBERTON) — ADVENTURE CONTENT
 ===========================================================
-Last updated: 22/08/2026
+Last updated: 28/08/2026
 Fifth Adventure built for the Story Generator. Architecture/decisions
 live in the parent folder's Goals.txt and Features.txt — this file is
 just this Adventure's canon (premise, rules, NPCs, map, setup fields).
@@ -728,6 +728,28 @@ per character, so detail past that point costs the room, the pose and the
 expression the weight they need. Cross-project rule — see the root
 `Change Log.md`, 24/08/2026.
 
+ALTERNATE UNIFORMS (altUniforms / altPoolUniforms)
+---------------------------------------------------
+A second complete wardrobe, the same categories in each set, reached from
+the Options row "Alternate outfits" (engine feature, see Goals.txt). The
+standard set stays the default; this is the other thing this cast wears.
+
+The ClipCorp rebrand uniform, mandated from head office: branded stretch
+polos and zip jackets, navy chinos, pencil skirts, cargo trousers, a
+ClipCorp pin on the exec tailoring, branded coveralls for maintenance —
+new, cheap and resented by everyone issued one, which is the branch in a
+sentence. Department still reads at a glance the way the standard set's
+workwear does, and each entry carries the closing clause verbatim and one
+adult-body fact.
+
+`system` is copied across verbatim: the paperclip mascot is not clothing
+and does not change with the wardrobe.
+
+No altPoolUniforms — no wet locations, same as the standard set.
+
+Same cap as the standard set: 43 words on average, 46 at most (that
+maximum is the mascot entry, carried over unchanged).
+
 TIME PHASES
 --------------
 An office day, not a calendar day, following Halcyon's shooting-day
@@ -828,7 +850,7 @@ OUTSTANDING
    `[[EVENT:]]` tag against this Adventure's data.
 
 Content and data changes from here go in
-Adventures/Pemberton Change Log.md; engine changes go in
+Adventures/Pemberton/Pemberton Change Log.md; engine changes go in
 Generator/Steak and Bake Stories/Change Log.md.
 
 LOCATION SCENERY (image prompts)

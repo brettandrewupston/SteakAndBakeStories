@@ -14,6 +14,18 @@ in the engine log and referenced here in one line. Never write it out twice.
 Entries from 16/08/2026 to 22/08/2026 predate this split and are in the
 project-root `Change Log Archive.md`.
 
+## 28/08/2026
+
+- Solmere.json — `poseVocabulary` removed: the engine never read it (written
+  in full in the engine log, 28/08/2026). Needs a re-push.
+
+- Solmere.json — **the Duelist Log is retired.** The `record` block that drove
+  it had already left the JSON, unlogged; the engine support behind it is now
+  removed as well (written in full in the engine log, 28/08/2026). Duel
+  outcomes stay with the AI, and a duel won by a low-effort player is an
+  accepted result rather than a defect. Nothing in the arc changes: the ladder
+  milestones never read the ledger.
+
 ## 27/08/2026
 
 - Solmere.json — **`altUniforms` and `altPoolUniforms` added: tournament
@@ -39,8 +51,9 @@ project-root `Change Log Archive.md`.
 
 ## 26/08/2026
 
-- Solmere.json — **`uniformsModest` and `poolUniformsModest` removed** with the engine's Fan service toggle (see the engine log, 26/08/2026); `uniforms` / `poolUniforms` untouched. Needs a re-push.
-
+- Solmere.json — **`uniformsModest` and `poolUniformsModest` removed** with
+  the engine's Fan service toggle (see the engine log, 26/08/2026);
+  `uniforms` / `poolUniforms` untouched. Needs a re-push.
 
 - Solmere.json — **NPC identities and locationScenery trimmed.** Each
   identity dropped its baked stance/expression/posture clause (which now
@@ -89,16 +102,19 @@ project-root `Change Log Archive.md`.
   she appeared in began the sentence "A attractive and sexy sophisticated 21
   year old female". Corrected to `"an attractive"`. The article is the only
   thing changed — no other NPC record differs.
+
 - `locationScenery` authored for all 12 locations, ~21 words each — the room,
   two or three fixed physical features and its light. These now carry the
   image prompt's setting line, which until today was the bare location name.
   The engine mechanism is generic and is written up in full in the engine log
   at `Generator/Steak and Bake Stories/Change Log.md`.
+
 - `imageStyle` gained `professional photo`, placed with the other style
   tokens and ahead of the framing instruction:
   `painted anime style, professional photo, front on shot`
   A photographic quality token paired with a painted style token lifts
   detail, lighting and coherence without the render losing the style.
+
 - All six `uniforms` entries shortened from a 73-word average (max 88) to
   43 (max 46). **Length is the only thing this pass changes.** The
   garments, colours, crests, what each one bares, the tone adjectives and
@@ -135,6 +151,7 @@ project-root `Change Log Archive.md`.
     Solmere have been trimmed.
   - `Solmere.json` needs re-uploading to the GitHub assets repo before
     any of this is live.
+
 - **Dining Hall** added as Solmere's twelfth location — the Academy's
   second social hub, sitting alongside the Courtyard. Added to
   `Solmere.json` `locations`, to both lore files, to `Solmere.txt`, and
@@ -240,6 +257,7 @@ project-root `Change Log Archive.md`.
     after — so the final act is reachable by winning through *or* by
     washing out, and a player who never gets a challenge still gets an
     ending.
+
 - Six endings authored in `Story Definitions/Solmere.json`: Killed at
   Solmere and Expelled from Solmere (both reachable from the first turn,
   neither continuable), What the Ladder Was For, Champion of Solmere,
@@ -247,10 +265,12 @@ project-root `Change Log Archive.md`.
   playthrough. Romance has no ending of its own by design — the ending
   beat closes out whoever the player ended on strong or bad terms with,
   whichever ending it was.
+
 - `Solmere.json` gained the `arc` block holding all of the above, placed
   after `relationshipLabels` so the narrative-state blocks sit together.
   The engine mechanic behind it is written up in full in the engine log,
   23/08/2026.
+
 - Journal content for the arc, for the Codex tab added the same day (engine
   mechanic written up in full in the engine log, 23/08/2026):
   - A player-facing `journal` line on every milestone, second person and
@@ -271,12 +291,14 @@ project-root `Change Log Archive.md`.
   - The four ladder bands stay visible from turn one on purpose: the
     ladder is public knowledge in-world, and a first-year should know a
     title exists. `Solmere.txt` records the visibility policy.
+
 - **Needs re-uploading to R2.** Without the re-upload the arc simply is
   not in the hosted file, and the Adventure plays as though it was never
   added. The journal content above is in the same file, so it rides on the
   same upload. (The `jsonUrl` carried a `?v=3` cache-buster when this was
   written. It was removed later the same day, along with the unconfirmed
   caching theory behind it — see the engine log, 23/08/2026.)
+
 - Still open: how many students are on the ladder, and whether reaching a
   band gives anything material — the premise promises "resources," which
   means nothing mechanically yet. Authored flavour for now. House/Cohort
@@ -284,6 +306,7 @@ project-root `Change Log Archive.md`.
   without it.
 
 ## 22/08/2026
+
 - NPC routines authored: every one of the twelve carries a `schedule`
   (phase-keyed), most a `usualLocation` fallback, and all a
   `roamLocations` list. Engine mechanic written up in full in the engine
@@ -313,23 +336,29 @@ project-root `Change Log Archive.md`.
     high-interest room would be a repeatable, farmable beat, which is the
     one place the schedule's determinism works against the Adventure
     rather than for it.
+
 - Time phases authored: `timePhases` `Morning / Midday / Afternoon / Evening
   / Night`, `startingPhase` `Morning` — the first day begins on arrival at
   the Enrollment Hall. Engine mechanic in the engine log, 22/08/2026.
-- Gained title-card art on the Adventure Selection screen. `Assets/TitleCards/SolmereCard.webp`
-  is the hosted copy registered as this Adventure's `coverUrl`; the
-  full-size PNG beside it is the local master (see the project-root
-  `Change Log.md` for the export convention). Engine feature, written
-  up in full in `Generator/Steak and Bake Stories/Change Log.md`.
+
+- Gained title-card art on the Adventure Selection screen.
+  `Adventures/Solmere/Card.webp` is the hosted copy registered as this
+  Adventure's `coverUrl`; the full-size PNG beside it is the local master
+  (see the project-root `Change Log.md` for the export convention). Engine
+  feature, written up in full in `Generator/Steak and Bake Stories/Change
+  Log.md`.
+
 - The free-text **Appearance** box in `setupFields` is replaced by four
   grouped dropdowns — Hair style, Hair colour, Body type, Skin colour —
   each with a default and with per-option image-prompt phrasing. Engine
   feature (`select` field type, field grouping, composed player
   appearance), written up in full in
   `Generator/Steak and Bake Stories/Change Log.md`. Needs re-uploading to R2.
+
 - The Appearance/uniform section names Story Definitions/Solmere.json as
   the authoritative wording, replacing the note that this outline was
   being edited in parallel and might not match what's live.
+
 - Removed the parenthetical recording that Healer Maren was once an
   unnamed placeholder excluded from Stage A detection; she has a name and
   the operative entry now just says so.

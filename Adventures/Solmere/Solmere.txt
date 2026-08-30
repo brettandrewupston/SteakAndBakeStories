@@ -1,6 +1,6 @@
 SOLMERE ACADEMY — ADVENTURE CONTENT
 ===========================================================
-Last updated: 24/08/2026
+Last updated: 28/08/2026
 First Adventure built for the Story Generator. Architecture/decisions
 live in the parent folder's Goals.txt and Features.txt — this file is
 just this Adventure's canon (premise, NPCs, map, setup fields).
@@ -154,21 +154,36 @@ Working defaults; the story definition holds the authoritative wording.
   coat for female) with the Academy crest, structured high collar,
   authoritative and pristine.
 
-Each entry is held to roughly 40-46 words. The uniform clause is the
-longest single clause in an image prompt and composeImagePrompt()
-already competes with it for the encoder's attention — detail past that
-point buys nothing visible and costs the room, the pose and the
-expression their weight. It matters most in composites, which repeat
-the whole clause once per character: at the old ~73-word average a
-two-character image ran past the 1700-char point where the backend
-starts dropping the tail.
-
 Entries are capped at roughly 40 words plus this Adventure's closing
 clause; currently 44 on average, 46 at most. The uniform clause is the
 longest single clause in an image prompt and a composite repeats it once
 per character, so detail past that point costs the room, the pose and the
 expression the weight they need. Cross-project rule — see the root
 `Change Log.md`, 24/08/2026.
+
+ALTERNATE UNIFORMS (altUniforms / altPoolUniforms)
+---------------------------------------------------
+A second complete wardrobe, the same categories in each set, reached from
+the Options row "Alternate outfits" (engine feature, see Goals.txt). The
+standard set stays the default; this is the other thing this cast wears.
+
+Tournament duelling kit rather than classroom uniform: fitted leather
+harnesses and laced bodices, pauldrons, bracers, greaves and boots — navy
+with the gold royal crest, scuffed mismatched charcoal for commoners, a
+sleeveless marshal's coat with the Academy crest for staff. Same register
+as the standard set: the closing clause verbatim and one adult-body fact
+per entry, and crest and colour still say royal, commoner or staff at a
+glance.
+
+Deliberately not a tidier version of the school uniform. Blazer, blouse,
+pleated skirt and stockings are the garments that pull an image model
+toward children; duelling kit is adult clothing and sidesteps the question
+entirely.
+
+altPoolUniforms is tournament swimwear — racing trunks and racing
+two-pieces in house colours carrying the same crest.
+
+Same cap as the standard set: 42 words on average, 44 at most.
 
 LOCATIONS
 -----------------
