@@ -1,27 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" style="width:100%; height:auto; background:#15161d; border-radius:8px;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" style="width:100%; height:auto; background:#15161d; border-radius:8px;">
   <!-- Paths from the quay, where every ship lands, to the rest of Port Royal -->
   <g stroke="#3a3f58" stroke-width="2" stroke-dasharray="6 5">
-    <line x1="450" y1="215" x2="725" y2="80"/>
-    <line x1="450" y1="215" x2="175" y2="80"/>
+    <line x1="450" y1="325" x2="195" y2="87"/>
+    <line x1="450" y1="325" x2="705" y2="87"/>
+    <line x1="450" y1="325" x2="165" y2="272"/>
+    <line x1="450" y1="325" x2="735" y2="272"/>
+    <line x1="450" y1="325" x2="465" y2="540"/>
   </g>
 
   <!-- The Quay (hub) -->
   <g>
-    <rect id="loc-the-quay" class="sg-map-building" x="370" y="170" width="160" height="90" rx="10" fill="#232637" stroke="#7c5cff" stroke-width="2"/>
-    <text x="450" y="221" text-anchor="middle" fill="#e8e8f0" font-family="system-ui, sans-serif" font-size="16" font-weight="600">The Quay</text>
+    <rect id="loc-the-quay" class="sg-map-building" x="355" y="280" width="190" height="90" rx="10" fill="#232637" stroke="#7c5cff" stroke-width="2"/>
+    <text x="450" y="331" text-anchor="middle" fill="#e8e8f0" font-family="system-ui, sans-serif" font-size="16" font-weight="600">The Quay</text>
   </g>
 
   <!-- The Governor's House -->
   <g>
-    <rect id="loc-the-governor-s-house" class="sg-map-building" x="620" y="40" width="210" height="80" rx="8" fill="#232637" stroke="#6ea8fe" stroke-width="2"/>
-    <text x="725" y="76" text-anchor="middle" fill="#e8e8f0" font-family="system-ui, sans-serif" font-size="14">The Governor's</text>
-    <text x="725" y="96" text-anchor="middle" fill="#e8e8f0" font-family="system-ui, sans-serif" font-size="14">House</text>
+    <rect id="loc-the-governor-s-house" class="sg-map-building" x="100" y="50" width="190" height="75" rx="8" fill="#232637" stroke="#6ea8fe" stroke-width="2"/>
+    <text x="195" y="83" text-anchor="middle" fill="#e8e8f0" font-family="system-ui, sans-serif" font-size="14">The Governor's</text>
+    <text x="195" y="103" text-anchor="middle" fill="#e8e8f0" font-family="system-ui, sans-serif" font-size="14">House</text>
+  </g>
+
+  <!-- The Prize Yard -->
+  <g>
+    <rect id="loc-the-prize-yard" class="sg-map-building" x="610" y="50" width="190" height="75" rx="8" fill="#232637" stroke="#6ea8fe" stroke-width="2"/>
+    <text x="705" y="93" text-anchor="middle" fill="#e8e8f0" font-family="system-ui, sans-serif" font-size="15">The Prize Yard</text>
+  </g>
+
+  <!-- The Chandlery -->
+  <g>
+    <rect id="loc-the-chandlery" class="sg-map-building" x="70" y="230" width="190" height="85" rx="8" fill="#232637" stroke="#4a4f6a" stroke-width="2"/>
+    <text x="165" y="278" text-anchor="middle" fill="#e8e8f0" font-family="system-ui, sans-serif" font-size="15">The Chandlery</text>
+  </g>
+
+  <!-- The Gaol -->
+  <g>
+    <rect id="loc-the-gaol" class="sg-map-building" x="640" y="230" width="190" height="85" rx="8" fill="#232637" stroke="#4a4f6a" stroke-width="2"/>
+    <text x="735" y="278" text-anchor="middle" fill="#e8e8f0" font-family="system-ui, sans-serif" font-size="15">The Gaol</text>
   </g>
 
   <!-- The Punch House -->
   <g>
-    <rect id="loc-the-punch-house" class="sg-map-building" x="80" y="40" width="190" height="80" rx="8" fill="#232637" stroke="#4a4f6a" stroke-width="2"/>
-    <text x="175" y="86" text-anchor="middle" fill="#e8e8f0" font-family="system-ui, sans-serif" font-size="15">The Punch House</text>
+    <rect id="loc-the-punch-house" class="sg-map-building" x="370" y="500" width="190" height="80" rx="8" fill="#232637" stroke="#4a4f6a" stroke-width="2"/>
+    <text x="465" y="546" text-anchor="middle" fill="#e8e8f0" font-family="system-ui, sans-serif" font-size="15">The Punch House</text>
   </g>
 
 </svg>

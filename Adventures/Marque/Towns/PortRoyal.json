@@ -2,13 +2,19 @@
   "locations": [
     "The Quay",
     "The Governor's House",
-    "The Punch House"
+    "The Punch House",
+    "The Prize Yard",
+    "The Chandlery",
+    "The Gaol"
   ],
   "mapUrl": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Towns/PortRoyal.svg",
   "locationScenery": {
     "The Quay": "a crowded English colonial quay in the Caribbean, warehouses, cranes, ships alongside",
     "The Governor's House": "a hot panelled colonial office, shutters half closed, papers and a decanter",
-    "The Punch House": "a loud low-ceilinged Caribbean punch house, packed benches, spilled rum"
+    "The Punch House": "a loud low-ceilinged Caribbean punch house, packed benches, spilled rum",
+    "The Prize Yard": "a fenced yard of condemned cargo beside an English colonial quay, crates and bales under canvas, a clerk with a tally",
+    "The Chandlery": "a cramped ship's chandlery, cordage and canvas to the ceiling, tar and hemp and powder",
+    "The Gaol": "a hot stone gaol and assize room in an English Caribbean port, barred windows, a bench, a rope on a hook"
   },
   "npcs": [
     {
@@ -61,11 +67,11 @@
       "likes": "good order, honest answers, a well-handled ship",
       "dislikes": "evasion, drunkenness on duty, men who mistake his manners for weakness",
       "identity": "an upright man in his forties, lean and broad-shouldered, sun-reddened rather than tanned, close-cropped grey hair, a coat he keeps buttoned in defiance of the heat",
-      "usualLocation": "The Quay",
+      "usualLocation": "The Governor's House",
       "schedule": {
         "Morning Watch": "The Quay",
-        "Forenoon": "The Quay",
-        "Dog Watch": "The Punch House",
+        "Forenoon": "The Governor's House",
+        "Dog Watch": "The Gaol",
         "First Watch": "The Punch House",
         "Middle Watch": null
       },
@@ -101,12 +107,12 @@
       "likes": "paperwork in order, patience, a captain who understands the process",
       "dislikes": "being rushed, arguments about his percentage, irregular manifests",
       "identity": "a soft, fastidious man in his fifties, round-shouldered and thickening, pale and perpetually damp in this climate, thinning hair, very good linen",
-      "usualLocation": "The Quay",
+      "usualLocation": "The Prize Yard",
       "schedule": {
-        "Morning Watch": "The Quay",
-        "Forenoon": "The Quay",
+        "Morning Watch": "The Prize Yard",
+        "Forenoon": "The Prize Yard",
         "Dog Watch": "The Governor's House",
-        "First Watch": null,
+        "First Watch": "The Prize Yard",
         "Middle Watch": null
       }
     },
@@ -120,7 +126,7 @@
       "likes": "an audience that listens, being surprised, generous drunks",
       "dislikes": "being touched without asking, pity, questions about England",
       "identity": "a slight, striking woman in her twenties, slim and small-waisted, pale under powder, dark hair dressed high, a gown cut for the stage and the heat",
-      "usualLocation": "The Punch House",
+      "usualLocation": "The Quay",
       "schedule": {
         "Morning Watch": null,
         "Forenoon": null,
@@ -140,11 +146,11 @@
       "likes": "a busy harbour, cash, scarcity",
       "dislikes": "haggling, credit, quiet weeks",
       "identity": "a wiry, energetic man in his forties, small and quick, tanned and balding, tar-stained apron, spectacles pushed up on his forehead",
-      "usualLocation": "The Quay",
+      "usualLocation": "The Chandlery",
       "schedule": {
-        "Morning Watch": "The Quay",
-        "Forenoon": "The Quay",
-        "Dog Watch": "The Quay",
+        "Morning Watch": "The Chandlery",
+        "Forenoon": "The Chandlery",
+        "Dog Watch": "The Chandlery",
         "First Watch": "The Punch House",
         "Middle Watch": null
       }
@@ -159,12 +165,12 @@
       "likes": "a well-argued point, good wine, a clean legal question",
       "dislikes": "emotion in court, ignorance of the law, being asked to be merciful",
       "identity": "a heavy, deliberate man in his sixties, broad and slow-moving, florid in the heat, a full grey periwig he refuses to abandon",
-      "usualLocation": "The Governor's House",
+      "usualLocation": "The Gaol",
       "schedule": {
         "Morning Watch": null,
-        "Forenoon": "The Governor's House",
-        "Dog Watch": "The Governor's House",
-        "First Watch": "The Punch House",
+        "Forenoon": "The Gaol",
+        "Dog Watch": "The Gaol",
+        "First Watch": "The Governor's House",
         "Middle Watch": null
       }
     },
@@ -183,7 +189,7 @@
         "Morning Watch": "The Quay",
         "Forenoon": "The Quay",
         "Dog Watch": "The Quay",
-        "First Watch": null,
+        "First Watch": "The Chandlery",
         "Middle Watch": null
       },
       "attractedTo": "steadiness, respect shown plainly, and people who take advice"
@@ -198,11 +204,11 @@
       "likes": "full orders, being paid on the day, a captain who counts properly",
       "dislikes": "short-weight accusations, haggling over water, waste",
       "identity": "a big, capable woman in her forties, broad and full-figured, red-faced from the sun, sleeves rolled past the elbow, hair under a knotted cloth",
-      "usualLocation": "The Quay",
+      "usualLocation": "The Prize Yard",
       "schedule": {
         "Morning Watch": "The Quay",
-        "Forenoon": "The Quay",
-        "Dog Watch": "The Quay",
+        "Forenoon": "The Prize Yard",
+        "Dog Watch": "The Chandlery",
         "First Watch": "The Punch House",
         "Middle Watch": null
       }

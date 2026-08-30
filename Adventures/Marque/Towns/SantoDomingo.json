@@ -2,13 +2,19 @@
   "locations": [
     "The Ozama Wharf",
     "The Cathedral Square",
-    "The Customs House"
+    "The Customs House",
+    "The Rigging Lofts",
+    "The Lodging House",
+    "The Land Gate"
   ],
   "mapUrl": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Towns/SantoDomingo.svg",
   "locationScenery": {
     "The Ozama Wharf": "a stone river wharf below an old Spanish colonial city, fortress walls above, soldiers on the quay",
     "The Cathedral Square": "a hot stone square before the oldest cathedral in the Americas, deep shade under arcades, bells",
-    "The Customs House": "a cool vaulted Spanish customs hall, ledgers, seals and an official who is in no hurry"
+    "The Customs House": "a cool vaulted Spanish customs hall, ledgers, seals and an official who is in no hurry",
+    "The Rigging Lofts": "long high sail lofts above a Spanish river wharf, canvas spread across the floor, needles and beeswax",
+    "The Lodging House": "a shuttered Spanish lodging house above a river wharf, cool tiled rooms, a courtyard with a well",
+    "The Land Gate": "a fortified land gate in a Spanish colonial city wall, guardhouse, shade, soldiers checking who goes up"
   },
   "npcs": [
     {
@@ -22,12 +28,12 @@
       "dislikes": "being hurried, boasting, anyone who assumes he can be bought cheaply",
       "attractedTo": "self-possession, discretion, and nerve worn lightly",
       "identity": "an elegant, slightly stooped man in his fifties, lean and long-fingered, deeply tanned, close grey beard, canvas-callused hands and very good boots",
-      "usualLocation": "The Ozama Wharf",
+      "usualLocation": "The Rigging Lofts",
       "schedule": {
-        "Morning Watch": "The Ozama Wharf",
-        "Forenoon": "The Ozama Wharf",
-        "Dog Watch": "The Cathedral Square",
-        "First Watch": "The Customs House",
+        "Morning Watch": "The Rigging Lofts",
+        "Forenoon": "The Rigging Lofts",
+        "Dog Watch": "The Ozama Wharf",
+        "First Watch": "The Lodging House",
         "Middle Watch": null
       }
     },
@@ -60,13 +66,13 @@
       "likes": "paying guests, quiet nights, being told the truth",
       "dislikes": "trouble brought into her house, pity, unpaid weeks",
       "identity": "a handsome woman in her forties, full-figured and broad-hipped, olive-skinned, black hair greying at the temples, always working",
-      "usualLocation": "The Ozama Wharf",
+      "usualLocation": "The Lodging House",
       "schedule": {
-        "Morning Watch": "The Ozama Wharf",
-        "Forenoon": "The Ozama Wharf",
-        "Dog Watch": "The Ozama Wharf",
-        "First Watch": "The Ozama Wharf",
-        "Middle Watch": null
+        "Morning Watch": "The Lodging House",
+        "Forenoon": "The Lodging House",
+        "Dog Watch": "The Lodging House",
+        "First Watch": "The Lodging House",
+        "Middle Watch": "The Lodging House"
       },
       "attractedTo": "kindness shown to staff, honesty, and someone who can sit at a table and talk"
     },
@@ -99,12 +105,12 @@
       "likes": "a quiet watch, straight answers, tobacco",
       "dislikes": "evasion, drunk sailors, being lied to badly",
       "identity": "a solid, weathered man in his thirties, broad-chested and thick-armed, dark-skinned and sunburnt over it, a broken nose, uniform coat worn open",
-      "usualLocation": "The Ozama Wharf",
+      "usualLocation": "The Land Gate",
       "schedule": {
-        "Morning Watch": "The Ozama Wharf",
-        "Forenoon": "The Ozama Wharf",
-        "Dog Watch": "The Cathedral Square",
-        "First Watch": "The Ozama Wharf",
+        "Morning Watch": "The Land Gate",
+        "Forenoon": "The Land Gate",
+        "Dog Watch": "The Land Gate",
+        "First Watch": "The Land Gate",
         "Middle Watch": null
       },
       "attractedTo": "directness, nerve, and someone who does not treat him as furniture"
@@ -123,7 +129,7 @@
       "schedule": {
         "Morning Watch": "The Cathedral Square",
         "Forenoon": "The Cathedral Square",
-        "Dog Watch": "The Cathedral Square",
+        "Dog Watch": "The Land Gate",
         "First Watch": null,
         "Middle Watch": null
       },
@@ -143,7 +149,7 @@
       "schedule": {
         "Morning Watch": "The Cathedral Square",
         "Forenoon": "The Cathedral Square",
-        "Dog Watch": "The Cathedral Square",
+        "Dog Watch": "The Lodging House",
         "First Watch": null,
         "Middle Watch": null
       },
@@ -159,12 +165,12 @@
       "likes": "a discreet buyer, a quick settlement, being liked",
       "dislikes": "witnesses, delays, anyone who says his business out loud",
       "identity": "a well-fed man in his forties, soft and round-shouldered, olive-skinned and sweating, good clothes slightly too fine, rings",
-      "usualLocation": "The Ozama Wharf",
+      "usualLocation": "The Customs House",
       "schedule": {
         "Morning Watch": "The Ozama Wharf",
-        "Forenoon": "The Ozama Wharf",
-        "Dog Watch": "The Cathedral Square",
-        "First Watch": null,
+        "Forenoon": "The Customs House",
+        "Dog Watch": "The Ozama Wharf",
+        "First Watch": "The Lodging House",
         "Middle Watch": null
       }
     },
@@ -178,12 +184,12 @@
       "likes": "a difficult cut done well, being taken on her own account, foreign ships",
       "dislikes": "being talked past, condescension, slow payment",
       "identity": "a strong young woman in her twenties, athletic and full-figured, olive-skinned, black hair braided out of the way, canvas-callused hands, sleeves cut off",
-      "usualLocation": "The Ozama Wharf",
+      "usualLocation": "The Rigging Lofts",
       "schedule": {
-        "Morning Watch": "The Ozama Wharf",
-        "Forenoon": "The Ozama Wharf",
-        "Dog Watch": "The Ozama Wharf",
-        "First Watch": null,
+        "Morning Watch": "The Rigging Lofts",
+        "Forenoon": "The Rigging Lofts",
+        "Dog Watch": "The Rigging Lofts",
+        "First Watch": "The Ozama Wharf",
         "Middle Watch": null
       },
       "attractedTo": "competence, respect given without being asked for, and anyone who talks to her about the work"
@@ -203,7 +209,7 @@
         "Morning Watch": "The Ozama Wharf",
         "Forenoon": "The Ozama Wharf",
         "Dog Watch": "The Ozama Wharf",
-        "First Watch": "The Ozama Wharf",
+        "First Watch": "The Land Gate",
         "Middle Watch": null
       },
       "attractedTo": "easy company, generosity, and people who do not pry"

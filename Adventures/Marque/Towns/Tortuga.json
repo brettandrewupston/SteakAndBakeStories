@@ -2,13 +2,19 @@
   "locations": [
     "The Ropewalk",
     "The Beach Market",
-    "The Careening Yard"
+    "The Careening Yard",
+    "The Landing",
+    "The Burying Ground",
+    "The Fort"
   ],
   "mapUrl": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Towns/Tortuga.svg",
   "locationScenery": {
     "The Ropewalk": "a long open-sided rope walk in a French buccaneer haven, palm thatch, rope and tar and shade",
     "The Beach Market": "a plunder market on an open Caribbean beach, awnings and stolen goods laid out on sand",
-    "The Careening Yard": "a shallow careening beach with a sloop hove down on her side, tar fires burning"
+    "The Careening Yard": "a shallow careening beach with a sloop hove down on her side, tar fires burning",
+    "The Landing": "a rough stone-and-timber landing on a Caribbean beach where ships' boats come in, gear stacked, everyone arriving or leaving",
+    "The Burying Ground": "a small walled burying ground above a buccaneer anchorage, wooden markers, dry grass, a view of the sea",
+    "The Fort": "a low stone fort on the rock above a Caribbean anchorage, guns commanding the road, French colours"
   },
   "npcs": [
     {
@@ -26,8 +32,8 @@
       "schedule": {
         "Morning Watch": "The Beach Market",
         "Forenoon": "The Beach Market",
-        "Dog Watch": "The Ropewalk",
-        "First Watch": "The Ropewalk",
+        "Dog Watch": "The Beach Market",
+        "First Watch": "The Landing",
         "Middle Watch": null
       }
     },
@@ -43,10 +49,10 @@
       "identity": "a compact, busy woman in her late thirties, full-figured and broad-hipped, deeply tanned, gold hoops, dark hair pinned up and escaping, a permanent half-smile",
       "usualLocation": "The Ropewalk",
       "schedule": {
-        "Morning Watch": "The Ropewalk",
+        "Morning Watch": "The Landing",
         "Forenoon": "The Ropewalk",
         "Dog Watch": "The Beach Market",
-        "First Watch": "The Ropewalk",
+        "First Watch": "The Landing",
         "Middle Watch": null
       },
       "attractedTo": "confidence, a good story well told, and people who know exactly what they are"
@@ -120,12 +126,12 @@
       "likes": "nerve, a captain who argues back, a well-run ship",
       "dislikes": "false modesty, captains who cannot decide, being lied to about a prize",
       "identity": "a striking woman in her thirties, athletic and long-limbed, small-breasted, weather-darkened, a white scar through one eyebrow, black hair in a tail",
-      "usualLocation": "The Beach Market",
+      "usualLocation": "The Fort",
       "schedule": {
-        "Morning Watch": null,
-        "Forenoon": "The Beach Market",
+        "Morning Watch": "The Fort",
+        "Forenoon": "The Fort",
         "Dog Watch": "The Beach Market",
-        "First Watch": "The Beach Market",
+        "First Watch": "The Landing",
         "Middle Watch": null
       },
       "attractedTo": "competence, nerve, and the particular confidence of someone with nothing to prove"
@@ -140,13 +146,13 @@
       "likes": "honesty, people who sit with the dying, a quiet hour",
       "dislikes": "being asked to bless a voyage, sentimentality about violence, anyone who calls him Father",
       "identity": "a spare, weathered man in his sixties, thin and upright, deeply lined, white stubble, a plain worn coat he never takes off however hot it is",
-      "usualLocation": "The Ropewalk",
+      "usualLocation": "The Burying Ground",
       "schedule": {
-        "Morning Watch": "The Ropewalk",
-        "Forenoon": "The Careening Yard",
+        "Morning Watch": "The Burying Ground",
+        "Forenoon": "The Burying Ground",
         "Dog Watch": "The Ropewalk",
-        "First Watch": "The Ropewalk",
-        "Middle Watch": "The Ropewalk"
+        "First Watch": "The Burying Ground",
+        "Middle Watch": "The Burying Ground"
       }
     },
     {
@@ -179,12 +185,12 @@
       "likes": "being taken seriously, a captain who remembers his name, going anywhere at all",
       "dislikes": "being sent away, waiting, being called boy",
       "identity": "a wiry young man of twenty-three, lean and lightly muscled, sun-browned all over, salt-bleached hair, bare-chested and bare-footed most days",
-      "usualLocation": "The Beach Market",
+      "usualLocation": "The Landing",
       "schedule": {
-        "Morning Watch": "The Beach Market",
-        "Forenoon": "The Beach Market",
+        "Morning Watch": "The Landing",
+        "Forenoon": "The Landing",
         "Dog Watch": "The Careening Yard",
-        "First Watch": "The Beach Market",
+        "First Watch": "The Landing",
         "Middle Watch": null
       },
       "attractedTo": "attention, competence, and anyone who talks to him like a sailor"
@@ -201,7 +207,7 @@
       "identity": "an elegant woman in her forties, slim and narrow-waisted, olive-skinned, dark hair dressed carefully even in this heat, a great deal of gold worn openly",
       "usualLocation": "The Beach Market",
       "schedule": {
-        "Morning Watch": null,
+        "Morning Watch": "The Fort",
         "Forenoon": "The Beach Market",
         "Dog Watch": "The Beach Market",
         "First Watch": "The Ropewalk",

@@ -13,6 +13,21 @@ in the engine log and referenced here in one line. Never write it out twice.
 
 ## 30/08/2026
 
+- Ports taken from three locations to six, with all forty port schedules
+  rewritten around them. The casts already implied rooms the maps did not
+  have — Nieves and his daughter worked in rigging lofts that were not a
+  location, Valdivia kept a lodging house that was not one either — so the
+  new twelve come from people who already exist: the Landing, Burying Ground
+  and Fort on Tortuga; the Prize Yard, Chandlery and Gaol at Port Royal; the
+  Warehouses, Cooperage and Wharf Tavern on Curacao; the Rigging Lofts,
+  Lodging House and Land Gate at Santo Domingo. Maps rebuilt to hub plus five
+  spokes, the geometry the ship map already uses.
+
+- Six chosen over eight so the rooms stay populated. Every location is
+  occupied at some hour and the working phases have almost none empty, while
+  the Middle Watch is deliberately near-deserted. Twelve locations load at
+  any port and the whole list costs under 190 characters a turn.
+
 - Maps rebuilt to the engine's own convention after they were checked against
   `Adventures/Meridian/Map.svg`. They had been a grid of labelled boxes, which
   matches nothing: the shipped maps are hub-and-spoke node graphs, with the

@@ -44,9 +44,15 @@ what a voyage turns up.
 STRUCTURE
 ------------
 A voyage rather than a place. A port, then a crossing, then another port,
-with the choice of where to sail made on leaving. Each port carries its
-own map and its own cast of roughly ten. The crew travel with the player
+with the choice of where to sail made on leaving. Each port carries its own
+map, six locations and a cast of ten. The crew travel with the player
 throughout and are the only constant.
+
+Six shipboard locations plus a port's six is twelve loaded at once, which is
+the count Meridian already runs at. Six rather than eight per port is a
+population decision: ten people across six rooms keeps them occupied, and an
+empty room is a legitimate answer the engine already gives but a dull one to
+walk into twice running.
 
 That gives two classes of relationship, and they are authored differently:
 

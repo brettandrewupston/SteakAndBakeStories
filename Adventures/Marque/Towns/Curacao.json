@@ -2,13 +2,19 @@
   "locations": [
     "The Company Wharf",
     "The Dry Dock",
-    "The Salt Pans"
+    "The Salt Pans",
+    "The Warehouses",
+    "The Cooperage",
+    "The Wharf Tavern"
   ],
   "mapUrl": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Towns/Curacao.svg",
   "locationScenery": {
     "The Company Wharf": "an orderly Dutch colonial wharf in the Caribbean, warehouses in straight lines, everything swept, ledgers under awnings",
     "The Dry Dock": "a working Dutch shipyard, a hull up on blocks with new timber going in, sawpits and steam",
-    "The Salt Pans": "flat blinding white salt pans behind a Caribbean town, shallow water, heat coming up off the crust"
+    "The Salt Pans": "flat blinding white salt pans behind a Caribbean town, shallow water, heat coming up off the crust",
+    "The Warehouses": "long orderly Dutch warehouses behind a Caribbean wharf, everything stacked square, clerks with ledgers",
+    "The Cooperage": "a working cooperage, oak staves and iron hoops, steam and hammering",
+    "The Wharf Tavern": "a plain Dutch tavern on a Caribbean wharf, scrubbed tables, Company men and ships' crews at the same benches"
   },
   "npcs": [
     {
@@ -26,8 +32,8 @@
       "schedule": {
         "Morning Watch": "The Dry Dock",
         "Forenoon": "The Dry Dock",
-        "Dog Watch": "The Company Wharf",
-        "First Watch": "The Company Wharf",
+        "Dog Watch": "The Dry Dock",
+        "First Watch": "The Wharf Tavern",
         "Middle Watch": null
       }
     },
@@ -41,12 +47,12 @@
       "likes": "clean accounts, volume, a reliable counterparty",
       "dislikes": "irregularity, sentiment in business, being surprised",
       "identity": "a tall, spare man in his fifties, narrow-shouldered and long-faced, pale and sunburnt in patches, dark clothes far too heavy for the climate",
-      "usualLocation": "The Company Wharf",
+      "usualLocation": "The Warehouses",
       "schedule": {
         "Morning Watch": "The Company Wharf",
-        "Forenoon": "The Company Wharf",
-        "Dog Watch": "The Company Wharf",
-        "First Watch": null,
+        "Forenoon": "The Warehouses",
+        "Dog Watch": "The Warehouses",
+        "First Watch": "The Company Wharf",
         "Middle Watch": null
       }
     },
@@ -65,7 +71,7 @@
         "Morning Watch": "The Salt Pans",
         "Forenoon": "The Salt Pans",
         "Dog Watch": "The Salt Pans",
-        "First Watch": "The Company Wharf",
+        "First Watch": "The Wharf Tavern",
         "Middle Watch": null
       },
       "attractedTo": "toughness, humour under discomfort, and people who work"
@@ -80,12 +86,12 @@
       "likes": "a clean transaction, repeat custom, discretion",
       "dislikes": "questions, haggling in public, anyone who names a prize out loud",
       "identity": "a plump, well-dressed man in his forties, round-faced and pink, fair hair thinning, rings on both hands",
-      "usualLocation": "The Company Wharf",
+      "usualLocation": "The Warehouses",
       "schedule": {
-        "Morning Watch": "The Company Wharf",
-        "Forenoon": "The Company Wharf",
+        "Morning Watch": "The Warehouses",
+        "Forenoon": "The Warehouses",
         "Dog Watch": "The Company Wharf",
-        "First Watch": null,
+        "First Watch": "The Wharf Tavern",
         "Middle Watch": null
       }
     },
@@ -99,12 +105,12 @@
       "likes": "good oak, a captain who replaces casks before they fail, singing",
       "dislikes": "rot, false economy, being interrupted mid-explanation",
       "identity": "a broad, powerful woman in her thirties, heavy-armed and full-figured, freckled and reddened, sawdust everywhere, sleeves gone entirely",
-      "usualLocation": "The Dry Dock",
+      "usualLocation": "The Cooperage",
       "schedule": {
-        "Morning Watch": "The Dry Dock",
-        "Forenoon": "The Dry Dock",
-        "Dog Watch": "The Dry Dock",
-        "First Watch": "The Company Wharf",
+        "Morning Watch": "The Cooperage",
+        "Forenoon": "The Cooperage",
+        "Dog Watch": "The Cooperage",
+        "First Watch": "The Wharf Tavern",
         "Middle Watch": null
       },
       "attractedTo": "enthusiasm, big laughs, and hands that know a trade"
@@ -123,7 +129,7 @@
       "schedule": {
         "Morning Watch": "The Company Wharf",
         "Forenoon": "The Company Wharf",
-        "Dog Watch": "The Company Wharf",
+        "Dog Watch": "The Warehouses",
         "First Watch": null,
         "Middle Watch": null
       }
@@ -138,10 +144,10 @@
       "likes": "clean wounds, patients who follow instructions, good light",
       "dislikes": "heroics, self-diagnosis, surgeons who drink",
       "identity": "a compact woman in her forties, lean and quick-handed, pale and sharp-featured, dark hair scraped back, sleeves always pushed up",
-      "usualLocation": "The Dry Dock",
+      "usualLocation": "The Cooperage",
       "schedule": {
         "Morning Watch": "The Dry Dock",
-        "Forenoon": "The Dry Dock",
+        "Forenoon": "The Cooperage",
         "Dog Watch": "The Company Wharf",
         "First Watch": null,
         "Middle Watch": null
@@ -163,7 +169,7 @@
         "Morning Watch": "The Company Wharf",
         "Forenoon": "The Company Wharf",
         "Dog Watch": "The Company Wharf",
-        "First Watch": null,
+        "First Watch": "The Wharf Tavern",
         "Middle Watch": null
       }
     },
@@ -177,13 +183,13 @@
       "likes": "a good evening, mixed company, being paid promptly",
       "dislikes": "fighting, credit, anyone who bothers her staff",
       "identity": "a strong, handsome woman in her thirties, full-figured and broad-hipped, fair and freckled, sleeves rolled, hair coming loose by evening",
-      "usualLocation": "The Company Wharf",
+      "usualLocation": "The Wharf Tavern",
       "schedule": {
         "Morning Watch": null,
-        "Forenoon": "The Company Wharf",
-        "Dog Watch": "The Company Wharf",
-        "First Watch": "The Company Wharf",
-        "Middle Watch": "The Company Wharf"
+        "Forenoon": "The Wharf Tavern",
+        "Dog Watch": "The Wharf Tavern",
+        "First Watch": "The Wharf Tavern",
+        "Middle Watch": "The Wharf Tavern"
       },
       "attractedTo": "confidence, good talk, and a person who can hold their drink"
     },
@@ -197,12 +203,12 @@
       "likes": "a fast hull, honest boasting, a good argument",
       "dislikes": "modesty, caution dressed up as strategy, being patronised",
       "identity": "a big, sun-darkened woman in her forties, tall and heavily built, close-cropped fair hair, an old burn scar up one forearm, coat open over bare skin",
-      "usualLocation": "The Company Wharf",
+      "usualLocation": "The Dry Dock",
       "schedule": {
         "Morning Watch": null,
-        "Forenoon": "The Company Wharf",
-        "Dog Watch": "The Dry Dock",
-        "First Watch": "The Company Wharf",
+        "Forenoon": "The Dry Dock",
+        "Dog Watch": "The Salt Pans",
+        "First Watch": "The Wharf Tavern",
         "Middle Watch": null
       },
       "attractedTo": "nerve, a good ship well handled, and someone who can keep up"
