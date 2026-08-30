@@ -1,16 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 484" width="700" height="484">
-<rect x="0" y="0" width="700" height="484" fill="#12212b"/>
-<text x="350" y="40" text-anchor="middle" font-size="22" fill="#e9dcc3" font-family="Georgia, serif">The Recompense</text>
-<rect class="sg-map-building" id="loc-the-great-cabin" x="40" y="70" width="280" height="110" rx="6" fill="#26414f" stroke="#7fa8ba" stroke-width="2"/>
-<text x="180" y="131" text-anchor="middle" font-size="16" fill="#e9dcc3" font-family="Georgia, serif">The Great Cabin</text>
-<rect class="sg-map-building" id="loc-the-waist" x="340" y="70" width="280" height="110" rx="6" fill="#26414f" stroke="#7fa8ba" stroke-width="2"/>
-<text x="480" y="131" text-anchor="middle" font-size="16" fill="#e9dcc3" font-family="Georgia, serif">The Waist</text>
-<rect class="sg-map-building" id="loc-the-berth-deck" x="40" y="198" width="280" height="110" rx="6" fill="#26414f" stroke="#7fa8ba" stroke-width="2"/>
-<text x="180" y="259" text-anchor="middle" font-size="16" fill="#e9dcc3" font-family="Georgia, serif">The Berth Deck</text>
-<rect class="sg-map-building" id="loc-the-tops" x="340" y="198" width="280" height="110" rx="6" fill="#26414f" stroke="#7fa8ba" stroke-width="2"/>
-<text x="480" y="259" text-anchor="middle" font-size="16" fill="#e9dcc3" font-family="Georgia, serif">The Tops</text>
-<rect class="sg-map-building" id="loc-the-galley" x="40" y="326" width="280" height="110" rx="6" fill="#26414f" stroke="#7fa8ba" stroke-width="2"/>
-<text x="180" y="387" text-anchor="middle" font-size="16" fill="#e9dcc3" font-family="Georgia, serif">The Galley</text>
-<rect class="sg-map-building" id="loc-the-hold" x="340" y="326" width="280" height="110" rx="6" fill="#26414f" stroke="#7fa8ba" stroke-width="2"/>
-<text x="480" y="387" text-anchor="middle" font-size="16" fill="#e9dcc3" font-family="Georgia, serif">The Hold</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" style="width:100%; height:auto; background:#15161d; border-radius:8px;">
+  <!-- Paths from the Waist, the open main deck, to the rest of the sloop -->
+  <g stroke="#3a3f58" stroke-width="2" stroke-dasharray="6 5">
+    <line x1="450" y1="325" x2="695" y2="87"/>
+    <line x1="450" y1="325" x2="195" y2="87"/>
+    <line x1="450" y1="325" x2="730" y2="272"/>
+    <line x1="450" y1="325" x2="160" y2="272"/>
+    <line x1="450" y1="325" x2="465" y2="540"/>
+  </g>
+
+  <!-- The Waist (hub) -->
+  <g>
+    <rect id="loc-the-waist" class="sg-map-building" x="360" y="280" width="180" height="90" rx="10" fill="#232637" stroke="#7c5cff" stroke-width="2"/>
+    <text x="450" y="331" text-anchor="middle" fill="#e8e8f0" font-family="system-ui, sans-serif" font-size="16" font-weight="600">The Waist</text>
+  </g>
+
+  <!-- The Tops -->
+  <g>
+    <rect id="loc-the-tops" class="sg-map-building" x="610" y="50" width="170" height="75" rx="8" fill="#232637" stroke="#6ea8fe" stroke-width="2"/>
+    <text x="695" y="93" text-anchor="middle" fill="#e8e8f0" font-family="system-ui, sans-serif" font-size="15">The Tops</text>
+  </g>
+
+  <!-- The Great Cabin -->
+  <g>
+    <rect id="loc-the-great-cabin" class="sg-map-building" x="100" y="50" width="190" height="75" rx="8" fill="#232637" stroke="#6ea8fe" stroke-width="2"/>
+    <text x="195" y="93" text-anchor="middle" fill="#e8e8f0" font-family="system-ui, sans-serif" font-size="15">The Great Cabin</text>
+  </g>
+
+  <!-- The Galley -->
+  <g>
+    <rect id="loc-the-galley" class="sg-map-building" x="640" y="230" width="180" height="85" rx="8" fill="#232637" stroke="#4a4f6a" stroke-width="2"/>
+    <text x="730" y="278" text-anchor="middle" fill="#e8e8f0" font-family="system-ui, sans-serif" font-size="15">The Galley</text>
+  </g>
+
+  <!-- The Berth Deck -->
+  <g>
+    <rect id="loc-the-berth-deck" class="sg-map-building" x="70" y="230" width="180" height="85" rx="8" fill="#232637" stroke="#4a4f6a" stroke-width="2"/>
+    <text x="160" y="278" text-anchor="middle" fill="#e8e8f0" font-family="system-ui, sans-serif" font-size="15">The Berth Deck</text>
+  </g>
+
+  <!-- The Hold -->
+  <g>
+    <rect id="loc-the-hold" class="sg-map-building" x="380" y="500" width="170" height="80" rx="8" fill="#232637" stroke="#4a4f6a" stroke-width="2"/>
+    <text x="465" y="546" text-anchor="middle" fill="#e8e8f0" font-family="system-ui, sans-serif" font-size="15">The Hold</text>
+  </g>
+
 </svg>

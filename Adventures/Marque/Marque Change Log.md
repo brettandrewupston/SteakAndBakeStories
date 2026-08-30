@@ -13,6 +13,25 @@ in the engine log and referenced here in one line. Never write it out twice.
 
 ## 30/08/2026
 
+- Maps rebuilt to the engine's own convention after they were checked against
+  `Adventures/Meridian/Map.svg`. They had been a grid of labelled boxes, which
+  matches nothing: the shipped maps are hub-and-spoke node graphs, with the
+  background on the `<svg>` style attribute rather than a rect, dashed spokes
+  from a hub, each location a commented `<g>` of rect plus text, a distinct
+  hub stroke and a second colour for the places that matter, and long names
+  split across two lines rather than shrunk. All five now follow it — the
+  Waist is the ship's hub, and each port's hub is where a stranger arrives.
+
+- Opening scenes rewritten into the engine's block format and `playerAge`
+  default corrected to 18. Both were live-test findings. The openings had been
+  authored as plain prose, which cost three things at once: the `SPEAKER:`
+  line is what draws an NPC's portrait, so the first character appeared with
+  no image; the turn markup for actions and thoughts never appeared, so the
+  intro did not read like the rest of the story; and none of the house
+  structure was there. They now run NARRATION / SPEAKER / DIALOGUE / CLOSING
+  with `{characterName}` tokens, matching the shipped seven. Age default was
+  31 against 18 everywhere but Hollowburn.
+
 - `Card.webp` cut from `AssetsNotHosted/Masters/MarqueCard.png` — 1024x1536
   master down to the 700x1050 the registry expects, WebP q86, 214 KB, which
   sits inside the 102-283 KB range the other seven occupy. `coverUrl` added
