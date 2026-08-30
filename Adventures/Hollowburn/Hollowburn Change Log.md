@@ -15,18 +15,59 @@ in the engine log and referenced here in one line. Never write it out twice.
 Entries from 16/08/2026 to 22/08/2026 predate this split and are in the
 project-root `Change Log Archive.md`.
 
+## 28/08/2026
+
+- Hollowburn.json — `poseVocabulary` removed: the engine never read it (written
+  in full in the engine log, 28/08/2026). Needs a re-push.
+
+## 27/08/2026
+
+- Hollowburn.json — **identity and uniform text trimmed for the two-character
+  composite budget.** Two characters is the composite headcount the Scene
+  Image supports, and its prompt was close enough to this backend's
+  truncation point that a wordy pose pushed the second character's outfit,
+  pose and expression off the end. The rule applied throughout: **identity
+  describes the body and face, the uniform describes the clothes** — where an
+  identity restated clothing, the uniform clause in the same prompt already
+  carried it, so it went; where an attribute was stated several ways, one
+  statement stayed. Uniforms lost doubled modifiers only, and **every closer
+  survives verbatim** — both closers are proven anchors that keep rendered
+  figures adult and are never trimmed. No garment, scar, hair, skin tone or
+  age was dropped from any character.
+  The Marra's identity (the longest in the Adventure by 118 characters) and
+  the "nothing bought this decade" clause shared by the `family` and
+  `village` entries. The modest closer is untouched.
+  Measured with a one-off composite budget harness, not
+  retained (engine log, 27/08/2026), as the pose length at which this
+  Adventure's worst pair crosses the line: **127 to 153 chars**. Needs a re-push.
+
 ## 26/08/2026
 
-- Hollowburn.json — **NPC identities trimmed.** Each identity dropped its baked
-  stance / posture / movement / expression tail (which collided with the
-  engine's own pose and expression fields) and any meta, keeping age,
-  build, face, hair, eyes and distinctive marks. The Marra (the shadow entity) left as-is — not a person; Evelyn's forearm crutches kept. No uniform text
-  touched. Shortens every image prompt. Re-push required.
+- Hollowburn.json — **NPC identities trimmed.** Each identity dropped its
+  baked stance / posture / movement / expression tail (which collided with
+  the engine's own pose and expression fields) and any meta, keeping age,
+  build, face, hair, eyes and distinctive marks. The Marra (the shadow
+  entity) left as-is — not a person; Evelyn's forearm crutches kept. No
+  uniform text touched. Shortens every image prompt. Re-push required.
 
 ## 25/08/2026
 
-- `events` authored — 6, all once-only, none of them fires a milestone. Day 1 Morning — Peter Blythe comes in off the night shift and goes up to bed; Day 2 Afternoon — Kirsty Vane turns up at the front door with a bag of chips and no intention of leaving before dark; Day 3 Dusk — Quiz night at the Half Moon Inn — half the village is in, Sheila Rudd behind the bar, Nate Ogle and Barry Kelso at their table; Day 4 Morning — Sunday; Day 5 Small Hours — Peter Blythe's car starts in the cul-de-sac at a quarter to three and pulls away; Day 6 Night — The power goes off across the whole estate for about an hour. World pressure and texture on the clock; the arc's milestones stay the only thing that moves the acts. The engine mechanism is generic and written up in the engine log at `Generator/Steak and Bake Stories/Change Log.md`.
-- `known` set on 2 of the events, so they show under the Journal's Coming up: Quiz night, Half Moon Inn (Day 3 Dusk); Sunday service, St Aidan's (Day 4 Morning). The rest stay unannounced.
+- `events` authored — 6, all once-only, none of them fires a milestone. Day
+  1 Morning — Peter Blythe comes in off the night shift and goes up to bed;
+  Day 2 Afternoon — Kirsty Vane turns up at the front door with a bag of
+  chips and no intention of leaving before dark; Day 3 Dusk — Quiz night at
+  the Half Moon Inn — half the village is in, Sheila Rudd behind the bar,
+  Nate Ogle and Barry Kelso at their table; Day 4 Morning — Sunday; Day 5
+  Small Hours — Peter Blythe's car starts in the cul-de-sac at a quarter to
+  three and pulls away; Day 6 Night — The power goes off across the whole
+  estate for about an hour. World pressure and texture on the clock; the
+  arc's milestones stay the only thing that moves the acts. The engine
+  mechanism is generic and written up in the engine log at `Generator/Steak
+  and Bake Stories/Change Log.md`.
+
+- `known` set on 2 of the events, so they show under the Journal's Coming
+  up: Quiz night, Half Moon Inn (Day 3 Dusk); Sunday service, St Aidan's
+  (Day 4 Morning). The rest stay unannounced.
 
 - `Hollowburn.json` — **story arc.** The Adventure can now end. Renders
   the canon's own arc into the contract rather than inventing one. Three
@@ -44,7 +85,20 @@ project-root `Change Log Archive.md`.
   states how little of the Marra the beat is allowed. Harness: 75
   assertions, 0 failures (same scenario set as Halcyon). Needs a push.
 
-- `Hollowburn.json` — NPC schedules. Every NPC now carries `usualLocation` and a per-phase `schedule`, so the engine's WHO IS WHERE block runs on this Adventure (it emitted nothing before — no NPC had a routine, so the model placed people by feel). Location names verified against the JSON's `locations` list; presence block rendered headless from the starting location. Needs a push to go live. Same routine on both rosters (Jonah/Mara). Calls: Peter is null at Small Hours and Night — he works nights but not every night, and where he is at three a.m. is the mystery; Kirsty, Yasmin and Denny take nulls where they'd otherwise be wrongly placed at the cul-de-sac or the pub overnight (no home locations exist for them). **The Marra has no schedule and `omitFromPresence: true`** — engine flag added the same day (engine log), because an NPC with no routine is otherwise listed every turn as "may be anywhere, including right where the player is", which is the opposite of "appears rarely, never casually".
+- `Hollowburn.json` — NPC schedules. Every NPC now carries `usualLocation`
+  and a per-phase `schedule`, so the engine's WHO IS WHERE block runs on
+  this Adventure (it emitted nothing before — no NPC had a routine, so the
+  model placed people by feel). Location names verified against the JSON's
+  `locations` list; presence block rendered headless from the starting
+  location. Needs a push to go live. Same routine on both rosters
+  (Jonah/Mara). Calls: Peter is null at Small Hours and Night — he works
+  nights but not every night, and where he is at three a.m. is the mystery;
+  Kirsty, Yasmin and Denny take nulls where they'd otherwise be wrongly
+  placed at the cul-de-sac or the pub overnight (no home locations exist for
+  them). **The Marra has no schedule and `omitFromPresence: true`** — engine
+  flag added the same day (engine log), because an NPC with no routine is
+  otherwise listed every turn as "may be anywhere, including right where the
+  player is", which is the opposite of "appears rarely, never casually".
 
 ## 24/08/2026
 
@@ -53,11 +107,14 @@ project-root `Change Log Archive.md`.
   image prompt's setting line, which until today was the bare location name.
   The engine mechanism is generic and is written up in full in the engine log
   at `Generator/Steak and Bake Stories/Change Log.md`.
+
 - `imageStyle` gained `professional photo`, placed with the other style
-  tokens and ahead of the framing instruction:
-  `painted illustration, muted desaturated palette, overcast north-east English light, professional photo, front on shot`
-  A photographic quality token paired with a painted style token lifts
-  detail, lighting and coherence without the render losing the style.
+  tokens and ahead of the framing instruction: `painted illustration, muted
+  desaturated palette, overcast north-east English light, professional
+  photo, front on shot` A photographic quality token paired with a painted
+  style token lifts detail, lighting and coherence without the render losing
+  the style.
+
 - THE PLAYER CHOOSES WHICH BLYTHE CHILD THEY ARE. Female puts them in Mara at
   21 with Jonah as the 19-year-old brother; male puts them in Jonah at 21 with
   Mara as the 19-year-old sister. The haunted role never moves — only the name
@@ -70,6 +127,7 @@ project-root `Change Log Archive.md`.
   The rhyme rotates rather than breaking, and the male reading is arguably the
   crueller one. `being-believed.txt` already reverses the roles mid-story, so
   the mechanic needs nothing.
+
 - ALL DATA, NO ENGINE WORK. `npcs` became `npcSets` and `openingScene` became
   `openingScenes`, both existing gender-keyed fields that Meridian and
   Vermillion already use. `nameSets` carries exactly one name per gender, so
@@ -77,27 +135,33 @@ project-root `Change Log Archive.md`.
   types. Hollowburn is the first Adventure to change WHO is in the cast rather
   than only how they regard the player — the other two keep the same roster
   across both sets.
+
 - The Mara NPC is not a gender-swapped Jonah. Jonah's sleep signal is snoring;
   hers is a podcast she falls asleep to and never turns off. That makes her
   accidentally warded — sound that keeps time is the one thing the Marra cannot
   hold a room against, the same mechanism as Ivy Ogle's radio, which nobody in
   the house has worked out. It also makes the silence when it stops worse.
+
 - `npc-jonah-blythe.txt` rewritten as "The Blythe Children", covering both
   siblings and stating which one the player is under each gender. `loreEntries`
   is a flat list with no gender keying — unlike npcSets and openingScenes — so
   one file covering both is the only option. The filename was deliberately NOT
   changed: an overwrite is one commit, while a rename on GitHub's web uploader
   is a delete and an add with a window between them where the live app 404s.
+
 - Two lore lines that gendered the player neutralised: `the-marra.txt` rule 3
   and the VOICE paragraph in `npc-the-marra.txt` both said "your brother's
   voice", now "the one you grew up beside". Evelyn's own "her brother Duncan"
   is untouched — that is her history, not the player's.
+
 - Appearance defaults changed from shoulder-length straight black to short
   straight dark brown, which read as female-specific once a male player was
   possible. Matches Jonah's canon look, stays plausible for Mara, and no lore
   describes the player's appearance so nothing constrains it.
+
 - The setup screen is back; `skipSetup` removed. See the engine log for why it
   had to come off the ADVENTURES registry entry as well as the hosted JSON.
+
 - VERIFIED in the real engine headless, both genders: correct name, correct
   sibling in `currentStory.npcs`, correct opening scene, `playerCategory`
   resolving to family-female / family-male, Hush skin still applied, no page
@@ -139,15 +203,18 @@ project-root `Change Log Archive.md`.
   `Generator/Steak and Bake Stories/Change Log.md`.
 
 ## 22/08/2026
+
 - Title-card art registered: `coverUrl` now points at
-  `Assets/TitleCards/QuietCard.webp`, so this Adventure shows a poster on
+  `Adventures/Hollowburn/Card.webp`, so this Adventure shows a poster on
   the selection screen instead of the emoji-plus-text fallback. Exported
   from the 1024x1536 PNG to 700x1050 WebP at 141 KB, matching the other
-  cards; the PNG moved to `Assets/Masters/QuietCard.png` per the export
+  cards; the PNG moved to `AssetsNotHosted/Masters/QuietCard.png` per the export
   convention. The registry comment recording that no art existed yet is
   removed rather than left standing.
+
 - The long-blurb card-stretch bug this Adventure surfaced is an engine
   fix — written up in `Generator/Steak and Bake Stories/Change Log.md`.
+
 - Registered in `ADVENTURES` and live. The story definition, map and Lore
   had all been authored and uploaded; only the registry entry was missing,
   so nothing in the app could reach any of it. Registered as **The Quiet
@@ -159,17 +226,20 @@ project-root `Change Log Archive.md`.
   documented fallback working rather than a defect, and the carousel
   stretches it to the posters' height so it doesn't read as broken — but
   it is the odd one out until art is exported and uploaded.
+
 - Time phases authored: `timePhases` `Small Hours / Dawn / Morning /
   Afternoon / Dusk / Night`, `startingPhase` `Small Hours` — six rather
   than five, and the day is ordered to begin in the hours the player
   character can't sleep through rather than to end in them, so Day 1
   covers a whole village day instead of a single phase. Engine mechanic
   in the engine log, 22/08/2026.
+
 - Built. `Story Definitions/Hollowburn.json` (12 NPCs, 13 locations, 5
   uniform categories), `Maps/Hollowburn Map.svg`, `Lore/Hollowburn/*.txt`
   (19 files), and the canon doc `Hollowburn.txt`, which replaces the
   outline sketch — the sketch file was moved to the project-root
   `_to_delete/` folder rather than left beside it.
+
 - The player is female by design and the cast bios say "sister" and
   "daughter" outright. The `playerGender` setup field is nonetheless kept
   rather than removed, as a `tiles` field with a single Female option,
@@ -181,6 +251,7 @@ project-root `Change Log Archive.md`.
   Expressing "female only" by dropping the field would silently
   reintroduce that bug. Keeping it also lets `playerCategoryTemplate`
   stay in the standard `family-{playerGender}` form.
+
 - SFW is enforced in the data, not only by instruction. Three optional
   fields are omitted entirely, each verified against the engine to
   degrade gracefully: `clothingStates` (the prompt's CLOTHING STATES
@@ -192,6 +263,7 @@ project-root `Change Log Archive.md`.
   clause is appended per NPC only when the field exists — no NPC here has
   one, so nothing nudges toward romance). `likes`/`dislikes` still drive
   affinity.
+
 - `promptRules.contentApproach` does not follow the player's lead. Solmere
   and Meridian share a string ending "if the player's own input clearly
   steers a scene that direction, follow their lead" and Halcyon is
@@ -199,16 +271,19 @@ project-root `Change Log Archive.md`.
   the AI to turn the scene back into the dark rather than refuse coldly.
   The Bathroom is deliberately not a wet location despite the source
   manuscript opening with a bath.
+
 - The map is two hubs (The Landing, The Cul-de-sac) joined by one solid
   line for the front door, not the hub-and-spoke the other three use.
   The Old Pit Head gets Halcyon's danger treatment: red, dashed, path
   drawn severed.
+
 - MAP AUTHORING RULE, generalise this: a raw `&` in an SVG label is
   invalid XML and kills the entire render silently. "Mam & Dad's" did
   exactly that and was only caught by rendering the file in a browser and
   looking at it. Escape label text, and render every future map before
   delivering it — the id/overlap/viewBox checks all passed on the broken
   file.
+
 - Four names changed during authoring for the substring-token scan:
   Iris -> Ivy (fires inside "Irish"), Frank -> Sheila (fires inside
   "Frankly"), Ray -> Barry (fires inside "Rays"), and Cathal -> Nell for
@@ -218,24 +293,29 @@ project-root `Change Log Archive.md`.
   fires inside "Peterlee" and "Peterhead", real towns on this coast,
   mitigated in fiction by a `promptRules.setting` rule that no
   neighbouring town, city or county is ever named.
+
 - Canon is fixed rather than left open, departing from Halcyon's Sunken
   Villa precedent: the entity, its five rules, the 1947 fall, the
   eleventh name and the 1968 cap under the cul-de-sac are all pinned
   down, because five branching endings need a fixed thing to end.
+
 - `relationshipLabels` runs Written Off -> Believes You rather than the
   Despised -> Love / Nemesis -> Devoted scales the other three use.
   Being believed is the story's actual mechanic, so it is the top of the
   track.
+
 - `imageStyle` is "painted illustration, muted desaturated palette,
   overcast north-east English light, front on shot" rather than the
   "painted anime style, front on shot" shared by the other three. This is
   the only field here that departs from a setting proven against the live
   image pipeline, and the first candidate for reverting if portraits come
   out wrong.
+
 - The player is female by design. The cast section previously stated a
   gender-neutral bio convention ("sibling", "their child") that the bios
   beneath it did not follow; the convention is dropped and the bios stand
   as written.
+
 - Closed two OPEN items that the outline already treated as canon
   elsewhere: Evelyn's price was her brother Duncan (1989), not her body —
   the crutches are arthritis; and the Durham coast stays, since the sea

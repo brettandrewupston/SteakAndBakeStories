@@ -1,6 +1,6 @@
 PARADISE REBUILT (HALCYON CAY) — ADVENTURE CONTENT
 ===========================================================
-Last updated: 22/08/2026
+Last updated: 28/08/2026
 Third Adventure built for the Story Generator. Architecture/decisions
 live in the parent folder's Goals.txt and Features.txt — this file is
 just this Adventure's canon (premise, format, NPCs, map, setup fields).
@@ -228,6 +228,25 @@ longest single clause in an image prompt and a composite repeats it once
 per character, so detail past that point costs the room, the pose and the
 expression the weight they need. Cross-project rule — see the root
 `Change Log.md`, 24/08/2026.
+
+ALTERNATE UNIFORMS (altUniforms / altPoolUniforms)
+---------------------------------------------------
+A second complete wardrobe, the same categories in each set, reached from
+the Options row "Alternate outfits" (engine feature, see Goals.txt). The
+standard set stays the default; this is the other thing this cast wears.
+
+Reveal-night glamour rather than the work kit: open white shirts and pale
+linen suits, slip dresses and satin jumpsuits, sandals and low heels, the
+faded palm crest moved to a lapel or a hip. The cameras are the reason
+this island has money, so the cast owning a dressed-up look is in the
+premise. Same closing clause verbatim and the same one adult-body fact per
+entry as the standard set.
+
+altPoolUniforms is the same night at the pool, styled for broadcast —
+gold-trimmed trunks and bikinis in show colours, oiled skin, hair done
+rather than wet-and-working.
+
+Same cap as the standard set: 39 words on average, 41 at most.
 
 MYSTERY SITE
 ---------------

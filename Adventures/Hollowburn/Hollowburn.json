@@ -440,8 +440,8 @@
     }
   ],
   "uniforms": {
-    "family-male": "At home in a cold house: a plain long-sleeved t-shirt or a worn zip-up hoodie, tracksuit bottoms or old jeans, thick socks and no shoes. Nothing new, nothing bought this decade, everything comfortable and slightly shapeless. Fully clothed and modestly dressed at all times, clearly an adult.",
-    "family-female": "At home in a cold house: an oversized jumper or a worn zip-up hoodie over a plain top, leggings or old jeans, thick socks and no shoes. Nothing new, nothing bought this decade, everything comfortable and slightly shapeless. Fully clothed and modestly dressed at all times, clearly an adult.",
+    "family-male": "At home in a cold house: a plain long-sleeved t-shirt or a worn zip-up hoodie, tracksuit bottoms or old jeans, thick socks and no shoes. Nothing new, everything comfortable and slightly shapeless. Fully clothed and modestly dressed at all times, clearly an adult.",
+    "family-female": "At home in a cold house: an oversized jumper or a worn zip-up hoodie over a plain top, leggings or old jeans, thick socks and no shoes. Nothing new, everything comfortable and slightly shapeless. Fully clothed and modestly dressed at all times, clearly an adult.",
     "village-male": "Dressed for a wet north-east coastal village: a heavy waterproof coat or an old wax jacket over a jumper, dark jeans or work trousers, sturdy scuffed boots, collar up against the wind. Practical, weathered, unfashionable. Fully clothed and modestly dressed at all times, clearly an adult.",
     "village-female": "Dressed for a wet north-east coastal village: a padded coat or a long waterproof over a jumper, dark jeans or trousers, sturdy boots, a scarf pushed up round the chin. Practical, weathered, unfashionable. Fully clothed and modestly dressed at all times, clearly an adult.",
     "entity": "No clothing and no visible surface — a flat black silhouette with no texture, no skin and no features, edges slightly indistinct as though the shape is not fully resolved. Only the outline, the long fingers, and two small red points where the eyes would be."
@@ -636,20 +636,6 @@
       }
     ]
   },
-  "poseVocabulary": [
-    "standing",
-    "sitting",
-    "sitting on the stairs",
-    "curled up",
-    "listening at a door",
-    "looking back over a shoulder",
-    "holding a torch",
-    "hand over mouth",
-    "kneeling",
-    "leaning in a doorway",
-    "arms folded",
-    "standing completely still"
-  ],
   "expressionVocabulary": [
     "neutral",
     "soft smile",
@@ -893,7 +879,7 @@
         "personality": "Almost gentle, which is the worst thing about it. Speaks very little and always in somebody else's voice — a father's through a door, a mother's from the bottom of the stairs, a brother's on the landing. Says a name. Gives an instruction that sounds like an invitation: come downstairs, come here, open the door. It has forty years and it knows it. It is never angry and has never been refused by anyone it did not eventually outlast. Once it has been named and worked out it becomes conversational, and that is worse.",
         "likes": "being come to, being kept secret, a person who has stopped telling anyone, patience",
         "dislikes": "a second person awake in the room, being named, anything keeping time, being told about out loud",
-        "identity": "A silhouette rather than a person: roughly eight feet tall and impossibly thin, drawn in flat black with no visible surface detail, long spidery fingers curling around the edge of a doorframe. The face is entirely swallowed by shadow with two small red points where eyes would be. Unnaturally still. Never fully in frame."
+        "identity": "A silhouette rather than a person: roughly eight feet tall and impossibly thin, drawn in flat black with no surface detail, long spidery fingers curling around a doorframe. The face entirely swallowed by shadow, two small red points where eyes would be. Unnaturally still. Never fully in frame."
       }
     ],
     "male": [
@@ -1106,7 +1092,7 @@
         "personality": "Almost gentle, which is the worst thing about it. Speaks very little and always in somebody else's voice — a father's through a door, a mother's from the bottom of the stairs, a brother's on the landing. Says a name. Gives an instruction that sounds like an invitation: come downstairs, come here, open the door. It has forty years and it knows it. It is never angry and has never been refused by anyone it did not eventually outlast. Once it has been named and worked out it becomes conversational, and that is worse.",
         "likes": "being come to, being kept secret, a person who has stopped telling anyone, patience",
         "dislikes": "a second person awake in the room, being named, anything keeping time, being told about out loud",
-        "identity": "A silhouette rather than a person: roughly eight feet tall and impossibly thin, drawn in flat black with no visible surface detail, long spidery fingers curling around the edge of a doorframe. The face is entirely swallowed by shadow with two small red points where eyes would be. Unnaturally still. Never fully in frame."
+        "identity": "A silhouette rather than a person: roughly eight feet tall and impossibly thin, drawn in flat black with no surface detail, long spidery fingers curling around a doorframe. The face entirely swallowed by shadow, two small red points where eyes would be. Unnaturally still. Never fully in frame."
       }
     ]
   },

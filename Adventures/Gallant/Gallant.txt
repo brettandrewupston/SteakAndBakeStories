@@ -1,6 +1,6 @@
 PROPERTY DAMAGE (GALLANT) — ADVENTURE CONTENT
 ===========================================================
-Last updated: 24/08/2026
+Last updated: 28/08/2026
 Sixth Adventure for the Story Generator. Architecture/decisions live in
 the parent folder's Goals.txt and Features.txt — this file is just this
 Adventure's canon (premise, rules, NPCs, map, setup fields).
@@ -344,6 +344,26 @@ per character, so detail past that point costs the room, the pose and the
 expression the weight they need. Cross-project rule — see the root
 `Change Log.md`, 24/08/2026.
 
+ALTERNATE UNIFORMS (altUniforms / altPoolUniforms)
+---------------------------------------------------
+A second complete wardrobe, the same categories in each set, reached from
+the Options row "Alternate outfits" (engine feature, see Goals.txt). The
+standard set stays the default; this is the other thing this cast wears.
+
+Press night rather than the callout: hired jackets worn over costume tops
+for Category D, a dress version of the Cardinal plating with a short cape
+and gold sponsor decals for the A-list, GPA dress uniform with service
+ribbons a size too small, going-out clothes for civilians, couture for the
+exec. Star tier still reads instantly, which is the point of this
+Adventure's costume language — the difference between a hired jacket and
+studio-built dress armour is the whole star rating in one image.
+
+`fully clothed, clearly an adult` is carried verbatim on every entry.
+
+No altPoolUniforms — no wet locations, same as the standard set.
+
+Same cap as the standard set: 40 words on average, 45 at most.
+
 THE BLACKOUT BLOCK
 ---------------------
 Six blocks Cardinal has zoned out of coverage because the claims never
@@ -557,7 +577,7 @@ OUTSTANDING
    `[[EVENT:]]` tag against this Adventure's data.
 
 Content and data changes from here go in
-Adventures/Gallant Change Log.md; engine changes go in
+Adventures/Gallant/Gallant Change Log.md; engine changes go in
 Generator/Steak and Bake Stories/Change Log.md.
 
 LOCATION SCENERY (image prompts)

@@ -634,7 +634,7 @@
       "likes": "competence, a quiet shift, people who read the paperwork, being left to eat in peace, dry jokes, rain",
       "dislikes": "being managed, new starters who explain the job to her, self-pity, anybody who says the word 'destiny'",
       "attractedTo": "women and men both, rarely acted on and never casually; thirteen years of watching people leave has made her careful rather than cold",
-      "identity": "A tall, striking woman of 41, a long-limbed full-figured build — heavy bust, soft waist, strong shoulders, deep brown skin, close-cropped natural hair going silver at the temples, high cheekbones, steady tired amused eyes, faint pale burn-scars across the backs of both hands."
+      "identity": "A tall, striking woman of 41, long-limbed and full-figured — heavy bust, soft waist, strong shoulders, deep brown skin, close-cropped natural hair going silver at the temples, high cheekbones, steady tired amused eyes, pale burn-scars across both hands."
     },
     {
       "name": "Bricky Zhao",
@@ -894,10 +894,10 @@
     }
   ],
   "uniforms": {
-    "dlist-male": "home-made Category D costume: a skintight surplus bodysuit, hand-re-sewn, sleeves gone, unzipped past the sternum over a bare chest and stomach, webbing low on the hips, thigh straps, scuffed knee-high boots, an off-centre iron-on logo, a GPA licence patch, fully clothed, clearly an adult",
-    "dlist-female": "home-made Category D costume: a skintight surplus bodysuit, hand-re-sewn, sleeves gone, unzipped to the navel over deep cleavage and a bare midriff, leg cut high over the hipbone, thigh straps, scuffed thigh-high boots, an off-centre iron-on logo, a GPA licence patch, fully clothed, clearly an adult",
-    "alist-male": "Cardinal-issue A-list armour: moulded composite plating in brand colours, contoured hard to the chest, waist and thighs, glossy and skin-tight, the collar open low, a bare midriff panel, sponsor decals placed for the cameras, immaculate and studio-built, fully clothed, clearly an adult",
-    "alist-female": "Cardinal-issue A-list armour: moulded composite plating in brand colours, contoured hard to the bust, waist and hips, glossy and skin-tight, a plunging neckline, bare underbust and midriff panels, the leg cut to the hip, sponsor decals, studio-built, fully clothed, clearly an adult",
+    "dlist-male": "home-made Category D costume: a skintight surplus bodysuit, hand-re-sewn, sleeveless, unzipped past the sternum over a bare chest and stomach, webbing low on the hips, thigh straps, scuffed knee-high boots, an off-centre iron-on logo, a GPA licence patch, fully clothed, clearly an adult",
+    "dlist-female": "home-made Category D costume: a skintight surplus bodysuit, hand-re-sewn, sleeveless, unzipped to the navel over deep cleavage and a bare midriff, legs cut high, thigh straps, scuffed thigh-high boots, an off-centre iron-on logo, a GPA licence patch, fully clothed, clearly an adult",
+    "alist-male": "Cardinal-issue A-list armour: moulded composite plating in brand colours, contoured hard to the chest, waist and thighs, glossy and skin-tight, the collar open low, a bare midriff panel, sponsor decals placed for the cameras, studio-built, fully clothed, clearly an adult",
+    "alist-female": "Cardinal-issue A-list armour: moulded composite plating in brand colours, contoured hard to the bust, waist and hips, glossy and skin-tight, a plunging neckline, bare underbust and midriff panels, the leg cut to the hip, sponsor decals, fully clothed, clearly an adult",
     "vpa-male": "Gallant Powers Authority municipal kit: a polyester uniform shirt a size too small, straining across the chest, open several buttons at the throat, sleeves rolled to the bicep, issue trousers taken in past spec, scuffed shoes, a lanyard and radio, fully clothed, clearly an adult",
     "vpa-female": "Gallant Powers Authority municipal kit: a polyester uniform blouse a size too small, straining across the chest, open several buttons, sleeves rolled to the bicep, an issue skirt taken in past spec and riding high, bare legs, a lanyard and radio, fully clothed, clearly an adult",
     "civ-male": "ordinary Gallant City street clothes chosen to show everything off: a cropped fitted tee riding up over a bare stomach, an open jacket, jeans worn low on the hips, everything cut skin-close, fully clothed, clearly an adult",
@@ -1110,22 +1110,6 @@
       }
     ]
   },
-  "poseVocabulary": [
-    "standing",
-    "sitting on a kerb",
-    "landing in a crouch",
-    "arching back mid-stretch",
-    "holding a phone up at arm's length",
-    "arms folded",
-    "hands on hips",
-    "hip cocked against a laundry machine",
-    "bending over a laundry drum",
-    "leaning in a doorway",
-    "hands on knees catching breath",
-    "being interviewed",
-    "peeling out of a costume",
-    "sitting on a roof ledge"
-  ],
   "expressionVocabulary": [
     "neutral",
     "soft smile",

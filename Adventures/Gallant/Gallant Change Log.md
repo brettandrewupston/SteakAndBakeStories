@@ -12,7 +12,30 @@ in the engine log at `Generator/Steak and Bake Stories/Change Log.md`.
 An engine change whose first use is this Adventure's data is written in full
 in the engine log and referenced here in one line. Never write it out twice.
 
+## 28/08/2026
+
+- Gallant.json — `poseVocabulary` removed: the engine never read it (written
+  in full in the engine log, 28/08/2026). Needs a re-push.
+
 ## 27/08/2026
+
+- Gallant.json — **identity and uniform text trimmed for the two-character
+  composite budget.** Two characters is the composite headcount the Scene
+  Image supports, and its prompt was close enough to this backend's
+  truncation point that a wordy pose pushed the second character's outfit,
+  pose and expression off the end. The rule applied throughout: **identity
+  describes the body and face, the uniform describes the clothes** — where an
+  identity restated clothing, the uniform clause in the same prompt already
+  carried it, so it went; where an attribute was stated several ways, one
+  statement stayed. Uniforms lost doubled modifiers only, and **every closer
+  survives verbatim** — both closers are proven anchors that keep rendered
+  figures adult and are never trimmed. No garment, scar, hair, skin tone or
+  age was dropped from any character.
+  Iris Okonkwo-Vahl's identity and the four `dlist`/`alist` uniform entries.
+  Small cuts only — Gallant was never far off.
+  Measured with a one-off composite budget harness, not
+  retained (engine log, 27/08/2026), as the pose length at which this
+  Adventure's worst pair crosses the line: **126 to 154 chars**. Needs a re-push.
 
 - Gallant.json — **`altUniforms` added: press night.** A second complete
   wardrobe over the same nine categories, selected by the engine's
@@ -30,8 +53,9 @@ in the engine log and referenced here in one line. Never write it out twice.
 
 ## 26/08/2026
 
-- Gallant.json — **`uniformsModest` removed** with the engine's Fan service toggle (see the engine log, 26/08/2026); `uniforms` untouched. Needs a re-push.
-
+- Gallant.json — **`uniformsModest` removed** with the engine's Fan service
+  toggle (see the engine log, 26/08/2026); `uniforms` untouched. Needs a
+  re-push.
 
 - Gallant.json — **NPC identities trimmed.** Each identity dropped its baked
   stance / posture / movement / expression tail (which collided with the
@@ -61,10 +85,37 @@ in the engine log and referenced here in one line. Never write it out twice.
 
 ## 25/08/2026
 
-- `events` authored — 7, all once-only, none of them fires a milestone. Day 1 Rush Hour — A gas main goes up on Clement Street at four; Day 1 Night Shift — The fourth floor is on the roof, as it is most nights; Day 2 Day Shift — Marguerite Delph delivers the player's welcome pack, which is an invoice, and the week's rota; Day 3 Small Hours — The laundry's only working dryer dies at three in the morning with half the fourth floor's clothes inside it; Day 4 Rush Hour — Kell Brannigan parks a sponsored vehicle across the Ganymede's fire exit for a street shoot; Day 6 Sundown — The VANTAGE mid-quarter leaderboard goes up on the lobby screen; Day 8 Sundown — Something is burning in the Blackout Block. World pressure and texture on the clock; the arc's milestones stay the only thing that moves the acts. The engine mechanism is generic and written up in the engine log at `Generator/Steak and Bake Stories/Change Log.md`.
-- `known` set on 2 of the events, so they show under the Journal's Coming up: GPA building inspection (Day 4 Rush Hour); Mid-quarter leaderboard posted (Day 6 Sundown). The rest stay unannounced.
+- `events` authored — 7, all once-only, none of them fires a milestone. Day
+  1 Rush Hour — A gas main goes up on Clement Street at four; Day 1 Night
+  Shift — The fourth floor is on the roof, as it is most nights; Day 2 Day
+  Shift — Marguerite Delph delivers the player's welcome pack, which is an
+  invoice, and the week's rota; Day 3 Small Hours — The laundry's only
+  working dryer dies at three in the morning with half the fourth floor's
+  clothes inside it; Day 4 Rush Hour — Kell Brannigan parks a sponsored
+  vehicle across the Ganymede's fire exit for a street shoot; Day 6 Sundown
+  — The VANTAGE mid-quarter leaderboard goes up on the lobby screen; Day 8
+  Sundown — Something is burning in the Blackout Block. World pressure and
+  texture on the clock; the arc's milestones stay the only thing that moves
+  the acts. The engine mechanism is generic and written up in the engine log
+  at `Generator/Steak and Bake Stories/Change Log.md`.
 
-- `Gallant.json` — NPC schedules. Every NPC now carries `usualLocation` and a per-phase `schedule`, so the engine's WHO IS WHERE block runs on this Adventure (it emitted nothing before — no NPC had a routine, so the model placed people by feel). Location names verified against the JSON's `locations` list; presence block rendered headless from the starting location. Needs a push to go live. Calls: Rush Hour is the incident window, so Category D and the A-list converge on Clement Street then; Dez, Sabine and Iris are null on adjacent phases as callout roamers; Altitude is A-list plus Pilar only; Elodie's Small Hours in the Fourth Floor Corridor stands in for the stairwell she sleeps in; Kell gets the roof in the Small Hours (his listed like, and the romance's only off-contract window); Brant's Night Shift in the Blackout Block stands in for the off-books demolition, and his Small Hours is null.
+- `known` set on 2 of the events, so they show under the Journal's Coming
+  up: GPA building inspection (Day 4 Rush Hour); Mid-quarter leaderboard
+  posted (Day 6 Sundown). The rest stay unannounced.
+
+- `Gallant.json` — NPC schedules. Every NPC now carries `usualLocation` and
+  a per-phase `schedule`, so the engine's WHO IS WHERE block runs on this
+  Adventure (it emitted nothing before — no NPC had a routine, so the model
+  placed people by feel). Location names verified against the JSON's
+  `locations` list; presence block rendered headless from the starting
+  location. Needs a push to go live. Calls: Rush Hour is the incident
+  window, so Category D and the A-list converge on Clement Street then; Dez,
+  Sabine and Iris are null on adjacent phases as callout roamers; Altitude
+  is A-list plus Pilar only; Elodie's Small Hours in the Fourth Floor
+  Corridor stands in for the stairwell she sleeps in; Kell gets the roof in
+  the Small Hours (his listed like, and the romance's only off-contract
+  window); Brant's Night Shift in the Blackout Block stands in for the
+  off-books demolition, and his Small Hours is null.
 
 - `Gallant.json` — every option of the `power` setup field now carries a
   `prompt`: the mechanic as a hard rule (always works, what it does not
@@ -76,32 +127,37 @@ in the engine log and referenced here in one line. Never write it out twice.
 
 - All 9 `uniforms` entries shortened from a 62-word average (max 83) to 43
   (max 46). Length is the only thing this changes: the garments, colours,
-  insignia, what each one bares and the tone words are preserved, and "fully clothed, clearly an adult"
-  survives verbatim on every entry. Only the repeated restatements of
-  "revealing" were cut. No engine change.
-  - Same rule now applied to every Adventure. The uniform clause is the
-    longest single clause in an image prompt and it is repeated once per
-    character in a composite, so it is the cheapest thing to shorten and the
-    most expensive thing to leave long. Ceiling is ~40 words plus whatever
-    that Adventure's closing clause costs.
+  insignia, what each one bares and the tone words are preserved, and "fully
+  clothed, clearly an adult" survives verbatim on every entry. Only the
+  repeated restatements of "revealing" were cut. No engine change. - Same
+  rule now applied to every Adventure. The uniform clause is the longest
+  single clause in an image prompt and it is repeated once per character in
+  a composite, so it is the cheapest thing to shorten and the most expensive
+  thing to leave long. Ceiling is ~40 words plus whatever that Adventure's
+  closing clause costs.
+
 - `locationScenery` authored for all 13 locations, ~21 words each — the room,
   two or three fixed physical features and its light. These now carry the
   image prompt's setting line, which until today was the bare location name.
   The engine mechanism is generic and is written up in full in the engine log
   at `Generator/Steak and Bake Stories/Change Log.md`.
+
 - `imageStyle` gained `professional photo`, placed with the other style
   tokens and ahead of the framing instruction:
   `painted anime style, professional photo, front on shot`
   A photographic quality token paired with a painted style token lifts
   detail, lighting and coherence without the render losing the style.
-- Title card art added and wired in. `Assets/TitleCards/PropertyDamageTitleCard.webp`,
-  700x1050 WebP at quality 86 (283KB), exported from the 1024x1536 PNG per
-  the standing export convention; the PNG master is in
-  `AssetsNotHosted/Masters/`. Hosted in the assets repo and registered as
-  `coverUrl` on the `gallant` entry, so the Adventure Selection card now
-  renders as a poster instead of emoji + title + blurb. Verified before
-  registering: the hosted file returns 200 and is byte-identical to the
-  local export, and `node --check` passes on the panel's script block.
+
+- Title card art added and wired in.
+  `Adventures/Gallant/Card.webp`, 700x1050 WebP at quality
+  86 (283KB), exported from the 1024x1536 PNG per the standing export
+  convention; the PNG master is in `AssetsNotHosted/Masters/`. Hosted in the
+  assets repo and registered as `coverUrl` on the `gallant` entry, so the
+  Adventure Selection card now renders as a poster instead of emoji + title
+  + blurb. Verified before registering: the hosted file returns 200 and is
+  byte-identical to the local export, and `node --check` passes on the
+  panel's script block.
+
 - REGISTERED and live. The Adventure's entry is in the `ADVENTURES` array in
   `Code/Bottom Panel.txt` — id `gallant`, title `Property Damage`, cover `⭐`,
   no `coverUrl` (no title card exists, so the card renders as emoji + title +
@@ -111,9 +167,11 @@ in the engine log and referenced here in one line. Never write it out twice.
   `Lore/Gallant/` files are in the assets repo, the Story Definition fetches
   and parses with id `gallant` and 15 NPCs, and `node --check` passes on the
   extracted script block.
+
 - Gained the **newsprint** UI skin — printed-comic palette, Ben-Day dots,
   caption-box narration, Archivo Black. Engine feature, written up in full in
   `Generator/Steak and Bake Stories/Change Log.md`.
+
 - Hosting is the GitHub assets repo, not R2. This Adventure's data was
   authored against `pub-d948...r2.dev` URLs and was swept to
   `raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/`
@@ -121,13 +179,14 @@ in the engine log and referenced here in one line. Never write it out twice.
   hosting decision is in the project-root `Change Log.md` (24/08/2026) and
   the URL rewrite in the engine log.
 
-- Adventure created and built. `Adventures/Gallant.txt` holds the brief;
+- Adventure created and built. `Adventures/Gallant/Gallant.txt` holds the brief;
   `Story Definitions/Gallant.json`, 24 files in `Lore/Gallant/` and
   `Maps/Gallant Map.svg` are the data. Fifteen NPCs across four groups, nine
   uniform categories, thirteen map locations, five time phases, the
   star-scale relationship ladder, ten setup fields, and a three-act arc of
   ten milestones and six endings. No UI skin, no title card and no
   `coverUrl`.
+
 - Build-time verification run against the generated data: all 13 rect ids in
   the map SVG match `locationSlug()` output, no boxes overlap and none falls
   outside the viewBox; the map was rendered in a headless browser before
@@ -136,31 +195,37 @@ in the engine log and referenced here in one line. Never write it out twice.
   no collisions. Every NPC category resolves to a uniform, both
   `playerCategoryTemplate` expansions exist, and every arc `requires`, phase
   `until` and ending `when` resolves to a real milestone and outcome.
+
 - The relationship ladder doubles as the VANTAGE app's public star rating —
   `0 Reported You / 15 One Star / 35 Unrated / 50 Three Stars / 65 Four
   Stars / 80 Five Stars / 95 Would Call Again`. The signature mechanic
   therefore needs no engine support and no new persisted field: the number
   the engine already tracks and displays is the number the fiction is about.
+
 - The A-list openly cause the incidents they respond to, and the city knows.
   Authored this way specifically so the Adventure cannot become an
   investigation — there is nothing to expose, so the antagonists can be
   present and petty in every scene instead of withheld. An earlier version
   of the brief had it as a hidden conspiracy with a discoverable
   declined-call trail; that structure is not the one built.
+
 - `The Blackout Block` fills the restricted-site slot held by Halcyon's
   Sunken Villa and Pemberton's Overflow, but carries no secret by design —
   six blocks zoned out of insurance coverage, stated plainly in the lore.
   The slot is kept for map shape and for Elodie Sarr's storyline, not for a
   mystery.
+
 - `Wen Zhao` renamed **Bricky Zhao** at brief stage; his token is the
   nickname. `Wen` fires inside `When` at the start of a sentence, which
   would have matched on a large share of every scene's narration. Four
   residual collisions are recorded in `Gallant.txt` TOKENS and still need a
   programmatic sweep at build time.
+
 - Content level set to Halcyon's rather than Solmere's, with two authored
   costs: Kell Brannigan's Cardinal brand-alignment clause, and Marguerite
   Delph being the player's landlord. `attractedTo` is omitted for Pilar
   Anastas and Yolanda Pesch only.
+
 - Costume register set above every previous Adventure — this is the most
   overtly sexualised uniform set of the six, applied to all eight
   categories and to both genders equally rather than to the female

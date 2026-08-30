@@ -1,6 +1,6 @@
 THE QUIET HOUR (HOLLOWBURN) — ADVENTURE CONTENT
 ===========================================================
-Last updated: 24/08/2026
+Last updated: 28/08/2026
 Fourth Adventure built for the Story Generator. Architecture/decisions
 live in the parent folder's Goals.txt and Features.txt — this file is
 just this Adventure's canon (premise, rules, NPCs, map, setup fields).
@@ -512,7 +512,7 @@ OUTSTANDING
    page errors. Not yet played through by a human past the first beat.
 
 Content and data changes from here go in
-Adventures/Hollowburn Change Log.md; engine changes go in
+Adventures/Hollowburn/Hollowburn Change Log.md; engine changes go in
 Generator/Steak and Bake Stories/Change Log.md.
 
 LOCATION SCENERY (image prompts)
