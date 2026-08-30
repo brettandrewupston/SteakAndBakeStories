@@ -1,6 +1,6 @@
 NOBODY CALLS THE POLICE (VERMILLION) — ADVENTURE CONTENT
 ===========================================================
-Last updated: 23/08/2026
+Last updated: 28/08/2026
 Eighth Adventure for the Story Generator. Architecture/decisions live in
 the parent folder's Goals.txt and Features.txt — this file is just this
 Adventure's canon (premise, the mystery design, NPCs, map, setup fields).
@@ -298,8 +298,8 @@ FROM OUTSIDE (2)
 - Serafina Bellandi — heir to the rival Bellandi Family, 33. At the gala
   under a one-night truce, in white, because she knew what it would do to
   the room. Category: rival-female.
-- Det. Lt. Roy Kilbane — Calder Bay PD, 44, on the pad since he made
-  sergeant. At the party in a tuxedo he did not pay for. Category:
+- Roy Kilbane — Detective Lieutenant, Calder Bay PD, 44, on the pad since
+  he made sergeant. At the party in a tuxedo he did not pay for. Category:
   police-male.
 
 THE PARTNER (gender-mirrored, 1)
@@ -504,6 +504,25 @@ longest single clause in an image prompt and a composite repeats it once
 per character, so detail past that point costs the room, the pose and the
 expression the weight they need. Cross-project rule — see the root
 `Change Log.md`, 24/08/2026.
+
+ALTERNATE UNIFORMS (altUniforms / altPoolUniforms)
+---------------------------------------------------
+A second complete wardrobe, the same categories in each set, reached from
+the Options row "Alternate outfits" (engine feature, see Goals.txt). The
+standard set stays the default; this is the other thing this cast wears.
+
+The same cast out in the city instead of on the club floor: overcoats and
+belted trenches, day dresses and knitwear, hats, gloves and seamed
+stockings, holsters worn where they show, the Sparrow's suit under a
+beautifully cut coat. Drape rather than cut-outs, exactly as the standard
+set does it. Both closing clauses are carried verbatim, in the order the
+standard set uses them, and every entry keeps its one adult-body fact.
+
+altPoolUniforms is the Grotto and the Ambrosia Baths at noon rather than
+at midnight — high-waisted retro maillots, silk and towelling robes worn
+open, the jewellery still on.
+
+Same cap as the standard set: 44 words on average, 47 at most.
 
 THE CARDINAL'S OFFICE
 ------------------------
@@ -716,7 +735,7 @@ OUTSTANDING
    on it.
 
 Content and data changes from here go in
-Adventures/Vermillion Change Log.md; engine changes go in
+Adventures/Vermillion/Vermillion Change Log.md; engine changes go in
 Generator/Steak and Bake Stories/Change Log.md.
 
 LOCATION SCENERY (image prompts)

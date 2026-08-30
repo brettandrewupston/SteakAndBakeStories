@@ -1,8 +1,8 @@
 # Vermillion (Nobody Calls the Police) — Change Log
 
 Content and data changes for this Adventure: cast, lore, locations, map,
-Story Definition JSON (`Vermillion.json`), contentApproach,
-outfit and location data, hosted asset paths, and the outline in `Vermillion.txt`.
+Story Definition JSON (`Vermillion.json`), contentApproach, outfit and
+location data, hosted asset paths, and the outline in `Vermillion.txt`.
 
 An entry belongs here if it would still matter after the engine were
 rewritten. If it would still matter with this Adventure deleted, it belongs
@@ -11,7 +11,60 @@ in the engine log at `Generator/Steak and Bake Stories/Change Log.md`.
 An engine change whose first use is this Adventure's data is written in full
 in the engine log and referenced here in one line. Never write it out twice.
 
+## 30/08/2026
+
+- Vermillion.json — `culprit`, `safecracker` and `wayOut` flagged `hidden`, so
+  the solution is always rolled and never offered to the player (written in
+  full in the engine log, 30/08/2026). Needs a re-push.
+
+## 28/08/2026
+
+- Vermillion.json — `poseVocabulary` removed: the engine never read it (written
+  in full in the engine log, 28/08/2026). Needs a re-push.
+
+- Vermillion.json — **the three female outfits that described coverage by
+  negation now name the garment.** An image backend renders the garments a
+  prompt names and ignores the ones it denies, so "the jacket over bare skin
+  ... no shirt" reads as an instruction to draw a bare torso.
+  `uniforms.floor-female` now reads "the jacket open over a black satin
+  bustier"; `uniforms.detective-female` "a beautifully cut dark suit worn
+  over a black silk camisole"; `altUniforms.detective-female` "a dark coat
+  over the suit jacket and a black silk camisole". Silhouette and palette
+  unchanged, and each is shorter than what it replaced, so the composite
+  budget gains headroom. **Male entries are untouched** — a bare chest is
+  the intended read. Needs a re-push.
+
+- Vermillion.json — **Joey Marsh's opening line no longer describes her
+  costume.** Both `openingScenes` entries had her "waiting at the foot of the
+  stairs with a tuxedo jacket over bare shoulders"; the clause restated the
+  uniform, gave the scene nothing, and pushed the same bare-torso reading
+  through the prose. It now reads "with her cuffs turned back and a master
+  key hooked on one finger", which keeps the key — the detail that matters,
+  since she used it at 11:58.
+
 ## 27/08/2026
+
+- Vermillion.json — **identity and uniform text trimmed for the two-character
+  composite budget.** Two characters is the composite headcount the Scene
+  Image supports, and its prompt was close enough to this backend's
+  truncation point that a wordy pose pushed the second character's outfit,
+  pose and expression off the end. The rule applied throughout: **identity
+  describes the body and face, the uniform describes the clothes** — where an
+  identity restated clothing, the uniform clause in the same prompt already
+  carried it, so it went; where an attribute was stated several ways, one
+  statement stayed. Uniforms lost doubled modifiers only, and **every closer
+  survives verbatim** — both closers are proven anchors that keep rendered
+  figures adult and are never trimmed. No garment, scar, hair, skin tone or
+  age was dropped from any character.
+  All ten identities and all twelve `uniforms` entries touched. Marco "the
+  Deacon" Vasile said "big" five ways and now says it twice; Vivienne
+  Carrow, Serafina Bellandi and Josephine Marsh lost duplicated figure
+  detail. Vermillion stays the tightest Adventure in the set by a clear
+  margin, because every one of its uniform entries carries both closers —
+  85 characters per entry that are structurally exempt from any trim.
+  Measured with a one-off composite budget harness, not
+  retained (engine log, 27/08/2026), as the pose length at which this
+  Adventure's worst pair crosses the line: **71 to 135 chars**. Needs a re-push.
 
 - Vermillion.json, Vermillion.txt — **Roy Kilbane's rank moved out of his
   name.** The roster name is `Roy Kilbane`; the rank opens his `bio`
@@ -43,8 +96,9 @@ in the engine log and referenced here in one line. Never write it out twice.
 
 ## 26/08/2026
 
-- Vermillion.json — **`uniformsModest` and `poolUniformsModest` removed** with the engine's Fan service toggle (see the engine log, 26/08/2026); `uniforms` / `poolUniforms` untouched. Needs a re-push.
-
+- Vermillion.json — **`uniformsModest` and `poolUniformsModest` removed**
+  with the engine's Fan service toggle (see the engine log, 26/08/2026);
+  `uniforms` / `poolUniforms` untouched. Needs a re-push.
 
 - Vermillion.json — **NPC identities trimmed.** Each identity dropped its baked
   stance / posture / movement / expression tail (which collided with the
@@ -61,50 +115,69 @@ in the engine log and referenced here in one line. Never write it out twice.
 
 ## 25/08/2026
 
-- `Vermillion.json` — NPC schedules. Every NPC now carries `usualLocation` and a per-phase `schedule`, so the engine's WHO IS WHERE block runs on this Adventure (it emitted nothing before — no NPC had a routine, so the model placed people by feel). Location names verified against the JSON's `locations` list; presence block rendered headless from the starting location. Needs a push to go live. Both partner rosters covered (Ruth/Reuben, three nulls each — the partner shadows the player). Because the culprit is rolled per playthrough, no schedule encodes the solution: every Countdown placement is a crowd hub (Supper Club or Casino floor), nobody is scheduled into The Cardinal's Office during the shot, and no suspect gets a unique alibi. Vasile reaches the office only in the Small Hours (guarding the door); Joey is the only person scheduled into The Count Room (Dawn, the float); Kilbane reaches The Precinct only in the Afternoon.
+- `Vermillion.json` — NPC schedules. Every NPC now carries `usualLocation`
+  and a per-phase `schedule`, so the engine's WHO IS WHERE block runs on
+  this Adventure (it emitted nothing before — no NPC had a routine, so the
+  model placed people by feel). Location names verified against the JSON's
+  `locations` list; presence block rendered headless from the starting
+  location. Needs a push to go live. Both partner rosters covered
+  (Ruth/Reuben, three nulls each — the partner shadows the player). Because
+  the culprit is rolled per playthrough, no schedule encodes the solution:
+  every Countdown placement is a crowd hub (Supper Club or Casino floor),
+  nobody is scheduled into The Cardinal's Office during the shot, and no
+  suspect gets a unique alibi. Vasile reaches the office only in the Small
+  Hours (guarding the door); Joey is the only person scheduled into The
+  Count Room (Dawn, the float); Kilbane reaches The Precinct only in the
+  Afternoon.
 
 ## 24/08/2026
 
 - All 12 `uniforms` entries shortened from a 78-word average (max 98) to 50
   (max 50). Length is the only thing this changes: the garments, colours,
-  insignia, what each one bares and the tone words are preserved, and both closing clauses, in order
-  survives verbatim on every entry. Only the repeated restatements of
-  "revealing" were cut. No engine change.
-  - Same rule now applied to every Adventure. The uniform clause is the
-    longest single clause in an image prompt and it is repeated once per
-    character in a composite, so it is the cheapest thing to shorten and the
-    most expensive thing to leave long. Ceiling is ~40 words plus whatever
-    that Adventure's closing clause costs.
-  - `poolUniforms.family-female` was the one pool entry over its ceiling at
-    59 words and was trimmed to 47 on the same rule. Every other pool entry
-    was already inside and was left as authored.
+  insignia, what each one bares and the tone words are preserved, and both
+  closing clauses, in order survives verbatim on every entry. Only the
+  repeated restatements of "revealing" were cut. No engine change. - Same
+  rule now applied to every Adventure. The uniform clause is the longest
+  single clause in an image prompt and it is repeated once per character in
+  a composite, so it is the cheapest thing to shorten and the most expensive
+  thing to leave long. Ceiling is ~40 words plus whatever that Adventure's
+  closing clause costs. - `poolUniforms.family-female` was the one pool
+  entry over its ceiling at 59 words and was trimmed to 47 on the same rule.
+  Every other pool entry was already inside and was left as authored.
+
 - `locationScenery` authored for all 14 locations, ~20 words each — the room,
   two or three fixed physical features and its light. These now carry the
   image prompt's setting line, which until today was the bare location name.
   The engine mechanism is generic and is written up in full in the engine log
   at `Generator/Steak and Bake Stories/Change Log.md`.
+
 - `imageStyle` gained `professional photo`, placed with the other style
   tokens and ahead of the framing instruction:
   `painted anime style, professional photo, front on shot`
   A photographic quality token paired with a painted style token lifts
   detail, lighting and coherence without the render losing the style.
-- Title card art added and wired in. `Assets/TitleCards/VermillionTitleCard.webp`,
-  700x1050 WebP at quality 86 (199KB), exported from the 1023x1537 PNG per
-  the standing export convention; the PNG master is in
-  `AssetsNotHosted/Masters/`. Hosted in the assets repo and registered as
-  `coverUrl` on the `vermillion` entry, which retires the "no coverUrl
-  yet" hold in the registration entry below. Verified before registering:
-  the hosted file returns 200 and is byte-identical to the local export,
-  and `node --check` passes on the panel's script block.
+
+- Title card art added and wired in.
+  `Adventures/Vermillion/Card.webp`, 700x1050 WebP at quality 86
+  (199KB), exported from the 1023x1537 PNG per the standing export
+  convention; the PNG master is in `AssetsNotHosted/Masters/`. Hosted in the
+  assets repo and registered as `coverUrl` on the `vermillion` entry, which
+  retires the "no coverUrl yet" hold in the registration entry below.
+  Verified before registering: the hosted file returns 200 and is
+  byte-identical to the local export, and `node --check` passes on the
+  panel's script block.
+
 - REGISTERED in the `ADVENTURES` array, which makes this Adventure playable
   and the skin reachable. Verified first: all 18 hosted files it references
   return 200, and the definition matches the registry entry. No `coverUrl`
   yet — the card renders as emoji + title + blurb until the title card
   exists. Written up in full in the engine log (24/08/2026).
+
 - UI skin built and wired in — the seventh skin, oxblood and brass with a
   marquee. Engine change, so it is written up in full in the engine log at
   `Generator/Steak and Bake Stories/Change Log.md` (24/08/2026) and not
   repeated here.
+
 - Hosting corrected: the 23/08 entry below says nothing is on R2. Every one
   of this Adventure's files — the Story Definition, the map SVG and all
   seventeen Lore files — is now live in the GitHub assets repo and returns
@@ -112,6 +185,7 @@ in the engine log and referenced here in one line. Never write it out twice.
   move. See the project-root `Change Log.md` (24/08/2026) for the move
   itself. What remains outstanding is the `ADVENTURES` registration, not the
   hosting.
+
 - `Vermillion.txt` corrected in place for both of the above: the header, the
   OPEN item that said no skin was designed, and OUTSTANDING, which now lists
   the `ADVENTURES` registration and testing and nothing else. A new UI SKIN
@@ -122,15 +196,17 @@ in the engine log and referenced here in one line. Never write it out twice.
 
 ## 23/08/2026
 
-- Adventure created. `Adventures/Vermillion.txt` holds the full canon,
+- Adventure created. `Adventures/Vermillion/Vermillion.txt` holds the full canon,
   `Story Definitions/Vermillion.json` the story definition, `Maps/Vermillion
   Map.svg` the map, and `Lore/Vermillion/` seventeen lore files. Nothing is
   on R2 and the Adventure is not registered in the ADVENTURES array in
   `Code/Bottom Panel.txt`. Untested — no Begin has been run.
+
 - The killer is different on every playthrough. Three values carry the
   solution: `culprit` (who fired), `safecracker` (who opened the safe
   afterwards and took the book), and `wayOut` (which of three routes was
   used to leave a bolted room). Nine by nine by three.
+
 - **The rotating solution needs no engine change.** It rides on existing
   behaviour: a `tiles` setup field the player leaves untouched is rolled at
   random at Begin. `culprit`, `safecracker` and `wayOut` are three ordinary
@@ -143,22 +219,26 @@ in the engine log and referenced here in one line. Never write it out twice.
   cannot be hidden without engine support; and the narration AI is handed
   the answer on turn one and has to keep it, which is the Adventure's
   single largest risk and is a prompt problem rather than an engine one.
+
 - `safecracker` is rolled independently of `culprit` and is not prevented
   from landing on the same person. Same-person is a legitimate variant —
   one person did all of it — and excluding it would need engine support.
   Flagged in `Vermillion.txt` OPEN with the counter-argument.
+
 - Two secrets rather than one, for a structural reason worth keeping: with a
   single secret, an innocent suspect cannot have a real trace in the crime
   scene without contradicting themselves, so the first piece of physical
   evidence found solves the case. A second person in that room after the
   death makes every trace ambiguous and turns "who opened the safe" into a
   mid-game answer that feels like the answer and is not.
+
 - Symmetric clue authoring: all nine suspects carry a Lie, a Gap in the
   11:30-to-midnight window, a Trace and a Motive on every playthrough. Each
   innocent carries an authored true explanation for the first three; the
   guilty one carries a Tell instead. Every `npc-*.txt` lore file holds both
   versions, because a lore file that named the killer would be wrong on
   eight runs in nine.
+
 - The verdict is engine-owned, deliberately the opposite call to Solmere's
   AI-decided duel outcomes. An AI narrator asked "was it Moretti?" agrees
   with whoever the player names, which would make the mystery decorative.
@@ -169,25 +249,30 @@ in the engine log and referenced here in one line. Never write it out twice.
   endings is authored in three branches (right and provable, right and
   unprovable, wrong) and the model picks by reading the culprit value rather
   than by forming a view.
+
 - Twelve endings, the longest list of the eight: nine accusation endings
   plus Took It, Nobody Named, and Nobody Calls the Police (death, `anyTime`,
   `continuable: false` per the standing rule that a death ending never
   offers Continue). Flagged in `Vermillion.txt` OPEN as the first place to
   cut if the arc block gets unwieldy.
+
 - Nine NPCs, all eligible as culprit and as safecracker including the
   player's own partner. The roster is deliberately smaller than Gallant's
   fifteen: every suspect has to be someone the player would seriously
   consider, and a suspect the narration treats as background plays badly one
   run in nine. Stated in `promptRules.setting` as "all nine are leads, there
   is no background tier".
+
 - `npcSets`/`openingScenes` used for one NPC only — the partner is
   gender-mirrored to the player and the other eight are identical in both
   rosters. Keys are `male`/`female` matching the `playerGender` tiles values,
   and each key holds the roster for a player of that gender, following
   Meridian.
+
 - The Cardinal never appears and never speaks, in flashback or otherwise. He
   is a shape nine people describe differently and every description is
   accurate.
+
 - Four names changed at build for token-scan collisions, all four because
   the scan is a case-sensitive substring match with no word boundaries:
   `Sal` fires inside `Saloon`, `Fein` inside `Feint`, `Del` inside
@@ -201,10 +286,12 @@ in the engine log and referenced here in one line. Never write it out twice.
   common capitalised words — and is clean. Nicknames are not tokens, so "the
   Cardinal", "Handsome Sal", "the Deacon", "the Sparrow" and "Del" are free
   to use in narration.
+
 - The funeral home is Carbone and Sons, not Rossi & Sons: `Rossi` is a
   near-miss against `Rosetti` for anyone maintaining this later, and an
   ampersand in a location name slugs to a run of hyphens under the map's
   `loc-<slug>` convention.
+
 - Costume register set above Gallant's, which held the high mark for one
   day. Eleven categories, both genders written with equal exposure, and the
   register is 1949 formalwear taken to its limit rather than modern clothes
@@ -215,11 +302,14 @@ in the engine log and referenced here in one line. Never write it out twice.
   `clothingStates` remain the guardrail on every category, `poolUniforms`
   and `wetLocations` are both declared so the wet swap is live, and the
   minor-safety layer is untouched.
+
 - `floor-male` is declared with no NPC using it, so the waiters and dealers
   the narration invents have a category to land in instead of defaulting to
   a Family look.
+
 - `attractedTo` is omitted for Marco Vasile only, which suppresses the
   per-NPC "Attracted to: ..." clause for him.
+
 - Fourteen locations across two hubs — the Supper Club Floor for the sealed
   first night and the Alley for everything honest. The building is sealed
   until dawn and the city opens after it; the engine does not gate
@@ -228,14 +318,17 @@ in the engine log and referenced here in one line. Never write it out twice.
   restricted-site slot held by Halcyon's Sunken Villa, Pemberton's Overflow
   and Gallant's Blackout Block, and unlike Gallant's it does hold the
   secret, because this is the Adventure where that is the point.
+
 - Relationship ladder written as what a suspect is currently prepared to do
   about the detective: `0 Wants You Gone / 15 Stonewalling / 35 Careful /
   50 Civil / 65 Talking / 80 Telling You Things / 95 On Your Side`. Bottom
   is not Nemesis and top is not Love, following Hollowburn, Pemberton and
   Gallant.
+
 - Time phases are a club's night rather than a calendar day: Evening / The
   Countdown / Small Hours / Dawn / Afternoon, starting at The Countdown —
   five minutes after the shot, with the player already in the building.
+
 - `imageStyle` is the proven `painted anime style, front on shot`.
   Hollowburn's departure from it is flagged in its own outline as the field
   most likely to need reverting, so this Adventure does not repeat the

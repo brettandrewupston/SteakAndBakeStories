@@ -76,8 +76,8 @@
   "mapUrl": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Vermillion/Map.svg",
   "startingLocation": "The Supper Club Floor",
   "openingScenes": {
-    "male": "NARRATION: The band is still playing. That is the first thing {characterName} notices coming through the Vermillion's gold doors at four minutes past midnight — eight hundred people in silk and black tie, streamers on the carpet, a mirrored ceiling throwing the whole room back at itself, and a horn section working through the second chorus of something cheerful because stopping it would empty the building in ninety seconds. Nobody down here knows. Somewhere six floors up, a man who owned all of this is sitting behind a bolted door with a hole in him.\n===\nSPEAKER: Josephine \"Joey\" Marsh\nDIALOGUE: She is waiting at the foot of the stairs with a tuxedo jacket over bare shoulders and a master key hooked on one finger, and she does not waste a syllable on hello. \"Eleven forty-seven, near as I can put it — the countdown covered it. I opened the door myself at eleven fifty-eight and I called you before I called one single person in this Family, which is either the smartest thing I ever did or the last.\" She looks {characterName} over once, fast, the way she reads a table. \"Nobody's left the building. Nobody's going to. And detective — nobody's calling the police.\"\n===\nCLOSING: Up on the mezzanine, Sal Moretti is laughing at something with one hand on a woman's back, and he has not looked away from the stairs once.",
-    "female": "NARRATION: The band is still playing. That is the first thing {characterName} notices coming through the Vermillion's gold doors at four minutes past midnight — eight hundred people in silk and black tie, streamers on the carpet, a mirrored ceiling throwing the whole room back at itself, and a horn section working through the second chorus of something cheerful because stopping it would empty the building in ninety seconds. Nobody down here knows. Somewhere six floors up, a man who owned all of this is sitting behind a bolted door with a hole in him.\n===\nSPEAKER: Josephine \"Joey\" Marsh\nDIALOGUE: She is waiting at the foot of the stairs with a tuxedo jacket over bare shoulders and a master key hooked on one finger, and she does not waste a syllable on hello. \"Eleven forty-seven, near as I can put it — the countdown covered it. I opened the door myself at eleven fifty-eight and I called you before I called one single person in this Family, which is either the smartest thing I ever did or the last.\" She looks {characterName} over once, fast, the way she reads a table. \"Nobody's left the building. Nobody's going to. And detective — nobody's calling the police.\"\n===\nCLOSING: Up on the mezzanine, Sal Moretti is laughing at something with one hand on a woman's back, and he has not looked away from the stairs once."
+    "male": "NARRATION: The band is still playing. That is the first thing {characterName} notices coming through the Vermillion's gold doors at four minutes past midnight — eight hundred people in silk and black tie, streamers on the carpet, a mirrored ceiling throwing the whole room back at itself, and a horn section working through the second chorus of something cheerful because stopping it would empty the building in ninety seconds. Nobody down here knows. Somewhere six floors up, a man who owned all of this is sitting behind a bolted door with a hole in him.\n===\nSPEAKER: Josephine \"Joey\" Marsh\nDIALOGUE: She is waiting at the foot of the stairs with her cuffs turned back and a master key hooked on one finger, and she does not waste a syllable on hello. \"Eleven forty-seven, near as I can put it — the countdown covered it. I opened the door myself at eleven fifty-eight and I called you before I called one single person in this Family, which is either the smartest thing I ever did or the last.\" She looks {characterName} over once, fast, the way she reads a table. \"Nobody's left the building. Nobody's going to. And detective — nobody's calling the police.\"\n===\nCLOSING: Up on the mezzanine, Sal Moretti is laughing at something with one hand on a woman's back, and he has not looked away from the stairs once.",
+    "female": "NARRATION: The band is still playing. That is the first thing {characterName} notices coming through the Vermillion's gold doors at four minutes past midnight — eight hundred people in silk and black tie, streamers on the carpet, a mirrored ceiling throwing the whole room back at itself, and a horn section working through the second chorus of something cheerful because stopping it would empty the building in ninety seconds. Nobody down here knows. Somewhere six floors up, a man who owned all of this is sitting behind a bolted door with a hole in him.\n===\nSPEAKER: Josephine \"Joey\" Marsh\nDIALOGUE: She is waiting at the foot of the stairs with her cuffs turned back and a master key hooked on one finger, and she does not waste a syllable on hello. \"Eleven forty-seven, near as I can put it — the countdown covered it. I opened the door myself at eleven fifty-eight and I called you before I called one single person in this Family, which is either the smartest thing I ever did or the last.\" She looks {characterName} over once, fast, the way she reads a table. \"Nobody's left the building. Nobody's going to. And detective — nobody's calling the police.\"\n===\nCLOSING: Up on the mezzanine, Sal Moretti is laughing at something with one hand on a woman's back, and he has not looked away from the stairs once."
   },
   "timePhases": [
     "Evening",
@@ -429,7 +429,8 @@
     {
       "key": "culprit",
       "type": "tiles",
-      "label": "Who Did It — leave this alone and it is rolled for you",
+      "hidden": true,
+      "label": "Who Did It",
       "options": [
         {
           "value": "vivienne",
@@ -472,7 +473,8 @@
     {
       "key": "safecracker",
       "type": "tiles",
-      "label": "Who Opened The Safe — leave this alone and it is rolled for you",
+      "hidden": true,
+      "label": "Who Opened The Safe",
       "options": [
         {
           "value": "vivienne",
@@ -515,7 +517,8 @@
     {
       "key": "wayOut",
       "type": "tiles",
-      "label": "The Way Out — leave this alone and it is rolled for you",
+      "hidden": true,
+      "label": "The Way Out",
       "options": [
         {
           "value": "dumbwaiter",
@@ -598,7 +601,7 @@
         "likes": "being taken seriously, a straight question asked without flinching, her own club, being the last one awake, whisky without ceremony, people who do not offer condolences",
         "dislikes": "sympathy, being handled, Sal Moretti's voice, anyone calling her 'the widow', being asked what she will do now",
         "attractedTo": "people who are not afraid of her, competence, being argued with intelligently, someone who wants something specific and says so, the very rare person with nothing to sell her",
-        "identity": "A striking, imposing woman of 41 with a dancer's carriage — tall, long-limbed, full-figured, a narrow waist, generous bust and hips she has never dressed to hide. Sleek black hair pinned up off a long neck, heavy-lidded dark eyes, a hard beautiful jaw, red lipstick worn like a decision, fair skin."
+        "identity": "An imposing woman of 41 with a dancer's carriage — tall, long-limbed, full-figured, a narrow waist, generous bust and hips. Sleek black hair pinned up off a long neck, heavy-lidded dark eyes, a hard beautiful jaw, red lipstick, fair skin."
       },
       {
         "name": "Salvatore \"Handsome Sal\" Moretti",
@@ -617,7 +620,7 @@
         "likes": "being the reason a room is enjoying itself, a good tailor, being underestimated, saying yes to things, the casino floor at four in the morning",
         "dislikes": "waiting, being corrected in front of people, the word 'temporary', paperwork, Arturo Fein's expression",
         "attractedTo": "anyone who does not laugh at his jokes, being told no, competence, a challenge with an audience, people who look like trouble",
-        "identity": "A very handsome man of 38, olive skin, thick dark hair short at the sides and worn back, a heavy jaw and a boxer's nose well broken. Broad shoulders, a deep chest, a hard flat stomach, warm brown eyes, a wide smile with a gold tooth, a small white scar through one eyebrow."
+        "identity": "A very handsome man of 38, olive skin, thick dark hair short at the sides and worn back, a heavy jaw and a boxer's nose well broken. Broad shoulders, a deep chest, a flat stomach, warm brown eyes, a gold-toothed smile, a scar through one eyebrow."
       },
       {
         "name": "Arturo Fein",
@@ -636,7 +639,7 @@
         "likes": "an accurate record, being asked for his actual opinion, chess, the Cardinal's memory being respected, silence",
         "dislikes": "improvisation, Sal Moretti, being rushed, people who guess, having his handwriting looked at",
         "attractedTo": "intelligence above everything, discretion, being genuinely surprised, someone who notices what he does not say",
-        "identity": "A slender, contained man of 46, tall and very upright, silver-shot dark hair combed flat, a face like a closed door. Pale skin, deep-set grey eyes behind rimless glasses, a long straight nose, a fencer's lean hard build under the tailoring, beautiful hands."
+        "identity": "A slender, contained man of 46, tall and very upright, silver-shot dark hair combed flat, a face like a closed door. Pale skin, deep-set grey eyes behind rimless glasses, a long straight nose, a fencer's lean build, beautiful hands."
       },
       {
         "name": "Delphine \"Del\" Rosetti",
@@ -656,7 +659,7 @@
         "likes": "a full room, being written about, other women's company, the twenty minutes after a set, being asked about her singing rather than about him",
         "dislikes": "being described as anyone's girl, pity, the word 'arrangement', the Adelphi Hotel bar, Vivienne being kind to her",
         "attractedTo": "attention that is actually about her, dangerous people who are gentle in private, being made to laugh, anyone who has seen the act more than once",
-        "identity": "A luminous woman of 31 built for a spotlight — hourglass figure, full bust, small waist, long conditioned legs. Auburn hair in heavy waves to the shoulder, green eyes, freckles under stage makeup, a wide expressive mouth, fair skin, a dancer's posture."
+        "identity": "A luminous woman of 31 built for a spotlight — hourglass figure, full bust, small waist, long legs. Auburn hair in heavy waves, green eyes, freckles under stage makeup, a wide expressive mouth, fair skin, a dancer's posture."
       },
       {
         "name": "Marco \"the Deacon\" Vasile",
@@ -675,7 +678,7 @@
         "personality": "Says very little and means all of it. Long pauses that are thinking rather than menace. Uses people's full names. Will not lie, ever, which is not a moral position so much as a thing he has never learned to do — when the truth is unusable he says nothing at all, and the silence is the answer. Speaks about the Cardinal in the present tense and has not noticed he is doing it.",
         "likes": "mass, being given a clear instruction, his mother's house on Sunday, quiet, people who do not fill silences",
         "dislikes": "being asked about Petru, laughter in church, being thanked, anyone who is frightened of him, having to explain himself",
-        "identity": "A very large man of 40, six foot four and built like a door — enormous shoulders, a deep barrel chest, thick arms, a soldier's build gone slightly heavy at the middle. Close-cropped greying black hair, olive skin, a broad flat face with old scar tissue over both brows, dark eyes, enormous scarred hands."
+        "identity": "A very large man of 40, six foot four, a soldier's build gone heavy at the middle. Close-cropped greying black hair, olive skin, a broad flat face with old scar tissue over both brows, dark eyes, scarred hands."
       },
       {
         "name": "Serafina Bellandi",
@@ -695,7 +698,7 @@
         "likes": "being the only Bellandi in the room, good champagne, being told the truth by someone with nothing to gain, other people's buildings",
         "dislikes": "her father's advisers, being underestimated as a courtesy, the word 'truce', condolence, being watched by Vasile",
         "attractedTo": "nerve, people who are dangerous to her, being genuinely surprised, a good liar, anyone who does not want anything from the Bellandis",
-        "identity": "A tall, elegant woman of 33 with the figure a column gown is designed around — long-waisted, full-busted, narrow through the ribs, strong shoulders, a long back. Black hair cut sharp at the jaw, olive skin, very dark eyes under level brows, a wide mouth that goes crooked when she is enjoying herself."
+        "identity": "A tall, elegant woman of 33, long-waisted, full-busted, narrow through the ribs. Black hair cut sharp at the jaw, olive skin, very dark eyes under level brows, a wide mouth that goes crooked when she is enjoying herself."
       },
       {
         "name": "Josephine \"Joey\" Marsh",
@@ -715,7 +718,7 @@
         "likes": "a clean float, being trusted with a key, a good dealer, being right about people, closing time",
         "dislikes": "cheats, being lied to by amateurs, anyone touching her floor, questions about Baltimore, sympathy",
         "attractedTo": "competence, women who know what they want, being taken at her word, a person who can keep a secret, nerve under pressure",
-        "identity": "A handsome, sharp-featured woman of 35 with a lean athletic build — broad-shouldered, small-busted, narrow-hipped, long legs, a boxer's forearms. Dark blonde hair cropped short and combed back, grey eyes, a strong nose, a wide flat mouth, light olive skin, a scar through one eyebrow."
+        "identity": "A handsome, sharp-featured woman of 35, lean and athletic — broad-shouldered, small-busted, narrow-hipped, long legs. Dark blonde hair cropped short and combed back, grey eyes, a strong nose, light olive skin, a scar through one eyebrow."
       },
       {
         "name": "Roy Kilbane",
@@ -735,7 +738,7 @@
         "likes": "being the smartest man in the room and having it noticed, a long lunch, talking about the old cases, being asked for advice, the horses",
         "dislikes": "the federal attorney's office, young detectives, being asked what he does for the Carrows, his wife's telephone calls, the word 'pad'",
         "attractedTo": "being admired, women who are cleverer than him, an argument he can win, anyone who treats him like the detective he was",
-        "identity": "A big, run-down handsome man of 44, clearly an athlete twenty years ago — heavy through the chest and shoulders, thick arms, going soft at the waist. Sandy hair receding at the temples, a broken-veined fair complexion, squinting pale blue eyes, a wide grin, big scarred boxer's hands."
+        "identity": "A big, run-down handsome man of 44, an athlete twenty years ago — heavy through the chest and shoulders, going soft at the waist. Sandy hair receding at the temples, a broken-veined fair complexion, pale blue eyes, a wide grin, big scarred hands."
       },
       {
         "name": "Ruth \"Ruthie\" Kaminski",
@@ -755,7 +758,7 @@
         "likes": "a plan explained out loud, being left to get on with it, cheap diner coffee, the player being honest with her, driving fast",
         "dislikes": "being kept out of a room, hospitals, the Family's manners, being called a secretary, questions about Italy",
         "attractedTo": "the player, obviously and for years, and everyone can see it except them; also competence, dark humour, and being genuinely needed",
-        "identity": "A compact, powerfully built woman of 34 — broad shoulders, strong arms, full-busted, a solid waist, a low centre of gravity. Dark brown hair cut short and pushed back, brown eyes, a blunt nose broken once and set badly, fair skin, a long pale scar across the ribs."
+        "identity": "A compact, powerfully built woman of 34 — broad shoulders, strong arms, full-busted, a low centre of gravity. Dark brown hair cut short and pushed back, brown eyes, a blunt nose broken and set badly, fair skin, a long pale scar across the ribs."
       }
     ],
     "female": [
@@ -777,7 +780,7 @@
         "likes": "being taken seriously, a straight question asked without flinching, her own club, being the last one awake, whisky without ceremony, people who do not offer condolences",
         "dislikes": "sympathy, being handled, Sal Moretti's voice, anyone calling her 'the widow', being asked what she will do now",
         "attractedTo": "people who are not afraid of her, competence, being argued with intelligently, someone who wants something specific and says so, the very rare person with nothing to sell her",
-        "identity": "A striking, imposing woman of 41 with a dancer's carriage — tall, long-limbed, full-figured, a narrow waist, generous bust and hips she has never dressed to hide. Sleek black hair pinned up off a long neck, heavy-lidded dark eyes, a hard beautiful jaw, red lipstick worn like a decision, fair skin."
+        "identity": "An imposing woman of 41 with a dancer's carriage — tall, long-limbed, full-figured, a narrow waist, generous bust and hips. Sleek black hair pinned up off a long neck, heavy-lidded dark eyes, a hard beautiful jaw, red lipstick, fair skin."
       },
       {
         "name": "Salvatore \"Handsome Sal\" Moretti",
@@ -796,7 +799,7 @@
         "likes": "being the reason a room is enjoying itself, a good tailor, being underestimated, saying yes to things, the casino floor at four in the morning",
         "dislikes": "waiting, being corrected in front of people, the word 'temporary', paperwork, Arturo Fein's expression",
         "attractedTo": "anyone who does not laugh at his jokes, being told no, competence, a challenge with an audience, people who look like trouble",
-        "identity": "A very handsome man of 38, olive skin, thick dark hair short at the sides and worn back, a heavy jaw and a boxer's nose well broken. Broad shoulders, a deep chest, a hard flat stomach, warm brown eyes, a wide smile with a gold tooth, a small white scar through one eyebrow."
+        "identity": "A very handsome man of 38, olive skin, thick dark hair short at the sides and worn back, a heavy jaw and a boxer's nose well broken. Broad shoulders, a deep chest, a flat stomach, warm brown eyes, a gold-toothed smile, a scar through one eyebrow."
       },
       {
         "name": "Arturo Fein",
@@ -815,7 +818,7 @@
         "likes": "an accurate record, being asked for his actual opinion, chess, the Cardinal's memory being respected, silence",
         "dislikes": "improvisation, Sal Moretti, being rushed, people who guess, having his handwriting looked at",
         "attractedTo": "intelligence above everything, discretion, being genuinely surprised, someone who notices what he does not say",
-        "identity": "A slender, contained man of 46, tall and very upright, silver-shot dark hair combed flat, a face like a closed door. Pale skin, deep-set grey eyes behind rimless glasses, a long straight nose, a fencer's lean hard build under the tailoring, beautiful hands."
+        "identity": "A slender, contained man of 46, tall and very upright, silver-shot dark hair combed flat, a face like a closed door. Pale skin, deep-set grey eyes behind rimless glasses, a long straight nose, a fencer's lean build, beautiful hands."
       },
       {
         "name": "Delphine \"Del\" Rosetti",
@@ -835,7 +838,7 @@
         "likes": "a full room, being written about, other women's company, the twenty minutes after a set, being asked about her singing rather than about him",
         "dislikes": "being described as anyone's girl, pity, the word 'arrangement', the Adelphi Hotel bar, Vivienne being kind to her",
         "attractedTo": "attention that is actually about her, dangerous people who are gentle in private, being made to laugh, anyone who has seen the act more than once",
-        "identity": "A luminous woman of 31 built for a spotlight — hourglass figure, full bust, small waist, long conditioned legs. Auburn hair in heavy waves to the shoulder, green eyes, freckles under stage makeup, a wide expressive mouth, fair skin, a dancer's posture."
+        "identity": "A luminous woman of 31 built for a spotlight — hourglass figure, full bust, small waist, long legs. Auburn hair in heavy waves, green eyes, freckles under stage makeup, a wide expressive mouth, fair skin, a dancer's posture."
       },
       {
         "name": "Marco \"the Deacon\" Vasile",
@@ -854,7 +857,7 @@
         "personality": "Says very little and means all of it. Long pauses that are thinking rather than menace. Uses people's full names. Will not lie, ever, which is not a moral position so much as a thing he has never learned to do — when the truth is unusable he says nothing at all, and the silence is the answer. Speaks about the Cardinal in the present tense and has not noticed he is doing it.",
         "likes": "mass, being given a clear instruction, his mother's house on Sunday, quiet, people who do not fill silences",
         "dislikes": "being asked about Petru, laughter in church, being thanked, anyone who is frightened of him, having to explain himself",
-        "identity": "A very large man of 40, six foot four and built like a door — enormous shoulders, a deep barrel chest, thick arms, a soldier's build gone slightly heavy at the middle. Close-cropped greying black hair, olive skin, a broad flat face with old scar tissue over both brows, dark eyes, enormous scarred hands."
+        "identity": "A very large man of 40, six foot four, a soldier's build gone heavy at the middle. Close-cropped greying black hair, olive skin, a broad flat face with old scar tissue over both brows, dark eyes, scarred hands."
       },
       {
         "name": "Serafina Bellandi",
@@ -874,7 +877,7 @@
         "likes": "being the only Bellandi in the room, good champagne, being told the truth by someone with nothing to gain, other people's buildings",
         "dislikes": "her father's advisers, being underestimated as a courtesy, the word 'truce', condolence, being watched by Vasile",
         "attractedTo": "nerve, people who are dangerous to her, being genuinely surprised, a good liar, anyone who does not want anything from the Bellandis",
-        "identity": "A tall, elegant woman of 33 with the figure a column gown is designed around — long-waisted, full-busted, narrow through the ribs, strong shoulders, a long back. Black hair cut sharp at the jaw, olive skin, very dark eyes under level brows, a wide mouth that goes crooked when she is enjoying herself."
+        "identity": "A tall, elegant woman of 33, long-waisted, full-busted, narrow through the ribs. Black hair cut sharp at the jaw, olive skin, very dark eyes under level brows, a wide mouth that goes crooked when she is enjoying herself."
       },
       {
         "name": "Josephine \"Joey\" Marsh",
@@ -894,7 +897,7 @@
         "likes": "a clean float, being trusted with a key, a good dealer, being right about people, closing time",
         "dislikes": "cheats, being lied to by amateurs, anyone touching her floor, questions about Baltimore, sympathy",
         "attractedTo": "competence, women who know what they want, being taken at her word, a person who can keep a secret, nerve under pressure",
-        "identity": "A handsome, sharp-featured woman of 35 with a lean athletic build — broad-shouldered, small-busted, narrow-hipped, long legs, a boxer's forearms. Dark blonde hair cropped short and combed back, grey eyes, a strong nose, a wide flat mouth, light olive skin, a scar through one eyebrow."
+        "identity": "A handsome, sharp-featured woman of 35, lean and athletic — broad-shouldered, small-busted, narrow-hipped, long legs. Dark blonde hair cropped short and combed back, grey eyes, a strong nose, light olive skin, a scar through one eyebrow."
       },
       {
         "name": "Roy Kilbane",
@@ -914,7 +917,7 @@
         "likes": "being the smartest man in the room and having it noticed, a long lunch, talking about the old cases, being asked for advice, the horses",
         "dislikes": "the federal attorney's office, young detectives, being asked what he does for the Carrows, his wife's telephone calls, the word 'pad'",
         "attractedTo": "being admired, women who are cleverer than him, an argument he can win, anyone who treats him like the detective he was",
-        "identity": "A big, run-down handsome man of 44, clearly an athlete twenty years ago — heavy through the chest and shoulders, thick arms, going soft at the waist. Sandy hair receding at the temples, a broken-veined fair complexion, squinting pale blue eyes, a wide grin, big scarred boxer's hands."
+        "identity": "A big, run-down handsome man of 44, an athlete twenty years ago — heavy through the chest and shoulders, going soft at the waist. Sandy hair receding at the temples, a broken-veined fair complexion, pale blue eyes, a wide grin, big scarred hands."
       },
       {
         "name": "Reuben \"Rube\" Kaminski",
@@ -934,23 +937,23 @@
         "likes": "a plan explained out loud, being left to get on with it, cheap diner coffee, the player being honest with him, driving fast",
         "dislikes": "being kept out of a room, hospitals, the Family's manners, being called a driver, questions about Italy",
         "attractedTo": "the player, obviously and for years, and everyone can see it except them; also competence, dark humour, and being genuinely needed",
-        "identity": "A compact, powerfully built man of 34 — broad shoulders and chest, heavy arms, a thick neck, a solid waist, a low centre of gravity. Dark brown hair cut short and pushed back, brown eyes, a blunt nose broken once and set badly, fair skin, a long pale scar across the ribs."
+        "identity": "A compact, powerfully built man of 34 — broad shoulders and chest, heavy arms, a thick neck, a low centre of gravity. Dark brown hair cut short and pushed back, brown eyes, a blunt nose broken and set badly, fair skin, a long pale scar across the ribs."
       }
     ]
   },
   "uniforms": {
-    "family-female": "Vermillion gala black tie: a bias-cut silk gown poured onto the body, plunging halter neckline baring deep cleavage, the back cut to the base of the spine, a slit to the hip, opera gloves, diamonds, seamed stockings, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
-    "family-male": "Vermillion gala black tie: a dinner jacket cut close, worn open over a dress shirt undone to the middle of a bare hard chest, bow tie loose, high-waisted trousers tight over the thighs, a silk cummerbund, patent shoes, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
-    "stage-female": "the Vermillion's headline costume: a beaded showgirl leotard cut brutally high over the hipbone and open to the navel, boned to lift and bare the bust, red ostrich feathers at the tail, fishnets, garters, a tall feathered headdress, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
-    "floor-female": "a man's tuxedo tailored onto a woman: the jacket worn over bare skin, fastened once at the waist and open above and below, no shirt and no tie, satin-striped trousers high on the hips, a pit boss's chips, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
-    "floor-male": "Vermillion house floor dress: a short white mess jacket cut tight and open over a bare chest, high-waisted black trousers with a satin stripe, a wide sash at a flat waist, a bow tie undone, a folded napkin, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
-    "muscle-male": "black tie as a working uniform: jacket gone, dress shirt soaked through and clinging to a heavy chest and thick arms, sleeves rolled past the elbow, a saint's medal on a chain, braces taut, an empty shoulder holster, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
-    "rival-female": "a white column gown cut like a provocation: one shoulder bare to the ribs, the sides cut away from underbust to hip, a slit to the thigh, the back open to the tailbone, white satin gloves, pearls, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
-    "police-male": "a rented dinner jacket a size too small, straining across the shoulders and open, dress shirt tight over a broad chest and undone at the throat, trousers low on the hips, a shoulder holster he has not hidden, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
-    "partner-female": "black tie worn for work: jacket left on a chairback, dress shirt undone and pulled tight across the chest, sleeves rolled, braces framing the figure, a narrow skirt slit high, a shoulder holster, flat shoes for running, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
-    "partner-male": "black tie worn for work: jacket left on a chairback, dress shirt undone and pulled tight across a hard chest, sleeves rolled, braces framing the shoulders, trousers close over the thighs, a shoulder holster, shoes for running, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
-    "detective-female": "the Sparrow: a beautifully cut dark suit worn with nothing under the jacket, fastened once at the waist, no tie, lapels against bare skin, a narrow skirt slit high, seamed stockings, a hat carried, no weapon anywhere, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
-    "detective-male": "the Sparrow: a beautifully cut dark suit worn with nothing under the jacket, fastened once at the waist and open over a bare chest, no tie, sleeves pushed back, trousers tailored close, a hat carried, no weapon anywhere, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative"
+    "family-female": "Vermillion gala black tie: a bias-cut silk gown poured onto the body, plunging halter baring deep cleavage, the back cut to the spine, a slit to the hip, opera gloves, diamonds, seamed stockings, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
+    "family-male": "Vermillion gala black tie: a dinner jacket cut close, open over a dress shirt undone to a bare chest, bow tie loose, high-waisted trousers tight on the thighs, a silk cummerbund, patent shoes, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
+    "stage-female": "the Vermillion's headline costume: a beaded showgirl leotard cut high over the hip, open to the navel, boned to bare the bust, ostrich feathers, fishnets, garters, a plumed headdress, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
+    "floor-female": "a man's tuxedo tailored onto a woman: the jacket open over a black satin bustier, fastened once at the waist, no tie, satin-striped trousers high on the hips, a pit boss's chips, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
+    "floor-male": "Vermillion house floor dress: a short white mess jacket tight and open over a bare chest, high-waisted black trousers with a satin stripe, a wide sash, a bow tie undone, a folded napkin, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
+    "muscle-male": "black tie as a working uniform: jacket gone, dress shirt soaked through and clinging to a heavy chest, sleeves rolled past the elbow, a saint's medal on a chain, braces taut, an empty shoulder holster, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
+    "rival-female": "a white column gown cut like a provocation: one shoulder bare to the ribs, sides cut away underbust to hip, a slit to the thigh, the back open to the tailbone, white satin gloves, pearls, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
+    "police-male": "a rented dinner jacket a size too small, straining and open, dress shirt tight over a broad chest, undone at the throat, trousers low on the hips, a shoulder holster he has not hidden, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
+    "partner-female": "black tie worn for work: jacket on a chairback, dress shirt undone, tight across the chest, sleeves rolled, braces at the figure, a narrow skirt slit high, a shoulder holster, flat shoes, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
+    "partner-male": "black tie worn for work: jacket on a chairback, dress shirt undone, tight across a hard chest, sleeves rolled, braces at the shoulders, trousers close over the thighs, a shoulder holster, shoes, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
+    "detective-female": "the Sparrow: a beautifully cut dark suit worn over a black silk camisole, jacket fastened once at the waist, no tie, a narrow skirt slit high, seamed stockings, a hat carried, no weapon, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
+    "detective-male": "the Sparrow: a beautifully cut dark suit, nothing under the jacket, fastened once at the waist, open over a bare chest, no tie, sleeves pushed back, trousers close, a hat carried, no weapon, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative"
   },
   "altUniforms": {
     "family-female": "Vermillion daywear: a belted camel coat swinging open over a pencil dress cut tight to the hip, neckline low over cleavage, seamed stockings, gloves, a small hat tilted forward, diamonds by day, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
@@ -963,7 +966,7 @@
     "police-male": "a rumpled raincoat over a shirt undone at the throat and tight across a broad chest, trousers low on the hips, a shoulder holster he has not hidden, hat pushed back, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
     "partner-female": "a belted trench cinched hard at the waist over a dress shirt pulled tight across the chest, sleeves rolled, a narrow skirt slit high, a shoulder holster, flat shoes for running, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
     "partner-male": "a belted trench worn open over a dress shirt undone across a hard chest, sleeves rolled, braces framing the shoulders, trousers close over the thighs, a shoulder holster, shoes for running, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
-    "detective-female": "the Sparrow in daylight: a beautifully cut dark coat over nothing but the suit jacket, fastened once at the waist, lapels against bare skin, a narrow skirt slit high, seamed stockings, no weapon anywhere, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
+    "detective-female": "the Sparrow in daylight: a beautifully cut dark coat over the suit jacket and a black silk camisole, fastened once at the waist, a narrow skirt slit high, seamed stockings, no weapon anywhere, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative",
     "detective-male": "the Sparrow in daylight: a beautifully cut dark coat over the suit jacket worn on bare skin, fastened once at the waist, no tie, trousers tailored close, hat carried, no weapon anywhere, fully clothed, clearly an adult, dripping with sex appeal and unmistakably provocative"
   },
   "wetLocations": [
@@ -1245,22 +1248,6 @@
       }
     ]
   },
-  "poseVocabulary": [
-    "standing",
-    "sitting",
-    "leaning back against a bar",
-    "sitting on a table edge with legs crossed",
-    "lighting a cigarette",
-    "mid-step in a doorway",
-    "arms folded",
-    "one hand on a hip with the weight on one leg",
-    "sitting on a dressing-room stool half turned away",
-    "bent over a roulette table",
-    "arching back mid-stretch",
-    "sprawled in an armchair with a glass",
-    "hands raised in a spotlight",
-    "wrapped in a towel"
-  ],
   "expressionVocabulary": [
     "neutral",
     "soft smile",
