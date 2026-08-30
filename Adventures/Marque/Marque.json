@@ -331,7 +331,7 @@
       "key": "playerAge",
       "type": "number",
       "label": "Age",
-      "default": "31"
+      "default": "18"
     }
   ],
   "nameSets": {
@@ -810,8 +810,8 @@
     "openingInstruction": "Open in the great cabin of the Recompense at anchor off Tortuga, with the commission on the table and the Quartermaster waiting to be told where the ship is going."
   },
   "openingScenes": {
-    "male": "The paper lies on the table where you put it three months ago, and it has not become any more true since.\n\nEsther Vance stands on the other side of it with her hands behind her back, waiting, the way she has waited every morning since Tortuga. Through the stern windows the anchorage is already awake — boats, shouting, somebody's fiddle. The Recompense swings gently at her cable.\n\n\"Well,\" Esther says. \"You've read it enough times. Where are we going, Captain?\"",
-    "female": "The paper lies on the table where you put it three months ago, and it has not become any more true since.\n\nEzekiel Vance stands on the other side of it with his hands behind his back, waiting, the way he has waited every morning since Tortuga. Through the stern windows the anchorage is already awake — boats, shouting, somebody's fiddle. The Recompense swings gently at her cable.\n\n\"Well,\" he says. \"You've read it enough times. Where are we going, Captain?\""
+    "male": "NARRATION: The commission has been lying on the great cabin table for three months and it has not become any more true in that time. Through the stern windows the anchorage off Tortuga is already awake — boats going out, somebody shouting about a debt, a fiddle being played badly and with great commitment. The Recompense swings gently at her cable with the whole Caribbean beyond her, and eight people aboard who signed on to go somewhere.\n===\nSPEAKER: Esther Vance\nDIALOGUE: **She stands on the other side of the table with her hands behind her back, the way she has stood every morning since the ship came in, and does not look at the paper once.** \"You've read it enough times, Captain.\" *It will not survive a careful reading and both of us know it.* **She tips her head toward the stern windows and the open water past them.** \"Tortuga's given us all it's going to. Where are we going?\"\n===\nCLOSING: On deck the crew are finding reasons to be within earshot of the cabin skylight, and not one of them is being subtle about it.",
+    "female": "NARRATION: The commission has been lying on the great cabin table for three months and it has not become any more true in that time. Through the stern windows the anchorage off Tortuga is already awake — boats going out, somebody shouting about a debt, a fiddle being played badly and with great commitment. The Recompense swings gently at her cable with the whole Caribbean beyond her, and eight people aboard who signed on to go somewhere.\n===\nSPEAKER: Ezekiel Vance\nDIALOGUE: **He stands on the other side of the table with his hands behind his back, the way he has stood every morning since the ship came in, and does not look at the paper once.** \"You've read it enough times, Captain.\" *It will not survive a careful reading and both of us know it.* **He tips his head toward the stern windows and the open water past them.** \"Tortuga's given us all it's going to. Where are we going?\"\n===\nCLOSING: On deck the crew are finding reasons to be within earshot of the cabin skylight, and not one of them is being subtle about it."
   },
   "encounterChance": 0.25,
   "encounters": [
