@@ -1,0 +1,222 @@
+{
+  "locations": [
+    "The Ozama Wharf",
+    "The Cathedral Square",
+    "The Customs House"
+  ],
+  "mapUrl": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Towns/SantoDomingo.svg",
+  "locationScenery": {
+    "The Ozama Wharf": "a stone river wharf below an old Spanish colonial city, fortress walls above, soldiers on the quay",
+    "The Cathedral Square": "a hot stone square before the oldest cathedral in the Americas, deep shade under arcades, bells",
+    "The Customs House": "a cool vaulted Spanish customs hall, ledgers, seals and an official who is in no hurry"
+  },
+  "npcs": [
+    {
+      "name": "Rodrigo Nieves",
+      "token": "Rodrigo",
+      "category": "shore-male",
+      "gender": "male",
+      "bio": "Master of the rigging lofts on the Ozama, and the finest cutter of sails in the Indies. Spanish rig is built to cross an ocean rather than to potter between islands, which is why a suit of his canvas shortens every passage a ship makes afterwards. He knows exactly what kind of captain walks into a Spanish port to buy it, and he has never yet said so to a soldier.",
+      "personality": "Courteous to the point of being unreadable, slow, and enormously good company once the business is settled. Asks no questions he does not want answered.",
+      "likes": "good manners, patience, a captain who does not pretend to be something obvious",
+      "dislikes": "being hurried, boasting, anyone who assumes he can be bought cheaply",
+      "attractedTo": "self-possession, discretion, and nerve worn lightly",
+      "identity": "an elegant, slightly stooped man in his fifties, lean and long-fingered, deeply tanned, close grey beard, canvas-callused hands and very good boots",
+      "usualLocation": "The Ozama Wharf",
+      "schedule": {
+        "Morning Watch": "The Ozama Wharf",
+        "Forenoon": "The Ozama Wharf",
+        "Dog Watch": "The Cathedral Square",
+        "First Watch": "The Customs House",
+        "Middle Watch": null
+      }
+    },
+    {
+      "name": "Bernardo Salcedo",
+      "token": "Bernardo",
+      "category": "shore-male",
+      "gender": "male",
+      "bio": "Customs officer, and the man who reads a stranger's papers on the Ozama. Thorough, slow, and entirely aware that half of what crosses his desk is a lie — the question is only ever whether it is a lie he is obliged to notice.",
+      "personality": "Ceremonious, unhurried, faintly weary. Gives a man every chance to correct himself before he writes anything down.",
+      "likes": "correct documents, courtesy, an honest correction",
+      "dislikes": "impatience, bribes offered clumsily, foreigners who assume he is stupid",
+      "identity": "a fastidious man in his fifties, spare and upright, olive-skinned, thin grey moustache, black clothes immaculate in the heat",
+      "usualLocation": "The Customs House",
+      "schedule": {
+        "Morning Watch": "The Customs House",
+        "Forenoon": "The Customs House",
+        "Dog Watch": "The Cathedral Square",
+        "First Watch": null,
+        "Middle Watch": null
+      }
+    },
+    {
+      "name": "Ines Valdivia",
+      "token": "Ines",
+      "category": "shore-female",
+      "gender": "female",
+      "bio": "Keeps the lodging house above the wharf, and has done since her husband did not come back. Takes anyone who pays, asks nothing, and misses nothing at all.",
+      "personality": "Warm, practical, unsentimental, and the first person in this city to notice that a guest is not what they claim.",
+      "likes": "paying guests, quiet nights, being told the truth",
+      "dislikes": "trouble brought into her house, pity, unpaid weeks",
+      "identity": "a handsome woman in her forties, full-figured and broad-hipped, olive-skinned, black hair greying at the temples, always working",
+      "usualLocation": "The Ozama Wharf",
+      "schedule": {
+        "Morning Watch": "The Ozama Wharf",
+        "Forenoon": "The Ozama Wharf",
+        "Dog Watch": "The Ozama Wharf",
+        "First Watch": "The Ozama Wharf",
+        "Middle Watch": null
+      },
+      "attractedTo": "kindness shown to staff, honesty, and someone who can sit at a table and talk"
+    },
+    {
+      "name": "Feliciano Arce",
+      "token": "Feliciano",
+      "category": "shore-male",
+      "gender": "male",
+      "bio": "A canon of the cathedral, which is the oldest in the Americas and the only building in this city everyone still takes seriously. Says mass, hears confession, and has heard a very great deal.",
+      "personality": "Gentle, learned, mischievously funny in private. Genuinely difficult to shock and completely uninterested in politics.",
+      "likes": "music, a good argument about anything, the cool of the nave",
+      "dislikes": "cruelty, certainty, people who perform their piety",
+      "identity": "a slight, scholarly man in his sixties, stooped and thin, pale for this city from a life indoors, close-cut white hair, ink-stained fingers",
+      "usualLocation": "The Cathedral Square",
+      "schedule": {
+        "Morning Watch": "The Cathedral Square",
+        "Forenoon": "The Cathedral Square",
+        "Dog Watch": "The Cathedral Square",
+        "First Watch": "The Cathedral Square",
+        "Middle Watch": null
+      }
+    },
+    {
+      "name": "Pascual Herrera",
+      "token": "Pascual",
+      "category": "shore-male",
+      "gender": "male",
+      "bio": "Sergeant of the garrison, responsible for the wharf gate, and the man who decides which strangers walk up into the city. Underpaid, bored, and considerably sharper than his post requires.",
+      "personality": "Gruff, watchful, and dryly funny once he decides a person is not a problem. Notices everything and mentions almost none of it.",
+      "likes": "a quiet watch, straight answers, tobacco",
+      "dislikes": "evasion, drunk sailors, being lied to badly",
+      "identity": "a solid, weathered man in his thirties, broad-chested and thick-armed, dark-skinned and sunburnt over it, a broken nose, uniform coat worn open",
+      "usualLocation": "The Ozama Wharf",
+      "schedule": {
+        "Morning Watch": "The Ozama Wharf",
+        "Forenoon": "The Ozama Wharf",
+        "Dog Watch": "The Cathedral Square",
+        "First Watch": "The Ozama Wharf",
+        "Middle Watch": null
+      },
+      "attractedTo": "directness, nerve, and someone who does not treat him as furniture"
+    },
+    {
+      "name": "Leonor Cabral",
+      "token": "Leonor",
+      "category": "shore-female",
+      "gender": "female",
+      "bio": "Sells fruit and fish in the cathedral square and knows the movements of every ship, official and soldier in this city, because all of them walk past her twice a day.",
+      "personality": "Sharp, funny, endlessly talkative, and far more observant than anyone who has bought an orange from her realises.",
+      "likes": "a good morning's trade, gossip, being right about people",
+      "dislikes": "being cheated, silence, soldiers who take without paying",
+      "identity": "a wiry woman in her thirties, small and quick, dark-skinned, a colourful headcloth, bare arms and bare feet, gold at her ears",
+      "usualLocation": "The Cathedral Square",
+      "schedule": {
+        "Morning Watch": "The Cathedral Square",
+        "Forenoon": "The Cathedral Square",
+        "Dog Watch": "The Cathedral Square",
+        "First Watch": null,
+        "Middle Watch": null
+      },
+      "attractedTo": "humour, generosity, and anyone who talks to her properly"
+    },
+    {
+      "name": "Juana Ocampo",
+      "token": "Juana",
+      "category": "shore-female",
+      "gender": "female",
+      "bio": "Apothecary off the square, and the person this city goes to before it goes to a physician. Knows what grows here and what it does, which is knowledge the Spanish medical faculties do not have.",
+      "personality": "Quiet, precise, and entirely confident. Corrects a physician without raising her voice.",
+      "likes": "careful patients, good stock, being asked rather than told",
+      "dislikes": "quackery, urgency, being condescended to",
+      "identity": "a composed woman in her forties, slim and neat, olive-skinned, black hair coiled, sleeves buttoned despite the heat",
+      "usualLocation": "The Cathedral Square",
+      "schedule": {
+        "Morning Watch": "The Cathedral Square",
+        "Forenoon": "The Cathedral Square",
+        "Dog Watch": "The Cathedral Square",
+        "First Watch": null,
+        "Middle Watch": null
+      },
+      "attractedTo": "intelligence, calm, and people who listen to instructions"
+    },
+    {
+      "name": "Tomas Balbuena",
+      "token": "Tomas",
+      "category": "shore-male",
+      "gender": "male",
+      "bio": "Merchant, and one of the many in this city who trade quietly with the enemy because the Crown's ships come twice a year and people eat every day. Sells Spanish goods to anyone and buys foreign goods from anyone, carefully.",
+      "personality": "Nervous, charming, quick to reassure, and constantly calculating who has seen him with whom.",
+      "likes": "a discreet buyer, a quick settlement, being liked",
+      "dislikes": "witnesses, delays, anyone who says his business out loud",
+      "identity": "a well-fed man in his forties, soft and round-shouldered, olive-skinned and sweating, good clothes slightly too fine, rings",
+      "usualLocation": "The Ozama Wharf",
+      "schedule": {
+        "Morning Watch": "The Ozama Wharf",
+        "Forenoon": "The Ozama Wharf",
+        "Dog Watch": "The Cathedral Square",
+        "First Watch": null,
+        "Middle Watch": null
+      }
+    },
+    {
+      "name": "Catalina Nieves",
+      "token": "Catalina",
+      "category": "shore-female",
+      "gender": "female",
+      "bio": "Cuts sail alongside her father in the rigging lofts and is already better at the fine work than he is. Runs the loft when he is not in it, which is often, and is entirely aware what sort of captain buys canvas here.",
+      "personality": "Direct, confident, faintly impatient at being introduced as somebody's daughter. Talks about the work with real pleasure.",
+      "likes": "a difficult cut done well, being taken on her own account, foreign ships",
+      "dislikes": "being talked past, condescension, slow payment",
+      "identity": "a strong young woman in her twenties, athletic and full-figured, olive-skinned, black hair braided out of the way, canvas-callused hands, sleeves cut off",
+      "usualLocation": "The Ozama Wharf",
+      "schedule": {
+        "Morning Watch": "The Ozama Wharf",
+        "Forenoon": "The Ozama Wharf",
+        "Dog Watch": "The Ozama Wharf",
+        "First Watch": null,
+        "Middle Watch": null
+      },
+      "attractedTo": "competence, respect given without being asked for, and anyone who talks to her about the work"
+    },
+    {
+      "name": "Ubaldo Serna",
+      "token": "Ubaldo",
+      "category": "shore-male",
+      "gender": "male",
+      "bio": "Works a boat on the Ozama, carrying people and cargo between the wharf and whatever is anchored downstream. Knows the river, the tides, and precisely which officials are on which gate at which hour.",
+      "personality": "Cheerful, incurious, and quietly for hire. Talks constantly about nothing and is careful never to say anything.",
+      "likes": "a full boat, good weather, being tipped",
+      "dislikes": "questions, waiting, rough water",
+      "identity": "a lean, ropy man in his thirties, wiry and sun-blackened, bare-chested and barefoot, a straw hat falling apart",
+      "usualLocation": "The Ozama Wharf",
+      "schedule": {
+        "Morning Watch": "The Ozama Wharf",
+        "Forenoon": "The Ozama Wharf",
+        "Dog Watch": "The Ozama Wharf",
+        "First Watch": "The Ozama Wharf",
+        "Middle Watch": null
+      },
+      "attractedTo": "easy company, generosity, and people who do not pry"
+    }
+  ],
+  "loreEntries": [
+    {
+      "label": "Santo Domingo",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Lore/santo-domingo.txt"
+    },
+    {
+      "label": "Santo Domingo People",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Lore/santo-domingo-people.txt"
+    }
+  ]
+}

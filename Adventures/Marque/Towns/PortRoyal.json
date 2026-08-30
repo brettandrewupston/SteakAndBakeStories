@@ -1,0 +1,221 @@
+{
+  "locations": [
+    "The Quay",
+    "The Governor's House",
+    "The Punch House"
+  ],
+  "mapUrl": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Towns/PortRoyal.svg",
+  "locationScenery": {
+    "The Quay": "a crowded English colonial quay in the Caribbean, warehouses, cranes, ships alongside",
+    "The Governor's House": "a hot panelled colonial office, shutters half closed, papers and a decanter",
+    "The Punch House": "a loud low-ceilinged Caribbean punch house, packed benches, spilled rum"
+  },
+  "npcs": [
+    {
+      "name": "Hollis Crake",
+      "token": "Hollis",
+      "category": "shore-male",
+      "gender": "male",
+      "bio": "Master shipwright on the quay at Port Royal, and the only man in these waters who will hang a rudder properly. Port Royal sells steering and nothing else — a ship that can turn is a ship that can decline a fight. Also the clerk who countersigns commissions, which makes him worth staying pleasant with for two separate reasons.",
+      "personality": "Dry, unhurried, deeply amused by everyone who comes to his yard in a hurry. Answers a question with a longer question.",
+      "likes": "work done slowly and once, honesty about money, being asked his opinion",
+      "dislikes": "rush jobs, being haggled with, captains who blame the ship",
+      "attractedTo": "patience, competence, and anyone who listens to the whole answer",
+      "identity": "a weathered, rangy man in his fifties, lean and hard-armed, forearms scarred with old cuts, grey-streaked hair tied back, sawdust in everything",
+      "usualLocation": "The Quay",
+      "schedule": {
+        "Morning Watch": "The Quay",
+        "Forenoon": "The Quay",
+        "Dog Watch": "The Punch House",
+        "First Watch": "The Punch House",
+        "Middle Watch": null
+      }
+    },
+    {
+      "name": "Prudence Aylmer",
+      "token": "Prudence",
+      "category": "shore-female",
+      "gender": "female",
+      "bio": "Secretary to the governor, and the hand that actually writes a commission before anyone important signs it. Knows every letter of marque issued from this island, who holds it, and which of them would not survive a careful reading.",
+      "personality": "Crisp, discreet, and quietly amused by almost everyone. Answers exactly the question asked and no more.",
+      "likes": "competence, correct paperwork, being underestimated by men with titles",
+      "dislikes": "flattery, being hurried, anyone who assumes she decides nothing",
+      "identity": "a poised woman in her thirties, slim and straight-backed, pale and freckled under a wide hat, auburn hair pinned severely, ink on her fingers",
+      "usualLocation": "The Governor's House",
+      "schedule": {
+        "Morning Watch": "The Governor's House",
+        "Forenoon": "The Governor's House",
+        "Dog Watch": "The Governor's House",
+        "First Watch": "The Punch House",
+        "Middle Watch": null
+      },
+      "attractedTo": "precision, wit, and people who read what they sign"
+    },
+    {
+      "name": "Edmund Wrothe",
+      "token": "Edmund",
+      "category": "shore-male",
+      "gender": "male",
+      "bio": "A King's officer ashore between commissions, and the only man in Port Royal who reads a letter of marque the way an assizes would. Personally decent, professionally implacable, and perfectly capable of drinking with a captain on Tuesday and stopping them at sea on Friday.",
+      "personality": "Courteous, precise, and entirely without malice, which is what makes him dangerous. Never raises his voice and never lets anything go.",
+      "likes": "good order, honest answers, a well-handled ship",
+      "dislikes": "evasion, drunkenness on duty, men who mistake his manners for weakness",
+      "identity": "an upright man in his forties, lean and broad-shouldered, sun-reddened rather than tanned, close-cropped grey hair, a coat he keeps buttoned in defiance of the heat",
+      "usualLocation": "The Quay",
+      "schedule": {
+        "Morning Watch": "The Quay",
+        "Forenoon": "The Quay",
+        "Dog Watch": "The Punch House",
+        "First Watch": "The Punch House",
+        "Middle Watch": null
+      },
+      "attractedTo": "directness, competence, and nerve that does not need an audience"
+    },
+    {
+      "name": "Winifred Sayer",
+      "token": "Winifred",
+      "category": "shore-female",
+      "gender": "female",
+      "bio": "Keeps the largest punch house on the quay and therefore hears everything said in Port Royal after dark, which is most of what matters. Serves the Navy and the buccaneers at the same tables and has never had a killing in her house.",
+      "personality": "Loud, generous, absolutely in charge, and capable of ending a fight by walking towards it.",
+      "likes": "a full room, being paid at closing, people who behave",
+      "dislikes": "weapons drawn indoors, credit, anyone who talks down to her staff",
+      "identity": "a big, handsome woman in her forties, tall and full-figured, red-cheeked and freckled, fair hair escaping its pins, sleeves shoved past the elbow",
+      "usualLocation": "The Punch House",
+      "schedule": {
+        "Morning Watch": null,
+        "Forenoon": "The Punch House",
+        "Dog Watch": "The Punch House",
+        "First Watch": "The Punch House",
+        "Middle Watch": "The Punch House"
+      },
+      "attractedTo": "stamina, good humour, and a person who can hold a room"
+    },
+    {
+      "name": "Josiah Pell",
+      "token": "Josiah",
+      "category": "shore-male",
+      "gender": "male",
+      "bio": "Prize agent. Turns a captured ship into money legally — condemnation, valuation, sale — and takes a percentage of every step. Dull, essential, and the difference between a prize and a pile of somebody else's cargo.",
+      "personality": "Pedantic, fussy about process, and genuinely offended by people who treat his work as a formality.",
+      "likes": "paperwork in order, patience, a captain who understands the process",
+      "dislikes": "being rushed, arguments about his percentage, irregular manifests",
+      "identity": "a soft, fastidious man in his fifties, round-shouldered and thickening, pale and perpetually damp in this climate, thinning hair, very good linen",
+      "usualLocation": "The Quay",
+      "schedule": {
+        "Morning Watch": "The Quay",
+        "Forenoon": "The Quay",
+        "Dog Watch": "The Governor's House",
+        "First Watch": null,
+        "Middle Watch": null
+      }
+    },
+    {
+      "name": "Arabella Finch",
+      "token": "Arabella",
+      "category": "shore-female",
+      "gender": "female",
+      "bio": "Sings at Sayer's house six nights a week and has done for four years. Knows every regular, every rumour and exactly how much of each is worth repeating. Came out here on a ship she has never explained.",
+      "personality": "Playful, quick, and much harder to read than she appears. Deflects a direct question with a better one.",
+      "likes": "an audience that listens, being surprised, generous drunks",
+      "dislikes": "being touched without asking, pity, questions about England",
+      "identity": "a slight, striking woman in her twenties, slim and small-waisted, pale under powder, dark hair dressed high, a gown cut for the stage and the heat",
+      "usualLocation": "The Punch House",
+      "schedule": {
+        "Morning Watch": null,
+        "Forenoon": null,
+        "Dog Watch": "The Punch House",
+        "First Watch": "The Punch House",
+        "Middle Watch": "The Punch House"
+      },
+      "attractedTo": "attention paid properly, humour, and someone who does not assume"
+    },
+    {
+      "name": "Cornelius Brill",
+      "token": "Cornelius",
+      "category": "shore-male",
+      "gender": "male",
+      "bio": "Ship's chandler on the quay — cordage, canvas, tar, powder, nails, everything a vessel needs that is not the vessel. Stocks whatever comes in and prices it at whatever the anchorage will bear, recalculated every morning.",
+      "personality": "Brisk, cheerful and entirely mercenary with no pretence otherwise, which most captains find easier than the alternative.",
+      "likes": "a busy harbour, cash, scarcity",
+      "dislikes": "haggling, credit, quiet weeks",
+      "identity": "a wiry, energetic man in his forties, small and quick, tanned and balding, tar-stained apron, spectacles pushed up on his forehead",
+      "usualLocation": "The Quay",
+      "schedule": {
+        "Morning Watch": "The Quay",
+        "Forenoon": "The Quay",
+        "Dog Watch": "The Quay",
+        "First Watch": "The Punch House",
+        "Middle Watch": null
+      }
+    },
+    {
+      "name": "Reginald Coyte",
+      "token": "Reginald",
+      "category": "shore-male",
+      "gender": "male",
+      "bio": "Sits at the assizes when there is one, which is whenever enough men have been taken to make it worth the trouble. Has hanged pirates and dined with privateers in the same week and sees no contradiction, because the difference is a document and the document is the law.",
+      "personality": "Dry, urbane, fond of his own phrasing, and utterly unsentimental about the men in front of him.",
+      "likes": "a well-argued point, good wine, a clean legal question",
+      "dislikes": "emotion in court, ignorance of the law, being asked to be merciful",
+      "identity": "a heavy, deliberate man in his sixties, broad and slow-moving, florid in the heat, a full grey periwig he refuses to abandon",
+      "usualLocation": "The Governor's House",
+      "schedule": {
+        "Morning Watch": null,
+        "Forenoon": "The Governor's House",
+        "Dog Watch": "The Governor's House",
+        "First Watch": "The Punch House",
+        "Middle Watch": null
+      }
+    },
+    {
+      "name": "Jubal Kene",
+      "token": "Jubal",
+      "category": "shore-male",
+      "gender": "male",
+      "bio": "Harbour pilot, and the man who takes ships in and out over the shoals when the wind is wrong. Free, paid by the job, and better at it than anyone else on this coast — he learned the channel before the English were here and has watched three flags fly over it.",
+      "personality": "Calm, spare with words, and completely immovable once he has said a thing cannot be done.",
+      "likes": "a well-handled helm, being listened to, still water at dawn",
+      "dislikes": "impatience aboard, second-guessing, captains who know better",
+      "identity": "a powerfully built man in his fifties, tall and heavy-shouldered, dark-skinned and weathered, close grey hair, bare-armed with a boat-hook always to hand",
+      "usualLocation": "The Quay",
+      "schedule": {
+        "Morning Watch": "The Quay",
+        "Forenoon": "The Quay",
+        "Dog Watch": "The Quay",
+        "First Watch": null,
+        "Middle Watch": null
+      },
+      "attractedTo": "steadiness, respect shown plainly, and people who take advice"
+    },
+    {
+      "name": "Temperance Bray",
+      "token": "Temperance",
+      "category": "shore-female",
+      "gender": "female",
+      "bio": "Victualler. Water, salt beef, biscuit, limes and rum — everything a ship eats on the way to somewhere else. Nobody leaves this harbour without dealing with her, and she knows precisely how long any given order is meant to last.",
+      "personality": "Blunt, funny, and utterly without patience for a captain who under-provisions and then complains at sea.",
+      "likes": "full orders, being paid on the day, a captain who counts properly",
+      "dislikes": "short-weight accusations, haggling over water, waste",
+      "identity": "a big, capable woman in her forties, broad and full-figured, red-faced from the sun, sleeves rolled past the elbow, hair under a knotted cloth",
+      "usualLocation": "The Quay",
+      "schedule": {
+        "Morning Watch": "The Quay",
+        "Forenoon": "The Quay",
+        "Dog Watch": "The Quay",
+        "First Watch": "The Punch House",
+        "Middle Watch": null
+      }
+    }
+  ],
+  "loreEntries": [
+    {
+      "label": "Port Royal",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Lore/port-royal.txt"
+    },
+    {
+      "label": "Port Royal People",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Lore/port-royal-people.txt"
+    }
+  ]
+}

@@ -1,0 +1,378 @@
+MARQUE — ADVENTURE CONTENT
+===========================================================
+Last updated: 30/08/2026
+
+Eighth Adventure for the Story Generator. Architecture and engine decisions
+live in the parent folder's Goals.txt and Features.txt — this file is this
+Adventure's canon only: premise, world, rules, ports, and the parts of the
+cast that are settled.
+
+Adventure id: marque. Display title: "Marque". Files are named Marque.* to
+match the id, consistent with Solmere / Meridian / Halcyon / Hollowburn /
+Pemberton / Gallant / Vermillion.
+
+A playable version exists and is registered in the ADVENTURES array:
+`Marque.json`, a town file and a schematic map for each of the four ports,
+the eight crew, one shipwright per port, ten sea encounters and a short arc.
+What it does not yet have is depth — the ports are one person each, there is
+no lore and no skin. This file stays the brief the rest is written from. See
+OUTSTANDING at the end.
+
+The engine holds one town at a time — see `Reference/Engine Design/Town
+Files.md` — so the four ports are four town files merged onto a ship file
+that carries the crew and everything else that travels. No Features.txt entry
+blocks it any more; what remains is content.
+
+PREMISE
+----------
+The Caribbean of the 1660s — the buccaneer era, not the later Golden Age.
+Spain holds everything and is hated for it. The French have Tortuga, the
+English have Port Royal, the Dutch have Curacao, and Santo Domingo is the
+Spanish port on the same island the buccaneers hunt cattle on. Nobody
+controls anything past the harbour mouth, and privateering commissions
+keep most of what happens out there half-legal.
+
+The player is a captain holding a commission taken out under false
+pretence. They did not want a war, a cause or a fortune; they wanted a
+legal reason to sail and to keep moving. The paper is the means, not the
+plot.
+
+The Adventure is deliberately loose. There is no single question the story
+is asking and no conspiracy to unpick. It is a voyage, and what happens is
+what a voyage turns up.
+
+STRUCTURE
+------------
+A voyage rather than a place. A port, then a crossing, then another port,
+with the choice of where to sail made on leaving. Each port carries its
+own map and its own cast of roughly ten. The crew travel with the player
+throughout and are the only constant.
+
+That gives two classes of relationship, and they are authored differently:
+
+- The crew compound across the whole story. They are written to last a
+  hundred turns and are where depth goes.
+- Port people are built, left behind, and returned to later. A port gives
+  each of them roughly two scenes, so they are written sharp and
+  single-note — one want, one angle, memorable fast.
+
+Returning to a port with what was done there still standing is the payoff
+the persisted relationship number is for, and it is something a
+single-location Adventure cannot produce.
+
+SAILING
+----------
+Leaving is a deliberate act with a Travel control beside Send, a destination
+list, and a confirmation that says a course once set holds until the ship
+makes port. It is enabled only while the captain is aboard.
+
+Crossing length is `crossingTurns` on each town, so the map has real
+distances in it: Santo Domingo is four beats away and sits on the same island
+as Tortuga, Tortuga and Port Royal are six from anywhere, and Curacao is nine
+because it is far south off the Main. For those beats no port is loaded at
+all: the eight crew and the six shipboard locations are the entire world, and
+the narrator is told the ship is on passage and how far is left. That stretch
+is what the Sails upgrade shortens.
+
+The distances are what make the route a decision. Curacao has the hulls and
+costs the most sea to reach; Santo Domingo has the sails, is barely a voyage
+away, and is the one port that would hang the captain on sight.
+
+Ten sea encounters are authored, at most one to a passage, which puts a real
+crossing between six and ten beats and leaves about one in five of them
+quiet — a crossing where nothing happens is an outcome, not a gap. They are things the sea does — squalls, calms, a waterspout, whales,
+water gone bad, a hand over the side, wreckage with someone still on it, a
+sail astern that could be anything, a King's ship that will read the
+commission properly, and once in a while something enormous under the hull
+that every sailor aboard has heard described and none has seen.
+
+PACING
+---------
+Milestone-driven, never a turn count, the same as every other Adventure
+here. A port ends when its business is done — its shipwright's upgrade
+bought, or the player simply chooses to sail. Pressure to move on comes
+from heat rather than from a counter: the longer a captain stays, the more
+likely the wrong people notice.
+
+A full pass through all four ports plus crossings runs somewhere around a
+hundred turns. AUTO_MEMORY_WINDOW keeps the last twenty raw, so by the
+final port the first two exist as summaries. This is a fit rather than a
+loss — the player did leave those people, and the relationship number is
+what remembers them.
+
+THE PORTS AND THE SHIPWRIGHTS
+--------------------------------
+Each port sells exactly one upgrade, and each upgrade works on its own
+axis so the choice is a real one. All four are engine-side; only the cabin
+reaches the prompt.
+
+- Curacao (Dutch) — HULL. Fewer encounters. The Dutch built the best hulls
+  in the world in this period and the fluyt is why they held the carrying
+  trade.
+- Santo Domingo (Spanish) — SAILS. Shorter crossings, so fewer beats at
+  sea and fewer rolls, without touching the odds. It is also the upgrade
+  that has to be bought inside a port that would hang the player, which is
+  Santo Domingo's reason to exist beyond sitting on the map.
+- Port Royal (English) — RUDDER. The choice to run. An encounter still
+  rolls; the player is no longer stuck with it. It sits with the men who
+  issue the commission, which is the right home for it.
+- Tortuga (French) — CABIN. Tortuga was a plunder market and not a
+  shipyard. A fine cabin is not commissioned there, it is furnished out of
+  somebody else's ship. Implemented as a locationScenery swap.
+
+The route therefore matters: wanting the hull means going to Curacao.
+
+ENCOUNTERS
+-------------
+Authored as this Adventure's own content in its own file, rolled
+engine-side. Pirates, krakens and sea monsters, weather, waterspouts.
+
+Grounded, with one line holding it: these are things the SEA does.
+Sailors in 1660 believed in krakens, so a kraken costs no cosmology.
+Ghost ships and skeleton crews need one, and are parked rather than
+written — see OPEN.
+
+Only the encounter the roll returns ever reaches the prompt. The table
+itself never does, so it can hold as many entries as are worth writing.
+
+The intended weights on the roll are ship upgrades, the navigator's skill,
+reputation in each nation's ports, cargo aboard, weather and the make-up
+of the crew. None of those need to reach the prompt for the roll to use
+them — the narrator never has to know why a kraken turned up.
+
+Nothing in the encounter system drives combat the player must fight
+through the engine. The story is free to let them win.
+
+CAST
+-------
+Gender-mirrored through npcSets: a woman commanding a crew of men, or a
+man commanding a crew of women. The ports themselves stay roughly even
+either way.
+
+The mirror follows Meridian's convention — one crew written twice, not two
+crews. Same eight roles, same personalities and the same position in the
+ship, with names and identity lines regendered between the two sets.
+
+THE CREW (8)
+Eight is a budget rather than a preference. The crew are aboard in every
+scene and every port, so they are the permanent full-line load in the
+prompt; eight of them alongside a port's ten is eighteen loaded at once,
+which is the scale Pemberton already runs at.
+
+Each role carries a hook rather than only a job:
+
+- Quartermaster — the one who would have the ship if the captain fell.
+  The standing counterweight, and the one who knows the commission is
+  false (see below).
+- Navigator — mechanically load-bearing: their skill is one of the weights
+  on the encounter roll, which makes one relationship aboard worth actual
+  money.
+- Bosun — runs the deck, the work and the rota. The first to defend the
+  captain to anyone who is not present.
+- Gunner — wins the fights the ship should lose.
+- Surgeon — the cost of those fights, in person.
+- Carpenter — keeps the hull alive between shipwrights, and is therefore
+  who says the upgrade is overdue.
+- Cook — the ship's social centre and its memory. Knows what the crew
+  actually think before the captain spends anything finding out.
+- Topman — no rank, youngest aboard, and signed on for the same reason the
+  captain did.
+
+THE QUARTERMASTER KNOWS
+The Quartermaster knows the commission was taken out under false pretence.
+
+This is not a plot. There is nothing to uncover, no reveal, and no scene
+where it comes out — it is simply true from the first turn, and both of
+them know the other knows. What it buys is a permanent, speakable pressure
+that costs no machinery: one person aboard could end the captain in any
+port by saying so, and has not.
+
+It sits beside the premise rather than driving it. The Adventure stays
+loose.
+
+Port casts are not yet written.
+
+CONTENT
+----------
+High fan service, at Gallant's level in the portraits rather than below it.
+
+The register is loose, minimal and hot-climate: sleeves gone, shirts open
+or knotted, midriffs bare, legs bare, feet bare. What keeps it from
+reading as costume is that the period supplies the reason for all of it —
+tropical heat, no fresh water to spare for washing, and clothing cut down
+from prizes to fit a body it was never made for. Nothing anachronistic is
+named: a linen shirt with the sleeves hacked off is the tank top, sailcloth
+slops cut short and belted low on the hips are the short shorts, a shirt
+knotted under the chest is the crop top. Same amount of skin, and it reads
+as the world instead of as a costume.
+
+Both genders carry the same emphasis. The male categories are as exposed
+and as worked as the female ones, not a modest counterpart to them.
+
+Every category carries "fully clothed, clearly an adult", with
+clothingStates handling everything past baseline. That pairing is the
+guardrail and neither half is optional at any heat level. The standard
+minor-safety layer sits underneath all of it, unchanged — see Safety
+Layer.txt and Goals.txt SAFETY.
+
+THE COMMISSION
+-----------------
+The commission can be lost — revoked, expired, or exposed as the false
+thing it always was. Losing it is a turn in the middle of the story and
+never an ending.
+
+What it changes is the standing of every port. A captain with the paper is
+a privateer that three of the four nations will trade with; a captain
+without it is a pirate everywhere, including in the port that issued it.
+The ports, the shipwrights and the encounter weights all stay exactly where
+they were — what moves is the cost of walking into any of them.
+
+THE ARC
+----------
+Three acts, ten milestones, five endings. The acts turn on milestones and
+never on a turn count.
+
+A loose Adventure cannot end on a plot, because there is no question it
+has been asking. It ends on a choice instead — where the captain stops and
+who with — and the four ports mean that choice is already built into the
+map.
+
+ACT I — THE PAPER HOLDS, until commission_lost. A privateer with a
+commission three of the four nations will trade with. The act teaches the
+loop: sail, arrive, buy the shipwright's work, leave.
+
+ACT II — WITHOUT IT, until the_price. The same ports, the same
+shipwrights and the same encounter table, all of it costing more. Santo
+Domingo goes from risky to close to suicidal.
+
+ACT III — WHERE YOU STOP. Every scene bends toward the answer.
+
+MILESTONES
+- first_crossing — the player sails from one port to another. The loop
+  proves itself and the map stops being one place.
+- first_upgrade — a shipwright's work bought and fitted. Establishes what
+  a port is actually for.
+- spoken — the thing the Quartermaster knows is said out loud between the
+  two of them. Not a reveal, since both have known since the first turn:
+  the milestone is that it stops being unsaid.
+- weathered — the ship comes through an encounter that should have cost
+  her. The table stops being scenery.
+- commission_lost — the paper is gone: revoked, expired, or exposed.
+  Closes Act I. No structural prerequisite, deliberately, and the world
+  does this TO the captain rather than requiring them to earn it — the
+  same reasoning as Pemberton's review_set and Gallant's the_offer. A
+  cautious player who could never trigger it would never reach Act II, and
+  an Adventure a passive player cannot finish is broken.
+- all_four (needs first_crossing) — every port walked in.
+- full_rig (needs all_four) — hull, sails, rudder and cabin, all bought.
+  The completionist route, and the reason the map is worth the whole
+  circuit.
+- why_they_signed — a member of the crew says why they actually came. The
+  crew's own beat, and the payoff for the depth they carry.
+- the_price — a nation names what legitimacy would cost. Closes Act II. No
+  prerequisite, for the same reason commission_lost has none.
+- the_choice (needs the_price) — the captain answers.
+
+ENDINGS
+- Commissioned (the_choice:commission) — a real commission, from a real
+  nation, at their price. The captain wanted the paper and now belongs to
+  the people who issue it. Written as a job rather than a triumph.
+- Ashore (the_choice:ashore) — the captain stops, in one of the four
+  ports, with whoever they built. Which port it is IS the ending, and it
+  reads differently in each.
+- Still Sailing (the_choice:sailing) — every offer refused. The truest
+  ending for someone who only ever wanted a reason to keep moving, and the
+  one that costs the most to take.
+- Taken — the assizes and the rope. Reachable at any point rather than
+  gated behind the arc.
+- The Ship — she is lost, or the crew are. The failure that is not a
+  hanging, and reachable at any point.
+
+No ending resolves the question of whether the commission was ever
+legitimate, because the Adventure never asks it. It was false from the
+first turn and everyone who mattered already knew.
+
+OUTFITS AND LOCATIONS
+------------------------
+Declares privateQuarters for the captain's cabin — the parallel
+location-triggered set logged in Features.txt, not wetLocations. It adds
+wetLocations only if a port turns out to want a beach.
+
+The wardrobe sits on the ship file rather than being split across the
+towns, so one table keeps every portrait consistent. This is reversible:
+uniforms are a lookup keyed by category and moving them later is a copy,
+not a migration.
+
+CREW BASELINE (crew-male / crew-female)
+The eight aboard, and the register the whole Adventure is pitched from.
+Each category is combined with an NPC's identity line and a neutral
+background at generation time, so changing one line updates every NPC
+sharing it.
+
+- crew-female: a length of loose cloth tied across the front and knotted,
+  leaving the shoulders, arms, back and midriff bare; short leather
+  shorts cut high and belted low on the hips; bare legs; bare feet; a
+  knife on a lanyard. Everything sun-bleached, salt-stiff and worn thin,
+  and everything re-cut by hand to fit a body it was not made for.
+- crew-male: a linen shirt with the sleeves torn away and the front open
+  or gone entirely, bare chest and bare arms; short leather breeches cut
+  above the knee and belted low; bare legs; bare feet; a knife on a
+  lanyard. Same cloth, same salt, same hand-cut fit.
+
+The leather is not a concession to the look — it is the most historically
+literal thing in the file. Buccaneers were cattle hunters on Hispaniola
+before they were pirates, and hide taken off the animals they killed is
+what the word comes from. Leather in this heat is exactly what these
+people would be wearing.
+
+Both categories carry the same emphasis and the same amount of skin,
+per CONTENT above, and both carry "fully clothed, clearly an adult".
+
+Remaining categories are not yet decided — see OPEN.
+
+FILE SPLIT
+-------------
+One authoritative ship file carrying everything Adventure-wide: crew, arc,
+milestones, endings, relationship labels, time phases, clothing states,
+image style, wardrobe, setup fields, prompt rules.
+
+A thin file per town carrying only its locations, its map, its scenery,
+its own NPCs and its lore URLs. Nothing Adventure-wide lives in a town
+file, so a town can never contradict the arc.
+
+A consequence worth having: the token collision sweep runs per town
+against the crew, rather than globally across every name in the Adventure.
+
+OPEN / NOT YET DECIDED
+---------------------------
+- Whether skeleton crews and ghost ships are ever real here. Parked, not
+  rejected. It is a tone decision rather than a content one — it changes
+  what the Spanish and the Navy are for, and every NPC written before it
+  is settled could need writing again.
+- Crew names, identity lines and personalities, and the regendered second
+  set that mirrors them.
+- The uniform categories past crew-male / crew-female: whether the eight
+  aboard split into officer and crew tiers, what the captain wears (the
+  player's own category, so playerCategoryTemplate depends on it), and
+  whether each port carries its own shore pair or the four share one.
+- The privateQuarters set itself, which CONTENT's level applies to before
+  clothingStates does.
+- Relationship labels, time phases, setup fields and image settings.
+
+OUTSTANDING
+--------------
+1. Everything the Adventure needs exists. Needs a push.
+2. Blocked on one Features.txt entry: random encounters.
+3. The maps are schematic placeholders — flat labelled boxes carrying the
+   right `loc-` ids, not drawn maps.
+4. All four port casts are at ten. Token sweep clean across both crew
+   rosters against every town, no schedule naming a location its town does
+   not declare, and every category covered by the wardrobe.
+5. Lore is twenty files: four topics and eight crew on the ship file, and a
+   place entry and a cast entry on each town file.
+6. The encounter table is sea-only. Nothing fires in port.
+7. Untested. No Begin has been run against Marque.
+
+Content and data changes from here go in
+Adventures/Marque/Marque Change Log.md; engine changes go in
+Generator/Steak and Bake Stories/Change Log.md.

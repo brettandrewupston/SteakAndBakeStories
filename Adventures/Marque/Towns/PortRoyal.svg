@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 356" width="700" height="356">
+<rect x="0" y="0" width="700" height="356" fill="#12212b"/>
+<text x="350" y="40" text-anchor="middle" font-size="22" fill="#e9dcc3" font-family="Georgia, serif">Port Royal</text>
+<rect class="sg-map-building" id="loc-the-quay" x="40" y="70" width="280" height="110" rx="6" fill="#26414f" stroke="#7fa8ba" stroke-width="2"/>
+<text x="180" y="131" text-anchor="middle" font-size="16" fill="#e9dcc3" font-family="Georgia, serif">The Quay</text>
+<rect class="sg-map-building" id="loc-the-governor-s-house" x="340" y="70" width="280" height="110" rx="6" fill="#26414f" stroke="#7fa8ba" stroke-width="2"/>
+<text x="480" y="131" text-anchor="middle" font-size="16" fill="#e9dcc3" font-family="Georgia, serif">The Governor's House</text>
+<rect class="sg-map-building" id="loc-the-punch-house" x="40" y="198" width="280" height="110" rx="6" fill="#26414f" stroke="#7fa8ba" stroke-width="2"/>
+<text x="180" y="259" text-anchor="middle" font-size="16" fill="#e9dcc3" font-family="Georgia, serif">The Punch House</text>
+</svg>

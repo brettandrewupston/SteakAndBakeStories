@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 484" width="700" height="484">
+<rect x="0" y="0" width="700" height="484" fill="#12212b"/>
+<text x="350" y="40" text-anchor="middle" font-size="22" fill="#e9dcc3" font-family="Georgia, serif">The Recompense</text>
+<rect class="sg-map-building" id="loc-the-great-cabin" x="40" y="70" width="280" height="110" rx="6" fill="#26414f" stroke="#7fa8ba" stroke-width="2"/>
+<text x="180" y="131" text-anchor="middle" font-size="16" fill="#e9dcc3" font-family="Georgia, serif">The Great Cabin</text>
+<rect class="sg-map-building" id="loc-the-waist" x="340" y="70" width="280" height="110" rx="6" fill="#26414f" stroke="#7fa8ba" stroke-width="2"/>
+<text x="480" y="131" text-anchor="middle" font-size="16" fill="#e9dcc3" font-family="Georgia, serif">The Waist</text>
+<rect class="sg-map-building" id="loc-the-berth-deck" x="40" y="198" width="280" height="110" rx="6" fill="#26414f" stroke="#7fa8ba" stroke-width="2"/>
+<text x="180" y="259" text-anchor="middle" font-size="16" fill="#e9dcc3" font-family="Georgia, serif">The Berth Deck</text>
+<rect class="sg-map-building" id="loc-the-tops" x="340" y="198" width="280" height="110" rx="6" fill="#26414f" stroke="#7fa8ba" stroke-width="2"/>
+<text x="480" y="259" text-anchor="middle" font-size="16" fill="#e9dcc3" font-family="Georgia, serif">The Tops</text>
+<rect class="sg-map-building" id="loc-the-galley" x="40" y="326" width="280" height="110" rx="6" fill="#26414f" stroke="#7fa8ba" stroke-width="2"/>
+<text x="180" y="387" text-anchor="middle" font-size="16" fill="#e9dcc3" font-family="Georgia, serif">The Galley</text>
+<rect class="sg-map-building" id="loc-the-hold" x="340" y="326" width="280" height="110" rx="6" fill="#26414f" stroke="#7fa8ba" stroke-width="2"/>
+<text x="480" y="387" text-anchor="middle" font-size="16" fill="#e9dcc3" font-family="Georgia, serif">The Hold</text>
+</svg>

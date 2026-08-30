@@ -1,0 +1,940 @@
+{
+  "id": "marque",
+  "title": "Marque",
+  "blurb": "A captain, a sloop, and a privateering commission taken out under false pretence. You wanted a legal reason to sail. The Caribbean of 1660 does not much care what you wanted.",
+  "cover": "🏴",
+  "mapUrl": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Map.svg",
+  "mapLabel": "The Recompense",
+  "towns": [
+    {
+      "id": "tortuga",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Towns/Tortuga.json",
+      "label": "Tortuga",
+      "crossingTurns": 6
+    },
+    {
+      "id": "portroyal",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Towns/PortRoyal.json",
+      "label": "Port Royal",
+      "crossingTurns": 6
+    },
+    {
+      "id": "curacao",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Towns/Curacao.json",
+      "label": "Curacao",
+      "crossingTurns": 9
+    },
+    {
+      "id": "santodomingo",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Towns/SantoDomingo.json",
+      "label": "Santo Domingo",
+      "crossingTurns": 4
+    }
+  ],
+  "startingTown": "tortuga",
+  "startingLocation": "The Great Cabin",
+  "locations": [
+    "The Great Cabin",
+    "The Waist",
+    "The Berth Deck",
+    "The Tops",
+    "The Galley",
+    "The Hold"
+  ],
+  "locationScenery": {
+    "The Great Cabin": "the captain's cabin in the stern of a small sloop, low-beamed, stern windows open to the sea, a table bolted to the deck",
+    "The Waist": "the open main deck of a sloop under tropical sun, rigging overhead, guns lashed along the rail",
+    "The Berth Deck": "a cramped low deck of slung hammocks, almost touching, dim and close",
+    "The Tops": "high in the rigging of a sloop, the sea enormous below, nothing but rope and canvas",
+    "The Galley": "a tiny ship's galley, iron stove, hanging pots, thick with smoke and steam",
+    "The Hold": "the dark lower hold of a sloop, water casks and cargo, close air"
+  },
+  "timePhases": [
+    "Morning Watch",
+    "Forenoon",
+    "Dog Watch",
+    "First Watch",
+    "Middle Watch"
+  ],
+  "startingPhase": "Forenoon",
+  "playerCategoryTemplate": "captain-{playerGender}",
+  "setupFields": [
+    {
+      "key": "characterName",
+      "type": "text",
+      "label": "Character name",
+      "placeholder": "Leave blank for a random name",
+      "randomSource": "names"
+    },
+    {
+      "key": "playerGender",
+      "type": "tiles",
+      "label": "Gender",
+      "options": [
+        {
+          "value": "male",
+          "label": "♂ Male"
+        },
+        {
+          "value": "female",
+          "label": "♀ Female"
+        }
+      ]
+    },
+    {
+      "key": "hairStyle",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Hair style",
+      "default": "shoulder_straight",
+      "joinNext": " ",
+      "options": [
+        {
+          "value": "short_straight",
+          "label": "Short, straight",
+          "text": "short straight"
+        },
+        {
+          "value": "short_curly",
+          "label": "Short, curly",
+          "text": "short curly"
+        },
+        {
+          "value": "buzz",
+          "label": "Buzz cut",
+          "text": "closely buzzed"
+        },
+        {
+          "value": "shoulder_straight",
+          "label": "Shoulder-length, straight",
+          "text": "shoulder-length straight"
+        },
+        {
+          "value": "shoulder_wavy",
+          "label": "Shoulder-length, wavy",
+          "text": "shoulder-length wavy"
+        },
+        {
+          "value": "long_straight",
+          "label": "Long, straight",
+          "text": "long straight"
+        },
+        {
+          "value": "long_wavy",
+          "label": "Long, wavy",
+          "text": "long wavy"
+        },
+        {
+          "value": "long_curly",
+          "label": "Long, curly",
+          "text": "long curly"
+        },
+        {
+          "value": "ponytail",
+          "label": "Ponytail",
+          "text": "ponytailed"
+        },
+        {
+          "value": "braided",
+          "label": "Braided",
+          "text": "braided"
+        },
+        {
+          "value": "bun",
+          "label": "Bun / updo",
+          "text": "pinned-up"
+        }
+      ]
+    },
+    {
+      "key": "hairColour",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Hair colour",
+      "default": "brown",
+      "options": [
+        {
+          "value": "black",
+          "label": "Black",
+          "text": "black hair"
+        },
+        {
+          "value": "dark_brown",
+          "label": "Dark brown",
+          "text": "dark brown hair"
+        },
+        {
+          "value": "brown",
+          "label": "Brown",
+          "text": "brown hair"
+        },
+        {
+          "value": "light_brown",
+          "label": "Light brown",
+          "text": "light brown hair"
+        },
+        {
+          "value": "blonde",
+          "label": "Blonde",
+          "text": "blonde hair"
+        },
+        {
+          "value": "platinum",
+          "label": "Platinum blonde",
+          "text": "platinum blonde hair"
+        },
+        {
+          "value": "auburn",
+          "label": "Auburn",
+          "text": "auburn hair"
+        },
+        {
+          "value": "red",
+          "label": "Red / ginger",
+          "text": "red ginger hair"
+        },
+        {
+          "value": "silver",
+          "label": "Silver / grey",
+          "text": "silver grey hair"
+        },
+        {
+          "value": "white",
+          "label": "White",
+          "text": "white hair"
+        },
+        {
+          "value": "blue",
+          "label": "Dyed blue",
+          "text": "dyed blue hair"
+        },
+        {
+          "value": "pink",
+          "label": "Dyed pink",
+          "text": "dyed pink hair"
+        },
+        {
+          "value": "purple",
+          "label": "Dyed purple",
+          "text": "dyed purple hair"
+        }
+      ]
+    },
+    {
+      "key": "bodyType",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Body type",
+      "default": "average",
+      "options": [
+        {
+          "value": "slim",
+          "label": "Slim",
+          "text": "a slim build"
+        },
+        {
+          "value": "lean",
+          "label": "Lean and toned",
+          "text": "a lean toned build"
+        },
+        {
+          "value": "average",
+          "label": "Average",
+          "text": "an average build"
+        },
+        {
+          "value": "athletic",
+          "label": "Athletic",
+          "text": "an athletic build"
+        },
+        {
+          "value": "muscular",
+          "label": "Muscular",
+          "text": "a muscular build"
+        },
+        {
+          "value": "curvy",
+          "label": "Curvy",
+          "text": "a curvy figure"
+        },
+        {
+          "value": "stocky",
+          "label": "Stocky",
+          "text": "a stocky build"
+        },
+        {
+          "value": "heavyset",
+          "label": "Heavyset",
+          "text": "a heavyset build"
+        }
+      ]
+    },
+    {
+      "key": "skinColour",
+      "type": "select",
+      "group": "Appearance",
+      "appearance": true,
+      "label": "Skin colour",
+      "default": "fair",
+      "options": [
+        {
+          "value": "pale",
+          "label": "Pale",
+          "text": "pale skin"
+        },
+        {
+          "value": "fair",
+          "label": "Fair",
+          "text": "fair skin"
+        },
+        {
+          "value": "light_olive",
+          "label": "Light olive",
+          "text": "light olive skin"
+        },
+        {
+          "value": "olive",
+          "label": "Olive",
+          "text": "olive skin"
+        },
+        {
+          "value": "tan",
+          "label": "Tanned",
+          "text": "tanned skin"
+        },
+        {
+          "value": "golden_brown",
+          "label": "Golden brown",
+          "text": "golden brown skin"
+        },
+        {
+          "value": "brown",
+          "label": "Brown",
+          "text": "brown skin"
+        },
+        {
+          "value": "dark_brown",
+          "label": "Dark brown",
+          "text": "dark brown skin"
+        },
+        {
+          "value": "deep",
+          "label": "Deep ebony",
+          "text": "deep ebony skin"
+        }
+      ]
+    },
+    {
+      "key": "playerAge",
+      "type": "number",
+      "label": "Age",
+      "default": "31"
+    }
+  ],
+  "nameSets": {
+    "male": [
+      "Ambrose",
+      "Caleb",
+      "Emory",
+      "Gideon",
+      "Isaac",
+      "Jonas",
+      "Kit",
+      "Lucius",
+      "Rafe",
+      "Thaddeus"
+    ],
+    "female": [
+      "Adeline",
+      "Beatrix",
+      "Clemence",
+      "Delphine",
+      "Honora",
+      "Isolde",
+      "Juno",
+      "Marguerite",
+      "Rowena",
+      "Verity"
+    ]
+  },
+  "npcSets": {
+    "male": [
+      {
+        "name": "Esther Vance",
+        "token": "Esther",
+        "category": "crew-female",
+        "gender": "female",
+        "bio": "Quartermaster of the Recompense. Divides every share, hears every dispute, and would have the ship if the captain fell. Knows the commission was taken out under false pretence and has never once said so ashore.",
+        "personality": "Exact, unhurried, and impossible to rush into an opinion. Says the difficult thing once, plainly, and then lets it sit.",
+        "likes": "work done properly, a straight answer, anyone who pulls their weight",
+        "dislikes": "shirking, being lied to, a captain who will not decide",
+        "attractedTo": "competence, nerve, and someone who treats the crew as people",
+        "identity": "a tall, broad-shouldered woman in her late thirties, full-figured, with rope scars across both palms and a old break badly set in one forearm, dark hair cropped short, sun-lined",
+        "usualLocation": "The Great Cabin",
+        "schedule": {
+          "Morning Watch": "The Great Cabin",
+          "Forenoon": "The Waist",
+          "Dog Watch": "The Waist",
+          "First Watch": "The Great Cabin",
+          "Middle Watch": "The Berth Deck"
+        }
+      },
+      {
+        "name": "Tabitha Quill",
+        "token": "Tabitha",
+        "category": "crew-female",
+        "gender": "female",
+        "bio": "Navigator of the Recompense. The only person aboard who can lay a course, which is the one skill on the ship no vote and no captain can replace. Reads weather like other people read faces.",
+        "personality": "Precise and a little superior about it, warms up completely when asked a real question about the work.",
+        "likes": "work done properly, a straight answer, anyone who pulls their weight",
+        "dislikes": "shirking, being lied to, a captain who will not decide",
+        "attractedTo": "competence, nerve, and someone who treats the crew as people",
+        "identity": "a lean, wiry woman in her early thirties, small-breasted and narrow-hipped, ink permanently under her fingernails, pale for these waters, hair tied back tight",
+        "usualLocation": "The Tops",
+        "schedule": {
+          "Morning Watch": "The Tops",
+          "Forenoon": "The Great Cabin",
+          "Dog Watch": "The Waist",
+          "First Watch": "The Tops",
+          "Middle Watch": "The Berth Deck"
+        }
+      },
+      {
+        "name": "Bethan Shaw",
+        "token": "Bethan",
+        "category": "crew-female",
+        "gender": "female",
+        "bio": "Bosun of the Recompense. Runs the deck, the work and the watch list. Gives a new hand every foul job aboard on principle, and is the first to defend them to anyone not present.",
+        "personality": "Loud, filthy, enormous fun, and genuinely fair underneath all of it.",
+        "likes": "work done properly, a straight answer, anyone who pulls their weight",
+        "dislikes": "shirking, being lied to, a captain who will not decide",
+        "attractedTo": "competence, nerve, and someone who treats the crew as people",
+        "identity": "a heavyset, powerfully built woman in her forties, wide-hipped and thick-armed, sunburnt across the shoulders, a shouted-out voice and a broken nose",
+        "usualLocation": "The Waist",
+        "schedule": {
+          "Morning Watch": "The Waist",
+          "Forenoon": "The Waist",
+          "Dog Watch": "The Waist",
+          "First Watch": "The Galley",
+          "Middle Watch": "The Berth Deck"
+        }
+      },
+      {
+        "name": "Cassia Roe",
+        "token": "Cassia",
+        "category": "crew-female",
+        "gender": "female",
+        "bio": "Gunner of the Recompense. Master of the ship's guns and the reason she wins fights she has no business winning. Half-deaf from her own work and entirely unbothered by it.",
+        "personality": "Blunt, obsessive about the guns, uninterested in anything that cannot be aimed.",
+        "likes": "work done properly, a straight answer, anyone who pulls their weight",
+        "dislikes": "shirking, being lied to, a captain who will not decide",
+        "attractedTo": "competence, nerve, and someone who treats the crew as people",
+        "identity": "a compact, hard-muscled woman in her late twenties, athletic and small-chested, powder burns freckling both forearms, hair shaved close at one side",
+        "usualLocation": "The Hold",
+        "schedule": {
+          "Morning Watch": "The Hold",
+          "Forenoon": "The Waist",
+          "Dog Watch": "The Waist",
+          "First Watch": "The Hold",
+          "Middle Watch": "The Berth Deck"
+        }
+      },
+      {
+        "name": "Lucienne Frey",
+        "token": "Lucienne",
+        "category": "crew-female",
+        "gender": "female",
+        "bio": "Surgeon of the Recompense. A barber with ambitions, one anatomy book, and a genuinely steady hand. Cheerful about amputation in a way that is either steadying or appalling.",
+        "personality": "Relentlessly good-humoured, talks through everything including the parts nobody wants narrated.",
+        "likes": "work done properly, a straight answer, anyone who pulls their weight",
+        "dislikes": "shirking, being lied to, a captain who will not decide",
+        "attractedTo": "competence, nerve, and someone who treats the crew as people",
+        "identity": "a slight, quick-handed woman in her thirties, slim and narrow-waisted, freckled everywhere the sun reaches, hair pinned up out of the way",
+        "usualLocation": "The Berth Deck",
+        "schedule": {
+          "Morning Watch": "The Berth Deck",
+          "Forenoon": "The Galley",
+          "Dog Watch": "The Waist",
+          "First Watch": "The Berth Deck",
+          "Middle Watch": "The Berth Deck"
+        }
+      },
+      {
+        "name": "Aveline Tull",
+        "token": "Aveline",
+        "category": "crew-female",
+        "gender": "female",
+        "bio": "Carpenter of the Recompense. Keeps a working hull alive with no materials and no complaint, and is the one who says when the next shipwright is overdue.",
+        "personality": "Vast, gentle, slow to anger and then not. Says little and means all of it.",
+        "likes": "work done properly, a straight answer, anyone who pulls their weight",
+        "dislikes": "shirking, being lied to, a captain who will not decide",
+        "attractedTo": "competence, nerve, and someone who treats the crew as people",
+        "identity": "an enormous, slow-moving woman in her forties, heavy-bosomed and broad through the back, hands like tools, greying hair in a single plait",
+        "usualLocation": "The Hold",
+        "schedule": {
+          "Morning Watch": "The Hold",
+          "Forenoon": "The Hold",
+          "Dog Watch": "The Waist",
+          "First Watch": "The Galley",
+          "Middle Watch": "The Berth Deck"
+        }
+      },
+      {
+        "name": "Silvia Bonnet",
+        "token": "Silvia",
+        "category": "crew-female",
+        "gender": "female",
+        "bio": "Cook of the Recompense. Feeds everybody and reads everybody. The ship's social centre and its memory, and the person to ask what the crew actually think.",
+        "personality": "Warm, nosy, and armed with everyone's business. Trades information in food.",
+        "likes": "work done properly, a straight answer, anyone who pulls their weight",
+        "dislikes": "shirking, being lied to, a captain who will not decide",
+        "attractedTo": "competence, nerve, and someone who treats the crew as people",
+        "identity": "a soft, round, comfortable woman in her fifties, full-bodied and wide-hipped, forearms scarred with old burns, grey hair under a knotted cloth",
+        "usualLocation": "The Galley",
+        "schedule": {
+          "Morning Watch": "The Galley",
+          "Forenoon": "The Galley",
+          "Dog Watch": "The Galley",
+          "First Watch": "The Galley",
+          "Middle Watch": "The Galley"
+        }
+      },
+      {
+        "name": "Nessa Penhale",
+        "token": "Nessa",
+        "category": "crew-female",
+        "gender": "female",
+        "bio": "Topman of the Recompense. No rank, youngest aboard, and signed on for the same reason the captain did — somewhere to be that was not where they were.",
+        "personality": "Quick, eager, occasionally reckless aloft, and desperate to be taken seriously.",
+        "likes": "work done properly, a straight answer, anyone who pulls their weight",
+        "dislikes": "shirking, being lied to, a captain who will not decide",
+        "attractedTo": "competence, nerve, and someone who treats the crew as people",
+        "identity": "a lithe, long-limbed young woman of nineteen, slender and small-breasted, all sinew from the rigging, sun-bleached hair in a rough tail",
+        "usualLocation": "The Tops",
+        "schedule": {
+          "Morning Watch": "The Tops",
+          "Forenoon": "The Tops",
+          "Dog Watch": "The Waist",
+          "First Watch": "The Tops",
+          "Middle Watch": "The Berth Deck"
+        }
+      }
+    ],
+    "female": [
+      {
+        "name": "Ezekiel Vance",
+        "token": "Ezekiel",
+        "category": "crew-male",
+        "gender": "male",
+        "bio": "Quartermaster of the Recompense. Divides every share, hears every dispute, and would have the ship if the captain fell. Knows the commission was taken out under false pretence and has never once said so ashore.",
+        "personality": "Exact, unhurried, and impossible to rush into an opinion. Says the difficult thing once, plainly, and then lets it sit.",
+        "likes": "work done properly, a straight answer, anyone who pulls their weight",
+        "dislikes": "shirking, being lied to, a captain who will not decide",
+        "attractedTo": "competence, nerve, and someone who treats the crew as people",
+        "identity": "a tall, broad-shouldered man in his late thirties, heavily built, rope scars across both palms and an old break badly set in one forearm, dark hair cropped short, sun-lined",
+        "usualLocation": "The Great Cabin",
+        "schedule": {
+          "Morning Watch": "The Great Cabin",
+          "Forenoon": "The Waist",
+          "Dog Watch": "The Waist",
+          "First Watch": "The Great Cabin",
+          "Middle Watch": "The Berth Deck"
+        }
+      },
+      {
+        "name": "Tobias Quill",
+        "token": "Tobias",
+        "category": "crew-male",
+        "gender": "male",
+        "bio": "Navigator of the Recompense. The only person aboard who can lay a course, which is the one skill on the ship no vote and no captain can replace. Reads weather like other people read faces.",
+        "personality": "Precise and a little superior about it, warms up completely when asked a real question about the work.",
+        "likes": "work done properly, a straight answer, anyone who pulls their weight",
+        "dislikes": "shirking, being lied to, a captain who will not decide",
+        "attractedTo": "competence, nerve, and someone who treats the crew as people",
+        "identity": "a lean, wiry man in his early thirties, narrow through the chest and hips, ink permanently under his fingernails, pale for these waters, hair tied back tight",
+        "usualLocation": "The Tops",
+        "schedule": {
+          "Morning Watch": "The Tops",
+          "Forenoon": "The Great Cabin",
+          "Dog Watch": "The Waist",
+          "First Watch": "The Tops",
+          "Middle Watch": "The Berth Deck"
+        }
+      },
+      {
+        "name": "Barnaby Shaw",
+        "token": "Barnaby",
+        "category": "crew-male",
+        "gender": "male",
+        "bio": "Bosun of the Recompense. Runs the deck, the work and the watch list. Gives a new hand every foul job aboard on principle, and is the first to defend them to anyone not present.",
+        "personality": "Loud, filthy, enormous fun, and genuinely fair underneath all of it.",
+        "likes": "work done properly, a straight answer, anyone who pulls their weight",
+        "dislikes": "shirking, being lied to, a captain who will not decide",
+        "attractedTo": "competence, nerve, and someone who treats the crew as people",
+        "identity": "a heavyset, powerfully built man in his forties, thick through the waist and arms, sunburnt across the shoulders, a shouted-out voice and a broken nose",
+        "usualLocation": "The Waist",
+        "schedule": {
+          "Morning Watch": "The Waist",
+          "Forenoon": "The Waist",
+          "Dog Watch": "The Waist",
+          "First Watch": "The Galley",
+          "Middle Watch": "The Berth Deck"
+        }
+      },
+      {
+        "name": "Cassian Roe",
+        "token": "Cassian",
+        "category": "crew-male",
+        "gender": "male",
+        "bio": "Gunner of the Recompense. Master of the ship's guns and the reason she wins fights she has no business winning. Half-deaf from her own work and entirely unbothered by it.",
+        "personality": "Blunt, obsessive about the guns, uninterested in anything that cannot be aimed.",
+        "likes": "work done properly, a straight answer, anyone who pulls their weight",
+        "dislikes": "shirking, being lied to, a captain who will not decide",
+        "attractedTo": "competence, nerve, and someone who treats the crew as people",
+        "identity": "a compact, hard-muscled man in his late twenties, athletic and deep-chested, powder burns freckling both forearms, hair shaved close at one side",
+        "usualLocation": "The Hold",
+        "schedule": {
+          "Morning Watch": "The Hold",
+          "Forenoon": "The Waist",
+          "Dog Watch": "The Waist",
+          "First Watch": "The Hold",
+          "Middle Watch": "The Berth Deck"
+        }
+      },
+      {
+        "name": "Lucien Frey",
+        "token": "Lucien",
+        "category": "crew-male",
+        "gender": "male",
+        "bio": "Surgeon of the Recompense. A barber with ambitions, one anatomy book, and a genuinely steady hand. Cheerful about amputation in a way that is either steadying or appalling.",
+        "personality": "Relentlessly good-humoured, talks through everything including the parts nobody wants narrated.",
+        "likes": "work done properly, a straight answer, anyone who pulls their weight",
+        "dislikes": "shirking, being lied to, a captain who will not decide",
+        "attractedTo": "competence, nerve, and someone who treats the crew as people",
+        "identity": "a slight, quick-handed man in his thirties, slim and narrow-waisted, freckled everywhere the sun reaches, hair pushed back off his face",
+        "usualLocation": "The Berth Deck",
+        "schedule": {
+          "Morning Watch": "The Berth Deck",
+          "Forenoon": "The Galley",
+          "Dog Watch": "The Waist",
+          "First Watch": "The Berth Deck",
+          "Middle Watch": "The Berth Deck"
+        }
+      },
+      {
+        "name": "Amos Tull",
+        "token": "Amos",
+        "category": "crew-male",
+        "gender": "male",
+        "bio": "Carpenter of the Recompense. Keeps a working hull alive with no materials and no complaint, and is the one who says when the next shipwright is overdue.",
+        "personality": "Vast, gentle, slow to anger and then not. Says little and means all of it.",
+        "likes": "work done properly, a straight answer, anyone who pulls their weight",
+        "dislikes": "shirking, being lied to, a captain who will not decide",
+        "attractedTo": "competence, nerve, and someone who treats the crew as people",
+        "identity": "an enormous, slow-moving man in his forties, barrel-chested and broad through the back, hands like tools, greying hair tied back",
+        "usualLocation": "The Hold",
+        "schedule": {
+          "Morning Watch": "The Hold",
+          "Forenoon": "The Hold",
+          "Dog Watch": "The Waist",
+          "First Watch": "The Galley",
+          "Middle Watch": "The Berth Deck"
+        }
+      },
+      {
+        "name": "Silas Bonnet",
+        "token": "Silas",
+        "category": "crew-male",
+        "gender": "male",
+        "bio": "Cook of the Recompense. Feeds everybody and reads everybody. The ship's social centre and its memory, and the person to ask what the crew actually think.",
+        "personality": "Warm, nosy, and armed with everyone's business. Trades information in food.",
+        "likes": "work done properly, a straight answer, anyone who pulls their weight",
+        "dislikes": "shirking, being lied to, a captain who will not decide",
+        "attractedTo": "competence, nerve, and someone who treats the crew as people",
+        "identity": "a soft, round, comfortable man in his fifties, heavy-bellied and thick-armed, forearms scarred with old burns, grey hair under a knotted cloth",
+        "usualLocation": "The Galley",
+        "schedule": {
+          "Morning Watch": "The Galley",
+          "Forenoon": "The Galley",
+          "Dog Watch": "The Galley",
+          "First Watch": "The Galley",
+          "Middle Watch": "The Galley"
+        }
+      },
+      {
+        "name": "Jory Penhale",
+        "token": "Jory",
+        "category": "crew-male",
+        "gender": "male",
+        "bio": "Topman of the Recompense. No rank, youngest aboard, and signed on for the same reason the captain did — somewhere to be that was not where they were.",
+        "personality": "Quick, eager, occasionally reckless aloft, and desperate to be taken seriously.",
+        "likes": "work done properly, a straight answer, anyone who pulls their weight",
+        "dislikes": "shirking, being lied to, a captain who will not decide",
+        "attractedTo": "competence, nerve, and someone who treats the crew as people",
+        "identity": "a lithe, long-limbed young man of nineteen, slender and lightly built, all sinew from the rigging, sun-bleached hair in a rough tail",
+        "usualLocation": "The Tops",
+        "schedule": {
+          "Morning Watch": "The Tops",
+          "Forenoon": "The Tops",
+          "Dog Watch": "The Waist",
+          "First Watch": "The Tops",
+          "Middle Watch": "The Berth Deck"
+        }
+      }
+    ]
+  },
+  "uniforms": {
+    "crew-female": "a length of loose sun-bleached cloth tied and knotted across the front, shoulders arms back and midriff bare, short leather shorts cut high and belted low on the hips with a length of rope, bare legs, bare feet, a knife on a lanyard, everything salt-stiff and worn thin and hand-cut to fit, fully clothed, clearly an adult",
+    "crew-male": "a linen shirt with the sleeves torn away and the front hanging open over a bare chest, short leather breeches cut above the knee and belted low with a length of rope, bare legs, bare feet, a knife on a lanyard, everything salt-stiff and worn thin and hand-cut to fit, fully clothed, clearly an adult",
+    "captain-female": "the same cut-down sailing clothes under one good coat taken off a prize and kept for the look of the thing, worn open over bare skin with the sleeves turned back, a sash pulled tight at the waist, short leather shorts, tall boots instead of bare feet, a wide hat that cost more than the coat, fully clothed, clearly an adult",
+    "captain-male": "the same cut-down sailing clothes under one good coat taken off a prize and kept for the look of the thing, worn open over a bare chest with the sleeves turned back, a sash pulled tight at the waist, short leather breeches, tall boots instead of bare feet, a wide hat that cost more than the coat, fully clothed, clearly an adult",
+    "shore-female": "thin light Caribbean town clothes for the heat, a shift worn off one shoulder and laced loose, skirts kirtled up out of the mud above the knee, bare arms, bare feet, a great deal of gold worn where it can be seen, fully clothed, clearly an adult",
+    "shore-male": "thin light Caribbean town clothes for the heat, a shirt open to the waist with the sleeves rolled, breeches rolled to the knee, bare arms, bare feet, a great deal of gold worn where it can be seen, fully clothed, clearly an adult"
+  },
+  "clothingStates": {
+    "male": {
+      "shirtless": "stripped to the waist, bare chested, short leather breeches only, sweat and sun on bare skin",
+      "nude": "undressed",
+      "soaked": "soaked through, thin salt-stiff linen clinging, hair wet and pushed back"
+    },
+    "female": {
+      "topless": "the tied cloth loosened and hanging free, bare above the waist, short leather shorts only",
+      "nude": "undressed",
+      "soaked": "soaked through, thin salt-stiff cloth clinging, hair wet and pushed back"
+    }
+  },
+  "relationshipLabels": [
+    {
+      "min": 0,
+      "label": "Would Put You Ashore"
+    },
+    {
+      "min": 15,
+      "label": "Sails Under Protest"
+    },
+    {
+      "min": 35,
+      "label": "Signed The Same Paper"
+    },
+    {
+      "min": 50,
+      "label": "Hears You Out"
+    },
+    {
+      "min": 65,
+      "label": "Follows You"
+    },
+    {
+      "min": 80,
+      "label": "Speaks For You"
+    },
+    {
+      "min": 95,
+      "label": "Would Hang Beside You"
+    }
+  ],
+  "expressionVocabulary": [
+    "neutral",
+    "soft smile",
+    "smirking",
+    "laughing",
+    "salt-burned",
+    "wary",
+    "narrowed eyes/glaring",
+    "blushing",
+    "delighted",
+    "seasick",
+    "flushed"
+  ],
+  "imageStyle": "painted anime style, front on shot",
+  "baselineBackground": "simple plain neutral studio background, soft even lighting, no distracting scenery",
+  "arc": {
+    "milestones": [
+      {
+        "id": "first_crossing",
+        "label": "The first crossing",
+        "description": "The Recompense sails from one port to another with the player commanding. Fire this on arrival, not on departure.",
+        "journal": "Take the ship somewhere else. A commission is only worth anything to someone who is using it."
+      },
+      {
+        "id": "first_upgrade",
+        "label": "The shipwright's work",
+        "description": "A shipwright's work is bought and fitted — each port sells exactly one thing and no port sells another port's.",
+        "journal": "Find a shipwright and buy what this port sells. Nowhere else sells it."
+      },
+      {
+        "id": "commission_lost",
+        "label": "The paper is gone",
+        "description": "The commission is revoked, expired, or exposed as the false thing it always was. The world does this TO the captain — it is never something they must earn, and it never requires another milestone first.",
+        "journal": "You are a pirate everywhere now, including where the paper was issued."
+      }
+    ],
+    "phases": [
+      {
+        "id": "act1",
+        "label": "The Paper Holds",
+        "until": "commission_lost",
+        "guidance": "The captain holds a privateering commission that three of the four nations in these waters will trade with, and it was taken out under false pretence. Nobody is investigating that and there is nothing to uncover — the Quartermaster has known since the first day and has never said so ashore. Play the loop: sail, arrive, deal with a port, buy what its shipwright sells, leave. The crew are the constant and the ports are what changes."
+      },
+      {
+        "id": "act2",
+        "label": "Without It",
+        "guidance": "The commission is gone. The same ports, the same shipwrights and the same seas, all of it costing more, and a Spanish port is now close to suicidal to walk into. Nothing about the world has moved — what has changed is what walking into any of it costs."
+      }
+    ],
+    "endings": [
+      {
+        "id": "taken",
+        "title": "Taken",
+        "summary": "The assizes, and then the rope.",
+        "guidance": "the captain is taken and tried. Only where the story has genuinely brought them there — a port entered without the paper, a name sold, a fight lost in sight of a King's ship. Never as a punishment for a poor choice.",
+        "continuable": false,
+        "anyTime": true
+      },
+      {
+        "id": "still_sailing",
+        "title": "Still Sailing",
+        "summary": "Every offer refused. You wanted a reason to keep moving, and in the end you stopped needing one.",
+        "guidance": "the captain refuses every settlement offered — a real commission, a port to stop in, a life ashore — and puts to sea anyway. The truest ending for someone who only ever wanted a reason to keep moving, and the one that costs the most to take.",
+        "continuable": false
+      }
+    ]
+  },
+  "promptRules": {
+    "setting": "The Caribbean in 1660 — the buccaneer era, not the later golden age of piracy. Spain holds everything worth holding and is hated for it; the French have Tortuga, the English have Port Royal, and nobody controls anything past the harbour mouth. The player is the captain of the Recompense, a small fast sloop, and holds a privateering commission taken out under false pretence. They did not want a war or a fortune: they wanted a legal reason to sail and to keep moving. This is not a mystery and there is nothing to uncover — the Quartermaster has known the paper is false since the first day, both of them know the other knows, and it has never been said ashore. The crew of eight travel with the ship and are the constant; a port's people are met, left behind, and met again later, and what was done there still stands when the ship comes back. Never name a real year, monarch or historical person.",
+    "tone": "Loud, filthy, funny and physically dangerous. Rope burn, salt sores, bad water and a fight roughly once a month that somebody will not walk away from. Warm about the crew and unsentimental about what they do for a living. Romance runs the length of it, aboard a vessel with no privacy anywhere but the captain's own cabin.",
+    "contentApproach": "High heat. Flirtation, jealousy and decisions made four feet from somebody else's hammock are ordinary texture rather than exceptions, and are written freely and explicitly when a scene goes there; escalation within a scene always follows the player's lead. The register is heat, salt and hard physical work rather than costume — there is no fresh water to spare for washing and every garment aboard was cut down from somebody else's. Both genders carry the same emphasis. Every character is unambiguously an adult.",
+    "openingInstruction": "Open in the great cabin of the Recompense at anchor off Tortuga, with the commission on the table and the Quartermaster waiting to be told where the ship is going."
+  },
+  "openingScenes": {
+    "male": "The paper lies on the table where you put it three months ago, and it has not become any more true since.\n\nEsther Vance stands on the other side of it with her hands behind her back, waiting, the way she has waited every morning since Tortuga. Through the stern windows the anchorage is already awake — boats, shouting, somebody's fiddle. The Recompense swings gently at her cable.\n\n\"Well,\" Esther says. \"You've read it enough times. Where are we going, Captain?\"",
+    "female": "The paper lies on the table where you put it three months ago, and it has not become any more true since.\n\nEzekiel Vance stands on the other side of it with his hands behind his back, waiting, the way he has waited every morning since Tortuga. Through the stern windows the anchorage is already awake — boats, shouting, somebody's fiddle. The Recompense swings gently at her cable.\n\n\"Well,\" he says. \"You've read it enough times. Where are we going, Captain?\""
+  },
+  "encounterChance": 0.25,
+  "encounters": [
+    {
+      "id": "squall",
+      "when": "sea",
+      "beats": 2,
+      "weight": 4,
+      "instruction": "A squall comes up fast out of a clear afternoon — the horizon goes the colour of a bruise, the glass drops, and there is very little time to get canvas off her. Everyone aboard is on deck and wet through within a minute. Play it as hard physical work carried out by people who have done it a hundred times and still might lose someone over the side."
+    },
+    {
+      "id": "becalmed",
+      "when": "sea",
+      "beats": 3,
+      "weight": 3,
+      "instruction": "The wind dies completely. The sea goes to glass, the sails hang, the heat becomes unbearable and the ship makes no way at all. Nothing to do and nowhere to go: tempers, boredom, old arguments, and eighty feet of deck with nobody able to get away from anybody. Play the stillness as pressure rather than as rest."
+    },
+    {
+      "id": "waterspout",
+      "when": "sea",
+      "beats": 2,
+      "weight": 2,
+      "instruction": "A waterspout stands up off the beam — a rope of water joining sea to cloud, moving, and nobody entirely sure in which direction. Sailors' remedies come out: shouting at it, a psalm, an axe struck into the mast. Play the crew's beliefs about it as sincerely held, because in 1660 they are."
+    },
+    {
+      "id": "sail_astern",
+      "when": "sea",
+      "beats": 4,
+      "weight": 3,
+      "instruction": "A sail astern, holding the same course, closing slowly. She shows no colours. It could be a merchant worth taking, a pirate who thinks the same of the Recompense, or a King's ship being careful. The whole crew has an opinion and the captain has hours to decide before it is decided for them."
+    },
+    {
+      "id": "kraken",
+      "when": "sea",
+      "beats": 4,
+      "weight": 1,
+      "instruction": "Something enormous is under the ship. It surfaces once — a length of it, more than the sloop is long, moving the wrong way against the swell — and goes down again. The sea itself heaves. Every sailor aboard already knows what this is, has heard it described in three ports, and none of them has ever seen it before. Play it as real, unexplained, and never fully shown."
+    },
+    {
+      "id": "whales",
+      "when": "sea",
+      "beats": 2,
+      "weight": 2,
+      "instruction": "The ship comes into the middle of whales — dozens, unhurried, close enough to touch, breathing all around the hull in the dark. Not a threat and not treated as one. A quiet beat in a hard voyage, and the whole crew on deck saying nothing."
+    },
+    {
+      "id": "bad_water",
+      "when": "sea",
+      "beats": 3,
+      "weight": 2,
+      "instruction": "The water in the casks has gone. It happens on every voyage and it is serious every time: rationing from here to landfall, arguments about who is drinking what, and the cook and the quartermaster in the middle of all of it. Nobody is dying yet. Everybody is thinking about it."
+    },
+    {
+      "id": "overboard",
+      "when": "sea",
+      "beats": 2,
+      "weight": 2,
+      "instruction": "Someone goes over the side — a footing lost off the yard, or a sea taken green over the rail. Getting them back is minutes of shouting, a hove-to ship and swimming that most sailors of this period cannot do. Decide by the beat's own logic whether they come back aboard, and let it cost something either way."
+    },
+    {
+      "id": "wreckage",
+      "when": "sea",
+      "beats": 3,
+      "weight": 2,
+      "instruction": "Wreckage in the water, spread over half a mile, and something on it that is still moving. Whoever comes aboard belongs to a ship that no longer exists and has their own reasons for being where they were. Salvage, survivors, or both — and a small ship's water and food do not stretch."
+    },
+    {
+      "id": "kings_ship",
+      "when": "sea",
+      "beats": 4,
+      "weight": 2,
+      "instruction": "A King's ship, unmistakable, standing towards the Recompense and signalling her to heave to. This is the moment the commission is either worth something or worth nothing, and the officer who comes aboard will read it properly. Play the boarding at the pace of a formal inspection carried out by men who are polite, thorough and armed."
+    }
+  ],
+  "maxEncountersPerCrossing": 1,
+  "loreEntries": [
+    {
+      "label": "Setting",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Lore/setting.txt"
+    },
+    {
+      "label": "The Commission",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Lore/the-commission.txt"
+    },
+    {
+      "label": "The Recompense",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Lore/the-recompense.txt"
+    },
+    {
+      "label": "The Sea",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Lore/the-sea.txt"
+    },
+    {
+      "label": "Bonnet (crew)",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Lore/crew-bonnet.txt"
+    },
+    {
+      "label": "Frey (crew)",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Lore/crew-frey.txt"
+    },
+    {
+      "label": "Penhale (crew)",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Lore/crew-penhale.txt"
+    },
+    {
+      "label": "Quill (crew)",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Lore/crew-quill.txt"
+    },
+    {
+      "label": "Roe (crew)",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Lore/crew-roe.txt"
+    },
+    {
+      "label": "Shaw (crew)",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Lore/crew-shaw.txt"
+    },
+    {
+      "label": "Tull (crew)",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Lore/crew-tull.txt"
+    },
+    {
+      "label": "Vance (crew)",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Lore/crew-vance.txt"
+    }
+  ]
+}

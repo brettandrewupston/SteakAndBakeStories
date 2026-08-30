@@ -1,0 +1,223 @@
+{
+  "locations": [
+    "The Ropewalk",
+    "The Beach Market",
+    "The Careening Yard"
+  ],
+  "mapUrl": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Towns/Tortuga.svg",
+  "locationScenery": {
+    "The Ropewalk": "a long open-sided rope walk in a French buccaneer haven, palm thatch, rope and tar and shade",
+    "The Beach Market": "a plunder market on an open Caribbean beach, awnings and stolen goods laid out on sand",
+    "The Careening Yard": "a shallow careening beach with a sloop hove down on her side, tar fires burning"
+  },
+  "npcs": [
+    {
+      "name": "Margaux Vaudray",
+      "token": "Margaux",
+      "category": "shore-female",
+      "gender": "female",
+      "bio": "Runs the plunder market on the beach at Tortuga. Buys anything, sets the price, and therefore decides what a prize was actually worth. Not a pirate, and richer than every pirate in the anchorage. Tortuga sells no rigging and no hulls — what it sells is other people's furniture, and she is who you buy a captain's cabin from.",
+      "personality": "Delighted, mercenary, and entirely without shame about either. Treats haggling as the best part of the day.",
+      "likes": "a captain who knows what a thing is worth, repeat custom, good gossip",
+      "dislikes": "haggling in bad faith, being rushed, anyone who talks down to her",
+      "attractedTo": "confidence with money, and people who can keep up with her",
+      "identity": "a striking woman in her late thirties, full-figured and wide-hipped, deeply tanned, gold at her ears and throat and wrists, black hair pinned up off her neck",
+      "usualLocation": "The Beach Market",
+      "schedule": {
+        "Morning Watch": "The Beach Market",
+        "Forenoon": "The Beach Market",
+        "Dog Watch": "The Ropewalk",
+        "First Watch": "The Ropewalk",
+        "Middle Watch": null
+      }
+    },
+    {
+      "name": "Odile Ferrand",
+      "token": "Odile",
+      "category": "shore-female",
+      "gender": "female",
+      "bio": "The crimp. Finds hands for ships that are short of them, which on Tortuga means finding men and women drunk enough to make a mark on articles they have not read. Half the crews in this anchorage were assembled by her and most of them do not remember it. She takes a fee from the captain and a cut of the first share, and considers this an honest trade because nobody is held.",
+      "personality": "Relentlessly friendly, remembers every name, and never once stops working. Talks to a captain the way a good innkeeper does — warmly, at length, and with a running total.",
+      "likes": "a captain who pays the fee without arguing, a full anchorage, being underestimated",
+      "dislikes": "sobriety, questions about her methods, anyone who tries to hire behind her back",
+      "identity": "a compact, busy woman in her late thirties, full-figured and broad-hipped, deeply tanned, gold hoops, dark hair pinned up and escaping, a permanent half-smile",
+      "usualLocation": "The Ropewalk",
+      "schedule": {
+        "Morning Watch": "The Ropewalk",
+        "Forenoon": "The Ropewalk",
+        "Dog Watch": "The Beach Market",
+        "First Watch": "The Ropewalk",
+        "Middle Watch": null
+      },
+      "attractedTo": "confidence, a good story well told, and people who know exactly what they are"
+    },
+    {
+      "name": "Bastien Moreau",
+      "token": "Bastien",
+      "category": "shore-male",
+      "gender": "male",
+      "bio": "Sells rum on the beach out of casks that came off three different prizes, and has never once been asked where any of it came from. Knows to the day how long a ship has been in and can price a crew's thirst accordingly. The nearest thing Tortuga has to a bank: he holds money for people who do not want it on them, and has never lost any.",
+      "personality": "Slow, unbothered, and enormously fond of everybody in a way that stops exactly at the edge of doing anything about it.",
+      "likes": "regulars, a long evening, being trusted with money",
+      "dislikes": "fighting near the casks, credit, being rushed",
+      "identity": "a heavy, comfortable man in his forties, thick through the chest and belly, sunburnt, shirt open to the waist, forearms like hams, greying beard",
+      "usualLocation": "The Beach Market",
+      "schedule": {
+        "Morning Watch": "The Beach Market",
+        "Forenoon": "The Beach Market",
+        "Dog Watch": "The Beach Market",
+        "First Watch": "The Beach Market",
+        "Middle Watch": "The Beach Market"
+      },
+      "attractedTo": "easy company, and anyone who can sit still for an hour"
+    },
+    {
+      "name": "Colette Duchesne",
+      "token": "Colette",
+      "category": "shore-female",
+      "gender": "female",
+      "bio": "Runs the careening ground, which means she decides whose ship gets hove down and in what order. A fouled hull cannot catch anything, so her waiting list is the single most valuable thing on the island and everybody on it knows exactly where they are.",
+      "personality": "Curt, absolutely fair, and immune to charm in a way that visibly disappoints people who have relied on it their whole lives.",
+      "likes": "punctuality, ships kept in decent order, being told the truth about a hull",
+      "dislikes": "queue-jumping, bribes, captains who neglect their vessel and then blame the yard",
+      "identity": "a tall, rangy woman in her forties, lean and hard-muscled, sun-blackened, close-cropped grey-streaked hair, tar to the elbows",
+      "usualLocation": "The Careening Yard",
+      "schedule": {
+        "Morning Watch": "The Careening Yard",
+        "Forenoon": "The Careening Yard",
+        "Dog Watch": "The Careening Yard",
+        "First Watch": "The Beach Market",
+        "Middle Watch": null
+      },
+      "attractedTo": "competence, straightforwardness, and hands that have done the work"
+    },
+    {
+      "name": "Anselme Pichon",
+      "token": "Anselme",
+      "category": "shore-male",
+      "gender": "male",
+      "bio": "Writes papers. Bills of lading, ownership, manifests, letters of marque — anything a ship might be asked to produce, in whatever hand and under whatever seal is required. He is very good, which is why he is still alive, and he keeps no copies of anything.",
+      "personality": "Precise, quiet, and completely without curiosity about what any document is for. Asks only what it needs to say and who will be reading it.",
+      "likes": "clean paper, being paid in advance, a customer who knows what they want",
+      "dislikes": "being asked to hurry, being asked who else uses him, hypotheticals",
+      "identity": "a small, neat, ink-stained man in his fifties, slight and stooped, pale for these waters under a wide hat, spectacles, immaculate hands",
+      "usualLocation": "The Ropewalk",
+      "schedule": {
+        "Morning Watch": "The Ropewalk",
+        "Forenoon": "The Ropewalk",
+        "Dog Watch": "The Ropewalk",
+        "First Watch": "The Beach Market",
+        "Middle Watch": null
+      }
+    },
+    {
+      "name": "Solene Bassett",
+      "token": "Solene",
+      "category": "shore-female",
+      "gender": "female",
+      "bio": "Captain of the Aigrette and openly recruiting. Runs her ship harder and better than most, takes more, and loses fewer people doing it. She is not an enemy and has never pretended to be a friend, and she will make an offer to any decent hand she meets, including in front of their own captain.",
+      "personality": "Direct, funny, generous with drink and information, and entirely unembarrassed about poaching. Treats it as a compliment to the crew she is trying to take.",
+      "likes": "nerve, a captain who argues back, a well-run ship",
+      "dislikes": "false modesty, captains who cannot decide, being lied to about a prize",
+      "identity": "a striking woman in her thirties, athletic and long-limbed, small-breasted, weather-darkened, a white scar through one eyebrow, black hair in a tail",
+      "usualLocation": "The Beach Market",
+      "schedule": {
+        "Morning Watch": null,
+        "Forenoon": "The Beach Market",
+        "Dog Watch": "The Beach Market",
+        "First Watch": "The Beach Market",
+        "Middle Watch": null
+      },
+      "attractedTo": "competence, nerve, and the particular confidence of someone with nothing to prove"
+    },
+    {
+      "name": "Gaspard Thevet",
+      "token": "Gaspard",
+      "category": "shore-male",
+      "gender": "male",
+      "bio": "Was a priest somewhere else and is not one here, though he still buries people and still says the words. Nobody has ever asked what happened and he has never volunteered it. He is at every funeral on this island and there are a great many.",
+      "personality": "Gentle, dry, and unshockable. Listens far more than he speaks, and what he says afterwards tends to be shorter than expected and harder to forget.",
+      "likes": "honesty, people who sit with the dying, a quiet hour",
+      "dislikes": "being asked to bless a voyage, sentimentality about violence, anyone who calls him Father",
+      "identity": "a spare, weathered man in his sixties, thin and upright, deeply lined, white stubble, a plain worn coat he never takes off however hot it is",
+      "usualLocation": "The Ropewalk",
+      "schedule": {
+        "Morning Watch": "The Ropewalk",
+        "Forenoon": "The Careening Yard",
+        "Dog Watch": "The Ropewalk",
+        "First Watch": "The Ropewalk",
+        "Middle Watch": "The Ropewalk"
+      }
+    },
+    {
+      "name": "Manon Cadieux",
+      "token": "Manon",
+      "category": "shore-female",
+      "gender": "female",
+      "bio": "Makes rope, which on an island of ships is a trade nobody can do without and nobody thinks about. Works the ropewalk from first light, knows the state of every vessel's cordage in the anchorage, and can tell how a ship has been sailed by what comes back to her frayed.",
+      "personality": "Quiet, observant, and much funnier than she first appears. Says almost nothing for an hour and then something devastating.",
+      "likes": "good hemp, work done properly, being asked her opinion about a ship",
+      "dislikes": "waste, boasting, being talked over",
+      "identity": "a strong, thickset woman in her thirties, broad-shouldered and full-busted, forearms corded from the walk, hemp dust in her hair, hands permanently rough",
+      "usualLocation": "The Ropewalk",
+      "schedule": {
+        "Morning Watch": "The Ropewalk",
+        "Forenoon": "The Ropewalk",
+        "Dog Watch": "The Ropewalk",
+        "First Watch": "The Beach Market",
+        "Middle Watch": null
+      },
+      "attractedTo": "patience, dry humour, and people who notice the work"
+    },
+    {
+      "name": "Emile Tessier",
+      "token": "Emile",
+      "category": "shore-male",
+      "gender": "male",
+      "bio": "Twenty-three and runs cargo between the anchorage and the shore in a leaky boat, taking anything anyone will pay him to move and asking nothing. Knows every vessel in the bay by her boat, every crew by sight, and is trying very hard to be given a berth on something that goes further than the beach.",
+      "personality": "Eager, talkative, transparently ambitious, and about twice as observant as anyone gives him credit for.",
+      "likes": "being taken seriously, a captain who remembers his name, going anywhere at all",
+      "dislikes": "being sent away, waiting, being called boy",
+      "identity": "a wiry young man of twenty-three, lean and lightly muscled, sun-browned all over, salt-bleached hair, bare-chested and bare-footed most days",
+      "usualLocation": "The Beach Market",
+      "schedule": {
+        "Morning Watch": "The Beach Market",
+        "Forenoon": "The Beach Market",
+        "Dog Watch": "The Careening Yard",
+        "First Watch": "The Beach Market",
+        "Middle Watch": null
+      },
+      "attractedTo": "attention, competence, and anyone who talks to him like a sailor"
+    },
+    {
+      "name": "Ysabeau Lenoir",
+      "token": "Ysabeau",
+      "category": "shore-female",
+      "gender": "female",
+      "bio": "Buys and sells what people know. Where a fleet is, which governor has stopped issuing, who has sold whom, what a ship is really carrying. She trades in it the way Vaudray trades in furniture, and she is the reason nothing stays secret on this island for longer than a week.",
+      "personality": "Warm, attentive, apparently indiscreet, and never once careless. Gives away three small things to be told one large one.",
+      "likes": "a good exchange, being surprised, people who understand what information costs",
+      "dislikes": "being lied to, free questions, anyone who thinks she gossips",
+      "identity": "an elegant woman in her forties, slim and narrow-waisted, olive-skinned, dark hair dressed carefully even in this heat, a great deal of gold worn openly",
+      "usualLocation": "The Beach Market",
+      "schedule": {
+        "Morning Watch": null,
+        "Forenoon": "The Beach Market",
+        "Dog Watch": "The Beach Market",
+        "First Watch": "The Ropewalk",
+        "Middle Watch": null
+      },
+      "attractedTo": "sharp company, discretion in others, and someone with something worth trading"
+    }
+  ],
+  "loreEntries": [
+    {
+      "label": "Tortuga",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Lore/tortuga.txt"
+    },
+    {
+      "label": "Tortuga People",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Lore/tortuga-people.txt"
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "locations": [
+    "The Company Wharf",
+    "The Dry Dock",
+    "The Salt Pans"
+  ],
+  "mapUrl": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Towns/Curacao.svg",
+  "locationScenery": {
+    "The Company Wharf": "an orderly Dutch colonial wharf in the Caribbean, warehouses in straight lines, everything swept, ledgers under awnings",
+    "The Dry Dock": "a working Dutch shipyard, a hull up on blocks with new timber going in, sawpits and steam",
+    "The Salt Pans": "flat blinding white salt pans behind a Caribbean town, shallow water, heat coming up off the crust"
+  },
+  "npcs": [
+    {
+      "name": "Griet van Doorn",
+      "token": "Griet",
+      "category": "shore-female",
+      "gender": "female",
+      "bio": "Runs the dry dock on Curacao and builds the best hulls in these waters, which is not a boast — the Dutch build the cheapest sound ship in the world and she is the reason this island can. Curacao sells hulls and nothing else. A ship that has been through her yard takes the sea better and meets less of it.",
+      "personality": "Brisk, precise, allergic to flattery, and visibly happier talking about timber than about money. Says what a job will cost and does not move.",
+      "likes": "straight dealing, a captain who maintains their ship, being paid on time",
+      "dislikes": "haggling, neglect, anyone who calls a repair a favour",
+      "attractedTo": "competence, patience, and hands that have done real work",
+      "identity": "a strong, square-built woman in her forties, broad-shouldered and full-figured, freckled and reddened by the sun she was not born to, sawdust in her pale hair, forearms marked with old splinter scars",
+      "usualLocation": "The Dry Dock",
+      "schedule": {
+        "Morning Watch": "The Dry Dock",
+        "Forenoon": "The Dry Dock",
+        "Dog Watch": "The Company Wharf",
+        "First Watch": "The Company Wharf",
+        "Middle Watch": null
+      }
+    },
+    {
+      "name": "Willem Sluyter",
+      "token": "Willem",
+      "category": "shore-male",
+      "gender": "male",
+      "bio": "Factor for the Company, which on this island means he decides what is bought, at what price, and whether a given vessel is worth trading with at all. Everything on Curacao passes through his ledger eventually.",
+      "personality": "Cool, courteous, and completely unhurried. Treats every conversation as a negotiation, including the ones that are not.",
+      "likes": "clean accounts, volume, a reliable counterparty",
+      "dislikes": "irregularity, sentiment in business, being surprised",
+      "identity": "a tall, spare man in his fifties, narrow-shouldered and long-faced, pale and sunburnt in patches, dark clothes far too heavy for the climate",
+      "usualLocation": "The Company Wharf",
+      "schedule": {
+        "Morning Watch": "The Company Wharf",
+        "Forenoon": "The Company Wharf",
+        "Dog Watch": "The Company Wharf",
+        "First Watch": null,
+        "Middle Watch": null
+      }
+    },
+    {
+      "name": "Aaltje Baas",
+      "token": "Aaltje",
+      "category": "shore-female",
+      "gender": "female",
+      "bio": "Runs the salt pans, which is the island's other trade and the reason anyone bothered taking it. Works in blinding white heat all day and is entirely used to it.",
+      "personality": "Direct, weathered, and dryly funny about the misery of her own trade. Says exactly what a thing costs.",
+      "likes": "shade, a fair weight, plain speaking",
+      "dislikes": "complaints about the heat, idleness, being pitied",
+      "identity": "a sturdy woman in her forties, thickset and strong-armed, skin burnt dark and cracked at the knuckles, sun-bleached hair under a wide brim",
+      "usualLocation": "The Salt Pans",
+      "schedule": {
+        "Morning Watch": "The Salt Pans",
+        "Forenoon": "The Salt Pans",
+        "Dog Watch": "The Salt Pans",
+        "First Watch": "The Company Wharf",
+        "Middle Watch": null
+      },
+      "attractedTo": "toughness, humour under discomfort, and people who work"
+    },
+    {
+      "name": "Joost van Rhijn",
+      "token": "Joost",
+      "category": "shore-male",
+      "gender": "male",
+      "bio": "Broker. Buys cargo of uncertain origin and sells it onward with a clean Company bill, which is the single most useful service on this island to anyone who has taken something at sea.",
+      "personality": "Genial, precise, and scrupulously incurious. Never asks where anything came from and never forgets what it was.",
+      "likes": "a clean transaction, repeat custom, discretion",
+      "dislikes": "questions, haggling in public, anyone who names a prize out loud",
+      "identity": "a plump, well-dressed man in his forties, round-faced and pink, fair hair thinning, rings on both hands",
+      "usualLocation": "The Company Wharf",
+      "schedule": {
+        "Morning Watch": "The Company Wharf",
+        "Forenoon": "The Company Wharf",
+        "Dog Watch": "The Company Wharf",
+        "First Watch": null,
+        "Middle Watch": null
+      }
+    },
+    {
+      "name": "Trijn Bakker",
+      "token": "Trijn",
+      "category": "shore-female",
+      "gender": "female",
+      "bio": "Cooper. Makes and mends the casks that hold a ship's water, which is the difference between a passage and a disaster, and she is why Curacao's water keeps longer than anyone else's.",
+      "personality": "Cheerful, chatty, physically enormous in her enthusiasm, and unexpectedly precise about the work.",
+      "likes": "good oak, a captain who replaces casks before they fail, singing",
+      "dislikes": "rot, false economy, being interrupted mid-explanation",
+      "identity": "a broad, powerful woman in her thirties, heavy-armed and full-figured, freckled and reddened, sawdust everywhere, sleeves gone entirely",
+      "usualLocation": "The Dry Dock",
+      "schedule": {
+        "Morning Watch": "The Dry Dock",
+        "Forenoon": "The Dry Dock",
+        "Dog Watch": "The Dry Dock",
+        "First Watch": "The Company Wharf",
+        "Middle Watch": null
+      },
+      "attractedTo": "enthusiasm, big laughs, and hands that know a trade"
+    },
+    {
+      "name": "Mordecai Belmonte",
+      "token": "Mordecai",
+      "category": "shore-male",
+      "gender": "male",
+      "bio": "Insures voyages. Names a rate for a ship, a route and a season, and is right often enough to be wealthy. Part of the island's long-established merchant community and better connected across this sea than anyone else on Curacao.",
+      "personality": "Warm, unhurried, and relentlessly analytical underneath it. Wants to know everything about a vessel before he will name a number.",
+      "likes": "good information, a well-found ship, a long conversation",
+      "dislikes": "bravado about risk, missing detail, being asked to guess",
+      "identity": "a courteous man in his fifties, slight and neat, olive-skinned, dark eyes, close grey beard, plain good clothes and a broad hat",
+      "usualLocation": "The Company Wharf",
+      "schedule": {
+        "Morning Watch": "The Company Wharf",
+        "Forenoon": "The Company Wharf",
+        "Dog Watch": "The Company Wharf",
+        "First Watch": null,
+        "Middle Watch": null
+      }
+    },
+    {
+      "name": "Machteld Vos",
+      "token": "Machteld",
+      "category": "shore-female",
+      "gender": "female",
+      "bio": "Physician, trained properly somewhere else, and the best medical care available in these waters by an enormous margin. Treats Company men, sailors and salt workers with identical brisk competence.",
+      "personality": "Impatient, exacting, and kinder than she lets on. Explains nothing twice.",
+      "likes": "clean wounds, patients who follow instructions, good light",
+      "dislikes": "heroics, self-diagnosis, surgeons who drink",
+      "identity": "a compact woman in her forties, lean and quick-handed, pale and sharp-featured, dark hair scraped back, sleeves always pushed up",
+      "usualLocation": "The Dry Dock",
+      "schedule": {
+        "Morning Watch": "The Dry Dock",
+        "Forenoon": "The Dry Dock",
+        "Dog Watch": "The Company Wharf",
+        "First Watch": null,
+        "Middle Watch": null
+      },
+      "attractedTo": "competence, honesty about pain, and people who are not stupid about their own bodies"
+    },
+    {
+      "name": "Barend Kuyt",
+      "token": "Barend",
+      "category": "shore-male",
+      "gender": "male",
+      "bio": "Harbour pilot for the inner water, and the one who decides whether a stranger's ship comes in at all. Placid, immovable, and enormously experienced.",
+      "personality": "Slow-spoken, patient, and impossible to hurry or to alarm.",
+      "likes": "a good approach, patience, still mornings",
+      "dislikes": "impatience, showing off under sail, noise",
+      "identity": "a heavy, deliberate man in his fifties, broad and thick-necked, weather-beaten, grey stubble, a pipe permanently in hand",
+      "usualLocation": "The Company Wharf",
+      "schedule": {
+        "Morning Watch": "The Company Wharf",
+        "Forenoon": "The Company Wharf",
+        "Dog Watch": "The Company Wharf",
+        "First Watch": null,
+        "Middle Watch": null
+      }
+    },
+    {
+      "name": "Femke Aldenburg",
+      "token": "Femke",
+      "category": "shore-female",
+      "gender": "female",
+      "bio": "Keeps the tavern on the wharf where Company men and ships' crews drink at the same tables without much trouble, largely because she does not permit any.",
+      "personality": "Warm, watchful, funny, and entirely willing to throw out a man twice her size.",
+      "likes": "a good evening, mixed company, being paid promptly",
+      "dislikes": "fighting, credit, anyone who bothers her staff",
+      "identity": "a strong, handsome woman in her thirties, full-figured and broad-hipped, fair and freckled, sleeves rolled, hair coming loose by evening",
+      "usualLocation": "The Company Wharf",
+      "schedule": {
+        "Morning Watch": null,
+        "Forenoon": "The Company Wharf",
+        "Dog Watch": "The Company Wharf",
+        "First Watch": "The Company Wharf",
+        "Middle Watch": "The Company Wharf"
+      },
+      "attractedTo": "confidence, good talk, and a person who can hold their drink"
+    },
+    {
+      "name": "Neeltje Raap",
+      "token": "Neeltje",
+      "category": "shore-female",
+      "gender": "female",
+      "bio": "Dutch privateer captain, in port between voyages, and the only other master on this island who has taken Spanish prizes and lived well on them. Regards the Recompense with frank professional interest.",
+      "personality": "Blunt, loud, generous, and completely without side. Will tell a captain exactly what she thinks of their ship within a minute of seeing it.",
+      "likes": "a fast hull, honest boasting, a good argument",
+      "dislikes": "modesty, caution dressed up as strategy, being patronised",
+      "identity": "a big, sun-darkened woman in her forties, tall and heavily built, close-cropped fair hair, an old burn scar up one forearm, coat open over bare skin",
+      "usualLocation": "The Company Wharf",
+      "schedule": {
+        "Morning Watch": null,
+        "Forenoon": "The Company Wharf",
+        "Dog Watch": "The Dry Dock",
+        "First Watch": "The Company Wharf",
+        "Middle Watch": null
+      },
+      "attractedTo": "nerve, a good ship well handled, and someone who can keep up"
+    }
+  ],
+  "loreEntries": [
+    {
+      "label": "Curacao",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Lore/curacao.txt"
+    },
+    {
+      "label": "Curacao People",
+      "url": "https://raw.githubusercontent.com/brettandrewupston/SteakAndBakeStories/main/Adventures/Marque/Lore/curacao-people.txt"
+    }
+  ]
+}
