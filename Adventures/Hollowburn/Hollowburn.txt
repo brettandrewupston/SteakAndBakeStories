@@ -1,6 +1,6 @@
 THE QUIET HOUR (HOLLOWBURN) — ADVENTURE CONTENT
 ===========================================================
-Last updated: 28/08/2026
+Last updated: 10/09/2026
 Fourth Adventure built for the Story Generator. Architecture/decisions
 live in the parent folder's Goals.txt and Features.txt — this file is
 just this Adventure's canon (premise, rules, NPCs, map, setup fields).
@@ -33,9 +33,9 @@ estate at the top of the village was built in the fifties on cleared
 colliery land; the Blythe family live in the last council house on a
 short cul-de-sac at the end of it.
 
-The player is the Blythe daughter, 21, the eldest of the two children,
-and she has not slept properly in months. Something in the house has
-learned her name and is using her family's voices to say it.
+The player is the elder of the two Blythe children, 21, and has not
+slept properly in months. Something in the house has learned their
+name and is using their family's voices to say it.
 
 The village is never placed. No neighbouring town, city or county is
 ever named — stated as a rule in promptRules.setting. It is an
@@ -194,7 +194,7 @@ excluded.
 
 The standard minor-safety layer is unchanged and sits underneath all
 of this — see Safety Layer.txt and Goals.txt SAFETY. Every character
-is unambiguously adult, ages are stated (Jonah 19, player 21).
+is unambiguously adult, ages are stated (younger sibling 19, player 21).
 
 NPCs (12)
 ------------
@@ -203,10 +203,11 @@ Stage A baseline appearance line (clothing-free — clothing comes from
 the Category), "bio" is who a character is, "personality" is how they
 talk and carries the Hush pair.
 
-Flat "npcs" array — no npcSets/openingScenes. The player is always the
-Blythe daughter, so no gender-mirrored roster is needed and the
-Meridian key-convention trap does not apply. Bios and personalities
-say "sister" and "daughter" outright.
+Gender-mirrored cast: npcSets and openingScenes are keyed "female" and
+"male", matching the playerGender tile values exactly (see THE
+PLAYER). Within each set, bios and personalities say "sister" or
+"brother" outright. promptRules and Lore are shared by both and never
+gender the player.
 
 Gender split: 6 female, 6 male with a female player; 7 female, 5 male
 with a male player, since the sibling mirrors.
@@ -272,7 +273,7 @@ THE THING (1)
 
 CAST WEIGHTING (stated in promptRules.setting — the engine has no
 per-NPC tier field)
-- Main: Jonah, Evelyn, Peter, Ivy, the Marra
+- Main: the younger sibling (Jonah or Mara), Evelyn, Peter, Ivy, the Marra
 - Strong supporting: Denny, Sheila, Kirsty, Nate
 - Background: Barry, Yasmin, Nell
 
@@ -289,9 +290,9 @@ Four names were changed during authoring for collisions:
 - Ray -> Barry     (Ray fires inside "Rays")
 - Cathal -> Nell   (changed for the gender balance, not a collision)
 
-Jonah's room is called THE BOX ROOM rather than "Jonah's Room"
-specifically so the location name does not carry his token and pull him
-into every scene set there.
+The younger sibling's room is called THE BOX ROOM rather than being
+named after them, so the location name carries neither sibling's token
+and does not pull them into every scene set there.
 
 One residual: "Peter" fires inside "Peterlee" and "Peterhead", real
 towns on this coast. Mitigated in fiction — promptRules.setting states
@@ -318,8 +319,9 @@ Every category line ends "fully clothed and modestly dressed at all
 times, clearly an adult" — the equivalent slot where Solmere and
 Halcyon put their sex-appeal phrasing.
 
-playerCategoryTemplate: family-{playerGender}, which always resolves to
-family-female (see THE PLAYER below).
+playerCategoryTemplate: family-{playerGender}, which resolves to
+family-female or family-male with the player's chosen gender (see THE
+PLAYER below).
 
 Entries are capped at roughly 40 words plus this Adventure's closing
 clause; currently 46 on average, 49 at most. The uniform clause is the
@@ -386,7 +388,7 @@ it waits):
 - Your Bedroom (starting location)
 - The Landing (hub)
 - The Bathroom
-- The Box Room (Jonah's)
+- The Box Room (the younger sibling's)
 - Mam and Dad's Room
 - The Kitchen
 - The Sitting Room

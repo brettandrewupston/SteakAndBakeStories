@@ -15,6 +15,19 @@ in the engine log and referenced here in one line. Never write it out twice.
 Entries from 16/08/2026 to 22/08/2026 predate this split and are in the
 project-root `Change Log Archive.md`.
 
+## 10/09/2026
+
+- **Male player narrated as female — fixed.** `promptRules.setting` still
+  called the player "the Blythe daughter… she", and it reaches every
+  narration, plan and character call, overriding the Gender setup line.
+  Reworded to "the elder of the two Blythe children"; its CAST WEIGHTING
+  named Jonah as a main storyline (the player himself in a male game), now
+  "the player's brother or sister". Tone's 'our lass' is now 'our kid'.
+  Three Lore lines that fixed Jonah as the sibling (`locations.txt`,
+  `npc-barry-kelso.txt`, `the-blythe-house.txt`) now say "the younger
+  Blythe child". Stale single-gender lines in `Hollowburn.txt` corrected.
+  Needs a re-push.
+
 ## 28/08/2026
 
 - Hollowburn.json — `poseVocabulary` removed: the engine never read it (written
