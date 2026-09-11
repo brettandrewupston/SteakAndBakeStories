@@ -14,6 +14,16 @@ in the engine log and referenced here in one line. Never write it out twice.
 Entries from 16/08/2026 to 22/08/2026 predate this split and are in the
 project-root `Change Log Archive.md`.
 
+## 11/09/2026
+
+- Solmere.json, Solmere.txt, the locations Lore file — **the Infirmary is
+  a location.** Maren runs one, but with no room to report the model kept the
+  player in the Dueling Arena through a whole clinic visit, which left
+  everyone from the duel standing beside them. Added with a scenery line;
+  Maren is there Morning and Midday, keeps her free Afternoon and Evening
+  Pool, and holds the Staff Room at Night. Not on the map: the art has no
+  building for it, so it gets no marker. Needs a re-push.
+
 ## 28/08/2026
 
 - Solmere.json — `poseVocabulary` removed: the engine never read it (written

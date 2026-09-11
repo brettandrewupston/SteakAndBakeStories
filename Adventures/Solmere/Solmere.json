@@ -91,6 +91,7 @@
     "Pool",
     "Showers",
     "Staff Room",
+    "Infirmary",
     "Royal Dormitory Wing",
     "Commoner Dormitory Wing"
   ],
@@ -770,12 +771,14 @@
       "token": "Healer Maren",
       "category": "staff-female",
       "gender": "female",
-      "usualLocation": "Staff Room",
+      "usualLocation": "Infirmary",
       "schedule": {
         "Afternoon": null,
-        "Evening": "Pool"
+        "Evening": "Pool",
+        "Night": "Staff Room"
       },
       "roamLocations": [
+        "Infirmary",
         "Staff Room",
         "Pool",
         "Showers",
@@ -1038,6 +1041,7 @@
     "Pool": "a colonnaded stone hall around a still turquoise bathing pool, steam, mosaic tiling, light from clerestory windows",
     "Showers": "a stone shower room of stalls and brass fittings, wet flagstones, steam in the air, dim light from small high windows",
     "Staff Room": "a staff room of deep leather armchairs, a fireplace, walls of bound texts, a decanter on a side table, low firelight",
+    "Infirmary": "a whitewashed infirmary of narrow cots and linen screens, shelves of glass salve jars, drying herb bundles, clean light through tall windows",
     "Royal Dormitory Wing": "a panelled royal dormitory corridor of carved doors, portraits, a runner carpet, gilded sconces, warm light",
     "Commoner Dormitory Wing": "a plain stone dormitory corridor of numbered doors, worn boards, shared washstands, cool light through narrow windows"
   }

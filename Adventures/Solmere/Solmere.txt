@@ -1,6 +1,6 @@
 SOLMERE ACADEMY — ADVENTURE CONTENT
 ===========================================================
-Last updated: 28/08/2026
+Last updated: 11/09/2026
 First Adventure built for the Story Generator. Architecture/decisions
 live in the parent folder's Goals.txt and Features.txt — this file is
 just this Adventure's canon (premise, NPCs, map, setup fields).
@@ -197,6 +197,8 @@ LOCATIONS
 - Pool
 - Showers
 - Staff Room
+- Infirmary (Healer Maren's — where duels and training end up) — not drawn
+  on the map
 - Royal Dormitory Wing
 - Commoner Dormitory Wing
 
@@ -205,7 +207,8 @@ a discovery the story gates (see THE LADDER, wing_found), and the journal
 already conceals that milestone — drawing the room on a map the player can
 open from turn one would hand it straight over. The engine tolerates a
 location with no element on the map: the room simply gets no "you are
-here" marker while the player is in it.
+here" marker while the player is in it. The Infirmary is undrawn too, though
+not hidden: the art has no building for it.
 
 The map is illustrated art — `Maps/Solmere Map.webp`, hosted, with the PNG
 master in `AssetsNotHosted/Masters/`. `Maps/Solmere Map.svg` is the wrapper
@@ -246,7 +249,7 @@ Thaddeus         Courtyard      free           Courtyard      Dining Hall    Roy
 Seraphine        Dueling Arena  Showers        Dueling Arena  Royal Dorm     free
 Toren            Library        Dining Hall    Training Gr.   Library        Library
 Junia            Pool           Training Gr.   free           Dining Hall    Training Gr.
-Healer Maren     Staff Room     Staff Room     free           Pool           Staff Room
+Healer Maren     Infirmary      Infirmary      free           Pool           Staff Room
 
 Conventions this table follows:
 - No more than two NPCs share a location in a phase, the Dining Hall
@@ -274,7 +277,7 @@ roamLocations — where each turns up when unplaced:
 - Seraphine: Dueling Arena, Showers, Pool, Royal Dormitory Wing, Dining Hall
 - Toren: Library, Training Grounds, Showers, Dining Hall
 - Junia: Training Grounds, Pool, Showers, Courtyard, Dining Hall
-- Healer Maren: Staff Room, Pool, Showers, Training Grounds, Dining Hall
+- Healer Maren: Infirmary, Staff Room, Pool, Showers, Training Grounds, Dining Hall
 
 Instructor Voss is the one NPC without the Dining Hall in his roam list:
 his is a duty roster, not a social one, and keeping it that way is what
